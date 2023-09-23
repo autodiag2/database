@@ -1,0 +1,313 @@
+P0001	Control of the fuel flow regulator : Open circuit
+P0002	Control of the fuel flow regulator : Incoherence of the control current of the flow regulation valve
+P0003	Control of the fuel flow regulator : Short circuit to earth
+P0004	Control of the fuel flow regulator : Short circuit to positive
+P0016	Synchronisation : Incoherence between the information from the engine speed sensor and the camshaft sensor
+P0017	Starting surveillance : Synchronisation time too long
+P0030	Oxygen sensor heating : Open circuit
+P0031	Oxygen sensor heating : Short circuit to earth
+P0032	Oxygen sensor heating : Short circuit to positive
+P0053	Oxygen sensor heating : Resistance of the oxygen sensor heating circuit outside tolerance, sensor aged
+P0069	Coherence fault : At idle, lack of coherence between the manifold inlet pressure measurement and the atmospheric pressure measurement
+P0070	Intersystems CAN : Outside temperature value received via the CAN not valid
+P0087	Fuel circuit : The pressure measured in the injection rail is less than the setting
+P0088	Fuel circuit : Pressure measured in the injection rail above the reference
+P0096	Measurement of the manifold inlet air temperature : Voltage variation outside the tolerance
+P0097	Measurement of the manifold inlet air temperature : Short circuit to earth : Temperaturetoo high
+P0098	Measurement of the manifold inlet air temperature : Short circuit to positive or open circuit : Temperature too low
+P009A	Measurement of the manifold inlet air temperature : Calculation of the ambient air temperature impossible
+P0100	Air flow measure : Quantity of air above the maximum threshold
+P0102	Air flow measure : Signal incoherent (frequency too low)
+P0112	Measurement of the air temperature at the air flow sensor : Short circuit to earth : Temperature too high
+P0113	Measurement of the air temperature at the air flow sensor : Short circuit to positive oropen circuit : Temperature too low
+P0115	Engine water temperature measure : Temperature rise test
+P0117	Engine water temperature measure : Short circuit to earth : Value too high
+P0118	Engine water temperature measure : Short circuit to positive or open circuit : Value toolow
+P0130	Measurement of the concentration of oxygen : Open circuit on one of the pins of the sensor (not heating)
+P0131	Measurement of the concentration of oxygen : Short circuit to earth
+P0132	Measurement of the concentration of oxygen : Short circuit to positive
+P0135	Oxygen sensor heating : Estimated temperature too high or too low, sensor heating no longer working
+P0182	Fuel temperature measure : Short circuit to earth : Value too high
+P0183	Fuel temperature measure : Short circuit to positive or open circuit : Value too low
+P0190	Fuel circuit : When stopped, the pressure of the injection rail decreases too slowly
+P0191	Measurement of the pressure in the fuel injection rail : Voltage variation outside the tolerance
+P0192	Measurement of the pressure in the fuel injection rail : Short circuit to earth : Pressure too low
+P0193	Measurement of the pressure in the fuel injection rail : Short circuit to positive : Pressure too high
+P0201	Injector 1 control : Open circuit
+P0202	Injector 2 control : Open circuit
+P0203	Injector 3 control : Open circuit
+P0204	Injector 4 control : Open circuit
+P0215	Main relay control : Poor operation of the relay, the ECU is not being supplied as it should be
+P0222	Measurement of the accelerator pedal position : Track 1 signal short circuit to earth
+P0223	Measurement of the accelerator pedal position : Short-circuit to positive or open circuit on the signal from track 1
+P0226	Intersystems CAN : Fault in plausibility between pressing of pedal for easymove and thedriver’s requirement
+P0227	Measurement of the accelerator pedal position : Track 2 signal short circuit to earth
+P0228	Measurement of the accelerator pedal position : Short-circuit to positive or open circuit on the signal from track 2
+P0234	Charge pressure regulation : Air pressure above the reference value
+P0236	Manifold entry pressure sensor : Voltage variation outside the tolerance
+P0237	Manifold entry pressure sensor : Short circuit to earth : Pressure too low
+P0238	Manifold entry pressure sensor : Short circuit to positive : Pressure too high
+P0243	Control of the variable geometry turbo : Open circuit
+P0245	Control of the variable geometry turbo : Short circuit to earth
+P0246	Control of the variable geometry turbo : Short circuit to positive
+P0262	Injector 1 control : Short circuit between two wires
+P0263	No. 1 cylinder : Injector resetting outside tolerance
+P0265	Injector 2 control : Short circuit between two wires
+P0266	No. 2 cylinder : Injector resetting outside tolerance
+P0268	Injector 3 control : Short circuit between two wires
+P0269	No. 3 cylinder : Injector resetting outside tolerance
+P0271	Injector 4 control : Short circuit between two wires
+P0272	No. 4 cylinder : Injector resetting outside tolerance
+P0299	Charge pressure regulation : Air pressure below the reference value
+P0335	Engine speed measurement : Loss of signal
+P0336	Engine speed measurement : Signal absent when starting
+P0337	Engine speed measurement : Signal inconsistent, either too many or not enough teeth seenon one rev
+P0339	Engine speed measurement : Sudden increase in the measurement
+P0341	Measurement of the camshaft position : Loss of camshaft signal while the engine is running
+P0342	Measurement of the camshaft position : Trop de dents sur un tour
+P0343	Measurement of the camshaft position : Signal not regular
+P0401	Air circuit : Quantity of fresh air above the reference value
+P0402	Air circuit : Quantity of fresh air below the reference value
+P0405	Measurement of the position of the EGR valve : Open circuit or short circuit to earth
+P0406	Measurement of the position of the EGR valve : Short circuit to positive
+P0409	EGR valve : Valve detected jammed closed during the ECU switching to dormant mode phase
+P0461	Intersystems CAN : Fuel level information incorrect or absent
+P0489	EGR valve : Position incorrect (too open)
+P0490	EGR valve : Position incorrect (too closed)
+P0493	electric cooling fan unit : Twin speed : Incoherence between the reference value (no control) and the status of the fan assembly
+P0494	electric cooling fan unit : Twin speed : Incoherence between the reference value (low speed) and the status of the fan assembly
+P0495	electric cooling fan unit : Twin speed : Incoherence between the reference value (high speed) and the status of the fan assembly; Variable Speed : Short-circuit to earth or to the battery or open circuit on the status of the cooling fan
+P0500	Intersystems CAN : Speed information incorrect or absent
+P050B	Starting surveillance : Starting time too long
+P0532	Measurement of the air conditioning pressure : Short circuit to earth
+P0533	Measurement of the air conditioning pressure : Short circuit to positive or open circuit
+P0562	Battery voltage measurement : System voltage too low
+P0563	Battery voltage measurement : System voltage too high
+P0565	Intersystems CAN : Vehicle Cruise Control information incorrect or absent
+P0571	Intersystems CAN : Lack of coherence of the brake pedal position sent by the BSI
+P0575	Intersystems CAN : Speed Limiter information incorrect or absent
+P0606	ECU : Fault internal to “[%*^#@!]” (CMM)
+P0620	Alternator : Alternator electrical fault
+P062B	Downloading / Configuration : Downloading of the resetting of the injectors not carriedout
+P062D	Injectors control : Injection bank supply voltage outside tolerance
+P0658	5V sensor supply no. 1 (Air conditioning pressure sensor, Rail pressure sensor, EGR valve position sensor, Capteur de position turbo géométrie variable, Air mixer position sensor, Supercharging pressure sensor, Particle filter differential pressure sensor, EGR exchanger bypass position sensor) : Voltage too low
+P0659	5V sensor supply no. 1 (Air conditioning pressure sensor, Rail pressure sensor, EGR valve position sensor, Capteur de position turbo géométrie variable, Air mixer position sensor, Supercharging pressure sensor, Particle filter differential pressure sensor, EGR exchanger bypass position sensor) : Voltage too high P065A Alternator : Alternator mechanical fault
+P0667	ECU internal temperature measurement : Voltage variation outside the tolerance
+P0668	ECU internal temperature measurement : Short circuit to earth
+P0669	ECU internal temperature measurement : Short circuit to positive
+P0685	Power relay control : Open circuit
+P0686	Power relay control : Short circuit to earth
+P0687	Power relay control : Short circuit to positive
+P0691	electric cooling fan unit : Short circuit to earth or open circuit on the fan assembly 1control
+P0692	electric cooling fan unit : Court-circuit à la batterie sur la commande GMV 1
+P0693	electric cooling fan unit : Short circuit to earth or open circuit on the fan assembly 2control
+P0694	electric cooling fan unit : Court-circuit à la batterie sur la commande GMV 2
+P0703	Measurement of the brake pedal position : Incoherence between the two brake sensors detected under acceleration
+P0704	Measurement of the clutch pedal position : No pressing of the pedal while driving for acertain time
+P0805	Clutch master cylinder position measurement : Signal not plausible
+P0807	Clutch master cylinder position measurement : Short circuit to earth
+P0808	Clutch master cylinder position measurement : Short circuit to positive or open circuit
+P0809	Clutch master cylinder position measurement : Signal not plausible
+P0810	Clutch master cylinder position measurement : Value received by the CAN not plausible
+P0812	Intersystems CAN : The engine receives the information that reverse gear is engaged eventhough that is not possible
+P0831	Measurement of the clutch pedal position : No pressing of the pedal while driving for acertain time
+P0850	Gearbox neutral position measurement : Implausible value
+P0851	Gearbox neutral position measurement : Short circuit to earth
+P0852	Gearbox neutral position measurement : Short circuit to positive or open circuit
+P0918	Gearbox neutral position measurement : Fault of coherence between the engine speed and the vehicle speed even though the neutral status is on true
+P0919	Gearbox neutral position measurement : Lack of coherence of the neutral status when changing gear
+P0A1A	Alternator : Alternator communication fault
+P0A3B	Alternator : Alternator temperature fault
+P1114	ECU : Stopping of the engine by injection cut-off fault
+P1162	EGR valve : Valve detected as being jammed open during the ECU sleep phase
+P1166	Fuel circuit : Maximum rail pressure exceeded
+P1183	Braking system vacuum measurement : Short circuit to earth
+P1184	Braking system vacuum measurement : Short circuit to positive or open circuit
+P1192	ECU : Stopping of the engine by high pressure pump supply cut-off fault
+P1199	Fuel circuit : Incoherence on the reserve fuel pressure (Nearing no fuel)
+P11AA	Air circuit : Maximum turbo pressure exceeded
+P11AB	Air circuit : Turbocharging pressure below the maximum threshold
+P11B2	Measurement of the position of the EGR exchanger by-pass : Short circuit to positive
+P11B3	Measurement of the position of the EGR exchanger by-pass : Short circuit to earth
+P1294	Fuel circuit : Critical maximum rail pressure exceeded at certain points
+P129F	Air circuit : Quantity of fresh air above the reference value (Service)
+P12A0	Air circuit : Quantity of fresh air below the reference value (Service)
+P12A1	No. 1 cylinder : Injector injects too much or remains jammed in the open position
+P12A2	No. 1 cylinder : Injecteur n’injecte pas assez ou mauvaise compression cylindre
+P12A4	No. 2 cylinder : Injector injects too much or remains jammed in the open position
+P12A5	No. 2 cylinder : Injecteur n’injecte pas assez ou mauvaise compression cylindre
+P12A7	No. 3 cylinder : Injector injects too much or remains jammed in the open position
+P12A8	No. 3 cylinder : Injecteur n’injecte pas assez ou mauvaise compression cylindre
+P12AA	No. 4 cylinder : Injector injects too much or remains jammed in the open position
+P12AB	No. 4 cylinder : Injecteur n’injecte pas assez ou mauvaise compression cylindre
+P12B3	: EGR valve: Incorrect position (open too far) (After Sales)
+P12B4	EGR valve: Incorrect position (closed too far) (After sales)
+P1349	Engine preheating : Short circuit to positive or open circuit on the relay control
+P1350	Clutch master cylinder position measurement : Short circuit to earth
+P1352	Clutch master cylinder position measurement : Fault on the pre-heating relay or glow plugs
+P1366	Injector 1 control : Electrical specifications outside the norms (harness or injector)
+P1367	Injector 2 control : Electrical specifications outside the norms (harness or injector)
+P1368	Injector 3 control : Electrical specifications outside the norms (harness or injector)
+P1369	Injector 4 control : Electrical specifications outside the norms (harness or injector)
+P1372	Injector 1 control : Voltage outside the norms
+P1373	Injector 2 control : Voltage outside the norms
+P1374	Injector 3 control : Voltage outside the norms
+P1375	Injector 4 control : Voltage outside the norms
+P1382	Ancillary drive belt : Fault in coherence between the engine speed and the alternator speed
+P1383	Ancillary drive belt : Break imminent
+P1403	Control of additional heating 1 : Open circuit or short circuit to positive or short circuit to earth
+P1404	Control of additional heating 2 : Open circuit or short circuit to positive or short circuit to earth
+P1412	Particle filter : Reconfiguration of the engine activated following an electrical faultof the differential pressure sensor measurement or of the filter upstream temperature measurement
+P1435	Multiplexed additive pump : CAN network fault or pump fault
+P1442	Control of the additive pump by wire : Open circuit
+P1443	Control of the additive pump by wire : Short circuit to earth
+P1444	Control of the additive pump by wire : Short circuit to positive
+P1445	Additive adding : The quantity of additive injected into the FAP has exceeded the maximum
+thres	hold. The FAP must be changed
+P1446	Additive adding : Calculated additive level below the critical threshold
+P1457	Particle filter : Detected absent
+P1490	Particle filter : Detected overloaded
+P1496	Turbocharger: Incorrect position in relation to the reference value, excessive turbocharging (After Sales)
+P1497	Variable resistance turbocharger : Position incorrect relative to requirement, not enough turbo (Service)
+P1498	Air mixer: Incorrect position (closed too far) (After sales)
+P1499	Air mixer: Position incorrect (open too far) (After sales)
+P14A3	EGR exchanger bypass : Confirmed jammed open (hot side)
+P14A4	EGR exchanger bypass : Confirmed jammed shut (cold side)
+P14A7	EGR valve : Failure of the first programming operations
+P14A9	Variable resistance turbocharger : Failure of the first programming operations
+P14AA	Air metering valve : Failure of the first programming operations
+P1505	Intersystems CAN : The air bag ECU has requested stopping of the engine (following the detection of an impact)
+P1506	Intersystems CAN : Power consumed by the air conditioning value not valid or not coherent in relation to the status of the air conditioning clutch
+P151A	Starting surveillance : Coded immobiliser unlocking time too long
+P1536	Measurement of the brake pedal position : Incohérence entre les deux capteurs de frein détectée
+P15B3	Additive adding : Additive level calculated lower than the minimum threshold
+P15B5	Clutch master cylinder position measurement : Clutch information wrong saying open whendriving with drive train closed
+P15B6	Clutch master cylinder position measurement : Clutch information wrong saying closed when changing a gear
+P160A	Downloading / Configuration : Homologation no. configuration fault
+P1612	ECU : Fault internal to the EEPROM (Coded immobiliser)
+P1613	Downloading / Configuration : Downloading fault of the configuration of the ECU
+P1621	ECU : Software redundancy fault at the injection (Level 2)
+P1631	ECU : Internal fault (injection with no load)
+P1641	ECU : Failure of the initialisation of the injector bank, or harness fault
+P1655	Engine running status information line : Short circuit to positive
+P1656	Engine running status information line : Short circuit to earth
+P1657	Engine running status information line : Open circuit
+P1694	Controlled engine start and stop : Starter control line faulty
+P1695	Controlled engine start and stop : Motor jammed
+P1696	Controlled engine start and stop : Simultaneous starting and stopping request
+P16A0	motor : Detection of runaway caused by oil ingestion after stalling
+P16AB	Ancillary drive belt : Worn
+P1728	Intersystems CAN : Torque not reliable due to an engine fault
+P1828	Authorization information to start : Short circuit to positive
+P1A84	Reversible alternator : Current sensor fault
+P1A85	Reversible alternator : Rotor speed sensor fault
+P1A86	Reversible alternator : Temperature sensor fault
+P1A87	Reversible alternator : Voltage sensor fault
+P1A88	Reversible alternator : Prohibited value of the limitation of the energising current orof the voltage or of the temperature or of the operating status of the alternator
+P1A89	Power storage battery or voltage retaining device : Voltage value prohibited
+P1A8A	Power storage battery or voltage retaining device : Temperature value not valid
+P1A8B	Power storage battery or voltage retaining device : Health status of the power storage battery or operating status of the voltage retaining device : Prohibited value
+P1A8D	Reversible alternator restarting authorisation line : Short circuit to earth or open circuit
+P1A8E	Reversible alternator restarting authorisation line : Short circuit to positive
+P1A8F	Reversible alternator restarting authorisation line : Fault of coherence between the wire link and the LIN link
+P1A90	Reversible alternator : Overheating of the reversible alternator or its surroundings
+P1A91	Reversible alternator : Failure to restart the engine
+P1A92	Reversible alternator : Power electronics fault – Alternator mode out-of-action
+P1A93	Reversible alternator : Power electronics fault – Motor mode out-of-action
+P1A94	Reversible alternator : Power electronics fault – Alternator mode downgraded
+P1A95	Reversible alternator : internal fault – Latent problem
+P1A99	Stop and start : Electrical network voltage too high
+P1A9A	Stop and start : Overvoltage of the electrical network
+P1A9B	Reversible alternator : Voltage regulation fault
+P1A9C	Energy accumulator : State of health fault
+P1A9D	Voltage retaining device : Open circuit or short circuit to earth of the power storage battery charging line
+P1A9E	Voltage retaining device : Open circuit or short circuit to earth of the power storage battery charging line
+P1A9F	Voltage retaining device : Open circuit or short circuit to earth of the supply line orof the earth between the voltage retaining device and the power storage battery
+P1AA0	Voltage retaining device : Open circuit or short circuit to earth of the voltage measurement
+P1AA1	Voltage retaining device : Supply open circuit or short circuit to earth
+P1AA2	Voltage retaining device : Internal electronics fault
+P1AA3	Voltage retaining device : internal fault
+P1AA4	Power storage battery or voltage retaining device : Overvoltage of the power accumulator
+P1AA5	Voltage retaining device : internal fault – Partial destruction of switch
+P1AA6	Voltage retaining device : internal fault – Destruction of switch
+P2031	Particle emission filter upstream temperature measurement : Plausibility when starting
+P2032	Particle emission filter upstream temperature measurement : Short circuit to earth
+P2033	Particle emission filter upstream temperature measurement : Short circuit to positive
+P2101	Control of the air mixer : Overheating or excess current
+P2102	Control of the air mixer : Electrical fault
+P2127	Measurement of the air mixer position : Short circuit to earth or open circuit
+P2128	Measurement of the air mixer position : Short circuit to positive
+P2132	Accelerator pedal point of resistance switch measurement : Short circuit to earth
+P2133	Accelerator pedal point of resistance switch measurement : Short circuit to positive
+P2134	Accelerator pedal point of resistance switch measurement : The voltage is jammed between “exce	eded” and “not exceeded”
+P2137	Measurement of the accelerator pedal position : Incoherence of the accelerator pedal tracks
+P2140	Accelerator pedal point of resistance switch measurement : Incoherence between the hardpoint signal and the accelerator pedal position
+P2144	Control of the EGR valve : Electrical fault
+P2146	Injectors control : Injection bank 1 : Short circuit
+P2148	Injectors control : Injection bank 1 : Voltage too high
+P2173	Air metering valve : Position incorrect (too open)
+P2175	Air metering valve : Position incorrect (too closed)
+P2187	Mixture of the system : Concentration of oxygen too high
+P2227	Measurement of the atmospheric pressure : Voltage variation outside the tolerance
+P2228	Measurement of the atmospheric pressure : Value too low
+P2229	Measurement of the atmospheric pressure : Value too high
+P2244	Mixture of the system : Integrated slave circuit of the sensor faulty
+P2291	Starting surveillance : Pressure increase in the injection rail too slow when starting
+P2299	Measurement of the accelerator pedal position : Pedal jammed or applied at the same timeas the brake pedal
+P2413	Control of the EGR valve : Overheating or excess current
+P2418	Control of the exhaust heat saver actuator : Open circuit
+P2419	Control of the exhaust heat saver actuator : Short circuit to earth
+P2420	Control of the exhaust heat saver actuator : Short circuit to positive
+P2425	Control of the Bypass of the EGR exchanger : Open circuit
+P2426	Control of the Bypass of the EGR exchanger : Short circuit to earth
+P2427	Control of the Bypass of the EGR exchanger : Short circuit to positive
+P242F	Particle filter : Detected clogged
+P2452	Measurement of the particle emission filter differential pressure : Plausibility beforestarting fault
+P2454	Measurement of the particle emission filter differential pressure : Voltage too low
+P2455	Measurement of the particle emission filter differential pressure : Voltage too high
+P250C	Oil level measurement : Short circuit to earth
+P250D	Oil level measurement : Short circuit to positive or open circuit
+P2562	Variable resistance turbocharger : Position incorrect relative to requirement, not enough turbo
+P2563	Variable resistance turbocharger : Position incorrect in relation to the setting, too much turbo
+P2564	Measurement of the position of the variable geometry turbo : Short circuit to earth
+P2565	Measurement of the position of the variable geometry turbo : Short circuit to positive or open circuit
+P2670	5V sensor supply no. 2 (Accelerator pedal sensor) : Voltage too low
+P2671	5V sensor supply no. 2 (Accelerator pedal sensor) : Voltage too high
+P2685	5V sensor supply no. 3 (Engine speed sensor, Camshaft sensor) : Voltage too low
+P2686	5V sensor supply no. 3 (Engine speed sensor, Camshaft sensor) : Voltage too high
+P3007	Air circuit : Air flow lower than recommended
+P3008	Air circuit : Air flow higher than recommended
+P3026	Air circuit : Air flow higher than recommended (Service)
+P3027	Air circuit : Air flow lower than recommended (Service)
+U0019	Intersystems CAN : Fault on the BSM (engine fusebox) or on the network linking the latter to the BSI
+U0028	Intersystems CAN : Défaillance du combiné ou du CAN confort, perte d’allumage voyant MIL
+U0055	Intersystems CAN : Malfunction of the Comfort CAN, no more lighting of the MIL warning lamp possible
+U0073	Intersystems CAN : CAN in error
+U0103	Intersystems CAN : Absence of communication with the automatic gearbox or piloted manualgearbox
+U0121	Intersystems CAN : Absence of communication with the ABS/ ESP ECU
+U0131	Intersystems CAN : No communication with power steering ECU
+U0140	Intersystems CAN : Absence of communication with the BSI ECU
+U0304	Intersystems CAN : Error in length or prohibited value on the gearbox ECU datastreams
+U0315	Intersystems CAN : Error in length or prohibited value on the ABS/ ESP datastream
+U0320	Intersystems CAN : Error of length or prohibited value of the power steering datastream
+U0322	Intersystems CAN : Error in length or prohibited value on the BSI datastream
+U0422	Intersystems CAN : One of the parameters present in a datastream sent by the BSI is invalid
+U1000	ECU : The engine ECU is detected mute by one of the ECUs on the network
+U1109	Intersystems CAN : No communication with the gearbox ECU (Automatic or Electronic)
+U1113	Intersystems CAN : Absence of communication with the ABS/ ESP ECU
+U1118	Intersystems CAN : Absence of communication with the BSI ECU
+U1133	Communication on LIN : The reversible alternator is confirmed absent
+U1134	Communication on LIN : No communication with the voltage retaining device
+U1209	Intersystems CAN : One of the parameters present in a datastream sent by the Gearbox isinvalid
+U1213	Intersystems CAN : One of the parameters present in a datastream sent by the ABS/ ESP isinvalid
+U1218	Intersystems CAN : One of the parameters present in a datastream sent by the BSI is invalid
+U1309	Intersystems CAN : Error in length or prohibited value on the gearbox datastream
+U1313	Intersystems CAN : Error in length or prohibited value on the ABS/ ESP datastream
+U1318	Intersystems CAN : Error in length or prohibited value on the BSI datastream
+U1332	Communication on LIN : Error of length or prohibited value of the reversible alternatordatastream
+U1333	Reversible alternator : Voltage retaining device
+U1400	Alternator LIN network : Registering of a fault on the LIN network
+U1401	Alternator LIN network : Registering of a fault on the slave node of the Alternator LINnetwork
+U2000	Intersystems CAN : Request for main ECU triggering not plausible or absent
+U2003	Intersystems CAN : Request for ECU wake-up (wire signal) inconsistent with the CAN data
+U2118	Intersystems CAN : Request for partial ECU triggering not plausible or absent

@@ -1,0 +1,222 @@
+P0001	Fuel flow regulation electrovalve : Open circuit
+P0002	Fuel flow regulation electrovalve : Open circuit
+P0003	Fuel flow regulation electrovalve : Short circuit to earth
+P0004	Fuel flow regulator signal : Short circuit to positive
+P0016	Camshaft signal : Incoherence between the engine speed signal and the camshaft signal
+P0069	Turbocharger pressure signal : Coherence with the atmospheric pressure
+P0087	High pressure fuel regulation : The measured rail pressure is too low in relation to theset point
+P0088	High pressure fuel regulation : The measured rail pressure is too high in relation to the set point
+P0089	Control of the fuel flow regulator : Fuel flow rate regulation valve control current incoherent
+P0091	Fuel flow regulation electrovalve : Short circuit to earth(Solenoid valve closed)
+P0092	Fuel flow regulation electrovalve : Short circuit to positive
+P0095	Intake air temperature signal (Inlet air manifold) : Coherence
+P0096	Intake air temperature signal (Inlet air manifold) : Value received incorrect
+P0097	Intake air temperature signal : Short circuit to earth
+P0098	Intake air temperature signal : Open circuit or short circuit to the plus
+P0100	Flowmeter signal : Air flow not plausible
+P0101	Flowmeter signal : Air flow not plausible
+P0102	Flowmeter signal : Measured flow less than the minimum flow
+P0106	Atmospheric pressure signal : Pressure change coherence
+P0107	Atmospheric pressure signal : Pressure change coherence
+P0108	Atmospheric pressure signal : Short circuit to positive, open circuit, or value too high
+P0111	Signal from the inlet air temperature sensor : Coherence in the evolution of the temperature
+P0112	Intake air temperature signal : Short circuit to earth, or value too low
+P0113	Intake air temperature signal : Open circuit or short circuit to the plus
+P0115	Engine coolant temperature signal : Coherence after starting with the engine cold
+P0116	Engine coolant temperature signal : Coherence in the evolution of the temperature
+P0117	Engine coolant temperature signal : Short circuit to earth
+P0118	Engine coolant temperature signal : Open circuit or short circuit to the plus
+P0181	Fuel temperature signal : Coherence in the evolution of the temperature
+P0182	Fuel temperature signal : Short circuit to earth
+P0183	Fuel temperature signal : Open circuit or short circuit to the plus
+P0191	Fuel pressure signal : Pressure change coherence
+P0192	Fuel pressure signal : Short circuit to earth
+P0193	Fuel pressure signal : Open circuit or short circuit to the plus
+P0201	Control of injector for cylinder n°1 : Open circuit
+P0202	Control of injector for cylinder n°2 : Open circuit
+P0203	Control of injector for cylinder n°3 : Open circuit
+P0204	Control of injector for cylinder n°4 : Open circuit
+P0215	Supply relay control : Open circuit or short circuit to positive or short circuit to earth
+P0222	Accelerator pedal track 1 signal : Short circuit to earth
+P0223	Accelerator pedal track 1 signal : Open circuit or short circuit to the plus
+P0227	Accelerator pedal track 2 signal : Short circuit to earth
+P0228	Accelerator pedal track 2 signal : Open circuit or short circuit to the plus
+P0234	Turbocharger pressure signal : Pressure too high in relation to the reference value
+P0236	Turbocharger pressure signal : Drift of the signal
+P0237	Turbocharger pressure signal : Short circuit to earth
+P0238	Turbo pressure regulation electrovalve control : Short circuit to positive
+P0243	Turbo pressure regulation electrovalve control : Open circuit
+P0245	Turbo pressure regulation electrovalve control : Short circuit to earth
+P0246	Turbo pressure regulation electrovalve control : Short circuit to positive
+P0262	Control of injector for cylinder n°1 : Current rise time too short
+P0263	Correction of injector flow rate cylinder 1 : Injection time too long or too short
+P0265	Control of injector for cylinder n°2 : Current rise time too short
+P0266	Correction of injector flow rate cylinder 2 : Injection time too long or too short
+P0268	Control of injector for cylinder n°3 : Current rise time too short
+P0269	Correction of injector flow rate cylinder 3 : Injection time too long or too short
+P0271	Control of injector for cylinder n°4 : Current rise time too short
+P0272	Correction of injector flow rate cylinder 4 : Injection time too long or too short
+P0299	Turbocharger pressure signal : Pressure too low in relation to the reference value
+P0335	Engine speed signal : No signal
+P0336	Engine speed signal : Absence of signal under starter
+P0337	Engine speed signal : Signal inconsistent
+P0339	Engine speed signal : Signal incorrect
+P0401	Air system fault : Measured quantity of air higher than the setting
+P0402	Air system fault : Measured quantity of air lower than the setting
+P0405	Electric EGR valve repeat signal fault : Signal voltage too low
+P0406	Electric EGR valve position copy signal : Signal voltage too high
+P0409	Electric EGR valve position copy signal : Valve sticking during the initialisation
+P0460	Fuel level : Coherence
+P0461	Fuel level : Information not valid
+P0470	Exhaust differential pressure sensor signal : Differential pressure coherence on starting
+P0471	Exhaust differential pressure sensor signal : Coherence of the temperature increase
+P0472	Exhaust differential pressure sensor signal : Short circuit to earth
+P0473	Exhaust differential pressure sensor signal : Short circuit to positive
+P0489	Position indicator signal of the EGR valve : Negative loop difference
+P0490	Electric EGR valve position copy signal : Positive loop gap
+P0495	Fan unit at high speed : Coherence
+P0500	Vehicle speed signal : Value received incorrect
+P0532	Pressostat information signal : Short circuit to earth or open circuit
+P0533	Pressostat signal : Short circuit to positive
+P0562	Battery voltage signal : Battery voltage too low
+P0563	Battery voltage signal : Battery voltage too high
+P0565	Communication on CAN : Cruise control error
+P0603	Injection electronic control unit : Memory surveillance fault
+P0606	Engine ECU : internal fault
+P0658	Common power supply 5 V No1 : Voltage too low
+P0659	Common power supply 5 V No1 : Voltage too high
+P0686	Power relay control : Short circuit to earth
+P0687	Power relay control : Short circuit to positive
+P0691	Fast speed cooling fan control : Short circuit to positive
+P0692	Fast speed cooling fan control : Open circuit or short circuit to earth
+P0693	Slow speed cooling fan control : Short circuit to positive
+P0694	Slow speed cooling fan control : Open circuit or short circuit to earth
+P0704	Clutch switch signal : No signal or signal not coherent
+P1114	Test of injection supply cut-off on stopping of engine : Stopping by means of fuel injector cut-off
+P1164	Fuel pressure signal : Drift from the rail pressure before starting
+P1165	Fuel high pressure information signal : Drift from the rail pressure before starting
+P1167	Fuel pressure regulation : Value received incorrect
+P1169	Voltage converter of the fuel injectors : Value received incorrect
+P1192	Test of injection supply cut-off on stopping of engine : Stopping by cutting of pressureand flow regulators
+P1193	Injectors control : Injector flow too low
+P1194	Injectors control : Injector jammed closed
+P1195	Injectors control : Injector stuck open
+P1197	Injectors control : Harness, injector, ECU power stage
+P1198	Fuel flow regulation electrovalve : Flow too low
+P11A2	Initialisation of the injectors : Programming not carried out
+P1210	Fuel pressure regulation electrovalve : Open circuit
+P12A1	Correction of injector flow rate cylinder 1 : Fuel injector wear
+P12A2	Correction of injector flow rate cylinder 1 : Injector jammed closed or cylinder problem
+P12A3	Correction of injector flow rate cylinder 1 : Injector leak
+P12A4	Correction of injector flow rate cylinder 2 : Fuel injector wear
+P12A5	Correction of injector flow rate cylinder 2 : Injector jammed closed or cylinder problem
+P12A6	Correction of injector flow rate cylinder 2 : Injector leak
+P12A7	Correction of injector flow rate cylinder 3 : Fuel injector wear
+P12A8	Correction of injector flow rate cylinder 3 : Injector jammed closed or cylinder problem
+P12A9	Correction of injector flow rate cylinder 3 : Fuel injector leak
+P12AA	Correction of fuel injector flow on cylinder 4 : Fuel injector wear
+P12AB	Correction of injector flow rate cylinder 4 : Injector jammed closed or cylinder problem
+P12AC	Correction of fuel injector flow on cylinder 4 : Fuel injector leak
+P1349	Pre-heating relay circuit : Open circuit or short circuit to the plus
+P1350	Pre-heating relay circuit : Control short-circuited to earth or open circuit
+P1351	Pre-heating relay circuit : Coherence
+P1352	Pre-heating relay circuit : Coherence
+P1354	Correction of injector flow rate cylinder 1 : MFMA injector resetting at limit
+P1356	Correction of injector flow rate cylinder 3 : MFMA injector resetting at limit
+P1357	Correction of injector flow rate cylinder 4 : MFMA injector resetting at limit
+P1365	Correction of injector flow rate cylinder 2 : MFMA injector resetting at limit
+P1366	Control of injector for cylinder n°1 : Injector voltage too low
+P1367	Control of injector for cylinder n°2 : Injector voltage too low
+P1368	Control of injector for cylinder n°3 : Injector voltage too low
+P1369	Control of injector for cylinder n°4 : Injector voltage too low
+P1403	Additional heating circuit 1 : Short circuit to earth, short circuit to positive, open circuit or actuator malfunction
+P1404	Additional heating circuit 2 : Short circuit to earth, short circuit to positive, open circuit or actuator malfunction
+P1429	Differential exhaust pressure signal : Reaction time too long
+P1434	Particle filter additive system : Excessive temperature or open circuit
+P1435	Additive system : No communication with additive ECU
+P1443	Particle filter additive system : Short circuit to earth
+P1444	Particle filter additive system : Short circuit to positive
+P1445	Particle filter additive system : Quantity of additive remaining in the tank too great
+P1446	Particle filter additive system : Insufficient quantity of additive remaining in the reservoir
+P1447	Exhaust differential pressure sensor signal : Clogged particle filter
+P1457	Particle filter fault : Particle filter holed or absent
+P1461	Electric EGR valve position copy signal : Difference between the stops programmed at long-term
+P1462	Electric EGR valve position copy signal : Difference between the stops programmed at short term
+P1471	Throttle control electrovalve (EGR) : Throttle open
+P1500	Communication on the network (CAN) : BSI information, Gearbox locked in reverse gear
+P1510	Automatic gearbox ECU reception : Diagnostic LED illumination request by the Automatic Gearbox  ç
+P1536	Brake switch signal : Coherence
+P1572	Alimentation du relais du démarreur : Voltage too low
+P1579	Cooling circuit degassing electrovalve
+P1580	Cooling circuit degassing electrovalve
+P1581	Cooling circuit degassing electrovalve
+P1597	Cooling circuit by-pass electrovalve
+P1598	Cooling circuit by-pass electrovalve
+P1599	Cooling circuit by-pass electrovalve
+P1607	Communication on CAN : Vehicle speed limiter error
+P1613	Configuration fault : ECU not configured
+P1614	Accelerator pedal point of resistance sensor information : No signal
+P1621	Engine ECU : internal fault
+P1624	Engine ECU : internal fault
+P1627	Engine ECU : internal fault
+P1631	Engine ECU : internal fault
+P1641	Injection electronic control unit : Power stage, injector control
+P1643	Particle filter additive system : Short circuit to earth
+P1644	Accelerator pedal point of resistance information fault : Short circuit to positive
+P1645	Accelerator pedal point of resistance sensor information : Plausibility
+P1667	Engine ECU : internal fault
+P1668	Engine ECU : internal fault
+P1669	Engine ECU : internal fault
+P1671	Engine ECU : Cruise control fault
+P1672	Engine ECU : internal fault
+P1693	Controlled engine starting and stopping : Starting or stopping requests absent or not valid
+P1694	Remote controlled ECU wake-up : Engine speed plausibility
+P1695	Remote controlled ECU wake-up : Battery voltage plausibility
+P1704	Brake switch signal : Consistency between 2 brake signals
+P2031	Catalytic converter downstream temperature signal : Implausible temperature before starting the engine
+P2032	Catalytic converter downstream temperature signal : Short circuit to positive
+P2033	Catalytic converter downstream temperature signal : Short circuit to earth
+P2084	Catalytic converter downstream temperature signal : Coherence in the evolution of the temperature
+P2122	Inlet air heater throttle electrovalve control : Short circuit to earth, Throttle closed
+P2123	Inlet air heater throttle electrovalve control : Short circuit to positive, Throttle open
+P2124	Inlet air heater throttle electrovalve control : Open circuit
+P2137	Accelerator pedal signal fault : Coherence with the other accelerator pedal signal
+P2141	Air mixer control : Short circuit to earth
+P2142	Air mixer control : Short circuit to positive
+P2143	Electric EGR valve control : Open circuit
+P2144	Electric EGR valve control : Short circuit to earth or short circuit to positive
+P2199	Intake air temperature signal : Plausibility
+P2299	Accelerator pedal signal : Coherence
+P2408	Additive system : Fuel tank cap sensor signal fault
+P2418	Exhaust heater electrovalve : Short circuit to positive
+P2419	Exhaust heater electrovalve : Short circuit to earth
+P2420	Exhaust heater electrovalve : Open circuit
+P2520	Air conditioning pressure signal : Open circuit or short circuit to earth
+P2521	Air conditioning pressure signal : Short circuit to positive
+P2562	Turbocharger position copy signal : Positive loop gap
+P2563	Negative gap between the reference turbo position and the position measured
+P2564	Turbocharger position copy signal : Short circuit to earth
+P2565	Turbocharger position copy signal : Voltage above the maximum threshold
+P2601	Exhaust heater electric water pump : Open circuit
+P2603	Exhaust heater electric water pump : Short circuit to positive
+P2670	Supply of sensors 5 Volts n°2 : Voltage too low
+P2671	Supply of sensors 5 Volts n°2 : Voltage too high
+P3007	Flowmeter signal : Air flow too low
+P3008	Flowmeter signal : Air flow too strong
+U0019	CAN communication : CAN Low Speed fault
+U0028	VAN communications : Fault on the Comfort VAN networks or the instrument panel
+U0046	Communication on the body VAN : Fault: additive ECU communications
+U0055	CAN communication : Absence of communication with the Comfort CAN network
+U0103	Communication on the network (CAN) : No communications with automatic gearbox
+U0121	CAN communication : Absence of communication with the ABS ECU
+U0122	CAN communication : Absence of communication with the ABS/ ESP ECU
+U0415	CAN communication : Value received by the ABS incorrect
+U0416	CAN communication : Incorrect value received by the ESP
+U1000	Communication on the network (CAN) : Engine ECU dead
+U1003	CAN communication : CAN bus absent
+U1118	CAN communication : Absence of communication with the BSI ECU
+U1218	CAN communication : Value received incorrect
+U2000	Remote controlled ECU wake-up : Partial wake-up request absent or not valid
+U2001	Remote Controlled Wake-up : Request for principal or partial wake-up, absent or invalid
+U2003	Remote Controlled Wake-up : Main wake-up request not plausible
+U2005	Remote controlled ECU wake-up : Plausibility between main wake-up and speed

@@ -1,0 +1,295 @@
+P0001	Petrol high pressure regulation electrovalve control fault : Open circuit
+P0003	Petrol high pressure regulation electrovalve control fault : Short circuit to earth
+P0004	Control of the fuel flow regulator : Short-circuit to the battery plus
+P000A	Inlet camshaft dephaser : Linked control fault
+P0010	Inlet variable timing electrovalve control fault : Open circuit
+P0011	Inlet camshaft dephasing : Fault with locking on starting
+P0012	Inlet camshaft dephasing : Linked control fault
+P0016	Synchronisation : Lack of coherence between the engine speed sensor information and theinlet camshaft sensor information
+P0030	Upstream oxygen sensor heating control : Open circuit or excess current
+P0031	Upstream oxygen sensor heating control : Short circuit to earth
+P0032	Upstream oxygen sensor heating control fault : Short-circuit to the battery plus
+P0033	Turbo pressure regulation solenoid valve control : Open circuit
+P0034	Turbo pressure regulation solenoid valve control : Short circuit to earth
+P0035	Turbo pressure regulation solenoid valve control : Short circuit to positive
+P0036	Downstream oxygen sensor heating control : Open circuit or excess current
+P0037	Downstream oxygen sensor heating control fault : Short circuit to earth
+P0038	Downstream oxygen sensor heating control fault : Short-circuit to the battery plus
+P0039	Électrovanne de décharge compresseur : Stuck closed
+P0053	Upstream oxygen sensor heating control : Open circuit or resistance too high
+P0054	Downstream oxygen sensor heating control : Resistance too high
+P0069	Air inlet circuit : Incoherence between the turbocharging pressure and atmospheric pressure at idle
+P0070	External air temperature information : Value received on CAN invalid
+P0072	External air temperature information : Value received by the CAN not plausible (Value too high)
+P0073	External air temperature information : Value received by the CAN not plausible (Value too low)
+P0087	Fuel circuit : The pressure measured in the injection rail is less than the setting
+P0088	Fuel circuit : Pression mesurée dans le rail carburant supérieure à la consigne
+P0095	Inlet air temperature sensor signal : Implausible value
+P0096	Inlet air temperature sensor signal : Value not plausible or fixed
+P0097	Inlet air temperature sensor signal : Short circuit to earth
+P0098	Inlet air temperature sensor signal : Open circuit or short circuit to Battery positive
+P0106	Inlet air pressure sensor signal : Pressure too high
+P0107	Inlet air pressure sensor signal : Short circuit to earth
+P0108	Inlet manifold pressure sensor signal fault : Short circuit to earth ; Short circuit topositive ; Open circuit
+P0109	Inlet air pressure sensor signal : Pressure too low or not plausible
+P0115	Engine coolant temperature signal : Value fixed
+P0116	Engine coolant temperature signal : Incohérence par rapport au modèle
+P0117	Engine coolant temperature signal : Short circuit to earth or coherence
+P0118	Engine coolant temperature signal : Short-circuit to the battery plus
+P0121	Throttle position sensor signal : Incoherence between the 2 tracks
+P0122	Motorised throttle housing position sensor track 1 signal : Short circuit to earth
+P0123	Motorised throttle housing position sensor track 1 signal : Short-circuit to the batteryplus or open circuit
+P0130	Upstream oxygen sensor signal : Open circuit
+P0131	Upstream oxygen sensor signal : Short circuit to earth
+P0132	Upstream oxygen sensor signal : Short-circuit to the battery plus
+P0133	Upstream oxygen sensor signal : Coherence
+P0138	Downstream oxygen sensor signal : Short-circuit to the battery plus
+P0140	Downstream oxygen sensor signal : Coherence
+P0171	Mixture regulation : Mixture too lean
+P0172	Mixture regulation : Mixture too rich
+P0192	Signal from the rail pressure sensor : Short circuit to earth
+P0193	Signal from the rail pressure sensor : Short circuit to battery + and open circuit
+P0201	Injector 1 control : Electrical fault
+P0202	Injector 2 control : Electrical fault
+P0203	Injector 3 control : Electrical fault
+P0204	Injector 3 control fault : Electrical fault
+P0215	Main relay control : Open circuit or malfunction of the relay
+P0220	Accelerator pedal sensor signal : Coherence between two switches
+P0222	Accelerator pedal sensor track 1 signal : Short circuit to earth
+P0223	Accelerator pedal sensor signal : Short circuit to + 5 V or open circuit track 1
+P0224	Accelerator pedal sensor signal : Precision of the sensor insufficient for release of the electric brake
+P0227	Accelerator pedal sensor signal : Short circuit to earth on 2 wire
+P0228	Accelerator pedal sensor signal : Short circuit to + 5 V or open circuit track 2
+P0234	Turbocharging circuit : Pressure too high
+P0235	Turbocharging pressure sensor signal : Plausibility
+P0237	Turbocharging pressure sensor signal : Short circuit to earth
+P0238	Turbocharging pressure sensor signal : Short-circuit to the battery plus
+P023A	Control of the coolant pump actuator : Open circuit
+P023B	Control of the coolant pump actuator : Short circuit to earth
+P023C	Control of the coolant pump actuator : Short-circuit to the battery plus
+P0243	Turbocharge regulation electrovalve control fault : Open circuit
+P0245	Turbocharge regulation electrovalve control fault : Short circuit to earth
+P0246	Turbocharge regulation electrovalve control fault : Short-circuit to the battery plus
+P0261	Injector 1 control : Short circuit to earth
+P0262	Injector 1 control : Short-circuit to the battery plus
+P0264	Injector 2 control : Short circuit to earth
+P0265	Injector 2 control fault : Short-circuit to the battery plus
+P0267	Injector 3 control : Short circuit to earth
+P0268	Injector 3 control : Short-circuit to the battery plus
+P0270	Injector 4 control : Short circuit to earth
+P0271	Injector 4 control : Short-circuit to the battery plus
+P0299	Turbocharging circuit : Pressure too low
+P0300	Combustion misfiring (pollution impact) : Cylinder undetermined
+P0301	Combustion misfiring (pollution impact) : No. 1 cylinder
+P0302	Combustion misfiring (pollution impact) : No. 2 cylinder
+P0303	Combustion misfiring (pollution impact) : No. 3 cylinder
+P0304	Misfiring fault on cylinders 4 : Not characterised
+P0313	Low fuel level signal : Minimum level reached
+P0318	Wheel speed information received from the ABS/ ESP fault : Invalid value
+P0324	Engine ECU : Knock calculation module fault
+P0325	Knock detector signal : Electrical fault or signal not plausible
+P0326	Knock detector signal : Not plausible
+P0327	Knock sensor signal : Short circuit to earth
+P0328	Knock detector signal : Short-circuit to the battery plus
+P0335	Signal capteur regime moteur : Loss of signal
+P0336	Signal capteur regime moteur : Not plausible
+P0340	Setting the valve timing : Inlet camshaft setting fault
+P0341	Inlet camshaft position sensor signal : Signal not plausible
+P0342	Inlet camshaft position sensor signal : Loss of signal
+P0343	Inlet camshaft position sensor signal : Loss of signal
+P0350	Ignition misfiring : Cylinder undetermined
+P0351	Ignition misfiring : No. 1 cylinder
+P0352	Ignition misfiring : No. 2 cylinder
+P0353	Ignition misfiring : No. 3 cylinder
+P0354	Ignition misfiring : No. 4 cylinder
+P0420	catalytic converter: Loss of effectiveness
+P0443	Canister discharge electrovalve control fault : Open circuit
+P0444	Canister discharge electrovalve control fault : Short circuit to earth
+P0445	Purge canister solenoid valve control : Short circuit to + battery
+P0461	Fuel level information (received by the CAN) : Not plausible
+P0462	Fuel level information (received by the CAN) : Short circuit to earth or not plausible
+P0463	Fuel level information (received by the CAN) : Open circuit
+P0494	Cooling fan status fault : Coherence
+P0500	Wheel speed information received from ABS/ ESP : Value not valid or absent
+P0504	Brake pedal switch signal : Lack of coherence between the 2 signals
+P0513	Unlock ECU : Code not valid
+P0520	Oil pressure sensor signal : Inconsistent value
+P0522	Oil pressure sensor signal : Short circuit to earth
+P0523	Oil pressure sensor signal : Short-circuit to the battery plus
+P0524	Lubrication system : Pressure too low in mechanical mode
+P0532	Air conditioning pressure sensor signal : Short circuit to earth or open circuit
+P0533	Air conditioning pressure sensor signal : Short circuit to + battery
+P0562	Battery voltage signal : Voltage too low
+P0563	Battery voltage signal : Tension trop élevée
+P0565	Cruise Control information : Not plausible or absent
+P0575	Vehicle speed limitation information : Not plausible or absent
+P0597	Piloted thermostat control : Open circuit
+P0598	Piloted thermostat control : Short circuit to earth
+P0599	Piloted thermostat control : Short-circuit to the battery plus
+P0602	Engine ECU : Internal fault
+P0603	Engine ECU : Engine immobiliser control module internal fault
+P0606	Engine ECU : Internal fault
+P0607	Engine ECU : Internal fault
+P060B	Engine ECU : Internal fault
+P0610	Configuration information : Not done or not valid
+P0612	Engine ECU : Internal fault
+P0615	Control of the starter motor : Open circuit
+P0616	Starter motor control : Short circuit to earth
+P0617	Control of the starter motor : Short-circuit to the battery plus
+P061F	Motorised throttle motor control : Coherence
+P0620	Signal from the piloted alternator (BSS line) : Coherence
+P0658	Sensors 5 volt supply : Tension invalide sur le régulateur 1
+P0659	Engine ECU : Internal fault on supply 1 (5 Volts)
+P065A	Piloted alternator : Mechanical failure
+P0668	Engine ECU : Temperature sensor short circuit to earth
+P0669	Engine ECU : Temperature sensor short circuit to battery positive
+P0685	Power relay control : Open circuit
+P0686	Power relay control : Short circuit to earth
+P0687	Power relay control : Short-circuit to the battery plus
+P0691	Control of cooling fan in fast speed : Open circuit or short circuit to earth
+P0692	Control of cooling fan in fast speed : Short circuit to positive
+P0693	Fan assembly low speed control : Open circuit or short circuit to earth
+P0694	Fan assembly low speed control : Short circuit to positive
+P0704	Clutch pedal switch signal : Signal absent
+P0805	Clutch pedal position repeat sensor signal : Not plausible
+P0806	Clutch pedal position repeat sensor signal : Not plausible
+P0807	Clutch pedal position repeat sensor signal : Short circuit to earth
+P0808	Clutch pedal position repeat sensor signal : Short-circuit to the battery plus
+P0812	Reverse gear information signal : Coherence
+P0830	Clutch pedal switch : Fault of plausibility between the clutch repeat sensor and the switch
+P0945	Oil pressure regulation solenoid valve control : Open circuit
+P0947	Oil pressure regulation solenoid valve control : Short circuit to earth
+P0948	Oil pressure regulation solenoid valve control : Short-circuit to the battery plus
+P0A1A	Signal from the piloted alternator (BSS line) : Value received incorrect
+P0A3B	Piloted alternator : Temperature too high
+P1153	Motorised throttle valve programming : Failed in the low stops
+P1166	Fuel circuit : Rail pressure too high
+P1186	Mixture regulation : Mixture too lean
+P1294	Petrol high pressure regulation fault : Fuel rail pressure too high (Level 1)
+P1297	Fuel circuit : Pressure measured in the injection rail too high
+P12A1	Injector 1 : Injector stuck open
+P12A4	Injector 2 : Injector stuck open
+P12A7	Injector 3 : Injector stuck open
+P12AA	Injector 4 : Injector stuck open
+P1336	Combustion misfiring (impact on catalytic converter) : Cylinder undetermined
+P1337	Combustion misfiring (impact on catalytic converter) : No. 1 cylinder
+P1338	Combustion misfiring (impact on catalytic converter) : No. 2 cylinder
+P1339	Combustion misfiring (impact on catalytic converter) : No. 3 cylinder
+P1340	Combustion misfiring (impact on catalytic converter) : No. 4 cylinder
+P1378	Combustion misfiring : Cylinder undetermined
+P1385	Super-knock information : Detection on injection cut-off
+P1395	Super-knock information : Detection
+P1396	Super-knock information : Detection
+P1403	Control of additional heating 1 : Open circuit, short circuit to positive, short circuitto earth
+P1404	Control of additional heating 2 : Open circuit, short circuit to positive, short circuitto earth
+P1536	Brake pedal switch signal : Lack of coherence between the 2 signals
+P15A0	Lubrication system : Oil pressure too high in mechanical mode
+P15A1	Lubrication system : Oil pressure too low in mechanical mode
+P15A2	Lubrication system : Variation in pressure
+P15A3	Oil pressure regulation solenoid valve control : Short circuit to + battery
+P15A4	Oil pressure regulation solenoid valve control : Short circuit to earth or open circuit
+P15A5	Oil pressure regulation solenoid valve control : Not plausible
+P15A6	Lubrication system : Pression d’huile trop élevée en mode régulé
+P15A7	Lubrication system : Pressure not consistent with the atmospheric pressure
+P15A8	Lubrication system : Pressure not consistent with the atmospheric pressure
+P15A9	Engine oil pressure sensor signal : Signal fixed
+P15AA	Oil pressure sensor signal : Signal jammed outside the operating range
+P15AB	Lubrication system : Fluctuation in pressure disturbing regulation of the system
+P160A	Downloading/Configuration : Approval number not entered
+P1621	Engine ECU : Internal fault
+P1623	Engine ECU : Internal fault
+P1624	Fuel circuit : Injection time not plausible
+P1625	Engine ECU : Internal fault (calculation of the engine speed)
+P1626	Engine ECU : Internal fault (calculation of mixture)
+P1627	Engine ECU : Internal fault
+P1631	Engine ECU : Internal fault
+P1632	Engine ECU : Internal fault (limitation of the torque)
+P1648	Engine ECU : Detection of setting of the software to zero
+P1653	Engine ECU : Internal fault (angle of ignition)
+P1655	Engine running information : Short circuit to + battery
+P1656	Engine running information : Short circuit to earth
+P1657	Engine running information : Open circuit
+P1664	Engine ECU : Internal fault (engine torque)
+P1694	Control of the starter motor : Starter operated but no rotation of the engine or drop involtage
+P1695	Control of the starter motor : Engine blocked detection
+P16B3	Engine coolant temperature signal : INCOHERENCE
+P2088	Control of the inlet camshaft dephaser solenoid valve : Short circuit to earth
+P2089	Control of the inlet camshaft dephaser solenoid valve : Short circuit to positive
+P2100	Control of the motorised throttle motor : Open circuit
+P2101	Control of the motorised throttle motor : Overheating or excess current
+P2102	Control of the motorised throttle motor : Short circuit to earth or short circuit to positive
+P2107	Engine ECU : Internal fault (motorised throttle housing control)
+P2121	Motorised throttle housing sensor signal : Signal 2 not coherent
+P2122	Motorised throttle housing sensor signal : Short circuit to earth or open circuit on signal 2
+P2123	Motorised throttle housing sensor signal (2 signal) : Short circuit to positive
+P2132	Accelerator pedal point of resistance switch signal : Short circuit to earth
+P2133	Accelerator pedal point of resistance switch signal : Short circuit to positive
+P2134	Accelerator pedal point of resistance switch signal : Implausible value
+P2137	Accelerator pedal sensor signal : Lack of coherence between the 2 signals
+P2140	Accelerator pedal sensor signal : Lack of coherence between the point of resistance information and the signals
+P2148	Injectors 1 and 4 control : Electrical fault
+P2151	Injectors 2 and 3 control : Electrical fault
+P2176	Motorised throttle housing sensor signal : Coherence of the Limp Home position
+P2187	Mixture regulation : Mixture too lean
+P2188	Mixture regulation : Mixture too rich
+P2191	Mixture regulation : Mixture too lean
+P2192	Mixture regulation : Mixture too rich
+P2195	Upstream oxygen sensor signal : Mixture too lean
+P2196	Upstream oxygen sensor signal : Mixture too rich
+P2227	Atmospheric pressure sensor signal : Voltage outside the tolerance
+P2228	Atmospheric pressure sensor signal : Value too low or short circuit to earth
+P2229	Atmospheric pressure sensor signal : Value too high or short circuit to battery positiveor open circuit
+P2232	Downstream oxygen sensor signal : Short circuit between the sensor signal and the heating signal
+P2261	Turbocharging circuit : Compressor discharge solenoid valve suspected jammed open
+P2262	Turbocharging circuit : Turbocharging regulation valve suspected jammed open
+P2263	Turbocharging circuit : Pressure too high
+P2270	Downstream oxygen sensor signal : Mixture too lean
+P2271	Downstream oxygen sensor signal : Mixture too rich
+P2279	Turbocharging circuit : Suspected leak
+P2299	Accelerator pedal sensor signal : Lack of coherence with the brake signal
+P2336	Super knock detection : No. 1 cylinder
+P2337	Super knock detection : No. 2 cylinder
+P2338	Super knock detection : No. 3 cylinder
+P2339	Super knock detection : No. 4 cylinder
+P250C	Oil level sensor signal : Short circuit to earth
+P250D	Oil level sensor signal : Short circuit to battery positive or open circuit
+P2600	Turbo cooling coolant pump control : Open circuit
+P2602	Turbo cooling coolant pump control : Short circuit to earth
+P2603	Turbo cooling coolant pump control : Short-circuit to the battery plus
+P2670	Sensors 5 volt supply : Tension invalide sur le régulateur 2
+P2685	Sensors 5 volt supply : Tension invalide sur le régulateur 3
+P2711	Automatic gearbox information : Lack of coherence between the CAN and the wire information
+P3010	Motorised throttle motor control : Regulation fault
+P3011	Motorised throttle unit : Throttle return spring fault
+P3012	Throttle position regulation fault : Opening spring ineffective
+P3013	Motorised throttle housing signal : Programming fault
+P3014	Motorised throttle housing signal : Programming fault
+P3015	Motorised throttle housing signal : Programming fault
+P3019	Upstream oxygen sensor signal fault : Ageing or coherence
+U0019	CAN network : Fault in communication between the engine fuse box (BSM) and the BSI
+U0028	CAN network : Diagnostic warning lamp (MIL) fault
+U0055	CAN network : Diagnostic warning lamp (MIL) fault
+U0073	CAN network : Communication fault on the CAN network
+U0103	CAN network : Communication fault with the gearbox ECU
+U0121	CAN network : Fault in communication with the ABS/ ESP ECU
+U0140	CAN network : Communication fault with the BSI ECU
+U0304	CAN network : Communication fault with the gearbox ECU
+U0305	CAN network : Lack of coherence of the Speed Limiter or Cruise Control information
+U0315	CAN network : Fault in communication with the ABS/ ESP ECU
+U0322	CAN network : Communication fault with the BSI ECU
+U0404	CAN network : Communication fault with the gearbox ECU
+U0415	CAN network : Fault in communication with the ABS/ ESP ECU
+U0422	CAN network : Communication fault with the BSI ECU
+U1000	CAN network : Communication fault with engine ECU
+U1109	CAN network : Communication fault with the gearbox ECU
+U1113	CAN network : Fault in communication with the ABS/ ESP ECU
+U1118	CAN network : Communication fault with the BSI ECU
+U1209	CAN network : Communication fault with the gearbox ECU
+U1213	CAN network : Fault in communication with the ABS/ ESP ECU
+U1218	CAN network : Communication fault with the BSI ECU
+U1309	CAN network : Communication fault with the gearbox ECU
+U1313	CAN network : Fault in communication with the ABS/ ESP ECU
+U1318	CAN network : Fault in communication with the ABS/ ESP ECU
+U2000	CAN network : Main wake-up fault
+U2003	CAN network : Lack of coherence between the CAN information and the remote triggering request
+U2118	CAN network : Partial wake-up fault

@@ -1,0 +1,200 @@
+P0010	Variable valve gear solenoid valve command : Coherence
+P0011	Variable valve gear solenoid valve command : Upper stops
+P0012	Variable valve gear solenoid valve command : Lower stops
+P0075	Variable valve gear solenoid valve command : Open circuit
+P0076	Variable valve gear solenoid valve command : Short circuit to earth
+P0077	Variable valve gear solenoid valve command : Short circuit to positive
+P0105	Pressure / butterfly position not coherent : Coherence
+P0106	Inlet manifold pressure sensor signal : Coherence
+P0107	Inlet manifold pressure sensor signal : Short circuit to earth
+P0108	Inlet manifold pressure sensor signal : Short circuit to positive or open circuit
+P0111	Intake air temperature signal : Malfunction
+P0112	Intake air temperature signal : Short circuit to earth
+P0113	Intake air temperature signal : Short circuit to positive or open circuit
+P0115	Engine coolant temperature sensor signal : Coherence
+P0116	Engine coolant temperature sensor signal : Coherence
+P0117	Engine coolant temperature sensor signal : Short circuit to earth
+P0118	Engine coolant temperature sensor signal : Short circuit to positive or open circuit
+P0121	Motorised throttle, incoherence between signals 1 and 2 : Coherence
+P0122	Motor-driven throttle unit, signal 1: not characterized : Short circuit to earth
+P0123	Motor-driven throttle unit, signal 1: not characterized : Short circuit to positive or open circuit
+P0130	Upstream oxygen sensor signal : Short circuit to positive
+P0131	Upstream oxygen sensor signal : Short circuit to earth
+P0132	Upstream oxygen sensor signal : Short circuit to positive or open circuit
+P0133	Mixture regulation : Malfunction
+P0134	Upstream oxygen sensor signal : Coherence
+P0135	Upstream oxygen sensor heating control : Short circuit to earth or short circuit to positive
+P0136	Downstream oxygen sensor signal : Short circuit to positive
+P0137	Downstream oxygen sensor signal : Short circuit to earth
+P0138	Downstream oxygen sensor signal : Short circuit to positive or open circuit
+P0140	Downstream oxygen sensor signal : Coherence
+P0141	Downstream oxygen sensor heating control : Short circuit to earth or short circuit to positive
+P0170	Fuel injection : Malfunction
+P0171	Mixture regulation : Low stop
+P0172	Mixture regulation : High stop
+P0201	Injector 1 control : Open circuit
+P0202	Injector 2 control : Open circuit
+P0203	Injector 3 control : Open circuit
+P0204	Injector 4 control : Open circuit
+P0215	Supply relay control : Short-circuit to positive, short-circuit to earth, open circuit
+P0220	Accelerator pedal sensor, lack of coherence of signals 1 and 2 : Not characterised
+P0221	Accelerator pedal sensor, lack of coherence of signals 1 and 2 : Not characterised
+P0222	Accelerator pedal sensor signal 1 : Short circuit to earth
+P0223	Accelerator pedal sensor signal 1 : Short circuit to positive or open circuit
+P0227	Accelerator pedal sensor signal 2 : Short circuit to earth
+P0228	Accelerator pedal sensor signal 2 : Short circuit to positive or open circuit
+P0240	Inlet manifold pressure sensor signal : Coherence
+P0261	Injector 1 control : Short circuit to earth
+P0262	Injector 1 control : Short circuit to positive
+P0264	Injector 2 control : Short circuit to earth
+P0265	Injector 2 control : Short circuit to positive
+P0267	Injector 3 control : Short circuit to earth
+P0268	Injector 3 control : Short circuit to positive
+P0270	Injector 4 control : Short circuit to earth
+P0271	Injector 4 control : Short circuit to positive
+P0300	Misfiring on several cylinders or undetermined cylinder : Not characterised
+P0301	Misfiring on cylinder 1 : Not characterised
+P0302	Misfiring on cylinder 2 : Not characterised
+P0303	Misfiring on cylinder 3 : Not characterised
+P0304	Misfiring on cylinder 4 : Not characterised
+P0326	Knock sensor signal : Open circuit
+P0327	Knock sensor signal : Coherence
+P0329	Knock sensor signal : Short circuit to earth or short circuit to positive
+P0335	Engine speed sensor signal : Short-circuit to positive, short-circuit to earth, open circuit
+P0336	Cylinder reference sensor signal : Coherence
+P0339	Engine speed sensor signal : Loss of synchronisation
+P0341	Cylinder reference sensor signal : Short-circuit to positive, short-circuit to earth, open circuit
+P0351	1 ignition coil control : Short circuit to positive or open circuit
+P0352	2 ignition coil control : Short circuit to positive or open circuit
+P0353	3 ignition coil control : Short circuit to positive or open circuit
+P0354	4 ignition coil control : Short circuit to positive or open circuit
+P0410	Air injection to the exhaust : Malfunction
+P0413	Air pump relay control : Open circuit
+P0414	Air pump relay control : Short circuit to earth or short circuit to positive
+P0420	Catalytic converter ageing : Loss of effectiveness
+P0444	Canister discharge electrovalve control : Short circuit to earth
+P0445	Canister discharge electrovalve control : Short circuit to positive
+P0446	Canister discharge electrovalve control : Open circuit
+P0461	Fuel gauge information received from the BSI : Value received incorrect
+P0462	Fuel gauge information received from the BSI : Short circuit to earth
+P0463	Fuel gauge information received from the BSI : Open circuit
+P0480	High speed fan (fan1) relay control : Short-circuit to positive, short-circuit to earth,open circuit
+P0481	Low speed fan (fan2) relay control : Short-circuit to positive, short-circuit to earth,open circuit
+P0483	Engine cooling fan status : Short-circuit to positive, short-circuit to earth, open circuit
+P0485	Engine cooling fan status : Coherence
+P0493	Lack of coherence between the speed requested of the fan assembly and the fan assembly diagnostics information line : Coherence
+P0494	Lack of coherence between the low speed requested of the fan assembly and the fan assembly diagnostics information line : Coherence
+P0495	Fault concerning a lack of coherence between the high speed requested of the fan assembly and the fan assembly diagnostics information line or variable speed fan assembly status fault : Coherence
+P0500	Vehicle speed information on the CAN incorrect : Malfunction
+P0502	Vehicle speed signal : Short circuit to earth
+P0503	Vehicle speed signal : Short circuit to positive or open circuit
+P0532	Air conditioning pressure signal : Short circuit to earth or open circuit
+P0533	Air conditioning pressure signal : Short circuit to positive
+P0551	Power steering stop information : Coherence
+P0553	Power steering stop information : Coherence
+P0562	Battery voltage : Voltage too low
+P0563	Battery voltage : Voltage too high
+P0571	Stop switches : Coherence
+P0597	Piloted thermostat control : Open circuit
+P0598	Piloted thermostat control : Short circuit to earth
+P0599	Piloted thermostat control : Short circuit to positive
+P0602	ECU not downloaded : Not characterised
+P0606	Computer : Not characterised
+P0608	Pedal and throttle position sensors supply : Short circuit to earth or short circuit topositive
+P0609	Supply of the manifold pressure sensors, phase sensors, aircon pressure sensors : Shortcircuit to earth or short circuit to positive
+P0615	Starter motor management control : Open circuit
+P0616	Starter motor management control : Short circuit to earth
+P0617	Starter motor management control : Short circuit to positive
+P0658	Pedal and throttle position sensors supply : Short circuit to earth
+P0659	Pedal and throttle position sensors supply : Short circuit to positive
+P0686	Petrol pump relay control : Short circuit to earth or open circuit
+P0687	Petrol pump relay control : Short circuit to positive
+P0691	High speed fan (fan1) relay control : Short circuit to earth
+P0692	High speed fan (fan1) relay control : Short circuit to positive or open circuit
+P0693	Low speed fan (fan2) relay control : Short circuit to earth
+P0694	Low speed fan (fan2) relay control : Short circuit to positive or open circuit
+P0704	Clutch switch signal : Malfunction
+P0812	Manual gearbox reverse gear information : Malfunction
+P0830	Lack of coherence between the switch and the clutch pedal position sensor : Coherence
+P1055	Variable valve gear solenoid valve command : Open circuit
+P1056	Variable valve gear solenoid valve command : Short circuit to earth
+P1057	Variable valve gear solenoid valve command : Short circuit to positive
+P1133	Throttle position incoherence, track 1 / pressure : Coherence
+P1134	Throttle position incoherence, track 2 / pressure : Coherence
+P1152	Computer : Not characterised
+P1153	Programming of the throttle stops : Malfunction
+P1157	Motor-driven throttle unit, signal 2: not characterized : Short circuit to earth
+P1158	Motor-driven throttle unit, signal 2: not characterized : Short circuit to positive or open circuit
+P1160	Inlet air manifold : Air leak
+P1161	Butterfly position check : Coherence
+P1336	Considerable misfiring on several cylinders : Not characterised
+P1337	High combustion misfiring on cylinder 1 : Not characterised
+P1338	High combustion misfiring on cylinder 2 : Not characterised
+P1339	High combustion misfiring on cylinder 3 : Not characterised
+P1340	High combustion misfiring on cylinder 4 : Not characterised
+P1601	Petrol pump relay control : Short-circuit to positive, short-circuit to earth, open circuit
+P1607	Vehicle speed limiter : Plausibility
+P1612	Coded engine immobiliser generation 2 : Immobiliser write failed
+P1613	Configuration : Not characterised
+P1614	Accelerator pedal hard point switch signal : Coherence
+P1617	Computer : Not characterised
+P1621	System fault : Safety
+P1622	Incoherence between the various butterfly angle and intake pressure information : Safety
+P1623	Engine torque delivered : Safety
+P1624	Incorrect ESP request : Safety
+P1625	Incorrect ESP request : Safety
+P1626	Incoherent information relating to the automatic gearbox : Safety
+P1627	Failure to comply with torque requested by driver : Safety
+P1628	Incoherent information from the brake switch or accelerator pedal sensor : Safety
+P1629	Incoherence between estimated and actual mechanical friction : Safety
+P1630	Incoherent cruise control demand : Safety
+P1631	Computer : Not characterised
+P1643	Accelerator pedal hard point switch signal : Short circuit to earth
+P1644	Accelerator pedal hard point switch signal : Short circuit to positive or open circuit
+P1645	Accelerator pedal hard point switch signal : Coherence
+P1655	Engine running information : Short circuit to positive
+P1656	Engine running information : Short circuit to earth
+P1657	Engine running information : Open circuit
+P1671	Cruise control : Not characterised
+P1674	Piloted Alternator mechanics : Not characterised
+P1675	Piloted Alternator electrics : Not characterised
+P1676	Communication with the piloted alternator : Not characterised
+P1693	Controlled engine starting and stopping control reception anomaly : Value received incorrect
+P1694	Controlled engine starting and stopping : Starter anomaly
+P1695	Controlled engine starting and stopping : Motor jammed
+P2100	Motorised throttle control : Open circuit
+P2101	Motorised throttle control : Malfunction
+P2102	Motorised throttle control : Short circuit to earth
+P2103	Motorised throttle control : Short circuit to positive
+P2131	Accelerator pedal hard point switch signal : Not characterised
+P2132	Accelerator pedal hard point switch signal : Short circuit to earth
+P2133	Accelerator pedal hard point switch signal : Short circuit to positive
+P2137	Accelerator pedal sensor, lack of coherence of signals 1 and 2 : Coherence
+P2140	Accelerator pedal hard point switch signal : Coherence
+P2299	Accelerator pedal sensor jammed : Malfunction
+P250B	Electric oil gauge : Coherence
+P250C	Electric oil gauge : Voltage too low
+P250D	Electric oil gauge : Voltage too high
+P3021	Relay control of the electropump of the cold start system : Open circuit
+P3022	Relay control of the electropump of the cold start system : Short circuit to positive
+P3023	Relay control of the electropump of the cold start system : Short circuit to earth
+P3031	Control of the solenoid valve of the cold start system : Open circuit
+P3032	Control of the solenoid valve of the cold start system : Short circuit to positive
+P3033	Control of the solenoid valve of the cold start system : Short circuit to earth
+U0019	No communication on the CAN : Coherence
+U0028	Communication on the comfort CAN or the body CAN : Coherence
+U0037	Communication on the body CAN : Not characterised
+U0055	Communication on the comfort CAN or the body CAN : Coherence
+U0103	Communication with the gearbox ECU : No signal
+U0121	Communication with the ABS ECU : No signal
+U0122	Communiation with the ESP ECU : No signal
+U0404	Communication with the gearbox ECU : Value received incorrect
+U0415	Communication with the ABS ECU : Value received incorrect
+U0416	Information transmitted by the dynamic stability control ( ESP) ECU : Value received incorrect
+U1000	The engine ECU no longer communicates on the network : Not characterised
+U1003	No communication on the CAN : Coherence
+U1118	Communication with the BSI : No signal
+U1218	Communication with the BSI : Value received incorrect
+U2000	Remote Controlled Wake-Up (RCD) : Main wake-up fault : Not characterised
+U2003	Remote Controlled Wake-Up (RCD) : Incoherence between main wake-up and electrical signal: Not characterised
+U2118	Remote Controlled Wake-Up (RCD) : Partial wake-up fault : Not characterised
