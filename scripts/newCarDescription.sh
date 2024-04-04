@@ -13,7 +13,6 @@ mkdir -p "${desc}"
 brand=Example
 engine=Example engine
 model=Example model
-codes=codes.tsv
 EOF
 >${codesFile}
 echo "Created at ${desc} ..."
