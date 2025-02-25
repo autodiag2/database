@@ -1,3 +1,413 @@
+B1013	Seat Weight Sensor Calibration Error
+B1014	Rain Sensor/Auto Light Sensor Malfunction
+B1016	Jump Start Control Module Fault
+B1031	SDARS Satellite Antenna Open
+B1032	SDARS Satellite Antenna Short
+B1046	Driver–Side Curtain Air Bag Module And Other Air Bag Module Circuits Short
+B1047	Driver-Side Side Air Bag Module And Other Air Bag Module Circuits Short
+B1048	Passenger-Side Air Bag Module (Inflator No.1) And Other Air Bag Module Circuits Short
+B1049	"Passenger-Side Pre-Tensioner Seat Belt And Other Air Bag
+B104B	Driver–Side Side Air Bag Sensor No.1 And Other Sensor Circuits Short To Power Supply
+B104C	Passenger–Side Side Air Bag Sensor No.1 And Other Sensor Circuits Short To Power Supply
+B104D	Crash Zone Sensor And Other Sensor Circuits Short To Power Supply
+B104E	Driver–Side Side Air Bag Sensor No.1 Circuit Open Or Short
+B104F	Passenger–Side Side Air Bag Sensor No.1 (Internal Circuit Abnormal)
+B1050	Passenger–Side Side Air Bag Sensor No.1 Circuit Open Or Short
+B1051	Driver–Side Side Air Bag Sensor No.1 (Internal Circuit Abnormal)
+B1054	Driver-Side Pre-Tensioner Seat Belt And Other Air Bag Module Circuits Short
+B1055	Passenger–Side Side Air Bag Module And Other Air Bag Module Circuits Short
+B1056	"Passenger–Side Curtain Air Bag Module And Other Air Bag
+B1057	"Driver-Side Air Bag Module (Inflator No.1) And Other Air Bag
+B1058	"Driver–Side Air Bag Module (Inflator No.2) And Other Air Bag
+B1059	Passenger–Side Air Bag Module (Inflator No.2) And Other Air Bag Module Circuits Short
+B105A	SAS Control Module Activation (Deployment) Control Frequency Error
+B105B	Short To The Driver-Side Side Air Bag Sensor No.2 Circuit And Other Sensor Circuits
+B105F	Short To The Passenger-Side Side Air Bag Sensor No.2 Circuit And Other Sensor Circuits
+B106A	TPMS Sensor Pressure Range Bit Incorrect State
+B106B	Tire Pressure Sensor Low Battery
+B106C	Tire Pressure Monitor System (TPMS) Low Frequency Subsystem Fault
+B106D	TPMS Initiators Not Configured
+B106E	Solid State Driver Disabled Due to Short Circuit
+B106F	Module Disabled Due to External Fault
+B1093	Steering Lock Unit Communication Error
+B110C	Driver-Side Side Air Bag Sensor No.2 Circuit Short To Power Supply Or Body Ground
+B110D	Passenger-Side Side Air Bag Sensor No.2 Circuit Short To Power Supply Or Body Ground
+B110E	Driver-Side Side Air Bag Sensor No.2 ID Mismatch
+B110F	Passenger-Side Side Air Bag Sensor No.2 ID Mismatch
+B1117	Audio Steering Wheel Button Stuck
+B1119	Audio Disc DVD Player Thermal Shutdown
+B1126	Steering Lock Unit Internal Malfunction
+B1127	Keyless Antenna (trunk)
+B1128	Keyless Antenna (Interior, Middle)
+B1129	Keyless Antenna (CENTER)
+B112A	Keyless Antenna (Interior, Front)
+B1131	Keyless Antenna (rear)
+B1132	Keyless Antenna (Exterior, LF)
+B1133	Keyless Antenna (Exterior, RF)
+B1134	Unprogrammed Card Key
+B1136	Audio Steering Wheel Switch #2 Circuit Failure
+B1137	Data Not Programmed
+B1138	Memory Full
+B1139	Invalid Transmitter Identification Code
+B1140	Map Disk Invalid
+B1143	Excessive Battery Contactor Close Requests
+B1144	Driver-Side Side Air Bag Sensor No.2 Internal Malfunction
+B1145	Driver-Side Side Air Bag Sensor No.2 (Communication Error)
+B1146	Passenger-Side Side Air Bag Sensor No.2 Internal Malfunction
+B1147	Passenger-Side Side Air Bag Sensor No.2 (Communication Error)
+B1155	Subwoofer #1 Short to Battery
+B1158	Subwoofer #2 Open
+B1200	Climate Control Pushbutton Circuit Failure
+B1202	Fuel Gauge Sender Unit Circuit Malfunction (Open Circuit)
+B1204	Fuel Gauge Sender Unit Circuit Malfunction (Short To Ground)
+B1205	EIC Switch-1 Assembly Circuit Failure
+B1206	EIC Switch-1 Assembly Circuit Open
+B1208	EIC Switch-1 Assembly Circuit Short To Ground
+B1213	Only One Key ID Number Is Registered
+B1231	SAS Control Module Activation (Deployment) Control Freeze
+B1232	Antenna Not Connected— Defective PATS Transceiver
+B1239	Air Flow Blend Door Driver Circuit Failure
+B1251	Passenger Compartment Temperature Sensor Circuit Open
+B1253	Passenger Compartment Temperature Sensor Circuit Short (Body Ground)
+B1255	Air Temperature External Sensor Circuit Open
+B1257	Air Temperature External Sensor Circuit Short To Ground
+B129B	Driver Blend Door Actuator, Drive Circuit(s) Shorted to Battery Voltage
+B129C	Driver Blend Door Actuator, Feedback Circuit Open or Shorted to Battery Voltage
+B129D	Driver Blend Door Actuator, Feedback Circuit Shorted to Ground
+B129F	Passenger Blend Door Actuator, Drive Circuit(s) Shorted to Battery Voltage
+B12A0	Passenger Blend Door Actuator, Feedback Circuit Open or Shorted to Battery Voltage
+B12A1	Passenger Blend Door Actuator, Feedback Circuit Shorted to Ground
+B12A2	Passenger Blend Door Actuator, Slow or Door Obstructed
+B12A4	Mode Door Actuator, Drive Circuit(s) Shorted to Battery Voltage
+B12A5	Mode Door Actuator, Feedback Circuit Open or Shorted to Battery Voltage
+B12A6	Mode Door Actuator, Feedback Circuit Shorted to Ground
+B12A7	Mode Door Actuator, Slow or Door Obstructed
+B12A9	Recirculation Door Actuator, Drive Circuit(s) Shorted to Battery Voltage
+B12AB	Drivers Heated Seat Relay Drive Circuit Shorted to Battery Voltage
+B12AC	Drivers Heated Seat Relay Drive Circuit Open or Shorted to Ground
+B12AD	Drivers Heated Seat Relay Drive Circuit Open or Shorted to Ground
+B12AE	Passenger Heated Seat Relay Drive Circuit Open or Shorted to Ground
+B12AF	Front Blower Motor Relay Drive Circuit Shorted to Battery Voltage
+B12B0	Front Blower Motor Relay Drive Circuit Open or Shorted to Ground
+B12B1	Front Blower Motor PWM Drive Circuit Shorted to Battery Voltage
+B12B2	Front Blower Motor PWM Drive Circuit Open or Shorted to Ground
+B12B3	Blend Door Actuator, Drive Circuit(s) Shorted to Battery Voltage
+B12B5	Blend Door Actuator, Feedback Circuit Open or Shorted to Battery Voltage
+B12B6	Blend Door Actuator, Feedback Circuit Shorted to Ground
+B12B7	Blend Door Actuator, Slow or Door Obstructed
+B12B8	Blend Door Actuator, Slow or Door Obstructed
+B12B9	Vref (5V) Drive Circuit Shorted to Battery Voltage
+B12BA	Vref (5V) Drive Circuit Shorted to Ground
+B12BE	Heated Backlight/Mirror Relay Drive Circuit Shorted to Battery Voltage
+B12BF	Heated Backlight/Mirror Relay Drive Circuit Open or Shorted to Ground
+B1302	Accessory Delay Relay Coil Circuit Failure
+B1304	Accessory Delay Relay Coil Circuit Failure
+B1311	Door Lock-Link Switch Circuit (Unlock) Failure
+B1317	Battery Power Supply Voltage High
+B1318	Low Power Supply Circuit Voltage
+B1320	Driver Door Ajar Circuit Open
+B1322	Drive Door Ajar Circuit Short To Ground
+B1328	Passenger Door Ajar Circuit Open
+B1330	Passenger Door Ajar Circuit Short To Ground
+B1331	Decklid Ajar Rear Door Circuit Failure
+B1336	Door Ajar RR Circuit Open
+B1342	PCM Malfunction
+B1352	Ignition Key-In Circuit Failure
+B1472	Lamp Headlamp Input Circuit Short to Ground
+B1483	Brake Pedal Input Circuit Failure
+B1484	Brake Switch System
+B1485	Brake Pedal Input Short to Battery
+B1506	Turn Signal Right Circuit Short To Ground
+B1510	Flash To Pass Switch Circuit Short to Ground
+B1520	Bonnet Latch Switch Circuit Open
+B1572	Door Ajar LR Circuit Open
+B1578	Lamp Park Input Circuit Short To Ground
+B1600	The Key ID Number Data Cannot Be Read
+B1601	The Instrument Cluster Has Detected Unregistered Key ID Number
+B1602	The Instrument Cluster Cannot Read Key ID Number Data Normally
+B1614	Rear Wiper Interval Switch Input Circuit Short To Ground
+B1624	Lamp Keypad Output Open Circuit
+B1626	Lamp Keypad Output Short Circuit to Ground
+B1676	Battery Pack Voltage Out of Range
+B1681	No Detected Communication With The Coil Antenna
+B1685	Lamp Dome Input Circuit Failure
+B1688	Lamp Dome Input Circuit Short to Ground
+B1696	Autolamp On Circuit Short To Ground
+B1791	Autolamp Sensor Input Circuit Open
+B1793	Autolamp Sensor Input Circuit Short to Ground
+B1868	Air Bag Warning System Light Malfunction
+B1869	Lamp Air Bag Warning Indicator Circuit Open / Short to Body Ground
+B1870	Lamp Air Bag Warning Indicator Circuit Short to Battery
+B1877	Driver-Side Pre-Tensioner Seat Belt Circuit Resistance High
+B1878	Driver-Side Pre-Tensioner Seat Belt Circuit Short To Power Supply
+B1879	Driver-Side Pre-Tensioner Seat Belt Circuit Short To Body Ground
+B1881	Passenger-Side Pre-Tensioner Seat Belt Circuit Resistance High
+B1882	Passenger-Side Pre-Tensioner Seat Belt Circuit Short To Power Supply
+B1883	Passenger-Side Pre-Tensioner Seat Belt Circuit Short To Body Ground
+B1884	Passenger Air Bag Deactivation (PAD) Indicator Circuit Open Or Short To Body Ground
+B1885	Driver-Side Pre-Tensioner Seat Belt Circuit Resistance Low
+B1886	Passenger-Side Pre-Tensioner Seat Belt Circuit Resistance Low
+B1890	Passenger Air Bag Deactivation (PAD) Indicator Circuit Short To Power Supply
+B1916	Driver-Side Air Bag Module (Inflator No.1) Circuit Short To Power Supply
+B1921	Air Bag Diagnostic Monitor Ground Circuit Open
+B1925	Passenger-Side Air Bag Module (Inflator No.1) Circuit Short To Power Supply
+B1932	Driver-Side Air Bag Module (Inflator No.1) Circuit Resistance High
+B1933	Passenger-Side Air Bag Module (Inflator No.1) Circuit Resistance High
+B1934	Driver-Side Air Bag Module (Inflator No.1) Circuit Resistance Low
+B1935	Passenger-Side Air Bag Module (Inflator No.1) Circuit Resistance Low
+B1936	Driver-Side Air Bag Module (Inflator No.1) Circuit Short To Body Ground
+B1938	Passenger-Side Air Bag Module (Inflator No.1) Circuit Short To Body Ground
+B1992	Driver–Side Side Air Bag Module Circuit Short To Power Supply
+B1993	Driver–Side Side Air Bag Module Circuit Short To Body Ground
+B1994	Driver–Side Side Air Bag Module Circuit Resistance High
+B1995	Driver–Side Side Air Bag Module Circuit Resistance Low
+B1996	Passenger-side Side Air Bag Module Circuit Short To Power Supply
+B1997	Passenger-side Side Air Bag Module Circuit Short To Body Ground
+B1998	Passenger-side Side Air Bag Module Circuit Resistance High
+B1999	Passenger-side Side Air Bag Module Circuit Resistance Low
+B2008	Wipers On Signal Circuit Short to Ground
+B2031	Left Corner Lamp Output Circuit Failure
+B2032	Right Corner Lamp Output Circuit Failure
+B2044	Left Rear Stop Lamp Circuit Short to Ground
+B2045	Left Rear Stop Lamp Circuit Open
+B2046	Right Rear Stop Lamp Circuit Short to Ground
+B2047	Right Rear Stop Lamp Circuit Open
+B2048	Left Rear Turn Lamp Circuit Short to Ground
+B2049	Left Rear Turn Lamp Circuit Open
+B2050	Right Rear Turn Lamp Circuit Short to Ground
+B2051	Right Rear Turn Lamp Circuit Open
+B2071	Hazard Switch Signal Short to Ground
+B2077	Liftgate Ajar Sw Circuit Failure
+B2097	Compass Module Failure
+B2100	Door Driver Key Cylinder Switch Failure
+B2103	Coil Antenna Malfunction
+B2108	Trunk Key Cylinder Switch Failure
+B2139	ID Number Data In The PCM And The Instrument Cluster Do Not Match
+B2141	Communication Error Between The Instrument Cluster and the PCM (data transfer error)
+B2143	ID Registration Failure
+B2170	Push Switch (Steering Lock Unit)
+B2172	Inertia Switch Input Circuit Open
+B2204	GPS Antenna Connection Open or Short
+B2212	Panel Dim Switch Out of Range
+B2218	Door Lock Switch Circuit Short To Ground
+B2226	Crash Zone Sensor Internal Circuit Disabled
+B2227	Crash Zone Sensor Communication Error
+B2228	Driver-side Air Bag Module (Inflator No.2) Circuit Short To Body Ground
+B2229	Passenger-side Air Bag Module (Inflator No.2) Circuit Short To Body Ground
+B2230	Driver-side Air Bag Module (Inflator No.2) Circuit Short To Power Supply
+B2231	Passenger-side Air Bag Module (Inflator No.2) Circuit Short To Power Supply
+B2232	Driver-side Air Bag Module (Inflator No.2) Circuit Resistance High
+B2233	Passenger-side Air Bag Module (Inflator No.2) Circuit Resistance High
+B2234	Driver-side Air Bag Module (Inflator No.2) Circuit Resistance Low
+B2235	Passenger-side Air Bag Module (Inflator No.2) Circuit Resistance Low
+B2254	Front Fog Lamp Switch Failure
+B2274	Phone Transceiver Active Circuit Failure
+B2276	Less Than 2 Transmitters Programmed
+B2277	Electronic Power Steering Motor Malfunction
+B2278	Steering Shaft Torque Sensor Malfunction
+B227B	Steering Shaft Position Sensor Malfunction
+B2281	Right Turn Switch Short to Ground
+B2282	Left Turn Switch Short to Ground
+B2290	Passenger Sensing System Malfunction
+B2384	Audio Reverse Aid Mute Input Ckt. Failure
+B2404	Audio Steering Wheel Switch Circuit Fault
+B2406	Audio Disc CD Player Internal Fault
+B241A	Touch Sensor Circuit Malfunction
+B2425	Remote Keyless Entry Out of Synchronization
+B2426	Passenger Solar Radiation Sensor Circuit Open
+B2427	Passenger Solar Radiation Sensor Circuit Short to Ground
+B2431	Key ID Number Registration Error
+B2477	Module Configuration Error
+B2479	Park Brake Switch Circuit Short to Ground
+B2498	Headlamp Switch Multiple Signals Input Active
+B2572	Brake Shift Interlock Output Circuit Failure
+B2574	Driver Door Lock Switch Short To Ground
+B2656	DVD (Digital Versatile Disk) Error
+B2666	Liftgate Release Switch Circuit Failure
+B2667	Liftglass Release Switch Circuit Failure
+B266A	Rotation Sensor Circuit Malfunction
+B266B	Rotation Sensor A Circuit Malfunction
+B266C	Rotation Sensor B Circuit Malfunction
+B266E	Rotation Sensor Malfunction
+B267A	Half Latch Switch Circuit Malfunction
+B267B	Full Latch Switch Circuit Malfunction
+B267C	Return Switch Circuit Malfunction
+B2699	PLG Touch Sensor (LH) Circuit Malfunction
+B2700	PLG Touch Sensor (RH) Circuit Malfunction
+B2701	PLG Touch Sensor (LH) Circuit Malfunction
+B2702	PLG Touch Sensor (RH) Circuit Malfunction
+B273A	Liftgate Release Output Circuit Shorted to Ground
+B273B	Liftgate Release Output Circuit Open or Shorted to Battery Voltage
+B2741	Combined Sensor System
+B2773	Driver–Side Curtain Air Bag Module Circuit Resistance Low
+B2774	Driver–Side Curtain Air Bag Module Circuit Resistance High
+B2775	Driver–Side Curtain Air Bag Module Circuit Short To Body Ground
+B2776	Driver–Side Curtain Air Bag Module Circuit Short To Power Supply
+B2777	Passenger–Side Curtain Air Bag Module Circuit Resistance Low
+B2778	Passenger–Side Curtain Air Bag Module Circuit Resistance High
+B2779	Passenger–Side Curtain Air Bag Module Circuit Short To Body Ground
+B2780	Passenger–Side Curtain Air Bag Module Circuit Short To Power Supply
+B2783	Interior Humidity Sensor to DATC Short Circuit
+B2784	Interior Humidity Sensor to DATC Open Circuit
+B2794	3rd Row Power Fold Circuit Failure
+B2795	Driver Solar Radiation Sensor Circuit Short to Ground
+B2796	Driver Solar Radiation Sensor Circuit Open
+B2821	Closure Motor Circuit Malfunction
+B2826	Front Evaporator Temp Sensor Circuit Failure
+B2827	Front Evaporator Temp Sensor Short to Ground
+B2844	Ignition Fault
+B2855	Crash Zone Sensor Circuit Short To Power Supply Or Body Ground
+B2856	Crash Zone Sensor System Communication Data Error
+B2868	Wheel Unit No.1 Internal Malfunction
+B2869	Wheel Unit No.2 Internal Malfunction
+B2870	Wheel Unit No.3 Internal Malfunction
+B2871	Wheel Unit No.4 Internal Malfunction
+B2872	Tire Pressure Sensor Fault
+B287A	Tire Pressure System Fault
+B2886	Passenger-side Side Air Bag Sensor System Communication Data Error
+B2887	Driver-side Side Air Bag Sensor System Communication Data Error
+B2900	VIN Mismatched
+B2909	Belt Tension Sensor Fault
+B2913	Audio Subwoofer Not Connected
+B2924	Audio Button Stuck
+B2936	PLG Motor Circuit Malfunction
+B2937	PLG Motor Circuit Malfunction
+B2939	Clutch Circuit Malfunction
+B2947	Global Opening/Closing Circuit Open
+B2949	Global Opening/Closing Circuit Short to Battery
+B2950	Air Conditioning System Fault
+B2965	Audio System Speaker Circuit Fault
+B297A	Blend Door Actuator, Drive Circuit(s) Open
+B297B	Blend Door Actuator, Drive Circuit(s) Shorted to Ground
+B297C	Blend Door Actuator, Drive Circuit(s) Shorted to Ground
+B297D	Driver Blend Door Actuator, Drive Circuit(s) Shorted to Ground
+B297E	Passenger Blend Door Actuator, Drive Circuit(s) Open
+B297F	Passenger Blend Door Actuator, Drive Circuit(s) Shorted to Ground
+B2982	Parking Brake Switch Circuit Open
+B298A	Mode Door Actuator, Drive Circuit(s) Open
+B298B	Mode Door Actuator, Drive Circuit(s) Shorted to Ground
+B298C	Recirc Door Actuator, Drive Circuit(s) Open
+B298D	Recirc Door Actuator, Drive Circuit(s) Shorted to Ground
+B29B7	White Lighting Output Circuit Open
+B29B8	White Lighting Output Circuit Short to Ground
+B2A20	Ignition Stuck In START
+B2A21	One or More Configuration Files Missing or Corrupt
+B2A22	Headlamp Off Circuit Open
+B2A23	High Beam Input Circuit Short to Ground
+B2A24	Turn Signal Input Circuit Failure
+B2A25	Trim Panel Lock Switch Circuit Failure
+B2A27	Right Front Turn Lamp Circuit Open
+B2A28	Right Front Turn Lamp Circuit Short to Ground
+B2A29	Left Front Turn Lamp Circuit Open
+B2A2A	Left Front Turn Lamp Circuit Short to Ground
+B2A2B	Left Corner Lamp Output Circuit Short to Ground
+B2A2C	Right Corner Lamp Output Circuit Short to Ground
+B2A2D	3rd Row Power Fold Circuit Short to Ground
+B2A2E	Right Front Lamp Low Beam Circuit Open
+B2A2F	Right Front Lamp Low Beam Circuit Short to Ground
+B2A30	Left Front Lamp Low Beam Circuit Open
+B2A31	Left Front Lamp Low Beam Circuit Short to Ground
+B2A32	LED Backlighting Output Circuit Open
+B2A33	LED Backlighting Output Circuit Short To Ground
+B2A35	Interior Lighting Output Circuit Open
+B2A36	Interior Lighting Output Circuit Short to Ground
+B2A37	Floor Lamp Output Circuit Open
+B2A38	Floor Lamp Output Circuit Short to Ground
+B2A39	Puddle Lamp Output Circuit Open
+B2A3A	Puddle Lamp Output Circuit Short to Ground
+B2A4C	Hybrid Battery Current Sensor Implausible (Failed in Range)
+C1095	Pump Motor, Motor Relay System
+C1096	Pump motor, motor relay system
+C1115	Valve Relay System
+C1117	RPM Input Circuit Failure
+C1118	Traction Control Indicated Torque Reduction Circuit Failure
+C1119	Traction Control Actual Torque Reduction Circuit Failure
+C1125	Brake Fluid Level Sensor Input Circuit Failure
+C1145	RF ABS Wheel-Speed Sensor (Open Circuit) System
+C1148	RF ABS Wheel Speed Sensor/Sensor Rotor
+C1155	LF ABS Wheel-Speed Sensor (Open Circuit) System
+C1158	LF ABS Wheel Speed Sensor/Sensor Rotor
+C1165	RR ABS Wheel-Speed Sensor (Open Circuit) System
+C1168	RR ABS Speed Sensor/Sensor Rotor
+C1175	LR ABS Wheel-Speed Sensor (Open Circuit) System
+C1178	LR ABS Wheel Speed Sensor/Sensor Rotor
+C1185	Valve Relay System
+C1194	LF Outlet Solenoid Valve System
+C1198	LF Inlet Solenoid Valve System
+C1210	RF Outlet Solenoid Valve System
+C1214	RF Inlet Solenoid Valve System
+C1222	ABS Wheel-Speed Sensor System
+C1233	LF ABS Wheel-Speed Sensor/ABS Sensor Rotor System
+C1234	RF ABS Wheel-Speed Sensor/ABS Sensor Rotor System
+C1235	RR ABS Wheel-Speed Sensor/ABS Sensor Rotor System
+C1236	LR ABS Wheel-Speed Sensor/ABS Sensor Rotor System
+C1242	LR Outlet Solenoid Valve System
+C1246	RR Outlet Solenoid Valve System
+C1250	LR Inlet Solenoid Valve System
+C1254	RR Inlet Solenoid Valve System
+C1266	Valve Relay Power Supply
+C1277	Steering Wheel Angle 1 and 2 Circuit Failure
+C1278	Steering Angle Sensor System
+C1279	Yaw Rate Sensor Circuit Failure
+C1280	Yaw Rate Sensor In SAS Control Module Is Signal Error
+C1281	Lateral Accelerometer Circuit Failure
+C1282	G Sensor (Lateral-G) In SAS Control Module Is Signal Error
+C1288	Brake Fluid Pressure Sensor System
+C1295	Steering Wheel Angle Sensor Internal Fault
+C1307	Steering Wheel Angle Sensor Encoder Ring Defective
+C1327	Brake Fluid Level Sensor
+C1329	RF Outlet Solenoid Valve Coil System
+C1330	LR outlet solenoid valve coil system
+C1331	RR Outlet Solenoid Valve Coil System
+C1332	LF Outlet Solenoid Valve Coil System
+C1333	LR Inlet Solenoid Valve Coil System
+C1334	LF Inlet Solenoid Valve Coil System
+C1335	RF Inlet Solenoid Valve Coil System
+C1336	RR Inlet Solenoid Valve Coil System
+C1404	RH Traction Control Solenoid Valve System
+C1410	LH Traction Control Solenoid Valve System
+C1440	Pressure Transducer Main/Primary Signal Faulted
+C1441	Steering Phase A Circuit Signal Is Not Sensed
+C1442	Steering Phase B Circuit Signal Is Not Sensed
+C1443	Steering Phase A Circuit Short to Ground
+C1444	Steering Phase B Circuit Short to Ground
+C1446	Brake Switch Circuit Failure
+C144A	Steering Phase C Circuit Short to Ground
+C144B	Steering Phase Z Circuit Short to Ground
+C144C	Steering Phase C Circuit Signal is Not Sensed
+C144D	Steering Phase Z Circuit Signal is Not Sensed
+C1470	TCS Functions Temporarily Disabled (Thermal Brake Protection)
+C1516	Combined Sensor System
+C1517	Roll Rate Sensor Circuit Failure
+C1527	RH Traction Control Solenoid Valve Coil System
+C1528	LH traction control solenoid valve coil system
+C1530	RH Stability Control Solenoid Valve Coil System
+C1531	LH Stability Control Solenoid Valve Coil System
+C1730	Combined Sensor
+C1805	Mismatched PCM and/or ABS-TC Module
+C1862	Contactor Circuit Failure
+C1937	Steering Angle Sensor System
+C1941	Zero Seat Weight Test Failure
+C1946	Seat Track Position Switch Circuit Open
+C1947	Seat Track Position Switch Circuit Short to Ground
+C1948	Seat Track Position Switch Circuit Resistance Out of Range
+C1950	Combined Sensor (Forward G-Sensor)
+C1957	RH Stability Control Solenoid Valve System
+C1958	LH Stability Control Solenoid Valve System
+C1963	SAS Control Module (Yaw Rate Sensor Part) Initial Point Correction Error
+C1981	Seat Track Position Sensor Circuit Open Or Short To Power Supply
+C1982	Seat Track Position Sensor Circuit Short To Power Supply
+C1991	DSC/ RSC Sensor (Abnormal Initialization) System
+C1992	Vehicle Speed Circuit Failure
+C1996	Active Yaw and/or Roll Control Disabled
+C2000	Steering Angle Sensor Not Calibrated
+C2769	Longitudinal Acceleration Sensor Electrical Failure
+C2770	G Sensor (Forward-G) In SAS Control Module Is Signal Error
+C2777	Sensor Cluster BUS Failure
+C2778	Sensor Power Supply Failure
+C2780	ECU in Manufacturer Sub-State
+C3485	Speed Wheel Sensor LR Input Circuit Failure
+Module Circuits Short"
 P1000	OBD II Monitor Testing Not Completed
 P1001	Unable to Achieve Self-Test Function or SCP Error
 P1100	Mass Airflow Sensor Circuit Intermittent
@@ -8,6 +418,7 @@ P1110	Intake Air Temperature Sensor Signal (Dynamic Chamber) Circuit
 P1112	Intake Air Temperature Sensor Circuit Intermittent
 P1113	Intake Air Temperature Sensor Signal (Dynamic Chamber) Circuit
 P1114	Intake Air Temperature Sensor Circuit Low Input
+P1115	Intake Air Temperature Sensor Circuit High Input
 P1116	ECT Sensor Circuit Out of Self Test Range
 P1117	ECT Sensor Signal Intermittent
 P1120	Throttle Position Sensor out of Range Low
@@ -18,9 +429,12 @@ P1124	Throttle Position Sensor Signal Out of Self Test Range
 P1125	Throttle Position Sensor Signal Intermittent
 P1127	HO2S Bank 1 Sensor 2 Heater Not On During Key On Engine Running Self Test
 P1128	HO2S Bank 1 Sensor 1 Signals Swapped in Key On Engine Running Self Test
+P1129	HO2S-12 (Bank 1 Sensor 2) Signals Swapped (Self-Test)
 P1130	HO2S Bank 1 Sensor 1 Not Switching (Fuel Control Limit Reached)
 P1131	HO2S Bank 1 Sensor 1 Signal Below 0.45v (A/F Ratio Too Lean)
 P1132	HO2S Bank 1 Sensor 1 Signal Above 0.45v (A/F Ratio Too Rich)
+P1133	HO2S-11 (Bank 1 Sensor 1) Indicates A/F Ratio Too Lean
+P1134	HO2S-11 (Bank 1 Sensor 1) Indicates A/F Ratio Too Lean
 P1135	HO2S Bank 1 Sensor 1 Heater Circuit Low Input
 P1136	HO2S Bank 1 Sensor 1 Heater Circuit High Input
 P1137	HO2S Bank 1 Sensor 2 Not Switching (Fuel Control Limit Reached)
@@ -29,21 +443,40 @@ P1141	HO2S Bank 1 Sensor 2 Heater Circuit Low Input
 P1142	HO2S Bank 1 Sensor 2 Heater Circuit High Input
 P1143	HO2S Bank 1 Sensor 3 Signal Below 0.45v (A/F Ratio Too Lean)
 P1144	HO2S Bank 1 Sensor 3 Signal Above 0.45v (A/F Ratio Too Rich)
+P1145	Calculated Torque Error
 P1150	HO2S Bank 2 Sensor 1 Not Switching (Fuel Control Limit Reached)
 P1151	HO2S Bank 2 Sensor 1 Signal Below 0.45v (A/F Ratio Too Lean)
 P1152	HO2S Bank 2 Sensor 1 Signal Above 0.45v (A/F Ratio Too Rich)
+P1157	HO2S-22 Lack of Switching, Indicates Lean (Self-Test)
+P1158	HO2S-22 Lack of Switching, Indicates Rich (Self-Test)
+P115E	Throttle Actuator Control Throttle Body Air Flow Trim At Max Limit
+P1168	HO2S-22 Lack of Switching, Indicates Rich (Self-Test)
 P1169	HO2S Bank 1 Sensor 1 Circuit Fixed (Bank 1 Sensor 1)
 P1170	HO2S Bank 1 Sensor 1 Circuit Fixed (Bank 1 Sensor 1)
 P1173	HO2S Bank 2 Sensor 1 Circuit Fixed (Bank 2 Sensor 1)
+P117A	Engine Oil Over Temperature (Forced Limited Power)
 P1195	EGR Boost Sensor Circuit
 P1196	Ignition Switch Start Circuit
+P1233	Fuel Pump Control Circuit Malfunction
 P1235	Fuel Pump Control Circuit
 P1236	Fuel Pump Control Out Range
+P1237	Fuel Pump Control Circuit Range/Performance
+P1244	Generator / Regulator System
+P1245	Generator / Regulator System
+P1246	Fuel Pump Control Circuit Range/Performance
 P1250	Pressure Regulator Control Solenoid Circuit
+P1251	Pressure Regulator Control Solenoid Circuit Malfunction
 P1252	Pressure Regulator Control Solenoid '2' Circuit
 P1260	Anti-Theft System Signal Detected - Engine Disabled
 P1270	Engine RPM or Vehicle Speed Limit Reached
+P1285	Cylinder Head Temperature Sensor - Engine Overheated
+P1288	Cylinder Head Temperature Sensor Circuit Malfunction (Self- Test)
+P1289	Cylinder Head Temperature Sensor Overheat Condition
+P128A	Cylinder Head Temperature (CHT) Sensor Circuit Intermittent/Erratic
+P1290	Cylinder Head Temperature Sensor Low Input
+P1299	Cylinder Head Temperature Sensor High Input
 P1309	Misfire Detection Monitor
+P1336	Camshaft Position (SGC) Sensor Circuit Malfunction
 P1345	No CMP or SGC Signal
 P1351	Ignition Diagnostic Monitor Signal Lost to PCM or Out Of Range
 P1352	Ignition Coil 'A' Primary Circuit
@@ -56,7 +489,10 @@ P1361	Ignition Coil 'B' Secondary Circuit
 P1362	Ignition Coil 'C' Secondary Circuit
 P1364	Ignition Coil Primary Circuit
 P1365	Ignition Coil Secondary Circuit
+P1382	Camshaft position (CMP) sensor
+P1387	Camshaft positions (CMP) sensor
 P1390	Octane Adjust Shorting Bar Out or Circuit Open
+P1397	System Voltage Out Of Self-Test Range
 P1400	DPFE Sensor Circuit Low Input
 P1401	DPFE Sensor Circuit High Input
 P1402	EGR Valve Position Sensor Circuit
@@ -66,20 +502,40 @@ P1407	No EGR Flow Detected
 P1408	EGR System Flow Out of Key On Engine Running Self Test Range
 P1409	EGR Vacuum Regulator Solenoid Circuit
 P1410	EGR Boost Solenoid Valve Stuck
+P1412	EGR Boost Sensor Solenoid Valve Stuck
+P1432	Thermostat Heater Control (THTRC)
 P1443	EVAP System Purge Flow Fault
 P1444	EVAP Purge Flow Sensor Circuit Low Voltage
+P1445	EVAP Purge Flow Sensor Circuit Low Input
 P1446	EVAP Purge Flow Sensor Circuit High Voltage
 P1449	CDCV or Throttle PositionCV Circuit
+P144A	Evaporative Emission System Purge Vapor Line Restricted/Blocked
 P1450	EVAP Control System Fault
 P1451	Canister Vent Solenoid Circuit
 P1455	Fuel Tank Level Sensor Circuit
+P1456	Fuel Tank Level Sensor Circuit Malfunction
+P1457	Fuel Tank Level Sensor Circuit Malfunction
+P1459	A/C Recirculation Switch Out of Self-Test Range
+P145E	PCV Heater Control B Circuit
 P1460	Wide Open Throttle A/C Cut-Off Relay Circuit
+P1461	A/C Pressure Sensor Circuit High Input
+P1462	Air Conditioning Pressure (A/CP) Sensor Low Voltage Detected
+P1463	A/C Pressure Sensor Insufficient Pressure Change
 P1464	Air Conditioning Control Signal Circuit
+P1465	A/C Control Signal Circuit Malfunction (Self-Test)
+P1469	Low A/C Cycling Period
+P1473	PCM – Cooling fan
 P1474	Fan Control (Primary Winding) Circuit
+P1475	Low Fan Relay Control Circuit Malfunction
+P1476	Low Fan Relay Control Circuit Malfunction
+P1477	Additional Fan Relay Circuit
 P1479	Fan Control (Condenser Primary) Circuit
+P1480	Fan Secondary Low With Low Fan On
+P1481	Condenser Fan Relay Control Circuit Malfunction
 P1485	EGR Vacuum Solenoid Circuit
 P1486	EGR Vent Solenoid Circuit
 P1487	EGR-CHK (Boost) Solenoid Circuit
+P1489	PCV Heater Control Circuit
 P1496	EGR Valve Motor Coil '1' Open or Shorted
 P1497	EGR Valve Motor Coil '2' Open or Shorted
 P1498	EGR Valve Motor Coil '3 Open or Shorted
@@ -93,21 +549,41 @@ P1506	Idle Air Control System Overspeed Detected
 P1507	Idle Air Control System Underspeed Detected
 P1508	Bypass Air Solenoid '1' Circuit
 P1509	Bypass Air Solenoid '2 Circuit
+P1510	Bypass Air Solenoid 2 Circuit Malfunction
+P1511	Bypass Air Solenoid 2 Circuit Malfunction
 P1512	VTCS Fault
+P1516	Neutral Switch Circuit Malfunction
+P1518	Intake Manifold Runner Control Shutter Valve (Stuck Open)
+P1519	Intake Manifold Runner Control Shutter Valve (Stuck Open)
+P1520	Intake Manifold Runner Control Circuit Malfunction
 P1521	VRIS Solenoid '1' Circuit
 P1522	VRIS Solenoid '2 Circuit
 P1523	VICS Solenoid Circuit
 P1524	Charge Air Cooler Bypass Solenoid Circuit
 P1525	ABV Vacuum Solenoid Circuit
 P1526	ABV Vent Solenoid Circuit
+P1527	Bypass Air Solenoid Circuit Malfunction
 P1529	L/C Atmospheric Balance Air Control Valve Circuit
+P1537	Bypass Air Solenoid Circuit Malfunction
+P1538	Bypass Air Solenoid Circuit Malfunction
 P1540	ABV System Fault
+P1548	Engine Air Filter Restriction
+P1549	Air Bypass Valve System
+P1550	Power Steering Pressure Switch Circuit Malfunction
 P1562	Powertrain Control Module +BB Voltage Low
+P1565	PCM +BB Voltage Low
+P1566	TCM +BB Voltage Low
+P1567	TCM +BB Voltage Low
+P1568	TCM +BB Voltage Low
 P1569	VTCS Circuit Low Input
 P1570	VTCS Circuit High Input
+P1572	Variable Timing Control System Circuit High Input
+P1574	TP sensor Output Incongruent
+P1575	Pedal Position Out Of Self Test Range
+P1577	APP sensor Output Incongruent
+P1600	PCM Malfunction
 P1601	Powertrain Control Module Communication Line to TCM Error
 P1602	Powertrain Control Module Communication Line to TCM Error
-P1602	Immobilizer System Communication Error with Powertrain Control Module
 P1603	Immobilizer System Fault
 P1604	Immobilizer System Fault
 P1605	Powertrain Control Module Keep Alive Memory Test Error
@@ -119,17 +595,38 @@ P1623	lmmobilizer System Fault
 P1624	lmmobilizer System Fault
 P1627	Powertrain Control Module (ECM/TCS) Line Communication Error
 P1628	Powertrain Control Module (ECM/TCS) Any Line Communication Error
+P1630	Generator Output Signal (No Output)
 P1631	Generator Output Voltage Signal (No Output)
 P1632	Battery Voltage Monitor Circuit
 P1633	Battery Overcharge Fault
 P1634	Generator Terminal 'B' Circuit Open
+P1635	Generator Battery Terminal Open Circuit Malfunction
+P1636	Generator Battery Terminal Open Circuit Malfunction
+P1639	Generator Battery Terminal Open Circuit Malfunction
+P163E	TRID Block (Solenoid Strategy Data Programmed Into The PCM)
+P163F	TRID Block (Solenoid Characterization Data Programmed Into The PCM)
+P1640	Powertrain DTCs Available in Another Module
+P1641	Generator Battery Terminal Open Circuit Malfunction
+P1645	Generator Battery Terminal Open Circuit Malfunction
+P1646	Linear O2 Sensor Control Chip (Bank 1)
+P1647	Linear O2 Sensor Control Chip (Bank 2)
+P164A	O2 Sensor Positive Current Trim Circuit Performance (Bank 1 Sensor 1)
+P164B	O2 Sensor Positive Current Trim Circuit Performance (Bank 2 Sensor 1)
 P1650	Power Steering Pressure Switch Out of Range Fault
 P1651	Power Steering Pressure Switch Circuit
 P1652	Power Steering Pressure Switch Circuit
+P1674	Control Module Software Corrupted
+P1686	Metering oil pump control circuit low flow side problem
+P1687	Metering oil pump control circuit high flow side problem
+P1688	Metering oil pump control circuit initial check problem
+P1700	Transaxle failure
 P1701	Transmission Range Sensor Reverse Engagement Error
 P1702	Transmission Range Sensor Circuit Intermittent
 P1703	Brake On/Off Switch Out of Self Test Range
+P1704	Transmission Range Sensor Circuit Malfunction (Self-Test)
 P1705	Transmission Range Sensor out of Self Test Range
+P1707	Transaxle Range Switch Circuit Malfunction
+P1708	Transaxle Range Switch Circuit Malfunction
 P1709	Clutch Pedal Position Switch Circuit
 P1711	Transmission Fluid Temperature Sensor Circuit out of Self Test Range
 P1713	Transmission Fluid Temperature Sensor Circuit
@@ -138,34 +635,106 @@ P1715	Shift Solenoid '2' Mechanical Fault
 P1716	Shift Solenoid '3' Mechanical Fault
 P1717	Shift Solenoid '4' Mechanical Fault
 P1718	Transmission Fluid Temperature Sensor Circuit
+P1719	Transaxle Fluid Temperature Sensor Circuit Malfunction
 P1720	Vehicle Speed Sensor '2' Signal Error
+P1721	PCM – Shift solenoids error
+P1722	PCM – Shift Solenoids error
+P1723	PCM – Shift solenoids error
+P1724	PCM – Shift solenoids error
 P1729	Transmission 4x4 Low Switch Error
+P1735	PCM – Shift Solenoids error
+P1736	PCM – Shift Solenoids error
+P1737	PCM – Torque Converter Clutch (TCC) solenoid
+P1738	PCM – Torque Converter Clutch (TCC) solenoid
 P1740	Torque Converter Clutch Solenoid Mechanical Fault
 P1741	Torque Converter Clutch Control Electrical Fault
 P1742	Torque Converter Clutch Solenoid Shorted
 P1743	Torque Converter Clutch Failed On - TCIL is On
 P1744	Torque Converter Clutch Solenoid Mechanical Fault
+P1745	Electronic Pressure Control Solenoid Circuit Malfunction
 P1746	Electronic Pressure Control Solenoid Circuit Open
 P1747	Electronic Pressure Control Solenoid Circuit
+P1748	Electronic Pressure Control Solenoid Circuit Malfunction
 P1749	Electronic Pressure Control Solenoid Circuit Low
 P1751	Transmission Shift Solenoid 'A' Mechanical Fault
 P1752	Transmission Shift Solenoid 'A' Circuit Shorted
 P1754	Transmission Coast Clutch Solenoid Electrical Fault
 P1756	Transmission Shift Solenoid 'B' Mechanical Fault
 P1757	Transmission Shift Solenoid 'B' Circuit Shorted
+P1760	Electronic pressure control (EPC) solenoid
 P1761	Transmission Shift Solenoid '3' Mechanical Fault
 P1762	Transmission SS3/SS4/OD Band Fault
 P1765	Transmission 3-2 Timing Solenoid Valve
 P1767	Torque Converter Clutch Solenoid Circuit
+P1770	Transaxle Overrunning Clutch Solenoid Circuit Malfunction
 P1771	Throttle Position Sensor Circuit Open to Transmission Control Module
 P1772	Throttle Position Sensor Circuit Shorted to Transmission Control Module
+P1775	Electronic pressure control (EPC) solenoid
+P1776	Electronic pressure control (EPC) solenoid
+P1777	Electronic pressure control (EPC) solenoid
 P1780	Transmission Control Switch Circuit
-P1780	Overdrive Off Switch not Cycled during the Self Test
 P1781	Transmission 4x4 Low Switch out of Range Fault
 P1783	Transmission Fluid Temperature High Input
 P1788	3-2T/CCS Circuit Open
 P1789	3-2T/CCS Circuit Shorted
+P1790	Throttle Position Sensor Signal Circuit Malfunction
+P1792	PCM to TCM Circuit Malfunction
+P1793	Mass Air Flow (MAF/IAT) sensor
 P1794	Powertrain Control Module Battery Direct Power Circuit
+P1795	Idle Switch Circuit Malfunction
 P1797	P/N Switch Open or Short Circuit
+P1798	Engine Coolant Temperature (ECT) sensor Malfunction
+P1799	Throttle Position (TP) sensor Malfunction
+P1824	4WD Control Module Malfunction
+P1825	4WD Control Module Malfunction
+P1879	PCM – Timing/Coast Clutch (2-3T/CCS) solenoid
 P1900	Turbine Speed Sensor Circuit Intermittent
 P1901	Torque Converter Clutch Circuit Intermittent
+P1910	Reverse Lamp Control Circuit/Open
+P1921	Transmission Range Signal
+P1A03	Drive Motor ""A"" Shutdown Circuit
+P1A04	Generator Shutdown Circuit
+P1A05	Desired Engine Speed Signal
+P1A06	Vehicle Mode Signal
+P1A07	Inverter High Voltage Performance
+P1A08	Generator Mode Signal
+P1A0A	Immediate Shutdown Signal
+P1A0C	Hybrid Powertrain Control Module - Engine Disabled
+P1A0D	Hybrid Powertrain Control Module - Generator Disabled
+P1A0E	Hybrid Powertrain Control Module - Motor Disa
+P1A13	Hybrid Powertrain Control Module - Regenerative Braking Disabled
+P1A14	Hybrid Powertrain Control Module - Transmission Disabled
+P1A1B	Brake System Control Module - Forced Engine Running
+U1020	Data Circuit Malfunction
+U1039	Data Circuit Malfunction
+U1040	Data Circuit Malfunction
+U1051	Data Circuit Malfunction
+U1131	Data Circuit Malfunction
+U1147	Data Circuit Malfunction
+U1262	Data Circuit Malfunction
+U1451	Data Circuit Malfunction
+U1900	CAN Communication Bus Fault — Receive Error
+U1901	Combined Sensor System (CAN2 line malfunction)
+U2012	Torque Reduction (Engine Condition) Signal Line
+U2013	Compass Module is Not Responding
+U2017	Driver-side Side Air Bag Sensor System Communication Error
+U2018	Passenger-side Side Air Bag Sensor System Communication Error
+U2021	Engine Control System
+U2023	Abnormal Message From PCM
+U2030	Rain Sensor/Auto Lght Snsor Cmmunication Fault
+U2050	No Application Present
+U2051	One or More Calibration Files Missing/Corrupt
+U2064	Warning Light Illumination Request Signal From Other Modules
+U210B	Lost Communication Between Fuel Pump Control Module and Restraints Control
+U2243	Data Circuit Malfunction
+U2472	Unexpected Ignition State
+U2473	Unexpected Vehicle Speed (VSS)
+U2510	Communication Error Between The Instrument Cluster and The PCM (no response)
+U2511	CAN — Data Mis-Match (Receive Data Does Not Match Expected)
+U2516	CAN System Communication Error
+U2527	DSC/RSC HU/CM Communication Fault
+U2616	Wheel Unit No.1 (No response)
+U2617	Wheel Unit No.2 (No Response)
+U2618	Wheel Unit No.3 (No Response)
+U2619	Wheel Unit No.4 (No Response)
+U261A	CAN Data / Configuration Setup Mismatch
