@@ -1,12 +1,116 @@
+B103B	Thermoelectric Driver Overcurrent Low
+B103C	Thermoelectric Driver Open Load
+B103D	Blower Driver Overtemperature
+B10F1	Key In Switch: Circuit Short To Ground or Open
+B1111	Driver Thermal Electric Device Control Overtemperature Fault
+B1113	Passenger Thermal Electric Device Control Overtemperature Fault
+B111B	Passenger Thermo-Electric Driver Overcurrent Low
+B111C	Passenger Thermoelectric Driver Open Load
+B111D	Passenger Blower Driver Overtemperature
+B1213	Less Than Two Keys Programmed To The System
+B124D	Tire Pressure Sensor: General Signal Failure
+B1317	Battery Voltage High
+B1318	Battery Voltage Low
+B1342	ECU Damaged (EEPROM Inside PCM Not Working)
+B1600	PATS Ignition Key Transponder Signal Not Received
+B1601	PATS Received Incorrect Key Code From Ignition Key Transponder
+B1602	PATS Received Invalid Format of Key Code From Ignition Key Transponder
+B1663	Seat Driver Front Up/Down Motor Stalled
+B1664	Seat Driver Rear Up/Down Motor Stalled
+B1665	Seat Driver Forward/Backward Motor Stalled
+B1666	Seat Driver Recline Motor Stalled
+B1681	PATS Receiver Module Signal Not Received
+B1703	Seat Driver Recline Forward Switch Circuit Short to Battery
+B1707	Seat Driver Recline Rearward Switch Circuit Short to Battery
+B1711	Seat Driver Front Up Switch Circuit Short to Battery
+B1715	Seat Driver Front Down Switch Circuit Short to Battery
+B1719	Seat Driver Forward Switch Circuit Short to Battery
+B1723	Seat Driver Rearward Switch Circuit Short to Battery
+B1727	Seat Driver Rear Up Switch Circuit Short to Battery
+B1731	Seat Driver Rear Down Switch Circuit Short to Battery
+B1952	Seat Rear Up/Down Position Feedback Circuit Short to Battery
+B1953	Seat Rear Up/Down Position Feedback Circuit Short to Ground
+B1956	Seat Front Up/Down Position Feedback Circuit Short to Battery
+B1957	Seat Front Up/Down Position Feedback Circuit Short to Ground
+B1960	Seat Recline Forward/Backward Position Feedback Circuit Short to Battery
+B1961	Seat Recline Forward/Backward Position Feedback Circuit Short to Ground
+B1964	Seat Horizontal Forward/Rearward Position Feedback Circuit Short to Battery
+B1965	Seat Horizontal Forward/Rearward Position Feedback Circuit Short to Ground
+B19A1	Passenger Seat Cushion Blower Speed Short to Battery
+B19A2	Passenger Seat Back Blower Speed Short to Battery
+B19A3	Driver Seat Cushion Blower Speed Short to Battery
+B19A4	Driver Seat Back Blower Speed Short to Battery
+B19A5	Passenger Seat Cushion Blower Speed Short to Ground
+B19A6	Passenger Seat Back Blower Speed Short to Ground
+B19A7	Driver Seat Cushion Blower Speed Short to Ground
+B19A8	Driver Seat Back Blower Speed Short to Ground
+B2103	Antenna Not Connected
+B2290	Occupant Classification System Fault
+B2330	Column Reach Feedback Potentiometer Circuit Short to Battery
+B2331	Column Reach Feedback Potentiometer Circuit Short to Ground
+B2334	Column Tilt Feedback Potentiometer Circuit Short to Battery
+B2335	Column Tilt Feedback Potentiometer Circuit Short to Ground
+B2340	Column Reach Motor Stalled
+B2341	Column Tilt Motor Stalled
+B2431	Transponder Programming Failed
+B2486	Climate Control Seat Module Voltage Out of Range
+B2572	Brake Shift Interlock Actuator (BSIA) open or shorted circuit
+B2729	Cushion Over-Temp Detected
+B272A	Passenger Cushion Over-Temp Detected
+B272B	Passenger Back Over-Temp Detected
+B272C	Driver Differential Temperature Fault
+B272D	Passenger Differential Temperature Fault
+B272E	Driver Ignition Run/Blower Circuit Short to Ground
+B272F	Passenger Ignition Run/Blower Circuit Short to Ground
+B2730	Back Over-Temp Detected
+Function"
 P1000	OBD-II Monitor Testing Incomplete
 P1001	KOER Test Cannot Be Completed
+P1009	EVAP System Self Test Not Able To Complete
+P100F	Wastegate Control Pressure/BARO Correlation
+P1011	Wastegate Control Pressure Sensor Circuit Range/Performance
+P1012	Wastegate Control Pressure Sensor Circuit Low
+P1013	Wastegate Control Pressure Sensor Circuit High
+P1014	Wastegate Control Pressure Sensor Circuit Intermittent/Erratic
+P1015	Wastegate Control Pressure Lower Than Expected
+P1016	Wastegate Control Pressure Higher Than Expected
+P101F	Cylinder Head Temperature Sensor 1 Out Of Self Test Range
+P1021	Cylinder Head Temperature Sensor 2 Circuit Range/Performance
+P1022	Cylinder Head Temperature Sensor 2 Circuit Low
+P1023	Cylinder Head Temperature Sensor 2 Circuit High
+P1024	Cylinder Head Temperature Sensor 2 Circuit Intermittent/Erratic
+P1025	Cylinder Head Temperature Sensor 2 Out Of Self Test Range
+P1026	Engine Coolant Temperature 1 / Cylinder Head Temperature 2 Correlation
+P1030	Cylinder 1 Fuel Injector Heater Circuit Low
+P1031	Cylinder 1 Fuel Injector Heater Circuit High
+P1032	Cylinder 2 Fuel Injector Heater Circuit Low
+P1033	Cylinder 2 Fuel Injector Heater Circuit High
+P1034	Cylinder 3 Fuel Injector Heater Circuit Low
+P1035	Cylinder 3 Fuel Injector Heater Circuit High
+P1038	Fuel Injector Heater Control Module Control Circuit
 P1039	Vehicle Speed Signal Missing or Improper
+P103A	Fuel Injector Heater Control Module Monitor Circuit
+P103B	Fuel Injector Heater Control Module Performance
 P1051	Brake Switch Signal Missing or Improper
+P1060	Excessive Camshaft Chain Wear
+P1061	Excessive Camshaft Chain Wear - Forced Limited Engine Speed
 P1100	Mass Air Flow Sensor Intermittent
 P1101	Mass Air Flow Sensor out of Self-Test Range
+P1102	Mass Air Flow Sensor In Range But Lower Than Expected
+P1103	Mass Air Flow Sensor In Range But Higher Than Expected
+P1105	Dual Alternator Upper Fault (Monitor)
+P1106	Dual Alternator Lower Fault (Control)
+P1107	Dual Alternator Lower Circuit Malfunction
+P1108	Dual Alternator BATT Lamp Circuit Malfunction
+P1111	System Pass
 P1112	Intake Air Temperature Sensor Intermittent
+P1114	IAT Sensor Circuit Low Input
+P1115	IAT Sensor 2 Circuit High Input
 P1116	Engine Coolant Temperature Sensor is out of Self-Test Range
 P1117	Engine Coolant Temperature Sensor Intermittent
+P1118	Manifold Air Temperature Sensor Low Input
+P1119	Manifold Air Temperature Sensor High Input
+P111B	Engine Coolant Warm-Up Not Detected
 P1120	Throttle Position Sensor out of range
 P1121	Throttle Position Sensor Inconsistent with Mass Air Flow Sensor
 P1124	Throttle Position Sensor out of Self-Test Range
@@ -20,13 +124,51 @@ P1132	Lack of Upstream Heated Oxygen Sensor Switch - Sensor Indicates Rich - Ban
 P1135	Ignition Switch Signal Missing or Improper
 P1137	Lack of Downstream Heated Oxygen Sensor Switch - Sensor Indicates Lean - Bank No. 1
 P1138	Lack of Downstream Heated Oxygen Sensor Switch - Sensor Indicates Rich - Bank No. 1
+P1139	Water-In-Fuel Indicator Circuit Malfunction
+P1140	Water In Fuel Condition
+P1145	Calculated Torque Error
+P1148	Generator 2 Control Circuit Malfunction
+P1149	Generator 2 Control Circuit High Input
 P1150	Lack of Upstream Heated Oxygen Sensor Switch - Adaptive Fuel Limit - Bank No. 2
 P1151	Lack of Upstream Heated Oxygen Sensor Switch - Sensor Indicates Lean - Bank No. 2
 P1152	Lack of Upstream Heated Oxygen Sensor Switch - Sensor Indicates Rich - Bank No. 2
+P1156	Fuel Select Switch Circuit
 P1157	Lack of Downstream Heated Oxygen Sensor Switch - Sensor Indicates Lean - Bank No. 2
 P1158	Lack of Downstream Heated Oxygen Sensor Switch - Sensor Indicates Rich - Bank No. 2
+P115A	Throttle Actuator Control (TAC) Throttle Body Air Flow Trim at Max Limit
+P115E	Throttle Actuator Control Throttle Body Air Flow Trim At Max Limit
+P1168	Fuel Rail Pressure Sensor In Range But Low
+P1169	Fuel Rail Pressure Sensor In Range But High
+P1177	Synchronization
+P117A	Engine Oil Overtemperature - Forced Limited Power
+P117B	Exhaust Gas Temperature Sensor Correlation - Bank 1
+P117F	Fuel Pressure Regulator Control Exceeded Learning Limits
+P1180	Fuel Delivery System Low
+P1181	Fuel Delivery System High
+P1183	Engine Oil Temperature Sensor Circuit Malfunction
+P1184	Engine Oil Temperature Sensor Out Of Self-Test Range
+P1199	Restraints Event - Fueling Disabled
+P119F	Internal Control Module Fuel Pressure Control Performance
+P1201	Cylinder 1 Injector Circuit Open/Shorted
+P1202	Cylinder 2 Injector Circuit Open/Shorted
+P1203	Cylinder 3 Injector Circuit Open/Shorted
+P1204	Cylinder 4 Injector Circuit Open/Shorted
+P1205	Cylinder 5 Injector Circuit Open/Shorted
+P1206	Cylinder 6 Injector Circuit Open/Shorted
+P1207	Cylinder 7 Injector Circuit Open/Shorted
+P1208	Cylinder 8 Injector Circuit Open/Shorted
+P1209	Injection Control System Pressure Peak Malfunction
+P120F	Fuel Pressure Regulator Excessive Variation
+P1210	Injection Control System Pressure Above Expected Level
+P1211	Injection Control System Pressure Not Controllable - Pressure Above/Below Desired
+P1212	Injection Control System Pressure Not At Expected Level
+P1218	Cylinder ID Signal Stuck High
+P1219	Cylinder ID Signal Stuck Low
 P1220	Series Throttle Control fault
 P1224	Throttle Position Sensor B out of Self-Test Range
+P1227	Wastegate Failed Closed (Over pressure)
+P1228	Wastegate Failed Open (Under pressure)
+P1229	Supercharger Intercooler Pump Not Operating
 P1230	Open Power to Fuel Pump circuit
 P1231	High Speed Fuel Pump Relay activated
 P1232	Low Speed Fuel Pump Primary circuit failure
@@ -36,14 +178,67 @@ P1235	Fuel Pump Control out of range
 P1236	Fuel Pump Control out of range
 P1237	Fuel Pump Secondary circuit fault
 P1238	Fuel Pump Secondary circuit fault
+P123C	Cold Start Turbo Protection - Forced Limited Power
+P123E	NOX Sensor Communication Intermittent (Bank 1 Sensor 1)
+P123F	NOX Sensor Communication Intermittent (Bank 1 Sensor 2)
+P1244	Generator Load Circuit Low Input
+P1245	Generator Load circuit High Input
+P1246	Generator Load Circuit Malfunction
+P1247	Turbocharger Boost Pressure Low
+P1248	Turbo Boost Pressure Not Detected
+P1249	Wastegate Control Valve Performance
 P1250	Lack of Power to FPRC Solenoid
 P1260	Theft Detected - Engine Disabled
+P1261	Cylinder 1 High To Low Side Short
+P1262	Cylinder 2 High To Low Side Short
+P1263	Cylinder 3 High To Low Side Short
+P1264	Cylinder 4 High To Low Side Short
+P1265	Cylinder 5 High To Low Side Short
+P1266	Cylinder 6 High To Low Side Short
+P1267	Cylinder 7 High To Low Side Short
+P1268	Cylinder 8 High To Low Side Short
+P126A	Cylinder 1 Injector Input Circuit
+P126B	Cylinder 2 Injector Input Circuit
+P126C	Cylinder 3 Injector Input Circuit
+P126D	Cylinder 4 Injector Input Circuit
+P126E	Cylinder 5 Injector Input Circuit
 P1270	Engine RPM or Vehicle Speed Limiter Reached
+P1271	Cylinder 1 - High To Low Side Open Detected
+P1272	Cylinder 2 - High To Low Side Open Detected
+P1273	Cylinder 3 - High To Low Side Open Detected
+P1274	Cylinder 4 - High To Low Side Open Detected
+P1275	Cylinder 5 - High To Low Side Open Detected
+P1276	Cylinder 6 - High To Low Side Open Detected
+P1277	Cylinder 7 - High To Low Side Open Detected
+P1278	Cylinder 8 - High To Low Side Open Detected
+P127A	Aborted KOER - Fuel Pressure Failure
+P1280	Injection Control System Pressure Out-Of-Range Low
+P1281	Injection Control Pressure Circuit Out-Of-Range High
+P1282	Injection Pressure Regulator Excessive Pressure
+P1283	Injection Pressure Regulator Circuit Malfunction
+P1284	Injection Pressure Regulator Failure - KOER Test Aborted
+P1285	Cylinder Head Over Temperature Condition
 P1288	Cylinder Head Temperature Sensor out of Self-Test Range
 P1289	Cylinder Head Temperature Sensor Signal Greater Than Self-Test Range
+P128A	Cylinder Head Temperature Sensor Circuit Intermittent/Erratic
 P1290	Cylinder Head Temperature Sensor Signal Less Than Self-Test Range
+P1291	Injector High Side Short To GND Or VBATT (Bank 1)
+P1292	Injector High Side Short To GND Or VBATT (Bank 2)
+P1293	High Side Bank No. 1 (Right) Open
+P1294	High Side Bank No. 2 (Left) Open
+P1295	Injector Multiple Faults - Bank 1
+P1296	Multiple Faults On Bank No. 2 (Left)
+P1297	High Sides Shorted Together
+P1298	Injector Driver Module Malfunction
 P1299	Cylinder Head Temperature Sensor Detected Engine Overheating Condition
 P1309	Misfire Detection Monitor not enabled
+P130D	Engine Knock/Combustion Performance - Forced Limited Power
+P1316	Injector Circuit/IDM Codes Detected
+P132A	Turbocharger/Supercharger Boost Control A Electrical
+P132B	Turbocharger/Supercharger Boost Control A Performance
+P132C	Turbocharger/Supercharger Boost Control A Voltage
+P1335	Exhaust Gas Recirculation (EGR) Position Sensor Minimum/Maximum Stop Performance
+P1336	Crankshaft/Camshaft Sensor Range/Performance
 P1351	Ignition Diagnostic Monitor circuit Input fault
 P1352	Ignition Coil A - Primary circuit fault
 P1353	Ignition Coil B - Primary circuit fault
@@ -53,10 +248,25 @@ P1356	Loss of Ignition Diagnostic Module Input to PCM
 P1358	Ignition Diagnostic Monitor Signal out of Self-Test Range
 P1359	Spark Output circuit fault
 P1364	Ignition Coil Primary circuit fault
+P1378	FICM Supply Voltage Low Input
+P1379	FICM Supply Voltage High Input
 P1380	VCT Solenoid Valve circuit Short or Open
 P1381	Cam Timing Advance is excessive
 P1383	Cam Timing Advance is excessive
+P1385	Variable Cam Timing Solenoid B Malfunction
+P1386	Variable Cam Timing Over-Advanced (Cylinder Bank 2)
+P1388	Variable Cam Timing Over-Retarded (Cylinder Bank 2)
+P138B	Glow Plug Control Module System Voltage
+P138D	Turbocharger Boost Control A Temperature Too High
 P1390	Octane Adjust out of Self-Test Range
+P1391	Glow Plug Circuit Low Input On Bank 1 (Right Side)
+P1393	Glow Plug Circuit Low Input On Bank 2 (Left Side)
+P1395	Glow Plug Monitor Fault On Bank 1 (Right Side)
+P1396	Glow Plug Monitor Fault On Bank 2 (Left Side)
+P1397	System Voltage Out Of Self Test Range
+P139A	EGR Sensor C Hoses Reversed
+P139B	EGR Sensor C Upstream Hose Off Or Plugged
+P139C	EGR Sensor C Downstream Hose Off Or Plugged
 P1400	Differential Pressure Feedback Electronic Sensor circuit Low Voltage
 P1401	Differential Pressure Feedback Electronic Sensor circuit High Voltage
 P1403	Differential Pressure Feedback Electronic Sensor Hoses Reversed
@@ -69,14 +279,22 @@ P1410	EGR Barometric Pressure Sensor VREF Voltage
 P1411	Secondary Air is not being diverted
 P1413	Secondary Air Injection System Monitor circuit Low Voltage
 P1414	Secondary Air Injection System Monitor circuit High Voltage
+P1432	Thermostat Heater Control Circuit Malfunction
+P1436	A/C Evaporator Temperature (ACET) Circuit Low Input
+P1437	A/C Evaporator Temperature (ACET) Circuit High Input
 P1442	Secondary Air Injection System Monitor circuit High Voltage
 P1443	Evaporative Emission Control System - Vacuum System - Purge Control Solenoid or Purge Control Valve fault
 P1444	Purge Flow Sensor circuit Input Low
 P1445	Purge Flow Sensor circuit Input High
+P144A	EVAP System Purge Vapor Line Restricted/Blocked
+P144B	EVAP System Secondary Purge Vapor Line Restricted/Blocked
+P144C	EVAP System Purge Flow Performance During Boost
 P1450	Inability of Evaporative Emission Control System to Bleed Fuel Tank
 P1451	EVAP Control System Canister Vent Solenoid Circuit Malfunction
 P1452	Inability of Evaporative Emission Control System to Bleed Fuel Tank
 P1455	Substantial Leak or Blockage in Evaporative Emission Control System
+P145B	A/C Demand Not Activated During Self-Test
+P145E	PCV Heater Control B Circuit
 P1460	Wide Open Throttle Air Conditioning Cutoff circuit malfunction
 P1461	Air Conditioning Pressure Sensor circuit Low Input
 P1462	Air Conditioning Pressure Sensor circuit high Input
@@ -85,11 +303,16 @@ P1464	ACCS to PCM High During Self-Test
 P1469	Low Air Conditioning Cycling Period
 P1473	Fan Secondary High with Fans Off
 P1474	Low Fan Control Primary circuit
+P1477	Medium Fan Control Primary Circuit Malfunction
 P1479	High Fan Control Primary circuit
+P147B	Auxiliary Fan Control Circuit Low
+P147C	Auxiliary Fan Control Circuit High
 P1480	Fan Secondary Low with Low Fans On
 P1481	Fan Secondary Low with High Fans On
 P1483	Power to Cooling Fan Exceeded Normal Draw
 P1484	Variable Load Control Module Pin 1 Open
+P1487	EGR Check Solenoid Circuit Malfunction
+P1489	PCV Heater Control Circuit
 P1500	Vehicle Speed Sensor Intermittent
 P1501	Programmable Speedometer & Odometer Module/Vehicle Speed Sensor Intermittent circuit-failure
 P1502	Invalid or Missing Vehicle Speed Message or Brake Data
@@ -103,27 +326,108 @@ P1516	Intake Manifold Runner Control Input Error
 P1517	Intake Manifold Runner Control Input Error
 P1518	Intake Manifold Runner Control fault - Stuck Open
 P1519	Intake Manifold Runner Control fault - Stuck Closed
+P151A	Intake Manifold Runner Controller Performance
 P1520	Intake Manifold Runner Control circuit fault
 P1530	Open or Short to A/C Compressor Clutch circuit
+P1531	Invalid Self-Test - Accelerator Pedal Movement
+P1536	Parking Brake Applied Failure
 P1537	Intake Manifold Runner Control Stuck Open
 P1538	Intake Manifold Runner Control Stuck Open
 P1539	Power to A/C Compressor Clutch circuit Exceeded Normal Current Draw
+P1548	Engine Air Filter Restriction
 P1549	Intake Manifold Temperature Valve Vacuum Actuator Connection
 P1550	Power Steering Pressure Sensor out of Self-Test Range
+P1551	Cylinder 1 Injector Circuit Range/Performance
+P1552	Cylinder 2 Injector Circuit Range/Performance
+P1553	Cylinder 3 Injector Circuit Range/Performance
+P1554	Cylinder 4 Injector Circuit Range/Performance
+P1555	Cylinder 5 Injector Circuit Range/Performance
+P1556	Cylinder 6 Injector Circuit Range/Performance
+P1557	Cylinder 7 Injector Circuit Range/Performance
+P1558	Cylinder 8 Injector Circuit Range/Performance
+P1561	Brake Line Pressure Sensor Circuit
+P1572	Brake Pedal Switch Circuit
+P1575	Pedal Position Out Of Self Test Range
+P1582	Electronic Throttle Monitor Data Available
+P1584	Throttle Control Detected ETB Malfunction
+P1586	Electronic Throttle to PCM Communication Error
+P1588	Throttle Control Detected Loss Of Return Spring
+P1594	Forced Engine Shutdown - Remote Start System Fault, No Unattended Vehicle Timeout
+P1595	Forced Engine Shutdown - Remote Start System Fault, Transmission Range Not In Park Position
 P1605	PCM Keep Alive Memory Test Error
+P160A	Control Module Vehicle Options Reconfiguration Error
+P160C	Control Module Software Performance
+P1610	Interactive Reprogramming Code - Replace The PCM
+P1611	Interactive Reprogramming Code - Diagnose Further
+P1615	Interactive Reprogramming Code - Flash Erase Error
+P1616	Interactive Reprogramming Code - Flash Erase Error, Low Voltage
+P1617	Interactive Reprogramming Code - Block Programming Error
+P1618	Interactive Reprogramming Code - Block Programming Error, Low Voltage
+P161A	Incorrect Response From Immobilizer Control Module
+P161B	Incorrect Response From Secondary Immobilizer Module
 P1625	Voltage to Vehicle Load Control Module Fan circuit not detected
 P1626	Voltage to Vehicle Load Control Module circuit not detected
+P162D	Internal Control Module Cruise Control Performance
+P162E	Internal Control Module PTO Control Performance
+P162F	Starter Motor Disabled - Engine Crank Time Too Long
+P1633	Keep Alive Power Voltage Too Low
+P1635	Tire/Axle Ratio Out Of Acceptable Range
+P1636	Inductive Signature Chip Communication Error
+P1639	Vehicle ID Block Corrupted, Not Programmed
+P163A	Generator ""B"" Control Circuit
+P163C	Generator ""B"" Field Terminal Circuit Low
+P163D	Generator ""B"" Field Terminal Circuit High
+P163E	Transmission Control Module Programming Error
+P163F	Transmission ID Block Corrupted, Not Programmed
+P1640	PCM Trouble Codes Available In Another Module
+P1641	Fuel System Disabled Or Offline
+P1646	Linear O2 Sensor Control Chip (Bank 1)
+P1647	Linear O2 Sensor Control Chip (Bank 2)
+P164A	O2 Sensor Positive Current Trim Circuit Performance (Bank 1 Sensor 1)
+P164B	O2 Sensor Positive Current Trim Circuit Performance (Bank 2 Sensor 1)
+P164C	Internal Control Module Start-Stop Performance
+P164D	All Wheel Drive ID Block Corrupted, Not Programmed
+P164E	Internal Control Module Transmission Range Select Performance
 P1650	Power Steering Pressure Switch out of Self-Test Range
 P1651	Power Steering Pressure Switch Input fault
+P1660	OCC Signal High
+P1662	EF Feedback Signal Not Detected
+P1663	Fuel Delivery Command Signal Circuit Malfunction
+P1667	CID Circuit Malfunction
+P1668	PCM TO IDM Diagnostic Communication Error
+P166A	Restraints Deployment Communication Circuit
+P1670	EF Feedback Signal Not Detected
+P1671	Secondary Fuel Pump Relay
+P1674	Control Module Software Corrupted
+P167F	Non-OEM Calibration Detected
+P1690	Wastegate Control Valve Malfunction
+P1698	Cold Start Fuel Pump Primary Circuit/Open
+P169B	Cold Start Fuel Pump Primary Circuit High
+P169C	Cold Start Fuel Pump Secondary Circuit/Open
 P1700	Transmission system problems
 P1701	Reverse Engagement Error
 P1702	Transmission system problems
 P1703	Brake On/Off Switch out of Self-Test Range
 P1704	Transmission system problems
 P1705	Manual Lever Position Sensor out of Self-Test Range
+P1707	Park/Neutral (P/N) switch circuit failure
+P1708	Digital Transmission Range Sensor Circuit Malfunction
 P1709	Park or Neutral Position Switch out of Self-Test Range
+P170A	Clutch Switch Out Of Self Test Range
 P1710	Transmission system problems
 P1711	Transmission Fluid Temperature Sensor out of Self-Test Range
+P1712	TFT Sensor Circuit Low Input
+P1713	TFT Sensor No Activity or TFT Sensor Circuit Low Input
+P1714	Shift Solenoid 'A' Fault
+P1715	Shift Solenoid 'B' Fault
+P1716	Transmission Control System Malfunction
+P1717	Transmission Control System Malfunction
+P1718	TFT Sensor No Activity Or TFT Sensor Circuit High Input
+P1719	Transmission Control System Malfunction
+P1725	Insufficient Engine Speed Increase During Self Test
+P1726	Insufficient Engine Speed Decrease During Self Test
+P1727	Transmission Coast Clutch Solenoid Slip Malfunction
+P1728	Transmission Slip Malfunction
 P1729	4x4 Low Switch Error
 P1740	Transmission system problems
 P1741	Torque Converter Clutch Control Error
@@ -133,14 +437,19 @@ P1744	Torque Converter Clutch System Stuck in Off Position
 P1745	Transmission system problems
 P1746	Electronic Pressure Control Solenoid - Open circuit
 P1747	Electronic Pressure Control Solenoid - Short circuit
+P1748	Pressure Control Solenoid ""A"" Open Circuit
 P1749	Electronic Pressure Control Solenoid Failed Low
+P174E	Output Shaft Speed / ABS Wheel Speed Correlation
 P1751	Shift Solenoid No. 1 Performance
 P1754	Coast Clutch Solenoid circuit malfunction
 P1756	Shift Solenoid No. 2 Performance
+P175A	Transmission Fluid Over Temperature Condition - Electric Transmission Fluid Pump Disabled
 P1760	Transmission system problems
 P1761	Shift Solenoid No. 3 Performance
 P1762	Transmission system problems
 P1767	Transmission system problems
+P1779	Transmission Control Switch Out Of Self-Test Range
+P177F	Unable To Fully Engage Neutral
 P1780	Transmission Control Switch circuit is out of Self-Test Range
 P1781	4x4 Low Switch is out of Self-Test Range
 P1783	Transmission Over-Temperature Condition
@@ -150,4 +459,104 @@ P1786	Transmission system problems
 P1787	Transmission system problems
 P1788	Transmission system problems
 P1789	Transmission system problems
+P1793	Ignition Supply Malfunction
+P179A	Controller Area Network (CAN) Engine Control Module (ECM)/Turbocharger Boost Control A Actuator Circuit Malfunction
+P1812	4x4 Mode Select Circuit Failure
+P1815	4x4 Mode Select Short Circuit to Ground
+P181F	Clutch Control System Performance
+P1824	4 Wheel Drive (4WD) Clutch Relay Circuit Failure
+P1825	4 Wheel Drive (4WD) Clutch Relay Open Circuit
+P182B	Transfer Case Fluid Temperature Sensor Circuit Range/Performance
+P182C	Transfer Case Fluid Temperature Sensor Circuit Low
+P182D	Transfer Case Fluid Temperature Sensor Circuit High
+P1832	Transfer Case Differential Lock-up Solenoid Circuit Failure: No Sub Type Information
+P183D	Transfer Case Fluid Over Temperature
+P183F	Driveline Cooling Pump Control Circuit
+P1849	Transfer Case Contact Plate 'A' Short Circuit to Ground
+P1853	Transfer Case Contact Plate 'B' Short Circuit to Ground
+P1857	Transfer Case Contact Plate C Short Circuit to Ground
+P1861	Transfer Case Contact Plate 'D' Short Circuit to Ground
+P1867	Transfer Case Contact Plate General Circuit Failure
+P187B	"Tire Size Out of Acceptable Range - AWD Disabled / Limited
+P188B	All Wheel Drive Clutch Control Circuit
+P188C	All Wheel Drive Relay Module Communication Circuit
+P188D	All Wheel Drive Relay Module Feedback Circuit
 P1900	Transmission system problems
+P1901	Transmission System Malfunction
+P1910	Reverse Lamp Control Circuit/Open
+P1911	Reverse lamp circuit
+P1912	Reverse lamp control circuit shorted to power.
+P1920	Engine Speed Signal
+P1921	Transmission Range Signal
+P1933	Fuel Level Signal
+P1934	Vehicle Speed Signal
+P1935	Brake Switch/Sensor Signal
+P193C	Steering Wheel Angle Signal
+P193D	Cruise Control Multi-Function Input Signal
+P193E	A/C Clutch Request Signal
+P193F	Vehicle Speed Signal Intermittent
+P1A03	Drive Motor A Shutdown Circuit
+P1A04	Generator Shutdown Circuit
+P1A05	Desired Engine Speed Signal
+P1A06	Vehicle Mode Signal
+P1A07	Inverter High Voltage Performance
+P1A08	Generator Mode Signal
+P1A0A	Immediate Shutdown Signal
+P1A0C	Hybrid Powertrain Control Module - Engine Disabled
+P1A0D	Hybrid Powertrain Control Module - Generator Disabled
+P1A0E	Hybrid Powertrain Control Module - Motor Disabled
+P1A0F	Hybrid Powertrain Control Module - Vehicle Disabled
+P1A10	Hybrid Powertrain Control Module - Battery Disabled
+P1A13	Hybrid Powertrain Control Module - Regenerative Braking Disabled
+P1A14	Hybrid Powertrain Control Module - Transmission Disabled
+P1A16	Variable Voltage Controller Voltage Control Circuit
+P1A17	Variable Voltage Controller Processor
+P1A18	Variable Voltage Controller Inductor Temperature Sensor Circuit
+P1A19	Variable Voltage Controller Driver Temperature Sensor Circuit
+P1A1A	Variable Voltage Controller Over Temperature
+P1A1B	Brake System Control Module - Forced Engine Running
+U1010	Invalid Internal Control Module Monitoring Data Received From SOBDMC
+U1011	Invalid Internal Control Module Monitoring Data Received From ECM/PCM
+U1012	Invalid Internal Control Module Monitoring Data Received From Anti-Lock Brake System (ABS) Control Module
+U1013	Invalid Internal Control Module Monitoring Data Received From TCM
+U1017	Invalid Internal Control Module Monitoring Data Received from Instrument Panel Cluster Control Module
+U101E	Invalid Internal Control Module Monitoring Data Received From Gear Shift Module
+U101F	Invalid Internal Control Module Monitoring Data Received From Transmission Range Control Module
+U1020	Data Circuit Message
+U1021	Data Circuit Message
+U1037	Data Circuit Message
+U1039	SCP (J1850) Invalid Or Missing Data For Vehicle Speed
+U1041	Data Circuit Message
+U1051	Data Circuit Message
+U1071	Data Circuit Message
+U1073	Data Circuit Message
+U1089	Data Circuit Message
+U1098	Data Circuit Message
+U1130	Data Circuit Message
+U1131	Data Circuit Message
+U1135	Data Circuit Message
+U1147	Data Circuit Message
+U1243	Data Circuit Message
+U1256	Data Circuit Message
+U1260	Data Circuit Message
+U1261	Data Circuit Message
+U1262	Data Circuit Message
+U1341	Data Circuit Message
+U1451	Data Circuit Message
+U1900	CAN Communication Bus Fault (Receive Error)
+U2015	Data Circuit Message
+U2016	Control Module Main Software System Internal Failure
+U2023	Fault Received From External Node
+U2100	Initial Configuration Not Complete
+U2101	Control Module Configuration Incompatible
+U210B	Lost Communication Between Fuel Pump Control Module A And Restraints Control Module
+U210C	Lost Communication Between Fuel Pump Control Module B and Restraints Control Module
+U210F	Throttle/Pedal Position Sensor/Switch A Communication Circuit Low
+U2110	Throttle/Pedal Position Sensor/Switch A Communication Circuit High
+U2195	Data Circuit Message
+U2200	Control Module Configuration Memory Corrupt
+U2243	Data Circuit Message
+U2472	Unexpected Ignition State
+U2510	Invalid data for Vehicle Security
+U2511	Data Mis-Match (Receive Data Does Not Match Expected)
+U300C	Ignition Input Off/On/Start
