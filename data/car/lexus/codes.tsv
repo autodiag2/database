@@ -1,4 +1,55 @@
+B1200	MPX Body ECU Stop
+B1204	Driver Side Seat Switch ECU Communication Stop
+B1205	AFS ECU Communication Stop
+B1206	P/W Master Switch Communication Stop
+B1207	Certification ECU Communication Malfunction
+B1210	Power ECU Stop
+B1211	Driver Door ECU Communication Stop
+B1212	Front Passenger Door ECU Communication Stop
+B1213	Tilt and Telescopic ECU Communication Stop
+B1214	Short to B+ in Door System Communication Bus Malfunction
+B1215	Short to GND in Door System Communication Bus Malfunction
+B1216	Rear Door ECU RH Communication Stop
+B1217	Rear Door ECU LH Communication Stop
+B1247	Tire Pressure Monitor Receiver Communication Stop
+B1262	A/C ECU Communication Stop
+B1263	Luggage Room Junction Block ECU Communication Stop
+B1266	"Short to B+ in Instrument Panel System Communication Bus Malfunction"
+B1267	"Short to GND in Instrument Panel System Communication Bus Malfunction"
+B1271	Combination Meter ECU Communication Stop
+B1272	Power Seat ECU Communication Stop
+B1273	Sliding Roof ECU Communication Stop
+B1278	Combination Switch ECU Communication Stop
+B1279	Rain Sensor Communication Stop
+B1280	Left Side Junction Block ECU Communication Stop
+B1281	Airbag ECU Communication Stop
+B1289	Passenger Seat ECU Communication Stop
+B1291	Short to B+ in Light System Communication Bus Malfunction
+B1292	Short to GND in Light System Communication Bus Malfunction
+B1296	Front Light ECU Communication Stop
+B1297	Clearance Sonar ECU Communication Stop
+B2271	Ignition Hold Monitor Malfunction
+B2275	STSW Monitor Malfunction
+B2277	Detecting Vehicle Submersion
+B2282	Vehicle Speed Signal Malfunction
+B2286	Runnable Signal Malfunction
+B2412	Headlight Swivel Motor LH Malfunction
+B2779	Engine Starter Communication Malfunction
+B2784	Antenna Coil Open / Short
+B2785	Ignition Switch On Malfunction (Immobilizer System)
+B2786	Ignition Switch Off Malfunction (Immobilizer System)
+B278A	Short To GND In Immobilizer System Power Source Circuit
+B2790	ID BOX EEPROM Malfunction
+B2791	Key Unlock Warning Switch Malfunction (Immobilizer System)
+B2795	Unmatch Key Code (Immobilizer System)
+B2796	No Communication In Immobilizer System
+B2797	Communication Malfunction No. 1 (Immobilizer System)
+B2798	Communication Malfunction No. 2 (Immobilizer System)
+B2799	Engine Immobiliser System Malfunction
+B279A	Theft Deterrent System Communication Line High Fixation
+B279C	Theft Deterrent System Presence Detection
 P1100	BARO Sensor Circuit Malfunction
+P1115	General Temperature Sensor Performance
 P1120	Accelerator Pedal Position Sensor Circuit Malfunction
 P1121	Accelerator Pedal Position Sensor Range/Performance Problem
 P1125	Throttle Control Motor Circuit Malfunction
@@ -12,7 +63,28 @@ P1135	Air/Fuel Ratio Sensor Heater Circuit Malfunction (Bank 1 Sensor 1)
 P1150	Air/Fuel Ratio Sensor Circuit Range/Performance Malfunction (Bank 2 Sensor 1)
 P1153	Air/Fuel Ratio Sensor Circuit Response Malfunction (Bank 2 Sensor 1)
 P1155	Air/Fuel Ratio Sensor Heater Circuit Malfunction (Bank 1 Sensor 1)
+P1170	Port Injector Fuel Performance
+P117B	Direct Injector Fuel Performance
+P1192	Intake Air Temperature Sensor Circuit Low Input
+P1193	Intake Air Temperature Sensor Circuit High Input
+P1195	O2 (B1 S1) Circuit Insufficient Activity
+P1196	O2 (B2 S1) Circuit Insufficient Activity
+P1197	O2 (B1 S2) Circuit Insufficient Activity
 P1200	Fuel Pump Relay/ECU Circuit Malfunction
+P1235	High Pressure Fuel Pump Circuit
+P1276	Port Injector Circuit No. 1
+P1277	Port Injector Circuit No. 2
+P1278	Port Injector Circuit No. 3
+P1279	Port Injector Circuit No. 4
+P127A	Port Injector Circuit No. 5
+P127B	Port Injector Circuit No. 6
+P1281	Engine Is Cold Too Long
+P1282	Fuel Pump Relay Control Circuit Malfunction
+P1289	Manifold Tuning Valve Control Circuit Malfunction
+P1294	Target Idle Speed Not Reached
+P1296	5-Volt VREF Supply Not Present
+P1297	No Change In MAP Signal From Start To Run Transition
+P1299	Vacuum Leak Present With IAC Valve Fully Seated
 P1300	Igniter Circuit Malfunction (Bank 1 Or No. 1)
 P1305	Igniter Circuit Malfunction, (Bank 2 Or No. 2)
 P1310	Igniter Circuit Malfunction (No. 3)
@@ -28,26 +100,119 @@ P1349	VVT System Malfunction (Bank 1)
 P1350	VVT Sensor Circuit Malfunction (Bank 2)
 P1351	VVT Sensor Range/Performance Problem (Bank 2)
 P1354	VVT System Malfunction (Bank 2)
+P1388	Auto Shutdown Relay Control Circuit Malfunction
+P1389	No Auto Shutdown Relay Output Voltage To PCM
+P1390	Timing Belt Skipped One Tooth Or More
+P1391	CKP Or CMP Sensor Signal Intermittent
+P1398	Misfire Adaptive Numerator At Limit
 P1400	Sub-TP Sensor Malfunction
 P1401	Sub-TP Sensor Range/Performance
+P1405	Turbo Pressure Sensor Circuit Malfunction
+P1406	Turbo Pressure Sensor Circuit Malfunction
 P1410	EGR Valve Position Sensor Circuit Malfunction
 P1411	EGR Valve Position Sensor Circuit Range/Performance Malfunction
+P1480	Positive Crankcase Ventilation Solenoid Circuit Failure
+P1481	EVAP Leak Detection Monitor Pinched Hose Detected
+P1486	EVAP Leak Detection Monitor Pinched Hose Detected
+P1489	High Speed Radiator Fan Relay Circuit Malfunction
+P1490	Low Speed Radiator Fan Relay Circuit Malfunction
+P1491	Radiator Fan Control Relay Circuit Malfunction
+P1492	Battery Temperature Sensor Circuit High Input
+P1493	Battery Temperature Sensor Circuit Low Input
+P1494	EVAP Leak Detection Pump Switch Or Mechanical Fault
+P1495	Leak Detection Pump Solenoid Circuit Malfunction
+P1496	5-Volt VREF Supply Voltage Too Low
+P1498	No CCD Messages Received From The TCM
+P1499	Radiator (Hydraulic) Fan Solenoid Circuit Failure
 P1500	Starter Signal Circuit Malfunction
+P1511	Turbo Boost Pressure Low Malfunction
+P1512	Turbo Boost Pressure High Malfunction
 P1520	Stop Lamp Switch Malfunction
+P1525	Cruise Control Switch Circuit Malfunction
 P1565	Cruise Control Main Switch Circuit Malfunction
 P1566	Cruise Control Main Switch Circuit Malfunction
+P1570	Radar Sensor Malfunction
+P1572	Improper Aiming of Radar Sensor Beam Axis
+P1593	Speed Control Switch Stuck Operation
+P1594	Charging System Voltage Too High
+P1595	Speed Control Solenoid Circuit Failure
+P1596	Speed Control Switch Continuous High Input
+P1597	Speed Control Switch Continuous Low Input
+P1598	A/C Pressure Sensor Circuit High Input
+P1599	A/C Pressure Sensor Circuit Low Input
 P1600	ECM BATT Malfunction
+P1602	PCM Not Programmed
+P1603	"Powertrain Control Module Internal Dual-Port Ram Communication"
+P1604	PCM Internal Dual-Port Ram Read/Write Integrity Failure
 P1605	Knock Control CPU Malfunction
+P1607	Cruise Control Input Processor
+P1615	"Communication Error from Distance Control ECU to Engine Control Module (ECM)"
+P1616	Communication Error from ECM to Distance Control ECU
+P1617	Distance Control ECU Malfunction
+P1630	Communication Error from VSC to ECM
+P1631	Communication Error from ECM to VSC
 P1633	ECM Malfunction (ETCS Circuit)
 P1645	Body ECU Malfunction
+P1652	Serial Communication Link Malfunction
 P1656	OCV Circuit Malfunction (Bank 1)
 P1663	OCV Circuit Malfunction (Bank 2)
+P1682	Charging System Voltage Too Low
+P1683	Speed Control Relay Or Driver Circuit Malfunction
+P1684	Battery Has Been Disconnected
+P1685	Smart Key Immobilizer Module Invalid Key
+P1686	No SKIM Bus Messages Received
+P1687	No Cluster Bus Messages
+P1694	No PCM Bus Messages
+P1695	No BCM Bus Messages
+P1696	PCM EEPROM Write Operation Denied/Invalid
+P1697	PCM Failure (EMR/SRI Mileage Not Stored)
+P1698	No CCD Messages Received From The TCM
+P1700	Vehicle Speed Sensor '2' Circuit Malfunction
+P1705	A/T Direct Clutch Speed Sensor Circuit Malfunction
+P1715	A/T Pulse Generator Assembly Circuit Malfunction
+P1716	Bus Communication Failure With The PCM
+P1717	Bus Communication Failure With The MIC
+P1718	TCM Internal Malfunction
+P1738	A/T High Temperature Operation Activated
+P1739	A/T Power Up Circuit At Speed
+P1740	TCM Internal Malfunction
+P1742	TCM Internal Malfunction
+P1743	TCM Internal Malfunction
+P1744	A/T Shift Solenoid 'A' Control Circuit Low Input
+P1745	A/T Shift Solenoid 'A' Control Circuit High Input
+P1746	A/T Shift Solenoid 'B' Control Circuit Low Input
+P1747	A/T Shift Solenoid 'B' Control Circuit High Input
+P1748	A/T TCC Solenoid 'C' Control Circuit Low Input
+P1749	A/T Shift Solenoid 'C' Control Circuit High Input
+P1756	A/T Governor Pressure Not Equal To Target At 15-20 PSI
+P1757	A/T Governor Pressure Above 3 PSI In Gear At 0 MPH
+P1762	A/T Governor Pressure Sensor Offset Volts Too High/Low
+P1763	A/T Governor Pressure Sensor Signal Too High
+P1764	A/T Governor Pressure Sensor Signal Too Low
+P1765	A/T Linear Shift Solenoid Circuit Malfunction
+P1767	A/T Transmission Relay Circuit Malfunction
+P1768	A/T Transmission Relay Output Always Off
+P1775	A/T Solenoid Switch Latched In TCC Position
+P1776	A/T Solenoid Switch Latched In Low/Reverse Position
 P1780	PNP Switch Malfunction
-B2785	Ignition Switch On Malfunction (Immobilizer System)
-B2786	Ignition Switch Off Malfunction (Immobilizer System)
-B2785	Ignition Switch On Malfunction (Immobilizer System)
-B2791	Key Unlock Warning Switch Malfunction (Immobilizer System)
-B2795	Unmatch Key Code (Immobilizer System)
-B2796	No Communication In Immobilizer System
-B2797	Communication Malfunction No. 1 (Immobilizer System)
-B2798	Communication Malfunction No. 2 (Immobilizer System)
+P1781	A/T Overdrive Pressure Switch Circuit Malfunction
+P1782	A/T Overdrive Pressure Switch Circuit Malfunction
+P1784	A/T Additional L/R Pressure Switch Circuit Malfunction
+P1788	A/T Additional 2/4 Pressure Switch Circuit Malfunction
+P1789	A/T Overdrive/2/4 Pressure Switch Circuit Malfunction
+P1790	A/T Malfunction Immediately After Shift Event
+P1791	A/T Loss Of Prime Malfunction
+P1792	Battery Was Disconnected
+P1793	TCM TRD Link Communication Error
+P1794	A/T Speed Sensor Ground Circuit Malfunction
+P1795	Transmission Control Module Internal Malfunction
+P1796	A/T Additional AutoStick Input Circuit Malfunction
+P1797	A/T Manual Shift Overheat Malfunction
+P1798	A/T Transmission Fluid Is Burnt Or Contaminated
+P1799	A/T Calculated Oil Temperature In Use Malfunction
+P1899	A/T Park Neutral Switch Stuck in Park Position or In Gear
+U1003	Lost Communication with Can Gateway Module
+U1101	Lost Communication with Distance Control ECU
+U1102	Lost Communication with Radar Sensor
+U1108	Lost Communication with Front Active Stabilizer ECU
+U1109	Lost Communication with Rear Active Stabilizer ECU
