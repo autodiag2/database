@@ -1,6 +1,209 @@
+B1206	P/W Master Switch Communication Stop
+B1242	Wireless Door Lock Tuner Circuit Malfunction
+B1273	Sliding Roof ECU Communication Stop
+B1421	Solar Sensor Circuit (Passenger Side)
+B1443	Air Outlet Damper Control Servo Motor Circuit
+B1499	Multiplex Communication Circuit
+B14A1	Air Purifier Open Circuit
+B14A2	Driver Side Solar Sensor Short Circuit
+B1500	Fuel Sender Open Detected
+B1503	Exhaust Heat Management Warning Detected
+B1504	Lost Communication with Steering SW
+B1561	XM Tuner Disconnected (Command Line)
+B1562	XM Tuner Disconnected (Burst Mode)
+B1570	Manual (SOS) Switch Red Indicator Malfunction
+B1571	Manual (SOS) Switch Green Indicator Malfunction
+B1572	Telephone Microphone Error
+B1573	Short in Telephone Antenna Circuit
+B1582	Map Disk Reading Malfunction
+B1583	GPS Signal Unreceived
+B1593	No Response from Stereo Component Amplifier
+B159F	No Response from XM Tuner
+B15A0	LAN Master Malfunction
+B15A3	Stereo Component Amplifier Malfunction
+B15A8	Telematics Transceiver Malfunction
+B15AD	Navigation Processor Malfunction
+B15B0	Display Screen Malfunction
+B15B3	Radio Tuner Malfunction
+B15B7	Bluetooth Module Malfunction
+B15BA	XM Tuner Malfunction
+B15C0	Short in GPS Antenna
+B15C1	Open in GPS Antenna
+B15C2	Speed Signal Malfunction
+B15C4	Airbag Signal Malfunction/Not Input
+B15C5	Manual Button Malfunction
+B15CB	Telematics Transceiver Antenna Disconnected
+B15CC	Backup Battery Failure
+B15D3	Stereo Component Amplifier Disconnected
+B15D8	Monitor Disconnected
+B15E1	Media Malfunction
+B15EC	Backup Battery Degradation
+B15FE	XM Tuner Antenna Disconnected
+B15FF	XM Tuner Antenna Short
+B1603	Front Satellite Sensor BUS RH Initialization Incomplete
+B1650	Occupant Classification System Malfunction
+B1771	Passenger Side Buckle Switch Circuit Malfunction
+B1780	Occupant Classification Sensor Front LH Circuit Malfunction
+B1781	Occupant Classification Sensor Front RH Circuit Malfunction
+B1782	Occupant Classification Sensor Rear LH Circuit Malfunction
+B1783	Occupant Classification Sensor Rear RH Circuit Malfunction
+B1785	Occupant Classification Sensor Front LH Collision Detection
+B1786	Occupant Classification Sensor Front RH Collision Detection
+B1787	Occupant Classification Sensor Rear LH Collision Detection
+B1788	Occupant Classification Sensor Rear RH Collision Detection
+B1790	Airbag Sensor Assy Center Communication Circuit Malfunction
+B1793	"Occupant Classification Sensor Power Supply Circuit Malfunction"
+B1794	Occupant Classification ECU Battery Positive Line Open
+B1795	Occupant Classification ECU Malfunction
+B1796	Sleep Operation Failure Of Occupant Classification ECU
+B2271	Ignition Hold Monitor Malfunction
+B2274	ACC Monitor Malfunction
+B2275	STSW Monitor Malfunction
+B2277	Detecting Vehicle Submersion
+B2282	Vehicle Speed Signal Malfunction
+B2284	Brake Signal Malfunction
+B2286	Runnable Signal Malfunction
+B2287	LIN Communication Master Malfunction
+B2321	Driver Side Door ECU Communication Stop
+B2322	Front Passenger Side Door ECU Communication Stop
+B2323	Rear Door RH ECU Communication Stop
+B2324	Rear Door LH ECU Communication Stop
+B2325	LIN Communication Bus Malfunction
+B2779	Engine Starter Communication Malfunction
+B2780	Push Switch/Key Unlock Warning Switch Malfunction
+B2784	Antenna Coil Open / Short
+B2785	Communication Malfunction between ECUs Connected by LIN
+B2786	No Response from Steering Lock ECU
+B2789	No Response from ID BOX
+B278A	Short To GND In Immobilizer System Power Source Circuit
+B278C	Lost Communication with Power Source Control
+B2790	ID BOX EEPROM Malfunction
+B2791	Communication Condition Failure Between ECM
+B2793	Transponder Chip Malfunction
+B2794	Unmatched Encryption Code
+B2795	Unmatched Key Code
+B2796	No Communication in Immobilizer System
+B2797	Communication Malfunction No. 1
+B2798	Communication Malfunctino No. 2
+B2799	Engine Immobiliser System Malfunction
+B279A	Theft Deterrent System Communication Line High Fixation
+C1201	Engine Control System Malfunction
+C1203	ECM Communication Circuit Malfunction
+C1210	Zero Point Calibration of Yaw Rate Sensor Undone
+C1223	ABS Control System Malfunction
+C1225	SM Solenoid Circuit
+C1232	Acceleration Sensor Stuck Malfunction
+C1241	Low Power Supply Voltage Malfunction
+C1243	Acceleration Sensor Stuck Malfunction
+C1245	Acceleration Sensor Output Malfunction
+C1271	RF Speed Output
+C1272	LF Speed Output
+C1279	"Acceleration Sensor Output Voltage Malfunction (Test Mode DTC)"
+C1300	Skid Control ECU Malfunction
+C1336	Zero Point Calibration of Acceleration Sensor Undone
+C1361	Short in ABS Motor Fail Safe Relay Circuit
+C1381	Acceleration Sensor Power Supply Voltage Malfunction
+C1401	Front Speed Sensor RH Malfunction
+C1402	Front Speed Sensor LH Malfunction
+C1403	Rear Speed Sensor RH Malfunction
+C1404	Rear Speed Sensor LH Malfunction
+C1405	Open or Short in Front Speed Sensor RH Circuit
+C1406	Open or Short in Front Speed Sensor LH Circuit
+C1407	Open or Short in Rear Speed Sensor RH Circuit
+C1408	Open or Short in Rear Speed Sensor LH Circuit
+C1413	Front Speed Sensor RH Output Malfunction
+C1414	Front Speed Sensor LH Output Malfunction
+C1415	Rear Speed Sensor RH Output Malfunction
+C1416	Rear Speed Sensor LH Output Malfunction
+C1417	High Power Supply Voltage Malfunction
+C1425	Open In Stop Light Switch Circuit
+C1427	Motor Malfunction
+C1428	Motor Circuit Malfunction
+C1432	Steering Angle Sensor Power Source Voltage Malfunction
+C1433	Steering Angle Sensor Internal Circuit
+C1434	Steering Angle Sensor Output Malfunction
+C1436	Yaw Rate Sensor Malfunction
+C1437	Lost Communication with ECM
+C1439	Steering Angle Sensor Initialization Incomplete
+C1440	Unusual Bank Angle Detected
+C1442	Invalid Data Received from Acceleration Sensor
+C1443	Invalid Data Received from Yaw Rate Sensor`
+C1445	Vehicle Driven with Steering Angle Sensor not Initialized
+C1511	Torque Sensor Circuit Malfunction
+C1512	Torque Sensor Circuit Malfunction
+C1513	Torque Sensor Circuit Malfunction
+C1514	Torque Sensor Power Supply Abnormal
+C1515	Torque Sensor Zero Point Adjustment Undone
+C1516	Torque Sensor Zero Point Adjustment Incomplete
+C1517	Torque Hold Abnormal
+C1524	Motor Circuit Malfunction
+C1531	ECU Malfunction
+C1532	ECU Malfunction
+C1533	ECU Malfunction
+C1534	ECU Malfunction
+C1535	ECU Malfunction
+C1551	IG Power Supply Voltage Malfunction
+C1552	PIG Power Supply Voltage Malfunction
+C1553	PIG Power Supply Overvoltage
+C1554	Power Supply Relay Failure
+C1555	Motor Relay Welding Failure
+C1581	Assist Map Number Un-Writing
+C1582	Assist Map Number Mismatch
+C1611	ECU Malfunction
+C1612	IG Voltage is Low or High
+C1613	ACC Voltage is Low or High
+C1621	Back Camera Power Supply Failure
+C1622	Open or Short Circuit in Back Camera Signal
+C1625	Open or Short in Steering Angle Sensor +B
+C1626	Steering Angle Sensor Failure
+C1627	Vehicle Height Sensor Voltage is Low or High
+C1628	Vehicle Height Sensor Failure
+C1645	Power Steering Control System Failure
+C164A	EPS Communication Malfunction
+C164E	Stop Switch Circuit Malfunction
+C1657	Hybrid Powertrain Control Module
+C1658	Speed Sensor Malfunction
+C1659	Brake System Malfunction
+C1662	Ambient Temperature High
+C168B	AVC-LAN Communication Malfunction
+C168C	AVC-LAN Command Time Out
+C1691	Back Camera Initialization Incomplete
+C1694	Steering Angle Initialization Incomplete
+C1695	Zero point Calibration of Vehicle Height Sensor Incomplete
+C1AE0	Front Left Side Sensor
+C1AE5	Front Right Side Sensor
+C1AEF	APGS Sensor Communication Circuit
+C2121	No Signal from Transmitter ID1 in Main Mode
+C2126	Transmitter ID not Received in Main Mode
+C2182	Transmitter ID2 not Received (Test Mode DTC)
+C2300	Actuator System Malfunction
+C2301	Shift Changing Time Malfunction
+C2303	Short in Power Source Relay Circuit
+C2304	Open or Short Circuit in U Phase
+C2305	Open or Short Circuit in V Phase
+C2306	Open or Short Circuit in W Phase
+C2307	Power Supply (Transmission Control ECU)
+C2308	EEPROM Malfunction
+C2309	Open in B+ Circuit
+C2310	Open or Short Circuit in Battery Circuit
+C2311	Communication Error from HV ECU
+C2315	HV System
+P1010	OCV for VVTL Circuit (Bank 1)
+P1011	OCV for VVTL Open Malfunction (Bank 1)
+P1012	OCV for VVTL Close Malfunction (Bank 1)
+P101D	"A/F Sensor Heater Circuit Performance Bank 1 Sensor 1 Stuck ON"
+P102D	"O2 Sensor Heater Circuit Performance Bank 1 Sensor 2 Stuck ON"
+P106A	"Evaporative Emission System Pressure Sensor - Manifold Absolute Pressure Correlation"
+P106B	"Evaporative Emission System Pressure Sensor - Secondary Air Injection Pressure Sensor Correlation"
 P1100	BARO Sensor Circuit
+P1115	"Coolant Temperature Sensor Circuit For Coolant Heat Storage System"
+P1116	"Coolant Temperature Sensor Circuit Stack For Coolant Heat Storage System"
+P1117	"Coolant Temperature Sensor Circuit Low For Coolant Heat Storage System"
+P1118	"Coolant Temperature Sensor Circuit High For Coolant Heat Storage System"
 P1120	Accelerator Pedal Position Sensor Circuit
 P1121	Accelerator Pedal Position Sensor Range/Performance Problem
+P1122	Coolant Flow Control Valve Position Sensor Circuit Low
+P1123	Coolant Flow Control Valve Position Sensor Circuit High
 P1125	Throttle Control Motor Circuit
 P1126	Magnetic Clutch Circuit
 P1127	ETCS Actuator Power Source Circuit
@@ -10,32 +213,159 @@ P1130	Air/Fuel Sensor Circuit Range/Performance. (Bank 1 Sensor 1)
 P1133	Air/Fuel Sensor Circuit Response. (Bank 1 Sensor 1)
 P1135	Air/Fuel Sensor Heater Circuit Response. (Bank 1 Sensor 1)
 P1150	Air/Fuel Sensor Circuit Range/Performance. (Bank 1 Sensor 2)
+P1151	Coolant Heat Storage Tank
 P1153	Air/Fuel Sensor Circuit Response. (Bank 1 Sensor 2)
 P1155	Air/Fuel Sensor Heater Circuit. (Bank 1 Sensor 2)
 P1200	Fuel Pump Relay Circuit
 P1300	Igniter Circuit Malfunction - No. 1
+P1305	Igniter No. 2 Circuit Malfunction
 P1310	Igniter Circuit Malfunction - No. 2
+P1315	Igniter Circuit Malfunction (No.4)
+P1320	Igniter Circuit Malfunction (No.5)
+P1325	Igniter Circuit Malfunction (No.6)
+P1330	Igniter No. 7 Circuit Malfunction
 P1335	No Crankshaft Position Sensor Signal - Engine Running
+P1340	"Camshaft Position Sensor ""A"" (Bank 1 Sensor 2)"
+P1341	Camshaft Position Sensor ”A” (Bank 1 Sensor 2 )
+P1342	"Camshaft Position Sensor ""A"" Low Input (MRE)"
+P1343	"Camshaft Position Sensor ""A"" High Input (MRE)"
+P1345	"VVT Sensor/Camshaft Position Sensor Circuit Malfunction (Bank 1)"
+P1346	"VVT Sensor/Camshaft Position Sensor Circuit Range/Performance Problem (Bank 1)"
 P1349	VVT System
+P1350	"VVT Sensor/Camshaft Position Sensor Circuit Malfunction (Bank 2)"
+P1351	"VVT Sensor/Camshaft Position Sensor Circuit Range/Performance Problem (Bank 2)"
+P1354	VVT System Malfunction (Bank 2)
 P1400	Sub-Throttle Position Sensor
 P1401	Sub-Throttle Position Sensor Range/Performance Problem
 P1405	Turbo Pressure Sensor Circuit
 P1406	Turbo Pressure Sensor Range/Performance Problem
 P1410	EGR Valve Position Sensor Circuit Malfunction
 P1411	EGR Valve Position Sensor Circuit Range/Performance
+P1420	Evaporative Emission Canister Small Leak
+P1421	Evaporative Emission Canister Gross Leak
+P1422	Fuel Tank Small Leak
+P1423	Fuel Tank Gross Leak
+P1430	"Vacuum Sensor for Absorber & Catalyst System Circuit Malfunction"
+P1431	Vacuum Sensor for Absorber & Catalyst Performance
+P1436	Variable Valve Malfunction
+P1437	Vacuum Line Malfunction
+P1440	Secondary Air Injection System Control Valve Circuit Bank 1
+P1441	"Secondary Air Injection System Switching Valve No.2 Bank 1 Stuck Open"
+P1442	"Secondary Air Injection System Switching Valve No.2 Bank 1 Stuck Close"
+P1443	Secondary Air Injection System Control Valve Circuit Bank 2
+P1444	"Secondary Air Injection System Switching Valve No.2 Bank 2 Stuck Open"
+P1445	"Secondary Air Injection System Switching Valve No.2 Bank 2 Stuck Close"
+P1450	Fuel Tank Pressure Sensor
+P1451	Fuel Tank Pressure Sensor Range/Performance
+P1452	Fuel Tank Pressure Sensor Low Input
+P1453	Fuel Tank Pressure Sensor High Input
+P1455	Vapor Reducing Fuel Tank Small Leak Detected
 P1500	Starter Signal Circuit
 P1510	Boost Pressure Control Circuit
 P1511	Boost Pressure Low
 P1512	Boost Pressure High
 P1520	Stop Lamp Switch Signal Malfunction
+P1521	Ignition Switch Malfunction
+P1525	Cruise Control Switch Circuit Malfunction
+P1550	Battery Current Sensor Circuit
+P1551	Battery Current Sensor Circuit Low
+P1552	Battery Current Sensor Circuit High
 P1565	Cruise Control Main Switch Circuit
+P1566	Cruise Control Main Switch Circuit Malfunction
+P1571	Radar Sensor Malfunction
+P1572	Improper Aiming of Radar Sensor Beam Axis
+P1575	Warning Buzzer Malfunction
+P1578	Brake System Malfunction
 P1600	ECM BATT Malfunction
+P1602	Deterioration of Battery
 P1605	Knock Control CPU
+P1607	Cruise Control Input Processor
+P1613	Secondary Air Injection Driver Malfunction
+P1614	Secondary Air Injection System Driver Bank 2
+P1615	Communication Error from Distance Control ECU to ECM
+P1616	Communication Error from ECM to Distance Control ECU
+P1617	Distance Control ECU Malfunction
 P1630	Traction Control System
+P1631	Communication Error from ECM to VSC
 P1633	ECM
+P1636	HV ECU Malfunction
+P1637	EGSTP Signal Malfunction
+P1645	Body ECU Malfunction
+P1646	Transmission Control ECU Malfunction
+P1647	CAN Communication Malfunction
 P1652	Idle Air Control Valve Control Circuit
 P1656	OCV Circuit
 P1658	Wastegate Valve Control Circuit
 P1661	EGR Circuit
 P1662	EGR by-pass Valve Control Circuit
+P1663	OCV Circuit Malfunction (bank 2)
+P1690	Oil Control Valve Circuit Malfunction
+P1692	Oil Control Valve Circuit Malfunction (Open)
+P1693	Oil Control Valve Circuit Malfunction (Closed)
+P1700	Vehicle Speed Sensor '2' Circuit Malfunction
+P1705	A/T Direct Clutch Speed Sensor Circuit Malfunction
+P1715	Rear Wheel Sensor Circuit Malfunction (Rear Speed Sensor)
+P1725	"NT Revolution Sensor Circuit Malfunction (Input Turbine Speed Sensor)"
+P1730	"NC Revolution Sensor Circuit Malfunction (Counter Gear Speed Sensor)"
+P1735	Front Right Speed Sensor Malfunction
+P1740	Front Left Speed Sensor Malfunction
+P1755	Liner Solenoid for Lock-up Control Circuit Malfunction
+P1760	"Linear Solenoid for Line Pressure Control Circuit Malfunction (Shift Solenoid Valve ST)"
+P1765	A/T Linear Shift Solenoid Circuit Malfunction
+P1770	"Differential Lock Solenoid No. 1 Circuit Malfunction (Shift Solenoid Valve SLD)"
 P1780	Park/Neutral Position Switch Malfunction (Only For A/T)
+P1781	Shift Lever Switch Malfunction
+P1782	Transfer L4 Switch Malfunction
+P1783	Transfer Neutral Switch Malfunction
+P1790	ST Solenoid Valve Circuit Malfunction
+P1810	CAN Communication Malfunction
+P1835	Front Right Speed Sensor Malfunction
+P1839	Rear Right Speed Sensor Malfunction
+P1840	Front Left Speed Sensor Malfunction
+P1844	Rear Left Speed Sensor Malfunction
+P1851	Accumulator Pressure Sensor Malfunction
+P1853	Master Solenoid Malfunction
+P1854	HPU Motor Relay Malfunction
+P1855	Clutch Stroke Sensor Malfunction
+P1857	Clutch Control System Malfunction
+P1860	Master Pressure Sensor Malfunction
+P1863	Master Pressure Control System Malfunction
+P1866	Shift Solenoid Malfunction
+P1868	Select Solenoid Malfunction
+P1870	Shift Stroke Sensor Malfunction
+P1873	Shift Stroke Control System Malfunction
+P1874	Select Stroke Sensor Malfunction
+P1878	Clutch Solenoid Circuit Malfunction
+P1880	HPU Pressure Control System Malfunction
+P1881	Reverse switch malfunction
+P1882	Shift Stroke Sensor Malfunction (Output Error)
+P1883	Select Stroke Sensor Malfunction
+P3001	Battery ECU Malfunction
+P3002	HV ECU Communication Malfunction
+P3004	Power Cable Malfunction
+P3005	High Voltage Fuse Snapped
+P3006	Battery SOC Are Uneven
+P3009	Leak Detected
+P3010	Battery Total Resistance Malfunction
+P3015	Battery Block 5 Becomes Weak
+P3030	Battery Voltage Detective line Snapped
+P3060	Battery Temperature sensor Circuit Malfunc-tion
+P3076	Abnormal Air Flow by Battery Cooling Fan
+P3077	Battery Cooling Fan Motor Circuit Malfunction
+P3105	Battery Smart Unit Communication Circuit Malfunction
+P3115	HV Battery Current Sensor Malfunction
+P3190	Poor Engine Power
+P3191	Engine does not Start
+P3193	Fuel Run Out
+U1000	Can Communication Failure (Message Registry)
+U1002	(CAN No. 2 BUS)
+U1100	Lost Communication with Seat Belt Control ECU
+U1102	Lost Communication with Cruise Control Module
+U1104	Lost Communication with Driving Support ECU
+U1105	Lost Communication with Parking Assist ECU
+U110B	"Lost Communication with Parking Assist Control Module ""B"""
+U1110	Lost Communication with Clearance Sonar Module
+U1111	Lost Communication with Body No. 5 Module
+U1115	Lost Communication with Tilt and Telescopic Module
+U1119	Lost Communication with Object Recognition ECU (CAN)
+U1121	Lost Communication with Driver Monitor ECU
