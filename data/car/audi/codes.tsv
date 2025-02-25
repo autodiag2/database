@@ -70,6 +70,14 @@ P0C09	Drive motor generator assembly failure, Drive motor generator power invert
 P0C11	Coolant system leak, Drive motor generator power inverter control module failure, Engine cooling fan failure, Water pump failure
 P0C14	Coolant system leak, Drive motor generator power inverter control module failure, Engine cooling fan failure, Water pump failure
 P0C15	Coolant system leak, Drive motor generator power inverter control module failure, Engine cooling fan failure, Water pump failure
+P1004	Torque difference cylinder 1 Limiting value exceeded
+P1005	Torque difference cylinder 2 Limiting value exceeded
+P1006	Torque difference cylinder 3 Limiting value exceeded
+P1007	Torque difference cylinder 4 Limiting value exceeded
+P1009	Air mass meter 1/2 implausible signal from load detection
+P100F	Fuel Rail Injection Valves
+P10A0	RFP Powerstage, signal range check
+P10A4	RFP Actuator, functional check
 P1101	O2 Sensor Circ.,Bank1-Sensor1Voltage too Low/Air Leak
 P1102	O2 Sensor Heating Circ.,Bank1-Sensor1 Short to B+
 P1103	O2 Sensor Heating Circ.,Bank1-Sensor1 Output too Low
@@ -142,6 +150,11 @@ P1176	O2 Correction Behind Catalyst,B1 Limit Attained
 P1177	O2 Correction Behind Catalyst,B2 Limit Attained
 P1178	Linear 02 Sensor / Pump Current Open Circuit
 P1179	Linear 02 Sensor / Pump Current Short to ground
+P117A	O2S (Bank 1, Sensor 3)
+P117C	Post Catalyst Fuel Trim System Too Lean Bank 3
+P117D	Post Catalyst Fuel Trim System Too Rich Bank 3
+P117E	Post Catalyst Fuel Trim System Too Lean Bank 4
+P117F	Post Catalyst Fuel Trim System Too Rich Bank 4
 P1180	Linear 02 Sensor / Pump Current Short to B+
 P1181	Linear 02 Sensor / Reference Voltage Open Circuit
 P1182	Linear 02 Sensor / Reference Voltage Short to ground
@@ -218,8 +231,18 @@ P1286	Fuel Inj.Air Contr.Valve Circ. Short to B+
 P1287	Turbocharger bypass valve open
 P1288	Turbocharger bypass valve short to B+
 P1289	Turbocharger bypass valve short to ground
+P1295	Turbocharger Bypass Valve Throughput Faulty
 P1296	Cooling system malfunction
 P1297	Connection turbocharger - throttle valve pressure hose
+P129B	Fuel Pressure Regulator 2 Control Circuit
+P129C	Fuel Pressure Regulator 2 Control Circuit Low
+P129D	Fuel Pressure Regulator 2 Control Circuit High
+P12A1	Fuel Rail Pressure Sensor Inappropriately Low
+P12A2	Fuel Rail Pressure Sensor Inappropriately High
+P12A4	Fuel Rail Pump Control Valve Stuck Closed
+P12A5	Fuel Rail Pressure Sensor High Pressure System
+P12A6	Fuel Rail Pressure Sensor High Pressure System
+P12A7	Fuel Rail Pressure Control valve
 P1300	Misfire detected Reason: Fuel level too low
 P1319	Knock Sensor 1 Circ. Short to Ground
 P1320	Knock Sensor 2 Circ. Short to Ground
@@ -288,6 +311,18 @@ P1396	Engine Speed Sensor Missing Tooth
 P1397	Engine speed wheel Adaptation limit reached
 P1398	Engine RPM signal, TD Short to ground
 P1399	Engine RPM signal, TD Short Circuit to B+
+P13CE	Sensor for internal pressure of cylinder 1 Electrical malfunction
+P13CF	Sensor for internal pressure of cylinder 1 Short circuit to ground
+P13D1	Sensor for internal pressure of cylinder 2 Electrical malfunction
+P13D2	Sensor for internal pressure of cylinder 2 Short circuit to ground
+P13D3	Sensor for internal pressure of cylinder 2 Implausible signal
+P13D4	Sensor for internal pressure of cylinder 3 Electrical malfunction
+P13D5	Sensor For Internal Pressure Of Cylinder 3 Short Circuit To Ground
+P13D6	Sensor for internal pressure of cylinder 3 Implausible signal
+P13D7	Sensor for internal pressure of cylinder 4 Electrical malfunction
+P13D8	Sensor For Internal Pressure Of Cylinder 4 Short Circuit To Ground
+P13D9	Sensor for internal pressure of cylinder 4 Implausible signal
+P13EA	ignition timing monitor
 P1400	EGR Valve Circ Electrical Malfunction
 P1401	EGR Valve Circ Short to Ground
 P1402	EGR Valve Circ Short to B+
@@ -297,6 +332,7 @@ P1406	EGR Temp.Sensor Range/Performance
 P1407	EGR Temp.Sensor Signal too Low
 P1408	EGR Temp.Sensor Signal too High
 P1409	Tank Ventilation Valve Circ. Electrical Malfunction
+P140C	Low Pressure EGR Sensor Position circuit high
 P1410	Tank Ventilation Valve Circ. Short to B+
 P1411	Sec.Air Inj.Sys.,Bank2 Flow too Flow
 P1412	EGR Different.Pressure Sensor Signal too Low
@@ -354,6 +390,12 @@ P1475	EVAP Emission Contr.LDP Circ Malfunction/Signal Circ.Open
 P1476	EVAP Emission Contr.LDP Circ Malfunction/Insufficient Vacuum
 P1477	EVAP Emission Contr.LDP Circ Malfunction
 P1478	EVAP Emission Contr.LDP Circ Clamped Tube Detected
+P1489	Evaporative Emission System Purge Control Valve Circuit High
+P1490	Evaporative Emission System Purge Control Valve Circuit Low
+P1491	Evaporative Emission System Purge Control Valve CircuitOpen
+P1494	Evaporative Emission System Incorrect Purge Flow
+P1497	Secondary Air Injection System Insufficient Flow Bank 3
+P1498	Secondary Air Injection System Insufficient Flow Bank 4
 P1500	Fuel Pump Relay Circ. Electrical Malfunction
 P1501	Fuel Pump Relay Circ. Short to Ground
 P1502	Fuel Pump Relay Circ. Short to B+
@@ -364,6 +406,7 @@ P1506	Closed Throttle Pos.Switch Does Not Open/Short to Ground
 P1507	Idle Sys.Learned Value Lower Limit Attained
 P1508	Idle Sys.Learned Value Upper Limit Attained
 P1509	Idle Air Control Circ. Electrical Malfunction
+P150A	Engine Off Timer Performance
 P1510	Idle Air Control Circ. Short to B+
 P1511	Intake Manifold Changeover Valve circuit electrical malfunction
 P1512	Intake Manifold Changeover Valve circuit Short to B+
@@ -450,6 +493,7 @@ P1606	Rough Road Spec Engine Torque ABS-ECU Electrical Malfunction
 P1607	Vehicle speed signal Error message from instrument cluster
 P1608	Steering angle signal Error message from steering angle sensor
 P1609	Crash shut-down activated
+P1610	ECU Defective
 P1611	MIL Call-up Circ./Transm.Contr.Module Short to Ground
 P1612	Electronic Control Module Incorrect Coding
 P1613	MIL Call-up Circ Open/Short to B+
@@ -510,6 +554,7 @@ P1691	Malfunction Indication Light Open
 P1692	Malfunction Indication Light Short to Ground
 P1693	Malfunction Indication Light Short to B+
 P1694	Malfunction Indication Light Open/Short to Ground
+P1702	Malfunction cannot activate control module Replacement function, since another malfunction with equal priority is present
 P1704	Kick Down Switch Malfunction
 P1705	Gear/Ratio Monitoring Adaptation limit reached
 P1711	Wheel Speed Signal 1 Range/Performance
@@ -520,6 +565,7 @@ P1724	Starter Interlock Circ. Short to Ground
 P1726	Wheel Speed Signal 4 Range/Performance
 P1728	Different Wheel Speed Signals Range/Performance
 P1729	Starter Interlock Circ. Short to B+
+P172E	Gear box
 P1733	Tiptronic Switch Down Circ. Short to Ground
 P1739	Tiptronic Switch up Circ. Short to Ground
 P1740	Clutch temperature control
@@ -535,6 +581,7 @@ P1749	Transm.Contr.Unit Incorrect Coded
 P1750	Power Supply Voltage Low Voltage
 P1751	Power Supply Voltage High Voltage
 P1752	Power Supply Malfunction
+P1757	Power supply (Clamp 30)
 P1760	Shift Lock Malfunction
 P1761	Shift Lock Short to Ground
 P1762	Shift Lock Short to B+
@@ -554,6 +601,7 @@ P1775	Hydraulic Pressure Sensor 1 adaptation at limit
 P1776	Hydraulic Pressure Sensor 1 range/performance
 P1777	Hydraulic Pressure Sensor 2 range/performance
 P1778	Solenoid EV7 Electrical Malfunction
+P1780	Torque Withdrawal Faulty
 P1781	Engine Torque Reduction Open/Short to Ground
 P1782	Engine Torque Reduction Short to B+
 P1784	Shift up/down Wire Open/Short to Ground
@@ -571,6 +619,25 @@ P1796	Vehicle Speed Signal Circ. Short to Ground
 P1797	Vehicle Speed Signal Circ. Short to B+
 P1798	Output Speed Sensor 2 Circ. Range/Performance
 P1799	Output Speed Sensor 2 Circ. Rpm too High
+P17A8	Shift valve
+P17A9	Shift valve
+P17AA	Shift valve
+P17AB	Shift valve
+P17AC	Gear valve 1
+P17AD	Gear valve 1
+P17AE	Gear valve 1
+P17AF	Gear valve 1
+P17B0	Gear Valve 2
+P17B1	Gear Valve 2
+P17B2	Gear Valve 2
+P17B3	Gear Valve 2
+P17B8	Clutch Position Sensor
+P17B9	Clutch Position Sensor
+P17BA	Clutch Position Sensor
+P17BB	Shift position sensor
+P17BC	Shift position sensor
+P17BD	Shift Position Sensor
+P17BE	Hydraulic pump
 P1813	Pressure Contr.Solenoid 1 Electrical
 P1814	Pressure Contr.Solenoid 1 Open/Short to Ground
 P1815	Pressure Contr.Solenoid 1 Short to B+
@@ -609,6 +676,8 @@ P1863	Data Bus Powertrain Missing Message from St. Angle Sensor
 P1864	Data Bus Powertrain Missing message from ADR control module
 P1865	Data Bus Powertrain Missing message from central electronics
 P1866	Data Bus Powertrain Missing messages
+P1912	Brake Booster Pressure Sensor Short Circuit to B+
+P1913	Brake Booster Pressure Sensor Short Circuit to Ground
 P2000	Diesel Particulate Filter (DPF) failure, Intake air leak, Mass Airflow (MAF) sensor is dirty/loss of calibration
 P2002	Diesel Particulate Filter (DPF) failure, Intake air leak, Mass Airflow (MAF) sensor is dirty/loss of calibration
 P2004	A failed IMRC actuator, A problem with the intake manifold or linkage, Wiring issues
@@ -659,7 +728,15 @@ P2A03	Exhaust leak, Oxygen sensor failure, Powertrain Control Module (PCM) failu
 P2A04	Exhaust leak, Oxygen sensor failure, Powertrain Control Module (PCM) failure, Wiring issue
 P2BA8	Faulty NOx Sensors, NOx Sensors harness is open or shorted, NOx Sensors circuit poor electrical connection, Fualty Diesel Particulate Filter (DPF)
 P3000	Fuel level is too low, High voltage battery assembly failure, High voltage battery is not sufficiently charged
+P3025	Angle sensor 1 (on throttle drive 2 power accelerator actuation)
+P3028	Angle sensor 2 (on throttle drive 2 power accelerator actuation)
+P3032	Throttle Actuator Basic Setting Bank 1 Bank 2
+P3035	Throttle Valve Control Module 2 Mechanical malfunction
+P3081	Engine Temperature Too Low
 P3100	High voltage powertrain control module failure
+P3211	Exhaust-Heater Return Connection (Bank 1 - Sensor 1)
+P3298	Warm Up Catalyst Efficiency Below Threshold Bank 3
+P3299	Warm Up Catalyst Efficiency Below Threshold Bank 4
 P3400	Faulty Cylinder Deactivation System/td>
 P3401	Engine oil level is too low, Powertrain Control Module (PCM) failure, Variable valve timing solenoid failure, Wiring issue
 U0001	A faulty wheel speed sensor, A problem with the wheel speed sensor circuit, Reluctor issues, A problem with the ABS module
@@ -667,3 +744,8 @@ U0073	A faulty control module, A problem with the CAN bus
 U0100	A faulty PCM, A problem with the control module circuit, A problem with the CAN bus
 U0107	A dead battery, A faulty TAC module, A problem with TAC module circuit, A problem with the CAN bus
 U0121	A dead battery, A faulty ABS module, A problem with ABS module circuit, A problem with the CAN bus
+U1024	Control module for instrument panel insert please read DTC
+U102C	Lost Communication With Anti-Lock Brake System (ABS) Control Module
+U102E	LIN Communication
+U102F	LIN Communication
+U1030	LIN Communication
