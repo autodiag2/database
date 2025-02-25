@@ -1096,6 +1096,76 @@ P0A26	Generator Torque Sensor Circuit Intermittent
 P0A27	Battery Power Off Circuit
 P0A28	Battery Power Off Circuit Low
 P0A29	Battery Power Off Circuit High
+P1001	Valvetronic (VVT) Limp Home Request High Input
+P1002	Valvetronic (VVT) Limp Home Request Low Input
+P1003	Valvetronic (VVT) Limp Home Request Open Circuit
+P1004	Valvetronic (VVT) Guiding Sensor Solenoid Loss (Bank 1)
+P1005	Valvetronic (VVT) Guiding Sensor Reset Error (Bank 1)
+P1006	Valvetronic (VVT) Guiding Sensor Parity Error (Bank 1)
+P1007	Valvetronic (VVT) Guiding Sensor Gradient Error (Bank 1)
+P1008	Valvetronic (VVT) Guiding Sensor Solenoid Loss (Bank 2)
+P1009	Valvetronic (VVT) Guiding Sensor Reset Error (Bank 2)
+P1010	Valvetronic (VVT) Guiding Sensor Parity Error (Bank 2)
+P1011	Valvetronic (VVT) Guiding Sensor Gradient Error (Bank 2)
+P1012	Valvetronic (VVT) Reference Sensor Solenoid Loss (Bank 1)
+P1013	Valvetronic (VVT) Reference Sensor Reset Error (Bank 1)
+P1014	Valvetronic (VVT) Reference Sensor Parity Error (Bank 1)
+P1015	Valvetronic (VVT) Reference Sensor Gradient Error (Bank 1)
+P1022	Valvetronic (VVT), Eccentric Shaft Sensor 2 Circuit Low Input
+P1023	Valvetronic (VVT) Self-Learning Function Faulty Adjustment Range (Bank 1)
+P1024	Valvetronic (VVT) Self-Learning Function Faulty Lower Learning Range (Bank 1)
+P1025	Valvetronic (VVT) Self-Learning Function No Positions Stored (Bank 1)
+P1026	Valvetronic (VVT) Self-Learning Function Faulty Adjustment Range (Bank 2)
+P1027	Valvetronic (VVT) Self-Learning Function Faulty Lower Learning Range (Bank 2)
+P1028	Valvetronic (VVT) Self-Learning Function No Positions Stored (Bank 2)
+P1030	Valvetronic (VVT) Actuator Monitoring Position Control, Control Deviation (Bank 1)
+P1031	Valvetronic (VVT) Actuator Monitoring Recognition of Direction of Rotation Plausibility (Bank 1)
+P1033	Valvetronic (VVT) Actuator Monitoring Position Control, Control Deviation (Bank 2)
+P1034	Valvetronic (VVT) Actuator Monitoring Recognition of Direction of Rotation Plausibility (Bank 1)
+P1035	Valvetronic (VVT) CAN Message Monitoring Faulty Desired Message (Bank 1)
+P1036	Valvetronic (VVT) CAN Timeout VVT-Desired Message (Bank 1)
+P1037	Valvetronic (VVT) CAN Timeout Message (Bank 1)
+P1038	Valvetronic (VVT) CAN Message Monitoring Faulty Desired Message (Bank 2)
+P1039	Valvetronic (VVT) CAN Timeout VVT-Desired Message (Bank 2)
+P1040	Valvetronic (VVT) CAN Timeout Message (Bank 2)
+P1041	Valvetronic (VVT) Actuator Control Module EEPROM Error (Bank 1)
+P1042	Valvetronic (VVT) Actuator Control Module Random Access Memory Error (Bank 1)
+P1043	Valvetronic (VVT) Actuator Control Module Read Only Memory Error (Bank 1)
+P1044	Valvetronic (VVT) Actuator Control Module EEPROM Error (Bank 2)
+P1045	Valvetronic (VVT) Actuator Control Module Random Access Memory Error (Bank 2)
+P1046	Valvetronic (VVT) Actuator Control Module Read Only Memory Error (Bank 2)
+P1047	Valvetronic (VVT) Actuator Control Circuit High Input (Bank 1)
+P1048	Valvetronic (VVT) Actuator Control Circuit Low Input (Bank 1)
+P1050	Valvetronic (VVT) Control Circuit (Bank 1)
+P1051	Valvetronic (VVT) Control Circuit High Input (Bank 1)
+P1052	Valvetronic (VVT) Control Circuit Low Input (Bank 1)
+P1054	Valvetronic (VVT) Control Circuit (Bank 2)
+P1055	Valvetronic (VVT) Supply Voltage Control Motor High Input (Bank 1)
+P1056	Valvetronic (VVT) Supply Voltage Control Motor Low Input (Bank 1)
+P1057	Valvetronic (VVT) Supply Voltage Control Motor Electrical (Bank 1)
+P1058	Valvetronic (VVT) Supply Voltage Control Motor High Input (Bank 2)
+P1059	Valvetronic (VVT) Supply Voltage Control Motor Low Input (Bank 2)
+P1060	Valvetronic (VVT) Supply Voltage Control Motor Electrical (Bank 2)
+P1061	Valvetronic (VVT) Limp Home Request RPM and Charge Limitation (Bank 1)
+P1062	Valvetronic (VVT) Limp Home Request Full Stroke Position Not Reached (Bank 1)
+P1063	Valvetronic (VVT) Limp Home Request Air Mass Plausibility (Bank 1)
+P1064	Valvetronic (VVT) Value Comparison Starting Position/Parking Position Plausibility (Bank 1)
+P1065	Valvetronic (VVT) CAN Timeout No Signal
+P1066	Valvetronic (VVT) CAN Message Monitoring Faulty Actual Message
+P1067	Valvetronic (VVT) Reference Sensor Solenoid Loss (Bank 2)
+P1068	Valvetronic (VVT) Reference Sensor Reset Error (Bank 2)
+P1069	Valvetronic (VVT) Reference Sensor Parity Error (Bank 2)
+P1070	Valvetronic (VVT) Reference Sensor Gradient Error (Bank 2)
+P1071	Valvetronic (VVT) Control Module Watchdog or Temperature Sensor Error (Bank 1)
+P1072	Valvetronic (VVT) Control Module Watchdog or Temperature Sensor Error (Bank 2)
+P1075	Valvetronic (VVT) Overload Protection (Bank 1)
+P1076	Valvetronic (VVT) Overload Protection ECU Temperature High Input (Bank 1)
+P1077	Valvetronic (VVT) Overload Protection Control Motor Temperature High Input (Bank 1)
+P1078	Valvetronic (VVT) Overload Protection Control Motor Current High Input (Bank 1)
+P1079	Valvetronic (VVT) Overload Protection (Bank 1)
+P1080	Valvetronic (VVT) Overload Protection ECU Temperature High Input (Bank 2)
+P1081	Valvetronic (VVT) Overload Protection Control Motor Temperature High Input (Bank 2)
+P1082	Valvetronic (VVT) Overload Protection Control Motor Current High Input (Bank 2)
 P1083	Fuel Control Mixture Lean (Bank 1 Sensor 1)
 P1084	Fuel Control Mixture Rich (Bank 1 Sensor 1)
 P1085	Fuel Control Mixture Lean (Bank 2 Sensor 1)
@@ -1112,6 +1182,11 @@ P1095	O2 Sensor Circuit Slow Switching From Lean to Rich (Bank 1 Sensor 1)
 P1096	O2 Sensor Circuit Slow Switching From Lean to Rich (Bank 2 Sensor 1)
 P1097	O2 Sensor Circuit Slow Response after Coast Down Fuel Cutoff (Bank 1 Sensor 1)
 P1098	O2 Sensor Circuit Slow Response after Coast Down Fuel Cutoff (Bank 2 Sensor 2)
+P1100	Mass Air Flow Circuit Conditions
+P1101	Mass Air Flow Circuit Rationality Check Conditions
+P1103	Mass Air Flow Circuit Rationality Check Conditions
+P1104	Differential Pressure Sensor Intake Manifold Pressure Too Low (Bank 1)
+P1105	Differential Pressure Sensor Intake Manifold Pressure Too High (Bank 1)
 P1111	Engine Coolant Temperature Radiator Outlet Sensor Low Input
 P1112	Engine Coolant Temperature Radiator Outlet Sensor High Input
 P1115	Coolant Temperature Sensor Plausibility
@@ -1122,6 +1197,8 @@ P1120	Pedal Position Sensor Circuit
 P1121	Pedal Position 1 Range/Performance Problem
 P1122	Pedal Position 1 Low Input
 P1123	Pedal Position 1 High Input
+P1129	Engine Oil Level Sensor Signal Oil Level Too Low
+P1130	Long Term Fuel Trim at Lean Limit
 P1132	O2 Sensor Heater Control Circuit (Bank 1 Sensor 1)
 P1133	O2 Sensor Heater Control Circuit (Bank 2 Sensor 1)
 P1134	O2 Sensor Heater Circuit Signal Intermittent (Bank 1 Sensor 2)
@@ -1132,6 +1209,7 @@ P1138	O2 Sensor Heater Circuit Low Voltage (Bank 1 Sensor 2)
 P1139	O2 Sensor Heater Circuit High Voltage (Bank 1 Sensor 2)
 P1140	Mass or Volume Air Flow Circuit Range/Performance Problem
 P1145	Solenoid Valve Running Losses Control Circuit Electrical
+P1149	O2 Control (Bank 1) Out of Range (Sensor Aging)
 P1151	O2 Sensor Heater Circuit Signal Intermittant (Bank 2 Sensor 1)
 P1152	O2 Sensor Heater Circuit Low Voltage (Bank 2 Sensor 1)
 P1153	O2 Sensor Heater Circuit High Voltage (Bank 2 Sensor 1)
@@ -1164,6 +1242,13 @@ P1190	Pre-catalyst Fuel Trim System Bank 1
 P1191	Pre-catalyst Fuel Trim System Bank 2
 P1192	Post-catalyst Fuel Trim System Bank 1
 P1193	Post-catalyst Fuel Trim System Bank 2
+P1197	Differential Pressure Sensor Intake Manifold High Input (Bank 1)
+P1198	Differential Pressure Sensor Intake Manifold Low Input (Bank 1)
+P1199	Differential Pressure Sensor Intake Manifold Pressure Plausibility (Bank 1)
+P1200	Fuel System Too Lean
+P1201	Fuel System Too Rich
+P1202	Fuel System Too Lean
+P1203	Fuel System Too Rich
 P1221	Pedal Position Sensor 2 Range/Performance Problem
 P1222	Pedal Position Sensor 2 Low Input
 P1223	Pedal Position Sensor 2 High Input
@@ -1179,8 +1264,12 @@ P1313	"A" Camshaft Position Plausibility
 P1317	"B" Camshaft Position Plausibility
 P1327	Knock Sensor 2 (Bank 1) Low Input
 P1328	Knock Sensor 2 (Bank 1) High Input
+P1329	Knock Sensor 3 Signal Low Input
+P1330	Knock Sensor 3 Signal High Input
 P1332	Knock Sensor 4 Low Input
 P1333	Knock Sensor 4 High Input
+P1338	Camshaft Position Sensor (Bank 1) Open/Short to B+
+P1339	Camshaft Position Sensor (Bank 1) Open/Short to B+
 P1340	Multiple Cylinder Misfire During Start
 P1341	Multiple Cylinder Misfire With Fuel Cut-off
 P1342	Misfire During Start Cylinder 1
@@ -1207,6 +1296,10 @@ P1362	Misfire During Start Cylinder 11
 P1363	Misfire Cylinder 11 With Fuel Cut-off
 P1364	Misfire During Start Cylinder 12
 P1365	Misfire Cylinder 12 With Fuel Cut-off
+P1377	Camshaft Position Sensor Master Camshaft Not Defined
+P1381	Control Module Self-Test, Knock Control Offset (Bank 1)
+P1382	Control Module Self-Test, Knock Control Test Pulse (Bank 1)
+P1383	Secondary Ignition Circuit Range Check Voltage Malfunction
 P1384	Knock Sensor 3 Circuit
 P1385	Knock Sensor 4 Circuit
 P1386	Control Module Self-test, Knock Control Baseline Test Bank 1
@@ -1219,11 +1312,15 @@ P1403	Carbon Canister Shut Off valve Control Circuit Electrical
 P1404	Heated Catalyst Current too High During Heating (Bank 2)
 P1405	Heated Catalyst Power Switch Overtemperature Condition (Bank 2)
 P1406	Heated Catalyst Internal Control Module Checksum/ROM Error
+P1411	Secondary Air Pump Valve Plausibility
+P1412	Secondary Air Pump Valve Plausibility
 P1413	Secondary Air Injection Pump Relay Control Circuit Signal Low
 P1414	Secondary Air Injection System Monitor Circuit High
+P1418	Secondary Air Pump Valve Plausibility
 P1420	Secondary Air Valve Control Circuit Electrical
 P1421	Secondary Air System Bank 1
 P1422	Secondary Air System Bank 2
+P1423	Secondary Air Pump Valve Plausibility
 P1432	Secondary Air Injection System Incorrect Flow Detected
 P1438	Purge Control Valve Control Open Circuit
 P1439	Purge Control Valve Control Circuit Signal Low
@@ -1274,8 +1371,12 @@ P1510	Idle Speed Control Valve Stuck
 P1511	DISA Control Circuit Electrical
 P1512	DISA Control Circuit Signal Low
 P1513	DISA Control Circuit Signal High
+P1515	Engine Off Timer Plausibility
+P1517	Rough Road Detection, No Wheel Speed Signal
+P1518	Rough Road Detection, Wheel Speed Too High
 P1519	"A" Camshaft Position Actuator Bank 1
 P1520	"B" Camshaft Position Actuator Bank 1
+P1521	Intake Camshaft Control (Bank 2) Malfunction
 P1522	"A" Camshaft Position Actuator Bank 2
 P1523	"A" Camshaft Position Actuator Signal Low Bank 1
 P1524	"A" Camshaft Position Actuator Signal High Bank 1
@@ -1289,6 +1390,11 @@ P1531	"B" Camshaft Position Actuator Control Open Circuit Bank 1
 P1532	"B" Camshaft Position Actuator Control Open Circuit Bank 2
 P1533	"B" Camshaft Position Actuator Control Circuit Signal Low Bank 2
 P1534	"B" Camshaft Position Actuator Control Circuit Signal High Bank 2
+P1535	Differentiated Intake Manifold Coil Temperature Limit Value Exceeded
+P1536	Differentiated Intake Manifold Controller Monitoring, Control Deviation
+P1537	Differentiated Intake Manifold Potentiometer Voltage in Lower Diagnosis Range
+P1538	Differentiated Intake Manifold Potentiometer Voltage in Upper Diagnosis Range
+P1539	Differentiated Intake Manifold Coil Temperature Threshold Exceeded
 P1540	Pedal Position Sensor
 P1541	Pedal Position Sensor Double Error
 P1542	Pedal Position Sensor Electrical
@@ -1307,6 +1413,9 @@ P1569	"A" Camshaft Position Actuator Control Open Circuit Bank 2
 P1580	Throttle Valve Mechanically Stuck
 P1581	"B" Camshaft Position Actuator Control Open Circuit Bank 2
 P1589	Control Module Self Test, Knock Control Test Pulse Bank 1
+P1590	Throttle Actuation Potentiometer Signal Too Low (right side)
+P1591	Throttle Actuation Potentiometer Signal Too High (Right Side)
+P1592	Throttle Position Control Malfunction (Right Side)
 P1593	DISA Control Circuit Electrical
 P1594	"B" Camshaft Position Actuator Control Open Circuit Bank 2
 P1602	Control Module Self Test, Control Module Defective
@@ -1316,12 +1425,17 @@ P1607	CAN Version
 P1608	Serial Communicating Link Control Module
 P1609	Serial Communicating Link EML
 P1611	Serial Communicating Link Transmission Control Module
+P1614	Serial Communication Link ACC Malfunction
 P1619	MAP Cooling Control Circuit Signal Low
 P1620	MAP Cooling Control Circuit Signal High
 P1622	MAP Cooling Control Circuit Electrical
 P1623	Pedal Position Sensor Potentiometer Supply
 P1624	Pedal Position Sensor Potentiometer Supply Channel 1 Electrical
 P1625	Pedal Position Sensor Potentiometer Supply Channel 2 Electrical
+P1626	Throttle/Pedal Position Sensor Rationality Check
+P1628	Throttle Valve Adaptation Spring Test Malfunction During Opening (Bank 1)
+P1629	Throttle Valve Adaptation Spring Test Stop, Spring Does Not Open (Bank 1)
+P1631	Throttle Valve Adaptation Spring Test (Bank 1)
 P1632	Throttle Valve Adaptation; Adaptation Condition Not Met
 P1633	Throttle Valve Adaptation; Limp Home Position
 P1634	Throttle Valve Adaptation; Spring Test Failed
@@ -1331,21 +1445,91 @@ P1637	Throttle Valve Position Control; Control Deviation
 P1638	Throttle Valve Position Control; Throttle Stuck Temporarily
 P1639	Throttle Valve Position Control; Throttle Stuck Permanently
 P1640	Internal Control Module (ROM/RAM) Error
+P1641	Throttle Valve Adaptation Stop Due to Environmental Conditions
+P1642	Throttle Valve Adaptation Stop Due to Environmental Values
+P1643	Throttle Valve Actuator Start Test Amplifier Balancing Plausibility
+P1644	Throttle Valve Adaptation Stop Relearning Lower Mechanical Stop
+P1645	Internal Control Module Random Access Memory (RAM) Reading Error
+P1649	Internal Control Module Random Access Memory (RAM) Writing Error
+P1650	Start While Engine is Running
+P1660	EWS (Electronic Immobilizer) Telegram Error
+P1661	Timeout EWS (Electronic Immobilizer) Telegram
+P1662	EWS (Electronic Immobilizer) Telegram Parity Error
+P1663	EWS (Electronic Immobilizer) Rolling Code Faulty Storage in EEPROM
+P1664	EWS (Electronic Immobilizer) Writing/Reading Error in EEPROM
+P1665	EWS (Electronic Immobilizer) Tampering Via Rolling Code
+P1666	EWS (Electronic Immobilizer) Tampering/Start Value Not Yet Programmed
+P1667	EWS (Electronic Immobilizer) Start Value Not Yet Programmed
+P1668	EWS (Electronic Immobilizer) Start Value Destroyed
+P1677	Adaptive Cruise Control No Activity Detected
+P1680	Electronic Throttle Control Monitor Level 2/3 ADC Processor Fault
 P1690	Malfunction Indicator Lamp (MIL) Electrical
+P1719	CAN Level Wrong Value
+P1720	CAN Message Timeout
+P1721	CAN Timeout ASC/DSC
+P1727	Engine Speed Signal Plausibility
+P1728	Engine Overspeed Plausibility
 P1734	Pressure Control Solenoid "B" Electrical
 P1738	Pressure Control Solenoid "C" Electrical
+P1740	Clutch Solenoid Circuit Range/Performance
 P1743	Pressure Control Solenoid "E" Electrical
 P1744	Pressure Control Solenoid "A" Electrical
+P1745	Pressure Regulator Valve 5 Plausibility
 P1746	Transmission Control Module Output Stage
 P1747	CAN Bus Monitoring
 P1748	Transmission Control Module Self Test
 P1749	Secondary Pressure Solenoid Communication Error
 P1750	Secondary Pressure Solenoid Circuit Range/Performance
 P1751	Secondary Pressure Solenoid Open Circuit
+P1753	Pressure Regulator Valve 4 Upper Threshold
+P1758	Shift Solenoid B
 P1761	Shift Solenoid Malfunction
+P1762	Shift Solenoid C Short to Power
+P1763	Shift Solenoid C Short to Ground
+P1764	Shift Solenoid C Short Circuit Continuity-Disconnection
 P1765	CAN Throttle Valve
+P1766	Engine Speed Plausibility
 P1770	CAN Torque Interface
+P1771	Engine Torque Plausibility
 P1780	CAN Torque Reduction
+P1782	Brake Pedal Signal Plausibility
+P1790	Internal Control Module Memory Checksum Error
+P1791	EEPROM Failure
+P1801	Solenoid Valve 1 Lower Threshold
+P1802	Solenoid Valve 2 Lower Threshold
+P1803	Solenoid Valve 3 Lower Threshold
+P1810	Input/Turbine Speed Sensor Circuit Malfunction Upper Threshold
+P1811	Input/Turbine Speed Sensor Circuit Malfunction Lower Threshold
+P1812	Output Speed Sensor Circuit Malfunction Upper Threshold
+P1813	Output Speed Sensor Circuit Malfunction Lower Threshold
+P1814	Output Speed Sensor Circuit Malfunction Plausibility
+P1831	Pressure Regulator Valve 1 Upper Threshold
+P1832	Pressure Regulator Valve 2 Upper Threshold
+P1833	Pressure Regulator Valve 3 Upper Threshold
+P1834	Pressure Regulator Valve 4 Upper Threshold
+P1835	Pressure Regulator Valve 5 Upper Threshold
+P1841	Pressure Regulator Valve 1 Lower Threshold
+P1842	Pressure Regulator Valve 2 Lower Threshold
+P1843	Pressure Regulator Valve 3 Lower Threshold
+P1844	Pressure Regulator Valve 4 Lower Threshold
+P1845	Pressure Regulator Valve 5 Lower Threshold
+P1861	2-1 Shift Range Monitoring General Malfunction
+P1862	3-2 Shift Range Monitoring
+P1863	4-3 Shift Range Monitoring
+P1864	5-4 Shift Range Monitoring
+P1865	6-5 Shift Range Monitoring
+P1881	1-2 Shift Range Monitoring Upper Threshold
+P1882	2-3 Shift Range Monitoring Upper Threshold
+P1883	3-4 Shift Upper Threshold
+P1884	4-5 Shift Upper Threshold
+P1885	5-6 Shift Upper Threshold
+P1889	System Power Supply (B+) Terminal 15 Malfunction
+P1890	TCC Power Supply Upper Threshold
+P1891	TCC Power Supply Upper Threshold
+P1892	TCC Power Supply Lower Threshold
+P1893	TCC Power Supply Circuit Continuity Power Short
+P1894	TCC Power Supply Circuit Continuity Ground Short
+P1895	TCC Power Supply Circuit Continuity Disconnection
 P2001	NOx Trap Efficiency Below Threshold
 P2003	Particulate Trap Efficiency Below Threshold
 P2005	Intake Manifold Runner Control Stuck Open
@@ -1973,6 +2157,78 @@ P2793	Gear Shift Direction Circuit
 P2794	Gear Shift Direction Circuit Low
 P2795	Gear Shift Direction Circuit High
 P2A05	O2 Sensor Circuit Range/Performance
+P3013	O2 Sensor Circuit Adaptation Value to High (Bank 2 Sensor 1)
+P3014	O2 Sensor WRAF-IC Supply Voltage Too Low (Bank 1 Sensor 1)
+P3015	O2 Sensor WRAF-IC Supply Voltage Too Low (Bank 2 Sensor 1)
+P3016	O2 Sensor Calibration Resistance at WRAF-IC Plausibility Bank 1 Sensor 1
+P3017	O2 Sensor Calibration Resistance at WRAF-IC Plausibility Bank 2 Sensor 1
+P3018	O2 Sensor Lambda Controller Value Above Threshold due to Open Pumping Current Circuit (Bank 1 Sensor 1)
+P3019	O2 Sensor Lambda Controller Value Above Threshold due to Open Pumping Current Circuit (Bank 2 Sensor 1)
+P3020	O2 Sensor Signal Voltage Too Low During Coast Down Fuel Cut- Off Due to Open Pumping Current Circuit (Bank 1 Sensor 1)
+P3021	O2 Sensor Signal Voltage Too Low During Coast Down Fuel Cut- Off Due to Open Pumping Current Circuit (Bank 2 Sensor 1)
+P3022	O2 Sensor Disturbed SPI Communication to WRAF-IC (Bank 1 Sensor 1)
+P3023	O2 Sensor Disturbed SPI Communication to WRAF-IC (Bank 2 Sensor 1)
+P3024	O2 Sensor Initialization Error WRAF-IC (Bank 1 Sensor 1)
+P3025	O2 Sensor Initialization Error WRAF-IC (Bank 2 Sensor 1)
+P3026	O2 Sensor Operating Temperature Not Reached Bank 1 Sensor 1
+P3027	O2 Sensor Operating Temperature Not Reached Bank 2 Sensor 1
+P3028	O2 Sensor Heater Control No Activity Detected Bank 1 Sensor 1
+P3029	O2 Sensor Heater Control No Activity Detected Bank 2 Sensor 1
+P3037	O2 Sensor Positive Current Control Circuit/Open Circuit (Bank 1 Sensor 1)
+P3200	Power CAN, CAN Chip Defective
+P3201	Power CAN, DPRAM-CAN Chip Defective
+P3202	Powertrain CAN, CAN Chip Cut-Off
+P3203	Local CAN, LoCAN Chip Defective
+P3204	Local CAN, DPRAM-LoCAN Chip Defective
+P3205	Local CAN, DPRAM-LoCAN Chip Cut-Off
+P3206	CAN Timeout ARS
+P3207	CAN Message Monitoring ARS No Signal
+P3208	CAN Message Monitoring ARS Plausibility
+P3209	CAN Message Monitoring ASC/DSC Alive Check Malfunction
+P3210	CAN Message Monitoring ASC/DSC Plausibility
+P3211	CAN Message Monitoring CAS No Signal
+P3212	CAN Message Monitoring CAS Plausibility
+P3213	CAN Message Monitoring ETC Alive Check Malfunction
+P3214	CAN Message Monitoring ETC Plausibility
+P3215	CAN Message Monitoring IHKA (Automatic Heating and Air Conditioning) No Signal
+P3216	CAN Timeout Instrument Pack
+P3217	CAN Message Monitoring Instrument Pack Plausibility
+P3219	CAN Message Monitoring SZL (Switch Cluster Steering Column) Alive Check Malfunction
+P3220	CAN Message Monitoring SZL (Switch Cluster Steering Column) No Signal
+P3221	CAN Message Monitoring SZL (Switch Cluster Steering Column) Plausibility
+P3223	Generator Mechanical Error
+P3225	Generator Communication Error
+P3226	E-Box Control Circuit Fan High
+P3227	E-Box Control Circuit Fan Low
+P3228	E-Box Control Circuit Open Circuit
+P3231	Control Module Monitoring Error Response Plausibility
+P3232	Control Module Monitoring Ignition Timing Plausibility
+P3233	Control Module Monitoring Relative Charge Plausibility
+P3236	Control Module Monitoring Injection Time Relative Fuel Quantity Plausibility
+P3237	Control Module Monitoring Fuel Correction Error
+P3238	Control Module Monitoring TPU Chip Defective
+P3247	Internal Control Module NVRAM Backup Error
+P3300	Ignition Coil Cylinder 1 High Input or None-Impedance
+P3301	Ignition Coil Cylinder 1 Contact Resistance or High-Impedance
+P3302	Ignition Coil Cylinder 1 Cut-Off Due to Over-temperature Condition or No Signal
+P3303	Ignition Coil Cylinder 5 High Input or None-Impedance
+P3304	Ignition Coil Cylinder 5 Contact Resistance or High-Impedance
+P3305	Ignition Coil Cylinder 5 Cut-Off Due to Over-temperature Condition or No Signal
+P3306	Ignition Coil Cylinder 4 High Input or None-Impedance
+P3307	Ignition Coil Cylinder 4 Contact Resistance or High-Impedance
+P3308	Ignition Coil Cylinder 4 Cut-Off Due to Over-temperature Condition or No Signal
+P3309	Ignition Coil Cylinder 8 High Input or None-Impedance
+P3310	Ignition Coil Cylinder 8 Contact Resistance or High-Impedance
+P3311	Ignition Coil Cylinder 8 Cut-Off Due to Over-temperature Condition or No Signal
+P3312	Ignition Coil Cylinder 6 High Input or None-Impedance
+P3313	Ignition Coil Cylinder 6 Contact Resistance or High-Impedance
+P3314	Ignition Coil Cylinder 6 Cut-Off Due to Over-temperature Condition or No Signal
+P3315	Ignition Coil Cylinder 31 High Input or None-Impedance
+P3316	Ignition Coil Cylinder 3 Contact Resistance or High-Impedance
+P3317	Ignition Coil Cylinder 3 Cut-Off Due to Over-temperature Condition or No Signal
+P3318	Ignition Coil Cylinder 7 High Input or None-Impedance
+P3319	Ignition Coil Cylinder 7 Contact Resistance or High-Impedance
+P3320	Ignition Coil Cylinder 7 Cut-Off Due to Over-temperature Condition or No Signal
 P3400	Cylinder Deactivation System
 P3401	Cylinder 1 Deactivation/lntake Valve Control Circuit/Open
 P3402	Cylinder 1 Deactivation/lntake Valve Control Performance
@@ -2332,3 +2588,10 @@ U0428	Invalid Data Received From Steering Angle Sensor Module
 U0429	Invalid Data Received From Steering Column Control Module
 U0430	Invalid Data Received From Tire Pressure Monitor Module
 U0431	Invalid Data Received From Body Control Module "A"
+U1115	Lost Communication With Vehicle Mode Status
+U1116	Lost Communication With Vehicle Mode Status Check Sum Error
+U1120	Lost Communication With Steering Angle Sensor Module
+U1121	Lost Communication With Power Management Battery Voltage
+U1129	Lost Communication With Reverse Status
+U1134	Lost Communication With Lamp Status
+U1135	Lost Communication With Status Water Valve
