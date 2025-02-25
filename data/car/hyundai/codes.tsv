@@ -1,20 +1,662 @@
+B1101	SRSCM Input Voltage High
+B1102	SRSCM Input Voltage Low
+B1105	Tailgate Reference Voltage Fault
+B1111	Battery Voltage High
+B1112	Battery Voltage Low
+B1200	Humidity Sensor Open
+B1201	Humidity Sensor Short(Low)
+B1202	Heater Water Temperature Sensor Open (High)
+B1203	Heater Water Temperature Sensor Short(Low)
+B1204	Air Mix Potentiometer Open (Low)–Passenger
+B1205	Air Mix Potentiometer Short (High)–Passenger
+B1206	Direction Potentiometer Open (Low)-Passenger
+B1207	Direction Potentiometer Short (High)-Passenger
+B1208	Intake Potentiometer Open (Low)
+B1209	Intake Potentiometer Short (High)
+B1210	Front Left Sensor Fault
+B1211	Front Center Left Sensor Fault
+B1212	Front Center Right Sensor Fault
+B1213	Front Right Sensor Fault
+B1214	B1214 Rear Left Sensor Fault
+B1215	Rear Center Left Sensor Fault
+B1216	Rear Center Right Sensor Fault
+B1217	Rear Right Sensor Fault
+B1220	Vehicle Speed Sensor
+B1223	VSS Fault
+B1233	In-Car Temperature Sensor Short (Low)
+B1234	In-Car Temperature Sensor Open (High)
+B1237	Ambient Temperature Sensor Short (Low)
+B1238	Ambient Temperature Sensor Open (High)
+B1241	Evaporator Sensor Short (Low)
+B1242	Evaporator Sensor Open (High)
+B1245	Air Mix Potentiometer Open (Low)-Driver
+B1246	Air Mix Potentiometer Short (High)-Driver
+B1249	Direction Potentiometer Open (Low)-Driver
+B1250	Direction Potentiometer Short (High)-Driver
+B1257	AQS Sensor Open
+B1258	AQS Sensor Short To Ground
+B1259	AQS Sensor Fault
+B1260	Air Mix Potentiometer Open (Low)-Console
+B1261	Air Mix Potentiometer Short (High)-Console
+B1262	Direction Potentiometer Open (Low)-Console
+B1263	Direction Potentiometer Short (High)-Console
+B1270	Sliding Door Optical Sensor-1 Output Stuck High
+B1271	Sliding Door Optical Sensor-1 Output Stuck Low
+B1272	Sliding Door Optical Sensor-2 Output Stuck High
+B1273	Sliding Door Optical Sensor-2 Output Stuck Low
+B1274	Sliding Door Broken Cable(PSD Only)
+B1275	Air Mix Potentiometer-VENT Open (Low)–Console
+B1276	Air Mix Potentiometer VENT Short (High)–Console
+B1277	Air Mix Potentiometer-TEMP Open (Low)–Console
+B1278	Air Mix Potentiometer-TEMP Short (High)–Console
+B1279	Air Mix Switch Potentiometer Open (Low)–Console
+B1280	Air Mix Switch Potentiometer Short (High)–Console
+B1281	Air Conditioner > Humidity Sensor Short (Low) – AUTO Defog
+B1282	Air Conditioner > Humidity Sensor Open (High) - AUTO Defog
+B1283	Direction Potentiometer Open (Low) - AUTO Defog
+B1284	Direction Potentiometer Short (High) - Auto Defog
+B1285	Direction Control Motor -AUTO Defog
+B1301	Steering angle signal fault
+B1302	Gearbox Signal Fault-CAN Signal
+B1303	Accelerator Pedal Position Signal Error
+B1304	Engine state signal fault
+B1305	Yaw Rate Sensor Signal Fault
+B1306	Brake pedal signal fault
+B1307	Air suspension ECU sensor signal invalid
+B1319	Airbag > Weight Classification > Require Weight Check
+B1322	Weight Classification System Sensor circuit fault
+B1323	Airbag > Weight Classification > WCS Sensor Defect
+B1324	Weight Classification System communication error
+B1325	Weight Classification System Sensor wrong ID
+B1326	DFIS Harness Short To Ground
+B1327	DFIS Harness Short To Power
+B1328	DFIS Harness Fault
+B1329	DFIS To SRSCM Communication Error
+B1330	DFIS With Wrong ID
+B1331	PFIS Harness Short To Ground
+B1332	PFIS Harness Short To Power
+B1333	PFIS Harness Fault
+B1334	PFIS To SRSCM Communication Error
+B1335	PFIS With Wrong ID
+B1338	Front impact sensor defect
+B1344	Airbag > Weight Classification > ODS ECU Defect
+B1346	DAB Circuit Resistance Is High
+B1347	DAB Circuit Resistance Is Low
+B1348	DAB Circuit Short To Ground
+B1349	DAB Circuit Short To Power
+B1352	PAB Circuit Resistance Is High
+B1353	PAB Circuit Resistance Is Low
+B1354	PAB Circuit Short To Ground
+B1355	PAB Circuit Short To Power
+B1361	DBPT Circuit Resistance Too High
+B1362	DBPT Circuit Resistance Too Low
+B1363	DBPT Circuit Short To Ground
+B1364	DBPT Circuit Short To Power
+B1367	PBPT Circuit Resistance Too High
+B1368	PBPT Circuit Resistance Too Low
+B1369	PBPT Circuit Short To Ground
+B1370	PBPT Circuit Short To Power
+B1371	STPS (Seat Track Position Sensor) - Driver instability
+B1378	DSAB Circuit Resistance Too High
+B1379	DSAB Circuit Resistance Too Low
+B1380	DSAB Circuit Short To Ground
+B1381	DSAB Circuit Short To Power
+B1382	PSAB Circuit Resistance Too High
+B1383	PSAB Circuit Resistance Too Low
+B1384	PSAB Short To Ground
+B1385	PSAB Circuit Short To Power
+B1387	Driver Seat Position Sensor (STPS) Harness Short
+B1388	Driver Seat Track Position Sensor Open or Short to Power
+B1389	Seat Track Position Sensor (STPS) Malfunction
+B1390	Passenger Seat Track Position Sensor Short
+B1391	Passenger Seat Track Position Sensor Open or Short to Power
+B1392	SRSCM Malfunction
+B1395	Firing Circuit Harness Short To Each Other
+B1396	STPS (Seat Track Position Sensor) - Driver Open or Short to Ground
+B1397	STPS (Seat Track Position Sensor) - Driver Short or Short to Battery
+B1398	STPS (Seat Track Position Sensor) - Passenger Open or Short to Ground
+B1399	STPS (Seat Track Position Sensor) - Passenger Short or Short to Battery
+B1400	Driver Front Side Impact Sensor (FSIS) Circuit Fault
+B1401	Driver Front Side Impact Sensor (FSIS) Circuit Short To Ground
+B1402	Driver Front Side Impact Sensor (FSIS) Circuit Short To Power
+B1403	Passenger Front Side Impact Sensor (FSIS) Circuit Fault
+B1404	Passenger Front Side Impact Sensor (FSIS) Circuit Short To Ground
+B1405	Passenger Front Side Impact Sensor (FSIS) Circuit Short To Power
+B1409	Satellite left side communication error
+B1410	Satellite right side communication error
+B1412	SIS (Side Impact Sensor) Rear-Driver Communication error
+B1413	SIS (Side Impact Sensor) Rear-Passenger Communication error
+B1414	Driver Front Side Impact Sensor (FSIS) Wrong ID
+B1415	Passenger Front Side Impact Sensor (FSIS) Wrong ID
+B1416	SIS (Side Impact Sensor) Rear-Driver Wrong ID
+B1417	SIS (Side Impact Sensor) Rear-Passenger Wrong ID
+B1418	SIS (Side Impact Sensor) Rear-Driver Defect
+B1419	SIS (Side Impact Sensor) Rear-Passenger Defect
+B1429	Side Airbag Rear-Driver Resistance too High
+B1430	Side Airbag Rear-Driver Resistance too Low
+B1431	Side Airbag Rear-Driver Resistance Circuit Short to Ground
+B1432	Side Airbag Rear-Driver Resistance Circuit Short to Battery
+B1433	Side Airbag Rear-Passenger Resistance too High
+B1434	Side Airbag Rear-Passenger Resistance too Low
+B1435	Side Airbag Rear-Passenger Resistance Circuit Short to Ground
+B1436	Side Airbag Rear-Passenger Resistance Circuit Short to Battery
+B1447	Passenger Occupant Classification ECU defect
+B1448	Passenger Occupant Detecting System (PODS) Circuit Fault
+B1449	Passenger Occupant Detecting System (PODS) Communication Error
+B1450	Passenger Occupant Detecting System (PODS) Wrong ID
+B1451	SIS (Side Impact Sensor) Rear-Driver Circuit Short to Ground
+B1452	SIS (Side Impact Sensor) Rear-Driver Circuit Short to Battery
+B1454	SIS (Side Impact Sensor) Rear-Passenger Circuit Short to Ground
+B1455	SIS (Side Impact Sensor) Rear-Passenger Circuit Short to Battery
+B1473	Driver Curtain Airbag (CAB) Circuit Resistance High
+B1474	Driver Curtain Airbag (CAB) Circuit Resistance Low
+B1475	Driver Curtain Airbag (CAB) Circuit Short To Ground
+B1476	Driver Curtain Airbag (CAB) Circuit Short To Power
+B1477	Passenger Curtain Airbag (CAB) Circuit Resistance High
+B1478	Passenger Curtain Airbag (CAB) Circuit Resistance Low
+B1479	Passenger Curtain Airbag (CAB) Circuit Short To Ground
+B1480	Passenger Curtain Airbag (CAB) Circuit Short To Power
+B1481	Driver Airbag Module (DAB) Circuit Resistance High
+B1482	Driver Airbag Module (DAB) Circuit Resistance Low
+B1483	DAB Circuit Short To Ground
+B1484	DAB Circuit Short To Power
+B1485	Passenger Airbag Module (PAB) Circuit Resistance High
+B1486	Passenger Airbag Module (PAB) Circuit Resistance Low
+B1487	PAB Circuit Short To Ground
+B1488	PAB Circuit Short To Power
+B1489	PODS (Passenger Occupant Detecting System) ECU Defect
+B1490	PODS (Passenger Occupant Detecting System) Sensor (Bladder) Defect
+B1493	PODS (Passenger Occupant Detecting System) Communication error
+B1494	PODS (Passenger Occupant Detecting System) Wrong ID
+B1495	BTS (Belt-Tension Sensor) Defect
+B1496	PODS (Passenger Occupant Detecting System) Not calibrated
+B1510	AFLS switch/button fault
+B1511	Driver Belt Buckle Switch (BBS) Circuit Open Or Short To Power
+B1512	Driver Belt Buckle Switch (BBS) Circuit Short To Ground
+B1513	Passenger Belt Buckle Switch (BBS) Circuit Open Or Short To Power
+B1514	Passenger Belt Buckle Switch (BBS) Circuit Short To Ground
+B1515	Driver Belt Buckle Switch (BBS) Defect
+B1516	Passenger Belt Buckle Switch (BBS) Defect
+B1517	Driver Belt Buckle Switch (BBS) Changes Frequently
+B1518	Passenger Belt Buckle Switch (BBS) Changes Frequently
+B1521	Buckle Switch Driver Short or Short to Battery
+B1522	Buckle Switch Driver Open or Short to Ground
+B1523	Buckle Switch Passenger short or short to Battery
+B1524	Buckle Switch Passenger Open or Short to Ground
+B1550	Cruise Switch Error
+B1551	Audio1 Switch Error
+B1552	Audio2 Switch Error
+B1553	Light Multifunction Switch Error
+B1554	Turn Signal Multifunction Switch Error
+B1555	Wiper Multifunction Switch Error
+B1562	Fuel Sender ERR
+B1580	Ignition Start Switch Short High
+B1582	Smart key System Push Knob Switch Error
+B1583	Smart key System Park Position Error
+B1585	Tailgate Latch Switch Failure
+B1586	Chime Open Or Short High
+B1587	Tailgate Chime Short to Ground
+B1588	Right Front Wiper/Washer MF Switch
+B1589	Right Rear Wiper/Washer MF Switch
+B1590	Light Multifunction Switch Error
+B1591	Turn Signal Multifunction Switch Error
+B1592	Head lamp Switch Fault
+B1602	CAN Error (Assist Door Module)
+B1603	CAN Communication Bus (Assist Door Module)
+B1604	Smart key System Lost Communication Between BCM and IFU
+B1605	CAN Time-out DDM
+B1606	CAN Time-out ADM
+B1607	CAN Time-out P/SEAT
+B1608	Lost Communication Between BCM and SCM
+B1611	CAN Time-out FAM
+B1612	RAM Communication Lost & Bus Failure
+B1613	CAN Time-out CLU
+B1614	Lost Communication Between BCM and IFU
+B1619	Smart key System Base station antenna failed
+B1620	SRSCM Fault
+B1621	ECU Hardware Error
+B1622	ECU Software Error
+B1624	EEPROM Failure
+B1625	ECM Communication Data Failure
+B1627	EEPROM Corruption
+B1628	Module Configuration Conflict
+B1629	Lin Reception Error
+B1630	Lin Transmission Error
+B1636	LIN Communication Error Fault
+B1637	System Not Initialized
+B1638	CAN time-out Air Suspension
+B1639	LIN communication error DBL left
+B1640	LIN communication error DBL right
+B1641	CAN Time-out FBWS
+B1642	LIN communication error LWR right
+B1643	CAN Time-out ECW
+B1644	Airbag > Weight Classification > CAN time-out ACU
+B1645	Sliding Door Drive Unit Fault
+B1646	S/W Rescue Mode
+B1647	VAS Error
+B1650	DAB or PAB deployed
+B1651	DSAB, DRSAB, DCAB deployed
+B1652	PSAB, PRSAB, PCAB deployed
+B1655	Crash Is Recorded
+B1657	If Any BPT Is Deployed
+B1658	Crash Is Recorded In SRSCM
+B1659	Crash is Recorded
+B1661	SRSCM parameter
+B1670	Crash Is Recorded In SRSCM
+B1672	APT Sensor Fault – CAN Signal
+B1681	DDM and Rear LH Serial Communication Error
+B1682	DDM and Rear RH Serial Communication Error
+B1683	Airbag (Event #1) > Exceed Maximum Coding Number
+B1684	ACU Configuration is different
+B1686	Vehicle Speed Sensor Fault – CAN Signal
+B1687	Engine Coolant Temperature Sensor Circuit - CAN Signal
+B1689	CAN Time-out PDM
+B1690	Network Fail (Hi-CAN)
+B1699	CAN timeout between IPM and AV/AVN
+B1722	Inflatable curtain airbag rear-Driver resistance too High
+B1723	Inflatable curtain airbag rear-Driver resistance too Low
+B1724	Inflatable curtain airbag rear-Driver resistance circuit short to Ground
+B1725	Inflatable curtain airbag rear-Driver resistance circuit short to Battery
+B1726	Inflatable curtain airbag rear-Passenger resistance too High
+B1727	Inflatable curtain airbag rear-Passenger resistance too Low
+B1728	Inflatable curtain airbag rear-Passenger resistance circuit short to Ground
+B1729	Inflatable curtain airbag rear-Passenger resistance circuit short to Battery
+B1730	Anchor Pretensioner front-Driver resistance too High
+B1731	Anchor Pretensioner front-Driver resistance too Low
+B1732	Anchor Pretensioner front-Driver resistance circuit short to Ground
+B1733	Anchor Pretensioner front-Driver resistance circuit short to Battery
+B1734	Airbag (Event #1) > Anchor Pretensioner front-Passenger resistance Too High
+B1735	Anchor Pretensioner front-Passenger resistance too Low
+B1736	Anchor Pretensioner front-Passenger resistance circuit short to Ground
+B1737	Anchor Pretensioner front-Passenger resistance circuit short to Battery
+B1738	P-SIS front – Driver Wrong ID
+B1744	P-SIS front - Passenger Wrong ID
+B1748	P-SIS Front-Passenger Communication Error
+B1901	Auto Light Out Of Range
+B1905	Sensor Power Supply Fault
+B1906	Rain Sensor Fault 2
+B1907	Front sensor signal fault
+B1908	Rear sensor PWM signal fault
+B1909	Rear sensor signal fault
+B1910	Outside Mirror - Left Horizontal Motor or Sensor Error
+B1911	Outside Mirror - Left Vertical Motor or Sensor Error
+B1912	Outside Mirror - Right horizontal Motor or Sensor
+B1913	Outside Mirror - Right vertical Motor or Sensor
+B1952	Outside Mirror Defogger Error
+B1954	Slide Motor Or Sensor Error
+B1955	Recline Motor Or Sensor Error
+B1956	Front Height Motor Or Sensor Error
+B1957	Rear Height Motor Or Sensor Error
+B1958	Pedal Motor Or Sensor Error
+B1959	Tilt Position Sensor Error
+B1960	Tele Position Sensor Error
+B1971	Parking Position Input Error
+B1978	Smart Key Electric Steering Column Lock Failure
+B1987	Sub Micom Failed
+B1988	Electric Steering Column Lock (ESCL) Failure
+B1989	Electric Steering Column Lock (ESCL) Ground Short Circuit To Battery
+B1990	Electric Steering Column Lock (ESCL) Battery Short Circuit To Ground
+B1991	Immobilizer TX Short Circuit To Ground
+B2115	Rear Defog Relay Fail
+B2119	Windshield Defog Relay Fail
+B2325	Swivel module fault left
+B2326	Swivel module fault right
+B2330	Driver Door Lock Actuator Error
+B2331	Driver Door Unlock Actuator Error
+B2332	Assistant Door Lock Actuator Error
+B2333	Assistant Door Unlock Actuator Error
+B2400	Levelling motor fault left
+B2401	Levelling motor fault right
+B2405	Air Mix Motor-Console
+B2406	Air Mix Motor-Driver
+B2408	Intake Motor
+B2409	Direction Control Motor-Driver
+B2411	Direction Control Motor-Console
+B2415	Air Mix Door Motor-Passenger
+B2416	Direction Control Motor-Passenger
+B2420	Sliding Door Drive Motor Open
+B2421	Sliding Door Drive Motor Short High
+B2422	Sliding Door Drive Motor Short Low
+B2423	Sliding Door Clutch Open Or Short High
+B2424	Sliding Door Clutch Short Low
+B2425	Sliding Door Pinch strip (PSD) open or Stuck High
+B2426	Sliding Door Pinch strip (PSD) Stuck Low
+B2427	Tailgate Right Pinch Strip Open Or Stuck High
+B2428	Tailgate Right Pinch Strip Stuck Low
+B2429	Folding Motor Power Feed Error
+B2441	Right Rear Wiper Park Position Detect Fail
+B2447	Air Mix Motor VENT-Console
+B2448	Air Mix Motor TEMP-Console
+B2450	Sliding Door Unlatch Motor (PSD) Short High
+B2451	Sliding Door Unlatch or Cinch Motor (PTG) / Unlatch Motor (PSD) Short Low
+B2452	Tailgate Cinch motor open (PTG Only)
+B2455	Safety Power Window Motor Power Feed Error
+B2456	Seat Motor Sensor Vcc Error
+B2457	Pedal Motor Sensor Vcc Error
+B2500	Air Bag Warning Light Circuit Fault
+B2502	Telltale Indicator Light Circuit Malfunction
+B2510	Right Headlamp High Circuit Short to Ground
+B2511	Left Headlamp High Circuit Short to Ground
+B2512	Right Headlamp Low Circuit Short to Ground
+B2513	Left Headlamp Low Circuit Short to Ground
+B2514	External Tail Lamp RH Circuit Short to Ground
+B2515	External Tail Lamp LH Circuit Short to Ground
+B2516	Front Fog Lamp Circuit Short to Ground
+B2517	Internal Tail Lamp Circuit Short to Ground
+B2518	Turn Signal LH Front Open Circuit
+B2519	Turn Signal LH Rear Open Circuit
+B2520	Turn Signal RH Front Open Circuit
+B2521	Turn Signal RH Rear Open Circuit
+B2522	Turn Signal LH Front Circuit Short to Ground
+B2523	Turn Signal LH Rear Circuit Short to Ground
+B2524	Turn Signal RH Front Circuit Short to Ground
+B2525	Turn Signal RH Rear Circuit Short to Ground
+B2529	Driver Door Courtesy Lamp Error
+B2533	Assistant Door Courtesy Lamp Error
+B2535	Right Turn Signal Lamp Short to Ground
+B2537	Right Turn Signal Lamp Open
+B2539	Left Turn Signal Lamp Short to Ground
+B2541	Left Turn Signal Lamp Open
+B2543	Right Head Lamp (Low Beam) Short to Ground
+B2545	Right Head Lamp (High Beam) Circuit Open
+B2547	B2547 Left Headlamp (High Beam) Short to Ground
+B2549	Left Headlamp (High Beam) Open
+B2551	Right Head Lamp (Low Beam) Short to Ground
+B2553	Right Head Lamp (Low Beam) Circuit Open
+B2555	Left Headlamp (Low Beam) Short to Ground
+B2557	Left Headlamp (Low Beam) Open
+B2559	Right Front Fog Lamp Short to Ground
+B2561	Right Front Fog Lamp Open
+B2563	Left Front Fog Lamp Circuit Short to Ground
+B2565	Left Front Fog Lamp Open
+B2571	Right Park Lamp Short to Ground
+B2573	Right Park Lamp Open
+B2575	Left Park Lamp Short to Ground
+B2577	Left Park Lamp Open
+B2579	Right Rear Tail Marker Lamp Short to Ground
+B2581	Right Rear Tail Marker Lamp Open
+B2583	Left Rear Tail Marker Lamp Short to Ground
+B2585	Left Rear Tail Marker Lamp Open
+B2587	Back Up Lamp Short to Ground
+B2589	Back Up Lamp Open
+B2598	Right Rear Blower Switch Illumination Circuit Ground
+B2599	Rear Blower Switch Illumination Circuit Short to Ground
+B2800	MM CAN Bus Off Error
+B2837	GPS Module Connection Error
+B2859	CDMA Modem Fail
+B2860	Microphone Fail
+C1101	EPS Battery Voltage High
+C1102	Battery Voltage Low
+C1103	Ignition Voltage Fault
+C1112	Sensor source voltage
+C1121	Sensor 1 Battery Voltage Low
+C1122	Sensor 2 Battery Voltage Low
+C1123	Sensor 3 Battery Voltage Low
+C1124	Sensor 4 Battery Voltage Low
+C1126	TPMS ECU Battery Voltage Low
+C1127	TPMS ECU Battery Voltage High
+C1200	Wheel Speed Sensor Front-LH Open/Short
+C1201	Wheel Speed Sensor Front-LH Range / Performance / Intermittent
+C1202	Wheel Speed Sensor Front-LH Invalid/No Signal
+C1203	Wheel Speed Sensor Front-RH Open/Short
+C1204	Wheel Speed Sensor Front-RH Range / Performance / Intermittent
+C1205	Wheel Speed Sensor Front-RH Invalid/No Signal
+C1206	Wheel Speed Sensor Rear-LH Open/Short
+C1207	Wheel Speed Sensor Rear-LH Range / Performance / Intermittent
+C1208	Wheel Speed Sensor Rear-LH Invalid/No Signal
+C1209	Wheel Speed Sensor Rear-RH Open/Short
+C1210	Wheel Speed Sensor Rear-RH Range / Performance / Intermittent
+C1211	Wheel Speed Sensor Rear-RH Invalid/No Signal
+C1212	Vehicle Speed Sensor
+C1213	Wheel Speed Frequency Error
+C1235	Primary Pressure Sensor-Electrical
+C1237	Primary Pressure Sensor-Signal
+C1240	Second Speed Input Fault
+C1255	Rear Height Sensor
+C1259	Steering Angle Sensor - Electrical Malfunction
+C1260	Steering Angle Sensor Circuit-Signal
+C1261	Steering Angle Sensor Not Calibrated
+C1262	Temperature Sensor Failure
+C1274	Longitudinal G Sensor Open/Short
+C1275	Longitudinal G Sensor Range/Performance error
+C1282	Yaw Rate & Lateral G Sensor-Electrical
+C1283	Yaw Rate & Lateral G Sensor-Signal
+C1285	Sensor Cluster Change Detection/Uncalibrated
+C1290	Torque sensor main signal fail
+C1300	TPMS LF/RF External Interference
+C1301	Unmonitored Tire Installed
+C1306	RF Internal Interference
+C1312	Sensor 1 RF channel Failure
+C1313	Sensor 2 RF channel Failure
+C1314	Sensor 3 RF channel Failure
+C1315	Sensor 4 RF channel Failure
+C1317	Sensor1 Wrong Type Installed
+C1318	Sensor2 Wrong Type Installed
+C1319	Sensor3 Wrong Type Installed
+C1320	Sensor4 Wrong Type Installed
+C1322	Sensor 1 Over-Temperature/Faulty
+C1323	Sensor 2 Over-Temperature/Faulty
+C1324	Sensor 3 Over-Temperature/Faulty
+C1325	Sensor 4 Over-Temperature/Faulty
+C1332	Sensor 1 Fault
+C1333	Sensor 2 Fault
+C1334	Sensor 3 Fault
+C1335	Sensor 4 Fault
+C1345	Front Low Frequency Initiator Channel Failure
+C1346	Rear Low Frequency Initiator Channel Failure
+C1503	TCS/ESC(ESP) Switch Error
+C1513	Brake Switch Error
+C1522	Head lamp Switch Fault
+C1527	Gear Switch Error
+C1603	Derating (EPS Thermal Protection)
+C1604	EPS ECU Hardware Error
+C1605	CAN Hardware Error
+C1606	ECU Software Error
+C1610	bus off error
+C1611	CAN Time-out ECM
+C1612	CAN Time-out TCM
+C1613	Can Wrong Message
+C1616	CAN Bus off
+C1617	EMS Invalid Engine Speed
+C1620	First Setup Not Completed
+C1622	EMS Invalid Vehicle Speed
+C1623	CAN Time-out Steering Angle Sensor
+C1625	CAN Time-out ABS/ESP
+C1626	Implausible Control
+C1643	CAN Time-out Yaw Rate & Lateral G Sensor
+C1647	CAN Hardware Error - Sensor Channel
+C1660	TPMS Receiver RF Circuit
+C1661	Receiver EEPROM Failure
+C1664	Initiator/LF/RF Circuit Failure Not Affecting RSSI Level(High Line Only)
+C1665	Initiator supply circuit short to ground
+C1666	Initiator supply circuit short to battery
+C1668	Internal Failure Detection
+C1687	CAN Time-out MDPS
+C1688	MDPS Signal Error
+C1692	CAN Time-out VSM
+C1693	CAN Signal Error VSM
+C1700	Byte Coding Error
+C1702	Variant Coding Error
+C1704	EPS ECU Fail-Safe Relay Fail
+C1705	EPS ECU Precharge Circuit Fault
+C2101	EPS Motor relay circuit
+C2112	Valve Relay Error
+C2130	Brake Lamp Relay Error
+C2226	Output Voltage Short to Battery or Short to Ground
+C2227	Brake Disc Overheat
+C2308	Front-LH Valve error (Inlet Valve)
+C2312	Front-LH Valve error (Outlet Valve)
+C2316	Front-RH Valve error (Inlet Valve)
+C2320	Front-RH Valve error (Outlet Valve)
+C2324	Rear-LH Valve error (Inlet Valve)
+C2328	Rear-LH Valve error (Outlet Valve)
+C2332	Rear-RH Valve error (Inlet Valve)
+C2336	Rear-RH Valve Error (Outlet Valve)
+C2366	TC Valve Primary (USV1) Error
+C2370	TC Valve Secondary (USV2) Error
+C2372	Electronic Shuttle Valve Primary (HSV1) Error
+C2374	Electronic Shuttle Valve Secondary (HSV2) Error
+C2380	ABS/TCS/ESP Valve Error
+C2400	Motor Fault - Motor Not Running
+C2401	EPS Motor circuit
+C2402	Motor Pump Error
+C2412	EPS Motor Short or Open
+C2413	EPS Motor Current fail (current over)
+C2420	Motor temperature sensor high input
+C2421	Motor Temperature Sensor Low Input
+C2510	Tread Lamp Short Circuit to 12V
+C2511	Diagnostic (TPMS) Lamp Short Circuit to 12V
+C2512	Front Left LAMP open/short circuit
+C2513	Front Right LAMP open/short circuit
+C2514	Rear Left LAMP open/short circuit
+C2515	Rear Right LAMP open/short circuit
+C2610	CAN Bus Off Failure (only System with TCS)
 P1100	Manifold Absolute Pressure (MAP) Sensor Malfunction (Open/Short)
 P1102	Manifold Absolute Pressure (MAP) Sensor Malfunction - Low Voltage
 P1103	Manifold Absolute Pressure (MAP) Sensor Malfunction - High Voltage
+P1106	Manifold Absolute Pressure Sensor Circuit Short- Intermittent High Input
+P1107	Manifold Absolute Pressure Sensor Circuit Short- Intermittent Low Input
+P1110	Electronic Throttle System Malfunction
+P1111	Intake Air Temperature Sensor Circuit Short- Intermittent High Input
+P1112	Intake Air Temperature Sensor Circuit Short- Intermittent Low Input
+P1114	Engine Coolant temperature Sensor Circuit- Intermittent Low Input
+P1115	Engine Coolant temperature Sensor Circuit- Intermittent High Input
+P1118	Electronic Throttle System Motor Circuit Malfunction
+P1123	Fuel Trim Adaptive Air System Too Rich
+P1124	Fuel Trim Adaptive Air System Too Lean
+P1127	Long Term Fuel Trim Multiplier System Too Rich
+P1128	Long Term Fuel Trim Multiplier System Too Lean
+P1134	HO2S-11 (Bank 1 Sensor 1) Transition Time Switch
 P1147	ETS Sub Accel Position Sensor 1 Malfunction
 P1151	ETS Main Accel Position Sensor 2 Malfunction
+P1154	HO2S-21 (Bank 2 Sensor 1) Transition Time Switch
 P1155	ETS Limp Home Valve
 P1159	Variable Intake Motor Malfunction
+P1166	HO2S-11 Controller Adaptive Test (Bank 1)
+P1167	HO2S-11 Controller Adaptive Test (Bank 2)
 P1171	Electronic Throttle System Open
 P1172	Electronic Throttle System Motor Current
 P1173	Electronic Throttle System Rationality Malfunction
 P1174	Electronic Throttle System #1 Close Malfunction
 P1175	Electronic Throttle System #2 Close Malfunction
 P1176	ETS Motor Open/Short #1
-P1176	ETS Motor Open/Short #2
+P1177	Electronic Throttle System Motor No. 2 Open or Shorted
 P1178	ETS Motor Battery Voltage Open
+P1192	ETS Limp home Target Following Malfunction
+P1193	ETS Limp home Low RPM
+P1194	ETS Limp home TPS2 Malfunction
+P1195	ETS Limp home Target Following Delay
+P1196	ETS Limp home Closed Throttle Stuck
+P1295	Electronic Throttle Control (ETC) System Malfunction- Power Management
+P1308	Acceleration Sensor Low Input
+P1309	Acceleration Sensor Signal Check High
 P1330	Spark Timing Adjust Malfunction
+P1372	PCM Segment Time Acquisition Incorrect
+P1500	Vehicle Speed Sensor Signal Circuit Malfunction
+P1501	Battery Temperature Too High Diagnostic
+P1502	Battery Not Charging Diagnostic
+P1505	Idle Charge Actuator Signal Low of Coil #1
+P1506	Idle Charge Actuator Signal High of Coil #1
+P1507	Idle Charge Actuator Signal Low of Coil #2
+P1508	Idle Charge Actuator Signal High of Coil #2
 P1521	Power Steering Switch Malfunction
+P1523	Electronic Throttle Control (ETC) System Malfunction- Throttle Valve Stuck
+P1529	Customer Snapshot Request Error
+P1586	Encoding Signal Circuit Not Rational
+P1602	Serial Communication Problem With The TCM
 P1607	Electronic Throttle System Communication Error
+P1610	Non-Immobilizer-EMS connected to an Immobilizer
+P1613	MIL Request Signal Circuit High Input
 P1614	Electronic Throttle System Module Malfunction
+P161B	PCM Internal Error- Torque Calculating
+P1624	Cooling Fan Relay Low Circuit
+P1625	Cooling Fan Relay High Circuit Malfunction
 P1632	Traction Control System Malfunction
+P1674	Transponder Status Error
+P1675	Transponder Programming Error
+P1676	SMARTRA Message Error
+P1677	Immobilizer-EMS VIN Data Error (EMS has different VIN)
+P1678	Immobilizer-EMS No Request ( EMS data line open, no immo.)
+P1679	Immobilizer-EMS Data Fail (Data frame, CS, Message error)
+P1688	Immobilizer Lock
+P1690	SMARTRA Error
+P1691	Antenna Error
+P1692	Immobilizer Lamp Error
+P1693	Transponder No Response Error/Invalid Response
+P1694	ECM Signal Error
+P1695	EEPROM Error
+P1696	Authentication Fail
+P1697	Hi-Scan Message Error
+P1698	Immobilizer-Invalid TP (TP has different PIN)
+P1699	Twice IG ON over trial
+P169A	SMARTRA Authentication Fail
+P1709	A/T Kick Down Servo Switch Circuit Malfunction
+P1716	Steering Wheel Angle Sensor-Input Signal Malfunction
+P1717	Steering Wheel Angle Sensor 1-Input Signal
+P1718	Steering Wheel Angle Sensor 2-Input Signal
+P1719	Steering Wheel Angle Sensor N-Input Signal
+P1723	TCM A/T Control Relay Line Circuit Malfunction
+P1726	Throttle Position Sensor (TPS) Input-Loss of Signal
+P1728	EMC-Open or Short to Battery
+P1729	EMC-Short to Ground
+P1738	4WD ECU Invalid Part Number
+P1745	Invalid part number
+P1750	A/T Shift, Pressure Clutch Solenoid Circuit Malfunction
+P1755	EMC Over Current
+P1756	EMC Internal Error
+P1757	EMC PWM Out of Range
+P1760	Neutral Condition At R Range
+P1764	CAN MI-COM communication fail
+P1765	TCS-ITM CAN Communication Line
+P1766	CAN Communication Bus Off
+P1767	CAN ABS Loss of Signal
+P1769	Mini Spare Detected
+P1770	Plate and oil temp thresholds exceeded (LOCK MODE)
+P1771	Plate and oil temp thresholds exceeded (SHUT DOWN)
+P1780	Torque Control Signal Failure
+P1800	Antenna Coil Failure
+P1801	Invalid Transponder Data
+P1803	Invalid Request from ECM or Corrupted Data
+P1805	Communication Failure
+U1000	DIS Head Unit ECM Error
+U1001	DIS AMP Unit HW Watchdog Executed
+U1002	DIS Microphone 1 short
+U1003	DIS Temperature Sensor Signal Error in Head Unit
+U1004	DIS AMP Unit Temperature Sensor Signal Error in Tunner and Amplifier
+U1006	DIS Low Voltage Detected
+U1007	DIS High Voltage Detected
+U1010	DIS AMP Unit Low Voltage Detected
+U1011	DIS AMP Unit High Voltage Detected
+U1111	Battery Sensor Fault Detected
+U1112	LIN Communication Error
+U1138	DIS AMP Unit Fan Operation Error (Fan is running although should be off)
+U1139	DIS AMP Unit Fan Operation Error - no plug put or line open(Fan is not running although it should be on)
+U1500	DIS Wakeup Line Short Circuit To Ground
+U1501	DIS Wakeup Line Short Circuit To Vcc
+U1540	DIS Wakeup Line Test Failed at Amplifier Unit
+U1601	DIS AMP Unit Data Upgrade Error - Application Software Code 1 Missing or Corrupted
+U1602	DIS AMP Unit Data Upgrade Error - Application Software Code 2 Missing or Corrupted
+U1606	DIS AMP Unit Data Upgrade Error - Application Software Data Missing or Corrupted
+U1700	DIS AMP Unit DTCP Sink SW error.
+U1702	DIS AMP Unit DTCP Sink Decode error
+U1710	DIS AMP Unit Amplifier stage group 1 Error - S/Woofer 1(+), 1(- ) short circuit
+U1711	DIS AMP Unit Amplifier stage group 2 Error - S/Woofer 2(+), 2(- ) short circuit
+U1712	DIS AMP Unit Amplifier stage group 3 Error - Front Middle/Tweeter LH & RH short circuit
+U1713	DIS AMP Unit Amplifier stage group 4 Error - DECK LH, DECK RH, Center Speaker short circuit
+U1714	DIS AMP Unit Amplifier stage group 5 Error - Front LH & RH short circuit
+U1900	DIS GPS Antenna Line Break
+U1920	DIS DVD Drive Error
+U1940	DIS Front Display SDC Communication Error
+U1941	DIS AMP Unit AmFm Antenna circuit Open ( not connected )
+U1942	DIS AMP Unit Fm2 Antenna circuit Low
+U1943	DIS AMP Unit Fm2 Antenna circuit Open
+U1944	DIS AMP Unit XM Antenna circuit Low (UTA US only)
+U1945	DIS AMP Unit XM Antenna circuit Open (UTA US only)
+U1970	DIS Multimedia CAN Bus Off Error
+U1971	DIS Multimedia CAN Single Line Error
+U1972	Multimedia CAN Limp Home Status
+U1980	DIS Timeout Multimedia CAN Message(Air Conditioner, Cluster, Audio)
+U1981	DIS Timeout Multimedia CAN Message(Vehicle Speed)
+U1982	DIS Timeout Multimedia CAN Message(Body CAN Signal - Camera, ECS, Trip Computer, Alternator, Auto Light)
+U1983	DIS Timeout Multimedia CAN Message (Trip Computer)
+U1984	DIS Timeout Multimedia CAN Message(Inhibitor Signal)
