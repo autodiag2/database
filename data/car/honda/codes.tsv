@@ -1,11 +1,203 @@
+B1000	Communication Bus Line Error
+B1001	Multiplex Integrated Control Unit (MICU) Internal Error
+B1002	Multiplex Integrated Control Unit (MICU) Internal Error
+B1005	MICU Lost Communication with Relay Control Module (RM Message)
+B1006	MICU Lost Communication with Door Multiplex Control Unit (Door Lock Switch Message)
+B1007	MICU Lost Communication with Combination Switch Control Unit (HLSW Message)
+B1008	MICU Lost Communication With Gauge Control Module (A/T Message)
+B1009	MICU Lost Communication With Combination Switch Control Unit (Wiper/Washer Switch Message)
+B1010	MICU Lost Communication with Door Multiplex Control Unit (Panic Message)
+B1011	MICU Lost Communication With Gauge Control Module (VSP/NE Message)
+B1026	Passenger's Door Lock Switch Signal Error
+B1027	Trunk Key Cylinder Switch Signal Error
+B1028	Rear Window Wiper Motor (Park) Signal Error
+B1036	Driver's MICU IG1 Line Input Error
+B1050	Communication Bus Line Error
+B1052	Relay Control Module Internal (EEPROM) Error
+B1055	Relay Control Module Lost Communication with MICU (MICU Message)
+B1056	Relay Control Module Lost Communication with MICU (ALARM Message)
+B1057	Relay Control Module Lost Communication with MICU (DOORSW Message)
+B1058	Relay Control Module lost communication with Door Multiplex Control Unit (door lock switch message)
+B1059	Relay Control Module lost communication with Door Multiplex Control Unit (panic message)
+B1060	Relay Control Module Lost Communication with Gauge Control Module (VPS/NE Message)
+B1061	Relay Control Module Lost Communication with Gauge Control Module (A/T Message)
+B1062	Relay Control Module Lost Communication with Combination Switch Control Unit (HLSW Message)
+B1063	Relay Control Module Lost Communication with Combination Switch Control Unit (WIPSW Message)
+B1075	Headlight Switch Back-up Circuit Malfunction
+B1076	Windshield Wiper Switch Back-up Circuit Malfunction
+B1077	Windshield Wiper Auto Switch Circuit Malfunction
+B1078	Daytime Running Lights System Error
+B1079	Daytime Running Lights Malfunction
+B1080	Power Supply Circuit (IG1 Line) Input Error for Relay Control Module and MICU
+B10A2	Driver's MICU Internal (EEPROM) Error
+B10CF	Left Daytime Running Lights Circuit Malfunction
+B1100	Communication Circuit Error (BUS Off)
+B1102	Door Multiplex Control Unit Internal Error
+B1125	Driver's Power Window Motor A Pulse Malfunction
+B1126	Driver's Power Window Motor B Pulse Malfunction
+B1127	Driver's Door Key Cylinder Switch Malfunction
+B1128	Driver's Door Lock Switch Signal Malfunction (Lock/Unlock)
+B1129	Driver's Door Lock Knob Switch Signal Error (LOCK/UNLOCK)
+B1130	Front Passenger's Power Window Motor A Pulse Malfunction
+B1131	Front Passenger's Power Window Motor B Pulse Malfunction
+B1140	Driver's Power Window Position Detect Circuit Malfunction
+B1142	Door Multiplex Control Unit Lost Communication With Front Passenger's Power Window Switch (UART Line Open)
+B1145	Front Passenger's Power Window Position Detect Circuit Malfunction
+B1150	Communication Bus Line Error
+B1152	Gauge Control Module Internal (EEPROM) Error
+B1155	Gauge Control Module Lost Communication with Combination Switch Control Unit (HLSW Message)
+B1156	Gauge Control Module Lost Communication with Combination Switch Control Unit (WIPSW Message)
+B1157	Gauge Control Module Lost Communication with MICU (MICU Message)
+B1158	Gauge Control Module Lost Communication with Relay Control Module (RM Message)
+B1159	Gauge Control Module Lost Communication with MICU (DOORSW Message)
+B1160	Gauge Control Module Lost Communication with Door Multiplex Control Unit (Door Lock Switch Message)
+B1168	Gauge Control Module Lost Communication with PCM (ENG Message)
+B1169	Gauge Control Module Lost Communication with the PCM (A/T Message)
+B1170	Gauge Control Module Lost Communication with the VSA Modulator-Control Unit (VSA Message)
+B1173	Gauge Control Module Lost Communication with the TPMS Control Unit (TPMS Message)
+B1175	Fuel Level Sensor (Fuel Gauge Sending Unit) Circuit Open
+B1176	Fuel Level Sensor (Fuel Gauge Sending Unit) Circuit Short
+B1177	Battery Voltage Abnormal
+B1178	F-CAN Communication Line Error
+B1183	Gauge Control Module Lost Communication With EPS Unit
+B1185	Gauge Control Module Lost Communication With Motor Control Module (BATT Message)
+B1187	Gauge Control Module Lost Communication with SRS Unit (SRS Message)
+B1188	Gauge Control Module Lost Communication with the MICU (RM Message)
+B11A2	Passenger's MICU Internal (EEPROM) Error
+B11C7	Passenger's MICU IG1 Line Input Error
+B11CF	Right Daytime Running Lights Circuit Malfunction
+B1200	Communication Bus Line Error
+B1202	Climate Control Unit Internal Error
+B1205	Climate Control Unit Lost Communication with Gauge Control Module (VSP/NE message)
+B1206	Climate Control Unit Lost Communication with Gauge Control Module (ECT message)
+B1207	Climate Control Unit Lost Communication with Gauge Control Module (ILLUMI message)
+B121B	Short in the Mode Control Motor Circuit
+B1220	Short in the Recirculation Control Motor Circuit
+B1225	Open in the In-car Temperature Sensor Circuit
+B1226	Short in the In-car Temperature Sensor Circuit
+B1227	Open in the Outside Air Temperature Sensor Circuit
+B1228	Short in the Outside Air Temperature Sensor Circuit
+B1229	Open in the Sunlight Sensor Circuit
+B1230	Short in the Sunlight Sensor Circuit
+B1231	Open in the Evaporator Temperature Sensor Circuit
+B1232	Short in the Evaporator Temperature Sensor Circuit
+B1233	Open in the Driver's Air Mix Control Motor Circuit
+B1234	A Short in the Driver's Air Mix Control Motor Circuit
+B1235	Problem in the Driver's Air Mix Control Linkage, Door, or Motor Circuit
+B1236	Open in the Passenger's Air Mix Control Motor Circuit
+B1237	Short in the Passenger's Air Mix Control Motor Circuit
+B1238	A Problem in the Passenger's Air Mix Control Linkage, Door, or Motor
+B1239	Open or Short in the Drivers Mode Control Motor Circuit
+B1241	Problem in the Blower Motor Circuit
+B1250	Communication Bus Line Error (BUS OFF)
+B1251	Combination Switch Control unit Internal Error
+B1255	Combination Switch Control Unit Lost Communication with MICU (MICU Message)
+B1275	Headlight OFF Position Circuit Malfunction
+B1276	Combination Light Switch Parking (SMALL) Position Circuit Malfunction
+B1277	Headlight AUTO Position Circuit Malfunction
+B1278	Headlight Switch ON Position Circuit Malfunction
+B1279	Headlight Switch DIMMER Position Circuit Malfunction
+B1280	Turn Signal Switch Circuit Malfunction
+B1281	Windshield Wiper Switch MIST Position Circuit Malfunction
+B1282	Windshield Wiper Switch INT (AUTO) Position Circuit Malfunction
+B1283	Windshield Wiper Switch LOW Position Circuit Malfunction
+B1284	Windshield Wiper Switch HIGH Position Circuit Malfunction
+B1352	Power Tailgate Control Unit Internal (EEPROM) Error
+B1375	Driver's Door Power Tailgate Switch Circuit Malfunction
+B1376	Tailgate Outer Handle Switch Circuit Malfunction
+B1377	Inside Tailgate Switch Circuit Malfunction
+B1378	Power Tailgate Right Pinch Sensor Circuit Malfunction
+B1380	Power Tailgate Closer Unit Neutral Switch Circuit Malfunction
+B1381	Power Tailgate Closer Unit Release Switch Circuit Malfunction
+B1382	Power Tailgate Closer Unit Full Latch Switch Circuit Malfunction
+B1383	Power Tailgate Closer Unit Ratchet Switch Circuit Malfunction
+B1384	Power Tailgate Closer Unit Half Latch Switch Circuit Malfunction
+B1386	Power Tailgate Sensor Pulse A Circuit Malfunction
+B1387	Power Tailgate Sensor Pulse B Circuit Malfunction
+B1388	Power Tailgate Motor Circuit Malfunction
+B1389	Power Tailgate Motor Clutch Circuit Malfunction
+B1390	Power Tailgate Closer Function Error
+B1575	Automatic Lighting Sensor Circuit Malfunction
+B1775	Microphone Input/Output Short to Power/Open
+B1776	Microphone Input/Output Short to Ground/Open
+B1779	HandsFreeLink steering wheel switch failure
+B1780	HFL Switch (HFL TALK/HFL BACK Buttons) Circuit Short
+B1792	HandsFreeLink Control Unit Internal Error
+B1802	Power Seat Control Unit Failure
+B1825	Slide Pulse Error
+B1826	Front Height Pulse Error
+B1827	Rear Height Pulse Error
+B1828	Driver's Seat Recline Motor Pulse Error
+B1829	A/T-P Signal and VSP Signal Mismatch
+B1836	Power Seat Position Sensor Circuit Short
+B1837	Memory Position Calling Timeout
+B1843	UART Communication Error
+B1844	Power Seat Slide Switch Circuit Malfunction
+B1845	Power Seat Recline Switch Circuit Malfunction
+B1846	Power Seat Front Up-Down Switch Circuit Malfunction
+B1847	Power Seat Rear Up-Down Switch Circuit Malfunction
+B1900	Communication Circuit Error (BUS-OFF)
+B1905	Immobilizer unit lost communication with MICU(door lock switch message)
+B1906	Immobilizer Unit Lost Communication With Gauge Control Module (A/T Message)
+B1C55	Driver's Heater Thermistor Circuit Open
+B1C56	Driver's Heater Thermistor Circuit Short
+B1C57	Passenger's Heater Thermistor Circuit Open
+B1C58	Passenger's Heater Thermistor Circuit Short
+B1C60	Driver's Heater Current Abnormal High
+B1C61	Driver's Heater Current Abnormal Low
+B1C62	Passenger's Heater Current Abnormal High
+B1C63	Passenger's Heater Current Abnormal Low
+B1C68	Driver's Heater Not Heating
+B1C69	Passenger's Heater Not Heating
+B1C70	Driver's Main Heater Switch Failure
+B1C71	Passenger's Main Heater Switch Failure
+B2456	Headlight Leveling Control Unit Lost Communication With MICU (Headlight Message)
+B2476	Front Suspension Stroke Sensor Circuit Malfunction
+B2477	Rear Suspension Stroke Sensor Circuit Malfunction
+B2479	Headlight Leveling Control Unit (EEPROM) Error
+B2482	Combination Light Switch Signal Error
+B2601 Parking Sensor CPU Error
+B2602	Parking Sensor EEPROM Error
+B2625	Left Front Corner Sensor Failure
+B2628	Right Front Corner Sensor Failure
+B2629	Left Rear Corner Sensor Failure
+B2630	Center Left Rear Sensor Failure
+B2631	Center Right Rear Sensor Failure
+B2632	Right Rear Sensor Failure
+B2633	Front Bus Failure
+B2634	Rear Bus Failure
+B2635	IND Erroneous Lighting
+B2636	Vehicle Status Combination Error
+B2967	Open in the Humidity Sensor Circuit
+B2968	Short in the Humidity Sensor Circuit (WINDSHIELD DEFROST)
+B2969	Climate Control Unit Lost Communication with MICU (WIPSW message)
+B2983	Problem in the Recirculation Control Linkage, Door, or Motor Circuit
+B2986	Open in the Recirculation Control Motor Circuit
+P1009	Variable Valve Timing Control (VTC) Advance Malfunction
+P1077	Intake Manifold Tuning (IMT) Valve Stuck in High RPM Position
+P1078	Intake Manifold Tuning (IMT) Valve Stuck in Low RPM Position
+P1102	F-CAN Malfunction (BUS-OFF)
 P1106	Barometric Pressure Circuit Range/Performance
 P1107	Barometric Pressure Circuit Low Input
 P1108	Barometric Pressure Circuit High Input
+P1109	Barometric Pressure (BARO) Sensor Circuit Out of Range High
+P1111	IAT Sensor Circuit High Input (Intermittent)
+P1112	IAT Sensor Circuit Intermittent Low Input
+P1114	ECT Sensor Circuit Low Input (Intermittent)
+P1115	ECT Sensor Circuit High Input (Intermittent)
+P1116	Engine Coolant Temperature (ECT) Sensor 1 Circuit Range/Performance Problem
+P1120	Throttle Position Sensor 1 Circuit Malfunction
 P1121	Throttle Position Lower Than Expected
 P1122	Throttle Position Higher Than Expected
+P1125	Electronic Throttle Control Limit Performance Mode
 P1128	MAP Lower Than Expected
 P1129	MAP Higher Than Expected
+P1133	HO2S-11 (Bank 1 Sensor 1) Insufficient Switching
+P1134	HO2S-11 (Bank 1 Sensor 1) Transition Time Ratio Error
 P1149	Primary HO2S (Sensor 1) Circuit Range/Performance Problem
+P1153	HO2S-21 (Bank 2 Sensor 1) Insufficient Switching
+P1154	HO2S-21 (Bank 2 Sensor 1) Transition Time Ratio
+P1157	Air Fuel Ratio (A/F) Sensor (Sensor 1) AFS Line High Voltage
 P1162	Primary HO2S (No. 1) Circuit Malfunction
 P1163	Primary HO2S (No. 1) Circuit Slow Response
 P1164	Primary HO2S (No. 1) Circuit Range/Performance
@@ -14,15 +206,45 @@ P1166	Primary HO2S (No. 1) Heater System Electrical
 P1167	Primary HO2S (No. 1) Heater System
 P1168	Primary HO2S (No. 1) LABEL Low Input
 P1169	Primary HO2S (No. 1) LABEL High Input
+P1171	Fuel System Lean During Acceleration Detected
+P1172	Air/Fuel Ratio (A/F) Sensor (Sensor 1) Circuit Out of Range High
+P1174	Front Air/Fuel Ratio (A/F) Sensor (Bank 2, Sensor 1) Circuit Out of Range High
+P1182	CNG Fuel Temperature Sensor Circuit Low Input
+P1183	CNG Fuel Temperature Sensor Circuit High Input
+P1187	CNG Fuel Tank Temperature Sensor Circuit Low Input
+P1188	CNG Fuel Tank Temperature Sensor Circuit High Input
+P1192	CNG Fuel Tank Pressure Sensor Circuit Low Input
+P1193	CNG Fuel Tank Pressure Sensor Circuit High Input
+P1220	Throttle Position Sensor 2 Circuit Malfunction
+P1221	Throttle Position Sensor 1-2 Circuit Performance
 P1253	VTEC System Malfunction
 P1257	VTEC System Malfunction
 P1258	VTEC System Malfunction
 P1259	VTEC System Malfunction
+P1271	Throttle Position Sensor 1-2 Correlation Error
+P1272	Acceleration Position Sensor 2-3 Correlation Error
+P1273	Acceleration Position Sensor 1-3 Correlation Error
+P1275	Acceleration Position Sensor 1 Circuit Malfunction
+P1280	Acceleration Position Sensor 2 Circuit Malfunction
+P1285	Acceleration Position Sensor 3 Circuit Malfunction
+P1286	Rocker Arm Oil Pressure Sensor B Stuck Low
+P128A	Rocker Arm Oil Pressure Sensor B Stuck High
+P128C	Rocker Arm Oil Pressure Sensor A Stuck Low
+P128D	Rocker Arm Oil Pressure Sensor A Stuck High
+P1290	Electronic Throttle Control Forced Idle Mode
+P1295	Electronic Throttle Control Power Management Mode
 P1297	Electrical Load Detector Circuit Low Input
 P1298	Electrical Load Detector Circuit High Input
+P1299	Electronic Throttle Control Forced Engine Shutdown Mode
 P1300	Multiple Cylinder Misfire Detected
+P1310	ION Sensing Module Diagnosis
+P1311	ION Sensing Module Secondary Line 1 Circuit Malfunction
+P1312	ION Sensing Module Secondary Line 2 Circuit Malfunction
+P1324	Knock Sensor Power Source Circuit Low Input
+P1326	ION Sensing Module Combustion Quality
 P1336	CSF Sensor Intermittent Interruption
 P1337	CSF Sensor No Signal
+P1340	ION Sensing Module Cylinder ID Malfunction
 P1359	CKP/TDC Sensor Connector Disconnection
 P1361	Intermittent Interruption In TDC 1 Sensor Circuit
 P1362	No Signal In TDC 1 Sensor Circuit
@@ -30,33 +252,110 @@ P1366	Intermittent Interruption In TDC 2 Sensor Circuit
 P1367	No Signal In TDC 2 Sensor Circuit
 P1381	Cylinder Position Sensor Intermittent Interruption
 P1382	Cylinder Position Sensor No Signal
+P1391	Acceleration 'G' Sensor Range/Performance
+P1392	Acceleration 'G' Sensor Circuit Low Input
+P1393	Acceleration 'G' Sensor Circuit High Input
+P1394	Acceleration 'G' Sensor Intermittent High Input
+P1404	EGR Valve Stuck Closed Malfunction
+P1406	EGR Valve Pintle Position Sensor Circuit Malfunction
+P1410	Air Pump System Malfunction
+P1415	AIR Pump Electric Current Sensor Signal Low Input
+P1416	AIR Pump Electric Current Sensor Signal High Input
+P1441	EVAP Vacuum Switch Circuit High Input
+P1454	Fuel Tank Pressure (FTP) Sensor Circuit Range/Performance Problem
 P1456	EVAP Emission Control System Leak Detected (Fuel Tank System)
 P1457	EVAP Emission Control System Leak Detected (Control Canister System)
 P1459	EVAP Emission Purge Flow Switch Malfunction
+P145C	Evaporative Emission (EVAP) System Purge Flow Malfunction
 P1486	Thermostat Range/Performance Problem
 P1491	EGR Valve Lift Insufficient Detected
 P1498	EGR Valve Lift Sensor High Voltage
 P1508	IAC Valve Circuit Failure
 P1509	IAC Valve Circuit Failure
 P1519	Idle Air Control Valve Circuit Failure
+P1522	Master Power Vacuum Sensor Low Input
+P1523	Master Power Vacuum Sensor High Input
+P1541	HTRS Passenger Heater Standby Circuit Low Input
+P1542	HTRS Passenger Heater Standby Circuit High Input
+P1549	Charging System High Voltage
+P15AB	Engine Mount Control Unit Power Source Circuit Low Voltage
+P15AC	Engine Mount Control Unit Internal Circuit Malfunction
+P15AE	Cylinder Pause Signal Malfunction
+P15AF	Camshaft Position (CMP) Sensor Signal Malfunction
+P15B0	Crankshaft Position (CKP) Sensor Signal Malfunction
+P15B1	Camshft Position (CMP) Sensor / Crankshaft Position (CKP) Sensor Signal Incorrect Correlation
+P15BD	Cylinder Pause Signal 2 Malfunction
+P15BE	Camshaft Position (CMP) Sensor Signal Malfunction
+P15BF	Camshaft Position (CMP) Sensor Signal Intermittent Interruption
+P15C0	Crankshaft Position (CKP) Sensor Signal Intermittent Interruption
+P15C1	Brake Booster Pressure Sensor B Circuit High Voltage
+P15C2	Brake Booster Pressure Sensor B Circuit Low Voltage
+P15C3	Brake Booster Pressure sensor A/B Incorrect Voltage Correlation
 P1607	ECM/PCM Internal Circuit Failure A
+P1618	Serial Peripheral Interface Communication
+P1635	5-Volt Reference Voltage 'A' Circuit Malfunction
+P1639	5-Volt Reference Voltage 'B' Circuit Malfunction
+P1640	Output Driver Module Circuit Malfunction
+P1641	ACTRQ Motor Torque Signal Circuit High Input
+P1642	QBATT Battery Signal Circuit Low Input
+P1643	QBATT Battery Signal Circuit High Input
+P1644	MOTFSA Signal Circuit Malfunction
+P1645	MOTFSA Signal Circuit Malfunction
+P1646	MOTFSA Signal Circuit Malfunction
+P1650	Output Driver Module Circuit Malfunction
 P1655	SEAF/SEFA/TMA/TMB Signal Line Failure
 P1656	Automatic Transaxle
+P1658	Electronic Throttle Control System (ETCS) Control Relay ON Malfunction
+P1659	Electronic Throttle Control System (ETCS) Control Relay OFF Malfunction
 P1660	Automatic Transaxle FI Signal A Circuit Failure
+P1671	TCM A/T FI Data Line No Signal
+P1672	TCM A/T FI Data Line Circuit Malfunction
 P1676	FPTDR Signal Line Failure
+P1677	TCM A/T FI Data Line Circuit Malfunction
 P1678	FPTDR Signal Line Failure
 P1681	Automatic Transaxle FI Signal A Low Input
 P1682	Automatic Transaxle FI Signal A High Input
+P1683	Throttle Valve Default Position Spring Performance Problem
+P1684	Throttle Valve Return Spring Performance Problem
 P1686	Automatic Transaxle FI Signal B Low Input
 P1687	Automatic Transaxle FI Signal B High Input
+P16BB	Alternator B Terminal Circuit Low Voltage
+P16BC	Alternator FR Terminal Circuit/IGP Circuit Low Voltage
+P16BD	Starter Cut Relay 2 Malfunction
+P16BE	Starter Cut Relay 1 Malfunction
+P16BF	Starter Cut Relay STRLY Circuit Malfunction
+P16C0	PCM A/T Control System Incomplete Update
+P16C4	Engine Mount Actuator Control Power Circuit (Stuck Off)
+P16C5	Engine Mount Actuator Control Power Circuit (Stuck ON)
+P16C6	Engine Mount Actuator High Voltage During Function Test
+P16C7	Rear Engine Mount Actuator Control Circuit High Current
+P16C8	Rear Engine Mount Actuator Control Circuit High Current
+P16C9	Engine Mount Contol Unit Internal Circuit Malfunction
+P16D5	F-CAN Malfunction (Internal Malfunction)
+P16D6	IMA-CAN Malfunction (Internal Malfunction) (HYBRID MODELS)
 P1705	Automatic Transaxle Concerns
 P1706	Automatic Transaxle Concerns
+P1709	TCM A/T Mode Switch Circuit Malfunction
+P1717	Open in Transmission Range Switch ATPRVS Switch Circuit
+P1730	Problem in Shift Control System
+P1731	Problem in Shift Control System
+P1732	Problem in Shift Control System: Shift Solenoid B or C Stuck ON
+P1733	Problem in Shift Control System
+P1734	Problem in Shift Control System
 P1738	Automatic Transaxle Concerns
 P1739	Automatic Transaxle Concerns
+P1743	Problem in Shift Control System; Shift Valve E Stuck OFF
+P1744	Problem in Shift Control System; Shift Valve E Stuck ON
+P1745	Problem in Shift Control System; Servo Control Valve Stuck OFF or Servo Valve Stuck OFF
+P1746	Hydraulic Control System (Cut Valve A Stuck OFF or Cut Valve B Stuck ON)
+P1747	Hydraulic Control System (Cut Valve A Stuck ON or Cut Valve B Stuck OFF)
+P1750	TCM A/T System Mechanical Malfunction
+P1751	TCM A/T System Mechanical Malfunction
 P1753	Automatic Transaxle Concerns
 P1758	Automatic Transaxle Concerns
 P1768	Automatic Transaxle Concerns
 P1773	Automatic Transaxle Concerns
+P1780	Problem in Shift Control System (Transmission is in Default Mode)
 P1785	Automatic Transaxle Concerns
 P1786	Automatic Transaxle Concerns
 P1790	Automatic Transaxle Concerns
@@ -64,11 +363,28 @@ P1791	Automatic Transaxle Concerns
 P1792	Automatic Transaxle Concerns
 P1793	Automatic Transaxle Concerns
 P1794	Automatic Transaxle Concerns
+P1850	A/T Brake Band Apply Solenoid Circuit Malfunction
+P1860	Torque Converter Clutch Solenoid Circuit Malfunction
 P1870	Automatic Transaxle Concerns
 P1873	Automatic Transaxle Concerns
 P1879	Automatic Transaxle Concerns
+P1882	A/T Inhibitor Solenoid Circuit Malfunction
 P1885	Automatic Transaxle Concerns
 P1886	Automatic Transaxle Concerns
 P1888	Automatic Transaxle Concerns
 P1890	Automatic Transaxle Concerns
 P1891	Automatic Transaxle Concerns
+P3400	Valve Pause System (VPS) Stuck OFF
+P3497	Valve Pause System (VPS) Stuck Off (Bank 2)
+U1064	Seat Heater Control Unit Lost Communication With Climate Control unit
+U1101	F-CAN Malfunction Powertrain Control Module (PCM) Active Control Engine Mount (ACM)
+U1102	F-CAN Malfunction (ECM/PCM Gauge Control Module)
+U1205	IMA-CAN Malfunction Powertrain Control Module (PCM)-Motor Control Module (MCM)
+U1221	Invalid Data Received From DC-DC Converter Control Module
+U1280	Communication Bus Line Error (BUS-OFF)
+U1281	Lost Communication with MICU (MICU frame)
+U1282	Lost Communication With MICU
+U1283	Power Tailgate Control Unit Lost Communication with Rear MICU (RALOCK SW Frame)
+U1288	Lost Communication with PARKSR
+U128D	Power Seat Control Unit Lost Communication With Gauge Control Module (VSP/NE Frame)
+U1290	Lost Communication with Seat Heater Control Unit
