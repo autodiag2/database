@@ -1,0 +1,1212 @@
+B1001	Option Configuration
+B1016	XX: Vehicle Identification Number Information Not Programmed
+B101D	XX: ECU Hardware
+B1428	Ignition Switched Power Run/Crank Relay Circuit
+B2713	Gearshift Lock Circuit High
+B2722	Trans Preference Switch Circuit Low
+C120A	Brake Boost Regulation Pressure Sensor Plausibility Failure
+C120C	Brake Pedal Position Sensor 4 Not Plausible
+C120D	Traction Control Power Switch Circuit Open
+C120E	Traction Control Power Switch Circuit Shorted
+C121A	ABS Regenerative Axle Pressure Sensor
+C121C	EBCM Internal Communication Error
+C121D	Improper Shutdown
+C121E	EBCM Malfunction
+C121F	EBCM Unexpected Exception
+C122E	Wheel Speed Sensor Frequency Error
+C123A	EBCM High End Timer Watchdog
+C123B	EBCM High End Timer Program Overflow
+C123C	EBCM High End Timer RAM Fault
+C123D	EBCM Solenoid Timeout
+C123E	EBCM High End Timer Periodic Interrupt
+C123F	EBCM Serial Peripheral Interface Inoperative
+C1255	Electronic Control Unit Performance
+C1256	Program ROM Checksum Error
+C126D	EBCM communication Bus B RAM Error
+C126E	EBCM Stack Overrun
+C126F	EBCM Serial Peripheral Interface Performance
+C1276	Delivered Torque Signal Circuit Malfunction
+C1277	Requested Torque Signal Circuit Malfunction
+C127C	EBCM Self Test Failed
+C127D	Antilock Brake System (ABS) Brake Switch Circuit
+C127E	EBCM Module High Temperature
+C128A	Brake Boost Regulation Pressure Sensor Above Maximum Threshold
+C128B	Master Cylinder Pressure Sensor Above Maximum Threshold
+C128C	ABS Regenerative Axle Pressure Sensor Offset Error
+C128D	Brake Boost Regulation Pressure Sensor
+C128E	Master Cylinder Pressure Sensor
+C128F	ABS Regenerative Axle Pressure Sensor Raw Offset Error
+C129A	Brake Pedal Position Sensor 3 Circuit Low
+C129B	Brake Pedal Position Sensor 3 Circuit High
+C129D	Brake Pedal Position Sensor 4 Circuit Low
+C129E	Brake Pedal Position Sensor 4 Circuit High
+C12A7	Brake Boost Solenoid Valve Circuit Performance
+C12B1	ABS Master Cylinder Pressure Sensor and Brake Pedal Position Sensor Not Plausible
+C12B2	Master Cylinder Pressure Sensor Short to Ground or Open
+C12B3	Master Cylinder Pressure Sensor Short to Battery
+C12B4	Master Cylinder Pressure Sensor Erratic
+C12B6	High Pressure Accumulator Pressure Sensor Short to Ground or Open
+C12B7	High Pressure Accumulator Pressure Sensor Short to Battery
+C12B8	High Pressure Accumulator Pressure Sensor Erratic
+C12B9	ABS Regenerative Axle Pressure Sensor Circuit Open or Short To Ground
+C12BA	ABS Regenerative Axle Pressure Sensor Circuit Short To Battery
+C12BB	ABS Regenerative Axle Pressure Sensor Erratic
+C12BC	Brake Boost Regulation Pressure Sensor Short to Ground or Open
+C12BD	Brake Boost Regulation Pressure Sensor Short to Battery
+C12BE	Brake Boost Regulation Pressure Sensor Erratic
+C12C2	ABS Left Front Isolation Solenoid Valve Driver Shorted
+C12C5	ABS Right Front Isolation Solenoid Valve Diver Shorted
+C12C6	ABS Left Rear Isolation Solenoid Valve Circuit Failure
+C12C8	ABS Right Rear Isolation Solenoid Valve Circuit Failure
+C12CC	ABS Left Front Dump Solenoid Valve Driver Shorted
+C12CF	ABS Right Front Dump Solenoid Valve Driver Shorted
+C12D0	ABS Left Rear Dump Solenoid valve Circuit Open
+C12D1	ABS Left Rear Dump Solenoid Valve Circuit Shorted
+C12D2	ABS Left Rear Dump Solenoid Valve Driver Shorted
+C12D3	ABS Right Rear Dump Solenoid Valve Circuit Open
+C12D4	ABS Right Rear Dump Solenoid Valve Circuit Shorted
+C12D5	ABS Right Rear Dump Solenoid Driver Shorted
+C12D6	ABS Base Brake Open Solenoid Circuit Open
+C12D7	ABS Base Brake Open Solenoid Circuit Shorted
+C12D8	ABS Base Brake Open Solenoid Driver Shorted
+C12D9	ABS Base Brake Closed Solenoid Circuit Open
+C12DA	ABS Base Brake Closed Solenoid Circuit Shorted
+C12DB	ABS Base Brake Closed Solenoid Driver Shorted
+C12DC	Brake Boost Solenoid Valve Circuit Malfunction
+C12DD	Brake Boost Solenoid Valve Circuit Shorted
+C12DE	ABS Proportioning Valve Solenoid Circuit Open
+C12DF	ABS Proportioning Valve Solenoid Driver Shorted
+C12E1	Device Voltage Low
+C12E2	Device Voltage High
+C12E4	Device Voltage Reference Output Circuit
+C12E6	Valve Relay Contact Circuit Open
+C12E7	Valve Relay Contact Circuit Resistance Below Threshold
+C12F2	ABS Left Rear Isolation Solenoid Valve Circuit Shorted
+C12F3	ABS Left Rear Isolation Solenoid Circuit Performance
+C12F4	ABS Proportioning Valve Solenoid Performance
+C12F5	ABS Right Rear Isolation Solenoid Circuit Shorted
+C12F6	ABS Right Rear Isolation Solenoid Performance
+C12F7	ABS Boost Pressure Sensor and Regenerative Axle Pressure Sensor Not Plausible
+C12F8	Brake Pedal Position Sensor 3 Not Plausible
+P1020	Camshaft Phasing System Malfunction
+P1021	CNG Fuel Injector 1 Circuit Malfunction
+P1022	CNG Fuel Injector 2 Circuit Malfunction
+P1023	CNG Fuel Injector 3 Circuit Malfunction
+P1024	CNG Fuel Injector 4 Circuit Malfunction
+P1025	CNG Fuel Injector 5 Circuit Malfunction
+P1026	CNG Fuel Injector 6 Circuit Malfunction
+P1027	CNG Fuel Injector 7 Circuit Malfunction
+P1028	CNG Fuel Injector 8 Circuit Malfunction
+P1043	Reductant Pump High Control Circuit Low Voltage
+P1044	Reductant Pump High Control Circuit High Voltage
+P1045	Reductant Purge Valve High Control Circuit Low Voltage
+P1048	Reductant Injector High Control Circuit Low Voltage
+P1049	Reductant Injector High Control Circuit High Voltage
+P1082	Fuel Filter Pressure Switch Performance
+P1093	Fuel Rail Pressure Range/Performance
+P1094	Fuel Rail Pressure Solenoid Circuit Malfunction
+P10CC	Exhaust Aftertreatment Fuel Injector Control Circuit Shorted
+P10CD	Exhaust Aftertreatment Fuel Injector High Control Circuit Low Voltage
+P10CE	Exhaust Aftertreatment Fuel Injector High Control Circuit High Voltage
+P10FD	Electric A/C Compressor Control Module A/C Compressor Motor Current Feedback Circuit High Voltage
+P1101	Intake Air Flow System Performance
+P1106	MAP Sensor Circuit Intermittent High Input
+P1107	MAP Sensor Circuit Intermittent Low Input
+P1108	BARO to MAP Sensor Comparison Too High
+P1111	IAT Sensor Circuit Intermittent High Input
+P1112	IAT Sensor Circuit Intermittent Low Input
+P1114	ECT Sensor Circuit Intermittent Low Input
+P1115	ECT Sensor Circuit Intermittent High Input
+P1116	Engine Coolant Temperature (ECT) Sensor Performance
+P111C	Charge Air Cooler (CAC) Temperature - Intake Air Temperature (IAT) Sensor 2 Correlation
+P111D	Intake Air Temperature (IAT) Sensor 1-Fuel Temperature Sensor 2 Correlation
+P1120	TP Sensor 1 Circuit Malfunction
+P1121	TP Sensor Circuit High Input (Intermittent)
+P1122	TP Sensor Circuit Intermittent Low Input
+P1125	Accelerator Pedal Position System Malfunction
+P1132	HO2S-11 (Bank 1 Sensor 1) Heater Circuit Malfunction
+P1133	HO2S Insufficient Switching Bank 1 Sensor 1
+P1134	HO2S-11 (Bank 1 Sensor 1) Transition Time Ratio
+P1137	HO2S-12 Low Voltage During Power Enrichment
+P1138	HO2S (Sensor 2) Voltage Too High
+P113A	Exhaust Gas Temperature Sensors 3-4 Not Plausible
+P1152	HO2S-21 (Bank 2 Sensor 1) Heater Circuit Malfunction
+P1153	HO2S Insufficient Switching Bank 2 Sensor 1
+P1154	HO2S-21 (Bank 2 Sensor 1) Transition Time Ratio
+P1166	HO2S Circuit Low Voltage During Power Enrichment Sensor 2
+P1167	HO2S Circuit High Voltage During Decel Fuel Cut-Off (DFCO) Sensor 1
+P1171	Fuel System Lean During Acceleration
+P1172	Secondary Fuel Pump Insufficient/No Fuel Flow
+P1174	Fuel Trim Cylinder Balance
+P1175	Fuel Trim Cylinder Balance Bank 2
+P1182	Supercharger Inlet Pressure (SCIP) Sensor Performance
+P1183	Supercharger Inlet Pressure (SCIP) Sensor Circuit Low Voltage
+P1184	Supercharger Inlet Pressure (SCIP) Sensor Circuit High Voltage
+P1187	Engine Oil Temperature Sensor Low Input
+P1188	Engine Oil Pressure Sensor High Input
+P1189	Engine Oil Pressure Switch Circuit Malfunction
+P1191	Intake Air Duct Leak
+P11AF	HO2S Performance - Signal High During Moderate Load Sensor 2
+P11B2	HO2S Performance - Signal Low During Moderate Load Sensor 2
+P11B5	HO2S Current Performance Sensor 2
+P11CB	NOx Sensor 1 Performance - Signal High
+P11CC	NOx Sensor 1 Performance - Signal Low
+P11DB	NOx Sensor 1 Current Performance
+P11DC	NOx Sensor 2 Current Performance
+P1200	Fuel Injector Circuit Malfunction
+P1201	Gas Mass Sensor Range/Performance
+P1202	Gas Mass Flow Sensor Low Frequency
+P1203	Gas Mass Flow Sensor High Frequency
+P1207	FICM PWM Signal To PCM Circuit Malfunction
+P1208	Fuel Rail Pressure Signal To PCM Circuit Malfunction
+P1214	Injection Pump Timing Offset
+P1215	High Pressure Or Low Pressure Lockout, MIL, NGO Circuit Malfunction
+P1216	Fuel Solenoid Response Time Too Short
+P1217	Fuel Solenoid Response Time Too Long
+P1218	Injection Pump Calibration Circuit Malfunction
+P121B	Mass Air Flow (MAF) Sensor Supply Voltage Control Circuit Low
+P121C	Mass Air Flow (MAF) Sensor Supply Voltage Control Circuit High
+P1220	TP Sensor 2 Circuit Malfunction
+P1221	Fuel Pump Secondary System Circuit Low Input
+P1222	Injector Control Circuit Malfunction (Intermittent)
+P1223	Injection Control Circuit Commanded State to Actual State Mismatch
+P1224	Fuel Injector 1 Control Circuit Shorted
+P1226	Injection Control Circuit Commanded State to Actual State Mismatch
+P1227	Fuel Injector 2 Control Circuit Shorted
+P1229	Injection Control Circuit Commanded State to Actual State Mismatch
+P122A	Fuel Injector 3 Control Circuit Shorted
+P122C	Intake Air (IA) Flow Valve Control Circuit Shorted
+P122D	Intake Air (IA) Flow Position Sensor Exceeded Learning Limit
+P122E	Intake Air (IA) Flow Valve Control Circuit 2 Low Voltage
+P122F	Intake Air (IA) Flow Valve Control Circuit 2 High Voltage
+P1230	Fuel Pump Relay Control Circuit Low Voltage
+P1231	Fuel Pump Relay Control Circuit High Voltage
+P1232	Injection Control Circuit Commanded State to Actual State Mismatch
+P1233	Fuel Injector 4 Control Circuit Shorted
+P1235	Injection Control Circuit Commanded State to Actual State Mismatch
+P1236	Fuel Injector 5 Control Circuit Shorted
+P1238	Injection Control Circuit Commanded State to Actual State Mismatch
+P1239	Fuel Injector 6 Control Circuit Shorted
+P1241	Injection Control Circuit Commanded State to Actual State Mismatch
+P1242	Fuel Injector 7 Control Circuit Shorted
+P1244	Injection Control Circuit Commanded State to Actual State Mismatch
+P1247	Fuel Injector 8 Control Circuit Shorted
+P1250	Early Fuel Evaporation Heater Circuit Malfunction
+P1255	Fuel Pump Control Module Driver Over-temperature
+P1258	Engine Coolant Over temperature - Protection Mode Active
+P125A	Fuel Pressure Regulator 2 High Control Circuit Low Voltage
+P125B	Fuel Pressure Regulator 2 High Control Circuit High Voltage
+P1261	High Voltage Circuit Fault – Cylinders 1, 4, 6, and 7
+P1262	High Voltage Circuit Fault – Cylinders 2, 3, 5, and 8
+P1270	ECM Cannot Process APP Analog Data into Digital Data
+P1271	Accelerator Pedal Position Sensor 1-2 Correlation
+P1272	Accelerator Pedal Position Sensor 2-3 Correlation
+P1273	Accelerator Pedal Position Sensor 1-3 Correlation
+P1275	Accelerator Pedal Position Sensor 1 Circuit Malfunction
+P1276	Accelerator Pedal Position Sensor 1 Range/Performance
+P1277	APP Sensor 1 Low Voltage
+P1278	APP Sensor 1 High Voltage
+P1280	Accelerator Pedal Position Sensor 2 Circuit Malfunction
+P1281	Accelerator Pedal Position Sensor 2 Range/Performance
+P1282	APP Sensor 2 Low Voltage
+P1283	APP Sensor 2 High Voltage
+P1285	Accelerator Pedal Position Sensor 3 Circuit Malfunction
+P1286	Accelerator Pedal Position Sensor 3 Range/Performance
+P1287	APP Sensor 3 Low Voltage
+P1288	APP Sensor 3 High Voltage
+P128E	Fuel Rail Pressure Performance
+P1293	Injector Circuit Low to High Current Transition Time Bank 1
+P1294	Injector Circuit Low to High Current Transition Time Bank 2
+P1295	Injector Circuit High to Low Current Transition Time Bank 1
+P1296	Injector Circuit High to Low Current Transition Time Bank 2
+P12B3	Cylinder 1 Injection Timing Retarded
+P12B4	Cylinder 1 Injection Timing Advanced
+P12B5	Cylinder 2 Injection Timing Retarded
+P12B6	Cylinder 2 Injection Timing Advanced
+P12B7	Cylinder 3 Injection Timing Retarded
+P12B8	Cylinder 3 Injection Timing Advanced
+P12B9	Cylinder 4 Injection Timing Retarded
+P12BA	Cylinder 4 Injection Timing Advanced
+P12BB	Cylinder 5 Injection Timing Retarded
+P12BC	Cylinder 5 Injection Timing Advanced
+P12BD	Cylinder 6 Injection Timing Retarded
+P12BE	Cylinder 6 Injection Timing Advanced
+P12BF	Cylinder 7 Injection Timing Retarded
+P12C0	Cylinder 7 Injection Timing Advanced
+P12C1	Cylinder 8 Injection Timing Retarded
+P12C2	Cylinder 8 Injection Timing Advanced
+P1300	Ignition Coil 1 Primary Feedback Circuit Malfunction
+P1305	Ignition Coil 2 Primary Feedback Circuit Malfunction
+P1310	Ignition Coil 3 Primary Feedback Circuit Malfunction
+P1315	Ignition Coil 4 Primary Feedback Circuit Malfunction
+P1320	Crankshaft Position (CKP) System Variation Not Learned
+P1321	Crankshaft Position (CKP) Reluctor Wheel Performance.
+P1335	Crankshaft Position Sensor Circuit Malfunction
+P1336	CKP Sensor System Variation Not Learned
+P1345	Camshaft To Crankshaft Position Correlation
+P1346	Intake Camshaft Position System Performance
+P1349	Intake Camshaft Position System Performance
+P1350	Bypass Line Monitor Circuit Malfunction
+P1351	ICM Control Circuit High Or Pulses Detected When Open
+P1352	ICM Signal Circuit High Input
+P1361	ICM Ignition Control Circuit Low Input
+P1362	Ignition Bypass Circuit Low Voltage
+P1371	DI Ignition Low-resolution Circuit Malfunction
+P1374	IC Module 3X Reference Circuit Malfunction
+P1380	Misfire Detected - Rough Road Data Not Available
+P1381	Misfire Detected - No Communication with Brake Control Module
+P1382	Wheel Speed Sensor Circuit
+P1385	Wheel Speed Sensor Circuit
+P1390	Wheel Speed Sensor Circuit
+P1391	Rough Road Sensor Performance
+P1392	Rough Road Sensor Circuit Low Voltage
+P1393	Rough Road Sensor Circuit High Voltage
+P1396	Wheel Speed Sensor Circuit w/o ABS
+P1397	Wheel Speed Sensor Circuit w/ABS
+P1400	Cold Start Injection Monitoring
+P1402	Exhaust Gas Recirculation (EGR) Flow Insufficient
+P1403	Exhaust Gas Recirculation Error (EGR Solenoid 1)
+P1404	Exhaust Gas Recirculation Error (EGR Solenoid 2)
+P1405	Exhaust Gas Recirculation Error (EGR Solenoid 3)
+P1406	EGR Valve Pintle Position Circuit Malfunction
+P1407	Exhaust Gas Recirculation (EGR) Motor Control Circuit Shorted
+P1408	MAP Sensor Circuit Malfunction
+P1409	Exhaust Gas Recirculation (EGR) System Performance
+P140A	Exhaust Gas Recirculation (EGR) Cooler Bypass Position Sensor Exceeded Learning Limit
+P140B	Exhaust Gas Recirculation (EGR) Flow Insufficient
+P140C	Exhaust Gas Recirculation (EGR) Flow Excessive
+P140D	Exhaust Gas Recirculation (EGR) Motor Control Circuit 2 Low Voltage
+P140E	Exhaust Gas Recirculation (EGR) Motor Control Circuit 2 High Voltage
+P140F	Exhaust Gas Recirculation (EGR) Motor Current Performance
+P1410	Fuel Tank Pressure System Range/Performance
+P1411	Exhaust Gas Recirculation (EGR) Cooler Bypass Valve Control Circuit 2 Low Voltage
+P1412	Exhaust Gas Recirculation (EGR) Cooler Bypass Valve Control Circuit 2 High Voltage
+P1413	Exhaust Gas Recirculation (EGR) Cooler Bypass Valve Control Circuit Shorted
+P1414	Exhaust Gas Recirculation (EGR) Cooler Bypass Valve Current Performance
+P1415	Secondary Air Injection System (Bank 1) Malfunction
+P1416	Secondary Air Injection System (Bank 2) Malfunction
+P1431	Fuel Level Sensor 2 Signal Range/Performance
+P1432	Fuel Level Sensor 2 Circuit Low Input
+P1433	Fuel Level Sensor (Right Side) Circuit High Input
+P1441	EVAP System Flow During Non-Purge
+P1442	EVAP Purge Solenoid Switch Static Test Malfunction
+P1448	Diesel Particulate Filter Regeneration Frequency Too Low
+P144B	Closed Loop Diesel Particulate Filter (DPF) Regeneration Control At Limit - Stage 1 Temperature Too Low
+P144C	Closed Loop Diesel Particulate Filter (DPF) Regeneration Control At Limit - Stage 1 Temperature Too High
+P144E	Closed Loop Diesel Particulate Filter (DPF) Regeneration Control At Limit - Stage 2 Temperature Too Low
+P144F	Closed Loop Diesel Particulate Filter (DPF) Regeneration Control At Limit - Stage 2 Temperature Too High
+P1450	Barometric Pressure Sensor Circuit Malfunction
+P1451	Barometric Pressure Sensor Range/Performance
+P1458	Evaporative Emission (EVAP) System Leak Detection Pump Pressure Sensor Performance
+P1459	Evaporative Emission (EVAP) System Leak Detection Pump Pressure Sensor Circuit Low Voltage
+P145A	Evaporative Emission (EVAP) System Leak Detection Pump Pressure Sensor Circuit High Voltage
+P145C	Evaporative Emission (EVAP) System Leak Detection Pump Stuck Off
+P145D	Evaporative Emission (EVAP) System Leak Detection Pump Stuck On
+P145E	Evaporative Emission (EVAP) System Leak Detection Pump to Vent Solenoid Valve Leak Detected
+P145F	Evaporative Emission (EVAP) System Reference Orifice Performance
+P1460	Cooling Fan Control System Malfunction
+P1461	Evaporative Emission (EVAP) System Pressure Incorrect During Fuel Fill Door Open Request
+P1481	Cooling Fan Speed Signal Lost
+P1482	Cooling Fan Control Circuit Improper Voltage
+P1483	Engine Cooling System Range/Performance
+P1484	Cooling Fan Speed Excessive RPM
+P1485	Cooling Fan Output Circuit
+P1486	Cooling Fan Output Circuit Low Voltage
+P1487	Cooling Fan Output Circuit High Voltage
+P148A	Cooling Fan Signal Circuit Performance
+P148B	Cooling Fan Signal Circuit Low Voltage
+P148C	Cooling Fan Signal Circuit High Voltage
+P1500	Starter Signal Circuit Malfunction
+P1504	VSS Circuit Voltage Too Low
+P1508	Idle Speed Low RPM
+P1509	Idle Speed High RPM
+P150A	Transmission Output Speed Signal Circuit
+P150B	Transmission Output Speed Sensor Circuit Intermittent
+P150C	Transmission Control Module Engine Speed Request Signal Message Counter Incorrect
+P150D	Supply Voltage Circuit 2 Low Voltage
+P150E	Supply Voltage Circuit 1 Low Voltage
+P1510	Backup Power Supply Malfunction
+P1511	Idle Speed Control (ISC) Motor Control Circuit
+P1512	Control Module Throttle Actuator Position Performance
+P1513	Idle Speed Control (ISC) System Performance
+P1514	Throttle Body Performance
+P1515	Control Module Throttle Actuator Position Performance
+P1516	Throttle Actuator Control (TAC) Module Throttle Actuator Position Performance
+P1517	Throttle Actuator Control Module Performance
+P1518	Throttle Actuator Control Module Serial Data Malfunction
+P1519	Throttle Actuator Control Module Range/Performance
+P151C	Air Conditioning (A/C) Low Side Refrigerant Pressure Sensor Not Plausible
+P1520	Park Neutral Position Switch Circuit Malfunction
+P1523	TAC Module Return Range/Performance
+P1530	Air Conditioning Head Pressure Switch Circuit Malfunction
+P1532	A/C Evaporative Temp Sensor Circuit Low Input
+P1533	A/C Evaporative Temp Sensor Circuit High Input
+P1537	Air Conditioning (A/C) Clutch Relay Control Circuit High Voltage
+P1538	Air Conditioning (A/C) Clutch Relay Control Circuit Low Voltage
+P1539	Air Conditioning Clutch Status High Input
+P153B	Air Conditioning (A/C) Evaporator Temperature Sensor 2 Not Plausible
+P1543	Air Conditioning System Range/Performance
+P1545	Air Conditioning Clutch Relay Control Circuit Malfunction
+P1546	A/C Clutch Status Circuit Low Input
+P154A	Intake Air (IA) Heater Feedback Circuit
+P154B	Intake Air (IA) Heater Voltage Signal Circuit
+P154C	Intake Air (IA) Heater Current Signal Circuit
+P154D	Intake Air (IA) Heater Temperature Signal Circuit
+P1550	Stepper Motor Cruise Control Circuit Malfunction
+P1551	Throttle Valve Rest Position Not Reached During Learn
+P1554	Cruise Control Status Circuit Malfunction
+P1558	Cruise Control System, SPS Circuit Indicated Low
+P1561	Cruise Vent Solenoid Circuit Malfunction
+P1562	Cruise Vacuum Solenoid Circuit Malfunction
+P1565	Cruise Servo Position Sensor Circuit Malfunction
+P1567	Cruise Switches Circuit Malfunction
+P1568	Cruise Control System - SPS Circuit Indicated High
+P1571	Traction Control System Desired Torque Out-Of-Range
+P1572	Traction Control System - Circuit Low Too Long
+P1573	Traction Control System, Loss Of ABS/TCS Serial Data
+P1574	Stoplamp Switch Circuit Malfunction
+P1575	Extended Travel Brake Switch Circuit Malfunction
+P1585	Cruise Control Brake Switch 2 Circuit Malfunction
+P1599	Cruise Power Management Mode Enabled
+P159C	Power Take-Off (PTO) Remote Engine Shutdown Switch Circuit
+P15B9	Electric A/C Compressor Control Module Ignition On/Start Switch Circuit Low Voltage
+P15BA	Electric A/C Compressor Control Module Ignition On/Start Switch Circuit High Voltage
+P15F0	Engine Torque Delivered Circuit
+P15F1	Axle Torque Request Circuit
+P15F2	Engine Torque Command Circuit
+P15F9	Hybrid System Engine Speed Control Intervention Request Type Signal Message Counter Incorrect
+P15FB	Brake Pedal Position Sensor Signal Message Counter Incorrect
+P1600	PCM Battery Circuit
+P1601	PCM Serial Communications Malfunction
+P1602	Lost Communications with Brake/Traction Control (EBTCM) System
+P1604	Lost Communications with Driver Information and Displays Control (IPC) System
+P1605	Lost Communications with HVAC Control System
+P1607	Control Module Ignition Off Timer Performance
+P160C	Engine Calibration Information Not Programmed - GPCM
+P1610	Lost Communications with Body Multiple Control (BCM) System
+P1611	Engine Controls Ignition Relay Control Circuit Low Voltage
+P1619	Engine Oil Reset Monitor Circuit Malfunction
+P161A	Glow Plug Control Module Not Programmed
+P161B	Control Module Torque Performance
+P1621	Control Module Long Term Memory Performance
+P1623	PCM PROM Error
+P1626	Theft Deterrent System Fuel Enable Circuit Malfunction
+P1627	Control Module Analog to Digital Performance
+P1628	Theft Deterrent Fuel Enable Signal Not Received
+P1629	Theft Deterrent Fuel Enable Signal Not Received
+P162B	Remote Vehicle Speed Limiting Signal Message Counter Incorrect
+P162D	Evaporative Emission (EVAP) System Alarm Clock Signal Not Received
+P1630	System Voltage Error
+P1631	Theft Deterrent Start Enable Signal Not Correct
+P1632	Theft Deterrent Fuel Disable Signal Received
+P1633	Ignition Supplement Power (0) Switch Circuit Malfunction
+P1634	Improper Ignition 1 Signal Voltage
+P1635	5-Volt Reference 1 Circuit Malfunction
+P1637	Generator 'L' Terminal Circuit Malfunction
+P1638	Generator 'F' Terminal Circuit Malfunction
+P1639	5-Volt Reference 2 Circuit Malfunction
+P163C	Glow Plug Module Primary Circuit
+P163D	Glow Plug Control Module Secondary Circuit
+P163E	Glow Plug Control Module Overtemperature
+P1640	Output Driver Module 'A' Circuit Malfunction
+P1641	MIL Control Circuit Malfunction
+P1642	Fan Control Relay 2/3 Control Circuit Malfunction
+P1643	Wait To Start Lamp Control Circuit Malfunction
+P1644	Traction Control Delivered Torque Output Circuit
+P1649	Immobilizer Security Code Not Programmed
+P1650	Output Driver Module 'B' Circuit Malfunction
+P1651	Cooling Fan 1 Relay Control Circuit Malfunctions
+P1652	Cooling Fan 2 Relay Control Circuit Malfunctions
+P1653	EGR Vent Solenoid Control Circuit Malfunction
+P1654	A/C Relay Control Circuit Malfunction
+P1655	EVAP Purge Solenoid Control Circuit Malfunction
+P1656	Wastegate Solenoid Control Circuit Malfunction
+P1657	Skip Shift 1-4 Upshift Solenoid Control Circuit Malfunction
+P1658	FICM Detects Current Through Driver With Driver Off
+P1660	Output Driver 3 Input Voltage High Input
+P1661	MIL Control Circuit Malfunction
+P1662	Cruise Control Inhibit Control Circuit Malfunction
+P1663	Change Engine Oil Lamp Control Circuit
+P1664	Skip Shift 1-4 Upshift Lamp Control Circuit Malfunction
+P1665	EVAP Vent Solenoid Control Circuit Malfunction
+P1667	Reverse Inhibit Solenoid Control Circuit Malfunction
+P1668	Generator L-Terminal Control Circuit
+P166B	Intake Air (IA) Heater Over Temperature
+P166C	Intake Air (IA) Heater Resistance
+P1670	Output Driver Module 4 Circuit Malfunction
+P1671	Change Engine Oil Lamp Control Circuit
+P1672	Low Oil Level Lamp Control Circuit Malfunction
+P1673	Engine Hot Lamp Control Circuit Malfunction
+P1674	Engine Speed Ouput Circuit
+P1675	Evaporative Emission (EVAP) Vent Solenoid Control Circuit
+P1676	Evaporative Emission (EVAP) Purge Solenoid Control Circuit
+P1680	Control Module Long Term Memory Performance
+P1681	Control Module Long Term Memory Performance
+P1682	Ignition 1 Switch Circuit 2
+P1683	Control Module Long Term Memory Performance
+P1684	Transmission Control Module (TCM) Power Up Temperature Sensor Performance
+P1685	Transmission Control Module (TCM) Power Up Temperature Sensor Circuit Low Voltage
+P1686	Transmission Control Module (TCM) Power Up Temperature Sensor Circuit High Voltage
+P1687	Fuel Injector Control Module Driver Stuck On
+P1688	Engine Torque Data Performance
+P1689	Traction Control Delivered Torque Output Circuit
+P168C	Turbocharger Boost Control Position Slow Response - Increasing Position
+P168D	Turbocharger Boost Control Position Slow Response - Decreasing Position
+P16A0	Sensor Communication Circuit Low Voltage
+P16A1	Sensor Communication Circuit High Voltage
+P16A2	Sensor Communication Circuit Performance
+P16E0	Engine Performance - No Torque Detected
+P16F2	Control Module Transmission Direction Range Switch
+P16F3	Control Module Redundant Memory Performance
+P16F4	Control Module Transmission Range Control Performance
+P16F5	Control Module Programmable Logic Device
+P16F6	Control Module Range State Command
+P16F7	Control Module Pressure Control Solenoid Command Incorrect
+P16F8	Control Module Clutch Command Incorrect
+P16F9	Control Module Shutdown Performance
+P1700	Transmission Control Module (TCM) Requested MIL Illumination
+P1709	Park/Neutral Position Switch Out Of Self-Test Range
+P1710	Pressure Switch Solenoid “E” Stuck Open
+P1711	Pressure Switch Solenoid “E” Stuck Closed
+P1712	Pressure Switch Solenoid “E” Circuit High
+P1713	Pressure Switch Reverse Circuit
+P1714	Pressure Switch Reverse Stuck Open
+P1715	Park/Neutral Position Switch Circuit
+P1719	Incorrect Shifting Detected
+P1720	Solenoid “A” Control Clutch Stuck Of
+P1721	Solenoid “B” Control Clutch Stuck Off
+P1723	Solenoid “A” Control Clutch Stuck On
+P1724	Solenoid “B” Control Clutch Stuck On
+P1740	Cruise Control Overdrive Cut Control Circuit Malfunction
+P1751	Shift Valve 1 Performance
+P1760	Transmission Position Sensor Signal
+P1761	Up and Down Shift Switch Signal Circuit
+P1762	Transmission Mode Switch Signal Circuit
+P1779	Engine Torque Data Performance
+P1780	Park Neutral Position Switch Circuit Malfunction
+P1781	TCM MIL Request Circuit Low Voltage
+P1791	Throttle/Pedal Position Signal
+P1792	Engine Coolant Signal
+P179A	Auxiliary Transmission Fluid Pump Overspeed
+P179B	Range State Command Circuit
+P1810	Transmission Pressure Switch Malfunction (4L60-E)
+P1811	Maximum Adapt and Long Shift (6.5L Diesel only)
+P1812	Transmission Fluid Over-Temperature
+P1814	Torque Converter Overstressed (4T65-E, 4T80-E)
+P1815	A/T Range Sensor Circuit Malfunction (4T40-E/4T45-E)
+P1816	A/T Input Shaft Speed Sensor Malfunction (4T40-E/4T45-E)
+P1817	A/T Input Shaft Speed Sensor Malfunction (4T40-E/4T45-E)
+P1818	Transmission Fluid Pressure (TFP) Valve Position Switch Indicates Drive without Drive Ratio
+P1819	Internal Mode Switch - No Start (4T65-E)
+P181C	Internal Mode Switch 2 R1 Circuit Low Voltage
+P181D	Internal Mode Switch 2 R1 Circuit High Voltage
+P181E	Internal Mode Switch 2 R2 Circuit Low Voltage
+P181F	Internal Mode Switch 2 R2 Circuit High Voltage
+P1820	Internal Mode Switch Circuit A Low (Except 3.8L Monte Carlo)
+P1822	Internal Mode Switch 'B' Circuit Low Input (4T65-E)
+P1823	Internal Mode Switch 'P' Circuit Low Input (4T65-E)
+P1824	Internal Mode Switch P Circuit High Voltage
+P1825	Internal Mode Switch - Invalid Range (4T65-E)
+P1826	Internal Mode Switch - Invalid Range (4T65-E)
+P182A	Internal Mode Switch A Circuit Low Voltage
+P182B	Internal Mode Switch B Circuit Low Voltage
+P182C	Internal Mode Switch B Circuit High Voltage
+P182D	Internal Mode Switch P Circuit Low Voltage
+P182E	Internal Mode Switch-Invalid Range
+P182F	Internal Mode Switch C Circuit High Voltage
+P1831	Pressure Control (PC)/Shift Lock Solenoid Control Circuit Low Voltage
+P1832	Pressure Control (PC)/Shift Lock Solenoid Control Circuit High Voltage
+P1838	Internal Mode Switch A Circuit High Voltage
+P1839	Internal Mode Switch C Circuit Low Voltage
+P183A	Internal Mode Switch 2 D1 Circuit Low Voltage
+P183B	Internal Mode Switch 2 D1 Circuit High Voltage
+P183C	Internal Mode Switch 2 D2 Circuit Low Voltage
+P183D	Internal Mode Switch 2 D2 Circuit High Voltage
+P183E	Internal Mode Switch 2 - Invalid Range
+P183F	Internal Mode Switch 1-2 Correlation
+P184A	Internal Mode Switch 2 S Circuit Low Voltage
+P184B	Internal Mode Switch 2 S Circuit High Voltage
+P1860	TCC PWM Solenoid Circuit Malfunction (4L60-E)
+P1862	TCC Solenoid Circuit Malfunction
+P1863	TCC Solenoid Circuit Short to Voltage
+P1864	TCC Enable Solenoid Circuit Malfunction (4T60-E)
+P1868	Transmission Fluid Life
+P1870	Transaxle Component Slipping (4T60-E)
+P1871	Undefined Gear Ratio (5.7L and 7.4L Gas)
+P1873	Torque Converter Stator Temp Switch CKT Low
+P1874	Torque Converter Stator Temp Switch CKT High
+P1875	4WD Low Switch Circuit Electrical (Electric Shift, 4.3L only)
+P1876	Up and Down Shift Enable Switch Circuit Low Voltage
+P1886	A/T3-2 Shift Solenoid Circuit Malfunction (4T60-E)
+P1887	TCC Release Switch Circuit Malfunction (4T40/4T45-E)
+P1915	Internal Mode Switch Does Not Indicate Park/Neutral (P/N) During Start
+P1A00	Battery Energy Control Module Reset
+P1A01	Battery Energy Control Module Long Term Memory Performance
+P1A02	Battery Energy Control Module Loop Overrun
+P1A03	Battery Energy Control Module Options Incorrect
+P1A04	Battery Energy Control Module Programming Read Only Memory (ROM)
+P1A05	Battery Energy Control Module Random Access Memory (RAM)
+P1A06	Battery Energy Control Module Read Only Memory (ROM)
+P1A07	Battery Energy Control Module 5-Volt Reference Circuit
+P1A08	Battery Energy Control Module Stack Overrun
+P1A09	Battery Energy Control Module Hybrid System Voltage
+P1A0C	Battery Energy Control Module System Voltage Low
+P1A0D	Battery Energy Control Module System Voltage High
+P1A1F	Battery Energy Control Module Hybrid Battery System Voltage Low
+P1A20	Hybrid Battery System Precharge Time Too Long
+P1A21	Hybrid Battery Contactor Control Sequence Incorrect
+P1A24	Hybrid Battery 1 Voltage
+P1A2B	Hybrid Battery 2 Voltage
+P1A32	Hybrid Battery 3 Voltage
+P1A4E	Battery Energy Control Module Hybrid Battery System Voltage High
+P1A4F	Drive Motor 1 Control Module Not Programmed
+P1A50	Drive Motor 1 Control Module Random Access Memory (RAM)
+P1A51	Drive Motor 1 Control Module Read Only Memory (ROM)
+P1A52	Drive Motor 2 Control Module Not Programmed
+P1A53	Drive Motor 2 Control Module Random Access Memory (RAM)
+P1A54	Drive Motor 2 Control Module Read Only Memory (ROM)
+P1A56	Hybrid/EV System Voltage Discharge Circuit
+P1A58	Hybrid Battery Pack Relay Open
+P1A5E	Battery Energy Control Module Ignition On/Start Switch Circuit Low Voltage
+P1A5F	Battery Energy Control Module Ignition On/Start Switch Circuit High Voltage
+P1A60	Battery Energy Control Module Ignition Accessory Switch Circuit Low Voltage
+P1A64	Starter/Generator Control Module Reset
+P1A65	Starter/Generator Control Module Long Term Memory Performance
+P1A66	Starter/Generator Control Module Loop Overrun
+P1A67	Starter/Generator Control Module Options Incorrect
+P1A68	Starter/Generator Control Module Programming Read Only Memory (ROM)
+P1A69	Starter/Generator Control Module Random Access Memory (RAM)
+P1A6A	Starter/Generator Control Module Read Only Memory (ROM)
+P1A6B	Starter/Generator Control Module 5-Volt Reference Circuit
+P1A6C	SGCM Service Calibration Fault
+P1A71	14 Volt Power Module Temperature Sensor 2 Performance
+P1A72	14 Volt Power Module Temperature Sensor 2 Circuit Low Voltage
+P1A73	14 Volt Power Module Temperature Sensor 2 Circuit High Voltage
+P1A75	Starter/Generator Control Module Coolant Temperature Sensor 2 Performance
+P1A76	Starter/Generator Control Module Coolant Temperature Sensor 2 Circuit Low Voltage
+P1A77	Starter/Generator Control Module Coolant Temperature Sensor 2 Circuit High Voltage
+P1A78	Starter/Generator Control Module Coolant Temperature Sensor 3 Performance
+P1A79	Starter/Generator Control Module Coolant Temperature Sensor 3 Circuit Low Voltage
+P1A7A	Starter/Generator Control Module Coolant Temperature Sensor 3 Circuit High Voltage
+P1A7E	Starter/Generator Control Module Overtemperature High Voltage System Disabled
+P1A7F	Starter/Generator Control Module Coolant Level Sensor 1 Low Voltage
+P1A80	Starter/Generator Control Module Coolant Level Sensor 1 High Voltage
+P1A81	Starter/Generator Control Module Coolant Level Sensor 2 Low Voltage
+P1A82	Starter/Generator Control Module Coolant Level Sensor 2 High Voltage
+P1A83	Starter/Generator Control Module Coolant Level Sensor 3 Low Voltage
+P1A84	Starter/Generator Control Module Coolant Level Sensor 3 High Voltage
+P1A85	Starter/Generator Control Module Coolant Level Sensor 4 Low Voltage
+P1A86	Starter/Generator Control Module Coolant Level Sensor 4 High Voltage
+P1A87	Low Starter/Generator Control Module Coolant Level
+P1A88	42 Volt System Performance
+P1A89	42 Volt System Voltage Low
+P1A8A	42 Volt System Voltage High
+P1A8C	42 Volt Inverter Overtemperature
+P1A90	14 Volt Power Module Temperature Sensor 1 Performance
+P1A91	14 Volt Power Module Temperature Sensor 1 Circuit Low Voltage
+P1A92	14 Volt Power Module Temperature Sensor 1 Circuit High Voltage
+P1A93	14-Volt Power Module Stuck OFF
+P1A94	14-Volt Power Module Stuck ON
+P1A95	DC/DC Converter Stuck in 14-42 Volt Direction
+P1A96	DC/DC Converter Stuck in 42-14 Volt Direction
+P1A97	Starter/Generator Control Module Hybrid Battery Voltage Sensor Circuit Low Voltage
+P1A98	Starter/Generator Control Module Hybrid Battery Voltage Sensor Circuit High Voltage
+P1A99	Starter/Generator Control Module Hybrid Battery Current Sensor Circuit Low Current
+P1A9A	Starter/Generator Control Module Hybrid Battery Current Sensor Circuit Low Current
+P1AA9	Starter/Generator Phase U Current Sensor Performance
+P1AAA	Starter/Generator Phase W Current Sensor Performance
+P1AAB	Starter/Generator Phase U Circuit
+P1AAC	Starter/Generator Phase V Circuit
+P1AAD	Starter/Generator Phase W Circuit
+P1AAE	Starter/Generator Phase U-V-W Correlation
+P1AB2	Hybrid System Voltage
+P1ABC	14 Volt Power Module Hybrid/EV Battery System Voltage Low Voltage
+P1ABD	14 Volt Power Module Hybrid/EV Battery System Voltage High Voltage
+P1ABE	Battery Energy Control Module Hybrid Battery Pack Overtemperature
+P1AC0	Starter/Generator Control Module Output Circuit
+P1AC1	Starter/Generator Control Module Cooling Fan Relay Control Circuit Low Voltage
+P1AC2	Starter/Generator Control Module Cooling Fan Relay Control Circuit High Voltage
+P1AC6	Drive Motor 1 Control Module Crankshaft Position Sensor Circuit
+P1AC7	Drive Motor 1 Control Module Crankshaft Position Sensor Performance
+P1AC8	HCM 5-Volt Reference Circuit
+P1AC9	HCM Service Calibration Fault
+P1ADC	Drive Motor 1 Control Module Long Term Memory Performance
+P1ADD	Drive Motor 2 Control Module Long Term Memory Performance
+P1ADE	Drive Motor 1 Control Module System Voltage Low
+P1ADF	Drive Motor 1 Control Module System Voltage High Voltage
+P1AE0	Drive Motor 2 Control Module System Voltage Low
+P1AE1	Drive Motor 2 Control Module System Voltage High Voltage
+P1AE2	Battery Energy Control Module High Voltage System Interlock Circuit
+P1AE3	Battery Energy Control Module High Voltage System Interlock Circuit Low Voltage
+P1AE4	Battery Energy Control Module High Voltage System Interlock Circuit High Voltage
+P1AE5	Battery Energy Control Module Hybrid Battery Power Off Control Circuit
+P1AE6	Battery Energy Control Module Hybrid Battery Voltage Isolation Sensor Circuit
+P1AE7	Battery Energy Control Module Hybrid Battery Voltage System Isolation Lost
+P1AE8	Drive Motor 1 Control Module Hybrid Battery Voltage Sense Circuit Low Voltage
+P1AE9	Drive Motor 1 Control Module Hybrid Battery Voltage Sense Circuit High Voltage
+P1AEA	Drive Motor 2 Control Module Hybrid Battery Voltage Sense Circuit Low Voltage
+P1AEB	Drive Motor 2 Control Module Hybrid Battery Voltage Sense Circuit High Voltage
+P1AEC	Drive Motor 1 Control Module Hybrid/EV Battery System Voltage
+P1AED	Drive Motor 2 Control Module Hybrid/EV Battery System Voltage
+P1AEE	Drive Motor 1 Control Module Hybrid/EV Battery System Voltage High
+P1AEF	Drive Motor 2 Control Module Hybrid/EV Battery System Voltage High
+P1AF0	Drive Motor 1 Control Module Hybrid Battery Voltage System Isolation Lost
+P1AF2	Drive Motor 2 Control Module Hybrid Battery Voltage System Isolation Lost
+P1AF4	Drive Motor 1 Control Module Hybrid Battery Voltage Isolation Sensor Circuit Low Voltage
+P1AF5	Drive Motor 1 Control Module Hybrid Battery Voltage Isolation Sensor Circuit High Voltage
+P1AF6	Drive Motor 2 Control Module Hybrid Battery Voltage Isolation Sensor Circuit Low Voltage
+P1AF7	Drive Motor 2 Control Module Hybrid Battery Voltage Isolation Sensor Circuit High Voltage
+P1AF8	Drive Motor 1 Control Module Shutdown Performance
+P1AFA	Drive Motor 1 Control Module Programmable Logic Device Not Programmed
+P1AFB	Drive Motor 1 Control Module Programmable Logic Device Security Code
+P1AFC	Drive Motor 1 Control Module Serial Peripheral Interface (SPI) Bus
+P1AFD	Drive Motor 1 Control Module Serial Communications Interface (SCI) Bus
+P1AFE	Drive Motor 2 Control Module Shutdown Performance
+P1B01	Drive Motor 2 Control Module Programmable Logic Device Security Code
+P1B02	Drive Motor 2 Control Module Serial Peripheral Interface (SPI) Bus
+P1B03	Drive Motor 1 Position Sensor Circuit Loss of Tracking
+P1B04	Drive Motor 2 Position Sensor Circuit Loss of Tracking
+P1B05	Drive Motor 1 Control Module High Voltage System Interlock Circuit
+P1B06	Drive Motor 2 Control Module High Voltage System Interlock Circuit
+P1B0B	Drive Motor 1 Control Module Hybrid/EV Battery Voltage Isolation Sensing Circuit 2 Low Voltage
+P1B0C	Drive Motor 1 Control Module Hybrid Battery Voltage Isolation Sensing Circuit 2 High Voltage
+P1B0D	Drive Motor 1 Control Module Drive Motor 1 Overspeed
+P1B0E	Drive Motor 2 Control Module Drive Motor 2 Overspeed
+P1B0F	Drive Motor 1 Position Learn Incorrect
+P1B10	Drive Motor 2 Position Learn Incorrect
+P1B12	Driver Intended Brake Torque Fault
+P1B15	Regenerative Braking Torque Request Signal Message Counter Incorrect
+P1B16	Hybrid/EV Battery 27 Circuit Performance
+P1B17	Hybrid/EV Battery 27 Circuit Low Voltage
+P1B18	Hybrid/EV Battery 27 Circuit High Voltage
+P1B19	Hybrid/EV Battery 28 Circuit Performance
+P1B1A	Hybrid/EV Battery 28 Circuit Low Voltage
+P1B1B	Hybrid/EV Battery 28 Circuit High Voltage
+P1B1C	Hybrid/EV Battery 29 Circuit Performance
+P1B1D	Hybrid/EV Battery 29 Circuit Low Voltage
+P1B1E	Hybrid/EV Battery 29 Circuit High Voltage
+P1B1F	Hybrid/EV Battery 30 Circuit Performance
+P1B20	Hybrid/EV Battery 30 Circuit Low Voltage
+P1B21	Hybrid/EV Battery 30 Circuit High Voltage
+P1B22	Hybrid/EV Battery 31 Circuit Performance
+P1B23	Hybrid/EV Battery 31 Circuit Low Voltage
+P1B24	Hybrid/EV Battery 31 Circuit High Voltage
+P1B25	Hybrid/EV Battery 32 Circuit Performance
+P1B26	Hybrid/EV Battery 32 Circuit Low Voltage
+P1B27	Hybrid/EV Battery 32 Circuit High Voltage
+P1B28	Hybrid/EV Battery 27 Circuit
+P1B29	Hybrid/EV Battery 28 Circuit
+P1B2B	Hybrid/EV Battery 30 Circuit
+P1B2C	Hybrid/EV Battery 31 Circuit
+P1B2D	Hybrid/EV Battery 32 Circuit
+P1B41	Drive Motor 1 Control Module Hybrid/EV Battery Voltage Isolation Sensing Performance
+P1B42	Drive Motor 2 Control Module Hybrid/EV Battery Voltage Isolation Sensing Performance
+P1B43	Drive Motor 2 Control Module Hybrid/EV Battery Voltage Isolation Sensor Circuit 2 Low Voltage
+P1B44	Drive Motor 2 Control Module Hybrid/EV Battery Voltage Isolation Sensor Circuit 2 High Voltage
+P1B45	Hybrid/EV Battery 33 Circuit Performance
+P1B46	Hybrid/EV Battery 33 Circuit Low Voltage
+P1B47	Hybrid/EV Battery 33 Circuit High Voltage
+P1B48	Hybrid/EV Battery 34 Circuit Performance
+P1B49	Hybrid/EV Battery 34 Circuit Low Voltage
+P1B4A	Hybrid/EV Battery 34 Circuit High Voltage
+P1B4B	Hybrid/EV Battery 35 Circuit Performance
+P1B4C	Hybrid/EV Battery 35 Circuit Low Voltage
+P1B4D	Hybrid/EV Battery 35 Circuit High Voltage
+P1B4E	Hybrid/EV Battery 36 Circuit Performance
+P1B4F	Hybrid/EV Battery 36 Circuit Low Voltage
+P1B50	Hybrid/EV Battery 36 Circuit High Voltage
+P1B51	Hybrid/EV Battery 37 Circuit Low Voltage
+P1B52	Hybrid/EV Battery 37 Circuit High Voltage
+P1B53	Hybrid/EV Battery 37 Circuit High Voltage
+P1B54	Hybrid/EV Battery 38 Circuit Performance
+P1B55	Hybrid/EV Battery 38 Circuit Low Voltage
+P1B56	Hybrid/EV Battery 38 Circuit High Voltage
+P1B57	Hybrid/EV Battery 39 Circuit Performance
+P1B58	Hybrid/EV Battery 39 Circuit Low Voltage
+P1B59	Hybrid/EV Battery 39 Circuit High Voltage
+P1B5A	Hybrid/EV Battery 40 Circuit Performance
+P1B5B	Hybrid/EV Battery 40 Circuit Low Voltage
+P1B5C	Hybrid/EV Battery 40 Circuit High Voltage
+P1B5D	Hybrid/EV Battery 41 Circuit Performance
+P1B5E	Hybrid/EV Battery 41 Circuit Low Voltage
+P1B5F	Hybrid/EV Battery 41 Circuit High Voltage
+P1B60	Hybrid/EV Battery 42 Circuit Performance
+P1B61	Hybrid/EV Battery 42 Circuit Low Voltage
+P1B62	Hybrid/EV Battery 42 Circuit High Voltage
+P1B63	Hybrid/EV Battery 43 Circuit Performance
+P1B64	Hybrid/EV Battery 43 Circuit Low Voltage
+P1B65	Hybrid/EV Battery 43 Circuit High Voltage
+P1B66	Hybrid/EV Battery 44 Circuit Performance
+P1B67	Hybrid/EV Battery 44 Circuit Low Voltage
+P1B68	Hybrid/EV Battery 44 Circuit High Voltage
+P1B69	Hybrid/EV Battery 45 Circuit Performance
+P1B6A	Hybrid/EV Battery 45 Circuit Low Voltage
+P1B6B	Hybrid/EV Battery 45 Circuit High Voltage
+P1B6C	Hybrid/EV Battery 46 Circuit Performance
+P1B6D	Hybrid/EV Battery 46 Circuit Low Voltage
+P1B6E	Hybrid/EV Battery 46 Circuit High Voltage
+P1B6F	Hybrid/EV Battery 47 Circuit Performance
+P1B70	Hybrid/EV Battery 47 Circuit Low Voltage
+P1B71	Hybrid/EV Battery 47 Circuit High Voltage
+P1B72	Hybrid/EV Battery 48 Circuit Performance
+P1B73	Hybrid/EV Battery 48 Circuit Low Voltage
+P1B74	Hybrid/EV Battery 48 Circuit High Voltage
+P1B75	Hybrid/EV Battery 49 Circuit Performance
+P1B76	Hybrid/EV Battery 49 Circuit Low Voltage
+P1B77	Hybrid/EV Battery 49 Circuit High Voltage
+P1B78	Hybrid/EV Battery 50 Circuit Performance
+P1B79	Hybrid/EV Battery 50 Circuit Low Voltage
+P1B7A	Hybrid/EV Battery 50 Circuit High Voltage
+P1B7B	Hybrid/EV Battery 51 Circuit Performance
+P1B7C	Hybrid/EV Battery 51 Circuit Low Voltage
+P1B7D	Hybrid/EV Battery 51 Circuit High Voltage
+P1B7E	Hybrid/EV Battery 52 Circuit Performance
+P1B7F	Hybrid/EV Battery 52 Circuit Low Voltage
+P1B80	Hybrid/EV Battery 52 Circuit High Voltage
+P1B81	Hybrid/EV Battery 53 Circuit Performance
+P1B82	Hybrid/EV Battery 53 Circuit Low Voltage
+P1B83	Hybrid/EV Battery 53 Circuit High Voltage
+P1B84	Hybrid/EV Battery 54 Circuit Performance
+P1B85	Hybrid/EV Battery 54 Circuit Low Voltage
+P1B86	Hybrid/EV Battery 54 Circuit High Voltage
+P1B87	Hybrid/EV Battery 55 Circuit Performance
+P1B88	Hybrid/EV Battery 55 Circuit Low Voltage
+P1B89	Hybrid/EV Battery 55 Circuit High Voltage
+P1B8A	Hybrid/EV Battery 56 Circuit Performance
+P1B8B	Hybrid/EV Battery 56 Circuit Low Voltage
+P1B8C	Hybrid/EV Battery 56 Circuit High Voltage
+P1B8D	Hybrid/EV Battery 57 Circuit Performance
+P1B8E	Hybrid/EV Battery 57 Circuit Low Voltage
+P1B8F	Hybrid/EV Battery 57 Circuit High Voltage
+P1B90	Hybrid/EV Battery 58 Circuit Performance
+P1B91	Hybrid/EV Battery 58 Circuit Low Voltage
+P1B92	Hybrid/EV Battery 58 Circuit High Voltage
+P1B93	Hybrid/EV Battery 59 Circuit Performance
+P1B94	Hybrid/EV Battery 59 Circuit Low Voltage
+P1B95	Hybrid/EV Battery 59 Circuit High Voltage
+P1B96	Hybrid/EV Battery 60 Circuit Performance
+P1B97	Hybrid/EV Battery 60 Circuit Low Voltage
+P1B98	Hybrid/EV Battery 60 Circuit High Voltage
+P1B99	Hybrid/EV Battery 61 Circuit Performance
+P1B9A	Hybrid/EV Battery 61 Circuit Low Voltage
+P1B9B	Hybrid/EV Battery 61 Circuit High Voltage
+P1B9C	Hybrid/EV Battery 62 Circuit Performance
+P1B9D	Hybrid/EV Battery 62 Circuit Low Voltage
+P1B9E	Hybrid/EV Battery 62 Circuit High Voltage
+P1B9F	Hybrid/EV Battery 63 Circuit Performance
+P1BA0	Hybrid/EV Battery 63 Circuit Low Voltage
+P1BA1	Hybrid/EV Battery 63 Circuit High Voltage
+P1BA2	Hybrid/EV Battery 64 Circuit Performance
+P1BA3	Hybrid/EV Battery 64 Circuit Low Voltage
+P1BA4	Hybrid/EV Battery 64 Circuit High Voltage
+P1BA5	Hybrid/EV Battery 65 Circuit Performance
+P1BA6	Hybrid/EV Battery 65 Circuit Low Voltage
+P1BA7	Hybrid/EV Battery 65 Circuit High Voltage
+P1BA8	Hybrid/EV Battery 66 Circuit Performance
+P1BA9	Hybrid/EV Battery 66 Circuit Low Voltage
+P1BAA	Hybrid/EV Battery 66 Circuit High Voltage
+P1BAB	Hybrid/EV Battery 67 Circuit Performance
+P1BAC	Hybrid/EV Battery 67 Circuit Low Voltage
+P1BAD	Hybrid/EV Battery 67 Circuit High Voltage
+P1BAE	Hybrid/EV Battery 68 Circuit Performance
+P1BAF	Hybrid/EV Battery 68 Circuit Low Voltage
+P1BB0	Hybrid/EV Battery 68 Circuit High Voltage
+P1BB1	Hybrid/EV Battery 69 Circuit Performance
+P1BB2	Hybrid/EV Battery 69 Circuit Low Voltage
+P1BB3	Hybrid/EV Battery 69 Circuit High Voltage
+P1BB4	Hybrid/EV Battery 70 Circuit Performance
+P1BB5	Hybrid/EV Battery 70 Circuit Low Voltage
+P1BB6	Hybrid/EV Battery 70 Circuit High Voltage
+P1BB7	Hybrid/EV Battery 71 Circuit Performance
+P1BB8	Hybrid/EV Battery 71 Circuit Low Voltage
+P1BB9	Hybrid/EV Battery 71 Circuit High Voltage
+P1BBA	Hybrid/EV Battery 72 Circuit Performance
+P1BBB	Hybrid/EV Battery 72 Circuit Low Voltage
+P1BBC	Hybrid/EV Battery 72 Circuit High Voltage
+P1BBD	Hybrid/EV Battery 73 Circuit Performance
+P1BBE	Hybrid/EV Battery 73 Circuit Low Voltage
+P1BBF	Hybrid/EV Battery 73 Circuit High Voltage
+P1BC0	Hybrid/EV Battery 74 Circuit Performance
+P1BC1	Hybrid/EV Battery 74 Circuit Low Voltage
+P1BC2	Hybrid/EV Battery 74 Circuit High Voltage
+P1BC3	Hybrid/EV Battery 75 Circuit Performance
+P1BC4	Hybrid/EV Battery 75 Circuit Low Voltage
+P1BC5	Hybrid/EV Battery 75 Circuit High Voltage
+P1BC6	Hybrid/EV Battery 76 Circuit Performance
+P1BC7	Hybrid/EV Battery 76 Circuit Low Voltage
+P1BC8	Hybrid/EV Battery 76 Circuit High Voltage
+P1BC9	Hybrid/EV Battery 77 Circuit Performance
+P1BCA	Hybrid/EV Battery 77 Circuit Low Voltage
+P1BCB	Hybrid/EV Battery 77 Circuit High Voltage
+P1BCC	Hybrid/EV Battery 78 Circuit Performance
+P1BCD	Hybrid/EV Battery 78 Circuit Low Voltage
+P1BCE	Hybrid/EV Battery 78 Circuit High Voltage
+P1BCF	Hybrid/EV Battery 79 Circuit Performance
+P1BD0	Hybrid/EV Battery 79 Circuit Low Voltage
+P1BD1	Hybrid/EV Battery 79 Circuit High Voltage
+P1BD2	Hybrid/EV Battery 80 Circuit Performance
+P1BD3	Hybrid/EV Battery 80 Circuit Low Voltage
+P1BD4	Hybrid/EV Battery 80 Circuit High Voltage
+P1BD5	Hybrid/EV Battery 81 Circuit Performance
+P1BD6	Hybrid/EV Battery 81 Circuit Low Voltage
+P1BD7	Hybrid/EV Battery 81 Circuit High Voltage
+P1BD8	Hybrid/EV Battery 82 Circuit Performance
+P1BD9	Hybrid/EV Battery 82 Circuit Low Voltage
+P1BDA	Hybrid/EV Battery 82 Circuit High Voltage
+P1BDB	Hybrid/EV Battery 83 Circuit Performance
+P1BDC	Hybrid/EV Battery 83 Circuit Low Voltage
+P1BDD	Hybrid/EV Battery 83 Circuit High Voltage
+P1BDE	Hybrid/EV Battery 84 Circuit Performance
+P1BDF	Hybrid/EV Battery 84 Circuit Low Voltage
+P1BE0	Hybrid/EV Battery 84 Circuit High Voltage
+P1BE1	Hybrid/EV Battery 85 Circuit Performance
+P1BE2	Hybrid/EV Battery 85 Circuit Low Voltage
+P1BE3	Hybrid/EV Battery 85 Circuit High Voltage
+P1BE4	Hybrid/EV Battery 86 Circuit Performance
+P1BE5	Hybrid/EV Battery 86 Circuit Low Voltage
+P1BE6	Hybrid/EV Battery 86 Circuit High Voltage
+P1BE7	Hybrid/EV Battery 87 Circuit Performance
+P1BE8	Hybrid/EV Battery 87 Circuit Low Voltage
+P1BE9	Hybrid/EV Battery 87 Circuit High Voltage
+P1BEA	Hybrid/EV Battery 88 Circuit Performance
+P1BEB	Hybrid/EV Battery 88 Circuit Low Voltage
+P1BEC	Hybrid/EV Battery 88 Circuit High Voltage
+P1BED	Hybrid/EV Battery 89 Circuit Performance
+P1BEE	Hybrid/EV Battery 89 Circuit Low Voltage
+P1BEF	Hybrid/EV Battery 89 Circuit High Voltage
+P1BF0	Hybrid/EV Battery 90 Circuit Performance
+P1BF1	Hybrid/EV Battery 90 Circuit Low Voltage
+P1BF2	Hybrid/EV Battery 90 Circuit High Voltage
+P1BF3	Hybrid/EV Battery 91 Circuit Performance
+P1BF4	Hybrid/EV Battery 91 Circuit Low Voltage
+P1BF5	Hybrid/EV Battery 91 Circuit High Voltage
+P1BF6	Hybrid/EV Battery 92 Circuit Performance
+P1BF7	Hybrid/EV Battery 92 Circuit Low Voltage
+P1BF8	Hybrid/EV Battery 92 Circuit High Voltage
+P1BF9	Hybrid/EV Battery 93 Circuit Performance
+P1BFA	Hybrid/EV Battery 93 Circuit Low Voltage
+P1BFB	Hybrid/EV Battery 93 Circuit High Voltage
+P1BFC	Hybrid/EV Battery 94 Circuit Performance
+P1BFD	Hybrid/EV Battery 94 Circuit Low Voltage
+P1BFE	Hybrid/EV Battery 94 Circuit High Voltage
+P1BFF	Auxiliary Transmission Fluid Pump Motor Control Module Not Programmed
+P1E00	Hybrid Powertrain Control Module 2 Requested MIL Illumination
+P1E01	Hybrid/EV Battery 95 Circuit Performance
+P1E02	Hybrid/EV Battery 95 Circuit Low Voltage
+P1E03	Hybrid/EV Battery 95 Circuit High Voltage
+P1E04	Hybrid/EV Battery 96 Circuit Performance
+P1E05	Hybrid/EV Battery 96 Circuit Low Voltage
+P1E06	Hybrid/EV Battery 96 Circuit High Voltage
+P1E08	Hybrid Battery Contactor Status Circuit Low Voltage
+P1E09	Hybrid Battery Contactor Status Circuit High Voltage
+P1E0A	Drive Motor 1 Control Module Module Torque Calculation Performance
+P1E0B	Drive Motor 2 Control Module Module Torque Calculation Performance
+P1E0E	14 V Power Module Not Programmed
+P1E15	Drive Motor 1 Control Module 5 Volt Reference 1 Circuit
+P1E16	Drive Motor 1 Control Module 5 Volt Reference 2 Circuit
+P1E17	Drive Motor 2 Control Module 5 Volt Reference 1 Circuit
+P1E18	Auxiliary Transmission Fluid Pump Control Module 5 Volt Reference Circuit
+P1E19	Auxiliary Transmission Fluid Pump Control Module System Voltage Low
+P1E1A	Auxiliary Transmission Fluid Pump Control Module System Voltage High
+P1E1B	Auxiliary Transmission Fluid Pump Control Module Hybrid Battery Voltage Isolation Sensing Performance
+P1E1C	Auxiliary Transmission Fluid Pump Control Module Hybrid Battery Voltage Isolation Sensor Circuit 1 Low Voltage
+P1E1D	Auxiliary Transmission Fluid Pump Control Module Hybrid Battery Voltage Isolation Sensor Circuit 1 High Voltage
+P1E1E	Auxiliary Transmission Fluid Pump Control Module Hybrid Battery Voltage Isolation Sensor Circuit 2 Low Voltage
+P1E1F	Auxiliary Transmission Fluid Pump Control Module Hybrid Battery Voltage Isolation Sensor Circuit 2 High Voltage
+P1E20	Auxiliary Transmission Fluid Pump Control Module Hybrid/EV Battery Voltage Sense Circuit Low Voltage
+P1E21	Auxiliary Transmission Fluid Pump Control Module Hybrid/EV Battery Voltage Sense Circuit High Voltage
+P1E22	Auxiliary Transmission Fluid Pump Control Module Hybrid Battery Voltage System Isolation Lost
+P1E23	Auxiliary Transmission Fluid Pump Control Module Random Access Memory
+P1E24	Auxiliary Transmission Fluid Pump Control Module Long Term Memory Performance
+P1E25	Auxiliary Transmission Fluid Pump Control Module Read Only Memory
+P1E27	Auxiliary Transmission Fluid Pump Control Module Hybrid/EV Battery System Voltage High Voltage
+P1E28	Auxiliary Transmission Fluid Pump Control Module Hybrid/EV Battery System Voltage
+P1E29	Auxiliary Transmission Fluid Pump Control Module Calculated Motor Position Performance
+P1E2A	Auxiliary Transmission Fluid Pump Phase U Current Sensor Circuit Low Voltage
+P1E2B	Auxiliary Transmission Fluid Pump Phase U Current Sensor Circuit High Voltage
+P1E2C	Auxiliary Transmission Fluid Pump Phase U Current Sensor Performance
+P1E2D	Auxiliary Transmission Fluid Pump Phase V Current Sensor Circuit Low Voltage
+P1E2E	Auxiliary Transmission Fluid Pump Phase V Current Sensor Circuit High Voltage
+P1E2F	Auxiliary Transmission Fluid Pump Phase V Current Sensor Performance
+P1E30	Auxiliary Transmission Fluid Pump Phase W Current Sensor Circuit Low Voltage
+P1E31	Auxiliary Transmission Fluid Pump Phase W Current Sensor Circuit High Voltage
+P1E32	Transmission Fluid Pump Phase W Current Sensor Performance
+P1E33	Auxiliary Transmission Fluid Pump Phase U-V-W Current Sensors Not Plausible
+P1E34	Auxiliary Transmission Fluid Pump Inverter Temperature Sensor Circuit High Voltage
+P1E35	Auxiliary Transmission Fluid Pump Inverter Temperature Sensor Circuit Low Voltage
+P1E36	Auxiliary Transmission Fluid Pump Inverter Temperature Sensor Performance
+P1E37	Auxiliary Transmission Fluid Pump Inverter High Temperature
+P1E38	Auxiliary Transmission Fluid Pump Inverter Supply Voltage Circuit
+P1E39	Auxiliary Transmission Fluid Pump Inverter Performance
+P1E3A	Auxiliary Transmission Fluid Pump Motor Torque Delivered Performance
+P1E3D	Control Module Calculated Hybrid/EV Battery Performance
+P1E3E	14V Power Module Random Access Memory
+P1E3F	14V Power Module Read Only Memory
+P1E40	14 Volt Power Module Hybrid/EV Battery System Voltage Performance
+P1E41	14 Volt Power Module Hybrid/EV Battery System Overvoltage Sensing Circuit
+P1E42	14 Volt Power Module Hybrid/EV Battery System High Voltage
+P1E43	14 Volt Power Module System Overvoltage Sensing Circuit
+P1E44	14 Volt Power Module System High Voltage
+P1E45	14 Volt Power Module Temperature Sensors 1-2 Not Plausible
+P1E46	14 Volt Power Module Temperature Sensor 1 High Temperature Sensing Circuit
+P1E47	14 Volt Power Module Temperature Sensor 1 Circuit High Temperature
+P1E48	14 Volt Power Module Temperature Sensor 2 High Temperature Sensing Circuit
+P1E49	14 Volt Power Module Temperature Sensor 2 Circuit High Temperature
+P1E4A	Control Module Redundant Drive Motor 1 Speed Sensing Circuit
+P1E4B	Control Module Redundant Drive Motor 2 Speed Sensing Circuit
+P1E4C	Hybrid/EV Battery 33 Circuit
+P1E4D	Hybrid/EV Battery 34 Circuit
+P1E4E	Hybrid/EV Battery 35 Circuit
+P1E4F	Hybrid/EV Battery 36 Circuit
+P1E50	Hybrid/EV Battery 37 Circuit
+P1E51	Hybrid/EV Battery 38 Circuit
+P1E52	Hybrid/EV Battery 39 Circuit
+P1E53	Hybrid/EV Battery 40 Circuit
+P1E54	Hybrid/EV Battery 41 Circuit
+P1E55	Hybrid/EV Battery 42 Circuit
+P1E56	Hybrid/EV Battery 43 Circuit
+P1E57	Hybrid/EV Battery 44 Circuit
+P1E58	Hybrid/EV Battery 45 Circuit
+P1E59	Hybrid/EV Battery 46 Circuit
+P1E5A	Hybrid/EV Battery 47 Circuit
+P1E5B	Hybrid/EV Battery 48 Circuit
+P1E5C	Hybrid/EV Battery 49 Circuit
+P1E5D	Hybrid/EV Battery 50 Circuit
+P1E5E	Hybrid/EV Battery 51 Circuit
+P1E5F	Hybrid/EV Battery 52 Circuit
+P1E60	Hybrid/EV Battery 53 Circuit
+P1E61	Hybrid/EV Battery 54 Circuit
+P1E62	Hybrid/EV Battery 55 Circuit
+P1E63	Hybrid/EV Battery 56 Circuit
+P1E64	Hybrid/EV Battery 57 Circuit
+P1E65	Hybrid/EV Battery 58 Circuit
+P1E66	Hybrid/EV Battery 59 Circuit
+P1E67	Hybrid/EV Battery 60 Circuit
+P1E68	Hybrid/EV Battery 61 Circuit
+P1E69	Hybrid/EV Battery 62 Circuit
+P1E6A	Hybrid/EV Battery 63 Circuit
+P1E6B	Hybrid/EV Battery 64 Circuit
+P1E6C	Hybrid/EV Battery 65 Circuit
+P1E6D	Hybrid/EV Battery 66 Circuit
+P1E6E	Hybrid/EV Battery 67 Circuit
+P1E6F	Hybrid/EV Battery 68 Circuit
+P1E70	Hybrid/EV Battery 69 Circuit
+P1E71	Hybrid/EV Battery 70 Circuit
+P1E72	Hybrid/EV Battery 71 Circuit
+P1E73	Hybrid/EV Battery 72 Circuit
+P1E74	Hybrid/EV Battery 73 Circuit
+P1E75	Hybrid/EV Battery 74 Circuit
+P1E76	Hybrid/EV Battery 75 Circuit
+P1E77	Hybrid/EV Battery 76 Circuit
+P1E78	Hybrid/EV Battery 77 Circuit
+P1E79	Hybrid/EV Battery 78 Circuit
+P1E7A	Hybrid/EV Battery 79 Circuit
+P1E7B	Hybrid/EV Battery 80 Circuit
+P1E7C	Hybrid/EV Battery 81 Circuit
+P1E7D	Hybrid/EV Battery 82 Circuit
+P1E7E	Hybrid/EV Battery 83 Circuit
+P1E7F	Hybrid/EV Battery 84 Circuit
+P1E80	Hybrid/EV Battery 85 Circuit
+P1E81	Hybrid/EV Battery 86 Circuit
+P1E82	Hybrid/EV Battery 87 Circuit
+P1E83	Hybrid/EV Battery 88 Circuit
+P1E84	Hybrid/EV Battery 89 Circuit
+P1E85	Hybrid/EV Battery 90 Circuit
+P1E86	Hybrid/EV Battery 91 Circuit
+P1E87	Hybrid/EV Battery 92 Circuit
+P1E88	Hybrid/EV Battery 93 Circuit
+P1E89	Hybrid/EV Battery 94 Circuit
+P1E8A	Hybrid/EV Battery 95 Circuit
+P1E92	Hybrid/EV Battery Interface Control Module 1 Cell Balancing Circuit
+P1E93	Hybrid/EV Battery Interface Control Module 1 5 V Reference Circuit
+P1E98	Hybrid/EV Battery Interface Control Module 2 Cell Balancing Circuit
+P1E99	Hybrid/EV Battery Interface Control Module 2 5 V Reference Circuit
+P1E9E	Hybrid/EV Battery Interface Control Module 3 Cell Balancing Circuit
+P1E9F	Hybrid/EV Battery Interface Control Module 3 5 V Reference Circuit
+P1EA4	Hybrid/EV Battery Interface Control Module 4 Cell Balancing Circuit
+P1EA5	Hybrid/EV Battery Interface Control Module 4 5 V Reference Circuit
+P1EA6	14 Volt Power Module Cooling Fan Control Circuit
+P1EA7	14 Volt Power Module Cooling Fan Enable Circuit
+P1EA8	14 Volt Power Module Hybrid/EV Battery System Voltage Low Voltage
+P1EA9	14 V Power Module System Low Voltage
+P1EAB	Battery Energy Control Module Hybrid/EV Battery Cell High Voltage
+P1EAC	Hybrid/EV Battery Cell Overvoltage Signal Circuit Performance
+P1EB6	Drive Motor 1 Control Module Long Term Memory Reset
+P1EB7	Drive Motor 2 Control Module Long Term Memory Reset
+P1EB8	Auxiliary Transmission Fluid Pump Control Module Long Term Memory Reset
+P1EBA	Hybrid/EV Battery Low Resolution Current Sensor Exceeded Learning Limit
+P1EBB	Hybrid/EV Battery High Resolution Current Sensor Exceeded Learning Limit
+P1EBC	Hybrid/EV Battery Multifunction Contactor Control Circuit
+P1EBD	Battery Charging System Contactors Stuck Open
+P1EBE	Hybrid/EV Battery Multifunction Contactor Stuck Open
+P1EBF	Hybrid/EV Battery Multifunction Contactor Stuck Closed
+P1EC0	Hybrid/EV Battery System Contactors Stuck Open
+P1EC3	Hybrid/EV Battery Pack Heater Transistor Control Circuit
+P1EC4	Hybrid/EV Battery Pack Heater Transistor Stuck Off
+P1EC5	Hybrid/EV Battery Pack Heater Transistor Stuck On
+P1EC6	Hybrid/EV Battery Pack Heater Performance
+P1EC7	Hybrid/EV Battery Pack Coolant Control Valve Control Circuit 2 Low Voltage
+P1EC8	Hybrid/EV Battery Pack Coolant Control Valve Control Circuit 2 High Voltage
+P1EC9	A/C Compressor Motor Instantaneous High Current
+P1ECA	A/C Compressor Motor Instantaneous High Voltage
+P1ECB	Battery Charger High Voltage Converter 1 Temperature Sensor Circuit Low Voltage
+P1ECC	Battery Charger High Voltage Converter 1 Temperature Sensor Circuit High Voltage
+P1ECD	Battery Charger High Voltage Converter 1 Temperature Sensor Circuit Performance
+P1ECE	Battery Charger Total Output Power Performance
+P1ED0	Battery Charger High Voltage Converter 2 Temperature Sensor Circuit Low Voltage
+P1ED1	Battery Charger High Voltage Converter 2 Temperature Sensor Circuit High Voltage
+P1ED2	Battery Charger High Voltage Converter 2 Temperature Sensor Circuit Performance
+P1ED6	Battery Charger Cold Plate Temperature Sensor Circuit Low Voltage
+P1ED7	Battery Charger Cold Plate Temperature Sensor Circuit High Voltage
+P1ED8	Battery Charger Cold Plate Temperature Sensor Performance
+P1ED9	Battery Charger Converter Input Voltage Sensor 1 Circuit Low Voltage
+P1EDA	Battery Charger Converter Input Voltage Sensor 1 Circuit High Voltage
+P1EDB	Battery Charger Converter Input Voltage Sensor 1 Performance
+P1EDC	Battery Charger Converter Input Voltage Sensor 2 Circuit Low Voltage
+P1EDD	Battery Charger Converter Input Voltage Sensor 2 Circuit High Voltage
+P1EDE	Battery Charger Converter Input Voltage Sensor 2 Performance
+P1EDF	Battery Charger Input Voltage Conditioner Temperature Sensor Circuit Low Voltage
+P1EE0	Battery Charger Input Voltage Conditioner Temperature Sensor Circuit High Voltage
+P1EE1	Battery Charger Input Voltage Conditioner Temperature Sensor Performance
+P1EE2	Battery Charger High Voltage Converter 1 Input Current Sensor Circuit Low Voltage
+P1EE3	Battery Charger High Voltage Converter 1 Input Current Sensor Circuit High Voltage
+P1EE4	Battery Charger High Voltage Converter 2 Input Current Sensor Circuit Low Voltage
+P1EE5	Battery Charger High Voltage Converter 2 Input Current Sensor Circuit High Voltage
+P1EE6	Battery Charger AC Not Present
+P1EE7	Battery Charger Control Module Reference Voltage 1 Circuit Low Voltage
+P1EE8	Battery Charger Control Module Reference Voltage 1 Circuit High Voltage
+P1EE9	Battery Charger Control Module Reference Voltage 2 Circuit Low Voltage
+P1EEA	Battery Charger Control Module Reference Voltage 2 Circuit High Voltage
+P1EEB	Battery Charger Control Module Reference Voltage 3 Circuit Low Voltage
+P1EEC	Battery Charger Control Module Reference Voltage 3 Circuit High Voltage
+P1EED	Battery Charger 14V Output Voltage Sensing Circuit
+P1EEF	Battery Charger 14 V Converter Output Power Regulation Performance
+P1EF0	Battery Charger High Voltage Converter 1 Output Power Regulation Performance
+P1EF1	Battery Charger High Voltage Converter 2 Output Power Regulation Performance
+P1EF3	Battery Charger High Voltage Converter 1 Temperature Too High
+P1EF4	Battery Charger High Voltage Converter 2 Temperature Too High
+P1EF5	Battery Charger Input Voltage Conditioner Temperature Too High
+P1EF6	Battery Charger Control Module Ignition On/Start Switch Circuit Low Voltage
+P1EF7	Battery Charger Control Module Ignition On/Start Switch Circuit High Voltage
+P1EFA	Battery Charger High Voltage Converter 1 Input Current Too High
+P1EFB	Battery Charger High Voltage Converter 2 Input Current Too High
+P1EFC	Battery Charger Control Module System Voltage Low Voltage
+P1EFD	Battery Charger Power Efficiency
+P1EFE	Battery Charger Reverse Polarity Protection Circuit Performance
+P1EFF	Battery Charger Input Power Up Protection Circuit Performance
+P1F01	Battery Charger Control Module Supply Voltage Sensor Circuit Low Voltage
+P1F02	Battery Charger Control Module Supply Voltage Sensor Circuit High Voltage
+P1F03	Battery Charger Control Module Supply Voltage Performance
+P1F04	Battery Charger Input Voltage Conditioner Enable Circuit Performance
+P1F05	Battery Charger Converter Input Voltage Performance
+P1F0A	A/C Compressor Motor Speed Performance
+P1F0B	A/C Compressor Motor Start-Up Current Performance
+P1F0C	Electric A/C Compressor Control Module A/C Compressor Motor Current Feedback Circuit Low Voltage
+P1F0E	Battery Charging Voltage System Isolation Lost
+P1F14	Battery Charger Input Current Sensor Exceeded Learning Limit
+P1F15	Battery Charger 14V Output Current Sensor Exceeded Learning Limit
+P1F16	Battery Charger Hybrid/EV Battery Output Current Sensor Exceeded Learning Limit
+P1F17	System Isolation / Impact Sensor Fault - Hybrid/EV Battery System Contactors Open
+P1F18	Hybrid/EV Battery Pack Coolant Pump Enable Circuit
+P3400	Cylinder Deactivation System Performance
+P3401	Cylinder 1 Deactivation Solenoid Control Circuit
+P3425	Cylinder 4 Deactivation Solenoid Control Circuit
+P3441	Cylinder 6 Deactivation Solenoid Control Circuit
+P3449	Cylinder 7 Deactivation Solenoid Control Circuit
+U1000	Class 2 Communication Malfunction
+U1001	Lost Communication with XXX
+U1016	Loss of Communications with PCM
+U1017	Lost Communication With Engine Control Module
+U1024	Lost Communication With Transmission Control Module
+U1026	No Communication With Transfer Case Shift Control Module
+U1040	Loss of EBCM/EBTCM Communication
+U1041	No Communication With Electronic Brake Control Module
+U1048	No Communication With Rear Wheel Steering Control Module
+U1064	Lost Communications with BCM
+U1088	No Communication With SDM (Restraint Module)
+U1092	Loss of VTD (Pass Lock) Communication
+U1096	No Communication With Instrument Panel Cluster
+U1097	No Communication With Driver Information Center
+U1098	Loss of HUD Communications
+U1099	Loss of HUD Communications
+U1111	Lost Communication With Chime Module
+U1128	Lost Communications With Radio
+U1129	Loss of AMP Communications
+U1133	Lost Communication With DVD Player
+U1136	Lost Communications With Digital Audio Broadcast
+U1137	Lost Communication With Digital Radio Receiver
+U1144	Loss of PHN Communications
+U1147	Lost Communication With Onstar
+U1151	No Communication With Vehicle Interface Unit
+U1152	No Communication With HVAC Control Module
+U1153	Lost Communication With Climate Control Panel
+U1160	Loss of DDM Communications
+U1161	Loss of PDM Serial Data
+U1162	Lost Communications With Convenience Control System
+U1166	Lost Communications With Memory Seat Module
+U1167	Lost Communications With Rear Seat Audio/Rear HVAC
+U1173	Lost Communications With Moveable Roof Module
+U1176	Lost Communications With Remote Function Actuation (RCDLR)
+U1177	Lost Communications With Folding Top Controller (RDM)
+U1192	Loss of Communications with VTD
+U1193	Loss of Vehicle Immobilizer Module Communications
+U1241	Lost Communication With Scan Tool
+U1254	Lost Communication with XXX
+U1255	Class 2 Communications Malfunction
+U1300	Class 2 Data Link Low
+U1301	Class 2 Data Link High
+U1305	Class 2 Data Link High or Low
+U1500	Communication (Front to Rear) State of Health
+U1800	CAN Message Not Received FICM
+U180F	Control Module Communication Bus B Off
+U1814	Powertrain High Speed Communication Enable Circuit
+U1842	Lost Communication With ECM/PCM
+U1843	Lost Communication With ECM/PCM
+U186A	Lost Communication With Transfer Case Control Module
+U186B	Lost Communication With TCM
+U1881	Electro-Hydraulic Power Steering (EHPS) Module Lost Communication With Energy Storage Control Module (ESCM)
+U1882	Energy Storage Control Module (ESCM) Lost Communication With Electro-Hydraulic Power Steering (EHPS) Module
+U1883	Hybrid Control Module (HCM) Lost Communication With Driver Door Module (DDM)
+U1884	Hybrid Control Module (HCM) Lost Communication With Passenger Door Module (PDM)
+U1885	Energy Storage Control Module (ESCM) Lost Communication With Hybrid Control Module (HCM)
+U1886	Energy Storage Control Module (ESCM) Lost Communication With Powertrain Control Module (PCM)
+U1887	Energy Storage Control Module (ESCM) Lost Communication With Starter/Generator Control Module (SGCM)
+U1888	Hybrid Control Module (HCM) Lost Communication With Energy Storage Control Module (ESCM)
+U1889	Hybrid Control Module (HCM) Lost Communication With Body Control Module (BCM)
+U1890	Hybrid Control Module (HCM) Lost Communication With HVAC Control Module
+U1891	Hybrid Control Module (HCM) Lost Communication With Instrument Panel Cluster (IPC)
+U1892	Hybrid Control Module (HCM) Lost Communication With Electro-Hydraulic Power Steering (EHPS) Module
+U1893	Hybrid Control Module (HCM) Lost Communication With Powertrain Control Module (PCM)
+U1894	Hybrid Control Module (HCM) Lost Communication With Starter/Generator Control Module (SGCM)
+U1895	Electro-Hydraulic Power Steering (EHPS) Module Lost Communication With Powertrain Control Module (PCM)
+U1896	Electro-Hydraulic Power Steering (EHPS) Module Lost Communication With Starter/Generator Control Module (SGCM)
+U1897	Starter/Generator Control Module (SGCM) Lost Communication With Energy Storage Control Module (ESCM)
+U1898	Starter/Generator Control Module (SGCM) Lost Communication With Hybrid Control Module (HCM)
+U1899	Starter/Generator Control Module (SGCM) Lost Communication With Powertrain Control Module (PCM)
+U18B9	Primary High Speed CAN Bus Subnet Configuration List
+U18BF	Secondary High Speed CAN Bus Subnet Configuration List
+U2000	Invalid BFC Transmitted SPI Data
+U2001	Invalid IPC Transmitted SPI Data
+U2007	Audio Navigation Unit is Not Responding
+U2099	High Speed Communication Enable Circuit
+U2100	Controller Area Network (CAN) Bus Communication
+U2101	CAN Bus Maximum Configuration List
+U2103	Fewer Controllers On Than Programmed
+U2104	CAN Message Not Received FICM and TCM
+U2105	TCM Detects Error on CAN Link
+U2106	CAN Message Not Received from TCM
+U2107	Lost Communications With Body Control System
+U2108	Lost Communication With Electronic Brake Control Module (EBCM)
+U2109	Lost Communications With Powertrain Multiple Control System
+U2111	Lost Communications With Steering Control System
+U2113	Lost Communications With Sensing Diagnostic Module (SDM)
+U2116	Lost Communications With Instrument Panel Cluster (IPC)
+U2122	Lost Communications With Radio
+U2125	Lost Communication With Mobile Communications Control Systems
+U2127	Lost Communications With Front HVAC
+U2137	Lost Communications With Vehicle Theft Deterrent (VTD)
+U2142	Loss Communication with UART System
+U2143	Lost Communications With Steering Angle Sensor (SAS)
+U2171	Lost Communications With DVD Player
+U2172	Lost Communications With Digital Radio Receiver
+U2199	Unassigned
