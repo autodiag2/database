@@ -1,12 +1,414 @@
+B1000	Control Panel Communication Error
+B1001	Interior Temperature Sensor System
+B1002	Heater air intake duct sensor system (open circuit)
+B1003	Mode Dial SW Error
+B1011	Ambient air temperature sensor system (short circuit)
+B1012	Ambient air temperature sensor system (open circuit)
+B1018	Temperature Control Dial SW Error
+B1021	Air thermo sensor system (short circuit)
+B1022	Air thermo sensor system (open circuit)
+B1031	Air Thermo Sensor System
+B1032	Air Thermo Sensor System
+B1034	Ambient Air Temperature Sensor System
+B1035	Ambient Air Temperature Sensor System
+B1041	Air mixing damper control motor and potentiometer (potentiometer system shorted to its power supply)
+B1042	Air mixing damper control motor and potentiometer (potentiometer system shorted to its ground)
+B1045	Air mixing damper control motor and potentiometer (activating system failure)
+B1061	Mode selection damper control motor and potentiometer (potentiometer system shorted to its power supply)
+B1062	Mode selection damper control motor and potentiometer (potentiometer system shorted to its ground)
+B1065	Mode selection damper control motor and potentiometer (activating system failure)
+B1079	Refrigerant Leaks
+B10C0	Interior Temperature Sensor System
+B10C1	Interior Temperature Sensor System (Open)
+B1400	Driver’s air bag module (1st squib) system fault 1 (short circuit between terminals of the squib circuit)
+B1401	Driver’s air bag module (1st squib) system fault 2 (open in the squib circuit)
+B1402	Driver’s air bag module (1st squib) system fault for ground circuit (short-circuited to ground)
+B1403	Driver’s air bag module (1st squib) system fault for power supply circuit (short-circuited to power supply)
+B1404	Driver’s air bag module (1st squib ignition drive circuit) system detected short circuit
+B1405	Driver’s air bag module (1st squib ignition drive circuit) system detected open circuit
+B1406	Front impact sensor (RH) system for fault 1
+B1407	Front impact sensor (RH) power supply circuit system
+B1408	Front impact sensor (RH) (squib) for power supply circuit
+B1409	Front impact sensor (RH) (squib) for communication system
+B1410	Passenger’s (front) air bag module (1st squib) system fault 1 (short circuit between terminals of the squib circuit)
+B1411	Passenger’s (front) air bag module (1st squib) system fault 2 (open in the squib circuit)
+B1412	Passenger’s (front) air bag module (1st squib) system fault for ground circuit (short-circuited to ground)
+B1413	Passenger’s (front) air bag module (1st squib) system fault for power supply circuit (short-circuited to power supply)
+B1414	Front passenger’s air bag module (1st squib ignition drive circuit)
+B1415	Front passenger’s air bag module (1st squib ignition drive circuit)
+B1416	Front impact sensor (LH) system for fault 1
+B1417	Front impact sensor (LH) power supply circuit system
+B1418	Front impact sensor (LH) (squib) communication Error
+B1419	Front impact sensor (LH) (squib) for communication system
+B1420	Side-airbag module (RH) (squib) system fault 1 (short circuit between terminals of the squib circuit)
+B1421	Side-airbag module (RH) (squib) system fault 2 (open in the squib circuit)
+B1422	Side-airbag module (RH) (squib) system fault ground circuit (short-circuited to ground)
+B1423	Side-airbag module (RH) (squib) system fault power supply circuit (short-circuited to power supply)
+B1424	Side-airbag module (RH) (squib ignition drive circuit)
+B1425	Side-airbag module (RH) (squib ignition drive circuit)
+B1426	Side impact sensor (RH) system for fault 1
+B1427	Side impact sensor (RH) power supply circuit system
+B1428	Side impact sensor (RH) (squib) for power supply circuit
+B1429	Side impact sensor (RH) (squib) for communication system
+B1430	Side-airbag module (LH) (squib) system fault 1 (short circuit between terminals of the squib circuit)
+B1431	Side-airbag module (LH) (squib) system fault 2 (open in the squib circuit)
+B1432	Side-airbag module (LH) (squib) system fault ground circuit (short-circuited to ground)
+B1433	Side-airbag module (LH) (squib) system fault power supply circuit (short-circuited to power supply)
+B1434	Side-airbag module (LH) (squib ignition drive circuit)
+B1435	Side-airbag module (LH) (squib ignition drive circuit)
+B1436	Side impact sensor (LH) system for fault 1
+B1437	Side impact sensor (LH) power supply circuit system
+B1438	Side impact sensor (LH) (squib) for power supply circuit
+B1439	Side impact sensor (LH) (squib) for communication system
+B1440	Curtain air bag module (RH) (squib) system fault 1 (short circuit between terminals of the squib circuit)
+B1441	Curtain air bag module (RH) (squib) system fault 2 (open in the squib circuit)
+B1442	Curtain air bag module (RH) (squib) system fault ground circuit (short-circuited to ground)
+B1443	Curtain air bag module (RH) (squib) system fault ground circuit (short-circuited to ground)
+B1444	Curtain air bag module (RH) (squib ignition drive circuit)
+B1445	Curtain air bag module (RH) (squib ignition drive circuit)
+B1446	Side Impact Sensor (Rear: RH) System for Fault
+B1447	Side Impact Sensor (Rear: RH) Power Supply Circuit System
+B1448	Side Impact Sensor (Rear: RH) (Squib) for Power Supply Circuit
+B1450	Curtain Air Bag Module (LH) (Squib) System (Short Circuit between Squib Circuit Terminals)
+B1451	Curtain Air Bag Module (LH) (Squib) System (Squib Circuit Open)
+B1452	Curtain Air Bag Module (LH) (Squib) System (Squib Circuit Open)
+B1453	Curtain Air bag Module (LH) (Squib) System (Shorted to Squib Circuit Power Supply)
+B1454	Curtain air bag module (LH) (squib ignition drive circuit)
+B1455	Curtain air bag module (LH) (squib ignition drive circuit)
+B1457	Side Impact Sensor (Rear: LH) Power Supply Circuit System
+B1458	Side Impact Sensor (Rear: LH) (Squib) for Power Supply Circuit
+B1460	Seat belt pre-tensioner (RH) (squib) system fault 1 (short circuit between terminals of the squib circuit)
+B1461	Seat belt pre-tensioner (RH) (squib) system fault 2 (open in the squib circuit)
+B1462	Seat belt pre-tensioner (RH) (squib) system fault for ground circuit (short-circuit to ground)
+B1463	Seat belt pre-tensioner (RH) (squib) system fault for power supply circuit (short-circuited to power supply)
+B1464	Seat belt pre-tensioner (RH) (squib ignition drive circuit)
+B1465	Seat belt pre-tensioner (RH) (squib ignition drive circuit)
+B1466	Analog G-sensor
+B1467	Safing G-sensor (front air bag)
+B1468	Safing G-sensor (front air bag)
+B1469	Safing G-sensor (side-airbag)
+B1470	Seat belt pre-tensioner (LH) (squib) system fault1 (short circuit between terminals of the squib circuit)
+B1471	Seat belt pre-tensioner (LH) (squib) system fault 2 (open in the squib circuit)
+B1472	Seat belt pre-tensioner (LH) (squib) system fault for ground circuit (short-circuit to ground)
+B1473	Seat belt pre-tensioner (LH) (squib) system fault for power supply circuit (short-circuited to power supply)
+B1474	Seat belt pre-tensioner (LH) (squib ignition drive circuit)
+B1475	Seat belt pre-tensioner (LH) (squib ignition drive circuit)
+B1476	IG1 power supply circuit system (fuse No.3 circuit)
+B1477	IG1 power supply circuit system (fuse No.2 circuit)
+B1478	Capacitor
+B1479	Capacitor
+B1480	Driver’s air bag module (2nd squib) system fault 1 (short circuit between terminals of the squib circuit)
+B1481	Driver’s air bag module (2nd squib) system fault 2 (open in the squib circuit)
+B1482	Driver’s air bag module (2nd squib) system fault for ground circuit (short-circuited to ground)
+B1483	Driver’s air bag module (2nd squib) system fault for power supply circuit (Short-circuited to power supply)
+B1484	Driver’s air bag module (2nd squib ignition drive circuit)
+B1485	Driver’s air bag module (2nd squib ignition drive circuit)
+B1486	Passenger seat belt warning light drive circuit system fault 2
+B1487	Passenger seat belt warning light drive circuit system fault 1 (Light does not Illuminate).
+B1488	Passenger air bag OFF indicator light drive circuit system fault 2
+B1489	Passenger air bag OFF indicator light drive circuit system fault 1 Light does not switch off
+B1490	Passenger’s (front) air bag module (2nd squib) system fault 1 (short circuit between terminals of the squib circuit)
+B1491	Passenger’s (Front) Air Bag Module (2nd Squib) System Fault 2 (Open In The Squib Circuit)
+B1492	Passenger’s (front) air bag module (2nd squib) system fault for ground circuit (short-circuited to ground)
+B1493	Passenger’s (front) air bag module (2nd squib) system fault for power supply circuit (short-circuited to power supply)
+B1494	Front Passenger’s Air Bag Module (2nd Squib Ignition Drive Circuit)
+B1495	Front passenger’s air bag module (2nd squib ignition drive circuit)
+B1496	Non-volatile memory (EEPROM)
+B1497	Application Specific Integrated Circuit (For Frontal Activation)
+B1498	ROM or RAM
+B1499	SRS-ECU air bag condition monitor detects deployed air bag
+B1506	Seat Slide Sensor System Fault 1 (Open In The Seat Slide Sensor Circuit)
+B1507	Seat slide sensor system fault ground circuit (short- circuited to ground)
+B1508	Seat slide sensor system fault power supply circuit (short- circuited to power supply)
+B1509	Improper installation of SRS-ECU
+B1519	Connector lock system detects connector unlocked
+B1520	Seat belt switch (LH) malfunction
+B1521	Seat belt switch (LH) circuit open (for Normal/Close terminal)
+B1522	Seat belt switch (LH) circuit (ground side) shorted (for Normal/Close terminal)
+B1523	Seat belt switch (LH) circuit (power supply side) shorted (for Normal/Close terminal)
+B1524	Malfunction Of The Normal/Open Terminal Or Short Circuit In Its Harness
+B1525	Seat belt switch (LH) circuit (ground side) shorted (for Normal/Open terminal)
+B1526	Seat belt switch (LH) circuit (ground side) shorted (for Normal/Open terminal)
+B1527	Seat Belt Switch (LH) Circuit Open (For Common Terminal)
+B1528	Seat belt switch (LH) circuit (ground side) shorted (for common terminal )
+B1529	Seat belt switch (LH) circuit (power supply side) shorted (for common terminal)
+B1530	Seat Belt Switch (RH) Malfunction
+B1531	Seat belt switch (RH) circuit open (for Normal/Close terminal)
+B1532	Seat belt switch (RH) circuit (ground side) shorted (for Normal/Close terminal)
+B1533	Seat Belt Switch (RH) Circuit (Power Supply Side) Shorted (For Normal/Close Terminal)
+B1534	Seat belt switch (RH) circuit open (for Normal/Open terminal)
+B1535	Seat belt switch (RH) circuit (ground side) shorted (for Normal/Open terminal)
+B1536	Seat Belt Switch (RH) Circuit (Power Supply Side) Shorted (For Normal/Open Terminal)
+B1537	Seat belt switch (RH) circuit open (for common terminal)
+B1538	Seat belt switch (RH) circuit (ground side) shorted (for common terminal)
+B1539	Seat Belt Switch (RH) Circuit (Power Supply Side) Shorted (For Common Terminal)
+B1540	Occupant classification-ECU malfunction
+B1541	Occupant classification-ECU calibration malfunction
+B1542	Occupant Classification Sensor (S1) Malfunction
+B1543	Occupant classification sensor (S2) malfunction
+B1545	Occupant classification-ECU for power supply circuit
+B1546	Occupant classification-ECU for communication system
+B1548	CAN communication impossible
+B1549	CAN communication error
+B1552	Changing of Power Supply
+B1553	Changing of Power Supply
+B1554	SG-BYPASS
+B1555	SG-BYPASS
+B1556	Seat slide sensor system for fault 2 (malfunction of seat slide sensor)
+B1557	Application specific integrated circuit
+B1558	Occupant Classification-ECU ID-Cord Malfunction
+B1761	Vehicle Identification Number (VIN) code not programmed
+B1A08	Keyless/KOS key1 performance
+B1A09	Keyless/KOS key2 performance
+B1A0A	Keyless/KOS key3 performance
+B1A0B	Keyless/KOS key4 performance
+B1A10	Keyless/KOS key 1 low battery
+B1A11	Keyless/KOS key 2 low
+B1A12	Keyless/KOS key 3 low battery
+B1A13	Keyless/KOS Key 4 Low Battery
+B1A24	Key ID not registered
+B1A25	Key ID unmatched
+B1A28	Engine control module authenticate error
+B1A35	Transponder read error
+B1B78	Passenger Seat Weight Sensor (front: LH) Performance
+B1B79	Passenger Seat Weight Sensor (Ground Side) Short- Circuited (Front: LH)
+B1B7D	Passenger Seat Weight Sensor (front: RH) Performance
+B2101	IG SW start POS. circuit low
+B2204	Coding Data Mismatch
+B2206	VIN Code Mismatch
+B2214	Control Panel Failure
+B222C	Coding Not Completed
+B223B	Control Panel Improperly Assembled
+B2352	Antenna Malfunction
+B2400	KOS Key Registration Malfunction
+B2401	Keyless/KOS key ID not registered
+B2402	Steering Lock Unit communication error (System ID)
+B2403	Steering Lock Unit communication. (CRC)
+B2404	Steerin Unit Communication. (function code)
+B2405	Steerin Unit Communication. (rolling code)
+B2406	Steering Unit Communication. (PTC operate)
+B2408	Steering Lock Unit comm. (solenoid)
+B2409	Steering Unit Communication (No response)
+B240A	Drives Side Antenna (outdoor) Open
+B240B	Passenger’s Side antenna (outdoor) open
+B240D	Front Antenna(indoor) Open
+B240E	RR Antenna (Indoor) Open
+B2412	LF Antenna Power Voltage
+B2413	Steering Lock Unit (power voltage)
+B2415	Receiver Antenna Module Power Voltage
+B2416	KOS-ECU Internal Error
+C1000	Abnormality in Stoplight Switch Circuit
+C100A	Abnormality In FL Wheel Speed Sensor Circuit
+C1011	Abnormality in FL wheel speed sensor signal
+C1014	Mutual monitoring of FL wheel speed sensor
+C1015	Abnormality In FR Wheel Speed Sensor Circuit
+C101C	Abnormality in FR wheel speed sensor signal
+C101F	Mutual monitoring of FR wheel speed sensor
+C1020	Abnormality In RL Wheel Speed Sensor Circuit
+C1027	Abnormality in RL wheel speed sensor signal
+C102A	Mutual monitoring of RL wheel speed sensor
+C102B	Abnormality In RR Wheel Speed Sensor Circuit
+C1032	Abnormality in RR wheel speed sensor signal
+C1042	Abnormality in periodical signal for FR wheel speed sensor
+C1043	Abnormality In Periodical Signal For RL Wheel Speed Sensor
+C1044	Abnormality In Periodical Signal For RR Wheel Speed Sensor
+C1046	FL wheel speed sensor control phase time exceeded
+C1047	FR Wheel Speed Sensor Control Phase Time Exceeded
+C1048	RL wheel speed sensor control phase time exceeded
+C1049	RR wheel speed sensor control phase time exceeded
+C104B	Abnormality in FL wheel inlet valve system
+C104F	Abnormality in FR wheel inlet valve system
+C1053	Abnormality in RL wheel inlet valve system
+C1057	Abnormality In RR Wheel Inlet Valve System
+C105B	Abnormality in RR wheel outlet valve system
+C105F	Abnormality in FL wheel outlet valve system
+C1063	Abnormality in FR wheel outlet valve system
+C1067	Abnormality in RL wheel outlet valve system
+C1073	Faulty motor drive circuit
+C1200	Abnormality In FL/RR Wheel Cut Valve System
+C1204	Abnormality in FR/RL wheel cut valve system
+C1208	Abnormality in FL/RR wheel suction valve system
+C120C	Abnormality In FR/RL Wheel Suction Valve System
+C1210	Abnormality In G & Yaw Rate Sensor
+C1219	Abnormality in Steering Wheel Sensor Signal
+C123A	Abnormality in sensor calibration
+C123B	Prolonged operation of ASC
+C123C	Abnormality in lateral G and yaw rate output value (incorrect installation)
+C1242	Abnormality In G And Yaw Rate Sensor (Abnormality In Longitudinal G Sensor Output Signal)
+C1608	Implausible diagnosis data (EEPROM failure)
+C2002	Valve calibration not completed
+C2003	Control Parameter Not Implement
+C2101	Abnormality in battery voltage (high voltage)
+C2104	Faulty valve power supply circuit
+C2111	Brake Fluid Pressure Sensor Power Supply Circuit (High input)
+C2112	Brake Fluid Pressure Sensor Power Supply Circuit (Low input)
+C2114	Abnormality in G and yaw rate sensor operation voltage (Low voltage)
+C2115	Abnormality In G And Yaw Rate Sensor Operation Voltage (High Voltage)
+C2116	Low or high power supply voltage in pump motor
+C2200	Abnormality in ASC-ECU
+C2203	VIN Not Recorded
+C2204	Internal abnormality in G and yaw rate sensor
+C2205	Internal malfunction of steering wheel sensor
+C2206	Re-Execution Of Variant Coding
+P1020	Innovative Valve Timing and Lift Electronic Control System (MIVEC) Performance Problem
+P1101	Traction Control Vacuum Solenoid Circuit Malfunction
+P1102	Traction Control Ventilation Solenoid Circuit Malfunction
 P1103	Turbocharger Wastegate Actuator
 P1104	Turbocharger Wastegate Solenoid
 P1105	Fuel Pressure Solenoid
+P1231	Active Stability Control Plausibility
+P1232	Fail Safe System
+P1233	Throttle Position Sensor (main) Plausibility
+P1234	Throttle Position Sensor (Sub) Plausibility
+P1235	Mass Airflow Sensor Plausibility
+P1236	A/D Converter
+P1237	Accelerator Pedal Position Sensor Plausibility
+P1238	Mass Airflow Sensor Plausibility (Torque Monitor)
+P1239	Engine RPM Plausibility
+P1240	Ignition Angle
+P1241	Torque Monitoring
+P1242	Fail Safe Control Monitor
+P1243	Inquiry/Response Error
+P1245	Cycle RAM Test (Engine)
+P1247	CVT Plausibility
+P1294	Target Idle Speed Not Reached
+P1295	TP Sensor 5-Volt Supply Circuit Malfunction
+P1296	MAP Sensor 5-Volt Supply Circuit Malfunction
+P1297	No Change In MAP From Start to Run
 P1300	Ignition Timing Adjustment circuit
+P1390	Timing Belt Skipped One Tooth Or More
+P1391	Intermittent Loss of CKP or CMP Sensor Signal
+P1398	Misfire Adaptive Numerator at Limit
 P1400	Manifold Differential Pressure Sensor circuit
+P1443	EVAP Purge Control Solenoid 2 Circuit Malfunction
+P1486	EVAP Leak Monitor Pinched Hose Detected
+P1487	High Speed Condenser Fan Relay Circuit Malfunction
+P1489	High Speed Condenser Fan Relay Circuit Malfunction
+P1490	Low Speed Fan Relay Circuit Malfunction
+P1492	Battery Temperature Sensor High Signal
+P1493	Battery Temperature Sensor Low Signal
+P1494	EVAP Ventilation Switch Circuit Malfunction
+P1495	EVAP Ventilation Solenoid Circuit Malfunction
+P1496	5-Volt Supply Output Too Low
 P1500	Alternator FR Terminal circuit
+P1506	Idle Control System RPM Lower Than Expected At Low Temperature
+P1507	Idle Control System RPM Higher Than Expected at Low Temperature
+P1530	A/C1 Switch Circuit Intermittent
+P1590	TC-SST-ECU To ECM Communication Error In Torque Reduction Request
 P1600	Serial Communication Link
+P1601	Communication Malfunction (between PCM and Throttle Actuator Control Unit)
+P1602	Communication Malfunction (Between PCM Main Processor And System LSI)
+P1603	Battery Backup Line Malfunction
+P1610	Immobilizer System Malfunction
+P1637	EEPROM System (DTC Storing Malfunction) (TC-SST)
+P1676	Coding incomplete (TC-SST)
+P1696	PCM EEPROM Write Denied
+P1697	PCM Malfunction - SRI Miles Not Stored
+P1698	No CCD Messages Received From The TCM
+P1706	Malfunction of Throttle Signal (CVT)
+P1710	Malfunction Of Vehicle Speed Signal (CVT)
 P1715	Pulse Generator Assembly
+P1720	Pressure Control, Shift Control, TCC Solenoid Circuit Malfunction
+P1723	Abnormality In Speed Sensor System Function
+P1738	A/T High Temperature Operations Activated
+P1740	Malfunction of Lockup/Select Switching Solenoid Valve (CVT)
+P1745	Monitoring Of Percentage Change In Pulley Ratio (CVT)
 P1750	Solenoid Assembly
 P1751	A/T Control Relay
+P1773	Malfunction Of ABS (CVT)
+P1777	Malfunction of Stepper Motor
+P1778	Malfunction of Stepper Motor (CVT)
 P1791	Engine Coolant Temperature Level Input circuit
 P1795	Throttle Position Input circuit to TCM
+P1802	Shift Lever System (LIN communication malfunction)
+P1803	Shift Lever System (CAN, LIN Time-out Error)
+P1804	Shift Fork Position Sensor 1 and 2 System (Power supply voltage low range out)
+P1805	Shift Fork Position Sensor 1 and 2 System (Power supply voltage high range out)
+P1806	Shift Fork Position Sensor 3 and 4 System (Power supply voltage low range out)
+P1807	Shift Fork Position Sensor 3 and 4 System (Power supply voltage high range out)
+P1808	TC-SST-ECU temperature, fluid temperature sensor system (Correlation error)
+P180C	Clutch Pressure Cut Spool Sticking
+P181B	Clutch 1 (Pressure low range out)
+P181C	Clutch 1 (Pressure high range out)
+P181E	Clutch 2 (Pressure Low Range Out)
+P181F	Clutch 2 (Pressure high range out)
+P1820	Shift Fork Position Sensor 1 System (Voltage low range out)
+P1821	Shift Fork Position Sensor 1 System (Voltage High Range Out)
+P1822	Shift Fork Position Sensor 1 System (Output range out)
+P1823	Shift Fork Position Sensor 1 System (Neutral)
+P1824	Shift Fork Position Sensor 1 System (Poor Performance)
+P1825	Shift Fork Position Sensor 2 System (Voltage low range out)
+P1826	Shift Fork Position Sensor 2 System (Voltage high range out)
+P1828	Shift Fork Position Sensor 2 System (Neutral)
+P1829	Shift Fork Position Sensor 2 System (Poor performance)
+P182A	Shift Fork Position Sensor 3 System (Voltage low range out
+P182B	Shift Fork Position Sensor 3 System (Voltage High Range Out)
+P182C	Shift Fork Position Sensor 3 System (Output range out)
+P182D	Shift Fork Position Sensor 3 System (Neutral)
+P182E	Shift Fork Position Sensor 3 System (Poor Performance)
+P1831	Shift Fork Position Sensor 4 System (Voltage low range out)
+P1832	Shift Fork Position Sensor 4 System (Voltage high range out)
+P1833	Shift Fork Position Sensor 4 System (Output Range Out)
+P1834	Shift Fork Position Sensor 4 System (Neutral)
+P1835	Shift Fork Position Sensor 4 System (Poor performance)
+P1836	Shift Fork 1 Malfunction
+P183D	Shift Fork 2 Malfunction
+P1844	Shift Fork 3 Malfunction
+P184B	Shift Fork 4 Malfunction
+P1852	Shift Fork 1 or 2 opposite direction movement
+P1855	Shift Fork 3 or 4 opposite direction movement
+P1857	Odd Number Gear Axle Interlock
+P1858	Even Number Gear Axle Interlock
+P185D	Clutch open not possible
+P1862	High side 1 system (Overcurrent)
+P1863	High side 1 system (Open circuit)
+P1864	High side 1 system (Short to power supply)
+P1866	High side 2 system (Overcurrent)
+P1867	High side 2 system (Open circuit)
+P1868	High side 2 system (Short to power supply)
+P186A	High Side 3 System (Overcurrent)
+P186B	High side 3 system (Open circuit)
+P186C	High side 3 system (Short to power supply)
+P186D	High Side 1 System (Voltage Low Range Out)
+P186E	High side 2 system (Voltage low range out)
+P186F	High side 3 system (Voltage low range out)
+P1870	Engine Torque Signal Abnormality
+P1871	APS system (Signal abnormality)
+P1872	Between shift lever and TC-SST system (Q-A function abnormality)
+P1873	Clutch 1 System (Pressure Abnormality)
+P1874	Clutch 2 System (Pressure abnormality)
+P1875	Damper Speed Sensor System (Poor performance)
+P1876	Gear Block 1st
+P1877	Gear Block 2nd
+P1878	Gear Block 3rd
+P1879	Gear Block 4th
+P187A	Gear Block 5th
+P187B	Gear Block 6th
+P187C	Gear Block Reverse
+P1880	EOL Mode Active
+P1881	Twin Clutch SST Control Mode Switch System (Malfunction)
+P1885	Shift Fork 1 Jump Out
+P1886	Shift Fork 2 Jump Out
+P1887	Shift Fork 3 Jump Out
+P1888	Shift Fork 4 Jump Out
+P1890	Teach-In Not Completed
+P1899	P/N Position/Transaxle Range Switch Circuit Malfunction
+P1902	Malfunction Of Engine System
+P198D	EEPROM System
+P198E	Lever Position Sensor System
+P198F	Lever Position Sensor System
+U1006	Theft-alarm Siren LIN timeout
+U1007	Theft-alarm sensor LIN timeout
+U1073	Bus Off
+U1102	ABS-ECU Timeout
+U1108	Combination Meter Timeout
+U1109	ETACS-ECU Timeout
+U1110	A/C-ECU Timeout
+U1117	Immobilizer-ECU Timeout
+U1180	Combination Meter Time-out
+U1415	Coding incomplete/fail
+U1417	Coding Data Malfunction
+U1425	Data Error (TC-SST)
+U150B	Column Switch (checksum error)
+U1512	Lighting control sensor checksum error
+U1514	Bit Error (LIN)
