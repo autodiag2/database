@@ -628,7 +628,126 @@ B0385	ISO/SAE Reserved
 B0386	ISO/SAE Reserved
 B0387	ISO/SAE Reserved
 B0388	ISO/SAE Reserved
-B0389	ISO/SAE Reserved RAM P1477	Intake Air Diverter Valve Position Sensor Circuit Shorted To Ground RAM P1478	Intake Air Diverter Valve Position Sensor Circuit Shorted To Battery RAM P1484	Catalyst Overheat Detection RAM P1507	Crankcase Filter Restriction RAM P1521	Incorrect Engine Oil Type RAM P1524	Oil Pressure Out Of Range - Camshaft Advance/Retard Disabled RAM P1572	Brake Pedal Stuck On RAM P1573	Brake Pedal Stuck Off RAM P1593	Speed Control Switch 1/2 Stuck RAM P1607	PCM Internal Shutdown Timer Rationality RAM P1618	Sensor Reference Voltage 1 Erratic RAM P1621	O2 Sensor Reference Voltage Circuit Low RAM P1622	O2 Sensor Reference Voltage Circuit High RAM P1628	Sensor Reference Voltage 2 Erratic RAM P1644	Incorrect Variant/Configuration RAM P1679	Calibration Not Learned RAM P1696	EEPROM Memory Write Denied/Invalid RAM P1697	EMR (SRI) Mileage Not Stored RAM P1715	Restricted Manual Valve In T3 Range RAM P1718	EEPROM Integrity Failure RAM P1720	Output Speed Sensor-Wheel Speed Rationality RAM P1721	Intelligent Alternator Module Circuit RAM P1722	Intelligent Alternator Module Mechanical Performance RAM P1724	Intelligent Alternator Module Over Temperature RAM P1731	Incorrect Gear Engaged RAM P1775	Solenoid Switch Valve Latched In TCC Position RAM P1776	Solenoid Switch Valve Latched In LR Position RAM P1794	Speed Sensor Ground Error RAM P1C4E	Fault In ABS/ESP Module RAM P1C54	SCR NOx Catalyst Missing RAM P1C55	NOx Sensor Intermittent - Bank 1 Sensor 1 RAM P1C56	NOx Sensor Intermittent - Bank 1 Sensor 2 RAM P1C70	SCR Error Detected - Engine Disabled RAM P1CEF	Cold Climate Turbo Protection Engine DE-Rate Mode RAM P1CF3	Battery Temperature Sensor Out Of Range Low RAM P1CF4	Battery Temperature Sensor Out Of Range High RAM P1E09	Closed Loop Fueling Not Achieved - Bank 1 Downstream RAM P1E0A	Closed Loop Fueling Not Achieved - Bank 2 Downstream RAM P1E1C	Reductant System Wake Up Circuit High RAM P1E1E	Positive Engagement Switch Circuit Shorted To Ground RAM P1E1F	PTO Pressure Switch Circuit Short To Ground RAM P1E26	Internal Control Module Cooled EGR Temperature Performance RAM P1E27	EGR 1 High Side Control Circuit Low RAM P1E28	EGR 1 High Side Control Circuit High RAM U1008	Lin 1 Bus RAM U1009	Lin 2 Bus RAM U103C	KIN/IGNM Communication RAM U1045	Lin 3 Bus RAM U1101	Lost Communication With PTS Display - Rear 1 RAM U110A	Loss Of Communications With SCM CAN C RAM U110C	Lost Fuel Level Message RAM U110E	Lost Ambient Temperature Message RAM U110F	Lost Fuel Volume Message RAM U1110	Lost Vehicle Speed Message RAM U1111	Lost Odometer Message RAM U1120	Lost Wheel Distance Message RAM U112B	Lost Communication With PTS Display - Front 1 RAM U112C	Lost Communication With Transfer Case Switch Bank Module RAM U112D	Lost Communication With EVIC Steering Wheel Switches RAM U113B	Lost Communication With Switch Bank Module RAM U113D	Lost Communication With Master Power Window Switch RAM U113E	Lost Communication With Intelligent Battery Sensor RAM U1141	Lost ESP Torque Request Message RAM U1176	Lost Communication With Emergency Alert Module RAM U1186	Lost Communication With Adaptive Cruise Control Module RAM U1197	Security Seed Response Not Received From ECM/PCM RAM U11B8	Lost Communication With Integrated Center Stack (ICS) RAM U11B9	Lost Communication With RF Hub RAM U11BB	Lost Communication With Video Routing Module RAM U11BC	Lost Brake Switch Message RAM U11C1	Reductant Control Module Received Implausible Data From ECM/PCM RAM U11C2	Lost Transmission Message RAM U11E8	Lost Communication With EPS Steering Torque Message RAM U11FA	Lost Communication With Right Blind Spot Sensor RAM U11FB	Lost Communication With Left Blind Spot Sensor RAM U1207	Lost Communication With Terrain Switch Bank Module RAM U120E	Lost Communication With Comfort Seat And Wheel Module RAM U1215	Lost Communication With Forward Facing Camera RAM U12A4	Lost Communication With Ammonia Sensor RAM U12A7	Lost Communication With Display Screen Module RAM U12AE	Lost Communication With Central Vision Processing Module RAM U1400	Implausible TPS Signal Received RAM U1401	Implausible Engine Speed Signal Received RAM U1402	Implausible Engine Temperature Signal Received RAM U1403	Implausible Fuel Level Signal Received RAM U1407	Implausible Engine Torque Request Signal Received RAM U1408	Implausible Brake Signal Received RAM U1409	Implausible Left Front Wheel Speed Signal Received RAM U140A	Implausible Right Front Wheel Speed Signal Received RAM U140B	Implausible Left Rear Wheel Speed Signal Received RAM U140C	Implausible Right Rear Wheel Speed Signal Received RAM U140D	Implausible Wheel Speed Signals Received RAM U140E	Implausible Vehicle Configuration Data Received RAM U1411	Implausible Fuel Volume Signal Received RAM U1412	Implausible Vehicle Speed Signal Received RAM U1415	Implausible/Missing Vehicle Configuration Data RAM U1417	Implausible Left Wheel Distance Signal Received RAM U1418	Implausible Right Wheel Distance Signal Received RAM U1420	Implausible Electronic Gear Select Signal Received RAM U1421	Implausible Ignition Key Off Time Received RAM U1424	Implausible Engine Torque Signal Received RAM U1428	Inaccurate Engine Torque Received RAM U142A	Implausible PRNDL Signal Received RAM U1430	Implausible Data Received From Comfort Seat And Wheel Module RAM U1439	Implausible- Missing Programmed Axle Ratio RAM U1440	Implausible Transfer Case Ratio High Received RAM U1441	Implausible Transfer Case Ratio Low Received RAM U1445	Implausible Data Received From Display Screen Module RAM U1446	Implausible Heated Steering Wheel Temperature Message Received RAM U1449	Implausible ERS Message Received RAM U1454	Implausible Data Received From The Gated Park Switch RAM U145E	Implausible Police Configuration RAM U147D	Implausible Data Received From Right Blind Spot Sensor RAM U147E	Implausible Data Received From Left Blind Spot Sensor RAM U1480	Implausible Data Received From Integrated Center Stack RAM U1491	Implausible Fuel Level 2 Signal Received RAM U1519	Implausible Data Received From Video Routing Module RAM U1601	ECU Application Software Code 1 Missing Or Corrupted RAM U3017	Control Module Timer/Clock Performance
+B0389	ISO/SAE Reserved 
+P1477	Intake Air Diverter Valve Position Sensor Circuit Shorted To Ground 
+P1478	Intake Air Diverter Valve Position Sensor Circuit Shorted To Battery 
+P1484	Catalyst Overheat Detection 
+P1507	Crankcase Filter Restriction 
+P1521	Incorrect Engine Oil Type 
+P1524	Oil Pressure Out Of Range - Camshaft Advance/Retard Disabled 
+P1572	Brake Pedal Stuck On 
+P1573	Brake Pedal Stuck Off 
+P1593	Speed Control Switch 1/2 Stuck 
+P1607	PCM Internal Shutdown Timer Rationality 
+P1618	Sensor Reference Voltage 1 Erratic 
+P1621	O2 Sensor Reference Voltage Circuit Low 
+P1622	O2 Sensor Reference Voltage Circuit High 
+P1628	Sensor Reference Voltage 2 Erratic 
+P1644	Incorrect Variant/Configuration 
+P1679	Calibration Not Learned 
+P1696	EEPROM Memory Write Denied/Invalid 
+P1697	EMR (SRI) Mileage Not Stored 
+P1715	Restricted Manual Valve In T3 Range 
+P1718	EEPROM Integrity Failure 
+P1720	Output Speed Sensor-Wheel Speed Rationality 
+P1721	Intelligent Alternator Module Circuit 
+P1722	Intelligent Alternator Module Mechanical Performance 
+P1724	Intelligent Alternator Module Over Temperature 
+P1731	Incorrect Gear Engaged 
+P1775	Solenoid Switch Valve Latched In TCC Position 
+P1776	Solenoid Switch Valve Latched In LR Position 
+P1794	Speed Sensor Ground Error 
+P1C4E	Fault In ABS/ESP Module 
+P1C54	SCR NOx Catalyst Missing 
+P1C55	NOx Sensor Intermittent - Bank 1 Sensor 1 
+P1C56	NOx Sensor Intermittent - Bank 1 Sensor 2 
+P1C70	SCR Error Detected - Engine Disabled 
+P1CEF	Cold Climate Turbo Protection Engine DE-Rate Mode 
+P1CF3	Battery Temperature Sensor Out Of Range Low 
+P1CF4	Battery Temperature Sensor Out Of Range High 
+P1E09	Closed Loop Fueling Not Achieved - Bank 1 Downstream 
+P1E0A	Closed Loop Fueling Not Achieved - Bank 2 Downstream 
+P1E1C	Reductant System Wake Up Circuit High 
+P1E1E	Positive Engagement Switch Circuit Shorted To Ground 
+P1E1F	PTO Pressure Switch Circuit Short To Ground 
+P1E26	Internal Control Module Cooled EGR Temperature Performance 
+P1E27	EGR 1 High Side Control Circuit Low 
+P1E28	EGR 1 High Side Control Circuit High 
+U1008	Lin 1 Bus 
+U1009	Lin 2 Bus 
+U103C	KIN/IGNM Communication 
+U1045	Lin 3 Bus 
+U1101	Lost Communication With PTS Display - Rear 1 
+U110A	Loss Of Communications With SCM CAN C 
+U110C	Lost Fuel Level Message 
+U110E	Lost Ambient Temperature Message 
+U110F	Lost Fuel Volume Message 
+U1110	Lost Vehicle Speed Message 
+U1111	Lost Odometer Message 
+U1120	Lost Wheel Distance Message 
+U112B	Lost Communication With PTS Display - Front 1 
+U112C	Lost Communication With Transfer Case Switch Bank Module 
+U112D	Lost Communication With EVIC Steering Wheel Switches 
+U113B	Lost Communication With Switch Bank Module 
+U113D	Lost Communication With Master Power Window Switch 
+U113E	Lost Communication With Intelligent Battery Sensor 
+U1141	Lost ESP Torque Request Message 
+U1176	Lost Communication With Emergency Alert Module 
+U1186	Lost Communication With Adaptive Cruise Control Module 
+U1197	Security Seed Response Not Received From ECM/PCM 
+U11B8	Lost Communication With Integrated Center Stack (ICS) 
+U11B9	Lost Communication With RF Hub 
+U11BB	Lost Communication With Video Routing Module 
+U11BC	Lost Brake Switch Message 
+U11C1	Reductant Control Module Received Implausible Data From ECM/PCM 
+U11C2	Lost Transmission Message 
+U11E8	Lost Communication With EPS Steering Torque Message 
+U11FA	Lost Communication With Right Blind Spot Sensor 
+U11FB	Lost Communication With Left Blind Spot Sensor 
+U1207	Lost Communication With Terrain Switch Bank Module 
+U120E	Lost Communication With Comfort Seat And Wheel Module 
+U1215	Lost Communication With Forward Facing Camera 
+U12A4	Lost Communication With Ammonia Sensor 
+U12A7	Lost Communication With Display Screen Module 
+U12AE	Lost Communication With Central Vision Processing Module 
+U1400	Implausible TPS Signal Received 
+U1401	Implausible Engine Speed Signal Received 
+U1402	Implausible Engine Temperature Signal Received 
+U1403	Implausible Fuel Level Signal Received 
+U1407	Implausible Engine Torque Request Signal Received 
+U1408	Implausible Brake Signal Received 
+U1409	Implausible Left Front Wheel Speed Signal Received 
+U140A	Implausible Right Front Wheel Speed Signal Received 
+U140B	Implausible Left Rear Wheel Speed Signal Received 
+U140C	Implausible Right Rear Wheel Speed Signal Received 
+U140D	Implausible Wheel Speed Signals Received 
+U140E	Implausible Vehicle Configuration Data Received 
+U1411	Implausible Fuel Volume Signal Received 
+U1412	Implausible Vehicle Speed Signal Received 
+U1415	Implausible/Missing Vehicle Configuration Data 
+U1417	Implausible Left Wheel Distance Signal Received 
+U1418	Implausible Right Wheel Distance Signal Received 
+U1420	Implausible Electronic Gear Select Signal Received 
+U1421	Implausible Ignition Key Off Time Received 
+U1424	Implausible Engine Torque Signal Received 
+U1428	Inaccurate Engine Torque Received 
+U142A	Implausible PRNDL Signal Received 
+U1430	Implausible Data Received From Comfort Seat And Wheel Module 
+U1439	Implausible- Missing Programmed Axle Ratio 
+U1440	Implausible Transfer Case Ratio High Received 
+U1441	Implausible Transfer Case Ratio Low Received 
+U1445	Implausible Data Received From Display Screen Module 
+U1446	Implausible Heated Steering Wheel Temperature Message Received 
+U1449	Implausible ERS Message Received 
+U1454	Implausible Data Received From The Gated Park Switch 
+U145E	Implausible Police Configuration 
+U147D	Implausible Data Received From Right Blind Spot Sensor 
+U147E	Implausible Data Received From Left Blind Spot Sensor 
+U1480	Implausible Data Received From Integrated Center Stack 
+U1491	Implausible Fuel Level 2 Signal Received 
+U1519	Implausible Data Received From Video Routing Module 
+U1601	ECU Application Software Code 1 Missing Or Corrupted 
+U3017	Control Module Timer/Clock Performance
 B038A	ISO/SAE Reserved
 B038B	ISO/SAE Reserved
 B038C	ISO/SAE Reserved
@@ -6567,7 +6686,206 @@ P3A00	ISO/SAE Reserved
 P3B00	ISO/SAE Reserved
 P3C00	ISO/SAE Reserved
 P3D00	ISO/SAE Reserved
-P3E00	ISO/SAE Reserved RAM B105C	Recirculation Door Travel Range Too Small RAM B105D	Recirculation Door Travel Range Too Large RAM B10B2	A/C Cool Down Test Performance RAM B11C3	Front Mode Door 1 Travel Range Too Small RAM B11C4	Front Mode Door 1 Travel Range Too Large RAM B11C6	Front Mode Door-2 Travel Range Too Small RAM B11C7	Front Mode Door-2 Travel Range Too Large RAM B11C9	Right Temperature Door Travel Too Small RAM B11CA	Right Temperature Door Travel Too Large RAM B11CC	Main/Left Temperature Door Travel Too Small RAM B11CD	Main/Left Temperature Door Travel Too Large RAM B11D3	A/C Cooldown Test Performance - Compressor Not Engaged RAM B11D5	A/C Cooldown Test Performance - EVAP Temp Sensor Error RAM B1423	VES DVD Read Error / Inoperable Disc RAM B1424	Improper DVD - Wrong Region RAM B142B	VES Unit High Temperature RAM B1431	Bluetooth Antenna Internal Performance RAM B1441	VES Eject Input Button Stuck RAM B1464	Channel 1 Audio Speaker Output Circuit Shorted Together RAM B1469	Channel 2 Audio Speaker Output Circuit Shorted Together RAM B146E	Channel 3 Audio Speaker Output Circuit Shorted Together RAM B1473	Channel 4 Audio Speaker Output Circuit Shorted Together RAM B1478	Channel 5 Audio Speaker Output - Circuit Shorted Together RAM B147D	Channel 6 Audio Speaker Output - Circuit Shorted Together RAM B1482	Channel 7 Audio Speaker Output Circuit Shorted Together RAM B1487	Channel 8 Audio Speaker Output - Circuit Shorted Together RAM B1488	Cabin EQ Mismatch Performance RAM B14DF	DVD Player Region Configuration Mismatch RAM B156D	Low Voltage Differential Signal LVDS Video Cable RAM B156F	WiFi Antenna RAM B157E	Touch Screen Locked RAM B1612	Panel Illumination Control RAM B17F3	Auto High Beam System Aim RAM B17FB	Auto High Beam Camera View Blocked RAM B18B5	Master Switch - Front Left Window Switch - Stuck RAM B18B6	Master Switch - Front Right Window Switch - Stuck RAM B18B7	Master Switch - Rear Left Window Switch - Stuck RAM B18B8	Master Switch - Rear Right Window Switch - Stuck RAM B1A08	RKE Fob 1 Performance RAM B1A09	RKE Fob 2 Performance RAM B1A0A	RKE Fob 3 Performance RAM B1A0B	RKE Fob 4 Performance RAM B1A0C	RKE Fob 5 Performance RAM B1A0D	RKE Fob 6 Performance RAM B1A0E	RKE Fob 7 Performance RAM B1A0F	RKE Fob 8 Performance RAM B1A10	RKE Fob 1 Battery Low RAM B1A11	RKE Fob 2 Battery Low RAM B1A12	RKE Fob 3 Battery Low RAM B1A13	RKE Fob 4 Battery Low RAM B1A14	RKE Fob 5 Battery Low RAM B1A15	RKE Fob 6 Battery Low RAM B1A16	RKE Fob 7 Battery Low RAM B1A17	RKE Fob 8 Battery Low RAM B1A24	Key Not Programmed RAM B1A25	Invalid Key RAM B1A28	ECM Mismatch With Skim RAM B1A35	Unidentified Key Communication Error RAM B1A8F	IGNM Photo Position Failure RAM B1D5B	Adjustable Pedal Switch Circuit Performance RAM B1D67	Adjustable Pedal Control Circuit Performance RAM B1D7B	Seat Horizontal Motor Control Circuit Performance RAM B1D7F	Seat Front Vertical Motor Control Circuit Performance RAM B1D83	Seat Rear Vertical Motor Control Circuit Performance RAM B1D87	Seat Backrest Motor Control - Circuit Performance RAM B1E64	Left Mirror Select Switch - Stuck RAM B1E65	Right Mirror Select Switch - Stuck RAM B1F07	Auxiliary Switch Bank Module Internal RAM B1F08	Terrain Switch Bank Module Internal RAM B210A	System Voltage Low RAM B210B	System Voltage High RAM B210D	Battery Voltage Low RAM B210E	Battery Voltage High RAM B2193	Intelligent Battery Sensor Internal RAM B21A1	ECU Reset/Recovery Occurred RAM B2204	ECU Configuration Mismatch RAM B2205	Original VIN Missing/Mismatch RAM B2206	Current VIN Missing / Mismatch RAM B2207	Occupant Restraint Controller Internal 1 RAM B2208	Occupant Restraint Controller Internal 2 RAM B220B	Occupant Restraint Controller Firing Stored Energy RAM B2211	Light Rain Sensor Module Initialization Performance RAM B2216	Central Gateway Internal RAM B221A	(HSM) Heated Seat Module Internal RAM B221D	Rain Sensor Module (RSM) Internal RAM B221E	Radio Internal RAM B221F	Amplifier Internal RAM B222A	Vehicle Line Mismatch RAM B222B	Vehicle Entertainment System Internal RAM B222C	Vehicle Configuration Not Programmed RAM B222D	ECU Unable To Configure/Configuration Not Learned RAM B2232	(PTS) Parktronics Internal RAM B2233	(PTS) Parktronics Front Display 1 Internal RAM B2234	(PTS) Parktronics Rear Display 1 Internal RAM B223A	Auto High Beam ECU Internal RAM B223B	Vehicle Configuration Mismatch RAM B2255	Occupant Restraint Controller Roll Over Feature Disable RAM B225C	Compass Module Internal RAM B2298	Rain Sensor Over Temperature RAM B2299	Rear Camera Module Internal RAM B22A9	ECU Internal Performance RAM B232E	Rear Washer Switch — Stuck RAM B235A	ECU In-Plant Mode RAM B23AA	Implausible Data Received From Rain Sensor RAM B25A9	Front Driver Door Handle Sense RAM B25AA	Front Passenger Door Handle Sense RAM B2722	ORC Unlocked - All Deployment Disabled RAM B273F	Airbag Signal Test Failed RAM B275B	Airbag Telltale RAM B280B	NTSC Video Input RAM B2854	Implausible Data Received From AHBM RAM C1078	Tire Revolutions Range Performance RAM C10C7	Electronic Trailer Brake Control Output RAM C10C9	Elctronic Trailer Brake Manual Lever Failsafe Circuit RAM C10CC	ESC Sensors RAM C1219	Steering Angle Sensor Erratic Performance RAM C121A	Steering Angle Sensor Not Initialized RAM C121C	Torque Request Signal Denied RAM C1239	Emission Rolls Test Active RAM C123F	Steering Angle Sensor Comparative Performance RAM C1241	Steering Angle Sensor Velocity Performance RAM C1400	Transfer Case Range Select Switch RAM C1404	Transfer Case Range Position Sensor Circuit Low RAM C1405	Transfer Case Range Position Sensor Circuit High RAM C1407	Transfer Case Brake Control Circuit Low RAM C1408	Transfer Case Brake Control Circuit High RAM C140A	Transfer Case Motor Performance RAM C140D	Transfer Case Motor Control Circuit Open RAM C140E	Transfer Case Motor Blocked RAM C1415	Transfer Case Motor Current Performance RAM C1444	Transfer Case Motor Overuse RAM C1456	AWD Clutch Power Control Circuit Low RAM C1457	AWD Clutch Power Control Circuit High RAM C145D	AWD Clutch Power /Return Control Circuit Open RAM C1464	Front Axle Disconnect Control Circuit Low RAM C1465	Front Axle Disconnect Control Circuit High RAM C1472	Transfer Case Clutch Control Circuit Performance RAM C1477	Transfer Case Clutch Over Temperature RAM C147B	Front Axle Disconnect Sensor Circuit Performance RAM C147C	Front Axle Disconnect Power Circuit Low RAM C147D	Front Axle Disconnect Power Supply Circuit High RAM C1480	Transfer Case Range Digital Position Sensor Performance RAM C151C	Tire Pressure Sensors Missing RAM C151D	Tire Pressure Sensor Location Undetermined RAM C156E	Ride Height System Calibration Performance RAM C1570	Duplicate Tire Pressure Sensor Ids RAM C1597	TPM System Deactivated - Winter Mode RAM C15A1	Unable To Obtain Desired Ride Height RAM C15CB	Front Axle Tire Pressure Placard Value Implausible RAM C15CC	Rear Axle Tire Pressure Placard Value Implausible RAM C15D6	Run Flat Tire Pressure Below Threshold RAM C15D9	Low Air Mass RAM C15DA	Payload Limit Exceeded RAM C2100	Battery Voltage Low RAM C2101	Battery Voltage High RAM C2111	Sensor Supply 1 Voltage Circuit Low RAM C2112	Sensor Supply 1 Voltage Circuit High RAM C2201	FDCM/DTCM Internal RAM C2202	Original VIN Mismatch / Missing RAM C2205	Steering Angle Sensor Internal RAM C2206	Vehicle Configuration Mismatch RAM C220C	Active Suspension Module Internal RAM C2212	ECU In-Plant Mode RAM C2213	Trailer Brake Module Internal RAM C2214	ITBM Not Calibrated RAM C221C	ECU Flash Required RAM P1004	Short Runner Valve Control Performance RAM P1115	General Temperature Rationality RAM P1123	PTO System Performance RAM P1128	Closed Loop Fueling Not Achieved - Bank 1 Upstream RAM P1129	Closed Loop Fueling Not Achieved - Bank 2 Upstream RAM P113D	O2 Sensor 1/1 Slow Response (High Frequency) RAM P113E	O2 Sensor 2/1 Slow Response (High Frequency) RAM P1191	Inlet Air Temperature Sensor Rational/Performance RAM P1192	Inlet Air Temperature Sensor Circuit Low RAM P1193	Inlet Air Temperature Sensor Circuit High RAM P11CB	NOx Sensor Performance - Signal High Bank 1 Sensor 1 RAM P1207	Generator 2 Control Circuit Open RAM P1208	Generator 2 Control Circuit Short To Ground RAM P1209	Generator 2 Control Circuit Short To Battery RAM P1210	Generator 2 Control Circuit Performance RAM P1211	Generator 2 Control Circuit Erratic RAM P1239	Engine Oil Temperature Too Low RAM P1240	Generator 2 Voltage Sensor Circuit Short To Ground RAM P1241	Generator 2 Voltage Sensor Circuit Short To Battery RAM P1242	Generator 2 System Performance RAM P125A	Power Enable Control Circuit Low RAM P1300	Crankshaft Position Learn Out Of Range RAM P1404	EGR Close Position Performance RAM P1411	Cylinder 1 Reactivation Control Performance RAM P1414	Cylinder 4 Reactivation Control Performance RAM P1416	Cylinder 6 Reactivation Control Performance RAM P1417	Cylinder 7 Reactivation Control Performance RAM P1451	Diesel Particulate Filter System Performance RAM P1456	Fuel Tank Pressure Sensor Circuit Low RAM P1457	Fuel Tank Pressure Sensor Circuit High RAM P1473	Intake Air Diverter Valve Circuit Shorted To Ground RAM P1474	Intake Air Diverter Valve Circuit Shorted To Battery RAM P1475	Intake Air Diverter Valve Out Of Calibration/ Missing Calibration
+P3E00	ISO/SAE Reserved 
+B105C	Recirculation Door Travel Range Too Small 
+B105D	Recirculation Door Travel Range Too Large 
+B10B2	A/C Cool Down Test Performance 
+B11C3	Front Mode Door 1 Travel Range Too Small 
+B11C4	Front Mode Door 1 Travel Range Too Large 
+B11C6	Front Mode Door-2 Travel Range Too Small 
+B11C7	Front Mode Door-2 Travel Range Too Large 
+B11C9	Right Temperature Door Travel Too Small 
+B11CA	Right Temperature Door Travel Too Large 
+B11CC	Main/Left Temperature Door Travel Too Small 
+B11CD	Main/Left Temperature Door Travel Too Large 
+B11D3	A/C Cooldown Test Performance - Compressor Not Engaged 
+B11D5	A/C Cooldown Test Performance - EVAP Temp Sensor Error 
+B1423	VES DVD Read Error / Inoperable Disc 
+B1424	Improper DVD - Wrong Region 
+B142B	VES Unit High Temperature 
+B1431	Bluetooth Antenna Internal Performance 
+B1441	VES Eject Input Button Stuck 
+B1464	Channel 1 Audio Speaker Output Circuit Shorted Together 
+B1469	Channel 2 Audio Speaker Output Circuit Shorted Together 
+B146E	Channel 3 Audio Speaker Output Circuit Shorted Together 
+B1473	Channel 4 Audio Speaker Output Circuit Shorted Together 
+B1478	Channel 5 Audio Speaker Output - Circuit Shorted Together 
+B147D	Channel 6 Audio Speaker Output - Circuit Shorted Together 
+B1482	Channel 7 Audio Speaker Output Circuit Shorted Together 
+B1487	Channel 8 Audio Speaker Output - Circuit Shorted Together 
+B1488	Cabin EQ Mismatch Performance 
+B14DF	DVD Player Region Configuration Mismatch 
+B156D	Low Voltage Differential Signal LVDS Video Cable 
+B156F	WiFi Antenna 
+B157E	Touch Screen Locked 
+B1612	Panel Illumination Control 
+B17F3	Auto High Beam System Aim 
+B17FB	Auto High Beam Camera View Blocked 
+B18B5	Master Switch - Front Left Window Switch - Stuck 
+B18B6	Master Switch - Front Right Window Switch - Stuck 
+B18B7	Master Switch - Rear Left Window Switch - Stuck 
+B18B8	Master Switch - Rear Right Window Switch - Stuck 
+B1A08	RKE Fob 1 Performance 
+B1A09	RKE Fob 2 Performance 
+B1A0A	RKE Fob 3 Performance 
+B1A0B	RKE Fob 4 Performance 
+B1A0C	RKE Fob 5 Performance 
+B1A0D	RKE Fob 6 Performance 
+B1A0E	RKE Fob 7 Performance 
+B1A0F	RKE Fob 8 Performance 
+B1A10	RKE Fob 1 Battery Low 
+B1A11	RKE Fob 2 Battery Low 
+B1A12	RKE Fob 3 Battery Low 
+B1A13	RKE Fob 4 Battery Low 
+B1A14	RKE Fob 5 Battery Low 
+B1A15	RKE Fob 6 Battery Low 
+B1A16	RKE Fob 7 Battery Low 
+B1A17	RKE Fob 8 Battery Low 
+B1A24	Key Not Programmed 
+B1A25	Invalid Key 
+B1A28	ECM Mismatch With Skim 
+B1A35	Unidentified Key Communication Error 
+B1A8F	IGNM Photo Position Failure 
+B1D5B	Adjustable Pedal Switch Circuit Performance 
+B1D67	Adjustable Pedal Control Circuit Performance 
+B1D7B	Seat Horizontal Motor Control Circuit Performance 
+B1D7F	Seat Front Vertical Motor Control Circuit Performance 
+B1D83	Seat Rear Vertical Motor Control Circuit Performance 
+B1D87	Seat Backrest Motor Control - Circuit Performance 
+B1E64	Left Mirror Select Switch - Stuck 
+B1E65	Right Mirror Select Switch - Stuck 
+B1F07	Auxiliary Switch Bank Module Internal 
+B1F08	Terrain Switch Bank Module Internal 
+B210A	System Voltage Low 
+B210B	System Voltage High 
+B210D	Battery Voltage Low 
+B210E	Battery Voltage High 
+B2193	Intelligent Battery Sensor Internal 
+B21A1	ECU Reset/Recovery Occurred 
+B2204	ECU Configuration Mismatch 
+B2205	Original VIN Missing/Mismatch 
+B2206	Current VIN Missing / Mismatch 
+B2207	Occupant Restraint Controller Internal 1 
+B2208	Occupant Restraint Controller Internal 2 
+B220B	Occupant Restraint Controller Firing Stored Energy 
+B2211	Light Rain Sensor Module Initialization Performance 
+B2216	Central Gateway Internal 
+B221A	(HSM) Heated Seat Module Internal 
+B221D	Rain Sensor Module (RSM) Internal 
+B221E	Radio Internal 
+B221F	Amplifier Internal 
+B222A	Vehicle Line Mismatch 
+B222B	Vehicle Entertainment System Internal 
+B222C	Vehicle Configuration Not Programmed 
+B222D	ECU Unable To Configure/Configuration Not Learned 
+B2232	(PTS) Parktronics Internal 
+B2233	(PTS) Parktronics Front Display 1 Internal 
+B2234	(PTS) Parktronics Rear Display 1 Internal 
+B223A	Auto High Beam ECU Internal 
+B223B	Vehicle Configuration Mismatch 
+B2255	Occupant Restraint Controller Roll Over Feature Disable 
+B225C	Compass Module Internal 
+B2298	Rain Sensor Over Temperature 
+B2299	Rear Camera Module Internal 
+B22A9	ECU Internal Performance 
+B232E	Rear Washer Switch — Stuck 
+B235A	ECU In-Plant Mode 
+B23AA	Implausible Data Received From Rain Sensor 
+B25A9	Front Driver Door Handle Sense 
+B25AA	Front Passenger Door Handle Sense 
+B2722	ORC Unlocked - All Deployment Disabled 
+B273F	Airbag Signal Test Failed 
+B275B	Airbag Telltale 
+B280B	NTSC Video Input 
+B2854	Implausible Data Received From AHBM 
+C1078	Tire Revolutions Range Performance 
+C10C7	Electronic Trailer Brake Control Output 
+C10C9	Elctronic Trailer Brake Manual Lever Failsafe Circuit 
+C10CC	ESC Sensors 
+C1219	Steering Angle Sensor Erratic Performance 
+C121A	Steering Angle Sensor Not Initialized 
+C121C	Torque Request Signal Denied 
+C1239	Emission Rolls Test Active 
+C123F	Steering Angle Sensor Comparative Performance 
+C1241	Steering Angle Sensor Velocity Performance 
+C1400	Transfer Case Range Select Switch 
+C1404	Transfer Case Range Position Sensor Circuit Low 
+C1405	Transfer Case Range Position Sensor Circuit High 
+C1407	Transfer Case Brake Control Circuit Low 
+C1408	Transfer Case Brake Control Circuit High 
+C140A	Transfer Case Motor Performance 
+C140D	Transfer Case Motor Control Circuit Open 
+C140E	Transfer Case Motor Blocked 
+C1415	Transfer Case Motor Current Performance 
+C1444	Transfer Case Motor Overuse 
+C1456	AWD Clutch Power Control Circuit Low 
+C1457	AWD Clutch Power Control Circuit High 
+C145D	AWD Clutch Power /Return Control Circuit Open 
+C1464	Front Axle Disconnect Control Circuit Low 
+C1465	Front Axle Disconnect Control Circuit High 
+C1472	Transfer Case Clutch Control Circuit Performance 
+C1477	Transfer Case Clutch Over Temperature 
+C147B	Front Axle Disconnect Sensor Circuit Performance 
+C147C	Front Axle Disconnect Power Circuit Low 
+C147D	Front Axle Disconnect Power Supply Circuit High 
+C1480	Transfer Case Range Digital Position Sensor Performance 
+C151C	Tire Pressure Sensors Missing 
+C151D	Tire Pressure Sensor Location Undetermined 
+C156E	Ride Height System Calibration Performance 
+C1570	Duplicate Tire Pressure Sensor Ids 
+C1597	TPM System Deactivated - Winter Mode 
+C15A1	Unable To Obtain Desired Ride Height 
+C15CB	Front Axle Tire Pressure Placard Value Implausible 
+C15CC	Rear Axle Tire Pressure Placard Value Implausible 
+C15D6	Run Flat Tire Pressure Below Threshold 
+C15D9	Low Air Mass 
+C15DA	Payload Limit Exceeded 
+C2100	Battery Voltage Low 
+C2101	Battery Voltage High 
+C2111	Sensor Supply 1 Voltage Circuit Low 
+C2112	Sensor Supply 1 Voltage Circuit High 
+C2201	FDCM/DTCM Internal 
+C2202	Original VIN Mismatch / Missing 
+C2205	Steering Angle Sensor Internal 
+C2206	Vehicle Configuration Mismatch 
+C220C	Active Suspension Module Internal 
+C2212	ECU In-Plant Mode 
+C2213	Trailer Brake Module Internal 
+C2214	ITBM Not Calibrated 
+C221C	ECU Flash Required 
+P1004	Short Runner Valve Control Performance 
+P1115	General Temperature Rationality 
+P1123	PTO System Performance 
+P1128	Closed Loop Fueling Not Achieved - Bank 1 Upstream 
+P1129	Closed Loop Fueling Not Achieved - Bank 2 Upstream 
+P113D	O2 Sensor 1/1 Slow Response (High Frequency) 
+P113E	O2 Sensor 2/1 Slow Response (High Frequency) 
+P1191	Inlet Air Temperature Sensor Rational/Performance 
+P1192	Inlet Air Temperature Sensor Circuit Low 
+P1193	Inlet Air Temperature Sensor Circuit High 
+P11CB	NOx Sensor Performance - Signal High Bank 1 Sensor 1 
+P1207	Generator 2 Control Circuit Open 
+P1208	Generator 2 Control Circuit Short To Ground 
+P1209	Generator 2 Control Circuit Short To Battery 
+P1210	Generator 2 Control Circuit Performance 
+P1211	Generator 2 Control Circuit Erratic 
+P1239	Engine Oil Temperature Too Low 
+P1240	Generator 2 Voltage Sensor Circuit Short To Ground 
+P1241	Generator 2 Voltage Sensor Circuit Short To Battery 
+P1242	Generator 2 System Performance 
+P125A	Power Enable Control Circuit Low 
+P1300	Crankshaft Position Learn Out Of Range 
+P1404	EGR Close Position Performance 
+P1411	Cylinder 1 Reactivation Control Performance 
+P1414	Cylinder 4 Reactivation Control Performance 
+P1416	Cylinder 6 Reactivation Control Performance 
+P1417	Cylinder 7 Reactivation Control Performance 
+P1451	Diesel Particulate Filter System Performance 
+P1456	Fuel Tank Pressure Sensor Circuit Low 
+P1457	Fuel Tank Pressure Sensor Circuit High 
+P1473	Intake Air Diverter Valve Circuit Shorted To Ground 
+P1474	Intake Air Diverter Valve Circuit Shorted To Battery 
+P1475	Intake Air Diverter Valve Out Of Calibration/ Missing Calibration
 Received"
 U0000	ISO/SAE Reserved
 U0001	High Speed CAN Communication Bus

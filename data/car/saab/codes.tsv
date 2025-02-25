@@ -629,7 +629,146 @@ B0387	ISO/SAE Reserved
 B0388	ISO/SAE Reserved
 B0389	ISO/SAE Reserved
 B038A	ISO/SAE Reserved
-B038B	ISO/SAE Reserved Saab P1451	EVAP System Fuel Level Sensor Failure and Pressure Sensor Performance Problem Saab P1452	EVAP System Tank Pressure Sensor Value Low Saab P1453	EVAP System Tank Pressure Sensor Value High Saab P1455	EVAP System Fuel Level Sensor Failure and Gross Leak Detected Saab P1456	EVAP System Fuel Level Sensor Failure and Very Small Leak Detected Saab P1491	Positive Crankcase Ventilation (Blow-By) Function Problem Saab P1492	EGR Solenoid Valve Signal 1 Circuit Low Input Saab P1493	EGR Solenoid Valve Signal 1 Circuit High Input Saab P1494	EGR Solenoid Valve Signal 2 Circuit Low Input Saab P1495	EGR Solenoid Valve Signal 2 Circuit High Input Saab P1496	EGR Solenoid Valve Signal 3 Circuit Low Input Saab P1497	EGR Solenoid Valve Signal 3 Circuit High Input Saab P1498	EGR Solenoid Valve Signal 4 Circuit Low Input Saab P1499	EGR Solenoid Valve Signal 4 Circuit High Input Saab P150A	Transmission Output Speed Signal Circuit Saab P150B	Transmission Output Speed Sensor Circuit Intermittent Saab P1510	ISC Solenoid Valve Signal No. 1 Circuit Malfunction (low input) Saab P1511	ISC Solenoid Valve Signal No. 1 Circuit Malfunction (high input) Saab P1512	ISC Solenoid Valve Signal No. 2 Circuit Malfunction (low input) Saab P1513	ISC Solenoid Valve Signal No. 2 Circuit Malfunction (high input) Saab P1514	ISC Solenoid Valve Signal No. 3 Circuit Malfunction (low input) Saab P1515	ISC Solenoid Valve Signal No. 3 Circuit Malfunction (high input) Saab P1516	Throttle Actuator Control (TAC) Module Throttle Actuator Position Performance Saab P1517	ISC Solenoid Valve Signal No. 4 Circuit Malfunction (high input) Saab P1518	Starter Switch Circuit Low Input Saab P1523	A/C Pressure Sensor Circuit Open/Short to Ground Saab P1530	Pedal Position Sensor 1 and 2 Circuit Sum Out of Range Saab P1531	Pedal Position Sensor 1 and 2 Circuit Adapted Sum Out of Range Saab P1532	Pedal Position Sensor 1 and 2 Circuit Control Module Inputs Shorted to Each Other Saab P1544	Exhaust Gas Temperature To High Saab P1549	Charge Air Malfunction Saab P1551	Throttle Valve Rest Position Not Reached During Learn Saab P1560	Back-Up Voltage Circuit Malfunction Saab P1570	Antenna Incorrect Immobilizer Key Saab P1572	IMM Circuit Failure (Except Antenna Circuit) Saab P1574	Key Communication Failure Saab P1576	Brake Light Switch Circuit Open / Short to B+ Saab P1577	Brake Light Switch Circuit Short to Ground Saab P1585	Cruise Control Inhibit Output Circuit Malfunction Saab P1601	Internal Control Module Malfunction Saab P1602	Internal Control Module Malfunction Saab P1603	Internal Control Module Malfunction Saab P1604	Internal Control Module Malfunction Saab P1605	Internal Control Module Malfunction Saab P1606	Control Module Internal Fault Saab P1608	Internal Control Module Malfunction Saab P1609	Internal Control Module Malfunction Saab P1610	ECU Internal Fault Security Function Disable Saab P1611	Control Module Not Added Saab P1613	Control Module Not Added or Missing on Bus Saab P1614	Control Module Not Added Saab P1615	Control Module Not Added Saab P1616	Control Module or I Bus ECU Not Added Saab P1619	ECU Attributes Not Programmed/Internal Fault Saab P1621	Internal Control Module Malfunction Saab P1622	Internal Control Module Malfunction Saab P1623	Transmission Control Module Missing on Bus Saab P1624	Control Module Missing on Bus Saab P1625	Traction Control Module Missing on Bus Saab P1629	Control Module Not Added or Missing on Bus Saab P1631	Internal Control Module Malfunction Saab P1632	Internal Control Module Malfunction Saab P1640	Main Relay Circuit No Voltage to Control Module Saab P1641	Fuel Pump Relay No Voltage to Fuel Pump Saab P1648	Control Module Missing on Bus Saab P1652	Main Relay Coil Circuit Open / Short to Ground Saab P1653	Main Relay Coil Circuit Short to B+ Saab P1654	Fuel Pump Relay Coil Circuit Open / Short to Ground Saab P1655	Fuel Pump Relay Coil Circuit Short to B+ Saab P1656	A/C Relay Coil Circuit Open / Short to Ground Saab P1657	A/C Relay Coil Circuit Short to B+ Saab P1658	Charge Air Bypass Valve Circuit Open / Short to Ground Saab P1659	Charge Air Bypass Valve Circuit Short to B+ Saab P1662	Charge Air Control Valve Circuit Open / Short to Ground Saab P1663	Charge Air Control Valve Circuit Short to B+ Saab P1670	Limp-Home Relay Open Circuit or Short to Ground Saab P1671	Limp-Home Relay Short to B+ Saab P1676	Injector Circuit Open / Short to Ground or B+ Saab P1677	Control Module Internal Fault Saab P1678	Control Module Not Added Saab P1679	Control Module Not Added Saab P1680	Control Module Internal Fault Saab P1681	Control Module Internal Fault Saab P1682	Ignition 1 Switch Circuit Saab P1698	Engine Torque Control Cut Signal Circuit Malfunction (Low Input) Saab P1699	Engine Torque Control Cut Signal Circuit Malfunction (High Input) Saab P1700	Throttle Position Sensor Circuit Malfunction Saab P1706	Vehicle Speed Sensor Circuit (Rear Wheels) Saab P1707	AWD Solenoid Valve Circuit Saab P1708	Throttle Position Circuit (Low Input) Saab P1709	Throttle Position Circuit (High Input) Saab P1710	Torque Converter Turbine 2 Speed Signal Circuit Saab P1711	Engine Torque Control Signal #1 Circuit Malfunction Saab P1712	Engine Torque Control Signal #2 Circuit Malfunction Saab P1762	Transmission Mode Switch Signal Circuit Saab P1810	TFP Valve Position Switch Assembly Saab P1815	Transmission Fluid Pressure (TFP) Valve Position Switch - Start in Wrong Range Saab P1816	Transmission Fluid Pressure (TFP) Valve Position Switch Indicates Park/Neutral (P/N) with Drive Ratio Saab P1817	Sport Mode Manual Switch Circuit (Manual Switch) Saab P1818	Transmission Fluid Pressure (TFP) Valve Position Switch Indicates Drive without Drive Ratio Saab P182A	Internal Mode Switch A Circuit Low Voltage Saab P182C	Internal Mode Switch B Circuit High Voltage Saab P182D	Internal Mode Switch P Circuit Low Voltage Saab P182E	Internal Mode Switch - Invalid Range Saab P182F	Internal Mode Switch C Circuit High Voltage Saab P1840	Transmission Fluid Pressure Sensor/Switch A Circuit Saab P1841	Transmission Fluid Pressure Sensor/Switch B Circuit Saab P1842	Transmission Fluid Pressure Sensor/Switch C Circuit Saab P1843	Transmission Fluid Pressure Sensor/Switch D Circuit Saab P1844	Transmission Fluid Pressure Sensor/Switch E Circuit Saab P1860	TCM PWM Solenoid Circuit Malfunction Saab P1870	Transmission Component Slipping Saab P1875	4WD Low Switch Circuit Fault Saab P1915	Internal Mode Switch Does Not Indicate Park/Neutral (P/N) During Start Saab P3400	Cylinder Deactivation System Performance Saab P3401	Cylinder 1 Deactivation Solenoid Control Circuit Saab P3425	Cylinder 4 Deactivation Solenoid Control Circuit Saab P3441	Cylinder 6 Deactivation Solenoid Control Circuit Saab U1000	Class 2 Communication Malfunction Saab U1016	No Communication With Powertrain Control Module Saab U1026	Loss of ATC Class 2 Communication Saab U1041	Loss of Electronic Brake Controller Communication Saab U1064	No Communication With Body Control Module Saab U1088	No Communication With SDM (Restraint Module) Saab U1092	Loss of VTD (Pass Lock) Communication Saab U1096	No Communication With Instrument Panel Cluster Saab U1097	No Communication With Driver Information Center Saab U1151	No Communication With Vehicle Interface Unit Saab U1152	No Communication With HVAC Control Module Saab U1193	Loss of Vehicle Immobilizer Module Communications Saab U1241	Lost Communication With Scan Tool Saab U1255	Class 2 Communications Malfunction Saab U1300	Class 2 Circuit Short to Ground Saab U1301	Class 2 Circuit Short to Battery Saab U1305	Class 2 Data Link High or Low Saab U2100	Controller Area Network (CAN) Bus Communication Saab U2105	Lost Communications With Engine Control System Saab U2107	Lost Communications With Body Control System Saab U2108	Lost Communications With ABS/TCS Control System
+B038B	ISO/SAE Reserved 
+P1451	EVAP System Fuel Level Sensor Failure and Pressure Sensor Performance Problem 
+P1452	EVAP System Tank Pressure Sensor Value Low 
+P1453	EVAP System Tank Pressure Sensor Value High 
+P1455	EVAP System Fuel Level Sensor Failure and Gross Leak Detected 
+P1456	EVAP System Fuel Level Sensor Failure and Very Small Leak Detected 
+P1491	Positive Crankcase Ventilation (Blow-By) Function Problem 
+P1492	EGR Solenoid Valve Signal 1 Circuit Low Input 
+P1493	EGR Solenoid Valve Signal 1 Circuit High Input 
+P1494	EGR Solenoid Valve Signal 2 Circuit Low Input 
+P1495	EGR Solenoid Valve Signal 2 Circuit High Input 
+P1496	EGR Solenoid Valve Signal 3 Circuit Low Input 
+P1497	EGR Solenoid Valve Signal 3 Circuit High Input 
+P1498	EGR Solenoid Valve Signal 4 Circuit Low Input 
+P1499	EGR Solenoid Valve Signal 4 Circuit High Input 
+P150A	Transmission Output Speed Signal Circuit 
+P150B	Transmission Output Speed Sensor Circuit Intermittent 
+P1510	ISC Solenoid Valve Signal No. 1 Circuit Malfunction (low input) 
+P1511	ISC Solenoid Valve Signal No. 1 Circuit Malfunction (high input) 
+P1512	ISC Solenoid Valve Signal No. 2 Circuit Malfunction (low input) 
+P1513	ISC Solenoid Valve Signal No. 2 Circuit Malfunction (high input) 
+P1514	ISC Solenoid Valve Signal No. 3 Circuit Malfunction (low input) 
+P1515	ISC Solenoid Valve Signal No. 3 Circuit Malfunction (high input) 
+P1516	Throttle Actuator Control (TAC) Module Throttle Actuator Position Performance 
+P1517	ISC Solenoid Valve Signal No. 4 Circuit Malfunction (high input) 
+P1518	Starter Switch Circuit Low Input 
+P1523	A/C Pressure Sensor Circuit Open/Short to Ground 
+P1530	Pedal Position Sensor 1 and 2 Circuit Sum Out of Range 
+P1531	Pedal Position Sensor 1 and 2 Circuit Adapted Sum Out of Range 
+P1532	Pedal Position Sensor 1 and 2 Circuit Control Module Inputs Shorted to Each Other 
+P1544	Exhaust Gas Temperature To High 
+P1549	Charge Air Malfunction 
+P1551	Throttle Valve Rest Position Not Reached During Learn 
+P1560	Back-Up Voltage Circuit Malfunction 
+P1570	Antenna Incorrect Immobilizer Key 
+P1572	IMM Circuit Failure (Except Antenna Circuit) 
+P1574	Key Communication Failure 
+P1576	Brake Light Switch Circuit Open / Short to B+ 
+P1577	Brake Light Switch Circuit Short to Ground 
+P1585	Cruise Control Inhibit Output Circuit Malfunction 
+P1601	Internal Control Module Malfunction 
+P1602	Internal Control Module Malfunction 
+P1603	Internal Control Module Malfunction 
+P1604	Internal Control Module Malfunction 
+P1605	Internal Control Module Malfunction 
+P1606	Control Module Internal Fault 
+P1608	Internal Control Module Malfunction 
+P1609	Internal Control Module Malfunction 
+P1610	ECU Internal Fault Security Function Disable 
+P1611	Control Module Not Added 
+P1613	Control Module Not Added or Missing on Bus 
+P1614	Control Module Not Added 
+P1615	Control Module Not Added 
+P1616	Control Module or I Bus ECU Not Added 
+P1619	ECU Attributes Not Programmed/Internal Fault 
+P1621	Internal Control Module Malfunction 
+P1622	Internal Control Module Malfunction 
+P1623	Transmission Control Module Missing on Bus 
+P1624	Control Module Missing on Bus 
+P1625	Traction Control Module Missing on Bus 
+P1629	Control Module Not Added or Missing on Bus 
+P1631	Internal Control Module Malfunction 
+P1632	Internal Control Module Malfunction 
+P1640	Main Relay Circuit No Voltage to Control Module 
+P1641	Fuel Pump Relay No Voltage to Fuel Pump 
+P1648	Control Module Missing on Bus 
+P1652	Main Relay Coil Circuit Open / Short to Ground 
+P1653	Main Relay Coil Circuit Short to B+ 
+P1654	Fuel Pump Relay Coil Circuit Open / Short to Ground 
+P1655	Fuel Pump Relay Coil Circuit Short to B+ 
+P1656	A/C Relay Coil Circuit Open / Short to Ground 
+P1657	A/C Relay Coil Circuit Short to B+ 
+P1658	Charge Air Bypass Valve Circuit Open / Short to Ground 
+P1659	Charge Air Bypass Valve Circuit Short to B+ 
+P1662	Charge Air Control Valve Circuit Open / Short to Ground 
+P1663	Charge Air Control Valve Circuit Short to B+ 
+P1670	Limp-Home Relay Open Circuit or Short to Ground 
+P1671	Limp-Home Relay Short to B+ 
+P1676	Injector Circuit Open / Short to Ground or B+ 
+P1677	Control Module Internal Fault 
+P1678	Control Module Not Added 
+P1679	Control Module Not Added 
+P1680	Control Module Internal Fault 
+P1681	Control Module Internal Fault 
+P1682	Ignition 1 Switch Circuit 
+P1698	Engine Torque Control Cut Signal Circuit Malfunction (Low Input) 
+P1699	Engine Torque Control Cut Signal Circuit Malfunction (High Input) 
+P1700	Throttle Position Sensor Circuit Malfunction 
+P1706	Vehicle Speed Sensor Circuit (Rear Wheels) 
+P1707	AWD Solenoid Valve Circuit 
+P1708	Throttle Position Circuit (Low Input) 
+P1709	Throttle Position Circuit (High Input) 
+P1710	Torque Converter Turbine 2 Speed Signal Circuit 
+P1711	Engine Torque Control Signal #1 Circuit Malfunction 
+P1712	Engine Torque Control Signal #2 Circuit Malfunction 
+P1762	Transmission Mode Switch Signal Circuit 
+P1810	TFP Valve Position Switch Assembly 
+P1815	Transmission Fluid Pressure (TFP) Valve Position Switch - Start in Wrong Range 
+P1816	Transmission Fluid Pressure (TFP) Valve Position Switch Indicates Park/Neutral (P/N) with Drive Ratio 
+P1817	Sport Mode Manual Switch Circuit (Manual Switch) 
+P1818	Transmission Fluid Pressure (TFP) Valve Position Switch Indicates Drive without Drive Ratio 
+P182A	Internal Mode Switch A Circuit Low Voltage 
+P182C	Internal Mode Switch B Circuit High Voltage 
+P182D	Internal Mode Switch P Circuit Low Voltage 
+P182E	Internal Mode Switch - Invalid Range 
+P182F	Internal Mode Switch C Circuit High Voltage 
+P1840	Transmission Fluid Pressure Sensor/Switch A Circuit 
+P1841	Transmission Fluid Pressure Sensor/Switch B Circuit 
+P1842	Transmission Fluid Pressure Sensor/Switch C Circuit 
+P1843	Transmission Fluid Pressure Sensor/Switch D Circuit 
+P1844	Transmission Fluid Pressure Sensor/Switch E Circuit 
+P1860	TCM PWM Solenoid Circuit Malfunction 
+P1870	Transmission Component Slipping 
+P1875	4WD Low Switch Circuit Fault 
+P1915	Internal Mode Switch Does Not Indicate Park/Neutral (P/N) During Start 
+P3400	Cylinder Deactivation System Performance 
+P3401	Cylinder 1 Deactivation Solenoid Control Circuit 
+P3425	Cylinder 4 Deactivation Solenoid Control Circuit 
+P3441	Cylinder 6 Deactivation Solenoid Control Circuit 
+U1000	Class 2 Communication Malfunction 
+U1016	No Communication With Powertrain Control Module 
+U1026	Loss of ATC Class 2 Communication 
+U1041	Loss of Electronic Brake Controller Communication 
+U1064	No Communication With Body Control Module 
+U1088	No Communication With SDM (Restraint Module) 
+U1092	Loss of VTD (Pass Lock) Communication 
+U1096	No Communication With Instrument Panel Cluster 
+U1097	No Communication With Driver Information Center 
+U1151	No Communication With Vehicle Interface Unit 
+U1152	No Communication With HVAC Control Module 
+U1193	Loss of Vehicle Immobilizer Module Communications 
+U1241	Lost Communication With Scan Tool 
+U1255	Class 2 Communications Malfunction 
+U1300	Class 2 Circuit Short to Ground 
+U1301	Class 2 Circuit Short to Battery 
+U1305	Class 2 Data Link High or Low 
+U2100	Controller Area Network (CAN) Bus Communication 
+U2105	Lost Communications With Engine Control System 
+U2107	Lost Communications With Body Control System 
+U2108	Lost Communications With ABS/TCS Control System
 B038C	ISO/SAE Reserved
 B038D	ISO/SAE Reserved
 B038E	ISO/SAE Reserved
@@ -6407,7 +6546,122 @@ P3A00	ISO/SAE Reserved
 P3B00	ISO/SAE Reserved
 P3C00	ISO/SAE Reserved
 P3D00	ISO/SAE Reserved
-P3E00	ISO/SAE Reserved Saab B1000	Electronic Control Unit (ECU) Performance Saab B1017	Output Driver Module Performance Saab B1390	Device Voltage Reference Input 1 Circuit Saab B1397	Device Voltage Reference Output Circuit Low Saab B1487	Generator L-Terminal Circuit Low Saab B1488	Generator L-Terminal Circuit High Saab B1492	Generator F-Terminal Circuit Low Saab B1516	Battery Current Sensor Performance Saab B1530	Discard Passenger Presence System 1 Saab B1550	Mirror LF/RF Select Switch Circuit Saab B1720	Mirror Up and Down Control Switch Circuit Saab B1721	Mirror Left and Right Control Switch Circuit Saab B1723	Mirror Motor Control Circuit 1 Performance Saab B1724	Mirror Motor Control Circuit 2 Performance Saab B1735	Driver Seat Front Up Switch Circuit Malfunction Saab B1740	Driver Seat Front Down Switch Circuit Malfunction Saab B1745	Driver Seat Rear Up Switch Circuit Malfunction Saab B1750	Driver Seat Rear Down Switch Circuit Malfunction Saab B1755	Driver Seat Assembly Forward Switch Circuit Malfunction Saab B1760	Driver Seat Assembly Rearward Switch Circuit Malfunction Saab B1815	Driver Seat Recline Forward Switch Circuit Malfunction Saab B1820	Driver Seat Recline Rearward Switch Circuit Malfunction Saab B1825	Driver Seat Recline Position Sensor Circuit Saab B1830	Driver Seat Lumbar Forward Switch Circuit Saab B1835	Driver Seat Lumbar Rearward Switch Circuit Saab B1850	Driver Seat Lumbar Horizontal Position Sensor Circuit Saab B2355	Driver Seat Front Vertical Position Sensor Circuit Saab B2365	Driver Seat Rear Vertical Position Sensor Circuit Saab B2375	Driver Seat Horizontal Position Sensor Circuit Saab B2425	Driver Seat Heater Circuit Saab B2430	Passenger Seat Heater Circuit Saab B2435	Driver Seat Back Heater Sensor Circuit Saab B2440	Passenger Seat Back Heater Sensor Circuit Saab B2485	Wireless Communication Antenna Circuit (Bluetooth) Saab B2815	Steering Wheel Controls Illegal Resistance Value Saab B2947	Security System Sensor Power Circuit Low Saab B2948	Security System Sensor Power Circuit High Saab B2955	Security System Sensor Data Circuit Saab B2960	Security System Sensor Data Incorrect but Valid Saab P1086	Tumble Generated Valve Position Sensor Circuit Low Saab P1087	Tumble Generated Valve Position Sensor Circuit High Saab P1088	Tumble Generated Valve Position Sensor Circuit Low Saab P1090	Tumble Generated Valve System 1 (valve open) Saab P1092	Tumble Generated Valve System 2 (valve open) Saab P1094	Tumble Generated Valve Signal 1 Circuit Malfunction Saab P1095	Tumble Generated Valve Signal 1 Circuit Malfunction (short) Saab P1096	Tumble Generated Valve Signal 2 Circuit Malfunction (open) Saab P1097	Tumble Generated Valve Signal 2 Circuit Malfunction (short) Saab P1101	Intake Air Flow System Performance Saab P1105	Charge Air Absolute Pressure Sensor Circuit Performance Problem Saab P1106	Charge Air Absolute Pressure Sensor Circuit Performance Problem Saab P1107	Charge Air Absolute Pressure Sensor Circuit Short to Ground / Open Saab P1108	Charge Air Absolute Pressure Sensor Circuit Short to B+ Saab P1110	Charge Air Bypass Valve Performance Problems Saab P1131	O2 Sensor Circuit Lean Saab P1132	O2 Sensor Circuit Rich Saab P1133	HO2S Insufficient Switching Sensor 1 Saab P1134	A/F Sensor Micro-Computer Problem Saab P1135	02S Heater Circuit Current Low Saab P1136	O2S Heater Circuit Current High Saab P1137	O2S Low Voltage During Power Enrichment Saab P1141	O2S Heater Circuit Malfunction Saab P1142	O2S Heater Circuit Malfunction Saab P1152	O2 Sensor Circuit Range/Performance Low Saab P1153	O2 Sensor Circuit Range/Performance High Saab P1154	O2 Sensor Circuit Range/Performance Low Saab P1155	O2 Sensor Circuit Range/Performance High Saab P1160	Return Spring Failure Saab P1171	Short Term Fuel Trim Max Value Air/Fuel Lean Saab P1172	Short Term Fuel Trim Max Value Air/Fuel Rich Saab P1174	Fuel Trim Cylinder Balance Bank 1 Saab P1175	Fuel Trim Cylinder Balance Bank 2 Saab P1181	Long Term Fuel Trim Max Value Air/Fuel Lean Saab P1182	Long Term Fuel Trim Max Value Air/Fuel Lean Saab P1230	Throttle Position Sensor 1 and 2 Circuit Sum Out of Range Saab P1231	Throttle Position Sensor 1 and 2 Circuit Sum Out of Range (No Limp Home) Saab P1240	Throttle Motor Circuit Shorted Saab P1251	Throttle Motor Full Pulse Width Modulation in Closing Direction Saab P1252	Throttle Motor Full Pulse Width Modulation in Open Direction and No Motor Current Saab P1253	Throttle Motor Full Pulse Width Modulation in Open Direction During Cranking Saab P1260	Throttle Return Spring Too Low Force Saab P1261	Throttle Binding Saab P1263	Throttle Moved Manually When Engine Was Running Saab P1264	Throttle Open When Pedal Is Released Saab P1300	Misfire Detected (High Temperature Exhaust Gas) Saab P1301	Cylinder 1 Misfire Detected Saab P1302	Cylinder 2 Misfire Detected Saab P1303	Cylinder 3 Misfire Detected Saab P1304	Cylinder 4 Misfire Detected Saab P1310	Ignition Discharge Module Not Powered, Bank 1 Saab P1312	Combustion Detection Cylinder 1/2 Open Circuit / Short to B+ Saab P1334	Combustion Detection Cylinder 3/4 Open Circuit / Short to B+ Saab P1336	CKP Sensor System Variation Not Learned Saab P1362	ICM Control Circuit High Input Saab P1380	Misfire Detected, Rough Road Data Not Available Saab P1381	Misfire Detected - No Communication with Brake Control Module Saab P1390	Random Misfire Detected Catalyst Damaging Fuel Level Low Saab P1391	Cylinder 1 Misfire Detected Catalyst Damaging. Fuel Level Low Saab P1392	Cylinder 2 Misfire Detected Catalyst Damaging. Fuel Level Low Saab P1393	Cylinder 3 Misfire Detected Catalyst Damaging. Fuel Level Low Saab P1394	Cylinder 4 Misfire Detected Catalyst Damaging. Fuel Level Low Saab P1400	Cold Start Emission Reduction Control System Saab P1410	Secondary Air Injection System Switching Valve Stuck Open Saab P1415	Secondary Air Injection System (Bank 1) Malfunction Saab P1416	Secondary Air Injection System (Bank 2) Malfunction Saab P1418	Secondary Air Injection System Control Circuit Shorted Saab P1420	Fuel Tank Pressure Control Solenoid Valve Circuit High Saab P1441	EVAP Purge Valve Malfunction and Malfunctional Fuel Level Sensor Saab P1442	EVAP System, Fuel Level Sensor Failure and Small Leak Detected Saab P1443	Vent Control Solenoid Valve Function Problem Saab P1444	Canister Close Valve Circuit Open / Short to Ground Saab P1445	Canister Close Valve Circuit Open / Short to B+ Saab P1446	Fuel Tank Sensor Control Valve Circuit Low Saab P1447	Fuel Tank Sensor Control Valve Circuit High Saab P1448	Fuel Tank Sensor Control Valve Range/Performance
+P3E00	ISO/SAE Reserved 
+B1000	Electronic Control Unit (ECU) Performance 
+B1017	Output Driver Module Performance 
+B1390	Device Voltage Reference Input 1 Circuit 
+B1397	Device Voltage Reference Output Circuit Low 
+B1487	Generator L-Terminal Circuit Low 
+B1488	Generator L-Terminal Circuit High 
+B1492	Generator F-Terminal Circuit Low 
+B1516	Battery Current Sensor Performance 
+B1530	Discard Passenger Presence System 1 
+B1550	Mirror LF/RF Select Switch Circuit 
+B1720	Mirror Up and Down Control Switch Circuit 
+B1721	Mirror Left and Right Control Switch Circuit 
+B1723	Mirror Motor Control Circuit 1 Performance 
+B1724	Mirror Motor Control Circuit 2 Performance 
+B1735	Driver Seat Front Up Switch Circuit Malfunction 
+B1740	Driver Seat Front Down Switch Circuit Malfunction 
+B1745	Driver Seat Rear Up Switch Circuit Malfunction 
+B1750	Driver Seat Rear Down Switch Circuit Malfunction 
+B1755	Driver Seat Assembly Forward Switch Circuit Malfunction 
+B1760	Driver Seat Assembly Rearward Switch Circuit Malfunction 
+B1815	Driver Seat Recline Forward Switch Circuit Malfunction 
+B1820	Driver Seat Recline Rearward Switch Circuit Malfunction 
+B1825	Driver Seat Recline Position Sensor Circuit 
+B1830	Driver Seat Lumbar Forward Switch Circuit 
+B1835	Driver Seat Lumbar Rearward Switch Circuit 
+B1850	Driver Seat Lumbar Horizontal Position Sensor Circuit 
+B2355	Driver Seat Front Vertical Position Sensor Circuit 
+B2365	Driver Seat Rear Vertical Position Sensor Circuit 
+B2375	Driver Seat Horizontal Position Sensor Circuit 
+B2425	Driver Seat Heater Circuit 
+B2430	Passenger Seat Heater Circuit 
+B2435	Driver Seat Back Heater Sensor Circuit 
+B2440	Passenger Seat Back Heater Sensor Circuit 
+B2485	Wireless Communication Antenna Circuit (Bluetooth) 
+B2815	Steering Wheel Controls Illegal Resistance Value 
+B2947	Security System Sensor Power Circuit Low 
+B2948	Security System Sensor Power Circuit High 
+B2955	Security System Sensor Data Circuit 
+B2960	Security System Sensor Data Incorrect but Valid 
+P1086	Tumble Generated Valve Position Sensor Circuit Low 
+P1087	Tumble Generated Valve Position Sensor Circuit High 
+P1088	Tumble Generated Valve Position Sensor Circuit Low 
+P1090	Tumble Generated Valve System 1 (valve open) 
+P1092	Tumble Generated Valve System 2 (valve open) 
+P1094	Tumble Generated Valve Signal 1 Circuit Malfunction 
+P1095	Tumble Generated Valve Signal 1 Circuit Malfunction (short) 
+P1096	Tumble Generated Valve Signal 2 Circuit Malfunction (open) 
+P1097	Tumble Generated Valve Signal 2 Circuit Malfunction (short) 
+P1101	Intake Air Flow System Performance 
+P1105	Charge Air Absolute Pressure Sensor Circuit Performance Problem 
+P1106	Charge Air Absolute Pressure Sensor Circuit Performance Problem 
+P1107	Charge Air Absolute Pressure Sensor Circuit Short to Ground / Open 
+P1108	Charge Air Absolute Pressure Sensor Circuit Short to B+ 
+P1110	Charge Air Bypass Valve Performance Problems 
+P1131	O2 Sensor Circuit Lean 
+P1132	O2 Sensor Circuit Rich 
+P1133	HO2S Insufficient Switching Sensor 1 
+P1134	A/F Sensor Micro-Computer Problem 
+P1135	02S Heater Circuit Current Low 
+P1136	O2S Heater Circuit Current High 
+P1137	O2S Low Voltage During Power Enrichment 
+P1141	O2S Heater Circuit Malfunction 
+P1142	O2S Heater Circuit Malfunction 
+P1152	O2 Sensor Circuit Range/Performance Low 
+P1153	O2 Sensor Circuit Range/Performance High 
+P1154	O2 Sensor Circuit Range/Performance Low 
+P1155	O2 Sensor Circuit Range/Performance High 
+P1160	Return Spring Failure 
+P1171	Short Term Fuel Trim Max Value Air/Fuel Lean 
+P1172	Short Term Fuel Trim Max Value Air/Fuel Rich 
+P1174	Fuel Trim Cylinder Balance Bank 1 
+P1175	Fuel Trim Cylinder Balance Bank 2 
+P1181	Long Term Fuel Trim Max Value Air/Fuel Lean 
+P1182	Long Term Fuel Trim Max Value Air/Fuel Lean 
+P1230	Throttle Position Sensor 1 and 2 Circuit Sum Out of Range 
+P1231	Throttle Position Sensor 1 and 2 Circuit Sum Out of Range (No Limp Home) 
+P1240	Throttle Motor Circuit Shorted 
+P1251	Throttle Motor Full Pulse Width Modulation in Closing Direction 
+P1252	Throttle Motor Full Pulse Width Modulation in Open Direction and No Motor Current 
+P1253	Throttle Motor Full Pulse Width Modulation in Open Direction During Cranking 
+P1260	Throttle Return Spring Too Low Force 
+P1261	Throttle Binding 
+P1263	Throttle Moved Manually When Engine Was Running 
+P1264	Throttle Open When Pedal Is Released 
+P1300	Misfire Detected (High Temperature Exhaust Gas) 
+P1301	Cylinder 1 Misfire Detected 
+P1302	Cylinder 2 Misfire Detected 
+P1303	Cylinder 3 Misfire Detected 
+P1304	Cylinder 4 Misfire Detected 
+P1310	Ignition Discharge Module Not Powered, Bank 1 
+P1312	Combustion Detection Cylinder 1/2 Open Circuit / Short to B+ 
+P1334	Combustion Detection Cylinder 3/4 Open Circuit / Short to B+ 
+P1336	CKP Sensor System Variation Not Learned 
+P1362	ICM Control Circuit High Input 
+P1380	Misfire Detected, Rough Road Data Not Available 
+P1381	Misfire Detected - No Communication with Brake Control Module 
+P1390	Random Misfire Detected Catalyst Damaging Fuel Level Low 
+P1391	Cylinder 1 Misfire Detected Catalyst Damaging. Fuel Level Low 
+P1392	Cylinder 2 Misfire Detected Catalyst Damaging. Fuel Level Low 
+P1393	Cylinder 3 Misfire Detected Catalyst Damaging. Fuel Level Low 
+P1394	Cylinder 4 Misfire Detected Catalyst Damaging. Fuel Level Low 
+P1400	Cold Start Emission Reduction Control System 
+P1410	Secondary Air Injection System Switching Valve Stuck Open 
+P1415	Secondary Air Injection System (Bank 1) Malfunction 
+P1416	Secondary Air Injection System (Bank 2) Malfunction 
+P1418	Secondary Air Injection System Control Circuit Shorted 
+P1420	Fuel Tank Pressure Control Solenoid Valve Circuit High 
+P1441	EVAP Purge Valve Malfunction and Malfunctional Fuel Level Sensor 
+P1442	EVAP System, Fuel Level Sensor Failure and Small Leak Detected 
+P1443	Vent Control Solenoid Valve Function Problem 
+P1444	Canister Close Valve Circuit Open / Short to Ground 
+P1445	Canister Close Valve Circuit Open / Short to B+ 
+P1446	Fuel Tank Sensor Control Valve Circuit Low 
+P1447	Fuel Tank Sensor Control Valve Circuit High 
+P1448	Fuel Tank Sensor Control Valve Range/Performance
 U0000	ISO/SAE Reserved
 U000A	ISO/SAE Reserved
 U000B	ISO/SAE Reserved
