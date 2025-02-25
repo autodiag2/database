@@ -1,4 +1,83 @@
 # https://dodgeforum.com/forum/dodge-ram-diesel-tech/90474-diagnostic-trouble-codes-full-list.html
+# https://30minutedpfclean.com/dodge-fault-code-list/
+P1000	Ignition coil, 5 -primary circuit range/performance	Wiring, connectors, ignition coil 5, ECM
+P1001	Ignition coil, 5 -primary circuit high	Wiring, connectors, ignition coil 5, ECM
+P1002	Ignition coil, 5 -primary circuit low	Wiring, connectors, ignition coil 5, ECM
+P1003	Ignition coil , 5 -primary circuit open	Wiring, connectors, ignition coil 5, ECM
+P1004	Intake manifold air control valve (short runner) - performance Ignition coil, 5 -primary circuit range/performance  Automatic shut-down (ASO) relay circuitopen/short, control circuit short circuit to ground,control circuit open, intake manifold air controlvalve, ECM Wiring, connectors, ignition coil 5, ECM
+P1005	Manifold Tunning Valve Control Performance	
+P1006	Battery Power Off Circuit High	
+P1007	Ignition Circuit Low	
+P1008	Ignition Circuit High	
+P1009	ECU Battery Feed & Power Grounds	
+P1011	Fuel Pump Delivery Pressure Too Low	
+P1012	Fuel Pump Delivery Pressure Too High	
+P1013	Ignition coil, 1 -secondary circuit high	Wiring, connectors, ignition coil 1, spark plug, ECM
+P1014	Ignition coil, 1 -secondary circuit low	Wiring, connectors, ignition coil 1, spark plug, ECM
+P1015	Ignition coil, 1 -secondary range/performance	Wiring, connectors, ignition coil 1, spark plug, ECM
+P1016	Ignition coil, 1 -secondary circuit open	Wiring, connectors, ignition coil 1, spark plug, ECM
+P1017	Ignition coil, 4 -secondary circuit high	Wiring, connectors, ignition coil 4, spark plug, ECM
+P1018	Ignition coil, 4 -secondary circuit low Wiring, connectors, ignition coil 4, spark plug, ECM
+P1019	Ignition coil, 4 -secondary range/performance	Wiring, connectors, ignition coil 4, spark plug, ECM
+P1021	Fuel Pump Circuit Hi	
+P1022	Charge Air Temp Circuit Low	
+P1023	Ignition coil, 3 -secondary range/performance	Wiring, connectors, ignition coil 3, spark plug, ECM
+P1024	Ignition coil, 3 -secondary circuit open	Wiring, connectors, ignition coil 3, spark plug, ECM
+P1025	Ignition coil, 6 -secondary circuit high	Wiring, connectors, ignition coil 6, spark plug, ECM
+P1026	Ignition coil, 6 -secondary circuit low	Wiring, connectors, ignition coil 6, spark plug, ECM
+P1027	Ignition coil, 6 -secondary range/performance	Wiring, connectors, ignition coil 6, spark plug, ECM
+P1028	Ignition coil, 6 -secondary circuit open	Wiring, connectors, ignition coil 6, spark plug, ECM
+P1029	Ignition coil, 2 -secondary circuit high	Wiring, connectors, ignition coil 2, spark plug, ECM
+P1030	Ignition coil, 2 -secondary circuit low	Wiring, connectors, ignition coil 2, spark plug, ECM
+P1031	Ignition coil, 2 -secondary range/performance	Wiring, connectors, ignition coil 2, spark plug, ECM
+P1032	Ignition coil, 2 -secondary circuit open	Wiring, connectors, ignition coil 2, spark plug, ECM
+P1033	Ignition coil, 5 -secondary circuit high	Wiring, connectors, ignition coil 5, spark plug, ECM
+P1034	Ignition coil, 5 -secondary circuit low	Wiring, connectors, ignition coil 5, spark plug, ECM
+P1035	Ignition coil, 5 -secondary range/performance	Wiring, connectors, ignition coil 5, spark plug, ECM
+P1036	Ignition coil, 5 -secondary circuit open	Wiring, connectors, ignition coil 5, spark plug, ECM
+P1037	ISA Closed Throttle Circuit Low	
+P1038	ISA Closed Throttle Circuit High	
+P1039	ECU Sees Closed Throttle	
+P1040	ECU Does Not See Closed Throttle	
+P1041	ISA Circuits	
+P1042	TP Sensor Circuit Reads Low	
+P1043	Park/Neutral Line High	
+P1044	Park/Neutral Line Low	
+P1045	Heated oxygen sensor (H02S) 1, bank 1 system too rich	Wiring, connectors, H02S, ECM
+P1046	Heated oxygen sensor (H02S) 1, bank 1 system too lean	Wiring, connectors, H02S, ECM
+P1047	Heated oxygen sensor (H02S) 1, bank 1 inactive	Wiring, connectors, H02S, ECM
+P1048	Heated oxygen sensor (H02S) 1, bank 1range/performance	Wiring, connectors, H02S, ECM
+P1049	Heated oxygen sensor (H02S) 2, bank 1 system too rich	Wiring, connectors, H02S, ECM
+P1050	Heated oxygen sensor (H02S) 2, bank 1 system too lean	Wiring, connectors, H02S, ECM
+P1051	Heated oxygen sensor (H02S) 2, bank 1 inactive	Wiring, connectors, H02S, ECM
+P1052	Heated oxygen sensor (H02S) 2, bank 1range/performance	Wiring, connectors, H02S, ECM
+P1053	Heated oxygen sensor (H02S) 1, bank 1 circuithigh	Wiring, connectors, H02S, ECM
+P1054	A/T Vehicle Configuration	
+P1055	Idle RPM Low	
+P1056	Idle RPM Hi	
+P1057	Heated oxygen sensor (H02S) 2, bank 1 circuit high	Wiring, connectors, H02S, ECM
+P1059	MAP Sens Out Of Limits	
+P1060	Change In MAP Reading Out Of Limits	
+P1061	MAP Circuits Low	
+P1062	Coolant Sens Circuit High	
+P1063	Inactive Coolant Temperature Sensor	
+P1064	A/C Request Circuit Low	
+P1065	AIR pump relay -circuit high	Wiring, connectors, AIR pump relay, ECM
+P1066	AIR pump relay -circuit low	Wiring, connectors, AIR pump relay, ECM
+P1067	AIR pump relay -circuit open	Wiring, connectors, AIR pump relay, ECM
+P1068	A/C Request Circuit High	
+P1069	AIR switching valve -circuit malfunction	Wiring, connectors, AIR switching valve, ECM
+P1070	AIR switching valve -circuit malfunction	Wiring, connectors, AIR switching valve, ECM
+P1071	AIR switching valve -circuit malfunction	Wiring, connectors, AIR switching valve, ECM
+P1073	Intake manifold air control valve -circuit high	Wiring, connectors, intake manifold air control valve, ECM
+P1074	Intake manifold air control valve -circuit low	Wiring, connectors, intake manifold air control valve, ECM
+P1075	Intake manifold air control valve -circuit open	Wiring, connectors, intake manifold air control valve, ECM
+P1077	EVAP canister purge system -performance	Vacuum leak, EVAP system hoses, EVAP solenoid, ECM
+P1078	EVAP canister purge system -performance	Vacuum leak, EVAP system hoses, EVAP solenoid, ECM
+P1081	EVAP canister purge system -leak	Vacuum leak, EVAP system hoses, EVAP solenoid, EVAP monitor circuit
+P1085	EVAP canister purge system -leak	Vacuum leak, EVAP system hoses, EVAP solenoid, EVAP monitor circuit, filler cap/pipe
+P1089	EVAP canister purge system -leak	Vacuum leak, EVAP system hoses, EVAP solenoid, EVAP monitor circuit
+P1097	EVAP canister purge system -performance	Vacuum leak, EVAP system hoses, EVAP solenoid, ECM
 P1100	MAF Sensor Intermittent/ Check of all OBDII Systems Not Complete
 P1101	MAF Sensor Out Of Self Test Range./ KOER Not Able To Complete KOER Aborted
 P1102	MAF Sensor In Range But Lower Than Expected
@@ -44,6 +123,7 @@ P1141	Fuel Restriction Indicator Circuit Malfunction
 P1142	Fuel Restriction Condition
 P1143	Air Assist Control Valve Range/Performance
 P1144	Air Assist Control Valve Circuit Malfunction
+P1148	Fuel Rail Pressure Malfunction Pressure Drop In Over-run	
 P1150	Lack Of HO2S21 Switch - Adaptive Fuel At Limit
 P1151	Lack Of HO2S21 Switch - Sensor Indicates Lean
 P1152	Lack Of HO2S21 Switch - Sensor Indicates Rich
@@ -54,6 +134,7 @@ P1156	Fuel Select Switch Malfunction
 P1157	Lack Of HO2S22 Switch - Sensor Indicates Lean
 P1158	Lack Of HO2S22 Switch - Sensor Indicates Rich
 P1159	Fuel Stepper Motor Malfunction
+P1160	Ignition Voltage	
 P1167	Invalid Test,throttle not depressed
 P1168	Fuel Rail Sensor In-Range Low Failure
 P1169	Fuel Rail Sensor In-Range High Failure
@@ -93,6 +174,8 @@ P1203	Injector Circuit Open / Shorted - Cylinder #3
 P1204	Injector Circuit Open / Shorted - Cylinder #4
 P1205	Injector Circuit Open / Shorted - Cylinder #5
 P1206	Injector Circuit Open / Shorted - Cylinder #6
+P1207	Crankshaft position (CKP) sensor/camshaft position (CMP) sensor 1, bank 1 range/performance	Wiring, connectors, mechanical fault, CKP, CMP 1 bank 1, ECM
+P1208	Crankshaft position (CKP) sensor/camshaft position (CMP) sensor 1, bank 1 range/performance	Wiring, connectors, mechanical fault, CKP, CMP 1 bank 1, ECM
 P1209	Injector Control Pressure System Fault
 P1210	Injector Control Pressure Above Expected Level
 P1211	Injector Control Pressure Sensor Above / Below Desired
@@ -154,6 +237,9 @@ P1266	Cylinder #6 High To Low Side Short
 P1267	Cylinder #7 High To Low Side Short
 P1268	Cylinder #8 High To Low Side Short
 P1269	Immobilizer Code Not Programmed
+P126B	Engine control module, output driver -short to ground	Wiring, injector(s), ignition coil(s), ECM, multifunction control module
+P126C	Engine control module, output driver -short to positive	Wiring, injector(s), ignition coil(s), ECM, multifunction control module
+P126E	Engine control module, output driver excessive current draw	Wiring, injector(s), ignition coil(s), ECM, multifunction control module
 P1270	Engine RPM Or Speed Limiter Reached
 P1271	Cylinder #1 High To Low Side Open
 P1272	Cylinder #2 High To Low Side Open
@@ -163,6 +249,12 @@ P1275	Cylinder #5 High To Low Side Open
 P1276	Cylinder #6 High To Low Side Open
 P1277	Cylinder #7 High To Low Side Open
 P1278	Cylinder #8 High To Low Side Open
+P1279	Starter motor control circuit -open circuit	Wiring, starter motor, starter motor relay, multifunction control module, ECM
+P127A	Starter motor control circuit -circuit malfunction	Wiring, starter motor, starter motor relay, multifunction control module, ECM
+P127C	Fuel pump, circuit 2 -voltage low	Wiring, fuel pump, ECM
+P127D	Fuel pump, circuit 2 -voltage high	Wiring, fuel pump, ECM
+P127E	Fuel pump, circuit 2 -open circuit	Wiring, fuel pump, ECM
+P127F	Fuel pump control circuit -circuit malfunction	Wiring, fuel pump, multifunction control module,ECM
 P1280	Injection Control Pressure Out Of Range Low
 P1281	Engine Is Cold Too Long
 P1282	Fuel Pump Relay Control Circuit
@@ -183,6 +275,8 @@ P1296	No 5 Volts To MAP Sensor
 P1297	No Change in MAP From Start To Run
 P1298	Lean Operation At wide Open Throttle
 P1299	Vacuum Leak Found (IAC Fully Seated)
+P129C	Powertrain control module (PCM), inverter control -circuit 2 high	Wiring, inverter module, PCM
+P129E	Powertrain control module (PCM), inverter control-circuit 2 over-current	Wiring, inverter module, PCM
 P1300	Boost Calibration Fault
 P1301	Boost Calibration High
 P1302	Boost Calibration Low
@@ -198,6 +292,8 @@ P1314	Misfire Rate Catalyst Damage Fault - Bank 2
 P1315	Persistent Misfire
 P1316	Injector Circuit / IDM Codes Detected
 P1317	Injector Circuit / IDM Codes Not Updated
+P1330	Starter control -malfunction	Wiring, fuse, starter motor, starter motor relay, ECM
+P1335	Crankshaft position (CKP) sensor malfunction	Wiring, connector, CKP sensor, ECM
 P1336	Crank / Cam Sensor Range / Performance
 P1340	Camshaft Position Sensor B Circuit Malfunction
 P1341	Camshaft Position Sensor B Range / Performance
@@ -341,6 +437,7 @@ P1494	Leak Detection Pump Switch or Mechanical Fault
 P1495	Leak Detection Pump Solenoid Circuit
 P1496	5 Volt Supply Output Too Low
 P1498	High speed Rad Fan Ground CTRL Rly Circuit
+P1499	Hydraulic Cooling Fan Solenoid Circuit Condition	
 P1500	Vehicle Speed Sensor Intermittent
 P1501	Vehicle Speed Sensor Out Of Self Test Range
 P1502	Vehicle Speed Sensor Intermittent Malfunction 34
@@ -351,6 +448,7 @@ P1506	Idle Air Control Overspeed Error
 P1507	Idle Air Control Underspeed Error
 P1508	Idle Control System Circuit Open
 P1509	Idle Control System Circuit Shorted
+P150D	Cold start emission control -irregular idle speed	Wiring, connections, engine coolant temperature (ECT) sensor, manifold absolute pressure (MAP) sensor, H02S circuit fault, mechanical fault, ECM
 P1510	Idle Signal Circuit Malfunction
 P1511	Idle Switch (Electric Control Throttle) Circuit Malfunction
 P1512	Intake Manifold Runner Control (Bank 1) Stuck Closed
@@ -407,6 +505,7 @@ P1586	Throttle Control Unit Throttle Position Malfunction
 P1587	Throttle Control Unit Modulated Command Malfunction
 P1588	Throttle Control Unit Detected Loss of Return Spring
 P1589	TCU Unable To Control Desired Throttle Angle
+P1593	Cruise control system, multi-function input AlB -circuit stuck	Wiring, poor connection, multi-function switch, mechanical fault, ECM
 P1594	Charging System Voltage Too High
 P1595	Speed Control Solenoid Circuits
 P1596	Speed Control Switch Always High
@@ -459,16 +558,19 @@ P1642	Fuel Pump Monitor Circuit High Input
 P1643	Fuel Pump Monitor Circuit Low Input
 P1644	Fuel Pump Speed Control Circuit Malfunction
 P1645	Fuel Pump Resistor Switch Circuit Malfunction
+P1646	Vehicle Theft System Improper Password	
 P1650	PSP Switch Out of Self Test Range
 P1651	PSP Switch Input Malfunction
 P1652	IAC Monitor Disabled by PSP Switch Failed On
 P1653	Power Steering Output Circuit Malfunction
 P1654	Recirculation Override Circuit Malfunction
 P1655	Starter Disable Circuit Malfunction
+P1656	5V Reference Circuit	
 P1660	Output Circuit Check Signal High
 P1661	Output Circuit Check Signal Low 38
 P1662	IDM_EN Circuit Failure
 P1663	Fuel Demand Command Signal Circuit Malfunction
+P1666	Engine control module (ECM) -engine shut-off control	ECM
 P1667	CI Circuit Malfunction
 P1668	PCM - IDM Communications Error
 P1670	Electronic Feedback Signal Not Detected
@@ -540,7 +642,9 @@ P1746	Pressure Control Solenoid â€œAâ€ Open Circuit
 P1747	Pressure Control Solenoid â€œAâ€ Short Circuit
 P1748	EPC Malfunction
 P1749	Pressure Control Solenoid Failed Low
+P1750	Torque converter clutch (TCC) solenoid/ transmission shift control valve/transmission pressure control solenoid -circuit malfunction	Wiring, TCC solenoid/transmission shift control valve/transmission pressure control solenoid, TCM, ECM
 P1751	Shift Solenoid A Performance
+P1753	Transmission Throttle Valve Mechanical Performance	
 P1754	Coast Clutch Solenoid Circuit Malfunction
 P1755	Intermediate Speed Sensor (ISS) Malfunction
 P1756	Governor Pressure Not Equal To Target At 15�20 PSI
@@ -669,6 +773,7 @@ P1885	Transmission Transfer Case Disengaged Solenoid Short to Ground
 P1886	4X4 Initialization Failure
 P1890	Transmission 4WD Mode Select Return Input Circuit Failure
 P1891	Transmission Transfer Case Contact Plate Ground Return Open Circuit
+P1897	Engine control module (ECM) communication malfunction	ECM
 P1899	Park/Neutral Position Switch Stuck In Park or In Gear
 P1900	OSS Circuit Intermittent Malfunction
 P1901	TSS Circuit Intermittent Malfunction
@@ -689,3 +794,43 @@ P1915	Reverse Switch Circuit Malfunction
 P1916	High Clutch Drum Speed Sensor Malfunction
 P1917	High Clutch Drum Speed Sensor Intermittent
 P1918	Transmission Range Display Circuit Malfunction
+P1926	CAN Communication With Other Control Units Installed Not Possible	
+P3050	Oxygen sensor -circuit malfunction	Wiring, connectors, oxygen sensor(s), ECM
+P3080	Engine oil pressure sensor -circuit malfunction	Wiring, connectors, engine oil pressure sensor, ECM
+P3097	Intake air temperature (IAT) sensor -value too high	Wiring, connectors, IAT sensor, ECM
+P3098	Intake air temperature (IAT) sensor -value too low	Wiring, connectors, IAT sensor, ECM
+P3099	Intake air temperature (IAT) sensor -value too low	Wiring, connectors, IAT sensor, ECM
+P3121	Catalyst temperature sensor -circuit malfunction	Wiring, connectors, oxygen sensor(s), ECM
+P3131	Oxygen sensor 1, bank 1 -circuit malfunction	Wiring, connectors, oxygen sensor, ECM
+P3133	Oxygen sensor -supply voltage low	Wiring, connectors, oxygen sensor(s), ECM
+P3134	Oxygen sensor -supply voltage low	Wiring, connectors, oxygen sensor(s), ECM
+P3135	Particulate filter -implausible signal	Exhaust leak/blockage, exhaust pressure sensor, hose/pipe blockedlleaking, particulate filter
+P3136	Particulate filter -signal high	Exhaust leak/blockage, exhaust pressure sensor, hose/pipe blockedlleaking, particulate filter
+P3137	Particulate filter -signal low	Exhaust leak/blockage, exhaust pressure sensor, hose/pipe blockedlleaking, particulate filter
+P3139	Particulate filter -implausible signal	Exhaust leak/blockage, exhaust pressure sensor,hose/pipe blockedlleaking, particulate filter
+P3154	Intake air temperature (IAT) sensor -signal high	Wiring, connectors, IAT sensor, ECM
+P3155	Intake air temperature (IAT) sensor -signal low	Wiring, connectors, IAT sensor, ECM
+P3400	Cylinder cut-out system, bank 1 -malfunction	Wiring, cylinder cut-out solenoid(s), oil pressure,H02S, ECM
+P3401	Cylinder cut-out solenoid 1 -circuit malfunction	Wiring, cylinder cut-out solenoid, ECM
+P3402	Cylinder cut-out solenoid 1 -malfunction	Wiring, cylinder cut-out solenoid, oil pressure,ECM
+P3425	Cylinder cut-out solenoid 4 -circuit malfunction	Wiring, cylinder cut-out solenoid, ECM
+P3426	Cylinder cut-out solenoid 4 -malfunction	Wiring, cylinder cut-out solenoid, oil pressure,ECM
+P3441	Cylinder cut-out solenoid 6 -circuit malfunction	Wiring, cylinder cut-out solenoid, ECM
+P3442	Cylinder cut-out solenoid 6 -malfunction	Wiring, cylinder cut-out solenoid, oil pressure,ECM
+P3449	Cylinder cut-out solenoid 7 -circuit malfunction	Wiring, cylinder cut-out solenoid, ECM
+P3450	Cylinder cut-out solenoid 7 -malfunction	Wiring, cylinder cut-out solenoid, oil pressure,ECM
+P3497	Cylinder cut-out system, bank 2 -malfunction	Wiring, cylinder cut-out solenoid(s), oil pressure,H02S, ECM
+U110A	Steering column function control module, serialcommunication -circuit malfunction	Wiring, CAN data bus, ECM
+U110C	Fuel level, serial communication -circuit malfunction	Wiring, instrument panel, CAN data bus, multifunction control module front, ECM
+U110E	Outside air temperature, serial communication -circuit malfunction	CAN data bus, multifunction control module front,ECM
+U110F	Fuel volume, serial communication -circuitmalfunction	Wiring, instrument panel, CAN data bus, multifunction control module front, ECM
+U1110	Vehicle speed, serial communication -circuit malfunction	CAN data bus, ASS control module, ECM
+U1111	Odometer mileage, serial communication -circuitmalfunction	Wiring, instrument panel, CAN data bus, multifunction control module front, ECM
+U1113	NC pressure sensor -communication malfunction	Wiring, multifunction control module, ECM
+U1120	Wheel distance traveled, serial communication -circuit malfunction	CAN data bus, ASS control module, ECM
+U1403	Fuel level, serial communication -implausible signal	Wiring, instrument panel, CAN data bus, multifunction control module front, ECM
+U1411	Fuel volume, serial communication implausible signal	Wiring, instrument panel, CAN data bus, multifunction control module front, ECM
+U1412	Vehicle speed, serial communication -implausible signal	CAN data bus, ASS control module, ECM
+U1413	Odometer mileage, serial communication implausible signal	Wiring, instrument panel, CAN data bus, multifunction control module front, ECM
+U1417	LH front wheel, distance traveled -implausible signal	ABS trouble code(s) stored, CAN data bus, ABS control module, ECM
+U1418	RH front wheel, distance traveled implausible signal	ABS trouble code(s) stored, CAN data bus, ASS control module, ECM
