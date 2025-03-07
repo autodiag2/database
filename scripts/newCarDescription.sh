@@ -11,7 +11,7 @@ done
 mkdir -p "${desc}"
 >${descFile} cat <<EOF
 brand=Example
-engine=Example engine
+ecu=Example ecu
 model=Example model
 EOF
 >${codesFile}
