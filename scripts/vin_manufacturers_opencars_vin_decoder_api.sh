@@ -11,7 +11,7 @@ curl -s "$URL" | awk -F';' '1 { gsub(/"/, "", $1); gsub(/"/, "", $2); print $1 "
 # Check if the file was downloaded successfully
 if [ -s "$TEMP_FILE" ]; then
     tail -n +2 "$TEMP_FILE" >> "$LOCAL_FILE"
-    sort -u "$LOCAL_FILE" -o "$LOCAL_FILE"
+    sort -k1,1 -u "$LOCAL_FILE" -o "$LOCAL_FILE"
     echo "Updated $LOCAL_FILE with new entries."
 else
     echo "Failed to download or process the CSV file."
