@@ -1,471 +1,470 @@
-# wmi   manufacturer
 007	Koenigsegg
 034	Carvia
 10R	E-Z-GO
-10T	OSHKOSH
+10T	Oshkosh Corporation
 11V	OTTAWA
 12A	Avanti
-137	AM GENERAL, HUMMER
+137	AM General Hummer & Hummer H1
 145	HYUNDAI
-15G	GILLIG
+15G	Gillig bus
 16X	Vixen 21 motorhome
 177	THOMAS
-17N	JOHN DEERE
+17N	John Deere incomplete vehicle (RV chassis)
 18X	WRV
-19U	ACURA
+19U	Acura car made by Honda of America Mfg. in Ohio
 19V	Acura car made by Honda Manufacturing of Indiana
 19X	Honda car made by Honda Manufacturing of Indiana
-1A4	CHRYSLER
-1A8	CHRYSLER
-1AC	AMC
+1A4	Chrysler brand MPV/SUV 2006–2009 only
+1A8	Chrysler brand MPV/SUV 2006–2009 only
+1AC	American Motors Corporation MPV
 1AF	American LaFrance truck
-1AM	AMC
+1AM	American Motors Corporation car & Renault Alliance 1983 only
 1B	DODGE
-1B3	DODGE
-1B4	DODGE
-1B6	DODGE
-1B7	DODGE
+1B3	Dodge car 1981–2011
+1B4	Dodge MPV/SUV 1981–2002
+1B6	Dodge incomplete vehicle 1981–2002
+1B7	Dodge truck 1981–2002
 1B9	Buell Motorcycle Company through mid 1995	133
-1BA	BLUE BIRD
-1BB	BLUE BIRD
-1BD	BLUE BIRD
+1BA	Blue Bird Corporation bus
+1BB	Blue Bird Wanderlodge MPV
+1BD	Blue Bird Corporation incomplete vehicle
 1BL	Balko, Inc. from Ladysmith, WI
 1C	CHRYSLER
-1C3	CHRYSLER
-1C4	CHRYSLER
-1C6	CHRYSLER
-1C8	CHRYSLER
-1C9	CHANCE
+1C3	Chrysler brand car 1981–2011
+1C4	Chrysler brand MPV 1990–2005
+1C6	Chrysler Group (all brands) truck 2012–
+1C8	Chrysler brand MPV 2001–2005
+1C9	CX Automotive	291
 1CM	Checker Motors Corporation
 1CU	Cushman Haulster (Cushman division of Outboard Marine Corporation)
-1CY	CRANE CARRIER
-1D3	DODGE
-1D4	DODGE
+1CY	Crane Carrier Company
+1D3	Dodge truck 2002–2009
+1D4	Dodge MPV/SUV 2003–2011 only
 1D5	DODGE
-1D7	DODGE
-1D8	DODGE
+1D7	Dodge truck 2002–2011
+1D8	Dodge MPV/SUV 2003–2009 only
 1EC	FLEETWOOD
-1F	FORD
-1F1	FORD
+1F	Ford
+1F1	Ford SUV – limousine (through 2009)
 1F4	FORD
-1F6	FORD
-1F9	FWD CORP.
-1FA	FORD MOTOR COMPANY
-1FB	FORD MOTOR COMPANY
-1FC	FORD MOTOR COMPANY
-1FD	FORD MOTOR COMPANY
+1F6	Ford stripped chassis made by Detroit Chassis LLC
+1F9	Seagrave	ST2
+1FA	Ford car
+1FB	Ford "bus" (van with more than 3 rows of seats)
+1FC	Ford stripped chassis made by Ford
+1FD	Ford incomplete vehicle (chassis cab)
 1FE	FORD
 1FF	FORD
-1FM	FORD MOTOR COMPANY
-1FT	FORD MOTOR COMPANY
-1FU	FREIGHTLINER
-1FV	FREIGHTLINER
-1G	GENERAL MOTORS
+1FM	Ford MPV/SUV
+1FT	Ford truck
+1FU	Freightliner Trucks
+1FV	Freightliner Trucks
+1G	General Motors
 1G0	GMC "bus" (van with more than 3 rows of seats) 1981–1986
-1G1	CHEVROLET
-1G2	PONTIAC USA
-1G3	OLDSMOBILE
-1G4	BUICK
-1G5	GMC, PONTIAC
-1G6	CADILLAC USA
+1G1	Chevrolet car
+1G2	Pontiac car
+1G3	Oldsmobile car
+1G4	Buick car
+1G5	GMC MPV/SUV 1981–1986
+1G6	Cadillac car
 1G7	Pontiac car only sold by GM Canada
-1G8	SATURN USA
-1G9	GOOGLE
-1GA	CHEVROLET
-1GB	CHEVROLET INCOMPLETE VEHICLES
-1GC	CHEVROLET
-1GD	GMC INCOMPLETE VEHICLES
-1GE	CADILLAC
-1GF	FLEXIBLE
-1GG	ISUZU
-1GH	GMC, OLDSMOBILE
-1GJ	GMC
-1GK	GMC
-1GM	PONTIAC
-1GN	CHEVROLET
-1GT	GMC TRUCK USA
-1GY	CADILLAC USA
+1G8	Chevrolet MPV/SUV 1981–1986
+1G9	Google & Waymo	495
+1GA	Chevrolet "bus" (van with more than 3 rows of seats)
+1GB	Chevrolet incomplete vehicles
+1GC	Chevrolet truck
+1GD	GMC incomplete vehicles
+1GE	Cadillac incomplete vehicle
+1GF	Flxible bus
+1GG	Isuzu pickup trucks made by GM
+1GH	Oldsmobile MPV/SUV 1990–2004
+1GJ	GMC "bus" (van with more than 3 rows of seats) 1987–
+1GK	GMC MPV/SUV 1987–
+1GM	Pontiac MPV
+1GN	Chevrolet MPV/SUV 1987-
+1GT	GMC truck
+1GY	Cadillac SUV
 1H	 HONDA USA
 1H9	Crane Carrier Company	A
 1HA	Chevrolet incomplete vehicles made by Navistar International
-1HD	HARLEY-DAVIDSON
-1HF	HONDA
-1HG	HONDA
-1HS	INTERNATIONAL
-1HT	INTERNATIONAL
-1HV	INTERNATIONAL
+1HD	Harley-Davidson
+1HF	Honda motorcycle/ATV/UTV
+1HG	Honda car made by Honda of America Mfg. in Ohio
+1HS	International Trucks & Caterpillar Trucks truck
+1HT	International Trucks & Caterpillar Trucks & Chevrolet Silverado 4500HD, 5500HD, 6500HD incomplete vehicle
+1HV	IC Bus incomplete bus
 1J	JEEP
-1J4	JEEP
+1J4	Jeep SUV 1989–2011 (using Chrysler-style VIN structure)
 1J6	JEEP
-1J7	JEEP
-1J8	JEEP
-1JC	AMC, JEEP
+1J7	Jeep truck 1989–1992 (using Chrysler-style VIN structure)
+1J8	Jeep SUV 2002–2011 (using Chrysler-style VIN structure)
+1JC	Jeep SUV 1981–1988 (using AMC-style VIN structure)
 1JD	AMC
 1JE	JEEP
 1JF	JEEP
 1JH	JEEP
 1JM	JEEP
-1JT	AMC, JEEP
+1JT	Jeep truck 1981–1988 (using AMC-style VIN structure)
 1JU	Marmon Motor Company
-1L	LINCOLN
-1L1	LINCOLN
+1L	Lincoln
+1L1	Lincoln car – limousine
 1L9	Laforza	234
 1LJ	Lincoln incomplete vehicle
-1LN	LINCOLN
+1LN	Lincoln car
 1LV	John Deere equipment designed in Augusta, Georgia
 1M	MERCURY
 1M0	John Deere Gator
-1M1	MACK TRUCK USA
-1M2	MACK TRUCK USA
+1M1	Mack Trucks
+1M2	Mack Trucks
 1M3	MACK TRUCK USA
 1M4	MACK TRUCK USA
-1M8	MCI
-1M9	MYNATT TRUCK & EQUIPMENT
-1MB	MERCEDES-BENZ
-1ME	MERCURY USA
-1MR	CONTINENTAL
+1M8	Motor Coach Industries
+1M9	Mosler Automotive	682
+1MB	Mercedes-Benz Truck Co.
+1ME	Mercury car
+1MR	Continental Mark VI & VII 1981–1985 & Continental sedan 1982–1985
 1N	NISSAN
-1N4	NISSAN
-1N6	DATSUN, NISSAN
-1N9	NEOPLAN
-1NK	KENWORTH
-1NP	PETERBILT
-1NX	NUMMI USA
-1P3	PLYMOUTH USA
-1P4	PLYMOUTH
+1N4	Nissan car
+1N6	Nissan truck
+1N9	Neoplan USA	013
+1NK	Kenworth incomplete vehicle
+1NP	Peterbilt incomplete vehicle
+1NX	Toyota car made by NUMMI
+1P3	Plymouth car
+1P4	Plymouth MPV/SUV
 1P7	PLYMOUTH
-1P9	PANOZ
+1P9	Panoz	213
 1PY	John Deere equipment designed or manufactured in Pune, India
 1R9	ROADRUNNER HAY SQUEEZE USA
 1RF	ROADMASTER
-1S9	SALEEN
+1S9	Scania AB Scania CN112 bus made in Orange, CT	098
 1T7	Thomas Built Buses
-1T8	THOMAS
+1T8	Thomas Built Buses
 1T9	Tomcar USA	899
-1TU	TMC
+1TU	Transportation Manufacturing Corporation
 1UT	Jeep DJ made by AM General
-1V1	VOLKSWAGEN
+1V1	Volkswagen truck
 1V2	Volkswagen SUV
 1V9	Vector Aeromotive	048
 1VH	Orion Bus Industries
 1VR	Vermeer Corporation
-1VW	VOLKSWAGEN
+1VW	Volkswagen car
 1WA	AUTOSTAR
 1WB	AUTOSTAR
-1WU	WHITE VOLVO
-1WV	WINNEBAGO
+1WU	White truck
+1WV	Winnebago Industries
 1WW	Winnebago Industries
 1WX	White incomplete vehicle
 1WY	White incomplete vehicle
-1XK	KENWORTH USA
-1XM	AMC
-1XP	PETERBILT USA
-1Y1	CHEVROLET, GEO
+1XK	Kenworth truck
+1XM	Renault Alliance/GTA/Encore 1984–1987
+1XP	Peterbilt truck
+1Y1	Chevrolet/Geo car made by NUMMI
 1YJ	Rokon International, Inc.
-1YV	MAZDA
-1Z3	MITSUBISHI
+1YV	Mazda
+1Z3	Mitsubishi Raider
 1Z5	MITSUBISHI
-1Z7	MITSUBISHI
+1Z7	Mitsubishi Raider
 1Z9	Oshkosh Specialty Vehicles LLC	332
-1ZV	FORD
-1ZW	MERCURY
-2A3	CHRYSLER
-2A4	CHRYSLER CANADA
-2A8	CHRYSLER
+1ZV	Ford made by AutoAlliance International
+1ZW	Mercury made by AutoAlliance International
+2A3	Imperial
+2A4	Chrysler brand MPV/SUV 2006–2011 only
+2A8	Chrysler brand MPV/SUV 2006–2011 only
 2AY	Hino
 2AZ	Hino
-2B1	ORION
-2B3	DODGE CANADA
-2B4	DODGE
-2B5	DODGE
-2B6	DODGE
-2B7	DODGE CANADA
+2B1	Orion Bus Industries
+2B3	Dodge car 1981–2011
+2B4	Dodge MPV 1981–2002
+2B5	Dodge "bus" (van with more than 3 rows of seats) 1981–2002
+2B6	Dodge incomplete vehicle 1981–2002
+2B7	Dodge truck 1981–2002
 2B8	DODGE
-2BC	AMC, JEEP
+2BC	Jeep Wrangler (YJ) 1987–1988 (using AMC-style VIN structure)
 2BD	JEEP
-2BP	Bombardier Recreational Products
+2BP	Ski-Doo
 2BT	JEEP
 2BV	Can-Am & Bombardier ATV
 2BW	Can-Am Commander E LSV
 2BX	Can-Am Spyder
 2BZ	Can-Am Freedom Trailer for Can-Am Spyder
-2C1	CHEVROLET, GEO
-2C3	CHRYSLER CANADA
-2C4	CHRYSLER
-2C7	PONTIAC
-2C8	CHRYSLER
+2C1	Geo/Chevrolet car made by CAMI Automotive
+2C3	Chrysler brand car 1981–2011
+2C4	Chrysler brand MPV/SUV 2000–2005
+2C7	Pontiac car made by CAMI Automotive only sold by GM Canada
+2C8	Chrysler brand MPV/SUV 2001–2005
 2C9	Campagna Motors	145
-2CC	AMC, EAGLE
+2CC	American Motors Corporation MPV
 2CG	Asüna/Pontiac SUV made by CAMI Automotive only sold by GM Canada
 2CH	CHEVROLET
-2CK	GEO, PONTIAC
-2CM	AMC
-2CN	CAMI
+2CK	GMC Tracker SUV made by CAMI Automotive only sold by GM Canada 1990–1991 only
+2CM	American Motors Corporation car
+2CN	Geo/Chevrolet SUV made by CAMI Automotive 1990–2011 only
 2CT	GMC Terrain SUV made by CAMI Automotive 2010–2011 only
 2D3	DODGE CANADA
-2D4	DODGE
-2D6	DODGE
-2D7	DODGE
-2D8	DODGE
-2DG	ONTARIO DRIVE & GEAR
-2E3	EAGLE
+2D4	Dodge MPV 2003–2011 only
+2D6	Dodge incomplete vehicle 2003
+2D7	Dodge truck 2003
+2D8	Dodge MPV 2003–2011 only
+2DG	Ontario Drive & Gear
+2E3	Eagle car 1989–1997 (using Chrysler-style VIN structure)
 2E4	Lancia MPV
-2F	FORD
-2FA	FORD MOTOR COMPANY CANADA
+2F	Ford
+2FA	Ford car
 2FB	FORD MOTOR COMPANY CANADA
 2FC	FORD MOTOR COMPANY CANADA
 2FD	FORD
 2FF	FORD
-2FM	FORD MOTOR COMPANY CANADA
-2FT	FORD MOTOR COMPANY CANADA
-2FU	FREIGHTLINER
-2FV	FREIGHTLINER
-2FW	STERLING
+2FM	Ford MPV/SUV
+2FT	Ford truck
+2FU	Freightliner Trucks
+2FV	Freightliner Trucks
+2FW	Sterling Trucks truck
 2FY	New Flyer
-2FZ	STERLING
+2FZ	Sterling Trucks incomplete vehicle
 2G	GENERAL MOTORS CANADA
-2G0	GMC
-2G1	CHEVROLET
-2G2	PONTIAC
-2G3	OLDSMOBILE CANADA
-2G4	BUICK CANADA
-2G5	GMC
+2G0	GMC "bus" (van with more than 3 rows of seats) 1981–1986
+2G1	Chevrolet
+2G2	Pontiac
+2G3	Oldsmobile car
+2G4	Buick
+2G5	GMC MPV 1981–1986; BrightDrop Zevo delivery van
 2G6	Cadillac
-2G7	PONTIAC
-2G8	CHEVROLET
-2G9	GNOME HOMES
-2GA	CHEVROLET
-2GB	CHEVROLET
-2GC	CHEVROLET
-2GD	GMC
+2G7	Pontiac car only sold by GM Canada
+2G8	Chevrolet MPV 1981–1986
+2G9	Gnome Homes
+2GA	Chevrolet "bus" (van with more than 3 rows of seats)
+2GB	Chevrolet incomplete vehicles
+2GC	Chevrolet truck
+2GD	GMC incomplete vehicles
 2GE	Cadillac incomplete vehicle
 2GH	GMC GM New Look bus & GM Classic series bus
-2GJ	GMC
-2GK	GMC
+2GJ	GMC "bus" (van with more than 3 rows of seats) 1987–
+2GK	GMC MPV/SUV 1987–
 2GM	PONTIAC
-2GN	CHEVROLET
-2GT	GMC
+2GN	Chevrolet MPV/SUV 1987-
+2GT	GMC truck
 2GY	CADILLAC
-2Gx	GENERAL MOTORS
-2HG	HONDA
-2HH	ACURA
-2HJ	HONDA
-2HK	HONDA
-2HM	HYUNDAI
-2HN	ACURA
-2HS	INTERNATIONAL
-2HT	INTERNATIONAL
-2J4	JEEP
+2Gx	General Motors
+2HG	Honda car made by Honda of Canada Manufacturing
+2HH	Acura car made by Honda of Canada Manufacturing
+2HJ	Honda truck made by Honda of Canada Manufacturing
+2HK	Honda MPV/SUV made by Honda of Canada Manufacturing
+2HM	Hyundai
+2HN	Acura SUV made by Honda of Canada Manufacturing
+2HS	International Trucks truck
+2HT	International Trucks incomplete vehicle
+2J4	Jeep Wrangler (YJ) 1989–1992 (using Chrysler-style VIN structure)
 2J6	JEEP
 2J7	JEEP
 2L1	Lincoln incomplete vehicle – limo
-2L9	LES CONTENANTS DURABAC
+2L9	Les Contenants Durabac
 2LJ	Lincoln incomplete vehicle – hearse
-2LM	LINCOLN
-2LN	LINCOLN
+2LM	Lincoln SUV
+2LN	Lincoln car
 2M	MERCURY
 2M1	Mack Trucks
-2M2	MACK
-2ME	MERCURY
+2M2	Mack Trucks
+2ME	Mercury car
 2MG	Motor Coach Industries (Produced from Sept. 1, 2008 on)
 2MH	MERCURY
-2MR	MERCURY
-2NK	KENWORTH
-2NP	PETERBILT
-2NV	NOVA BUS CANADA
-2P3	PLYMOUTH CANADA
-2P4	PLYMOUTH
-2P5	PLYMOUTH
-2P9	PREVOST
-2PC	PREVOST
-2S2	SUZUKI
-2S3	SUZUKI
+2MR	Mercury MPV
+2NK	Kenworth incomplete vehicle
+2NP	Peterbilt incomplete vehicle
+2NV	Nova Bus
+2P3	Plymouth car
+2P4	Plymouth MPV 1981–2000
+2P5	Plymouth "bus" (van with more than 3 rows of seats) 1981–1983
+2P9	Prevost 1981–1995	001
+2PC	Prevost 1996-
+2S2	Suzuki car made by CAMI Automotive
+2S3	Suzuki SUV made by CAMI Automotive
 2S4	SUZUKI
 2T	TOYOTA
-2T1	TOYOTA
-2T2	LEXUS
-2T3	TOYOTA
+2T1	Toyota car
+2T2	Lexus SUV
+2T3	Toyota SUV
 2TP	Triple E LTD
-2V4	VOLKSWAGEN CANADA
-2V8	VOLKSWAGEN CANADA
-2WK	WESTERN STAR
-2WL	WESTERN STAR
-2WM	WESTERN STAR
-2XK	KENWORTH
-2XM	EAGLE
-2XP	PETERBILT
+2V4	Volkswagen Routan
+2V8	Volkswagen Routan
+2WK	Western Star Trucks truck
+2WL	Western Star Trucks incomplete vehicle
+2WM	Western Star Trucks incomplete vehicle
+2XK	Kenworth truck
+2XM	Eagle Premier 1988 only (using AMC-style VIN structure)
+2XP	Peterbilt truck
 363	Spyker
-3A4	CHRYSLER
-3A8	CHRYSLER
+3A4	Chrysler brand MPV 2006–2010 only
+3A8	Chrysler brand MPV 2006–2010 only
 3AB	DINA
 3AK	Freightliner Trucks
-3AL	FREIGHTLINER
+3AL	Freightliner Trucks
 3AV	BMW Mexico 1999-2009
-3B3	DODGE
-3B4	DODGE
-3B6	DODGE
-3B7	DODGE
+3B3	Dodge car 1981–2011
+3B4	Dodge SUV 1986–1993
+3B6	Dodge incomplete vehicle 1981–2002
+3B7	Dodge truck 1981–2002
 3BJ	Western Star 3700 truck made by DINA S.A.
-3BK	KENWORTH
+3BK	Kenworth incomplete vehicle
 3BM	Motor Coach Industries bus made by DINA S.A.
-3BP	PETERBILT
-3C3	CHRYSLER
-3C4	CHRYSLER MEXICO
+3BP	Peterbilt incomplete vehicle
+3C3	Chrysler brand car 1981–2011
+3C4	Chrysler brand MPV 2001–2005
 3C6	Chrysler Group (all brands) truck 2012–
 3C7	Chrysler Group (all brands) incomplete vehicle 2012–
-3C8	CHRYSLER
+3C8	Chrysler brand MPV 2001–2005
 3CA	CHRYSLER
-3CE	VOLVO
-3CZ	HONDA
+3CE	Volvo Buses de Mexico
+3CZ	Honda SUV
 3D2	Dodge incomplete vehicle 2007–2009
-3D3	DODGE MEXICO
-3D4	Dodge
+3D3	Dodge truck 2006–2009
+3D4	Dodge SUV 2009–2011
 3D5	DODGE
-3D6	DODGE
-3D7	DODGE
+3D6	Dodge incomplete vehicle 2003–2011
+3D7	Dodge truck 2002–2011
 3E4	Fiat SUV
-3F	FORD
+3F	Ford
 3F6	Sterling Bullet
-3FA	FORD MOTOR COMPANY MEXICO
+3FA	Ford car
 3FB	FORD
-3FC	FORD
+3FC	Ford stripped chassis made by Ford & IMMSA
 3FD	FORD
 3FE	FORD MOTOR COMPANY MEXICO
 3FF	FORD
 3FM	Ford MPV/SUV
 3FN	Ford F-650/F-750 made by Blue Diamond Truck Co.
-3FR	FORD
-3FT	FORD
-3G	GENERAL MOTORS
+3FR	Ford F-650/F-750 made by Blue Diamond Truck Co.
+3FT	Ford truck
+3G	General Motors
 3G0	Saab 9-4X 2011
-3G1	CHEVROLET
-3G2	PONTIAC
-3G4	BUICK
-3G5	BUICK
-3G7	PONTIAC
+3G1	Chevrolet car
+3G2	Pontiac car
+3G4	Buick car
+3G5	Buick SUV
+3G7	Pontiac SUV
 3G8	CHEVROLET
 3GA	CHEVROLET
 3GB	CHEVROLET
-3GC	CHEVROLET
+3GC	Chevrolet truck
 3GD	GMC
 3GE	CHEVROLET
 3GG	CADILLAC
-3GK	GMC
-3GM	PONTIAC
-3GN	CHEVROLET
+3GK	GMC SUV
+3GM	Holden Suburban
+3GN	Chevrolet SUV
 3GS	Saturn SUV
-3GT	GMC
-3GY	CADILLAC
+3GT	GMC truck
+3GY	Cadillac SUV
 3H	HONDA MEXICO
-3H1	HONDA
+3H1	Honda motorcycle/UTV
 3H3	Hyundai de Mexico, S.A. de C.V. for Hyundai Translead (truck trailers)
-3HA	INTERNATIONAL
+3HA	International Trucks incomplete vehicle
 3HC	International Trucks truck
-3HG	HONDA
+3HG	Honda car
 3HM	HONDA
-3HS	INTERNATIONAL
-3HT	INTERNATIONAL
-3JB	BRP MEXICO (ALL-TERRAIN VEHICLES)
-3KP	KIA
-3LN	LINCOLN
+3HS	International Trucks & Caterpillar Trucks truck
+3HT	International Trucks & Caterpillar Trucks incomplete vehicle
+3JB	Can-Am ATV/UTV & Can-Am Ryker
+3KP	Kia/Hyundai car
+3LN	Lincoln car
 3MA	MERCURY
-3MD	Mazda
-3ME	MERCURY
+3MD	Mazda car
+3ME	Mercury car
 3MV	Mazda SUV
 3MW	BMW
 3MY	Toyota car made by Mazda de Mexico Vehicle Operation
-3MZ	MAZDA MEXICO
+3MZ	Mazda car
 3N	NISSAN
-3N1	NISSAN
-3N6	NISSAN
-3N8	NISSAN
+3N1	Nissan car
+3N6	Nissan truck & Chevrolet City Express
+3N8	Nissan MPV
 3NE	Polaris Inc. ATV
 3NK	KENWORTH
 3NM	PETERBILT
 3NS	Polaris Inc. UTV
-3P3	PLYMOUTH MEXICO
+3P3	Plymouth car
 3PC	Infiniti SUV made by COMPAS
-3TM	TOYOTA
+3TM	Toyota truck made by TMMBC
 3TY	Toyota truck made by TMMGT
 3VV	Volkswagen SUV
-3VW	VOLKSWAGEN
-3WK	KENWORTH
+3VW	Volkswagen car
+3WK	Kenworth truck
 3WP	Peterbilt truck
 43C	Consulier
 45V	UTILIMASTER
-46G	GILLIG
-478	HONDA
+46G	Gillig incomplete vehicle
+478	Honda ATV
 480	Sterling Trucks truck
-49H	STERLING
-4A3	MITSUBISHI
-4A4	MITSUBISHI
-4B3	DODGE
+49H	Sterling Trucks incomplete vehicle
+4A3	Mitsubishi Motors car
+4A4	Mitsubishi Motors SUV
+4B3	Dodge car made by Diamond-Star Motors factory
 4B9	BYD Coach & Bus LLC	038
-4C3	CHRYSLER
+4C3	Chrysler car made by Diamond-Star Motors factory
 4C9	Czinger	561
-4CD	OSHKOSH
-4DR	GENESIS, INTERNATIONAL
-4E3	EAGLE
+4CD	Oshkosh Chassis Division incomplete vehicle (RV chassis)
+4DR	IC Bus
+4E3	Eagle car made by Diamond-Star Motors factory
 4F	MAZDA
-4F2	MAZDA
-4F4	MAZDA
-4G1	CHEVROLET
-4G2	PONTIAC
+4F2	Mazda SUV made by Ford
+4F4	Mazda truck made by Ford
+4G1	Chevrolet Cavalier convertible made by Genasys L.C. – a GM/ASC joint venture
+4G2	Pontiac Sunfire convertible made by Genasys L.C. – a GM/ASC joint venture
 4G3	Toyota Cavalier made by GM
 4G5	General Motors EV1
 4GB	CHEVROLET
-4GD	GMC
+4GD	WhiteGMC Brigadier 1988–1989 made by GM
 4GL	Buick incomplete vehicle
-4GT	ISUZU, WHITEGMC
+4GT	Isuzu incomplete vehicle built by GM
 4J	MERCEDES-BENZ
 4J4	JEEP
-4JG	MERCEDES-BENZ USA
-4KB	CHEVROLET
-4KD	GMC
-4KL	ISUZU
+4JG	Mercedes-Benz SUV
+4KB	Chevrolet W-Series incomplete vehicle (gas engine only)
+4KD	GMC W-Series incomplete vehicle (gas engine only)
+4KL	Isuzu commercial truck built by GM
 4M	MERCURY
-4M2	MERCURY
+4M2	Mercury MPV/SUV
 4ML	Oshkosh Trailer Division
 4MZ	Buell Motorcycle Company
 4N1	NISSAN
-4N2	NISSAN
-4NU	ISUZU
+4N2	Nissan Quest made by Ford
+4NU	Isuzu Ascender made by GM
 4P1	Pierce Manufacturing
-4P3	PLYMOUTH
-4RK	NOVA BUS USA
+4P3	Plymouth car made by Diamond-Star Motors factory 1990–1994
+4RK	Nova Bus & Prevost made by Nova Bus (US) Inc.
 4S	SUBARU-ISUZU AUTOMOTIVE
-4S1	ISUZU
-4S2	ISUZU
-4S3	SUBARU
-4S4	SUBARU
-4S6	HONDA
-4S7	SPARTAN
+4S1	Isuzu truck made by Subaru Isuzu Automotive
+4S2	Isuzu SUV made by Subaru Isuzu Automotive
+4S3	Subaru car
+4S4	Subaru SUV/MPV
+4S6	Honda SUV made by Subaru Isuzu Automotive
+4S7	Spartan Motors incomplete vehicle
 4S9	Smith Electric Vehicles US Corp.	197
 4SL	MAGNUM
 4T	TOYOTA
-4T1	TOYOTA
-4T3	TOYOTA
+4T1	Toyota car made by Toyota Motor Manufacturing Kentucky
+4T3	Toyota MPV/SUV made by Toyota Motor Manufacturing Kentucky
 4T4	Toyota car made by Subaru of Indiana Automotive
-4T9	LUMEN MOTORS (ZERO-EMISSION MID-ENGINED CAR)
-4TA	TOYOTA
-4UF	ARCTIC CAT INC.
-4US	BMW
-4UZ	FRT-THOMAS BUS
-4V1	VOLVO
-4V2	VOLVO
+4T9	Xos, Inc.	208
+4TA	Toyota truck made by NUMMI
+4UF	Arctic Cat
+4US	BMW car
+4UZ	Freightliner Custom Chassis Corporation & gas-powered Mitsubishi Fuso trucks assembled by Freightliner Custom Chassis & Thomas Built Buses FS-65 & Saf-T-Liner C2
+4V1	WhiteGMC truck
+4V2	WhiteGMC incomplete vehicle
 4V3	VOLVO
-4V4	VOLVO
-4V5	VOLVO
+4V4	Volvo Trucks North America truck
+4V5	Volvo Trucks North America incomplete vehicle
 4V6	VOLVO
-4VA	VOLVO
+4VA	Volvo Trucks North America truck
 4VE	Volvo Trucks North America incomplete vehicle
-4VG	VOLVO, WHITEGMC
-4VH	VOLVO
+4VG	Volvo Trucks North America truck
+4VH	Volvo Trucks North America incomplete vehicle
 4VJ	VOLVO
 4VK	VOLVO
 4VL	VOLVO
-4VM	VOLVO
-4VZ	VOLVO
+4VM	Volvo Trucks North America incomplete vehicle
+4VZ	Spartan Motors/The Shyft Group incomplete vehicle – bare chassis only
 4XA	Polaris Inc.
 4YM	Carry-On Trailer, Inc.
 4Z3	American LaFrance truck
@@ -475,7 +474,7 @@
 51R	Brammo Motorcycles
 523	VPG
 52C	GEM subsidiary of Polaris Inc.
-538	ZERO MOTORCYCLES (USA)
+538	Zero Motorcycles
 53G	Coda Automotive
 53T	Think North America in Elkhart, IN
 546	EBR
@@ -488,7 +487,7 @@
 57X	Polaris Slingshot
 58A	Lexus car made by TMMK
 5AS	GEM
-5B4	WORKHORSE
+5B4	Workhorse Custom Chassis, LLC incomplete vehicle (RV chassis)
 5BZ	Nissan "bus" (van with more than 3 rows of seats)
 5CD	Indian Motorcycle Company of America Gilroy, CA
 5CK	WESTERN STAR TRUCKS
@@ -496,95 +495,95 @@
 5DF	Thomas Dennis Company LLC
 5EH	Excelsior-Henderson Motorcycle
 5F	HONDA USA-ALABAMA
-5FN	HONDA
-5FP	HONDA
+5FN	Honda MPV/SUV made by Honda Manufacturing of Alabama
+5FP	Honda truck made by Honda Manufacturing of Alabama
 5FR	Acura SUV made by Honda Manufacturing of Alabama
-5FY	NEW FLYER
+5FY	New Flyer
 5G8	Holden Volt
-5GA	BUICK
+5GA	Buick MPV/SUV
 5GD	Daewoo G2X
 5GN	Hummer H3T
-5GR	HUMMER
-5GT	HUMMER
-5GZ	SATURN
+5GR	Hummer H2
+5GT	Hummer H3
+5GZ	Saturn MPV/SUV
 5HD	Harley-Davidson for export markets
 5J	Honda Ohio
-5J6	HONDA
-5J8	ACURA
+5J6	Honda SUV made by Honda of America Mfg. in Ohio
+5J8	Acura SUV made by Honda of America Mfg. in Ohio
 5KB	Honda car made by Honda Manufacturing of Alabama
-5KJ	WESTERN STAR TRUCKS
-5KK	WESTERN STAR TRUCKS
+5KJ	Western Star Trucks truck
+5KK	Western Star Trucks truck
 5L	LINCOLN
 5L1	Lincoln SUV (2004–2009)
 5LD	Ford & Lincoln incomplete vehicle – limousine (2010–2014)
-5LM	LINCOLN
-5LT	LINCOLN
+5LM	Lincoln SUV
+5LT	Lincoln truck
 5MZ	Buell Motorcycle Company for export markets
-5N1	NISSAN
-5N3	INFINITI
-5NM	HYUNDAI
-5NP	HYUNDAI
+5N1	Nissan & Infiniti SUV
+5N3	Infiniti SUV
+5NM	Hyundai SUV
+5NP	Hyundai car
 5NT	Hyundai truck
-5PV	HINO
-5S3	SAAB
-5SA	SUZUKI
-5SX	AMERCIAN LEFRANCE
+5PV	Hino incomplete vehicle
+5S3	Saab 9-7X
+5SA	Suzuki ATV
+5SX	American LaFrance incomplete vehicle (Condor)
 5T	TOYOTA
 5T4	WORKHORSE
-5TB	TOYOTA
-5TD	TOYOTA
-5TE	TOYOTA
-5TF	TOYOTA
+5TB	Toyota truck made by TMMI
+5TD	Toyota MPV/SUV made by TMMI
+5TE	Toyota truck made by NUMMI
+5TF	Toyota truck made by TMMTX
 5U	BMW
-5UM	BMW
-5UX	BMW
+5UM	BMW M car
+5UX	BMW SUV
 5VC	Autocar incomplete vehicle
 5VP	Victory Motorcycles
 5WE	IC Bus incomplete vehicle
 5X	HYUNDAI/KIA
 5XX	Kia car
-5XY	KIA
-5Y2	PONTIAC
+5XY	Kia/Hyundai SUV
+5Y2	Pontiac Vibe made by NUMMI
 5Y4	Yamaha Motor Company ATV, UTV
 5YA	Indian Motorcycle Company Kings Mountain, NC
 5YF	Toyota car made by TMMMS
-5YJ	TESLA
-5YM	BMW
-5Z6	SUZUKI
+5YJ	Tesla
+5YM	BMW M SUV
+5Z6	Suzuki truck made by Nissan
 6AB	MAN AUSTRALIA
 6F	FORD
 6F1	Ford
 6F2	Iveco Trucks Australia Ltd.
-6F4	NISSAN MOTOR COMPANY AUSTRALIA
-6F5	KENWORTH AUSTRALIA
+6F4	Nissan Motor Australia
+6F5	Kenworth Australia
 6FM	Mack Trucks Australia
-6FP	FORD MOTOR COMPANY AUSTRALIA
-6G	GENERAL MOTORS
-6G1	CHEVROLET
-6G2	PONTIAC
+6FP	Ford
+6G	General Motors
+6G1	Holden & Chevrolet
+6G2	Pontiac
 6G3	Chevrolet
-6H	HOLDEN
+6H	Holden
 6H8	GENERAL MOTORS-HOLDEN (PRE NOV 2002)
-6MM	MITSUBISHI
-6MP	MERCURY
-6T1	TOYOTA
+6MM	Mitsubishi
+6MP	Mercury Capri
+6T1	Toyota
 6T9	Trailer
-6U9	JAPANESE IMPORTS
+6U9	Low Volume (Grey) Import Vehicles which don't have 17 Digit VIN. Uses NON ISO VIN with "Filler 0's between WMI & Non Iso VIN – I.e Japanese VIN PV35-400637 would become 6U90000PV35400637 see note below
 6ZZ	Low Volume (Grey) Import Vehicles which don't have 17 Digit VIN. Uses NON ISO VIN with "Filler 0's between WMI & Non Iso VIN – I.e Japanese VIN PV35-400637 would become 6ZZ0000PV35400637 see note below
 795	Bugatti
-7A1	MITSUBISHI
-7A3	HONDA
-7A4	TOYOTA
-7A5	FORD
+7A1	Mitsubishi
+7A3	Honda
+7A4	Toyota
+7A5	Ford
 7A7	Nissan New Zealand
-7A8	NZ TRANSPORT AGENCY (PRE-2009)
-7AT	NZ TRANSPORT AGENCY (POST-2009)
+7A8	NZ Transport Agency (pre-2009)
+7AT	NZ Transport Agency (post–2009)
 7FA	Honda SUV made by Honda Manufacturing of Indiana
 7FC	Rivian truck
-7G2	Tesla, Inc.
+7G2	Tesla Cybertruck & Tesla Semi
 7GZ	GMC incomplete vehicles made by Navistar International
 7H4	Hino truck
-7JR	Volvo Car Usa, Llc
+7JR	Volvo Cars car
 7JZ	Proterra From mid-2019 on
 7KG	Vanderhall Motor Works
 7MM	Mazda SUV made by MTMUS (Mazda-Toyota Joint Venture)
@@ -594,37 +593,37 @@
 7PD	Rivian SUV
 7R4	Icon Electric Vehicles
 7RZ	Electric Last Mile Solutions
-7SA	Tesla, Inc.
+7SA	Tesla SUV 2022+
 7SU	Blue Arc electric trucks made by The Shyft Group
 7SV	Toyota SUV made by TMMTX
 7SX	Global Electric Motorcars
 7Z0	Zoox
 829	Quantum Motors
-8A1	RENAULT
+8A1	Renault Argentina
 8A3	Scania Argentina
-8AC	MERCEDES BENZ
-8AD	PEUGEOT
+8AC	Mercedes-Benz vans (for South America)
+8AD	Peugeot
 8AE	Peugeot van
-8AF	FORD
-8AG	GENERAL MOTORS
-8AJ	TOYOTA
+8AF	Ford Motor Argentina
+8AG	General Motors de Argentina Chevrolet
+8AJ	Toyota Argentina
 8AK	SUZUKI ARGENTINA
 8AN	Nissan
-8AP	FIAT
-8AT	IVECO
-8AW	VOLKSWAGEN
+8AP	Fiat
+8AT	Iveco
+8AW	Volkswagen Argentina
 8BB	Agrale Argentina S.A
-8BC	CITROËN
+8BC	Citroën
 8BN	Mercedes-Benz incomplete vehicle (North America)
 8BR	Mercedes-Benz "bus" (van with more than 3 rows of seats) (North America)
 8BT	Mercedes-Benz MPV (van with 2 or 3 rows of seats) (North America)
 8BU	Mercedes-Benz truck (cargo van with 1 row of seats) (North America)
-8C3	HONDA
+8C3	Honda car/SUV
 8CH	Honda motorcycle
 8F9	Reborn Electric Motors SPA
 8G1	Automotores Franco Chilena S.A Renault
-8GD	PEUGEOT CHILE
-8GG	CHEVROLET CHILE
+8GD	Automotores Franco Chilena S.A Peugeot
+8GG	General Motors Chile Ltda.
 8L4	Great Wall Motors made by Ciudad del Auto Ciauto Cia. Ltda.
 8LB	General Motors OBB
 8LF	Maresa (Mazda)
@@ -634,213 +633,213 @@
 8XV	Iveco Venezuela C.A.
 8Z1	General Motors Venezolana C.A.
 932	Harley-Davidson
-935	CITROËN
-936	PEUGEOT
+935	Citroën
+936	Peugeot
 937	Dodge
 93C	General Motors do Brasil Chevrolet SUV (Mexico)
-93H	HONDA
+93H	Honda car/SUV
 93K	Volvo Trucks
 93P	Volare
 93R	TOYOTA BRAZIL
 93S	Navistar International
-93U	AUDI BRAZIL
-93V	AUDI BRAZIL
-93W	FIAT PROFESSIONAL
-93X	SOUZA RAMOS - MITSUBISHI / SUZUKI
-93Y	RENAULT
-93Z	IVECO
-94D	NISSAN
+93U	Audi 1999–2006
+93V	Navistar International
+93W	Fiat Ducato made by Iveco 2000–2016
+93X	Souza Ramos – Mitsubishi Motors / Suzuki Jimny
+93Y	Renault do Brasil
+93Z	Iveco
+94D	Nissan
 94G	Indabra
 94M	HVR-Busscar
-94N	RWM BRAZIL
+94N	RWM Brazil
 94T	Troller Veículos Especiais
-953	VW TRUCKS / MAN
-95P	CAOA / HYUNDAI
+953	VW Truck & Bus / MAN Truck & Bus
+95P	CAOA / Hyundai & CAOA Chery
 95V	Dafra Motos (motorscooters from SYM) & Ducati, KTM, & MV Agusta assembled by Dafra
 95Z	Buell Motorcycle Company assembled by Harley-Davidson Brazil
 96P	Kawasaki
 97N	Triumph Motorcycles Ltd
-988	JEEP
-98M	BMW
-98R	CHERY
-99A	AUDI
-99J	JAGUAR LAND ROVER
+988	Jeep and Fiat (made at the Goiana plant)
+98M	BMW car/SUV
+98R	Chery
+99A	Audi 2016-
+99J	Jaguar Land Rover
 99K	Haojue & Kymco assembled by JTZ Indústria e Comércio de Motos
 99L	BYD
 99Z	BMW Motorrad Motorcycle assembled by BMW 2017-
 9AM	Massari
-9BD	FIAT AUTOMÓVEIS
-9BF	FORD
-9BG	GENERAL MOTORS
-9BH	HYUNDAI
-9BM	MERCEDES-BENZ
+9BD	Fiat Automóveis
+9BF	Ford Brasil
+9BG	General Motors do Brasil Chevrolet
+9BH	Hyundai Motor Brasil
+9BM	Mercedes-Benz car & SUV & commercial truck
 9BN	Mafersa
-9BR	TOYOTA
-9BS	SCANIA
-9BV	VOLVO TRUCKS
-9BW	VOLKSWAGEN
+9BR	Toyota
+9BS	Scania Brazil
+9BV	Volvo Trucks
+9BW	Volkswagen do Brasil
 9BY	Agrale S.A.
-9C2	HONDA MOTORCYCLES
-9C6	YAMAHA
-9CD	SUZUKI (MOTORCYCLES)
+9C2	Honda Motorcycles
+9C6	Yamaha Motor
+9CD	Suzuki (motorcycles) assembled by J. Toledo Motos do Brasil
 9DB	MERCEDES-BENZ
-9DW	VOLKSWAGEN
-9FB	RENAULT
+9DW	Kenworth & Peterbilt trucks made by Volkswagen do Brasil
+9FB	Sofasa (Renault)
 9FC	Compañía Colombiana Automotriz S.A. (Mazda)
 9GA	GM Colmotores S.A. (Chevrolet)
-9UJ	CHERY
-9UK	LIFAN
-9UW	KIA
+9UJ	Chery assembled by Chery Socma S.A.
+9UK	Lifan
+9UW	Kia made by Nordex S.A.
 9V7	Citroen made by Nordex S.A.
-9V8	Peugeot made by Nordex S.A.
+9V8	Peugeot made by Nordex S.A.# wmi   manufacturer
 AAA	Audi South Africa made by Volkswagen of South Africa
 AAK	FAW Vehicle Manufacturers SA (PTY) Ltd.
 AAM	MAN Automotive (South Africa) (Pty) Ltd. includes VW Truck & Bus
-AAV	VOLKSWAGEN
+AAV	Volkswagen of South Africa
 ABJ	Mitsubishi Colt & Triton pickups made by Mercedes-Benz South Africa 1994–2011
 ABM	BMW Southern Africa
-AC5	HYUNDAI SOUTH AFRICA
+AC5	Hyundai Automotive South Africa (cars)
 ACV	Isuzu Motors South Africa 2018-
-ADD	HYUNDAI SOUTH AFRICA
+ADD	UD Trucks Southern Africa (Pty) Ltd
 ADM	General Motors South Africa includes Isuzu through 2018
 ADN	Nissan South Africa (Pty) Ltd
 ADR	Renault Sandero made by Nissan South Africa (Pty) Ltd
 ADX	Tata Automobile Corporation (SA) Ltd.
-AFA	FORD
+AFA	Ford Motor Company of Southern Africa & Samcor
 AFB	Mazda BT-50 made by Ford Motor Company of Southern Africa
 AHH	Hino South Africa
 AHM	Honda Ballade made by Mercedes-Benz South Africa 1982–2000
-AHT	TOYOTA
+AHT	Toyota South Africa Motors
 BAB	BMW cars 1986-2019
-BF9	KIBO MOTORCYCLES
-CL9	WALLYSCAR
+BF9	KIBO Motorcycles
+CL9	Tunisia Wallyscar
 DA1	Arab American Vehicles
 DA4	Arab American Vehicles
 DAA	Fiat Auto Egypt Industrial Co
 DAB	BMW Egypt SKD
 DF9	Laraki
 GA1	Renault /SOMACOA - Société Malgache de Construction Automobile
-J81	CHEVROLET,GEO
-J87	ISUZU
-J8B	CHEVROLET
-J8C	CHEVROLET
-J8D	GMC
+J81	Chevrolet/Geo car made by Isuzu
+J87	Pontiac/Asüna car made by Isuzu for GM Canada
+J8B	Chevrolet commercial trucks made by Isuzu
+J8C	Chevrolet commercial trucks made by Isuzu
+J8D	GMC commercial trucks made by Isuzu
 J8T	GMC commercial trucks made by Isuzu
 J8Y	CHEVROLET
-J8Z	CHEVROLET
+J8Z	Chevrolet pickup truck made by Isuzu
 JA	ISUZU
-JA3	MITSUBISHI
-JA4	MITSUBISHI
-JA7	MITSUBISHI
-JAA	ISUZU
-JAB	ISUZU
-JAC	ISUZU
-JAE	ACURA
-JAL	ISUZU
+JA3	Mitsubishi car
+JA4	Mitsubishi MPV/SUV
+JA7	Mitsubishi truck
+JAA	Isuzu truck
+JAB	Isuzu car
+JAC	Isuzu SUV
+JAE	Acura SLX made by Isuzu
+JAL	Isuzu commercial trucks & Chevrolet commercial trucks made by Isuzu 2016+ & Hino S-series truck made by Isuzu
 JAM	Isuzu commercial trucks
-JB3	DODGE
-JB4	DODGE
-JB7	DODGE
+JB3	Dodge car made by Mitsubishi Motors
+JB4	Dodge MPV/SUV made by Mitsubishi Motors
+JB7	Dodge truck made by Mitsubishi Motors
 JC0	Ford brand cars made by Mazda
-JC1	FIAT AUTOMOBILES/MAZDA
-JC2	FORD
+JC1	Fiat 124 Spider made by Mazda
+JC2	Ford Courier made by Mazda
 JD	DAIHATSU
-JD1	DAIHATSU
-JD2	DAIHATSU
+JD1	Daihatsu car
+JD2	Daihatsu SUV
 JD4	Daihatsu truck
 JDA	Daihatsu
-JE3	EAGLE
+JE3	Eagle car made by Mitsubishi Motors
 JE4	Mitsubishi
 JF	FUJI HEAVY INDUSTRIES (SUBARU)
-JF1	SUBARU
+JF1	Subaru – Fuji Heavy Industries car
 JF1-JF3	SUBARU - FUJI HEAVY INDUSTRIES
-JF2	SUBARU
-JF3	SUBARU
-JF4	SAAB
+JF2	Subaru – Fuji Heavy Industries SUV
+JF3	Subaru – Fuji Heavy Industries truck
+JF4	Saab 9-2X made by Subaru
 JF5	PONTIAC
-JG1	CHEVROLET, GEO
-JG7	PONTIAC
-JGC	CHEVROLET, GEO
+JG1	Chevrolet/Geo car made by Suzuki
+JG7	Pontiac/Asuna car made by Suzuki for GM Canada
+JGC	Chevrolet/Geo SUV made by Suzuki
 JGT	GMC SUV made by Suzuki for GM Canada
 JH	HONDA
-JH2	HONDA
-JH3	HONDA
-JH4	ACURA
+JH2	Honda motorcycle/ATV
+JH3	Honda ATV
+JH4	Acura car
 JHA	Hino
-JHB	HINO
+JHB	Hino
 JHD	Hino
 JHF	Hino
 JHH	Hino
 JHK	HONDA
-JHL	HONDA
-JHM	HONDA
-JJ3	CHRYSLER
+JHL	Honda MPV/SUV
+JHM	Honda car
+JJ3	Chrysler car made by Mitsubishi Motors
 JK	KAWASAKI (MOTORCYCLES)
-JK8	SUZUKI
+JK8	Suzuki QUV620F UTV made by Kawasaki
 JKA	Kawasaki
 JKB	Kawasaki
-JKS	SUZUKI
-JL5	MITSUBISHI FUSO
-JL6	MITSUBISHI
+JKS	Suzuki Marauder 1600/Boulevard M95 motorcycle made by Kawasaki
+JL5	Mitsubishi FUSO Truck & Bus Corp
+JL6	Mitsubishi FUSO Truck & Bus Corp
 JLF	Mitsubishi FUSO Truck & Bus Corp
-JLS	STERLING
-JM0	MAZDA FOR OCEANIA EXPORT
-JM1	MAZDA
-JM2	MAZDA
-JM3	MAZDA
-JM6	MAZDA
+JLS	Sterling Trucks 360 made by Mitsubishi FUSO Truck & Bus Corp
+JM0	Mazda for Oceania export
+JM1	Mazda car
+JM2	Mazda truck
+JM3	Mazda MPV/SUV
+JM6	Mazda
 JM7	Mazda
 JMA	Mitsubishi
-JMB	MITSUBISHI
+JMB	Mitsubishi
 JMF	Mitsubishi
-JMY	MITSUBISHI MOTORS
-JMZ	MAZDA
-JN	NISSAN
-JN1	DATSUN, NISSAN
-JN3	NISSAN
+JMY	Mitsubishi
+JMZ	Mazda for Europe export
+JN	Nissan
+JN1	Nissan car & Infiniti car
+JN3	Nissan incomplete vehicle
 JN4	NISSAN
-JN6	DATSUN, NISSAN
-JN8	NISSAN
-JNA	NISSAN
+JN6	Nissan truck
+JN8	Nissan MPV/SUV & Infiniti SUV
+JNA	Nissan Diesel/UD Trucks incomplete vehicle
 JNC	Nissan Diesel/UD Trucks
 JNE	Nissan Diesel/UD Trucks truck
-JNK	INFINITI
-JNR	INFINITI
-JNX	INFINITI
-JP3	PLYMOUTH
-JP4	PLYMOUTH
-JP7	PLYMOUTH
+JNK	Infiniti car
+JNR	Infiniti SUV
+JNX	Infiniti incomplete vehicle
+JP3	Plymouth car made by Mitsubishi Motors
+JP4	Plymouth MPV/SUV made by Mitsubishi Motors
+JP7	Plymouth truck made by Mitsubishi Motors
 JPC	Nissan Diesel/UD Trucks
 JR2	Isuzu Oasis made by Honda
 JR2X	ISUZU
-JS	SUZUKI
-JS1	SUZUKI
-JS2	SUZUKI
-JS3	SUZUKI
+JS	Suzuki
+JS1	Suzuki motorcycle & Kawasaki KLX400S/KLX400SR motorcycle made by Suzuki
+JS2	Suzuki car
+JS3	Suzuki SUV
 JS4	SUZUKI
-JSA	SUZUKI
+JSA	Kawasaki KFX400 ATV made by Suzuki
 JSK	Kawasaki KLX125/KLX125L motorcycle made by Suzuki
-JSL	SUZUKI
-JT	TOYOTA
-JT2	TOYOTA
-JT3	TOYOTA
-JT4	TOYOTA
-JT5	TOYOTA
-JT6	LEXUS
-JT8	LEXUS
-JTD	TOYOTA
-JTE	TOYOTA
+JSL	Kawasaki KFX400 ATV made by Suzuki
+JT	Toyota
+JT2	Toyota car
+JT3	Toyota MPV/SUV
+JT4	Toyota truck
+JT5	Toyota incomplete vehicle
+JT6	Lexus SUV
+JT8	Lexus car
+JTD	Toyota car
+JTE	Toyota MPV/SUV
 JTF	Toyota van/truck
 JTG	Toyota MPV/bus
-JTH	LEXUS
-JTJ	LEXUS
-JTK	SCION
-JTL	SCION
-JTM	TOYOTA
-JTN	TOYOTA
-JW6	MITSUBISHI
+JTH	Lexus car
+JTJ	Lexus SUV
+JTK	Toyota car
+JTL	Toyota SUV
+JTM	Toyota SUV
+JTN	Toyota car
+JW6	Mitsubishi FUSO division of Mitsubishi Motors (through mid 2003)
 JW7	MITSUBISHI
-JY	YAMAHA
+JY	Yamaha Motor
 JY3	Yamaha Motor 3-wheel ATV
 JY4	Yamaha Motor 4-wheel ATV
 JYA	Yamaha Motor motorcycles
@@ -852,110 +851,110 @@ KF3	Merkavim
 KF6	Automotive Industries, Ltd.
 KF9	Tomcar	004
 KL	DAEWOO/GM KOREA
-KL1	CHEVROLET
-KL2	PONTIAC
+KL1	GM Daewoo/GM Korea Chevrolet car
+KL2	Daewoo/GM Daewoo Pontiac
 KL3	GM Daewoo/GM Korea Holden
 KL4	GM Korea Buick
-KL5	SUZUKI
+KL5	GM Daewoo Suzuki
 KL6	GM Daewoo GMC
-KL7	ASUNA
+KL7	Daewoo GM Canada brands: Passport, Asuna (Pre-2000)
 KL8	GM Daewoo/GM Korea Chevrolet car (Spark)
-KLA	DAEWOO
+KLA	Daewoo/GM Korea
 KLT	Tata Daewoo
 KLU	Tata Daewoo
 KM	HYUNDAI
 KM1	HYOSUNG (MOTORCYCLES)
-KM4	SUZUKI
-KM8	HYUNDAI
+KM4	Hyosung Motors/S&T Motors/KR Motors
+KM8	Hyundai SUV
 KMA	Asia Motors
 KME	Hyundai commercial truck
-KMF	HYUNDAI
-KMH	HYUNDAI
+KMF	Hyundai van & commercial truck & Bering Truck
+KMH	Hyundai car
 KMJ	Hyundai bus & minibus
 KMT	Genesis Motor car
 KMU	Genesis Motor SUV
-KMY	DAELIM (MOTORCYCLES)
+KMY	Daelim Motor Company, Ltd/DNA Motors Co., Ltd.
 KN	KIA
-KNA	KIA
+KNA	Kia car
 KNB	KIA
-KNC	KIA
-KND	HYUNDAI, KIA
+KNC	Kia car
+KND	Kia SUV/MPV & Hyundai Entourage
 KNE	Kia car
-KNJ	FORD
-KNM	RENAULT SAMSUNG
-KPA	SSANGYONG
+KNJ	Ford Festiva & Aspire
+KNM	Renault Samsung Motors & Nissan Rogue made by Renault Samsung Motors
+KPA	SsangYong pickup
 KPB	SsangYong car
-KPH	MITSUBISHI
-KPT	SSANGYONG
+KPH	Mitsubishi Precis
+KPT	SsangYong SUV/MPV
 L1C	Hubei Huawei Special-Purpose Automobile
-L2C	CHERY JAGUAR LAND ROVER
+L2C	Chery Jaguar Land Rover
 L4B	XINGYUE GROUP (MOTORCYCLES)
 L56	RENAULT SAMSUNG
 L5C	KANGDI (ATV)
 L5K	ZHEJIANG YONGKANG EASY VEHICLE
 L5N	ZHEJIANG TAOTAO
-L5Y	MERATO MOTORCYCLE TAIZHOU ZHONGNENG
-L6T	GEELY
+L5Y	Znen Taizhou Zhongneng Motorcycle Co. Ltd.
+L6T	Geely
 L85	ZHEJIANG YONGKANG HUABAO ELECTRIC APPLIANCE
 L8A	Jinhua Youngman Automobile Manufacturing Co., Ltd.
 L8X	ZHEJIANG SUMMIT HUAWIN MOTORCYCLE
 L8Y	Zhejiang Jonway Motorcycle Manufacturing Co., Ltd.
 L9N	Zhejiang Taotao Vehicles Co., Ltd.
-LA6	KING LONG
+LA6	King Long
 LA9	BYD Auto	LC0
 LAE	Jinan Qingqi Motorcycle
 LAL	Sundiro Honda Motorcycle Co., Ltd.
 LAN	CHANGZHOU YAMASAKI MOTORCYCLE
 LB1	Fujian Benz
-LB2	GEELY MOTORCYCLES
-LB3	GEELY
-LBB	ZHEJIANG QIANJIANG MOTORCYCLE (KEEWAY/GENERIC)
-LBE	BEIJING HYUNDAI
+LB2	Geely motorcycle
+LB3	Geely
+LBB	Qianjiang Motorcycle & Benelli
+LBE	Beijing Hyundai
 LBM	ZONGSHEN PIAGGIO
-LBP	CHONGQING JAINSHE YAMAHA (MOTORCYCLES)
-LBV	BMW BRILLIANCE
-LC0	BYD INDUSTRY
+LBP	Chongqing Jianshe Yamaha Motor Co. Ltd.
+LBV	BMW Brilliance
+LC0	BYD Auto Industry Co. Ltd.
 LC2	Changzhou Kwang Yang Motor Co., Ltd.
 LC6	Changzhou Haojue Suzuki Motorcycle Co. Ltd.
-LCE	HANGZHOU CHUNFENG MOTORCYCLES (CFMOTO)
+LCE	CF Moto by Chunfeng Holding Group Hangzhou Motorcycles Manufacturing Co., Ltd.
 LCR	Gonow
-LDC	DONGFENG PEUGEOT-CITROËN
+LDC	Dongfeng Peugeot-Citroën
 LDD	DANDONG HUANGHAI AUTOMOBILE
 LDK	FAW Bus (Dalian) Co., Ltd.
-LDN	SOUEAST MOTOR
-LDY	ZHONGTONG COACH
-LE4	BEIJING BENZ
+LDN	Soueast
+LDY	Zhongtong Bus
+LE4	Beijing Benz & Beijing Benz-Daimler Chrysler Automotive Co., Ltd.
 LEF	JMC
 LES	ISUZU
-LET	JIANGLING-ISUZU MOTORS
+LET	Jiangxi Isuzu
 LF3	Lifan motorcycle
 LFA	Ford Lio Ho Motor Co Ltd old designation
-LFB	FAW
+LFB	FAW Jilin
 LFG	TAIZHOU CHUANL MOTORCYCLE MANUFACTURING
-LFM	FAW TOYOTA
+LFM	FAW Toyota
 LFN	FAW Bus (Wuxi) Co., Ltd.
-LFP	FAW CAR
+LFP	FAW Car
 LFT	FAW
-LFV	FAW-VOLKSWAGEN
+LFV	FAW-Volkswagen
 LFW	FAW JIEFANG
 LFY	CHANGSHU LIGHT MOTORCYCLE FACTORY
 LGA	Dongfeng Commercial Vehicle Co., Ltd. trucks
-LGB	DONGFENG NISSAN
+LGB	Dongfeng Nissan
 LGC	Dongfeng Commercial Vehicle Co., Ltd. buses
 LGG	Dongfeng Liuzhou Motor
 LGH	QOROS (FORMERLY DONG FENG (DFM))
-LGJ	DONGFENG FENGSHEN
+LGJ	Dongfeng Fengshen (Aeolus)
 LGL	Guilin Daewoo
-LGW	GREAT WALL (HAVEL)
-LGX	BYD AUTO
+LGW	Great Wall (Haval)
+LGX	BYD Auto
 LGZ	Guangzhou Denway Bus
-LH1	FAW HAIMA
+LH1	FAW Haima
 LHB	BEIJING AUTOMOTIVE INDUSTRY HOLDING
-LHG	GUANGZHOU HONDA
+LHG	Guangzhou Honda
 LJ1	JAC
 LJ8	Zotye Auto
-LJC	JAC
-LJD	DONGFENG YUEDA KIA
+LJC	Jincheng Corporation
+LJD	Dongfeng Yueda Kia
 LJN	Zhengzhou Nissan
 LJS	Yaxing Coach
 LJU	Shanghai Maple Automobile & Kandi
@@ -963,64 +962,64 @@ LJV	Sinotruk Chengdu Wangpai Commercial Vehicle Co., Ltd.
 LJX	JMC Ford
 LKC	Changhe
 LKG	Youngman Lotus Automobile Co., Ltd.
-LKL	SUZHOU KING LONG
+LKL	Higer Bus
 LKT	Yunnan Lifan Junma Vehicle Co., Ltd. commercial vehicles
 LL3	Xiamen Golden Dragon Bus Co. Ltd
-LL6	HUNAN CHANGFENG MANUFACTURE JOINT-STOCK
-LL8	LINHAI (ATV)
+LL6	GAC Mitsubishi
+LL8	Jiangsu Linhai Yamaha Motor Co., Ltd.
 LLC	Loncin Holdings
 LLN	Qoros
-LLV	LIFAN
-LM1	SUZUKI
-LM4	SUZUKI
+LLV	Lifan
+LM1	Tai Ling Motor Co Ltd old designation
+LM4	Tai Ling Motor Co Ltd old designation
 LM5	ISUZU
 LM6	SWM (automobiles)
 LMC	SUZUKI HONG KONG (MOTORCYCLES)
-LMG	GAC TRUMPCHI
+LMG	GAC Trumpchi
 LN1	SUZUKI
 LNB	BAIC Motor
 LNP	NAC MG UK Limited & Nanjing Fiat Automobile
 LNY	Yuejin
-LPA	CHANGAN PSA (DS AUTOMOBILES)
+LPA	Changan PSA (DS Automobiles)
 LPE	BYD Auto
-LPR	YAMAHA HONG KONG (MOTORCYCLES)
+LPR	Yamaha Motor Taiwan Co. Ltd. old designation
 LPS	Polestar
 LRB	SAIC General Motors Buick
 LRD	Beijing Foton Daimler Automotive Co., Ltd. Auman trucks
 LRE	SAIC General Motors Cadillac
-LRW	Tesla, Inc.
-LS5	CHANGAN SUZUKI
+LRW	Tesla
+LS5	Changan Automobile & Changan Suzuki
 LS7	JMC Heavy Duty Vehicle
 LSF	SAIC Maxus & Shanghai Sunwin Bus Corporation
 LSFA	SAIC MAXUS
-LSG	SAIC GENERAL MOTORS
+LSG	SAIC General Motors Chevrolet
 LSH	SAIC Maxus
-LSJ	SAIC MG
+LSJ	SAIC MG & SAIC Roewe
 LSK	SAIC Maxus
-LSV	SAIC VOLKSWAGEN
-LSY	BRILLIANCE ZHONGHUA
+LSV	SAIC Volkswagen
+LSY	Brilliance & Jinbei GM
 LTA	ZX Auto
 LTN	Soueast built Chrysler & Dodge vehicles
-LTV	FAW TOYOTA (TIANJIN)
-LUC	GUANGQI HONDA
+LTV	FAW Toyota (Tianjin)
+LUC	Honda Automobile (China)
 LUD	Dongfeng Nissan Diesel Motor Co Ltd
 LUX	Dongfeng Yulon Motor Co. Ltd
 LVA	Foton Motor
 LVB	Foton Motor
 LVC	Foton Motor
 LVF	Changhe Suzuki
-LVG	GAC TOYOTA
-LVH	DONGFENG HONDA
+LVG	GAC Toyota
+LVH	Dongfeng Honda
 LVM	Chery Commercial Vehicle
-LVR	CHANGAN MAZDA
-LVS	CHANGAN FORD
-LVV	CHERY
+LVR	Changan Mazda
+LVS	Changan Ford & Changan Ford Mazda
+LVV	Chery
 LVX	Landwind
 LVY	Volvo Cars Daqing factory
-LVZ	DONG FENG SOKON MOTOR COMPANY (DFSK)
+LVZ	DFSK Motor
 LWB	Wuyang Honda Motorcycle (Guangzhou) Co., Ltd.
 LWL	Qingling Isuzu
-LWV	GAC FIAT
+LWV	GAC Fiat Chrysler
 LXV	Beijing Borgward Automotive Co., Ltd.
 LXY	Chongqing Shineray Motorcycle Co., Ltd.
 LYB	Weichai (Yangzhou) Yaxing Automobile Co., Ltd.
@@ -1028,34 +1027,34 @@ LYM	Zhuzhou Jianshe Yamaha Motorcycle Co., Ltd.
 LYV	Volvo Cars Chengdu factory & Luqiao factory
 LZE	ISUZU GUANGZHOU
 LZF	SAIC Iveco Hongyan
-LZG	SHAANXI AUTOMOBILE GROUP
+LZG	Shaanxi Automobile Group Shacman Bus
 LZK	Sinotruk (CNHTC) Huanghe bus
 LZM	MAN CHINA
 LZP	ZHONGSHAN GUOCHI MOTORCYCLE (BAOTIAN)
 LZS	Zongshen
 LZU	Guangzhou Isuzu Bus
-LZW	SAIC GM WULING
-LZY	YUTONG
-LZZ	CHONGQING SHUANGZING MECH & ELEC (HOWO)
+LZW	SAIC GM Wuling
+LZY	Yutong
+LZZ	Sinotruk (CNHTC) Howo, Sitrak
 M3G	Isuzu Motors India
 M6F	UM Lohia Two Wheelers Private Limited
-MA1	MAHINDRA & MAHINDRA
-MA3	SUZUKI INDIA (MARUTI)
-MA6	GM INDIA
-MA7	MITSUBISHI INDIA (FORMERLY HONDA)
+MA1	Mahindra
+MA3	Maruti Suzuki India Limited
+MA6	General Motors India Pvt. Ltd.
+MA7	Hindustan Motors Ltd & Mitsubishi Motors models made by Hindustan Motors & Isuzu models made by Hindustan Motors
 MAB	MAHINDRA & MAHINDRA
 MAC	MAHINDRA & MAHINDRA
 MAH	Fiat India Automobiles Pvt. Ltd
-MAJ	FORD INDIA
-MAK	HONDA SIEL CARS INDIA
-MAL	HYUNDAI
+MAJ	Ford India
+MAK	Honda Cars India
+MAL	Hyundai Motor India
 MAN	Eicher Polaris Multix
-MAT	TATA MOTORS
-MB1	ASHOK LEYLAND
+MAT	Tata Motors
+MB1	Ashok Leyland Ltd
 MB8	Suzuki Motorcycle India Limited
 MBF	Royal Enfield
-MBH	SUZUKI INDIA (MARUTI)
-MBJ	TOYOTA INDIA
+MBH	Nissan Pixo made by Maruti Suzuki India Limited
+MBJ	Toyota Kirloskar Motor Pvt Ltd
 MBK	MAN Trucks India Pvt. Ltd
 MBL	Hero MotoCorp
 MBR	MERCEDES-BENZ INDIA
@@ -1064,82 +1063,82 @@ MBV	Premier Automobiles Limited
 MBX	Piaggio India Piaggio Ape
 MBY	Asia Motor Works Ltd
 MC1	Force Motors Limited
-MC2	VOLVO EICHER COMMERCIAL VEHICLES LIMITED.
+MC2	Eicher Motors Limited
 MC4	Dilip Chhabria Design Pvt Ltd
-MCA	FIAT INDIA
-MCB	GM INDIA
+MCA	FCA India Automobiles Pvt. Ltd
+MCB	General Motors India Pvt. Ltd.
 MCD	Mahindra Two Wheelers
 MCG	Atul Auto
 MCL	International Cars And Motors Ltd
-MD2	BAJAJ AUTO
+MD2	Bajaj Auto Ltd & KTM and Husqvarna models built by Bajaj
 MD6	TVS Motor Company
 MD7	LML Ltd including Genuine Scooter Company Stella
 MD9	Shuttle Cars
 MDE	Kinetic Engineering Limited
-MDH	NISSAN INDIA
+MDH	Nissan Motor India Pvt Ltd
 MDT	Kerala Automobiles Limited
 ME1	India Yamaha Motor Pvt. Ltd
 ME3	Royal Enfield
 ME4	Honda Motorcycle and Scooter India
 ME9	BUYMYEV TECHNOLOGY PVT LTD
 MEC	Daimler India Commercial Vehicles Pvt. Ltd. BharatBenz
-MEE	RENAULT INDIA
+MEE	Renault India Private Limited
 MEG	Harley-Davidson India
 MER	Benelli
 MET	Piaggio India Vespa
-MEX	VOLKSWAGEN INDIA
+MEX	Škoda Auto Volkswagen India Pvt. Ltd. 2015 on
 MH1	PT Astra Honda Motor
 MH3	PT Yamaha Indonesia Motor Mfg.
 MH4	PT Kawasaki Motor Indonesia
-MHF	TOYOTA INDONESIA
+MHF	PT Toyota Astra Motor
 MHH	BMW cars 2003-2019 India
 MHK	PT Astra Daihatsu Motor including Toyotas made by Astra Daihatsu
 MHL	PT Mercedes-Benz Indonesia
-MHR	HONDA INDONESIA
+MHR	PT Honda Prospect Motor
 MHY	PT Suzuki Indomobil Motor
 MJB	GM Indonesia
 MK2	Mitsubishi Motors Krama Yudha Indonesia
 MK3	PT SGMW Motor Indonesia Wuling
 ML0	Ducati Motor (Thailand) Co., Ltd.
-ML3	DODGE
+ML3	Mitsubishi Motors (Thailand)
 ML5	Kawasaki Motors Enterprise Co. Ltd. (Thailand)
-MLC	SUZUKI THAILAND
+MLC	Thai Suzuki Motor Co., Ltd.
 MLE	Thai Yamaha Motor Co., Ltd.
-MLH	HONDA THAILAND
+MLH	Honda motorcycle
 MLY	Harley-Davidson
-MM0	MAZDA
+MM0	Mazda (Ford-Mazda AAT plant)
 MM6	Mazda (Ford-Mazda AAT plant)
 MM7	Mazda (Ford-Mazda AAT plant)
-MM8	MAZDA THAILAND
+MM8	Mazda (Ford-Mazda AAT plant)
 MMA	Mitsubishi Motors (Thailand)
-MMB	MITSUBISHI
-MMC	MITSUBISHI THAILAND
+MMB	Mitsubishi Motors (Thailand)
+MMC	Mitsubishi Motors (Thailand)
 MMD	Mitsubishi Motors (Thailand)
 MMF	BMW
 MMH	Tata
 MMK	Toyota (Toyota Auto Works plant)
 MML	MG
-MMM	CHEVROLET THAILAND
+MMM	Chevrolet
 MMR	Subaru
 MMS	Suzuki
-MMT	MITSUBISHI THAILAND
+MMT	Mitsubishi Motors (Thailand)
 MMU	Holden
 MNA	Ford (Ford-Mazda AAT plant) for Australia/New Zealand export
-MNB	FORD THAILAND
+MNB	Ford (Ford-Mazda AAT plant) for other right-hand drive markets
 MNC	Ford (Ford-Mazda AAT plant) for left-hand drive markets
 MNK	Hino Motors Manufacturing Thailand Co Ltd
-MNT	NISSAN
-MP1	ISUZU THAILAND
+MNT	Nissan Motor Thailand
+MP1	IMCT Isuzu Motors Company Thailand
 MP2	Mazda BT-50 pickup built by Isuzu Motors (Thailand) Co., Ltd.
 MP5	Foton
-MPA	ISUZU THAILAND
+MPA	IMCT Isuzu Motors Company Thailand
 MPB	Ford (FTM plant)
-MR0	TOYOTA THAILAND
+MR0	Toyota (Ban Pho and Samrong plant)
 MR1	Toyota (Samrong plant) (Fortuner)
 MR2	Toyota (Gateway plant)
-MRH	HONDA
-MS0	KIA
-MS3	Suzuki Motor Co., Ltd.
+MRH	Honda car
+MS0	SSS MOTORS Myanmar/Kia
+MS3	Suzuki Myanmar Motor Co., Ltd.
 MX3	Hyundai Trans Auto
 MXV	IMZ-Ural Ural Motorcycles
 MYH	Ather Energy
@@ -1157,50 +1156,50 @@ NC0	BMW South Africa
 NFB	Honda Atlas Cars Pakistan Ltd
 NG3	Lucky Motor Corporation
 NL1	Togg
-NLA	HONDA TÜRKIYE
+NLA	Honda cars
 NLC	Askam Kamyon Imalat Ve Ticaret A.S.
 NLE	MERCEDES-BENZ TÜRK TRUCK
-NLH	HYUNDAI ASSAN
+NLH	Hyundai Assan Otomotiv car/SUV
 NLJ	Hyundai Assan Otomotiv van
 NLN	Karsan Automotive Industry & Trade
 NLR	Otokar
 NLT	TEMSA
-NM0	FORD OTOSAN
+NM0	Ford Otosan
 NM1	Oyak-Renault Oto Fab AS
-NM4	TOFAŞ TÜRK
+NM4	Tofas (Turk Otomobil Fabrikasi AS)
 NMA	MAN Türkiye A.Ş.
-NMB	Mercedes-Benz Buses
-NMC	BMC
+NMB	Mercedes-Benz Türk A.S.
+NMC	BMC Otomotiv Sanayi ve Ticaret A.Ş.
 NMH	Honda motorcycle
-NMT	TOYOTA
-NNA	Isuzu
+NMT	Toyota Motor Manufacturing Turkey
+NNA	Anadolu Isuzu
 PAB	Isuzu Philippines Corporation
 PAD	Honda Cars Philippines
 PAF	BMW Philippines
-PE1	FORD PHILLIPINES
-PE3	MAZDA PHILLIPINES
-PL1	PROTON
-PL8	HYUNDAI INOKOM
-PLP	SUBARU
+PE1	Ford Motor Company Philippines
+PE3	Mazda Philippines made by Ford Motor Company Philippines
+PL1	Proton
+PL8	Hyundai/Inokom
+PLP	Subaru
 PLZ	Isuzu Malaysia
 PM1	BMW
-PM2	PERODUA
-PM9	BUFORI
-PMH	HONDA
-PMK	HONDA BOON SIEW
-PML	HICOM
-PMN	MODENAS
-PMV	YAMAHA HONG LEONG
-PN1	TOYOTA
+PM2	Perodua
+PM9	Bufori
+PMH	Honda car
+PMK	Honda Boon Siew motorcycle
+PML	Hicom
+PMN	Modenas
+PMV	Hong Leong Yamaha Motor Sdn. Bhd.
+PN1	Toyota
 PN2	Toyota
-PN8	NISSAN
-PNA	PEUGEOT
-PNV	VOLVO CARS
-PP1	MAZDA
-PP3	HYUNDAI
-PPP	SUZUKI
+PN8	Nissan
+PNA	Naza/Kia/Peugeot
+PNV	Volvo Cars
+PP1	Mazda
+PP3	Hyundai
+PPP	Suzuki
 PPV	Volkswagen
-PR8	FORD
+PR8	Ford
 PRA	Sinotruk
 PRB	Jaecoo (Chery Jaecoo)
 PRH	Chery
@@ -1208,12 +1207,12 @@ PRN	GAC Trumpchi made by Warisan Tan Chong Automotif Malaysia
 R1N	NIU
 R4N	Elyx Smart Technology Holdings (Hong Kong) Ltd.
 RA1	Steyr Trucks International FZE
-RF3	AEON MOTOR
+RF3	Aeon Motor
 RF5	Yulon Motor Co Ltd
-RFB	KYMCO
+RFB	Kymco
 RFC	Taiwan Golden Bee
 RFD	Tai Ling Motor Co Ltd new designation
-RFG	SANYANG SYM
+RFG	SYM Motors
 RFL	ADLY
 RFT	CPI
 RFV	PGO Scooters including Genuine Scooter Company models made by PGO
@@ -1225,101 +1224,101 @@ RKL	Kuozui Motors (Toyota)
 RKM	China Motor Corporation
 RKR	Yamaha Motor Taiwan Co. Ltd. new designation
 RKT	Honda Taiwan
-RL0	Ford
+RL0	Ford Vietnam
 RL1	Suzuki
 RL2	Ford
 RL3	Ford
-RL4	Toyota
+RL4	Toyota Motor Vietnam
 RL5	Lifan
 RL6	Piaggio
 RL8	Lifan
-RLA	Mitsubishi
-RLC	Yamaha
+RLA	Vina Star Motors Corp. – Mitsubishi
+RLC	Yamaha Motor Vietnam Co. Ltd.
 RLD	Isuzu
-RLE	Isuzu
-RLF	BMW
+RLE	Isuzu Vietnam Co.
+RLF	BMW BMW cars 2003-2014 Vietnam
 RLG	SYM
-RLH	Honda
+RLH	Honda Vietnam Co. Ltd.
 RLL	VinFast SUV
-RLM	Mercedes-Benz
+RLM	Mercedes-Benz Vietnam
 RLS	Suzuki
 RLV	Vietnam Precision Industrial CO., Ltd. Can-Am DS 70 & DS 90
-RP8	Piaggio
-SA9	MORGAN
+RP8	Piaggio Vietnam Co. Ltd.
+SA9	Morgan Motor Company, OX Global
 SAA	Austin
-SAB	OPTARE
-SAD	Jaguar (F-Pace)
+SAB	Optare
+SAD	Daimler until April 1987
 SAF	ERF
 SAH	Honda made by Austin Rover Group
-SAJ	JAGUAR
-SAL	LAND ROVER
+SAJ	Jaguar
+SAL	Land Rover
 SAM	Morris
-SAR	ROVER
-SAT	TRIUMPH
-SAX	STERLING
+SAR	Rover & MG Rover Group
+SAT	Triumph car
+SAX	Austin Rover Group including Sterling Cars
 SAY	Norton Motorcycles
 SAZ	Freight Rover
-SB1	TOYOTA
+SB1	Toyota Manufacturing UK
 SBB	Leyland Vehicles
 SBC	Iveco Ford Truck
 SBJ	Leyland Bus
 SBL	Leyland Motors & Leyland DAF
-SBM	MCLAREN AUTOMOTIVE
+SBM	McLaren Group
 SBS	Scammell
 SBV	Kenworth & Peterbilt trucks made by Leyland Trucks
 SC6	INEOS Automotive
-SCA	ROLLS ROYCE
-SCB	BENTLEY
-SCC	LOTUS CARS
-SCE	DELOREAN
-SCF	ASTON MARTIN LAGONDA LIMITED
+SCA	Rolls-Royce Motor Cars & Rolls-Royce Motors car
+SCB	Bentley Motors Limited
+SCC	Lotus Cars Limited
+SCE	DeLorean
+SCF	Aston Martin Lagonda Limited
 SCG	Triumph Engineering original Triumph Motorcycle company
 SCK	Ifor Williams Trailers
 SCR	London Electric Vehicle Company & London Taxi Company & London Taxis International
 SCV	Volvo Truck & Bus
 SD7	Aston Martin SUVs
-SDB	PEUGEOT UK (FORMERLY TALBOT)
+SDB	Talbot Motor Company
 SDF	Dodge Trucks – UK 1981–1984
 SDG	Renault Trucks Industries 1985–1992
 SDK	Caterham Cars
 SDL	TVR
 SDP	MG Motor NAC MG UK & MG Motor UK
-SED	GENERAL MOTORS LUTON PLANT
+SED	IBC Vehicles (Isuzu Bedford Company)
 SEG	Dennis Eagle
-SEY	LDV
-SFA	FORD UK
-SFD	ALEXANDER DENNIS
-SFE	ALEXANDER DENNIS (NORTH AMERICA)
+SEY	LDV Group
+SFA	Ford of Britain
+SFD	Dennis
+SFE	Alexander Dennis
 SFN	Foden
-SFZ	Tesla, Inc.
+SFZ	Tesla Roadster made by Lotus
 SGD	Swift Group Ltd.
-SHH	HONDA
-SHS	HONDA
+SHH	Honda UK Manufacturing car
+SHS	Honda UK Manufacturing SUV
 SJA	Bentley SUV
 SJK	Nissan Motor Manufacturing UK Infiniti
-SJN	NISSAN
+SJN	Nissan Motor Manufacturing UK Nissan
 SKA	Vauxhall Motors
-SKF	VAUXHALL
+SKF	Bedford Vehicles
 SLA	Rolls-Royce Motor Cars SUV
-SLP	JCB RESEARCH UK
+SLP	JC Bamford Excavators
 SLV	Volvo Bus
-SMT	TRIUMPH MOTORCYCLES
+SMT	Triumph Motorcycles Ltd current Triumph Motorcycle company
 SNE	Wartburg
 SNT	Trabant
 SNZ	MZ Motorrad- und Zweiradwerk
 SU9	SOLARIS
 SUA	Sanocka Fabryka Autobusow Sfa / Autosan
-SUD	WIELTON
+SUD	Wielton
 SUE	BOSMAL
-SUF	FIAT AUTO POLAND
+SUF	Fabryka Samochodów Małolitrażowych
 SUJ	Jelcz
-SUL	FSC (POLAND)
+SUL	FSC Lublin Automotive Factory
 SUM	Metal-Fach Sp. z o.o.
 SUN	FSD
-SUP	FSO-DAEWOO (POLAND)
+SUP	Fabryka Samochodow Osobowych
 SUR	Factory of Agricultural Vehicles ‘Polmo’ in Poznań
 SUS	Fabryka Samochodów Ciężarowych „Star”
-SUU	SOLARIS BUS & COACH (POLAND)
+SUU	Solaris Bus & Coach
 SUZ	Zasław
 SW9	Solbus
 SWV	TA-NO
@@ -1331,127 +1330,127 @@ SZH	BWW
 SZR	BORO
 TAM	Mowag
 TAP	Polaris Europe (based in Switzerland)
-TCC	MICRO COMPACT CAR
+TCC	Micro Compact Car (until 5/99)
 TDM	QUANTYA SWISS ELECTRIC MOVEMENT (SWITZERLAND)
-TEB	JOHNSTON SWEEPER (BUCHER)
-TK9	SOR
+TEB	Bucher Municipal including Johnston Sweepers of the UK (owned by Bucher Municipal of Switzerland)
+TK9	SOR Libchavy	SL5
 TLJ	Jawa Moto
 TM9	ŠKODA TROLLEYBUSES (CZECH REPUBLIC)
-TMA	HYUNDAI
-TMB	ŠKODA
+TMA	Hyundai Motor Manufacturing Czech car
+TMB	Škoda Auto AS
 TMC	Hyundai Motor Manufacturing Czech SUV
-TMK	KAROSA (CZECH REPUBLIC)
-TMP	ŠKODA TROLLEYBUSES (CZECH REPUBLIC)
-TMT	TATRA (CZECH REPUBLIC)
+TMK	Karosa
+TMP	Škoda Ostrov
+TMT	Tatra car
 TN9	KAROSA (CZECH REPUBLIC)
 TNA	Avia/Daewoo Avia
 TNE	TAZ
 TNT	Tatra trucks
 TNU	Tatra trucks
-TRA	IKARUS BUS
-TRU	AUDI
+TRA	Ikarus Bus
+TRU	Audi
 TSE	IKARUS EGYEDI AUTOBUSZGYAR
-TSM	SUZUKI
-TW1	TOYOTA CAETANO PORTUGAL
+TSM	Suzuki
+TW1	Toyota Caetano Portugal
 TW3	Renault Portuguesa SARL
 TW7	Mini Moke made by British Leyland & Austin Rover
 TW8	General Motors De Portugal Lda
 TWG	Salvador Caetano
 TX5	Mini Moke made by Cagiva
-TYA	MITSUBISHI TRUCKS PORTUGAL
-TYB	MITSUBISHI TRUCKS PORTUGAL
-U5Y	KIA
-U6Y	KIA MOTORS SLOVAKIA
+TYA	Mitsubishi Fuso Truck and Bus Corp.
+TYB	Mitsubishi Fuso Truck and Bus Corp.
+U5Y	Kia Motors Slovakia car
+U6Y	Kia Motors Slovakia SUV
 UKH	HARDI International A/S (Agricultural Machinery)
 ULA	ASA-LIFT: Vegetable Technology Specialist (Agricultural Machinery)
 UU	DACIA
-UU1	RENAULT DACIA
+UU1	Dacia
 UU2	Oltcit
 UU3	ARO
 UU5	Rocar
-UU6	DAEWOO ROMANIA
+UU6	Daewoo Romania
 UU7	Euro Bus Diamond
 UU9	Astra Bus
 UZT	UTB (Uzina de Tractoare Brașov)
 V31	Tvornica Autobusa Zagreb (TAZ)
 V39	Rimac Automobili	AB8
 VA0	ÖAF
-VAG	MAGNA STEYR PUCH
+VAG	Steyr-Daimler-Puch Puch G & Steyr-Puch Pinzgauer
 VAK	Kässbohrer Transport Technik
-VAN	MAN AUSTRIA
-VBK	KTM (MOTORCYCLES)
+VAN	Steyr-Daimler-Puch Steyr Trucks
+VBK	KTM
 VCF	Fisker Inc. (Fisker Ocean) made by Magna Steyr
-VF1	RENAULT
-VF2	RENAULT
-VF3	PEUGEOT
-VF4	TALBOT
-VF5	IVECO UNIC SA
-VF6	RENAULT TRUCKS/VOLVO
-VF7	CITROËN
-VF8	MATRA/TALBOT/SIMCA
-VF9	BUGATTI
-VFA Alpine Renault
+VF1	Renault & Eagle Medallion made by Renault
+VF2	Renault Trucks
+VF3	Peugeot
+VF4	Talbot
+VF5	Iveco Unic
+VF6	Renault Trucks
+VF7	Citroën
+VF8	Matra/Talbot/Simca
+VF9	Mathieu Fayat Group	607
+VFA	Alpine
 VFE	IVECOBUS
-VG5	MBK (MOTORCYCLES)
-VG6	MACK
+VG5	MBK & Yamaha Motor
+VG6	Renault Trucks & Mack Trucks medium duty trucks made by Renault Trucks
 VG7	Renault Trucks
 VG8	Renault Trucks
 VG9	EVRARD (Agricultural Machinery)
 VGA	Peugeot Motocycles
-VJ1 Heuliez Bus
+VJ1	Heuliez Bus
 VJ2 Mia Electric
 VK8	Venturi Automobiles
 VL4	Bluecar
-VLU	SCANIA FRANCE
+VLU	Scania Production Angers
 VMK	Renault Sport Spider
-VN1	SOVAB (FRANCE)
-VNE	IRISBUS (FRANCE)
-VNK	TOYOTA
-VNV	RENAULT-NISSAN
+VN1	Renault SOVAB
+VNE	Iveco Bus
+VNK	Toyota Motor Manufacturing France
+VNV	Nissan
 VPS	MLT Automotive
-VR1	DS AUTOMOBILES
-VR3 Peugeot
-VR7 Citroën
+VR1	DS Automobiles
+VR3	Peugeot
+VR7	Citroën
 VS1	Pegaso
 VS5	Renault España
-VS6	FORD SPAIN
-VS7	CITROËN
+VS6	Ford Espana
+VS7	Citroën
 VS8	Peugeot
 VS9	CARROCERIAS AYATS (SPAIN)
 VSA	MERCEDES-BENZ SPAIN
 VSC	Mercedes-Benz Espana SA (Vitoria)
-VSE	SUZUKI SPAIN (SANTANA MOTORS)
+VSE	Santana Motor
 VSG Nissan
-VSK	NISSAN SPAIN
+VSK	Nissan Motor Iberica SA, Nissan passenger car/MPV/van/SUV/pickup & Ford Maverick 1993–1999
 VSS	SEAT
-VSX	OPEL SPAIN
+VSX	Opel Automobile Espana, SA
 VTD	Montesa Honda Honda Montesa motorcycle models
-VTH	DERBI (MOTORCYCLES)
-VTL	Yamaha (motorcycles)
-VTM	HONDA
+VTH	Derbi
+VTL	Yamaha Motor España SA & Yamaha Sociedad Española de Motocicletas
+VTM	Montesa Honda Honda motorcycle models
 VTR	Gas Gas
-VTT	SUZUKI SPAIN (MOTORCYCLES)
-VV9	TAURO SPORT AUTO
-VWA	NISSAN SPAIN
+VTT	Suzuki Motor España Motorcycle
+VV9	Tauro Sport Auto
+VWA	Nissan Vehiculos Industriales SA, Nissan Commercial Vehicles
 VWV	VOLKSWAGEN SPAIN
-VX1	ZASTAVA / YUGO SERBIA
+VX1	Zastava Automobiles
 VXE	Opel Automobile GmbH/Vauxhall van
 VXK	Opel Automobile GmbH/Vauxhall car/SUV
 VYC	Lancia (models on PSA CMP platform)
 W04	Buick Regal & Buick Cascada
-W06	CADILLAC
+W06	Cadillac Catera
 W08	Saturn Astra
-W09	RUF AUTOMOBILE
-W0L	OPEL/VAUXHALL
+W09	Bitter Cars	B09
+W0L	Adam Opel AG/Vauxhall & Holden
 W0S	Opel Special Vehicles
 W0SV	OPEL SPECIAL VEHICLES
-W0V	Opel
+W0V	Opel Automobile Gmbh/Vauxhall & Holden
 W1A	Smart
 W1H	Freightliner Econic
-W1K	Mercedes
-W1N	Mercedes
+W1K	Mercedes-Benz car
+W1N	Mercedes-Benz SUV
 W1T	Mercedes-Benz truck
-W1V	Mercedes
+W1V	Mercedes-Benz van
 W1W	Mercedes-Benz MPV (van with 2 or 3 rows of seats) (North America)
 W1X	Mercedes-Benz incomplete vehicle (North America)
 W1Y	Mercedes-Benz truck (cargo van with 1 row of seats) (North America)
@@ -1462,73 +1461,73 @@ W2Y	Freightliner Sprinter truck (cargo van with 1 row of seats)
 W2Z	Freightliner Sprinter "bus" (van with more than 3 rows of seats)
 WA1	AUDI SUV
 WAC	Audi/Porsche RS 2 Avant
-WAG	NEOPLAN
-WAP	ALPINA
-WAU	AUDI
-WB1	BMW
+WAG	Neoplan
+WAP	Alpina
+WAU	Audi car
+WB1	BMW Motorrad Motorcycle
 WB3	BMW Motorrad Motorcycles made in India
 WB4	BMW Motorrad Motorscooters made in China
 WB5	BMW i SUV
 WB6	BMW M SUV
-WBA	BMW
-WBS	BMW M
+WBA	BMW car
+WBS	BMW M car
 WBW	BMW
-WBX	BMW
-WBY	BMW
+WBX	BMW SUV
+WBY	BMW i car
 WCD	Freightliner Sprinter "bus" (van with more than 3 rows of seats) 2008–2019
-WD0	DODGE
-WD1	DODGE
-WD2	DODGE
-WD3	MERCEDES-BENZ
-WD4	MERCEDES-BENZ
-WD5	DODGE
+WD0	Dodge Sprinter truck (cargo van with 1 row of seats) 2005–2009
+WD1	Freightliner Sprinter 2002 & Sprinter (Dodge or Freightliner) 2003–2005 incomplete vehicle
+WD2	Freightliner Sprinter 2002 & Sprinter (Dodge or Freightliner) 2003–2005 truck (cargo van with 1 row of seats)
+WD3	Mercedes-Benz truck (cargo van with 1 row of seats) (North America)
+WD4	Mercedes-Benz MPV (van with 2 or 3 rows of seats) (North America)
+WD5	Freightliner Sprinter 2002 & Sprinter (Dodge or Freightliner) 2003–2005 MPV (van with 2 or 3 rows of seats)
 WD6	Freightliner Unimog truck
 WD7	Freightliner Unimog incomplete vehicle
-WD8	DODGE
-WDA	DAIMLER
-WDB	MERCEDES-BENZ
-WDC	DAIMLERCHRYSLER
+WD8	Dodge Sprinter MPV (van with 2 or 3 rows of seats) 2005–2009
+WDA	Mercedes-Benz incomplete vehicle (North America)
+WDB	Mercedes-Benz & Maybach
+WDC	Mercedes-Benz SUV
 WDC, WDD, WMX	DAIMLERCHRYSLER AG/DAIMLER AG
-WDD	MERCEDES-BENZ
-WDF	MERCEDES-BENZ (COMMERCIAL VEHICLES)
-WDP	DODGE
+WDD	Mercedes-Benz car
+WDF	Mercedes-Benz van (French & Spanish built models – Citan & Vito & X-Class)
+WDP	Freightliner Sprinter incomplete vehicle 2005–2019
 WDR	Freightliner Sprinter MPV (van with 2 or 3 rows of seats) 2005–2019
 WDW	Dodge Sprinter "bus" (van with more than 3 rows of seats) 2008–2009
-WDX	DODGE
-WDY	DODGE
-WDZ	MERCEDES-BENZ
-WEB	EVOBUS
+WDX	Dodge Sprinter incomplete vehicle 2005–2009
+WDY	Freightliner Sprinter truck (cargo van with 1 row of seats) 2005–2019
+WDZ	Mercedes-Benz "bus" (van with more than 3 rows of seats) (North America)
+WEB	EvoBus Mercedes-Benz buses
 WEL	e.GO Mobile AG
-WF0	FORD OF EUROPE
-WF1	MERKUR
-WJM	IVECO
-WJR	IRMSCHER
-WKE	Fahrzeugwerk Bernard Krone GmbH & Co. KG
-WKK	KARL KÄSSBOHRER FAHRZEUGWERKE
+WF0	Ford of Europe
+WF1	Merkur
+WJM	Iveco/Iveco Magirus
+WJR	Irmscher
+WKE	Krone Trailer
+WKK	Setra & Karl Kässbohrer Fahrzeugwerke
 WMA	MAN
-WME	SMART
-WMW	MINI
-WMX	MERCEDES-AMG
+WME	Smart (from 5/99)
+WMW	Mini car
+WMX	Mercedes-AMG used for Mercedes-Benz SLS AMG & Mercedes-AMG GT (not used in North America)
 WMZ	Mini SUV
 WNA	Next.e.GO Mobile SE
-WP0	PORSCHE CAR
-WP1	PORSCHE SUV
+WP0	Porsche car
+WP1	Porsche SUV
 WS5	StreetScooter
 WSM	Schmitz Cargobull
 WU1	Audi Sport GmbH SUV
-WUA	QUATTRO
-WV1	VOLKSWAGEN COMMERCIAL VEHICLES
-WV2	VOLKSWAGEN COMMERCIAL VEHICLES
+WUA	Audi SUV
+WV1	Volkswagen Commercial Vehicles
+WV2	Volkswagen Commercial Vehicles
 WV3	VOLKSWAGEN TRUCKS
-WVG	VOLKSWAGEN
+WVG	Volkswagen SUV
 WVM	Arbeitsgemeinschaft VW-MAN
 WVP	Viseon Bus
-WVW	VOLKSWAGEN
+WVW	Volkswagen car
 WZ1	Toyota Supra Fifth generation
 X1E	KAvZ
 X1M	PAZ
-X4X	AVTOTOR (RUSSIA
-X7L	RENAULT AVTOFRAMOS (RUSSIA)
+X4X	BMW made by Avtotor
+X7L	Renault Russia
 X7M	HYUNDAI TAGAZ (RUSSIA)
 X8J	IMZ-Ural Ural Motorcycles
 X96	GAZ
@@ -1537,64 +1536,64 @@ X9L	GM-AvtoVAZ
 X9P	Volvo Vostok ZAO Volvo Trucks
 X9X	Great Wall Motors IMS Avtotrade-12 LLC
 XBB	Great Wall Motors/Litex Motors AD
-XL9	SPYKER
-XLB	VOLVO (NEDCAR)
-XLE	SCANIA NETHERLANDS
-XLR	DAF TRUCKS
+XL9	Autobusfabriek Bova BV	003
+XLB	Volvo Car B.V./NedCar B.V. (Volvo Cars)
+XLE	Scania Nederland B.V.
+XLR	DAF Trucks & Leyland DAF
 XLV	DAF Bus
-XMC	MITSUBISHI (NEDCAR)
+XMC	NedCar B.V. Mitsubishi Motors
 XMG	VDL Bus International
 XNC	NedCar B.V. Mitsubishi Motors (Colt CZC convertible)
 XNL	VDL Bus & Coach
 XNT	Pacton Trailer
-XP7	Tesla, Inc.
-XTA	AVTOVAZ
+XP7	Tesla Europe (based in the Netherlands)
+XTA	AvtoVAZ
 XTB	AZLK
 XTC	KAMAZ
 XTF	GolAZ
 XTH	GAZ
-XTT	UAZ/SOLLERS (RUSSIA)
+XTT	UAZ
 XTY	LiAZ
 XU1	UAZ Special Purpose Vehicles
-XUF	GENERAL MOTORS RUSSIA
-XUU	AVTOTOR (RUSSIA
+XUF	General Motors Russia
+XUU	Chevrolet made by Avtotor
 XW7	Toyota Motor Manufacturing Russia
-XW8	VOLKSWAGEN GROUP RUSSIA
-XWB	UZ-DAEWOO (UZBEKISTAN)
-XWE	AVTOTOR (RUSSIA
+XW8	Volkswagen Group Rus
+XWB	UzDaewoo GM Uzbekistan Ravon
+XWE	Hyundai Motor Company & Kia made by Avtotor
 Y3M	MAZ
 Y4K	BelGee
-Y6D	ZAPOROZHETS/AVTOZAZ (UKRAINE)
+Y6D	ZAZ
 Y6J	Bogdan group
 Y6L	LUAZ, LUTSK, UKRAINE
 Y6U	Škoda Auto made by Eurocar
 Y7B	Bogdan group
 Y7C	Great Wall Motors KrASZ
-YAR	Toyota
+YAR	Toyota Motor Europe (based in Belgium) used for Toyota ProAce & Toyota ProAce City
 YB1	Volvo Trucks
-YB3	VOLVO
+YB3	Volvo Trucks
 YB6	Jonckheere
 YBW	VOLKSWAGEN BELGIUM
-YC1	HONDA
+YC1	Honda
 YCM	MAZDA BELGIUM
-YE2	VAN HOOL (BUSES)
-YH2	BRP (Lynx snowmobiles)
+YE2	Van Hool
+YH2	Lynx (snowmobile)
 YH4	Fisker Automotive (Fisker Karma) built by Valmet Automotive
-YK1	SAAB
+YK1	Saab built by Valmet Automotive
 YK7	Sisu Auto
-YS2	SCANIA, SÖDERTÄLJE
-YS3	SAAB
-YS4	SCANIA, KATRINEHOLM
+YS2	Scania, Södertälje truck
+YS3	Saab
+YS4	Scania, Katrineholm bus
 YSC	Cadillac BLS built by Saab
 YSM	Polestar
-YT9	KOENIGSEGG AUTOMOTIVE AB
-YTN	SAAB NEVS
-YU7	HUSABERG (MOTORCYCLES)
-YV1	VOLVO CARS
-YV2	VOLVO TRUCKS
-YV3	VOLVO BUSES
-YV4	VOLVO CARS
-YV5	VOLVO
+YT9	Koenigsegg Automotive AB	007
+YTN	Saab NEVS
+YU7	Husaberg Swedish built models
+YV1	Volvo Cars car
+YV2	Volvo Trucks
+YV3	Volvo Buses
+YV4	Volvo Cars SUV
+YV5	Volvo Trucks incomplete vehicle
 YYC	Think Nordic
 Z6F	Ford Sollers
 Z8M	MARUSSIA (RUSSIA)
@@ -1602,53 +1601,53 @@ Z8N	Nissan Manufacturing Rus
 Z8T	PCMA Rus
 Z94	Hyundai Motor Manufacturing Rus
 Z9M	Mercedes-Benz Trucks Vostok
-ZA9	BUGATTI
-ZAA	AUTOBIANCHI
+ZA9	Lamborghini through mid 2003	A12
+ZAA	Autobianchi
 ZAC	Jeep and Dodge Hornet
 ZAH	Rolfo
-ZAM	MASERATI
-ZAP	PIAGGIO
-ZAR	ALFA ROMEO
+ZAM	Maserati car
+ZAP	Piaggio and Vespa and Gilera
+ZAR	Alfa Romeo car & Nissan Cherry Europe
 ZAS	Alfa Romeo Alfasud & Sprint through 1989
 ZBA	BMW For South africa
 ZBB	Gruppo Bertone
 ZBI	BMW For Indonesia
 ZBM	BMW For Philippines
-ZBN	BENELLI
+ZBN	Benelli
 ZBP	BMW For Malaysia
 ZBT	BMW For Thailand
 ZBW	Rayton-Fissore Magnum
-ZC2	CHRYSLER
+ZC2	Chrysler TC by Maserati
 ZC6	Effedi Veicoli Commerciali
-ZCF	IVECO
-ZCG	CAGIVA SPA / MV AGUSTA
-ZD0	YAMAHA ITALY
-ZD3	BETA MOTOR
-ZD4	APRILIA
-ZDC	HONDA
+ZCF	Iveco
+ZCG	Cagiva & MV Agusta
+ZD0	Yamaha Motor Italia SpA & Belgarda SpA
+ZD3	Betamotor S.p.A.
+ZD4	Aprilia
+ZDC	Honda Italia Industriale S.p.A.
 ZDF	FERRARI DINO
-ZDM	DUCATI MOTOR HOLDINGS SPA
+ZDM	Ducati Motor Holding
 ZDT	De Tomaso Modena SpA
 ZDY	Cacciamali
 ZE8	Bremach
 ZES	Bimota
 ZF4	Qvale
-ZFA	FIAT
+ZFA	Fiat car Also Fiat Fullback
 ZFB	Fiat MPV/SUV
-ZFC	FIAT V.I.
-ZFF	FERRARI
+ZFC	Ram 1200
+ZFF	Ferrari
 ZFM	Fantic Motor
 ZFR	Pininfarina
-ZGA	IVECOBUS
-ZGU	MOTO GUZZI
+ZGA	Iveco Bus
+ZGU	Moto Guzzi
 ZHU	Husqvarna Motorcycles Under Cagiva ownership
-ZHW	LAMBORGHINI
-ZJM	MALAGUTI
-ZJN	INNOCENTI
+ZHW	Lamborghini car from mid 2003
+ZJM	Malaguti
+ZJN	Innocenti
 ZJT	Italjet
 ZK5	Hyundai Automobili Italia Importazioni
-ZKH	HUSQVARNA MOTORCYCLES ITALY
-ZLA	LANCIA
+ZKH	Husqvarna Motorcycles Srl Under BMW ownership
+ZLA	Lancia
 ZLM	Moto Morini srl
 ZLV	Laverda
 ZN0	SWM Motorcycles S.r.l.
@@ -1656,6 +1655,6 @@ ZN3	Iveco Defence
 ZN6	Maserati SUV
 ZNN	Energica Motor Company
 ZOM	OM
-ZPB	LAMBORGHINI
+ZPB	Lamborghini SUV
 ZPY	DR Automobiles
 ZZ1	Tomos motorcycle
