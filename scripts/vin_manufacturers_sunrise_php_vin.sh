@@ -9,5 +9,5 @@ curl -s https://raw.githubusercontent.com/sunrise-php/vin/refs/heads/master/data
     echo "$tabline" >> "$LOCAL_FILE"
 done
 
-sort -k1,1 -u "$LOCAL_FILE" -o "$LOCAL_FILE"
+sort -k1,1 -k3,3 -u "$LOCAL_FILE" -o "$LOCAL_FILE"
 echo "Updated $LOCAL_FILE with new entries."

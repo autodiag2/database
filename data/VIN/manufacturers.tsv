@@ -1,4 +1,3 @@
-# wmi	manufacturer	manufacturer specific code
 007	Koenigsegg
 034	Carvia
 10R	E-Z-GO
@@ -26,12 +25,15 @@
 1B6	Dodge incomplete vehicle 1981–2002
 1B7	Dodge truck 1981–2002
 1B9	Buell Motorcycle Company through mid 1995	133
+1B9	Motus Motorcycles	975
 1BA	Blue Bird Corporation bus
 1BB	Blue Bird Wanderlodge MPV
 1BD	Blue Bird Corporation incomplete vehicle
 1BL	Balko, Inc. from Ladysmith, WI
 1C	CHRYSLER
+1C3	Chrysler Group (all brands) car (including Lancia) 2012-
 1C3	Chrysler brand car 1981–2011
+1C4	Chrysler Group (all brands) MPV 2012–
 1C4	Chrysler brand MPV 1990–2005
 1C6	Chrysler Group (all brands) truck 2012–
 1C8	Chrysler brand MPV 2001–2005
@@ -62,6 +64,8 @@
 1FV	Freightliner Trucks
 1G	General Motors
 1G0	GMC "bus" (van with more than 3 rows of seats) 1981–1986
+1G0	GMC Rapid Transit Series (RTS) bus 1981–1986
+1G0	Opel car 2007–2017
 1G1	Chevrolet car
 1G2	Pontiac car
 1G3	Oldsmobile car
@@ -70,6 +74,7 @@
 1G6	Cadillac car
 1G7	Pontiac car only sold by GM Canada
 1G8	Chevrolet MPV/SUV 1981–1986
+1G8	Saturn car 1991–2010
 1G9	Google & Waymo	495
 1GA	Chevrolet "bus" (van with more than 3 rows of seats)
 1GB	Chevrolet incomplete vehicles
@@ -78,6 +83,7 @@
 1GE	Cadillac incomplete vehicle
 1GF	Flxible bus
 1GG	Isuzu pickup trucks made by GM
+1GH	Holden Acadia 2019–2020
 1GH	Oldsmobile MPV/SUV 1990–2004
 1GJ	GMC "bus" (van with more than 3 rows of seats) 1987–
 1GK	GMC MPV/SUV 1987–
@@ -121,12 +127,14 @@
 1M4	MACK TRUCK USA
 1M8	Motor Coach Industries
 1M9	Mosler Automotive	682
+1M9	Proterra Through mid-2019	816
 1MB	Mercedes-Benz Truck Co.
 1ME	Mercury car
 1MR	Continental Mark VI & VII 1981–1985 & Continental sedan 1982–1985
 1N	NISSAN
 1N4	Nissan car
 1N6	Nissan truck
+1N9	Nikola Corporation	393
 1N9	Neoplan USA	013
 1NK	Kenworth incomplete vehicle
 1NP	Peterbilt incomplete vehicle
@@ -139,6 +147,8 @@
 1R9	ROADRUNNER HAY SQUEEZE USA
 1RF	ROADMASTER
 1S9	Scania AB Scania CN112 bus made in Orange, CT	098
+1S9	SSC North America	944
+1S9	Saleen S7	842
 1T7	Thomas Built Buses
 1T8	Thomas Built Buses
 1T9	Tomcar USA	899
@@ -190,7 +200,9 @@
 2BX	Can-Am Spyder
 2BZ	Can-Am Freedom Trailer for Can-Am Spyder
 2C1	Geo/Chevrolet car made by CAMI Automotive
+2C3	Chrysler Group (all brands) car (including Lancia) 2012-
 2C3	Chrysler brand car 1981–2011
+2C4	Chrysler Group (all brands) MPV (including Lancia & VW) 2012-
 2C4	Chrysler brand MPV/SUV 2000–2005
 2C7	Pontiac car made by CAMI Automotive only sold by GM Canada
 2C8	Chrysler brand MPV/SUV 2001–2005
@@ -198,6 +210,7 @@
 2CC	American Motors Corporation MPV
 2CG	Asüna/Pontiac SUV made by CAMI Automotive only sold by GM Canada
 2CH	CHEVROLET
+2CK	Pontiac Torrent SUV made by CAMI Automotive 2006–2009 only
 2CK	GMC Tracker SUV made by CAMI Automotive only sold by GM Canada 1990–1991 only
 2CM	American Motors Corporation car
 2CN	Geo/Chevrolet SUV made by CAMI Automotive 1990–2011 only
@@ -309,7 +322,9 @@
 3BK	Kenworth incomplete vehicle
 3BM	Motor Coach Industries bus made by DINA S.A.
 3BP	Peterbilt incomplete vehicle
+3C3	Chrysler Group (all brands) car (including Fiat) 2012-
 3C3	Chrysler brand car 1981–2011
+3C4	Chrysler Group (all brands) MPV (including Fiat) 2012-
 3C4	Chrysler brand MPV 2001–2005
 3C6	Chrysler Group (all brands) truck 2012–
 3C7	Chrysler Group (all brands) incomplete vehicle 2012–
@@ -338,6 +353,7 @@
 3FT	Ford truck
 3G	General Motors
 3G0	Saab 9-4X 2011
+3G0	Holden Equinox 2018–2020
 3G1	Chevrolet car
 3G2	Pontiac car
 3G4	Buick car
@@ -415,6 +431,7 @@
 4G5	General Motors EV1
 4GB	CHEVROLET
 4GD	WhiteGMC Brigadier 1988–1989 made by GM
+4GD	Opel Sintra
 4GL	Buick incomplete vehicle
 4GT	Isuzu incomplete vehicle built by GM
 4J	MERCEDES-BENZ
@@ -431,6 +448,7 @@
 4N2	Nissan Quest made by Ford
 4NU	Isuzu Ascender made by GM
 4P1	Pierce Manufacturing
+4P3	Mitsubishi Motors SUV made by Mitsubishi Motor Manufacturing of America 2013–2015 for export only
 4P3	Plymouth car made by Diamond-Star Motors factory 1990–1994
 4RK	Nova Bus & Prevost made by Nova Bus (US) Inc.
 4S	SUBARU-ISUZU AUTOMOTIVE
@@ -440,7 +458,10 @@
 4S4	Subaru SUV/MPV
 4S6	Honda SUV made by Subaru Isuzu Automotive
 4S7	Spartan Motors incomplete vehicle
+4S9	Scuderia Cameron Glickenhaus car	454
 4S9	Smith Electric Vehicles US Corp.	197
+4S9	Spartan Fire, LLC truck (formerly Spartan ER)	559
+4S9	Spartan Motors truck	419
 4SL	MAGNUM
 4T	TOYOTA
 4T1	Toyota car made by Toyota Motor Manufacturing Kentucky
@@ -657,6 +678,7 @@
 953	VW Truck & Bus / MAN Truck & Bus
 95P	CAOA / Hyundai & CAOA Chery
 95V	Dafra Motos (motorscooters from SYM) & Ducati, KTM, & MV Agusta assembled by Dafra
+95V	BMW motorcycles assembled by Dafra Motos 2009–2016
 95Z	Buell Motorcycle Company assembled by Harley-Davidson Brazil
 96P	Kawasaki
 97N	Triumph Motorcycles Ltd
@@ -692,12 +714,13 @@
 9UK	Lifan
 9UW	Kia made by Nordex S.A.
 9V7	Citroen made by Nordex S.A.
-9V8	Peugeot made by Nordex S.A.
+9V8	Peugeot made by Nordex S.A.# wmi	manufacturer	manufacturer specific code
 AAA	Audi South Africa made by Volkswagen of South Africa
 AAK	FAW Vehicle Manufacturers SA (PTY) Ltd.
 AAM	MAN Automotive (South Africa) (Pty) Ltd. includes VW Truck & Bus
 AAV	Volkswagen of South Africa
 ABJ	Mitsubishi Colt & Triton pickups made by Mercedes-Benz South Africa 1994–2011
+ABJ	Mitsubishi Fuso made by Daimler Trucks & Buses Southern Africa
 ABM	BMW Southern Africa
 AC5	Hyundai Automotive South Africa (cars)
 ACV	Isuzu Motors South Africa 2018-
@@ -858,6 +881,7 @@ KL3	GM Daewoo/GM Korea Holden
 KL4	GM Korea Buick
 KL5	GM Daewoo Suzuki
 KL6	GM Daewoo GMC
+KL7	GM Daewoo/GM Korea Chevrolet MPV/SUV (Post-2000)
 KL7	Daewoo GM Canada brands: Passport, Asuna (Pre-2000)
 KL8	GM Daewoo/GM Korea Chevrolet car (Spark)
 KLA	Daewoo/GM Korea
@@ -1245,9 +1269,18 @@ RLM	Mercedes-Benz Vietnam
 RLS	Suzuki
 RLV	Vietnam Precision Industrial CO., Ltd. Can-Am DS 70 & DS 90
 RP8	Piaggio Vietnam Co. Ltd.
+SA9	Panther	005
+SA9	TVR	019
+SA9	KaiserRushforth	506
+SA9	Morgan 3-Wheeler	202
+SA9	Marcos Engineering	050
+SA9	McLaren F1	048
 SA9	Morgan Motor Company, OX Global
+SA9	MG Sport and Racing	130
+SA9	Westfield Sportscars	039
 SAA	Austin
 SAB	Optare
+SAD	Jaguar SUV
 SAD	Daimler until April 1987
 SAF	ERF
 SAH	Honda made by Austin Rover Group
@@ -1380,6 +1413,7 @@ VAG	Steyr-Daimler-Puch Puch G & Steyr-Puch Pinzgauer
 VAK	Kässbohrer Transport Technik
 VAN	Steyr-Daimler-Puch Steyr Trucks
 VBK	KTM
+VBK	Husqvarna Motorcycles & Gas Gas under KTM ownership
 VCF	Fisker Inc. (Fisker Ocean) made by Magna Steyr
 VF1	Renault & Eagle Medallion made by Renault
 VF2	Renault Trucks
@@ -1389,6 +1423,7 @@ VF5	Iveco Unic
 VF6	Renault Trucks
 VF7	Citroën
 VF8	Matra/Talbot/Simca
+VF9	Venturi Automobiles	673
 VF9	Mathieu Fayat Group	607
 VFA	Alpine
 VFE	IVECOBUS
@@ -1441,6 +1476,10 @@ VYC	Lancia (models on PSA CMP platform)
 W04	Buick Regal & Buick Cascada
 W06	Cadillac Catera
 W08	Saturn Astra
+W09	Brabus	B16
+W09	Drögmöller	D05
+W09	HWA AG	HA8
+W09	Ruf Automobile	R06
 W09	Bitter Cars	B09
 W0L	Adam Opel AG/Vauxhall & Holden
 W0S	Opel Special Vehicles
@@ -1517,6 +1556,7 @@ WS5	StreetScooter
 WSM	Schmitz Cargobull
 WU1	Audi Sport GmbH SUV
 WUA	Audi SUV
+WUA	Audi Sport GmbH & Quattro GmbH car
 WV1	Volkswagen Commercial Vehicles
 WV2	Volkswagen Commercial Vehicles
 WV3	VOLKSWAGEN TRUCKS
@@ -1538,6 +1578,8 @@ X9P	Volvo Vostok ZAO Volvo Trucks
 X9X	Great Wall Motors IMS Avtotrade-12 LLC
 XBB	Great Wall Motors/Litex Motors AD
 XL9	Autobusfabriek Bova BV	003
+XL9	Groenewold Carrosseriefabriek B.V.	A27
+XL9	Spyker Cars	363
 XLB	Volvo Car B.V./NedCar B.V. (Volvo Cars)
 XLE	Scania Nederland B.V.
 XLR	DAF Trucks & Leyland DAF
@@ -1602,6 +1644,9 @@ Z8N	Nissan Manufacturing Rus
 Z8T	PCMA Rus
 Z94	Hyundai Motor Manufacturing Rus
 Z9M	Mercedes-Benz Trucks Vostok
+ZA9	Cizeta Automobili SRL	D38
+ZA9	Automobili Pininfarina	M91
+ZA9	Dallara Stradale	M27
 ZA9	Lamborghini through mid 2003	A12
 ZAA	Autobianchi
 ZAC	Jeep and Dodge Hornet
@@ -1622,6 +1667,7 @@ ZC2	Chrysler TC by Maserati
 ZC6	Effedi Veicoli Commerciali
 ZCF	Iveco
 ZCG	Cagiva & MV Agusta
+ZCG	Husqvarna Motorcycles Under MV Agusta ownership
 ZD0	Yamaha Motor Italia SpA & Belgarda SpA
 ZD3	Betamotor S.p.A.
 ZD4	Aprilia

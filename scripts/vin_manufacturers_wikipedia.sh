@@ -4,6 +4,6 @@
 LOCAL_FILE="data/VIN/manufacturers.tsv"
 cat "scripts/wikipedia_sae_wmi_manufacturers.tsv" >> .temp
 cat "$LOCAL_FILE" >> .temp
-sort -k1,1 -u .temp -o "$LOCAL_FILE"
+sort -k1,1 -k3,3 -u .temp -o "$LOCAL_FILE"
 rm .temp
 echo "Updated $LOCAL_FILE with new entries."
