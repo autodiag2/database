@@ -35,7 +35,7 @@ class ISO3779_Decoder:
         self.vin = vin
         self.wmi = {"country": self.decode_country(), "manufacturer": self.decode_manufacturer()}
         self.vis = {"year": self.get_year(), "serial_number": self.get_serial_number()}
-        self.vds_decode()
+        self.vds = self.vds_decoder()
 
     def decode_region(self) -> str:
         if "A" <= self.vin[0] <= "H": return "Africa"
@@ -69,9 +69,9 @@ class ISO3779_Decoder:
                         return parts[1]
         return "Unknown manufacturer"
     
-    def vds_decode(self):
+    def vds_decoder(self):
         from decoder_modules.citroen import ISO3779_decoder_citroen
-        self.vds = ISO3779_decoder_citroen(self.vin)
+        return ISO3779_decoder_citroen(self.vin)
 
     def get_year(self) -> str:
         return self.YEAR_MAPPING.get(self.vin[9], "Unknown year")
@@ -92,13 +92,14 @@ dump {{
         year: {self.vis['year']}
         serial number: {self.vis['serial_number']}
     }}
+{self.vds.dump_string("    ")}
 }}\
 """)
 
 if __name__ == "__main__":
     vins = sys.argv[1:]
     if not vins:
-        vins = ["VF1BB05CF26010203"]  # Default VIN for testing
+        vins = ["VF1BB05CF26010203", "VR7ACYHZKML019510"]  # Default VIN for testing
     
     for vin in vins:
         decoder = ISO3779_Decoder(vin)

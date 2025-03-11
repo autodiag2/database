@@ -41,15 +41,12 @@ class ISO3779_decoder_citroen:
     def depollution(self) -> str:
         return self._lookup_tsv("version.tsv", 2)
     
-    def dump(self):
-        print(f"VIN: {self.vin}")
-        print("Decoded:")
+    def dump_string(self, padding):
+        result = f"{padding}vds:{{\n"
         for key, value in self.vds.items():
-            print(f"  {key}: {value}")
+            result += f"{padding}   {key}:\t{value}\n"
+        result += f"{padding}}}\n"
+        return result
 
-if __name__ == "__main__":
-    import sys
-    vins = sys.argv[1:]
-    for vin in vins:
-        decoder = ISO3779_decoder_citroen(vin)
-        decoder.dump()
+    def dump(self):
+        print(self.dump_string(""))
