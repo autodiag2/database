@@ -21,8 +21,8 @@ class ISO3779_decoder_citroen:
                     continue
                 parts = line.strip().split("\t")
                 if parts[0] == match_data:
-                    return parts[column] if len(parts) > column else "Unknown"
-        return "Unknown"
+                    return parts[column] if len(parts) > column else match_data
+        return match_data
     
     def family(self) -> str:
         return self._lookup_tsv("family.tsv", 1, self.vds_raw[0:1])
