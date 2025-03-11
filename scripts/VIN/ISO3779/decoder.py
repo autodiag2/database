@@ -70,8 +70,11 @@ class ISO3779_Decoder:
         return "Unknown manufacturer"
     
     def vds_decoder(self):
-        from decoder_modules.citroen import ISO3779_decoder_citroen
-        return ISO3779_decoder_citroen(self.vin)
+        manufacturer = self.decode_manufacturer()
+        if any(x in manufacturer.lower() for x in ["citroen", "citroën"]):
+            from decoder_modules.citroen import ISO3779_decoder_citroen
+            return ISO3779_decoder_citroen(self.vin)
+        return None
 
     def get_year(self) -> str:
         return self.YEAR_MAPPING.get(self.vin[9], "Unknown year")
@@ -92,7 +95,7 @@ dump {{
         year: {self.vis['year']}
         serial number: {self.vis['serial_number']}
     }}
-{self.vds.dump_string("    ")}
+{self.vds is None and "    no vds decoder for this manufacturer" or self.vds.dump_string("    ")}
 }}\
 """)
 
