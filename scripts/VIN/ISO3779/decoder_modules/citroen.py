@@ -20,7 +20,7 @@ class ISO3779_decoder_citroen:
                 if line.startswith("#"):
                     continue
                 parts = line.strip().split("\t")
-                if parts[0] == self.vin[4]:
+                if parts[0] == match_data:
                     return parts[column] if len(parts) > column else "Unknown"
         return "Unknown"
     
