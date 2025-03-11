@@ -12,7 +12,7 @@ mkdir -p "${desc}"
 >${descFile} cat <<EOF
 brand=Example
 ecu=Example ecu
-model=Example model
+engine=Example engine
 EOF
 >${codesFile}
 echo "Created at ${desc} ..."
