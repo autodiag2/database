@@ -102,7 +102,7 @@ dump {{
 if __name__ == "__main__":
     vins = sys.argv[1:]
     if not vins:
-        vins = ["VF1BB05CF26010203", "VR7ACYHZKML019510"]  # Default VIN for testing
+        vins = ["VF1BB05CF26010203", "VR7ACYHZKML019510", "VF7RD5FV8FL507366"]  # Default VIN for testing
     
     for vin in vins:
         decoder = ISO3779_Decoder(vin)
