@@ -1,106 +1,28 @@
-import os
+#!/usr/bin/python3
+import os, sys
 from typing import Optional
 
-class ISO3779_Decoded:
-    def __init__(self):
-        self.wmi = {
-            "country": None,
-            "manufacturer": None
-        }
-        self.vis = {
-            "year": None,
-            "serial_number": None
-        }
+class ISO3779_Decoder:
+    ISO3779_WMI_COUNTRIES = {
+        ("AA", "AH"): "South Africa", ("AJ", "AN"): "Ivory Coast", ("AP", "A0"): "Unassigned",
+        ("BA", "BE"): "Angola", ("BF", "BK"): "Kenya", ("BL", "BR"): "Tanzania",
+        ("BS", "B0"): "Unassigned", ("CA", "CE"): "Benin", ("CF", "CK"): "Madagascar",
+        ("CL", "CR"): "Tunisia", ("CS", "C0"): "Unassigned", ("DA", "DE"): "Egypt",
+        ("DF", "DK"): "Morocco", ("DL", "DR"): "Zambia", ("DS", "D0"): "Unassigned",
+        ("EA", "EE"): "Ethiopia", ("EF", "EK"): "Mozambique", ("EL", "E0"): "Unassigned",
+        ("FA", "FE"): "Ghana", ("FF", "FK"): "Nigeria", ("FL", "F0"): "Unassigned",
+        ("GA", "G0"): "Unassigned", ("HA", "H0"): "Unassigned", ("JA", "J0"): "Japan",
+        ("KA", "KE"): "Sri Lanka", ("KF", "KK"): "Israel", ("KL", "KR"): "South Korea",
+        ("KS", "K0"): "Unassigned", ("LA", "L0"): "China", ("MA", "ME"): "India",
+        ("MF", "MK"): "Indonesia", ("ML", "MR"): "Thailand", ("MS", "M0"): "Unassigned",
+        ("NF", "NK"): "Pakistan", ("NL", "NR"): "Turkey", ("NS", "N0"): "Unassigned",
+        ("PA", "PE"): "Philippines", ("PF", "PK"): "Singapore", ("PL", "PR"): "Malaysia",
+        ("PS", "P0"): "Unassigned", ("RA", "RE"): "United Arab Emirates", ("RF", "RK"): "Taiwan",
+        ("RL", "RR"): "Vietnam", ("RS", "R0"): "Unassigned", ("SA", "SM"): "Great Britain",
+        ("VF", "VR"): "France", ("WA", "W0"): "Germany", ("ZA", "ZR"): "Italy",
+    }
 
-def ISO3779_decode_region_from(vin: str) -> str:
-    if "A" <= vin[0] <= "H":
-        return "Africa"
-    if "J" <= vin[0] <= "R":
-        return "Asia"
-    if "S" <= vin[0] <= "Z":
-        return "Europe"
-    if "1" <= vin[0] <= "5":
-        return "North America"
-    if "6" <= vin[0] <= "7":
-        return "Oceania"
-    if "8" <= vin[0] <= "9":
-        return "South America"
-    return "Unknown"
-
-ISO3779_WMI_COUNTRIES = {
-    ("AA", "AH"): "South Africa",
-    ("AJ", "AN"): "Ivory Coast",
-    ("JA", "J0"): "Japan",
-    ("KA", "KE"): "Sri Lanka",
-    ("KL", "KR"): "South Korea",
-    ("LA", "L0"): "China",
-    ("MA", "ME"): "India",
-    ("NF", "NK"): "Pakistan",
-    ("SA", "SM"): "Great Britain",
-    ("VF", "VR"): "France",
-    ("WA", "W0"): "Germany",
-    ("ZA", "ZR"): "Italy",
-    ("BA", "BE"): "Angola",
-    ("BF", "BK"): "Kenya",
-    ("BL", "BR"): "Tanzania",
-    ("CF", "CK"): "Madagascar",
-    ("CL", "CR"): "Tunisia",
-    ("DA", "DE"): "Egypt",
-    ("DF", "DK"): "Morocco",
-    ("DL", "DR"): "Zambia",
-    ("FA", "FE"): "Ghana",
-    ("FF", "FK"): "Nigeria",
-    ("KF", "KK"): "Israel",
-    ("MF", "MK"): "Indonesia",
-    ("ML", "MR"): "Thailand",
-    ("NL", "NR"): "Turkey",
-    ("PA", "PE"): "Philippines",
-    ("PF", "PK"): "Singapore",
-    ("PL", "PR"): "Malaysia",
-    ("RF", "RK"): "Taiwan",
-    ("RL", "RR"): "Vietnam",
-    ("SN", "ST"): "Germany",
-    ("SU", "SZ"): "Poland",
-    ("TA", "TH"): "Switzerland",
-    ("TJ", "TP"): "Czech Republic",
-    ("TR", "TV"): "Hungary",
-    ("VF", "VR"): "France",
-    ("VS", "VW"): "Spain",
-    ("WA", "W0"): "Germany",
-    ("XA", "XE"): "Bulgaria",
-    ("XF", "XK"): "Greece",
-    ("XL", "XR"): "Netherlands",
-    ("XS", "XW"): "Russia",
-    ("ZA", "ZR"): "Italy"
-}
-
-def ISO3779_decode_country_from(vin: str) -> str:
-    for (start, end), country in ISO3779_WMI_COUNTRIES.items():
-        if start <= vin[:2] <= end:
-            return country
-    return "Unassigned"
-
-def ISO3779_wmi_manufacturer_is_less_500(vin: str) -> bool:
-    return vin[2] == '9'
-
-def ISO3779_decode_manufacturer_from(vin: str) -> str:
-    manufacturers_file = "data/VIN/manufacturers.tsv"
-    if not os.path.exists(manufacturers_file):
-        return "Unknown manufacturer"
-    
-    manufacturer_code = vin[11:14] if ISO3779_wmi_manufacturer_is_less_500(vin) else None
-    with open(manufacturers_file, "r") as file:
-        for line in file:
-            if line.startswith("#"):
-                continue
-            parts = line.strip().split("\t")
-            if parts[0] == vin[:3]:
-                if manufacturer_code is None or (len(parts) > 2 and parts[2] == manufacturer_code):
-                    return parts[1]
-    return "Unknown manufacturer"
-
-def ISO3779_vis_get_year_from(vin: str) -> str:
-    year_mapping = {
+    YEAR_MAPPING = {
         'M': "1991 or 2021", 'N': "1992 or 2022", 'P': "1993 or 2023", 'R': "1994 or 2024",
         'S': "1995 or 2025", 'T': "1996 or 2026", 'V': "1997 or 2027", 'W': "1998 or 2028",
         'X': "1999 or 2029", 'Y': "2000 or 2030", '1': "2001", '2': "2002", '3': "2003",
@@ -108,20 +30,60 @@ def ISO3779_vis_get_year_from(vin: str) -> str:
         'A': "2010", 'B': "2011", 'C': "2012", 'D': "2013", 'E': "2014", 'F': "2015",
         'G': "2016", 'H': "2017", 'J': "2018", 'K': "2019", 'L': "2020"
     }
-    return year_mapping.get(vin[9], "Unknown year")
 
-def ISO3779_vis_serial_number_from(vin: str) -> str:
-    return vin[14:] if ISO3779_wmi_manufacturer_is_less_500(vin) else vin[11:]
+    def __init__(self, vin: str):
+        self.vin = vin
+        self.wmi = {"country": self.decode_country(), "manufacturer": self.decode_manufacturer()}
+        self.vis = {"year": self.get_year(), "serial_number": self.get_serial_number()}
 
-def ISO3779_decode_from(vin: str) -> ISO3779_Decoded:
-    vin_decoded = ISO3779_Decoded()
-    vin_decoded.wmi["country"] = ISO3779_decode_country_from(vin)
-    vin_decoded.wmi["manufacturer"] = ISO3779_decode_manufacturer_from(vin)
-    vin_decoded.vis["year"] = ISO3779_vis_get_year_from(vin)
-    vin_decoded.vis["serial_number"] = ISO3779_vis_serial_number_from(vin)
-    return vin_decoded
+    def decode_region(self) -> str:
+        if "A" <= self.vin[0] <= "H": return "Africa"
+        if "J" <= self.vin[0] <= "R": return "Asia"
+        if "S" <= self.vin[0] <= "Z": return "Europe"
+        if "1" <= self.vin[0] <= "5": return "North America"
+        if "6" <= self.vin[0] <= "7": return "Oceania"
+        if "8" <= self.vin[0] <= "9": return "South America"
+        return "Unknown"
 
-def ISO3779_dump(vin: str):
-    vin_decoded = ISO3779_decode_from(vin)
-    region = ISO3779_decode_region_from(vin)
-    print(f"dump {{\n    wmi {{\n        region: {region}\n        country: {vin_decoded.wmi['country']}\n        manufacturer: {vin_decoded.wmi['manufacturer']}\n    }}\n    vis {{\n        year: {vin_decoded.vis['year']}\n        serial number: {vin_decoded.vis['serial_number']}\n    }}\n}}")
+    def decode_country(self) -> str:
+        for (start, end), country in self.ISO3779_WMI_COUNTRIES.items():
+            if start <= self.vin[:2] <= end:
+                return country
+        return "Unassigned"
+
+    def manufacturer_is_less_500(self) -> bool:
+        return self.vin[2] == '9'
+
+    def decode_manufacturer(self) -> str:
+        manufacturers_file = "data/VIN/manufacturers.tsv"
+        if not os.path.exists(manufacturers_file):
+            return "Unknown manufacturer"
+        manufacturer_code = self.vin[11:14] if self.manufacturer_is_less_500() else None
+        with open(manufacturers_file, "r") as file:
+            for line in file:
+                if line.startswith("#"): continue
+                parts = line.strip().split("\t")
+                if parts[0] == self.vin[:3]:
+                    if manufacturer_code is None or (len(parts) > 2 and parts[2] == manufacturer_code):
+                        return parts[1]
+        return "Unknown manufacturer"
+
+    def get_year(self) -> str:
+        return self.YEAR_MAPPING.get(self.vin[9], "Unknown year")
+
+    def get_serial_number(self) -> str:
+        return self.vin[14:] if self.manufacturer_is_less_500() else self.vin[11:]
+
+    def dump(self):
+        region = self.decode_region()
+        print(f"dump {{\n    wmi {{\n        region: {region}\n        country: {self.wmi['country']}\n        manufacturer: {self.wmi['manufacturer']}\n    }}\n    vis {{\n        year: {self.vis['year']}\n        serial number: {self.vis['serial_number']}\n    }}\n}}")
+
+if __name__ == "__main__":
+    vins = sys.argv[1:]
+    if not vins:
+        vins = ["VF1BB05CF26010203"]  # Default VIN for testing
+    
+    for vin in vins:
+        decoder = ISO3779_Decoder(vin)
+        print(f"VIN:{vin}")
+        decoder.dump()
