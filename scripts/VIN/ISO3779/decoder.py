@@ -3,7 +3,7 @@ import os, sys
 from typing import Optional
 
 class ISO3779_Decoder:
-    ISO3779_WMI_COUNTRIES = {
+    ISO3780_WMI_COUNTRIES = {
         ("AA", "AH"): "South Africa", ("AJ", "AN"): "Ivory Coast", ("AP", "A0"): "Unassigned",
         ("BA", "BE"): "Angola", ("BF", "BK"): "Kenya", ("BL", "BR"): "Tanzania",
         ("BS", "B0"): "Unassigned", ("CA", "CE"): "Benin", ("CF", "CK"): "Madagascar",
@@ -34,7 +34,7 @@ class ISO3779_Decoder:
     def __init__(self, vin: str):
         self.vin = vin
         self.wmi = {"country": self.decode_country(), "manufacturer": self.decode_manufacturer()}
-        self.vis = {"year": self.get_year(), "serial_number": self.get_serial_number()}
+        self.vis = {"year": self.get_year(), "manufacturing_plant": self.get_manufacturing_plant(), "serial_number": self.get_serial_number()}
         self.vds = self.vds_decoder()
 
     def decode_region(self) -> str:
@@ -47,7 +47,7 @@ class ISO3779_Decoder:
         return "Unknown"
 
     def decode_country(self) -> str:
-        for (start, end), country in self.ISO3779_WMI_COUNTRIES.items():
+        for (start, end), country in self.ISO3780_WMI_COUNTRIES.items():
             if start <= self.vin[:2] <= end:
                 return country
         return "Unassigned"
@@ -78,6 +78,9 @@ class ISO3779_Decoder:
 
     def get_year(self) -> str:
         return self.YEAR_MAPPING.get(self.vin[9], "Unknown year")
+    
+    def get_manufacturing_plant(self) -> str:
+        return self.vin[10];
 
     def get_serial_number(self) -> str:
         return self.vin[14:] if self.manufacturer_is_less_500() else self.vin[11:]
@@ -94,6 +97,7 @@ dump {{
     vis {{
         year: {self.vis['year']}
         serial number: {self.vis['serial_number']}
+        manufacturing_plant: {self.vis['manufacturing_plant']}
     }}
 {self.vds is None and "    no vds decoder for this manufacturer" or self.vds.dump_string("    ")}
 }}\
