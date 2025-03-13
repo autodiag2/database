@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 import os, sys
 from typing import Optional
+import argparse
+import sys
+from datetime import datetime
+import re
 
 class ISO3779_Decoder:
     ISO3780_WMI_COUNTRIES = {
@@ -31,8 +35,9 @@ class ISO3779_Decoder:
         'G': "2016", 'H': "2017", 'J': "2018", 'K': "2019", 'L': "2020"
     }
 
-    def __init__(self, vin: str):
+    def __init__(self, year: int, vin: str):
         self.vin = vin
+        self.year = year
         self.wmi = {"country": self.decode_country(), "manufacturer": self.decode_manufacturer()}
         self.vis = {"year": self.get_year(), "manufacturing_plant": self.get_manufacturing_plant(), "serial_number": self.get_serial_number()}
         self.vds = self.vds_decoder()
@@ -73,10 +78,10 @@ class ISO3779_Decoder:
         manufacturer = self.decode_manufacturer()
         if any(x in manufacturer.lower() for x in ["citroen", "citroën"]):
             from decoder_modules.citroen import ISO3779_decoder_citroen
-            return ISO3779_decoder_citroen(self.vin, 2000)
+            return ISO3779_decoder_citroen(self.year, self.vin)
         if any(x in manufacturer.lower() for x in ["toyota"]):
             from decoder_modules.toyota import ISO3779_decoder_toyota
-            return ISO3779_decoder_toyota(self.vin, 2010)
+            return ISO3779_decoder_toyota(self.year, self.vin)
         return None
 
     def get_year(self) -> str:
@@ -106,12 +111,39 @@ dump {{
 }}\
 """)
 
-if __name__ == "__main__":
-    vins = sys.argv[1:]
-    if not vins:
-        vins = ["VF1BB05CF26010203", "VR7ACYHZKML019510", "VF7RD5FV8FL507366"]  # Default VIN for testing
+def is_valid_date(value):
+    try:
+        datetime.strptime(value, "%Y-%m-%d")
+        return True
+    except ValueError:
+        return False
+
+def is_valid_year(value):
+    return re.fullmatch(r"\d{4}", value) is not None
+
+def is_valid_year(value):
+    return re.fullmatch(r"\d{4}", value) is not None
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("args", nargs="*", help="Arguments can include a year (YYYY) and VINs in any order")
+    args = parser.parse_args()
     
+    year = datetime.today().strftime('%Y')
+    vins = []
+    
+    for arg in args.args:
+        if is_valid_year(arg):
+            year = int(arg)
+        else:
+            vins.append(arg)
+    
+    if not vins:
+        vins = ["VF1BB05CF26010203", "VR7ACYHZKML019510", "VF7RD5FV8FL507366"]
     for vin in vins:
-        decoder = ISO3779_Decoder(vin)
-        print(f"VIN:{vin}")
+        decoder = ISO3779_Decoder(year, vin)
+        print(f"VIN: {vin}")
         decoder.dump()
+
+if __name__ == "__main__":
+    main()

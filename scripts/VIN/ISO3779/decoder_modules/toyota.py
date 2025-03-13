@@ -12,12 +12,12 @@ class ISO3779_decoder_toyota(ISO3779_decoder_module):
         Incomplete = 5
         Unknown = 6
     
-    def __init__(self, vin: str, year: int):
+    def __init__(self, year: int, vin: str):
         super().__init__(vin, "data/VIN/manufacturer_specific_data/toyota", year)
         self.wmi = {
             "vehicle_type": self.vehicle_type()
         }
-        if 2009 <= year:
+        if 2010 <= year:
             self.vds = {
                 "Body Type & Drive Wheels":         self.y2010_body_type_drive_wheels(),
                 "Body Type, Drive Wheels, & Grade": self.y2010_body_type_drive_wheels_grade(),
@@ -77,6 +77,7 @@ class ISO3779_decoder_toyota(ISO3779_decoder_module):
     
     def vehicle_type(self):
         return self.lookup_tsv("vehicle_type.tsv", self.vin[2], 1)
+
     def vehicle_type_enum(self):
         vt = self.vin[2]
         if vt in ['D','K','N','X','1','2','7']:

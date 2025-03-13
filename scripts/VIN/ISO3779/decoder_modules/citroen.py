@@ -2,7 +2,7 @@ import os
 from decoder_modules.module import ISO3779_decoder_module
 
 class ISO3779_decoder_citroen(ISO3779_decoder_module):
-    def __init__(self, vin: str, year: int):
+    def __init__(self, year: int, vin: str):
         super().__init__(vin, "data/VIN/manufacturer_specific_data/citroen", year)
         self.vds = {
             "family": self.family(), "outline": self.outline(),
