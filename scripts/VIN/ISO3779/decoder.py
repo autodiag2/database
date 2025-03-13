@@ -73,10 +73,10 @@ class ISO3779_Decoder:
         manufacturer = self.decode_manufacturer()
         if any(x in manufacturer.lower() for x in ["citroen", "citroën"]):
             from decoder_modules.citroen import ISO3779_decoder_citroen
-            return ISO3779_decoder_citroen(self.vin)
+            return ISO3779_decoder_citroen(self.vin, 2000)
         if any(x in manufacturer.lower() for x in ["toyota"]):
             from decoder_modules.toyota import ISO3779_decoder_toyota
-            return ISO3779_decoder_toyota(self.vin)
+            return ISO3779_decoder_toyota(self.vin, 2010)
         return None
 
     def get_year(self) -> str:

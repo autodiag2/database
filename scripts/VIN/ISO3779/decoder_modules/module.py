@@ -1,10 +1,11 @@
 import os
 
 class ISO3779_decoder_module:
-    def __init__(self, vin: str, data_folder: str):
+    def __init__(self, vin: str, data_folder: str, year: int):
         self.vin = vin
         self.vds_raw = vin[3:9]
         self.data_folder = data_folder
+        self.year = year
 
     def lookup_tsv(self, filename: str, column: int, match_data: str) -> str:
             file_path = os.path.join(self.data_folder, filename)
