@@ -21,36 +21,62 @@ class ISO3779_decoder_toyota(ISO3779_decoder_module):
             self.vds = {
                 "Body Type & Drive Wheels":         self.y2010_body_type_drive_wheels(),
                 "Body Type, Drive Wheels, & Grade": self.y2010_body_type_drive_wheels_grade(),
-                "Engine Type":                      self.y2010_engine_type()
+                "Engine Type":                      self.y2010_engine_type(),
+                "Restraint System":                 self.y2010_restraint_system(),
+                "Series":                           self.y2010_series(),
+                "Series & Drive Wheels":            self.y2010_series_drive_wheels(),
+                "Vehicle Line & Make":              self.y2010_vehicle_line_make()
             }
     
     def y2010_body_type_drive_wheels(self):
         vt = self.vehicle_type_enum()
         if vt == ISO3779_decoder_toyota.VehicleType.Passenger:
-            return self.lookup_tsv("2010/passenger/body_type_drive_wheels.tsv", self.vds_raw[0], 1)
+            return self.lookup_tsv(f"2010/passenger/body_type_drive_wheels.tsv", self.vds_raw[0], 1)
         elif vt == ISO3779_decoder_toyota.VehicleType.Multi_purpose:
-            return self.lookup_tsv("2010/multi_purpose/body_type_drive_wheels.tsv", self.vds_raw[0], 1)
+            return self.lookup_tsv(f"2010/multi_purpose/body_type_drive_wheels.tsv", self.vds_raw[0], 1)
         elif vt == ISO3779_decoder_toyota.VehicleType.Light_duty:
-            return self.lookup_tsv("2010/light_duty/body_type_drive_wheels.tsv", self.vds_raw[0], 1)
+            return self.lookup_tsv(f"2010/light_duty/body_type_drive_wheels.tsv", self.vds_raw[0], 1)
         return self.vds_raw[0]
     
     def y2010_body_type_drive_wheels_grade(self):
         vt = self.vehicle_type_enum()
         if vt == ISO3779_decoder_toyota.VehicleType.Passenger:
-            return self.lookup_tsv("2010/passenger/body_type_drive_wheels_grade.tsv", self.vds_raw[1], 1)
+            return self.lookup_tsv("2010/passenger/body_type_drive_wheels_grade.tsv", self.vds_raw[0], 1)
         elif vt == ISO3779_decoder_toyota.VehicleType.Multi_purpose:
-            return self.lookup_tsv("2010/multi_purpose/body_type_drive_wheels_grade.tsv", self.vds_raw[1], 1)
+            return self.lookup_tsv("2010/multi_purpose/body_type_drive_wheels_grade.tsv", self.vds_raw[0], 1)
         elif vt == ISO3779_decoder_toyota.VehicleType.Light_duty:
             print("TODO missing data here")
-            return self.lookup_tsv("2010/light_duty/body_type_drive_wheels_grade.tsv", self.vds_raw[1], 1)
+            return self.lookup_tsv("2010/light_duty/body_type_drive_wheels_grade.tsv", self.vds_raw[0], 1)
         return self.vds_raw[0]
     
     def y2010_engine_type(self):
-        return self.lookup_tsv("2010/engine_type.tsv", self.vds_raw[2], 1, 2, 3, 4, 5)
-
+        print("TODO : electric & fuel cell")
+        return self.lookup_tsv("2010/engine_type.tsv", self.vds_raw[1], 1, 2, 3, 4, 5)
+    
+    def y2010_restraint_system(self):
+        return self.lookup_tsv("2010/restraint_system.tsv", self.vds_raw[2], 1, 2)
+    
+    def y2010_series(self):
+        vt = self.vehicle_type_enum()
+        if vt == ISO3779_decoder_toyota.VehicleType.Passenger:
+            return self.lookup_tsv("2010/passenger/series.tsv", self.vds_raw[3], 1)
+        elif vt == ISO3779_decoder_toyota.VehicleType.Multi_purpose or vt == ISO3779_decoder_toyota.VehicleType.Light_duty:
+            return self.lookup_tsv("2010/multi_purpose/series.tsv", self.vds_raw[3], 1)
+        return self.vds_raw[3]
+    
+    def y2010_series_drive_wheels(self):
+        vt = self.vehicle_type_enum()
+        if vt == ISO3779_decoder_toyota.VehicleType.Passenger:
+            return self.lookup_tsv("2010/passenger/series_drive_wheels.tsv", self.vds_raw[3], 1)
+        elif vt == ISO3779_decoder_toyota.VehicleType.Multi_purpose or vt == ISO3779_decoder_toyota.VehicleType.Light_duty:
+            return self.lookup_tsv("2010/multi_purpose/series_drive_wheels.tsv", self.vds_raw[3], 1)
+        return self.vds_raw[3]
+    
+    def y2010_vehicle_line_make(self):
+        return self.lookup_tsv("2010/vehicle_line_make.tsv", self.vds_raw[4], 1)
+    
     def vehicle_type(self):
         return self.lookup_tsv("vehicle_type.tsv", self.vin[2], 1)
-    
     def vehicle_type_enum(self):
         vt = self.vin[2]
         if vt in ['D','K','N','X','1','2','7']:

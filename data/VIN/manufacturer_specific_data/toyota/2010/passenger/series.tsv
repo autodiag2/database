@@ -1,0 +1,56 @@
+#Code	Description
+A	Lexus LC500 ('18-'19) URZ100L, LC500h ('18-'19) GWZ100L
+B	Scion TC ('10) ANT10L
+B	Scion XD ('10-'14) ZSP110L
+B	Lexus HS250h ('10-'12) ANF10L
+B	Lexus CT200h ('11-'17) ZWA10L
+B	Lexus LFA ('12) LFA10L
+B	Scion iQ ('12-'15) NGJ10L, Scion iQ EV ('13) KPJ10L
+B	Toyota Prius C ('12-'19) NHP10L
+B	Lexus GS350 2wd ('13-'15) GRL10L, GS350 4wd ('13-'15) GRL15L
+B	Lexus GS200t 2wd ('16-'17) & GS300 2wd ('18-'19) ARL10L, GS350 2wd ('16-'19) GRL12L, GS350 4wd ('16-'19) GRL16L, GS F ('16-'20) URL10L
+B	Lexus GS450h ('13-'18) GWL10L
+B	Lexus RC350 2wd ('15-'19) GSC10L, RC350 4wd ('15-'19) GSC15L, RC F ('15-'19) USC10L
+B	Lexus RC200t 2wd ('16-'17) & RC300 2wd ('18-'19) ASC10L, RC300 4wd ('16-'19) GSC16L
+B	Toyota Mirai ('16-'20) JPD10L
+B	Toyota C-HR ('18-'22) ZGX10L
+B	Toyota Corolla hatchback ('19-) MZEA12L
+B	Lexus ES350 ('19-) GSZ10L
+B	Lexus ES300h ('19-) AXZH10L
+B	Lexus UX200 ('19-) MZAA10L
+B	Lexus UX250h ('19-) MZAH15L
+C	Lexus IS250 2wd ('10-'13) GSE20L, IS250 4wd ('10-'13) GSE25L, IS350 2wd ('10-'13) GSE21L, IS350 4wd ('11-'13) GSE26L, IS F ('10-'14) USE20L
+C	Lexus IS250C ('10-'15) GSE20L, IS350C ('10-'15) GSE21L
+C	Scion TC ('11-'16) AGT20L
+D	Toyota Avalon ('10-'12) GSX30L
+D	Toyota Prius ('10-'15) ZVW30L
+D	Toyota Prius Plug-in Hybrid ('12-'15) ZVW35L
+D	Toyota Yaris hatchback: NCP131L ('12-'18 & '19 in Canada)
+D	Lexus IS250 2wd ('14-'15) GSE30L, IS250 4wd ('14-'15) GSE35L
+D	Lexus IS200t 2wd ('16-'17) & IS300 2wd ('18-'19) ASE30L, IS300 4wd ('16-'19) GSE37L
+D	Lexus IS350 2wd ('14-'19) GSE31L, IS350 4wd ('14-'19) GSE36L
+E	Toyota Corolla w/1.8L 2ZR-FE engine ('10-'13) ZRE142L, Corolla XRS w/2.4L 2AZ-FE engine (US: '10, Canada: '10-'12) AZE141L
+E	Toyota Matrix w/1.8L 2ZR-FE engine ('10-'13 & in Canada '14) ZRE142L, Matrix S w/2.4L 2AZ-FE engine, 2wd, & torsion beam rear suspension ('10-'13) AZE141L, Matrix S AWD w/2.4L 2AZ-FE engine, 4wd, & IRS ('10-'13) AZE144L, Matrix XRS w/2.4L 2AZ-FE engine, 2wd, & IRS (US: '10, Canada: '10-'13) AZE146L
+E	Toyota Camry ('10-'11) I4: ASV40L, V6: GSV40L, Hybrid: AHV40L
+E	Lexus ES350 ('10-'12) GSV40L
+E	Lexus LS460 2wd ('10-'17) USF40L, LS460L 2wd ('10-'17) USF41L, LS460 4wd ('10-'17) USF45L, LS460L 4wd ('10-'17) USF46L
+E	Lexus LS600hL ('10-'16) UVF46L
+E	Lexus SC430 ('10) UZZ40L
+E	Toyota Prius V ('12-'17 & '18 in Canada) ZVW41L
+E	Toyota Avalon ('13-'18) V6: GSX40L, Hybrid: AVX40L
+F	Toyota Camry ('12-'17) I4: ASV50L, V6: GSV50L, Hybrid: AVV50L
+F	Toyota Prius ('16-'18) ZVW50L (Nickel-metal hydride Battery, 2wd), ZVW51L (Lithium-ion Battery, 2wd)
+F	Toyota Prius ('19-'22) ZVW51L (Lithium-ion Battery, 2wd), ZVW55L (Nickel-metal hydride Battery, Awd)
+F	Toyota Prius Prime ('17-'22) ZVW52L (Lithium-ion Battery, PHEV, 2wd)
+F	Lexus LS500 2wd ('18-'19) VXFA50L, LS500 4wd ('18-'19) VXFA55L
+F	Lexus LS500h 2wd ('18-'19) GVF50L, LS500h 4wd ('18-'19) GVF55L
+F	Toyota Avalon ('19-) V6: GSX50L, Hybrid: AXXH50L
+G	Lexus ES350 ('13-'18) GSV60L
+G	Lexus ES300h ('13-'18) AVV60L
+H	Toyota Corolla sedan ('14-'19) ZRE172L
+H	Toyota Camry ('18-'19) I4: AXVA70L, V6: GSV70L, Hybrid: AXVH70L (Lithium-ion Battery), AXVH71L (Nickel-metal hydride Battery)
+J	Scion iM ('16), Toyota Corolla iM ('17-'18) ZRE186L
+K	Toyota Yaris - Hatchback: NCP91L ('10-'11), 4-d sedan: NCP93L ('10-'12)
+K	Lexus GS350 2wd ('10-'11) GRS191L, GS350 4wd ('10-'11) GRS196L
+K	Lexus GS460 ('10-'11) URS190L
+K	Lexus GS450h ('10-'11) GWS191L
