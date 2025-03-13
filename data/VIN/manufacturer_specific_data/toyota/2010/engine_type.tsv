@@ -1,0 +1,67 @@
+#VIN	Size	Type	Fuel	Valvetrain	Engine Family/Notes/Applications
+A	2.7L	I4	Gas	DOHC, 16 valve	MPI. Dual VVT-i. Toyota 1AR-FE engine. Toyota Venza ('10-'15 & '16 in Canada), Highlander ('10-'19), Sienna ('11-'12 & '13 in Canada).
+A	2.0L	I4 Turbo IC	Gas	DOHC, 16 valve	D-4ST Direct/Port injection. Dual VVT-i w/intake VVT-iW. Otto/Atkinson cycles. Toyota 8AR-FTS engine. Lexus NX200t ('15-'17), NX300 ('18-'19), IS200t ('16-'17), IS300 RWD ('18-'19), RC200t ('16-'17), RC300 RWD ('18-'19), GS200t ('16-'17), GS300 ('18-'19).
+A	1.8L	I4	Gas	DOHC, 16 valve	MPI. Valvematic. Toyota 2ZR-FAE engine. Scion iM ('16), Toyota Corolla iM ('17-'18).
+A	1.8L	I4	Gas-Electric Hybrid	DOHC, 16 valve	MPI. VVT-i. Atkinson cycle. Toyota 2ZR-FXE engine + 1NM (2 Front motors). Lithium-ion Battery Pack. Toyota Prius (Two Eco, Three, Three Touring, Four, Four Touring trim levels) ('16-'18), Prius 2wd ('19-'22).
+A	1.8L	I4	Gas-Electric PHEV	DOHC, 16 valve	MPI. VVT-i. Atkinson cycle. Toyota 2ZR-FXE engine + 2 Front motors: 1NM (MG2), 1SM (MG1). Lithium-ion Battery Pack. Toyota Prius Prime ('17-'22).
+A	2.5L	I4	Gas-Electric Hybrid	DOHC, 16 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. Atkinson cycle. Toyota A25A-FXS Dynamic Force engine + 5NM (2 Front motors). Nickel-metal hydride Battery Pack. Toyota Highlander Hybrid 2wd ('20-'21).
+A	2.5L	I4	Gas-Electric Hybrid	DOHC, 16 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. Atkinson cycle. Toyota A25A-FXS Dynamic Force engine + 3NM (2 Front motors), 4NM (1 Rear motor). Nickel-metal hydride Battery Pack. Toyota Crown Hybrid ('23-).
+B	2.4L	I4	Gas-Electric Hybrid	DOHC, 16 valve	MPI. VVT-i. Atkinson cycle. Toyota 2AZ-FXE engine + 2JM (2 Front motors). Nickel-metal hydride Battery Pack. Toyota Camry Hybrid ('10-'11), Lexus HS250h ('10-'12).
+B	3.5L	V6	Gas-Electric Hybrid	DOHC, 24 valve	MPI. VVT-i. Atkinson cycle. Toyota 2GR-FXE engine + 4JM (2 Front motors). Nickel-metal hydride Battery Pack. Lexus RX450h 2wd ('10-'15).
+B	1.8L	I4	Gas-Electric Hybrid	DOHC, 16 valve	MPI. VVT-i. Atkinson cycle. Toyota 2ZR-FXE engine + 1NM (2 Front motors). Nickel-metal hydride Battery Pack. Toyota Prius (Two trim level: '16-'18), (One trim level: '17-'18).
+B	2.5L	I4	Gas-Electric Hybrid	DOHC, 16 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. Atkinson cycle. Toyota A25A-FXS Dynamic Force engine + 5NM (2 Front motors), 4NM (1 Rear motor). Nickel-metal hydride Battery Pack. Toyota Highlander Hybrid Awd ('20-'21).
+B	2.5L	I4	Gas-Electric PHEV	DOHC, 16 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. Atkinson cycle. Toyota A25A-FXS Dynamic Force engine + 5NM (2 Front motors), 4NM (1 Rear motor). Lithium-ion Battery Pack. Toyota RAV4 Prime ('21-).
+C	3.5L	V6	Gas-Electric Hybrid	DOHC, 24 valve	MPI. VVT-i. Atkinson cycle. Toyota 2GR-FXE engine + 4JM (2 Front motors), 2FM (1 Rear motor). Nickel-metal hydride Battery Pack. Lexus RX450h Awd ('10-'15), Toyota Highlander Hybrid Awd ('11-'16).
+C	3.5L	V6	Gas-Electric Hybrid	DOHC, 24 valve	D-4S Direct/Port injection. Dual VVT-i. Toyota 2GR-FSE engine + 1KM (2 Front motors). Nickel-metal hydride Battery Pack. Lexus GS450h ('10-'11).
+D	1.8L	I4	Gas-Electric Hybrid	DOHC, 16 valve	MPI. VVT-i. Atkinson cycle. Toyota 2ZR-FXE engine + 3JM (2 Front motors). Nickel-metal hydride Battery Pack. Lexus CT200h ('11-'17).
+D	2.5L	I4	Gas-Electric Hybrid	DOHC, 16 valve	MPI. Intake VVT-i. Atkinson cycle. Toyota 2AR-FXE engine + 2JM (2 Front motors). Nickel-metal hydride Battery Pack. Toyota Camry Hybrid ('12-'17), Avalon Hybrid ('13-'18).
+D	1.5L	I4	Gas-Electric Hybrid	DOHC, 16 valve	MPI. VVT-i. Atkinson cycle. Toyota 1NZ-FXE engine + 1LM (2 Front motors). Nickel-metal hydride Battery Pack. Toyota Prius C ('12-'19).
+E	2.4L	I4	Gas	DOHC, 16 valve	MPI. VVT-i. Toyota 2AZ-FE engine. Toyota Corolla XRS (US: '10, Canada: '10-'12), Matrix S, XRS ('10-'13), Scion tC ('10), Scion xB ('10-'15).
+E	3.5L	V6	Gas	DOHC, 24 valve	D-4S Direct/Port injection. Dual VVT-i. Toyota 2GR-FSE engine. Lexus IS350 ('10-'17), IS350C ('10-'15), GS350 ('10-'11, '13-'15), RC350 ('15-'17).
+F	2.5L	I4	Gas	DOHC, 16 valve	MPI. Dual VVT-i. Toyota 2AR-FE engine. Toyota Camry ('10-'17), Scion tC ('11-'16), RAV4 ('10-'18).
+F	2.5L	V6	Gas	DOHC, 24 valve	D-4 Direct injection. Dual VVT-i. Toyota 4GR-FSE engine. Lexus IS250 ('10-'15), IS250C ('10-'15).
+F	3.5L	V6	Gas-Electric Hybrid	DOHC, 24 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iW. Otto/Atkinson cycles. Toyota 2GR-FXS engine + 6JM (2 Front motors). Nickel-metal hydride Battery Pack. Lexus RX450h 2wd ('16).
+F	2.4L	I4 Turbo IC	Gas-Electric Hybrid	DOHC, 16 valve	D-4ST Direct/Port injection. Dual VVT-i. Toyota T24A-FTS Dynamic Force engine + 1ZM (2 Front motors), 1YM (1 Rear motor). Nickel-metal hydride Battery Pack. Toyota Crown Platinum Hybrid Max ('23-).
+G	3.5L	V6	Gas-Electric Hybrid	DOHC, 24 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iW. Otto/Atkinson cycles. Toyota 2GR-FXS engine + 6JM (2 Front motors), 2FM (1 Rear motor). Nickel-metal hydride Battery Pack. Lexus RX450h Awd ('16-'19), RX450hL Awd ('18-'19).
+G	3.5L	V6	Gas-Electric Hybrid	DOHC, 24 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iW. Otto/Atkinson cycles. Toyota 2GR-FXS engine + 4JM (2 Front motors), 2FM (1 Rear motor). Nickel-metal hydride Battery Pack. Toyota Highlander Hybrid Awd ('17-'19).
+H	2.0L	I4	Gas	DOHC, 16 valve	MPI. Valvematic. Toyota 3ZR-FAE engine. Toyota C-HR ('18-'22).
+J	1.3L	I4	Gas	DOHC, 16 valve	MPI. Dual VVT-i. Toyota 1NR-FE engine. Scion iQ ('12-'15).
+J	2.5L	I4	Gas-Electric Hybrid	DOHC, 16 valve	MPI. Intake VVT-i. Atkinson cycle. Toyota 2AR-FXE engine + 2JM (2 Front motors), 2FM (1 Rear motor). Nickel-metal hydride Battery Pack. Lexus NX300h Awd ('15-'19), RAV4 Hybrid Awd ('16-'18).
+K	3.5L	V6	Gas	DOHC, 24 valve	MPI. Dual VVT-i. Toyota 2GR-FE engine. Toyota Avalon ('10-'18), Camry V6 ('10-'17), Highlander ('10-'16), RAV4 ('10-'12), Sienna ('10-'16), Venza ('10-'15 & '16 in Canada), Lexus ES350 ('10-'18), RX350 ('10-'15).
+L	4.6L	V8	Gas	DOHC, 32 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. Toyota 1UR-FSE engine. Lexus LS460 ('10-'17), GS460 ('10-'11).
+M	4.6L	V8	Gas	DOHC, 32 valve	MPI. Dual VVT-i. Toyota 1UR-FE engine. Toyota Sequoia ('10-'12), Tundra ('10-'19), Lexus GX460 ('10-'23).
+M	3.5L	V6	Gas	DOHC, 24 valve	D-4S Direct/Port injection. Dual VVT-i. Toyota 2GR-FSE engine (detuned version - 255 hp). Lexus IS300 AWD ('16-'17), RC300 AWD ('16-'17).
+N	1.8L	I4	Gas-Electric Hybrid	DOHC, 16 valve	MPI. VVT-i. Atkinson cycle. Toyota 2ZR-FXE engine + 3JM (2 Front motors). Nickel-metal hydride Battery Pack. Toyota Prius ('10-'15).
+N	1.8L	I4	Gas-Electric PHEV	DOHC, 16 valve	MPI. VVT-i. Atkinson cycle. Toyota 2ZR-FXE engine + 3JM (2 Front motors). Lithium-ion Battery Pack. Toyota Prius Plug-in Hybrid ('12-'15).
+N	1.8L	I4	Gas-Electric Hybrid	DOHC, 16 valve	MPI. VVT-i. Atkinson cycle. Toyota 2ZR-FXE engine + 5JM (2 Front motors). Nickel-metal hydride Battery Pack. Toyota Prius V ('12-'17 & '18 in Canada).
+N	4.3L	V8	Gas	DOHC, 32 valve	MPI. VVT-i. Toyota 3UZ-FE engine. Lexus SC430 ('10).
+P	5.0L	V8	Gas	DOHC, 32 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. High-performance cylinder head developed by Yamaha. Toyota 2UR-GSE engine. Lexus IS F ('10-'14), RC F ('15-'19), GS F ('16-'20), LC500 ('18-'19).
+P	1.8L	I4	Gas	DOHC, 16 valve	MPI. Valvematic. Toyota 2ZR-FAE engine. Toyota Corolla sedan LE Eco ('14-'19).
+R	2.5L	I4	Gas-Electric Hybrid	DOHC, 16 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. Atkinson cycle. Toyota A25A-FXS Dynamic Force engine + 5NM (2 Front motors). Nickel-metal hydride Battery Pack. Toyota Sienna Hybrid 2wd ('21-).
+S	3.5L	V6	Gas-Electric Hybrid	DOHC, 24 valve	D-4S Direct/Port injection. Dual VVT-i. Atkinson cycle. Toyota 2GR-FXE engine + 1KM (2 Front motors). Nickel-metal hydride Battery Pack. Lexus GS450h ('13-'18).
+S	2.5L	I4	Gas-Electric Hybrid	DOHC, 16 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. Atkinson cycle. Toyota A25A-FXS Dynamic Force engine + 5NM (2 Front motors), 4NM (1 Rear motor). Nickel-metal hydride Battery Pack. Toyota Sienna Hybrid Awd ('21-).
+T	1.5L	I4	Gas	DOHC, 16 valve	MPI. VVT-i. Toyota 1NZ-FE engine. Toyota Yaris hatchback ('10-'18 & '19 in Canada), Yaris sedan ('10-'12).
+U	4.0L	V6	Gas	DOHC, 24 valve	MPI. Intake VVT-i. Toyota 1GR-FE engine. Toyota Tacoma ('10-'15), Tundra ('10).
+U	4.0L	V6	Gas	DOHC, 24 valve	MPI. Dual VVT-i. Toyota 1GR-FE engine. Toyota 4Runner ('10-'21), FJ Cruiser ('10-'14), Tundra ('11-'14).
+U	1.8L	I4	Gas	DOHC, 16 valve	MPI. Dual VVT-i. Toyota 2ZR-FE engine. Toyota Corolla sedan [except XRS & LE Eco] ('10-'19), Matrix [base model] ('10-'13 & in Canada '14), Scion xD ('10-'14).
+U	5.0L	V8	Gas-Electric Hybrid	DOHC, 32 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. Toyota 2UR-FSE engine + 1KM (2 Front motors). Nickel-metal hydride Battery Pack. Lexus LS600hL ('10-'16).
+W	3.3L	V6	Gas-Electric Hybrid	DOHC, 24 valve	MPI. VVT-i. Toyota 3MZ-FE engine + 1JM (2 Front motors), 2FM (1 Rear motor on AWD models). Nickel-metal hydride Battery Pack. Toyota Highlander Hybrid Awd ('10).
+W	5.7L	V8	Gas/E85	DOHC, 32 valve	Flex-Fuel. MPI. Dual VVT-i. Toyota 3UR-FBE engine. Toyota Sequoia ('10-'18), Tundra ('10-'19).
+W	2.5L	I4	Gas-Electric Hybrid	DOHC, 16 valve	MPI. Intake VVT-i. Atkinson cycle. Toyota 2AR-FXE engine + 2JM (2 Front motors). Nickel-metal hydride Battery Pack. Lexus ES300h ('13-'18), NX300h 2wd ('15-'16).
+W	2.5L	I4	Gas-Electric Hybrid	DOHC, 16 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. Atkinson cycle. Toyota A25A-FXS Dynamic Force engine + 3NM (2 Front motors), 4NM (1 Rear motor). Nickel-metal hydride Battery Pack. Toyota RAV4 Hybrid [all] ('19-'20), RAV4 Hybrid LE, XLE ('21-).
+X	2.7L	I4	Gas	DOHC, 16 valve	MPI. Intake VVT-i. Toyota 2TR-FE engine. Toyota Tacoma ('10-'20), 4Runner 2wd ('10).
+X	4.8L	72° V10	Gas	DOHC, 40 valve	MPI. Dual VVT-i. Engine co-developed by Yamaha. Toyota 1LR-GUE engine. Lexus LFA ('12).
+Y	5.7L	V8	Gas	DOHC, 32 valve	MPI. Dual VVT-i. Toyota 3UR-FE engine. Toyota Sequoia ('10-'21), Tundra ('10-'21), Land Cruiser ('10-'11, '13-'21), Lexus LX570 ('10-'11, '13-'21).
+Y	3.5L	V6	Gas-Electric Hybrid	DOHC, 24 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iW. Otto/Atkinson cycles. Toyota 8GR-FXS engine + 2NM (2 Front motors). Lithium-ion Battery Pack. Lexus LC500h ('18-'19), LS500h ('18-'19).
+Z	3.5L	V6	Gas	DOHC, 24 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iW. Otto/Atkinson cycles. Toyota 2GR-FKS engine. Lexus GS350 ('16-'20), RX350 ('16-'19), RX350L ('18-'19), IS350 ('18-'19), RC350 ('18-'19), ES350 ('19-), Toyota Tacoma ('16-'20), Highlander ('17-'21), Sienna ('17-'20), Camry ('18-'19), Avalon ('19-).
+1	2.5L	I4	Gas	DOHC, 16 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. Toyota A25A-FKS Dynamic Force engine (203 hp). Toyota Camry (L, LE, XLE, SE trim levels) ('18-'19), RAV4 ('19-'21).
+2	2.5L	I4	Gas-Electric Hybrid	DOHC, 16 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. Atkinson cycle. Toyota A25A-FXS Dynamic Force engine + 3NM (2 Front motors). Nickel-metal hydride Battery Pack. Toyota Camry Hybrid (SE, XLE trim levels) ('18-'19), Avalon Hybrid ('19-), Lexus ES300h ('19-).
+3	2.5L	I4	Gas-Electric Hybrid	DOHC, 16 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. Atkinson cycle. Toyota A25A-FXS Dynamic Force engine + 3NM (2 Front motors). Lithium-ion Battery Pack. Toyota Camry Hybrid (LE trim level) ('18-'19).
+3	2.0L	I4	Gas	DOHC, 16 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. Toyota M20A-FKS Dynamic Force engine. Lexus UX200 ('19-).
+4	2.0L	I4	Gas	DOHC, 16 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. Toyota M20A-FKS Dynamic Force engine. Toyota Corolla Hatchback ('19-).
+5	3.4L	V6 Twin Turbo IC	Gas	DOHC, 24 valve	D-4ST Direct/Port injection. Dual VVT-i w/intake VVT-iE. Toyota V35A-FTS Dynamic Force engine (3445 cc). Lexus LS500 ('18-'19).
+6	2.5L	I4	Gas	DOHC, 16 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. Toyota A25A-FKS Dynamic Force engine (206 hp). Toyota Camry (XSE trim level) ('18-'19).
+6	2.5L	I4	Gas-Electric Hybrid	DOHC, 16 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. Atkinson cycle. Toyota A25A-FXS Dynamic Force engine + 3NM (2 Front motors), 4NM (1 Rear motor). Lithium-ion Battery Pack. Toyota RAV4 Hybrid XLE Premium, XSE, Limited ('21-).
+8	3.5L	V6	Gas	DOHC, 24 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iW. Otto/Atkinson cycles. Toyota 2GR-FKS engine (detuned version - 260 hp). Lexus IS300 AWD ('18-'19), RC300 AWD ('18-'19).
+9	1.8L	I4	Gas-Electric Hybrid	DOHC, 16 valve	MPI. VVT-i. Atkinson cycle. Toyota 2ZR-FXE engine + 1NM (2 Front motors), 1MM (1 Rear motor). Nickel-metal hydride Battery Pack. Toyota Prius AWD-e ('19-'22).
+9	2.0L	I4	Gas-Electric Hybrid	DOHC, 16 valve	D-4S Direct/Port injection. Dual VVT-i w/intake VVT-iE. Atkinson cycle. Toyota M20A-FXS Dynamic Force engine + 3NM (2 Front motors), 1MM (1 Rear motor). Nickel-metal hydride Battery Pack. Lexus UX250h ('19-).

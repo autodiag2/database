@@ -11,22 +11,22 @@ class ISO3779_decoder_citroen(ISO3779_decoder_module):
         }
     
     def family(self) -> str:
-        return self.lookup_tsv("family.tsv", 1, self.vds_raw[0:1])
+        return self.lookup_tsv("family.tsv", self.vds_raw[0:1], 1)
     
     def outline(self) -> str:
-        return self.lookup_tsv("outline.tsv", 1, self.vds_raw[1:2])
+        return self.lookup_tsv("outline.tsv", self.vds_raw[1:2], 1)
     
     def engine_type(self) -> str:
-        return self.lookup_tsv("engine.tsv", 1, self.vds_raw[2:5])
+        return self.lookup_tsv("engine.tsv", self.vds_raw[2:5], 1)
     
     def engine_designation(self) -> str:
-        return self.lookup_tsv("engine.tsv", 2, self.vds_raw[2:5])
+        return self.lookup_tsv("engine.tsv", self.vds_raw[2:5], 2)
     
     def gear_box(self) -> str:
-        return self.lookup_tsv("version.tsv", 1, self.vds_raw[5:6])
+        return self.lookup_tsv("version.tsv", self.vds_raw[5:6], 1)
     
     def depollution(self) -> str:
-        return self.lookup_tsv("version.tsv", 2, self.vds_raw[5:6])
+        return self.lookup_tsv("version.tsv", self.vds_raw[5:6], 2)
     
     def dump_string(self, padding):
         result = f"{padding}vds:{{\n"

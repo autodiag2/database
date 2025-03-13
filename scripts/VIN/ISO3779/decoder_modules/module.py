@@ -7,20 +7,25 @@ class ISO3779_decoder_module:
         self.data_folder = data_folder
         self.year = year
 
-    def lookup_tsv(self, filename: str, column: int, match_data: str) -> str:
-            file_path = os.path.join(self.data_folder, filename)
-            print(file_path)
-            if not os.path.exists(file_path):
-                return "Unknown"
-            
-            with open(file_path, "r", encoding="utf-8") as file:
-                for line in file:
-                    if line.startswith("#"):
-                        continue
-                    parts = line.strip().split("\t")
-                    if parts[0] == match_data:
-                        return parts[column] if len(parts) > column else match_data
-            return match_data
+    def lookup_tsv(self, filename: str, match_data: str, *columns: int):
+        file_path = os.path.join(self.data_folder, filename)
+        if not os.path.exists(file_path):
+            return "Unknown"
+        
+        with open(file_path, "r", encoding="utf-8") as file:
+            for line in file:
+                if line.startswith("#"):
+                    continue
+                parts = line.strip().split("\t")
+                if parts[0] == match_data:
+                    if 1 < len(columns):
+                        return tuple(parts[col] if col < len(parts) else match_data for col in columns)
+                    else:
+                        return parts[columns[0]] if columns[0] < len(parts) else match_data
+
+        
+        return match_data
+
     
     def dump(self):
         print(self.dump_string(""))
