@@ -6,7 +6,7 @@ class ISO3779_decoder_module:
         self.vds_raw = vin[3:9]
         self.data_folder = data_folder
 
-    def _lookup_tsv(self, filename: str, column: int, match_data: str) -> str:
+    def lookup_tsv(self, filename: str, column: int, match_data: str) -> str:
             file_path = os.path.join(self.data_folder, filename)
             print(file_path)
             if not os.path.exists(file_path):
@@ -23,3 +23,6 @@ class ISO3779_decoder_module:
     
     def dump(self):
         print(self.dump_string(""))
+    
+    def dump_string(self):
+        raise NotImplementedError("Please Implement this method")

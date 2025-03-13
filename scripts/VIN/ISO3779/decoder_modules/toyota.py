@@ -11,7 +11,7 @@ class ISO3779_decoder_toyota(ISO3779_decoder_module):
         }
 
     def vehicle_type(self):
-        return self._lookup_tsv("vehicle_type.tsv", 1, self.vin[2])
+        return self.lookup_tsv("vehicle_type.tsv", 1, self.vin[2])
 
     def dump_string(self, padding):
         result = f"{padding}wmi:{{\n"
