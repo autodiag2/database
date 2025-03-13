@@ -1,5 +1,6 @@
 
-Database of cars and engines used by autodiag
+Database of cars and engines used by autodiag.  
+It also includes a VIN decoder with parsing of the VDS field.
 
 # Add a new car to the database
 ```bash

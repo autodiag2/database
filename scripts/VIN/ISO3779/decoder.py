@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-import os, sys
-from typing import Optional
+import os
 import argparse
-import sys
 from datetime import datetime
 import re
 
@@ -129,7 +127,7 @@ def main():
     parser.add_argument("args", nargs="*", help="Arguments can include a year (YYYY) and VINs in any order")
     args = parser.parse_args()
     
-    year = datetime.today().strftime('%Y')
+    year = int(datetime.today().strftime('%Y'))
     vins = []
     
     for arg in args.args:
@@ -139,7 +137,7 @@ def main():
             vins.append(arg)
     
     if not vins:
-        vins = ["VF1BB05CF26010203", "VR7ACYHZKML019510", "VF7RD5FV8FL507366"]
+        vins = ["VF1BB05CF26010203", "VR7ACYHZKML019510", "VF7RD5FV8FL507366", "JTMBF4DV4A5037027"]
     for vin in vins:
         decoder = ISO3779_Decoder(year, vin)
         print(f"VIN: {vin}")
