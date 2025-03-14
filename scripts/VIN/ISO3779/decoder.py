@@ -36,9 +36,10 @@ class ISO3779_Decoder:
     def __init__(self, year: int, vin: str):
         self.vin = vin
         self.year = year
+        self.decoder = self.vin_manufacturer_decoder()
+        self.vis = {"year": self.get_year(), "manufacturing_plant": self.decoder.vis_manufacturing_plant(), "serial_number": self.get_serial_number()}
         self.wmi = {"country": self.decode_country(), "manufacturer": self.decode_manufacturer()}
-        self.vis = {"year": self.get_year(), "manufacturing_plant": self.get_manufacturing_plant(), "serial_number": self.get_serial_number()}
-        self.vds = self.vds_decoder()
+        self.vds = self.decoder.vds_decode()
 
     def decode_region(self) -> str:
         if "A" <= self.vin[0] <= "H": return "Africa"
@@ -72,42 +73,48 @@ class ISO3779_Decoder:
                         return parts[1]
         return "Unknown manufacturer"
     
-    def vds_decoder(self):
+    def vin_manufacturer_decoder(self):
         manufacturer = self.decode_manufacturer()
         if any(x in manufacturer.lower() for x in ["citroen", "citroën"]):
             from decoder_modules.citroen import ISO3779_decoder_citroen
             return ISO3779_decoder_citroen(self.year, self.decode_region(), self.vin)
-        if any(x in manufacturer.lower() for x in ["toyota"]):
+        elif any(x in manufacturer.lower() for x in ["toyota"]):
             from decoder_modules.toyota import ISO3779_decoder_toyota
             return ISO3779_decoder_toyota(self.year, self.decode_region(), self.vin)
-        return None
+        else:
+            from decoder_modules.none import ISO3779_decoder_none
+            return ISO3779_decoder_none(self.year, self.decode_region(), self.vin)
 
     def get_year(self) -> str:
         return self.YEAR_MAPPING.get(self.vin[9], "Unknown year")
     
     def get_manufacturing_plant(self) -> str:
-        return self.vin[10];
+        return self.vin[10]
 
     def get_serial_number(self) -> str:
         return self.vin[14:] if self.manufacturer_is_less_500() else self.vin[11:]
 
     def dump(self):
         region = self.decode_region()
+        vds_str = "\n                    ".join(f"{k}: {v}" for k, v in self.vds.items())
+        
         print(f"""\
-dump {{
-    wmi {{
-        region: {region}
-        country: {self.wmi['country']}
-        manufacturer: {self.wmi['manufacturer']}
-    }}
-    vis {{
-        year: {self.vis['year']}
-        serial number: {self.vis['serial_number']}
-        manufacturing_plant: {self.vis['manufacturing_plant']}
-    }}
-{self.vds is None and "    no vds decoder for this manufacturer" or self.vds.dump_string("    ")}
-}}\
-""")
+            dump {{
+                wmi {{
+                    region: {region}
+                    country: {self.wmi['country']}
+                    manufacturer: {self.wmi['manufacturer']}
+                }}
+                vis {{
+                    year: {self.vis['year']}
+                    serial number: {self.vis['serial_number']}
+                    manufacturing_plant: {self.vis['manufacturing_plant']}
+                }}
+                vds {{
+                    {vds_str}
+                }}
+            }}\
+        """)
 
 def is_valid_date(value):
     try:

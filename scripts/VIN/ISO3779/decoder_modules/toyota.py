@@ -14,15 +14,13 @@ class ISO3779_decoder_toyota(ISO3779_decoder_module):
     
     def __init__(self, year: int,  region: str, vin: str):
         super().__init__(vin, "data/VIN/manufacturer_specific_data/toyota", year)
-        self.wmi = {
-            "vehicle_type": self.vehicle_type()
-        }
-        self.vds = None
+
+    def vds_decode(self):
         is_na1996 = False
         print("TODO more proper way to handle this")
         if True or region == "North America":
-            if 2010 <= year:
-                self.vds = {
+            if 2010 <= self.year:
+                return {
                     "Body Type & Drive Wheels":         self.na2010_body_type_drive_wheels(),
                     "Body Type, Drive Wheels, & Grade": self.na2010_body_type_drive_wheels_grade(),
                     "Engine Type":                      self.na2010_engine_type(),
@@ -34,14 +32,12 @@ class ISO3779_decoder_toyota(ISO3779_decoder_module):
             else:
                 is_na1996 = True
         else:
-            if 2002 <= year:
+            if 2002 <= self.year:
                 is_na1996 = True
         
         if is_na1996:
             print("TODO 1996-2009 format")
 
-            
-    
     def na2010_body_type_drive_wheels(self):
         vt = self.vehicle_type_enum()
         if vt == ISO3779_decoder_toyota.VehicleType.Passenger:
@@ -106,17 +102,3 @@ class ISO3779_decoder_toyota(ISO3779_decoder_module):
             return ISO3779_decoder_toyota.VehicleType.Incomplete
         else:
             return ISO3779_decoder_toyota.VehicleType.Unknown
-
-    def dump_string(self, padding):
-        result = f"{padding}wmi:{{\n"
-        for key, value in self.wmi.items():
-            result += f"{padding}   {key}:\t{value}\n"
-        result += f"{padding}}}\n"
-        if self.vds is None:
-            result += f"{padding}vds: decoding error\n"
-        else:
-            result += f"{padding}vds:{{\n"
-            for key, value in self.vds.items():
-                result += f"{padding}   {key}:\t{value}\n"
-            result += f"{padding}}}\n"
-        return result

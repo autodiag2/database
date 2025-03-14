@@ -26,9 +26,8 @@ class ISO3779_decoder_module:
         
         return match_data
 
-    
-    def dump(self):
-        print(self.dump_string(""))
-    
-    def dump_string(self):
+    def vds_decode(self):
         raise NotImplementedError("Please Implement this method")
+    
+    def vis_manufacturing_plant(self) -> str:
+        return self.vin[10]
