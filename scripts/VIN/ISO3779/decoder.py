@@ -55,17 +55,16 @@ class ISO3779_Decoder:
         return "Unknown manufacturer"
     
     def vin_manufacturer_decoder(self):
-        region = self.ISO3780_wmi_region()
         manufacturer = self.decode_manufacturer()
         if any(x in manufacturer.lower() for x in ["citroen", "citroën"]):
-            from decoder_modules.citroen import ISO3779_decoder_citroen
-            return ISO3779_decoder_citroen(self)
+            from decoder_modules.citroen import VIN_decoder_citroen
+            return VIN_decoder_citroen(self)
         elif any(x in manufacturer.lower() for x in ["toyota"]):
-            from decoder_modules.toyota import ISO3779_decoder_toyota
-            return ISO3779_decoder_toyota(self)
+            from decoder_modules.toyota import VIN_decoder_toyota
+            return VIN_decoder_toyota(self)
         else:
-            from decoder_modules.none import ISO3779_decoder_none
-            return ISO3779_decoder_none(self)
+            from decoder_modules.none import VIN_decoder_none
+            return VIN_decoder_none(self)
 
     def dump(self):
         region = self.ISO3780_wmi_region_str()

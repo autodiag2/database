@@ -10,7 +10,7 @@ YEAR_MAPPING = {
     'G': "2016", 'H': "2017", 'J': "2018", 'K': "2019", 'L': "2020"
 }
 
-class ISO3779_decoder_module:
+class VIN_decoder_module:
     def __init__(self, rootDecoder: ISO3779_Decoder, data_folder: str):
         self.rootDecoder = rootDecoder
         self.data_folder = data_folder

@@ -1,10 +1,10 @@
 
 import os, sys
-from decoder_modules.module import ISO3779_decoder_module
+from decoder_modules.module import VIN_decoder_module
 from enum import Enum
-from decoder import ISO3779_Decoder
+from decoder import *
 
-class ISO3779_decoder_toyota(ISO3779_decoder_module):
+class VIN_decoder_toyota(VIN_decoder_module):
     class VehicleType(Enum):
         Passenger = 1
         Multi_purpose = 2
@@ -19,7 +19,7 @@ class ISO3779_decoder_toyota(ISO3779_decoder_module):
     def vds_decode(self):
         is_na1996 = False
         print("TODO more proper way to handle this")
-        if True or region == "North America":
+        if True or self.rootDecoder.ISO3780_wmi_region() == ISO3780_WMI_REGION.north_ameria:
             if 2010 <= self.rootDecoder.year:
                 return {
                     "Body Type & Drive Wheels":         self.na2010_body_type_drive_wheels(),
@@ -41,21 +41,21 @@ class ISO3779_decoder_toyota(ISO3779_decoder_module):
 
     def na2010_body_type_drive_wheels(self):
         vt = self.vehicle_type_enum()
-        if vt == ISO3779_decoder_toyota.VehicleType.Passenger:
+        if vt == VIN_decoder_toyota.VehicleType.Passenger:
             return self.lookup_tsv(f"2010/passenger/body_type_drive_wheels.tsv", self.rootDecoder.vds_raw[0], 1)
-        elif vt == ISO3779_decoder_toyota.VehicleType.Multi_purpose:
+        elif vt == VIN_decoder_toyota.VehicleType.Multi_purpose:
             return self.lookup_tsv(f"2010/multi_purpose/body_type_drive_wheels.tsv", self.rootDecoder.vds_raw[0], 1)
-        elif vt == ISO3779_decoder_toyota.VehicleType.Light_duty:
+        elif vt == VIN_decoder_toyota.VehicleType.Light_duty:
             return self.lookup_tsv(f"2010/light_duty/body_type_drive_wheels.tsv", self.rootDecoder.vds_raw[0], 1)
         return self.rootDecoder.vds_raw[0]
     
     def na2010_body_type_drive_wheels_grade(self):
         vt = self.vehicle_type_enum()
-        if vt == ISO3779_decoder_toyota.VehicleType.Passenger:
+        if vt == VIN_decoder_toyota.VehicleType.Passenger:
             return self.lookup_tsv("2010/passenger/body_type_drive_wheels_grade.tsv", self.rootDecoder.vds_raw[0], 1)
-        elif vt == ISO3779_decoder_toyota.VehicleType.Multi_purpose:
+        elif vt == VIN_decoder_toyota.VehicleType.Multi_purpose:
             return self.lookup_tsv("2010/multi_purpose/body_type_drive_wheels_grade.tsv", self.rootDecoder.vds_raw[0], 1)
-        elif vt == ISO3779_decoder_toyota.VehicleType.Light_duty:
+        elif vt == VIN_decoder_toyota.VehicleType.Light_duty:
             print("TODO missing data here")
             return self.lookup_tsv("2010/light_duty/body_type_drive_wheels_grade.tsv", self.rootDecoder.vds_raw[0], 1)
         return self.rootDecoder.vds_raw[0]
@@ -69,17 +69,17 @@ class ISO3779_decoder_toyota(ISO3779_decoder_module):
     
     def na2010_series(self):
         vt = self.vehicle_type_enum()
-        if vt == ISO3779_decoder_toyota.VehicleType.Passenger:
+        if vt == VIN_decoder_toyota.VehicleType.Passenger:
             return self.lookup_tsv("2010/passenger/series.tsv", self.rootDecoder.vds_raw[3], 1)
-        elif vt == ISO3779_decoder_toyota.VehicleType.Multi_purpose or vt == ISO3779_decoder_toyota.VehicleType.Light_duty:
+        elif vt == VIN_decoder_toyota.VehicleType.Multi_purpose or vt == VIN_decoder_toyota.VehicleType.Light_duty:
             return self.lookup_tsv("2010/multi_purpose/series.tsv", self.rootDecoder.vds_raw[3], 1)
         return self.rootDecoder.vds_raw[3]
     
     def na2010_series_drive_wheels(self):
         vt = self.vehicle_type_enum()
-        if vt == ISO3779_decoder_toyota.VehicleType.Passenger:
+        if vt == VIN_decoder_toyota.VehicleType.Passenger:
             return self.lookup_tsv("2010/passenger/series_drive_wheels.tsv", self.rootDecoder.vds_raw[3], 1)
-        elif vt == ISO3779_decoder_toyota.VehicleType.Multi_purpose or vt == ISO3779_decoder_toyota.VehicleType.Light_duty:
+        elif vt == VIN_decoder_toyota.VehicleType.Multi_purpose or vt == VIN_decoder_toyota.VehicleType.Light_duty:
             return self.lookup_tsv("2010/multi_purpose/series_drive_wheels.tsv", self.rootDecoder.vds_raw[3], 1)
         return self.rootDecoder.vds_raw[3]
     
@@ -92,14 +92,14 @@ class ISO3779_decoder_toyota(ISO3779_decoder_module):
     def vehicle_type_enum(self):
         vt = self.rootDecoder.wmi_raw[2]
         if vt in ['D','K','N','X','1','2','7']:
-            return ISO3779_decoder_toyota.VehicleType.Passenger
+            return VIN_decoder_toyota.VehicleType.Passenger
         elif vt in ['A','B','F','4']:
-            return ISO3779_decoder_toyota.VehicleType.Light_duty
+            return VIN_decoder_toyota.VehicleType.Light_duty
         elif vt in ['G']:
-            return ISO3779_decoder_toyota.VehicleType.Bus
+            return VIN_decoder_toyota.VehicleType.Bus
         elif vt in ['E','L','M','3']:
-            return ISO3779_decoder_toyota.VehicleType.Multi_purpose
+            return VIN_decoder_toyota.VehicleType.Multi_purpose
         elif vt in ['5']:
-            return ISO3779_decoder_toyota.VehicleType.Incomplete
+            return VIN_decoder_toyota.VehicleType.Incomplete
         else:
-            return ISO3779_decoder_toyota.VehicleType.Unknown
+            return VIN_decoder_toyota.VehicleType.Unknown

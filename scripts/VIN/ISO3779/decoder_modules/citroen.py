@@ -1,8 +1,8 @@
 import os
-from decoder_modules.module import ISO3779_decoder_module
+from decoder_modules.module import VIN_decoder_module
 from decoder import ISO3779_Decoder
 
-class ISO3779_decoder_citroen(ISO3779_decoder_module):
+class VIN_decoder_citroen(VIN_decoder_module):
 
     def __init__(self, rootDecoder: ISO3779_Decoder):
         super().__init__(rootDecoder, "data/VIN/manufacturer_specific_data/citroen")
