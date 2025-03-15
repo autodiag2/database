@@ -116,16 +116,6 @@ class ISO3779_Decoder:
             }}\
         """)
 
-def is_valid_date(value):
-    try:
-        datetime.strptime(value, "%Y-%m-%d")
-        return True
-    except ValueError:
-        return False
-
-def is_valid_year(value):
-    return re.fullmatch(r"\d{4}", value) is not None
-
 def is_valid_year(value):
     return re.fullmatch(r"\d{4}", value) is not None
 
