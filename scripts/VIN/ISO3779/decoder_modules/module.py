@@ -1,14 +1,8 @@
 import os
 from decoder import ISO3779_Decoder
 
-YEAR_MAPPING = {
-    'M': "1991 or 2021", 'N': "1992 or 2022", 'P': "1993 or 2023", 'R': "1994 or 2024",
-    'S': "1995 or 2025", 'T': "1996 or 2026", 'V': "1997 or 2027", 'W': "1998 or 2028",
-    'X': "1999 or 2029", 'Y': "2000 or 2030", '1': "2001", '2': "2002", '3': "2003",
-    '4': "2004", '5': "2005", '6': "2006", '7': "2007", '8': "2008", '9': "2009",
-    'A': "2010", 'B': "2011", 'C': "2012", 'D': "2013", 'E': "2014", 'F': "2015",
-    'G': "2016", 'H': "2017", 'J': "2018", 'K': "2019", 'L': "2020"
-}
+
+YEAR_MAPPING = ['1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','J','K','L','M','N','P','R','S','T','V','W','X','Y']
 
 class VIN_decoder_module:
     def __init__(self, rootDecoder: ISO3779_Decoder, data_folder: str):
@@ -44,8 +38,13 @@ class VIN_decoder_module:
             "serial_number": self.vis_get_serial_number()
         }
     
-    def vis_get_year(self) -> str:
-        return YEAR_MAPPING.get(self.rootDecoder.vis_raw[0], "Unknown year")
+    def vis_get_year(self) -> int:
+        period_offset = YEAR_MAPPING.index(self.rootDecoder.vis_raw[0])
+        if period_offset == -1:
+            return None
+        offset_to_start = (self.rootDecoder.year - 1971) % len(YEAR_MAPPING)
+        period_year = self.rootDecoder.year - offset_to_start + period_offset
+        return period_year
     
     def vis_get_manufacturing_plant(self) -> str:
         return self.rootDecoder.vis_raw[1]
