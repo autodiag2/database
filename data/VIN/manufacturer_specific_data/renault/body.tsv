@@ -1,0 +1,25 @@
+#letter	type
+A	Barquette*
+B	Berline 5 portes
+C	Berline 3 portes
+D	Coupé
+E	Cabriolet
+F	Monospace société
+G	Société 3 portes
+H	SUV
+J	Monospace
+K	Break/ MPV
+L	Berline 4 portes
+M	Berline 2 portes*
+N	non utilisé
+P	(projet Matra)
+Q	inconnu
+R	Monospace long
+S	Société 5 portes
+T	non utilisé
+U	Pick-up
+V	Break société/SUV société
+W	non utilisé (réservé pour les avant-projets)
+X	Réservé pour les projets mais utilisé de façon générique dans les VIN des modèles Renault rebadgés (Nissan, Fiat, Opel/Vauxhall)
+Y	non utilisé
+Z	non utilisé (réservé pour les show-cars)
