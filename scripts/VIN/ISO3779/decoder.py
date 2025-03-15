@@ -3,26 +3,9 @@ import os
 import argparse
 from datetime import datetime
 import re
+from decoder_data import *
 
-class ISO3779_Decoder:
-    ISO3780_WMI_COUNTRIES = {
-        ("AA", "AH"): "South Africa", ("AJ", "AN"): "Ivory Coast", ("AP", "A0"): "Unassigned",
-        ("BA", "BE"): "Angola", ("BF", "BK"): "Kenya", ("BL", "BR"): "Tanzania",
-        ("BS", "B0"): "Unassigned", ("CA", "CE"): "Benin", ("CF", "CK"): "Madagascar",
-        ("CL", "CR"): "Tunisia", ("CS", "C0"): "Unassigned", ("DA", "DE"): "Egypt",
-        ("DF", "DK"): "Morocco", ("DL", "DR"): "Zambia", ("DS", "D0"): "Unassigned",
-        ("EA", "EE"): "Ethiopia", ("EF", "EK"): "Mozambique", ("EL", "E0"): "Unassigned",
-        ("FA", "FE"): "Ghana", ("FF", "FK"): "Nigeria", ("FL", "F0"): "Unassigned",
-        ("GA", "G0"): "Unassigned", ("HA", "H0"): "Unassigned", ("JA", "J0"): "Japan",
-        ("KA", "KE"): "Sri Lanka", ("KF", "KK"): "Israel", ("KL", "KR"): "South Korea",
-        ("KS", "K0"): "Unassigned", ("LA", "L0"): "China", ("MA", "ME"): "India",
-        ("MF", "MK"): "Indonesia", ("ML", "MR"): "Thailand", ("MS", "M0"): "Unassigned",
-        ("NF", "NK"): "Pakistan", ("NL", "NR"): "Turkey", ("NS", "N0"): "Unassigned",
-        ("PA", "PE"): "Philippines", ("PF", "PK"): "Singapore", ("PL", "PR"): "Malaysia",
-        ("PS", "P0"): "Unassigned", ("RA", "RE"): "United Arab Emirates", ("RF", "RK"): "Taiwan",
-        ("RL", "RR"): "Vietnam", ("RS", "R0"): "Unassigned", ("SA", "SM"): "Great Britain",
-        ("VF", "VR"): "France", ("WA", "W0"): "Germany", ("ZA", "ZR"): "Italy",
-    }
+class ISO3779_Decoder: 
 
     YEAR_MAPPING = {
         'M': "1991 or 2021", 'N': "1992 or 2022", 'P': "1993 or 2023", 'R': "1994 or 2024",
@@ -38,20 +21,20 @@ class ISO3779_Decoder:
         self.year = year
         self.decoder = self.vin_manufacturer_decoder()
         self.vis = {"year": self.get_year(), "manufacturing_plant": self.decoder.vis_manufacturing_plant(), "serial_number": self.get_serial_number()}
-        self.wmi = {"country": self.decode_country(), "manufacturer": self.decode_manufacturer()}
+        self.wmi = {"region": self.ISO3780_wmi_region_str(), "country": self.ISO3780_country(), "manufacturer": self.decode_manufacturer()}
         self.vds = self.decoder.vds_decode()
 
-    def decode_region(self) -> str:
-        if "A" <= self.vin[0] <= "H": return "Africa"
-        if "J" <= self.vin[0] <= "R": return "Asia"
-        if "S" <= self.vin[0] <= "Z": return "Europe"
-        if "1" <= self.vin[0] <= "5": return "North America"
-        if "6" <= self.vin[0] <= "7": return "Oceania"
-        if "8" <= self.vin[0] <= "9": return "South America"
-        return "Unknown"
+    def ISO3780_wmi_region(self) -> ISO3780_WMI_REGION:
+        for (start, end), region in ISO3780_WMI_REGIONS.items():
+            if start <= self.vin[:2] <= end:
+                return region
+        return ISO3780_WMI_REGION.unknown
+    
+    def ISO3780_wmi_region_str(self) -> str:
+        return self.ISO3780_wmi_region().name
 
-    def decode_country(self) -> str:
-        for (start, end), country in self.ISO3780_WMI_COUNTRIES.items():
+    def ISO3780_country(self) -> str:
+        for (start, end), country in ISO3780_WMI_COUNTRIES.items():
             if start <= self.vin[:2] <= end:
                 return country
         return "Unassigned"
@@ -74,16 +57,17 @@ class ISO3779_Decoder:
         return "Unknown manufacturer"
     
     def vin_manufacturer_decoder(self):
+        region = self.ISO3780_wmi_region()
         manufacturer = self.decode_manufacturer()
         if any(x in manufacturer.lower() for x in ["citroen", "citroën"]):
             from decoder_modules.citroen import ISO3779_decoder_citroen
-            return ISO3779_decoder_citroen(self.year, self.decode_region(), self.vin)
+            return ISO3779_decoder_citroen(self.year, region, self.vin)
         elif any(x in manufacturer.lower() for x in ["toyota"]):
             from decoder_modules.toyota import ISO3779_decoder_toyota
-            return ISO3779_decoder_toyota(self.year, self.decode_region(), self.vin)
+            return ISO3779_decoder_toyota(self.year, region, self.vin)
         else:
             from decoder_modules.none import ISO3779_decoder_none
-            return ISO3779_decoder_none(self.year, self.decode_region(), self.vin)
+            return ISO3779_decoder_none(self.year, region, self.vin)
 
     def get_year(self) -> str:
         return self.YEAR_MAPPING.get(self.vin[9], "Unknown year")
@@ -95,7 +79,7 @@ class ISO3779_Decoder:
         return self.vin[14:] if self.manufacturer_is_less_500() else self.vin[11:]
 
     def dump(self):
-        region = self.decode_region()
+        region = self.ISO3780_wmi_region_str()
         vds_str = "\n                    ".join(f"{k}: {v}" for k, v in self.vds.items())
         
         print(f"""\
