@@ -7,22 +7,20 @@ from decoder_data import *
 
 class ISO3779_Decoder: 
 
-    YEAR_MAPPING = {
-        'M': "1991 or 2021", 'N': "1992 or 2022", 'P': "1993 or 2023", 'R': "1994 or 2024",
-        'S': "1995 or 2025", 'T': "1996 or 2026", 'V': "1997 or 2027", 'W': "1998 or 2028",
-        'X': "1999 or 2029", 'Y': "2000 or 2030", '1': "2001", '2': "2002", '3': "2003",
-        '4': "2004", '5': "2005", '6': "2006", '7': "2007", '8': "2008", '9': "2009",
-        'A': "2010", 'B': "2011", 'C': "2012", 'D': "2013", 'E': "2014", 'F': "2015",
-        'G': "2016", 'H': "2017", 'J': "2018", 'K': "2019", 'L': "2020"
-    }
-
     def __init__(self, year: int, vin: str):
         self.vin = vin
         self.year = year
+        self.wmi_raw = vin[:3]
+        self.vds_raw = vin[3:9]
+        self.vis_raw = vin[9:]
         self.decoder = self.vin_manufacturer_decoder()
-        self.vis = {"year": self.get_year(), "manufacturing_plant": self.decoder.vis_manufacturing_plant(), "serial_number": self.get_serial_number()}
-        self.wmi = {"region": self.ISO3780_wmi_region_str(), "country": self.ISO3780_country(), "manufacturer": self.decode_manufacturer()}
+        self.wmi = {
+            "region":       self.ISO3780_wmi_region_str(), 
+            "country":      self.ISO3780_wmi_country(), 
+            "manufacturer": self.decode_manufacturer()
+        }
         self.vds = self.decoder.vds_decode()
+        self.vis = self.decoder.vis_decode()
 
     def ISO3780_wmi_region(self) -> ISO3780_WMI_REGION:
         for (start, end), region in ISO3780_WMI_REGIONS.items():
@@ -33,20 +31,20 @@ class ISO3779_Decoder:
     def ISO3780_wmi_region_str(self) -> str:
         return self.ISO3780_wmi_region().name
 
-    def ISO3780_country(self) -> str:
+    def ISO3780_wmi_country(self) -> str:
         for (start, end), country in ISO3780_WMI_COUNTRIES.items():
             if start <= self.vin[:2] <= end:
                 return country
         return "Unassigned"
 
-    def manufacturer_is_less_500(self) -> bool:
+    def wmi_manufacturer_is_less_500(self) -> bool:
         return self.vin[2] == '9'
 
     def decode_manufacturer(self) -> str:
         manufacturers_file = "data/VIN/manufacturers.tsv"
         if not os.path.exists(manufacturers_file):
             return "Unknown manufacturer"
-        manufacturer_code = self.vin[11:14] if self.manufacturer_is_less_500() else None
+        manufacturer_code = self.vin[11:14] if self.wmi_manufacturer_is_less_500() else None
         with open(manufacturers_file, "r") as file:
             for line in file:
                 if line.startswith("#"): continue
@@ -61,26 +59,18 @@ class ISO3779_Decoder:
         manufacturer = self.decode_manufacturer()
         if any(x in manufacturer.lower() for x in ["citroen", "citroën"]):
             from decoder_modules.citroen import ISO3779_decoder_citroen
-            return ISO3779_decoder_citroen(self.year, region, self.vin)
+            return ISO3779_decoder_citroen(self)
         elif any(x in manufacturer.lower() for x in ["toyota"]):
             from decoder_modules.toyota import ISO3779_decoder_toyota
-            return ISO3779_decoder_toyota(self.year, region, self.vin)
+            return ISO3779_decoder_toyota(self)
         else:
             from decoder_modules.none import ISO3779_decoder_none
-            return ISO3779_decoder_none(self.year, region, self.vin)
-
-    def get_year(self) -> str:
-        return self.YEAR_MAPPING.get(self.vin[9], "Unknown year")
-    
-    def get_manufacturing_plant(self) -> str:
-        return self.vin[10]
-
-    def get_serial_number(self) -> str:
-        return self.vin[14:] if self.manufacturer_is_less_500() else self.vin[11:]
+            return ISO3779_decoder_none(self)
 
     def dump(self):
         region = self.ISO3780_wmi_region_str()
         vds_str = "\n                    ".join(f"{k}: {v}" for k, v in self.vds.items())
+        vis_str = "\n                    ".join(f"{k}: {v}" for k, v in self.vis.items())
         
         print(f"""\
             dump {{
@@ -89,13 +79,11 @@ class ISO3779_Decoder:
                     country: {self.wmi['country']}
                     manufacturer: {self.wmi['manufacturer']}
                 }}
-                vis {{
-                    year: {self.vis['year']}
-                    serial number: {self.vis['serial_number']}
-                    manufacturing_plant: {self.vis['manufacturing_plant']}
-                }}
                 vds {{
                     {vds_str}
+                }}
+                vis {{
+                    {vis_str}
                 }}
             }}\
         """)
