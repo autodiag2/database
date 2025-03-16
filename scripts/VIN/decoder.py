@@ -32,9 +32,17 @@ class ISO3779_Decoder:
         return self.ISO3780_wmi_region().name
 
     def ISO3780_wmi_country(self) -> str:
+        mapping = [chr(i) for i in range(ord('A'), ord('Z') + 1)] + [str(i) for i in range(1, 10)] + ['0']
         for (start, end), country in ISO3780_WMI_COUNTRIES.items():
-            if start <= self.vin[:2] <= end:
-                return country
+            wmi_first = mapping.index(self.vin[0])
+            wmi_first_start = mapping.index(start[0])
+            wmi_first_end = mapping.index(end[0])
+            if wmi_first_start <= wmi_first <= wmi_first_end:
+                wmi_second = mapping.index(self.vin[1])
+                wmi_second_start = mapping.index(start[1])
+                wmi_second_end = mapping.index(end[1])
+                if wmi_second_start <= wmi_second <= wmi_second_end:
+                    return country
         return "Unassigned"
 
     def wmi_manufacturer_is_less_500(self) -> bool:
