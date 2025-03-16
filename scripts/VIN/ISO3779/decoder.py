@@ -107,12 +107,13 @@ def main():
         else:
             vins.append(arg)
     
-    if not vins:
-        vins = ["VF1BB05CF26010203", "VR7ACYHZKML019510", "VF7RD5FV8FL507366", "JTMBF4DV4A5037027"]
-    for vin in vins:
-        decoder = ISO3779_Decoder(year, vin)
-        print(f"VIN: {vin}")
-        decoder.dump()
+    if vins:
+        for vin in vins:
+            decoder = ISO3779_Decoder(year, vin)
+            print(f"VIN: {vin}")
+            decoder.dump()
+    else:
+        parser.print_help()
 
 if __name__ == "__main__":
     main()
