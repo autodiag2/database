@@ -42,5 +42,12 @@ class VIN_decoder_test:
         assert decoder.vis["year"] == 2010
         assert decoder.vis["serial_number"] == "037027"
 
+        decoder = ISO3779_Decoder(1991, "VF1B57A0410958993")
+        assert decoder.wmi["region"].lower() == "europe"
+        assert decoder.wmi["country"].lower() == "france"
+        assert "renault" in decoder.wmi["manufacturer"].lower()
+        assert decoder.vis["year"] == 1971
+        assert "clio" in decoder.vds["project_code"].lower()
+
 if __name__ == "__main__":
     VIN_decoder_test().test()

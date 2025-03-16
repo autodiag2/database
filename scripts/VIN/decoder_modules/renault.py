@@ -9,10 +9,16 @@ class VIN_decoder_renault(VIN_decoder_module):
         super().__init__(rootDecoder, "data/VIN/manufacturer_specific_data/renault")
     
     def vds_decode(self):
-        return {
-            "body": self.p3rd_body(), "project_code": self.p3rd_project_code(),
-            "engine_hint": self.p3rd_engine_hint(), "plant": self.vds_get_plant()
-        }
+        if self.rootDecoder.year == 1991:
+            return {
+                "body": self.p2p3rd_body(), "project_code": self.p2rd_project_code(),
+                "version": self.rootDecoder.vds_raw[3], "constant": self.rootDecoder.vds_raw[4:6]
+            }
+        else:
+            return {
+                "body": self.p2p3rd_body(), "project_code": self.p3rd_project_code(),
+                "engine_hint": self.p3rd_engine_hint(), "plant": self.vds_get_plant()
+            }
     
     def vis_decode(self):
         return {
@@ -23,7 +29,7 @@ class VIN_decoder_renault(VIN_decoder_module):
     def vds_get_plant(self):
         return self.lookup_tsv("plant.tsv", self.rootDecoder.vds_raw[5], 1)
 
-    def p3rd_body(self):
+    def p2p3rd_body(self):
         return self.lookup_tsv("body.tsv", self.rootDecoder.vds_raw[0], 1)
 
     def p3rd_project_code(self):
@@ -31,3 +37,6 @@ class VIN_decoder_renault(VIN_decoder_module):
     
     def p3rd_engine_hint(self):
         return self.lookup_tsv("3rd_period/engine_hint.tsv", self.rootDecoder.vds_raw[2:4], 1)
+    
+    def p2rd_project_code(self):
+        return self.lookup_tsv("2nd_period/project_code.tsv", self.rootDecoder.vds_raw[1:3], 1)
