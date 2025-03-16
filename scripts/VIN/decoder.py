@@ -43,7 +43,7 @@ class ISO3779_Decoder:
                 wmi_second_end = mapping.index(end[1])
                 if wmi_second_start <= wmi_second <= wmi_second_end:
                     return country
-        return "Unassigned"
+        return "unassigned"
 
     def wmi_manufacturer_is_less_500(self) -> bool:
         return self.vin[2] == '9'
