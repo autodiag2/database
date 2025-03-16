@@ -1,4 +1,5 @@
 
+# https://en.wikibooks.org/wiki/Vehicle_Identification_Numbers_(VIN_codes)/Toyota/VIN_Codes
 import os, sys
 from decoder_modules.module import VIN_decoder_module
 from enum import Enum
@@ -18,23 +19,18 @@ class VIN_decoder_toyota(VIN_decoder_module):
 
     def vds_decode(self):
         is_na1996 = False
-        print("TODO more proper way to handle this")
-        if True or self.rootDecoder.ISO3780_wmi_region() == ISO3780_WMI_REGION.north_ameria:
-            if 2010 <= self.rootDecoder.year:
-                return {
-                    "Body Type & Drive Wheels":         self.na2010_body_type_drive_wheels(),
-                    "Body Type, Drive Wheels, & Grade": self.na2010_body_type_drive_wheels_grade(),
-                    "Engine Type":                      self.na2010_engine_type(),
-                    "Restraint System":                 self.na2010_restraint_system(),
-                    "Series":                           self.na2010_series(),
-                    "Series & Drive Wheels":            self.na2010_series_drive_wheels(),
-                    "Vehicle Line & Make":              self.na2010_vehicle_line_make()
-                }
-            else:
-                is_na1996 = True
+        if 2010 <= self.rootDecoder.year:
+            return {
+                "Body Type & Drive Wheels":         self.na2010_body_type_drive_wheels(),
+                "Body Type, Drive Wheels, & Grade": self.na2010_body_type_drive_wheels_grade(),
+                "Engine Type":                      self.na2010_engine_type(),
+                "Restraint System":                 self.na2010_restraint_system(),
+                "Series":                           self.na2010_series(),
+                "Series & Drive Wheels":            self.na2010_series_drive_wheels(),
+                "Vehicle Line & Make":              self.na2010_vehicle_line_make()
+            }
         else:
-            if 2002 <= self.year:
-                is_na1996 = True
+            is_na1996 = True
         
         if is_na1996:
             print("TODO 1996-2009 format")
