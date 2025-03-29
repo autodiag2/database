@@ -33,7 +33,7 @@ class ISO3779_Decoder:
 
     def ISO3780_wmi_country(self) -> str:
         mapping = [chr(i) for i in range(ord('A'), ord('Z') + 1)] + [str(i) for i in range(1, 10)] + ['0']
-        for (start, end), country in ISO3780_WMI_COUNTRIES.items():
+        for (start, end), (country, code) in ISO3780_WMI_COUNTRIES.items():
             wmi_first = mapping.index(self.vin[0])
             wmi_first_start = mapping.index(start[0])
             wmi_first_end = mapping.index(end[0])
