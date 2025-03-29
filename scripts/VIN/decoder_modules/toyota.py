@@ -82,6 +82,9 @@ class VIN_decoder_toyota(VIN_decoder_module):
     def na2010_vehicle_line_make(self):
         return self.lookup_tsv("2010/vehicle_line_make.tsv", self.rootDecoder.vds_raw[4], 1)
     
+    def vis_get_manufacturing_plant(self) -> str:
+        return self.lookup_tsv("plant.tsv", self.rootDecoder.vis_raw[1], 1)
+    
     def vehicle_type(self):
         return self.lookup_tsv("vehicle_type.tsv", self.vin[2], 1)
 
