@@ -73,6 +73,9 @@ class ISO3779_Decoder:
         elif any(x in manufacturer.lower() for x in ["renault"]):
             from decoder_modules.renault import VIN_decoder_renault
             return VIN_decoder_renault(self)
+        elif any(x in manufacturer.lower() for x in ["peugeot"]):
+            from decoder_modules.peugeot import VIN_decoder_peugeot
+            return VIN_decoder_peugeot(self)
         else:
             from decoder_modules.none import VIN_decoder_none
             return VIN_decoder_none(self)
