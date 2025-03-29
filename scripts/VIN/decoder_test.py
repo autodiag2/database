@@ -49,5 +49,9 @@ class VIN_decoder_test:
         assert decoder.vis["year"] == 1971
         assert "clio" in decoder.vds["project_code"].lower()
 
+        decoder = ISO3779_Decoder(1991, "2T1BURHEXJC119229")
+        assert decoder.wmi["region"].lower() == "north_america"
+        assert decoder.wmi["country"].lower() == "canada"
+
 if __name__ == "__main__":
     VIN_decoder_test().test()
