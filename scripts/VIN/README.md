@@ -8,3 +8,7 @@ conda create -n VINdecoder python=3.11 && \
     poetry install --no-root && \
     pip install -e .
 ```
+#### Tests
+```bash
+python ./vindecoder/tests/test_decoder.py
+```

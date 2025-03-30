@@ -17,7 +17,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-vindecoder = 'vindecoder.decoder:main'
+vindecoder_cli = 'vindecoder.decoder:main'
 
 [tool.pytest.ini_options]
 testpaths = [
