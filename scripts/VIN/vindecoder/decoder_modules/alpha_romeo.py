@@ -33,7 +33,7 @@ class VIN_decoder_alpha_romeo(VIN_decoder_module):
         return self.rootDecoder.vds_raw[0]
     
     def vds_get_brand(self):
-        return self.lookup_tsv("brand.tsv", self.rootDecoder.vis_raw[1], 1)
+        return self.lookup_tsv("brand.tsv", self.rootDecoder.vds_raw[1], 1)
     
     def vds_marketing_name_drive_wheels(self):
         vt = self.vehicle_type_enum()

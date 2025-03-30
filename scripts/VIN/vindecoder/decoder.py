@@ -7,9 +7,9 @@ from vindecoder.decoder_data import *
 
 class ISO3779_Decoder: 
 
-    def __init__(self, year: int, vin: str):
+    def __init__(self, vin: str, year: int = None):
         self.vin = vin
-        self.year = year
+        self.year = year if year is not None else int(datetime.today().strftime('%Y'))
         self.wmi_raw = vin[:3]
         self.vds_raw = vin[3:9]
         self.vis_raw = vin[9:]
@@ -126,7 +126,7 @@ def main():
     
     if vins:
         for vin in vins:
-            decoder = ISO3779_Decoder(year, vin)
+            decoder = ISO3779_Decoder(vin, year)
             print(f"VIN: {vin}")
             decoder.dump()
     else:
