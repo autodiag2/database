@@ -1,7 +1,7 @@
 # https://citroen.c5x7.fr/vin
 import os
-from decoder_modules.module import VIN_decoder_module
-from decoder import ISO3779_Decoder
+from vindecoder.decoder_modules.module import VIN_decoder_module
+from vindecoder.decoder import ISO3779_Decoder
 
 class VIN_decoder_citroen(VIN_decoder_module):
 

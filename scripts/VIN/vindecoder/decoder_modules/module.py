@@ -1,5 +1,5 @@
 import os
-from decoder import ISO3779_Decoder
+from vindecoder.decoder import ISO3779_Decoder
 
 
 YEAR_MAPPING = ['1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','J','K','L','M','N','P','R','S','T','V','W','X','Y']

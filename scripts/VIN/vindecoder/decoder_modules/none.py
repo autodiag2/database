@@ -1,5 +1,5 @@
-from decoder_modules.module import VIN_decoder_module
-from decoder import ISO3779_Decoder
+from vindecoder.decoder_modules.module import VIN_decoder_module
+from vindecoder.decoder import ISO3779_Decoder
 
 class VIN_decoder_none(VIN_decoder_module):
 

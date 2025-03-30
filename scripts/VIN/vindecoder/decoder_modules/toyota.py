@@ -1,9 +1,9 @@
 
 # https://en.wikibooks.org/wiki/Vehicle_Identification_Numbers_(VIN_codes)/Toyota/VIN_Codes
 import os, sys
-from decoder_modules.module import VIN_decoder_module
+from vindecoder.decoder_modules.module import VIN_decoder_module
 from enum import Enum
-from decoder import *
+from vindecoder.decoder import *
 
 class VIN_decoder_toyota(VIN_decoder_module):
     class VehicleType(Enum):

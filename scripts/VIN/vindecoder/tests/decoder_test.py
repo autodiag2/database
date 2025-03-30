@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from decoder import ISO3779_Decoder
+from vindecoder.decoder import ISO3779_Decoder
 
 class VIN_decoder_test:
     

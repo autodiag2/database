@@ -3,7 +3,7 @@ import os
 import argparse
 from datetime import datetime
 import re
-from decoder_data import *
+from vindecoder.decoder_data import *
 
 class ISO3779_Decoder: 
 
@@ -65,22 +65,22 @@ class ISO3779_Decoder:
     def vin_manufacturer_decoder(self):
         manufacturer = self.decode_manufacturer()
         if any(x in manufacturer.lower() for x in ["citroen", "citroën"]):
-            from decoder_modules.citroen import VIN_decoder_citroen
+            from vindecoder.decoder_modules.citroen import VIN_decoder_citroen
             return VIN_decoder_citroen(self)
         elif any(x in manufacturer.lower() for x in ["toyota"]):
-            from decoder_modules.toyota import VIN_decoder_toyota
+            from vindecoder.decoder_modules.toyota import VIN_decoder_toyota
             return VIN_decoder_toyota(self)
         elif any(x in manufacturer.lower() for x in ["renault"]):
-            from decoder_modules.renault import VIN_decoder_renault
+            from vindecoder.decoder_modules.renault import VIN_decoder_renault
             return VIN_decoder_renault(self)
         elif any(x in manufacturer.lower() for x in ["peugeot"]):
-            from decoder_modules.peugeot import VIN_decoder_peugeot
+            from vindecoder.decoder_modules.peugeot import VIN_decoder_peugeot
             return VIN_decoder_peugeot(self)
         elif any(x in manufacturer.lower() for x in ["subaru"]):
-            from decoder_modules.subaru import VIN_decoder_subaru
+            from vindecoder.decoder_modules.subaru import VIN_decoder_subaru
             return VIN_decoder_subaru(self)
         else:
-            from decoder_modules.none import VIN_decoder_none
+            from vindecoder.decoder_modules.none import VIN_decoder_none
             return VIN_decoder_none(self)
 
     def dump(self):
