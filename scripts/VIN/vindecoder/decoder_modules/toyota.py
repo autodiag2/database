@@ -15,7 +15,7 @@ class VIN_decoder_toyota(VIN_decoder_module):
         Unknown = 6
     
     def __init__(self, rootDecoder: ISO3779_Decoder):
-        super().__init__(rootDecoder, "data/VIN/manufacturer_specific_data/toyota")
+        super().__init__(rootDecoder, "data/manufacturer_specific/toyota")
 
     def vds_decode(self):
         is_na1996 = False

@@ -6,7 +6,7 @@ from vindecoder.decoder import ISO3779_Decoder
 class VIN_decoder_renault(VIN_decoder_module):
 
     def __init__(self, rootDecoder: ISO3779_Decoder):
-        super().__init__(rootDecoder, "data/VIN/manufacturer_specific_data/renault")
+        super().__init__(rootDecoder, "data/manufacturer_specific/renault")
     
     def vds_decode(self):
         if self.rootDecoder.year == 1991:

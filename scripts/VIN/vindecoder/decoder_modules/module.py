@@ -7,7 +7,7 @@ YEAR_MAPPING = ['1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G',
 class VIN_decoder_module:
     def __init__(self, rootDecoder: ISO3779_Decoder, data_folder: str):
         self.rootDecoder = rootDecoder
-        self.data_folder = data_folder
+        self.data_folder = os.path.join(os.path.join(os.path.dirname(__file__), ".."), data_folder)
 
     def lookup_tsv(self, filename: str, match_data: str, *columns: int):
         file_path = os.path.join(self.data_folder, filename)

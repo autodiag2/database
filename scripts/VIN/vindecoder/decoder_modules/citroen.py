@@ -6,7 +6,7 @@ from vindecoder.decoder import ISO3779_Decoder
 class VIN_decoder_citroen(VIN_decoder_module):
 
     def __init__(self, rootDecoder: ISO3779_Decoder):
-        super().__init__(rootDecoder, "data/VIN/manufacturer_specific_data/citroen")
+        super().__init__(rootDecoder, "data/manufacturer_specific/citroen")
     
     def vds_decode(self):
         return {

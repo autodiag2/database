@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 from vindecoder.decoder import ISO3779_Decoder
 
 class VIN_decoder_test:

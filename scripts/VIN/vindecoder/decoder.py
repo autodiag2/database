@@ -49,7 +49,7 @@ class ISO3779_Decoder:
         return self.vin[2] == '9'
 
     def decode_manufacturer(self) -> str:
-        manufacturers_file = "data/VIN/manufacturers.tsv"
+        manufacturers_file = os.path.join(os.path.dirname(__file__), "data/manufacturers.tsv")
         if not os.path.exists(manufacturers_file):
             return "Unknown manufacturer"
         manufacturer_code = self.vin[11:14] if self.wmi_manufacturer_is_less_500() else None
