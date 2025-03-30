@@ -56,3 +56,10 @@ class VIN_decoder_test:
         assert decoder.wmi["region"].lower() == "north_america"
         assert decoder.wmi["country"].lower() == "united_states"
         assert "body_style" in decoder.vds
+
+        decoder = ISO3779_Decoder(2020, "ZARFANBN6K7606707")
+        assert decoder.wmi["region"].lower() == "europe"
+        assert decoder.wmi["country"].lower() == "italy"
+
+tests = VIN_decoder_test()
+tests.test()

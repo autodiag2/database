@@ -24,7 +24,7 @@ class ISO3779_Decoder:
 
     def ISO3780_wmi_region(self) -> ISO3780_WMI_REGION:
         for (start, end), region in ISO3780_WMI_REGIONS.items():
-            if start <= self.vin[:2] <= end:
+            if start <= self.vin[0] <= end:
                 return region
         return ISO3780_WMI_REGION.unknown
     
@@ -79,6 +79,9 @@ class ISO3779_Decoder:
         elif any(x in manufacturer.lower() for x in ["subaru"]):
             from vindecoder.decoder_modules.subaru import VIN_decoder_subaru
             return VIN_decoder_subaru(self)
+        elif any(x in manufacturer.lower() for x in ["alfa romeo"]):
+            from vindecoder.decoder_modules.alpha_romeo import VIN_decoder_alpha_romeo
+            return VIN_decoder_alpha_romeo(self)
         else:
             from vindecoder.decoder_modules.none import VIN_decoder_none
             return VIN_decoder_none(self)
