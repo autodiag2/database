@@ -56,6 +56,3 @@ class VIN_decoder_test:
         assert decoder.wmi["region"].lower() == "north_america"
         assert decoder.wmi["country"].lower() == "united_states"
         assert "body_style" in decoder.vds
-
-if __name__ == "__main__":
-    VIN_decoder_test().test()
