@@ -1,0 +1,6 @@
+#VIN	Size	Type	Fuel	Valvetrain	Engine Family/Notes/Applications
+N	2.0L	I4 Turbo IC	Gas	SOHC, 16 valve	Direct injection. MultiAir2. GME T4 engine (EC2). Alfa Romeo Stelvio ('18-).
+N	2.0L	I4 Turbo IC	Gas	DOHC, 16 valve	Direct injection. MultiAir2. GME T4 engine (EC1). Alfa Romeo Tonale ('25-).
+V	2.9L	90° V6 Twin Turbo IC	Gas	DOHC, 24 valve	Direct injection. VVT. Alfa Romeo 690T engine (Derived from Ferrari F154 V8) (EED). Alfa Romeo Stelvio Quadrifoglio ('18-'19)
+V	2.9L	90° V6 Twin Turbo IC	Gas	DOHC, 24 valve	Port/Direct injection. VVT. Alfa Romeo 690T engine (Derived from Ferrari F154 V8) (EEC). Alfa Romeo Stelvio Quadrifoglio ('20-'24).
+W	1.3L	I4 Turbo IC	Gas-Electric PHEV	SOHC, 16 valve	Direct injection. MultiAir3. Fiat Firefly/GSE engine (EYG) + 1 Front motor + 1 Rear motor. 15.5 kWh Lithium-ion Battery Pack. Engine made in Bielsko-Biala, Poland. Alfa Romeo Tonale ('24-).

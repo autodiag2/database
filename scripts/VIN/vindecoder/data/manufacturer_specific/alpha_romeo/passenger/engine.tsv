@@ -1,0 +1,5 @@
+#VIN	Size	Type	Fuel	Valvetrain	Engine Family/Notes/Applications
+N	2.0L	I4 Turbo IC	Gas	SOHC, 16 valve	Direct injection. MultiAir2. GME T4 engine (EC2). Alfa Romeo Giulia ('17-).
+V	2.9L	90° V6 Twin Turbo IC	Gas	DOHC, 24 valve	Direct injection. VVT. Alfa Romeo 690T engine (Derived from Ferrari F154 V8) (EED). Alfa Romeo Giulia Quadrifoglio ('17-'19)
+V	2.9L	90° V6 Twin Turbo IC	Gas	DOHC, 24 valve	Port/Direct injection. VVT. Alfa Romeo 690T engine (Derived from Ferrari F154 V8) (EEC). Alfa Romeo Giulia Quadrifoglio ('20-'24).
+4	1.7L	I4 Turbo IC	Gas	DOHC, 16 valve	Direct injection. VVT. 1750 TBi 4-cylinder (EBC). Alfa Romeo 4C ('15-'20).
