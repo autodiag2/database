@@ -82,6 +82,9 @@ class ISO3779_Decoder:
         elif any(x in manufacturer.lower() for x in ["alfa romeo"]):
             from vindecoder.decoder_modules.alpha_romeo import VIN_decoder_alpha_romeo
             return VIN_decoder_alpha_romeo(self)
+        elif any(x in manufacturer.lower() for x in ["chrysler"]):
+            from vindecoder.decoder_modules.chrysler import VIN_decoder_chrysler
+            return VIN_decoder_chrysler(self)
         else:
             from vindecoder.decoder_modules.none import VIN_decoder_none
             return VIN_decoder_none(self)

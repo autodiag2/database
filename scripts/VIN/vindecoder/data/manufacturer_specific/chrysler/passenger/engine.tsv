@@ -1,0 +1,119 @@
+#VIN	Size	Type	Fuel	Valvetrain	Engine Family/Notes/Applications
+A	1.7L	I4	Gas	SOHC, valve	2-bbl carb. Volkswagen EA827 engine. Dodge Omni, Omni 024, Plymouth Horizon, Horizon TC3 ('81-'82).
+A	1.6L	I4	Gas	OHV	2-bbl carb. Simca Poissy engine 6J2 (built by Peugeot).odge Omni, Charger, Plymouth Horizon, Turismo ('83-'86).
+A	1.4L	I4	Gas	SOHC, valve	2-bbl carb. Mitsubishi Orion engine 4G12. Dodge/Plymouth Colt ('84).
+A	2.2L	I4 Turbo IC	Gas	SOHC, valve	MPI. Chrysler "K-car engine" - Turbo II (EDR). Dodge Daytona Shelby Z w/manual trans. ('87-'88),aytona Shelby w/manual trans., C/S Competition Package ('89), Lancer Shelby w/manual trans. ('88-'89),hrysler LeBaron GTS sedan w/manual trans. [H-body], LeBaron GTC coupe/conv. w/manual trans. [J-body] ('89).
+A	1.5L	I4	Gas	SOHC,2 valve	MPI. Mitsubishi Orion engine 4G15 (EJB). '91-'94 (& '95 in Canada) Dodge/Plymouth Colt, '91-'96 Eagle Summit.
+A	2.2L	I4 Turbo IC	Gas	DOHC,6 valve	MPI. Chrysler "K-car engine" - Turbo III (EDS). Dodge Spirit R/T ('91-'92), Daytona IROC R/T ('92-'93).
+A	2.0L	I4	Gas	DOHC,6 valve	Sequential MPI. Dual VVT. Chrysler World Gasoline Engine (ECN). Dodge Caliber ('09-'12).
+A	2.0L	I4	Gas	DOHC,6 valve	Sequential MPI. Dual VVT. Chrysler Tigershark Engine (ECK). Dodge Dart ('13-'16).
+B	2.2L	I4	Gas	SOHC, valve	2-bbl carb. Chrysler "K-car engine" (Trans-4). Dodge Aries, Omni, 024, Plymouth Reliant, Horizon, TC3 ('81-'82),odge 400, Chrysler LeBaron ('82).
+B	1.7L	I4	Gas	SOHC, valve	2-bbl carb. Volkswagen EA827 engine. Dodge Omni, Charger, Plymouth Horizon, Turismo ('83).
+B	1.6L	I4	Gas	SOHC, valve	2-bbl carb. Mitsubishi Saturn engine 4G32. Dodge/Plymouth Colt ('84)
+B	3.0L	V6	Gas	DOHC,4 valve	MPI. Mitsubishi Cyclone engine 6G72 (EF8). '91-'92 Dodge Stealth (ES & R/T).
+B	1.8L	I4	Gas	SOHC, valve	MPI. Mitsubishi Saturn engine 4G37. Plymouth Laser (Base model), Eagle Talon (DL) ('93-'94).
+B	2.0L	I4	Gas	DOHC,6 valve	Sequential MPI. Dual VVT. Chrysler World Gasoline Engine (ECN). Dodge Caliber ('07-'08).
+B	2.4L	I4	Gas	DOHC,6 valve	Sequential MPI. Dual VVT. Chrysler World Gasoline Engine (ED3).odge Caliber R/T ('09), Caliber Uptown 2.4, Rush ('10-'11), Chrysler Sebring sedan, convertible ('09-'10),hrysler 200 sedan, convertible ('11-'14), Dodge Avenger ('09-'14).
+B	2.4L	I4	Gas	DOHC,6 valve	Sequential MPI. Dual VVT. Chrysler World Gasoline Engine - PZEV (EDG).odge Caliber R/T, Avenger, Chrysler Sebring sedan ('09).
+B	2.4L	I4	Gas	SOHC,6 valve	Sequential MPI. MultiAir2. Chrysler Tigershark Engine (ED6).odge Dart ('13-'16), Chrysler 200 ('15-'17).
+B	2.4L	I4	Gas	SOHC,6 valve	Sequential MPI. MultiAir2. Chrysler Tigershark Engine - PZEV (ED8).odge Dart ('15-'16), Chrysler 200 ('15-'17).
+C	2.2L	I4	Gas	SOHC, valve	2-bbl carb. Chrysler "K-car engine" (Trans-4). Dodge Aries, Plymouth Reliant ('83-'85), Dodge Omni, Charger,lymouth Horizon, Turismo ('83-'87), Dodge 400, 600 4-door, Chrysler E-Class, New Yorker ('83),hrysler LeBaron ('83-'84), Dodge 600 2-door ('84).
+C	2.2L	I4 Turbo IC	Gas	SOHC, valve	MPI. VNT. Chrysler "K-car engine" - Turbo IV. Dodge Shadow ES (opt.), Competition Pkg.,aytona Shelby w/man. trans., C/S Competition Pkg., Chrysler LeBaron GTC ('90).
+C	3.0L	V6 Twin Turbo IC	Gas	DOHC,4 valve	MPI. Mitsubishi Cyclone engine 6G72T (EF9). '91-'92 Dodge Stealth R/T Turbo.
+C	1.8L	I4	Gas	SOHC,6 valve	MPI. Mitsubishi 4G93 engine (EJA). Dodge/Plymouth Colt ('94 in US, '93-'94 in Canada), Eagle Summit ('93-'96), Plymouth Colt Vista ('93-'94), Eagle Summit Wagon ('93-'96).
+C	2.0L	I4	Gas	SOHC,6 valve	Sequential MPI. Chrysler "Neon engine" - A588 (ECB). Dodge Neon ('95-'05), Plymouth Neon ('95-'01),odge Stratus ('95-'00), Plymouth Breeze ('96-'00).
+C	1.8L	I4	Gas	DOHC,6 valve	Sequential MPI. Dual VVT. Chrysler World Gasoline Engine (EBA). Dodge Caliber ('07-'09).
+D	2.6L	I4	Gas	SOHC, valve	2-bbl carb. Mitsubishi Astron engine 4G54.odge Aries, Plymouth Reliant ('81-'82), Dodge 400, Chrysler LeBaron ('82).
+D	2.2L	I4	Gas	SOHC, valve	TBI. Chrysler "K-car engine" (Trans-4) (EDF). Dodge Aries, Plymouth Reliant ('85-'89), Dodge Omni,lymouth Horizon ('88-'90), Dodge 600 4-door ('84-'88), Chrysler E-Class ('84), Plymouth Caravelle ('85-'88),hrysler LeBaron [K-body] ('84-'88), Dodge 600 2-door ('84-'86), Chrysler LeBaron GTS, Dodge Lancer ('85-'89),odge Daytona, Chrysler Laser ('84-'86), Dodge Shadow, Plymouth Sundance ('87-'94).
+D	2.0L	I4	Gas	SOHC, valve	2-bbl carb. Mitsubishi Sirius engine 4G63. Dodge/Plymouth Colt Vista 2wd ('84-'88).
+D	1.8L	I4	Gas	SOHC,6 valve	MPI. Mitsubishi 4G93 engine (EJA). Plymouth Colt Vista, Eagle Summit Wagon ('92).
+D	2.7L	V6	Gas	DOHC,4 valve	Sequential MPI. Chrysler "LH V6 engine" (EER). Dodge Avenger, Chrysler Sebring sedan, convertible,hrysler 300, Dodge Charger ('09-'10).
+E	3.7L	I6	Gas	OHV	1-bbl carb. Chrysler Slant-Six engine. Dodge St. Regis, Chrysler LeBaron, Newport ('81), Plymouth Gran Fury,odge Diplomat, Mirada, Chrysler Cordoba ('81-'82), Chrysler New Yorker ('82).
+E	2.2L	I4 Turbo	Gas	SOHC, valve	MPI. Chrysler "K-car engine" - Turbo I (EDG). Dodge Omni GLH Turbo ('85-'86), Shelby Charger ('85-'87),hrysler LeBaron [K-body] ('84-'88), E-Class ('84), New Yorker ('84-'87), New Yorker Turbo ('88), Executive ('86), LeBaron GTS, Dodge Lancer ('85-'88), Chrysler Laser ('84-'86), LeBaron coupe/conv. [J-body] ('87-'88),odge Daytona ('84-'88), Dodge 600 ('84-'88), Plymouth Caravelle ('85-'88).
+E	8.0L	V10	Gas	OHV	Sequential MPI. Aluminum Block & Heads. Chrysler LA Viper V10 engine (EWB).odge Viper ('92-'02).
+E	2.0L	I4	Gas	DOHC,6 valve	MPI. Mitsubishi Sirius engine 4G63. Plymouth Laser (RS), Eagle Talon (ES) ('93-'94).
+E	2.4L	I4 Turbo IC	Gas	DOHC,6 valve	Sequential MPI. Chrysler "Neon engine" - Light-pressure Turbo variant [180 hp] (EDT).hrysler PT Cruiser convertible ('05-'08).
+F	3.7L	I6	Gas	OHV	1-bbl carb. Chrysler Slant-Six engine - Heavy Duty.odge St. Regis, Chrysler LeBaron ('81), Plymouth Gran Fury, Dodge Diplomat ('81-'82).
+F	1.6L	I4 Turbo	Gas	SOHC, valve	TBI. Mitsubishi Saturn engine 4G32T.odge/Plymouth Colt (GTS Turbo/DL Turbo/Premier Turbo) ('84-'88).
+F	2.0L	I4 Turbo IC	Gas	DOHC,6 valve	MPI. Mitsubishi Sirius engine 4G63T (EBG).lymouth Laser (RS Turbo/RS Turbo AWD) ('93-'94), Eagle Talon (TSi & TSi AWD) ('93-'98).
+F	3.5L	V6	Gas	SOHC,4 valve	Sequential MPI. Iron Block, Aluminum Heads. Chrysler SOHC 24 valve V6 engine (EGE). Dodge Intrepid, Chrysler Concorde, Eagle Vision ('93-'97), Chrysler New Yorker ('94-'96), Chrysler LHS ('94-'97), Plymouth Prowler ('97).
+F	2.0L	I4	Gas	SOHC,6 valve	Sequential MPI. Chrysler "Neon engine" - Magnum/H.O. variant (ECH). Dodge Neon R/T ('01-'04), ACR ('01-'02).
+F	2.4L	I4 Turbo IC	Gas	DOHC,6 valve	Sequential MPI. Dual VVT. Chrysler World Gasoline Engine - "Warhawk" (ED4). Dodge Caliber SRT-4 ('08-'09).
+G	2.6L	I4	Gas	SOHC, valve	2-bbl carb. Mitsubishi Astron engine 4G54. Dodge Aries, Plymouth Reliant, Chrysler LeBaron ('83-'85),odge 400 ('83), Chrysler Executive, New Yorker, Dodge 600 ('83-'85), Chrysler E-Class ('83-84),lymouth Caravelle ('85).
+G	2.4L	I4	Gas	SOHC,6 valve	MPI. Mitsubishi Sirius engine 4G64 (EY7). Plymouth Colt Vista ('93-'94), Eagle Summit Wagon ('93-'96),odge Stratus Coupe, Chrysler Sebring Coupe ('01-'05).
+G	3.5L	V6	Gas	SOHC,4 valve	Sequential MPI. Aluminum Block & Heads. Chrysler SOHC 24 valve V6 engine (EGG) - High Output.odge Intrepid R/T ('02), SXT ('02-'04), Chrysler 300M ('99-'04), LHS ('99-'01), Concorde Limited ('02-'04),lymouth Prowler ('99-'01), Chrysler Prowler ('01-'02), Chrysler 300 ('05-'08), Dodge Charger ('06-'08).
+G	3.6L	V6	Gas	DOHC,4 valve	Sequential MPI. VVT. Chrysler Pentastar V6 engine (ERB). Dodge Avenger ('11-'14), Chrysler 200 ('11-'17),hrysler 300, Dodge Charger, Challenger ('11-'23).
+H	3.7L	I6	Gas	OHV	1-bbl carb. Chrysler Slant-Six engine.lymouth Gran Fury, Dodge Diplomat, Mirada, Chrysler New Yorker Fifth Avenue, Cordoba ('83).
+H	2.6L	I4 Turbo	Gas	SOHC, valve	TBI. Mitsubishi Astron engine 4G54T. Dodge/Plymouth Conquest ('84-'86), Chrysler Conquest ('87).
+H	2.5L	I4	Gas	OHV	Renix TBI. AMC 4-cylinder. Eagle Premier ('89).
+H	3.0L	V6	Gas	SOHC,2 valve	MPI. Mitsubishi Cyclone engine 6G72. Dodge Stealth (Base model) ('93-'96).
+H	2.5L	V6	Gas	SOHC,4 valve	Sequential MPI. Mitsubishi Cyclone engine 6G73 (EEB).odge Stratus, Chrysler Cirrus ('95-'00), Chrysler Sebring Convertible ('96-'00).
+H	3.0L	V6	Gas	SOHC,4 valve	MPI. Mitsubishi Cyclone engine 6G72 (EF7). Dodge Stratus Coupe, Chrysler Sebring Coupe ('01-'05).
+H	5.7L	V8	Gas	OHV	Sequential MPI. MDS. Chrysler Hemi V8 engine (EZB). Chrysler 300C ('05-'08), Dodge Charger ('06-'08).
+H	1.4L	I4 Turbo IC	Gas	SOHC,6 valve	Sequential MPI. MultiAir. Fiat FIRE engine. EAF: Fiat 500 Abarth ('12-'17), 500 Turbo ('13-'16),00 GQ Edition ('14), Dodge Dart ('13-'16), EAM: Fiat 500, 500 Abarth ('18-'19).
+J	5.2L	V8	Gas	OHV	TBI. Chrysler LA V8 engine. Imperial ('81-'82).
+J	2.5L	I4 Turbo	Gas	SOHC, valve	MPI. Chrysler "K-car engine" - Turbo I. Dodge Lancer, Chrysler LeBaron GTS ('89), Plymouth Acclaim ('89-'90), Sundance ('89-'91), Dodge Shadow, Spirit, Daytona, Chrysler LeBaron coupe/conv. [J-body] ('89-'92).
+J	3.0L	V6	Gas	DOHC,4 valve	MPI. Mitsubishi Cyclone engine 6G72 (EF8). Dodge Stealth (ES & R/T) ('93-'96).
+J	3.2L	V6	Gas	SOHC,4 valve	Sequential MPI. Aluminum Block & Heads. Chrysler SOHC 24 valve V6 engine (EGW).odge Intrepid, Chrysler Concorde ('98-'01).
+J	2.4L	I4	Gas	DOHC,6 valve	Sequential MPI. Chrysler "Neon engine" - Transversely mounted, PZEV (ED2).odge Stratus sedan, Chrysler Sebring sedan ('04-'05).
+J	2.4L	I4	Gas	DOHC,6 valve	Sequential MPI. Dual VVT. Chrysler World Gasoline Engine - PZEV (EDG).hrysler Sebring sedan, Dodge Avenger ('08).
+J	6.4L	V8	Gas	OHV	Sequential MPI. VVT. MDS. Chrysler SRT Hemi V8 engine - Apache (ESG).odge Challenger w/auto. trans. ('11-'23), Charger ('12-'23), Chrysler 300 ('12-'14, '23).
+J	6.4L	V8	Gas	OHV	Sequential MPI. VVT. Chrysler SRT Hemi V8 engine - Apache (ESH).odge Challenger w/manual trans. ('11-'23).
+K	5.2L	V8	Gas	OHV	2-bbl carb. Chrysler LA V8 engine. Dodge St. Regis, Chrysler LeBaron, Newport ('81), Plymouth Gran Fury,odge Diplomat, Mirada, Chrysler Cordoba, New Yorker ('81-'82) (49-state emissions).
+K	1.5L	I4	Gas	SOHC, valve	2-bbl carb. Mitsubishi Orion engine 4G15. Dodge/Plymouth Colt ('85-'88).
+K	2.5L	I4	Gas	SOHC, valve	TBI. Balance shaft. Chrysler "K-car engine" (Trans-4) (EDM). Dodge Aries, Plymouth Reliant ('86-'89),odge 600 4-door, Plymouth Caravelle ('86-'88), Chrysler New Yorker ('86-'87), Dodge 600 2-door ('86),hrysler LeBaron [K-body] ('86-'88), Chrysler LeBaron GTS, Dodge Lancer ('86-'89), Dynasty ('88-'93),pirit, Plymouth Acclaim ('89-'95), Chrysler LeBaron sedan [A-body] ('91-'93), Chrysler Laser ('86),odge Daytona ('86-'93), Chrysler LeBaron coupe/conv. [J-body] ('87-'93), Dodge Shadow,lymouth Sundance ('88-'94).
+K	3.0L	V6 Twin Turbo IC	Gas	DOHC,4 valve	MPI. Mitsubishi Cyclone engine 6G72T (EF9). Dodge Stealth (R/T Turbo) ('93-'96).
+K	3.5L	V6	Gas	SOHC,4 valve	Sequential MPI. Aluminum Block & Heads. Chrysler SOHC 24 valve V6 engine (EGK) - High Output.hrysler 300M Special ('02-'04).
+K	2.4L	I4	Gas	DOHC,6 valve	Sequential MPI. Dual VVT. Chrysler World Gasoline Engine (ED3).odge Caliber R/T, Chrysler Sebring sedan ('07-'08), Sebring convertible, Dodge Avenger ('08).
+L	5.2L	V8	Gas	OHV	2-bbl carb. Chrysler LA V8 engine - Heavy Duty. Plymouth Gran Fury, Dodge Diplomat ('81-'82).
+L	3.8L	V6	Gas	OHV	Sequential MPI. Chrysler 60° OHV V6 engine (EGH). Chrysler New Yorker Fifth Avenue, Imperial ('91-'93).
+L	3.2L	90° V6	Gas	SOHC,8 valve	Sequential MPI. Mercedes-Benz M112 E32 engine (EGX). Chrysler Crossfire ('04-'08).
+M	5.2L	V8	Gas	OHV	4-bbl carb. Chrysler LA V8 engine. Plymouth Gran Fury, Dodge St. Regis, Chrysler LeBaron (CA emissions), Newport, New Yorker ('81), Dodge Diplomat (CA emissions), Mirada (CA emissions), Chrysler Cordoba (CA emissions) ('81-'82), Plymouth Gran Fury (CA emissions), Chrysler New Yorker (CA emissions) ('82).
+M	3.5L	V6	Gas	SOHC,4 valve	Sequential MPI. Aluminum Block & Heads. Chrysler SOHC 24 valve V6 engine (EGJ).odge Intrepid ES ('02-'04), Chrysler Concorde LXi ('02-'04).
+M	3.5L	V6	Gas	SOHC,4 valve	Sequential MPI. Aluminum Block & Heads. Chrysler SOHC 24 valve V6 engine (EGF).hrysler Sebring sedan ('07-'08), convertible, Dodge Avenger ('08).
+N	5.2L	V8	Gas	OHV	4-bbl carb. Chrysler LA V8 engine - Heavy Duty. Dodge St. Regis, Chrysler LeBaron ('81), Plymouth Gran Fury, Dodge Diplomat ('81-'82).
+N	5.2L	V8	Gas	OHV	TBI. Chrysler LA V8 engine. Imperial ('83).
+N	2.6L	I4 Turbo IC	Gas	SOHC, valve	TBI. Mitsubishi Astron engine 4G54T (EF5).odge/Plymouth Conquest TSi ('86), Chrysler Conquest TSi ('87-'89).
+N	2.5L	V6	Gas	SOHC,4 valve	MPI. Mitsubishi Cyclone engine 6G73 (EEB). Dodge Avenger, Chrysler Sebring Coupe ('95-'00).
+N	3.2L	90° V6C IC	Gas	SOHC,8 valve	Sequential MPI. Mercedes-Benz M112 E32 ML engine (EGZ). Chrysler Crossfire SRT-6 ('05-'06).
+P	5.2L	V8	Gas	OHV	2-bbl carb. Chrysler LA V8 engine (ELA). Dodge Mirada, Chrysler Cordoba, New Yorker Fifth Avenue ('83),lymouth Gran Fury, Dodge Diplomat ('83-'89), Chrysler Fifth Avenue ('84-'89).
+R	2.0L	I4	Gas	DOHC,6 valve	MPI. Mitsubishi Sirius engine 4G63. Plymouth Laser (RS), Eagle Talon (Base model) ('90-'92).
+R	3.3L	V6	Gas	OHV	Sequential MPI. Chrysler 60° OHV V6 engine - transversely mounted (EGA).odge Dynasty, Chrysler New Yorker, New Yorker Fifth Avenue ('90-'93), Imperial ('90-'91).
+R	2.7L	V6	Gas	DOHC,4 valve	Sequential MPI. Chrysler "LH V6 engine" (EER). Dodge Intrepid, Chrysler Concorde ('98-'04),odge Stratus sedan ('02-'06), Avenger ('08), Chrysler Sebring sedan ('02-'08), convertible ('02-'06, '08),hrysler 300 ('05-'08), Dodge Charger ('06-'08).
+R	1.4L	I4	Gas	SOHC,6 valve	Sequential MPI. MultiAir. Fiat FIRE engine (EAB). Fiat 500 ('12-'17).
+S	5.2L	V8	Gas	OHV	4-bbl carb. Chrysler LA V8 engine - Heavy Duty. Plymouth Gran Fury, Dodge Diplomat ('83-'89).
+S	3.0L	V6	Gas	SOHC,2 valve	MPI. Mitsubishi Cyclone engine 6G72. Dodge Stealth (Base model) ('91-'92).
+S	2.4L	I4 Turbo IC	Gas	DOHC,6 valve	Sequential MPI. Chrysler "Neon engine" - Turbo H.O. variant (EDV). A853: Dodge (Neon) SRT-4 ('03-'05),855: Chrysler PT Cruiser convertible GT ('05-'07), Dream Cruiser Series 4 ('05).
+T	1.8L	I4	Gas	SOHC, valve	MPI. Mitsubishi Saturn engine 4G37.lymouth Laser (Base model) ('90-'92).
+T	3.3L	V6	Gas	OHV	Sequential MPI. Chrysler 60° OHV V6 engine - longitudinally mounted (EGB).odge Intrepid, Eagle Vision ('93-'97), Chrysler Concorde ('93-'96).
+T	2.7L	V6	Gas/E85	DOHC,4 valve	Flex Fuel. Sequential MPI. Chrysler "LH V6 engine" (EEE).odge Stratus sedan ('03-'06), Chrysler Sebring sedan ('03-'06), convertible ('03).
+T	5.7L	V8	Gas	OHV	Sequential MPI. VVT. MDS. Chrysler Hemi V8 engine - Eagle (EZD/EZH).hrysler 300, Dodge Charger, Challenger w/auto. trans. ('09-'23).
+T	5.7L	V8	Gas	OHV	Sequential MPI. VVT. Chrysler Hemi V8 engine - Eagle (EZC). Dodge Challenger w/manual trans. ('09-'23).
+U	3.0L	90° V6	Gas	SOHC,2 valve	MPI. PRV V6. 2975cc. Eagle Premier ('89-'92), Dodge Monaco ('90-'92).
+U	2.0L	I4 Turbo IC	Gas	DOHC,6 valve	MPI. Mitsubishi Sirius engine 4G63T (EBG).lymouth Laser (RS Turbo: '90-'92), (RS Turbo AWD: '92), Eagle Talon (TSi & TSi AWD: '90-'92).
+U	2.7L	V6	Gas	DOHC,4 valve	Sequential MPI. Variable intake. Chrysler "LH V6 engine" (EES).odge Intrepid ES ('00-'01), Stratus sedan, Chrysler Sebring sedan, convertible ('01).
+V	2.0L	I4	Gas	SOHC, valve	MPI. Mitsubishi Sirius engine 4G63. Dodge/Plymouth Colt Vista 2wd ('89-'91).
+V	2.5L	I4	Gas/M85	SOHC, valve	Flex Fuel. Sequential MPI. Chrysler "K-car engine" (EDN). Plymouth Acclaim, Dodge Spirit ('93-'94).
+V	3.5L	V6	Gas	SOHC,4 valve	Sequential MPI. Aluminum Block & Heads. Chrysler SOHC 24 valve V6 engine (EGC).odge Intrepid R/T ('00-'01), Police Pursuit/Special Service ('02-'04).
+V	3.5L	V6	Gas	SOHC,4 valve	Sequential MPI. Aluminum Block & Heads. Chrysler SOHC 24 valve V6 engine (EGF).hrysler Sebring sedan, convertible, Dodge Avenger ('09-'10).
+V	3.5L	V6	Gas	SOHC,4 valve	Sequential MPI. Aluminum Block & Heads. Chrysler SOHC 24 valve V6 engine (EGG) - High Output.hrysler 300, Dodge Charger, Challenger ('09-'10).
+W	2.4L	I4	Gas	SOHC, valve	MPI. Mitsubishi Sirius engine 4G64.lymouth Colt Vista, Eagle Summit Wagon ('92).
+W	6.1L	V8	Gas	OHV	Sequential MPI. Chrysler SRT Hemi V8 engine (ESF).hrysler 300C SRT8 ('05-'10), Dodge Charger SRT8 ('06-'10), Challenger SRT8 ('08-'10).
+X	1.5L	I4	Gas	SOHC, valve	MPI. Mitsubishi Orion engine 4G15.89-'90 Dodge/Plymouth Colt, Eagle Summit.
+X	2.4L	I4	Gas	DOHC,6 valve	Sequential MPI. Chrysler "Neon engine" - Transversely mounted for FWD (EDZ).odge Stratus sedan ('95-'06), Plymouth Breeze ('96-'00), Chrysler Cirrus ('95-'97, '00),ebring sedan ('01-'06), Sebring convertible ('96-'98, '02-'06), PT Cruiser convertible ('05-'08).
+Y	1.6L	I4	Gas	DOHC,6 valve	MPI. Mitsubishi Sirius engine 4G61. Eagle Summit ('89-'90).
+Y	2.0L	I4	Gas	DOHC,6 valve	Sequential MPI. Chrysler "Neon engine". ECC: '95-'99 Dodge/Plymouth Neon.20A (ECF): '95-'99 Dodge Avenger, Chrysler Sebring Coupe, '95-'98 Eagle Talon ESi.
+Z	1.6L	I4 Turbo	Gas	DOHC,6 valve	MPI. Mitsubishi Sirius engine 4G61T. Dodge/Plymouth Colt GT Turbo ('89).
+Z	8.3L	V10	Gas	OHV	Sequential MPI. Aluminum Block & Heads. Chrysler LA Viper V10 engine (EWC).odge Viper ('03-'06).
+Z	8.4L	V10	Gas	OHV	Sequential MPI. Aluminum Block & Heads. Exhaust VVT. Chrysler LA Viper V10 engine (EWE).odge Viper ('08-'10).
+Z	8.4L	V10	Gas	OHV	Sequential MPI. Aluminum Block & Heads. Exhaust VVT. Chrysler LA Viper V10 engine (EWG).odge Viper ('13-'17).
+2	1.4L	I4	Gas	SOHC, valve	2-bbl carb. Mitsubishi Orion engine 4G12.odge Colt ('81-'83), Plymouth Champ ('81-'82), Plymouth Colt ('83).
+3	1.6L	I4	Gas	SOHC, valve	2-bbl carb. Mitsubishi Saturn engine 4G32.odge Colt ('81-'83), Plymouth Champ ('81-'82), Plymouth Colt ('83).
+3	3.0L	V6	Gas	SOHC,2 valve	MPI. Mitsubishi Cyclone engine 6G72. 2972cc. (EFA). Chrysler New Yorker ('88-'89), Dodge Dynasty ('88-'93),odge Spirit, Plymouth Acclaim ('89-'95), Dodge Daytona, Chrysler LeBaron coupe [J-body] ('90-'93),hrysler LeBaron convertible [J-body] ('90-'95), Chrysler LeBaron sedan [A-body] ('90-'94),odge Shadow, Plymouth Sundance ('92-'94).
+4	5.2L	V8	Gas	OHV	2-bbl carb. Chrysler LA V8 engine - Heavy Duty. Plymouth Gran Fury, Dodge Diplomat ('83-'89).
+7	2.6L	I4	Gas	SOHC, valve	2-bbl carb. Mitsubishi Astron engine 4G54. Dodge Challenger, Plymouth Sapporo ('81-'83).
+8	2.2L	I4	Gas	SOHC, valve	2-bbl carb. Chrysler "K-car engine" - High Output.odge Shelby Charger ('83-'84), Omni GLH ('84-'86), Dodge Charger, Plymouth Turismo ('85-'86).
+9	6.2L	V8C IC	Gas	OHV	Sequential MPI. VVT. Chrysler Hemi V8 engine (ESD).odge Challenger SRT Hellcat, Charger SRT Hellcat ('15-'23).
+9	6.2L	V8C IC	Gas	OHV	Sequential MPI. VVT. Chrysler Hemi V8 engine - H.O. (ESD). Dodge Challenger SRT Demon ('18).
+9	6.2L	V8C IC	Gas	OHV	Sequential MPI. VVT. Chrysler Hemi V8 engine - H.O. (ESJ). Dodge Challenger SRT Hellcat Redeye ('19-'23), SRT Super Stock ('20-'23), SRT Hellcat Redeye Jailbreak ('22-'23), Black Ghost ('23),harger SRT Hellcat Redeye ('21-'23), SRT Hellcat Redeye Jailbreak ('22-'23), King Daytona ('23).
+9	6.2L	V8C IC	Gas/E85	OHV	Flex Fuel. Sequential MPI. VVT. Chrysler Hemi V8 engine - H.O. (ESJ). Dodge Challenger SRT Demon 170 ('23).

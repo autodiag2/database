@@ -1,0 +1,141 @@
+#VIN	Size	Type	Fuel	Valvetrain	Engine Family/Notes/Applications
+A	6.7L	I6 Turbo IC	Diesel	OHV,4 valve	Common-rail Direct injection. Cummins ISB engine (ETJ). Dodge Ram ('07-'08).
+A	2.0L	I4	Gas	DOHC,6 valve	Sequential MPI. Dual VVT. Chrysler World Gasoline Engine (ECN). Jeep Compass, Patriot ('09-'17).
+B	2.2L	I4	Gas	SOHC, valve	2-bbl carb. Chrysler "K-car engine" (Trans-4). Dodge Rampage ('82).
+B	2.4L	I4	Gas	DOHC,6 valve	Sequential MPI. Chrysler "Neon engine" - Transversely mounted for FWD (EDZ).odge Caravan ('96-'07), Plymouth Voyager ('96-'00), Chrysler Voyager ('00-'03), PT Cruiser sedan ('01-'08).
+B	2.4L	I4	Gas	DOHC,6 valve	Sequential MPI. Dual VVT. Chrysler World Gasoline Engine (ED3).odge Journey ('09-'20), Jeep Compass [MK49], Patriot ('09-'17).
+B	2.4L	I4	Gas	DOHC,6 valve	Sequential MPI. Dual VVT. Chrysler World Gasoline Engine - PZEV (EDG). Dodge Journey ('09-'10).
+B	2.4L	I4	Gas	SOHC,6 valve	Sequential MPI. MultiAir2. Chrysler Tigershark Engine (ED6).eep Cherokee ('14-'18), Renegade ('17), Compass [MP] w/manual trans. ('17-'20),am ProMaster City ('17-'22).
+B	2.4L	I4	Gas	SOHC,6 valve	Sequential MPI. MultiAir2. Chrysler Tigershark Engine - PZEV (ED8).eep Cherokee ('15-'18), Renegade ('18-'21).
+B	2.4L	I4	Gas	SOHC,6 valve	Sequential MPI. MultiAir2. Chrysler Tigershark Engine w/Engine Stop/Start (EDD).
+B	2.4L	I4	Gas	SOHC,6 valve	Sequential MPI. MultiAir2. Chrysler Tigershark Engine w/Engine Stop/Start - PZEV (EDE).eep Compass [MP] w/auto. trans. ('17-'22), Cherokee ('19-'23).
+C	2.2L	I4	Gas	SOHC, valve	2-bbl carb. Chrysler "K-car engine" (Trans-4). Dodge Rampage ('83-'84), Plymouth Scamp ('83),odge Caravan, Plymouth Voyager ('84-'87).
+C	2.2L	I4	Gas	SOHC, valve	2-bbl carb. Chrysler "K-car engine" - longitudinally mounted. Dodge Dakota ('87-'88).
+C	5.9L	I6 Turbo IC	Diesel	OHV,2 valve	Direct injection. Cummins 6BT engine (ETB). Dodge Ram ('91-'96).
+C	5.9L	I6 Turbo IC	Diesel	OHV,4 valve	Direct injection. Cummins ISB engine - High Output (ETH). Dodge Ram ('02).
+C	5.9L	I6 Turbo IC	Diesel	OHV,4 valve	Common-rail Direct injection. Cummins ISB engine - High Output (ETH). Dodge Ram ('03-'07).
+D	2.0L	I4	Gas	SOHC, valve	2-bbl carb. Mitsubishi Sirius engine 4G63. Dodge/Plymouth Colt Vista 4wd ('85-'88), Dodge Ram 50 ('84-'89).
+D	5.9L	I6 Turbo IC	Diesel	OHV,2 valve	Direct injection. Cummins 6BT engine (ETB). Dodge Ram ('97-'98).
+D	5.7L	V8	Gas	OHV	Sequential MPI. Chrysler Hemi V8 engine (EZA). Dodge Ram 1500 ('03-'05), Ram 1500 Mega Cab ('06-'08), Ram 2500/3500 ('03-'08), Dodge Durango ('04-'05).
+D	3.0L	I4 Turbo IC	Diesel	DOHC,6 valve	Common-rail Direct injection. Iveco F1C (EXG). Ram ProMaster EcoDiesel ('14-'17).
+E	3.7L	I6	Gas	OHV	1-bbl carb. Chrysler Slant-Six engine. Dodge Ram pickup, Dodge Ram Van/Wagon, Plymouth Voyager ('81-'82).
+E	2.6L	I4	Gas	SOHC, valve	2-bbl carb. Mitsubishi Astron engine 4G54. Dodge Ram 50 ('84-'89), Dodge Raider ('87-'89).
+E	2.5L	I4	Gas	OHV	Renix TBI. AMC 4-cylinder. Jeep Cherokee, Comanche, Wrangler ('89-'90).
+E	3.3L	V6	Gas/E85	OHV	Flex Fuel. Sequential MPI. Chrysler 60° OHV V6 engine (EGM). Dodge Caravan ('05-'07).
+E	3.3L	V6	Gas/E85	OHV	Flex Fuel. Sequential MPI. Chrysler 60° OHV V6 engine (EGV).odge Grand Caravan, Chrysler Town & Country ('09-'10).
+G	2.6L	I4	Gas	SOHC, valve	2-bbl carb. Mitsubishi Astron engine 4G54. Dodge Caravan, Plymouth Voyager ('84-'87).
+G	2.5L	I4	Gas	SOHC, valve	TBI. Balance shaft. Chrysler "K-car engine" - longitudinally mounted (EDA). Dodge Dakota ('89-'95).
+G	2.4L	I4	Gas	SOHC, valve	MPI. Mitsubishi Sirius engine 4G64. Dodge Ram 50 ('93).
+G	3.3L	V6	Gas/E85	OHV	Flex Fuel. Sequential MPI. Chrysler 60° OHV V6 engine (EGM). Plymouth Voyager ('98-'00),hrysler Voyager ('00-'01), Dodge Caravan, Chrysler Town & Country ('98-'01).
+G	2.4L	I4 Turbo IC	Gas	DOHC,6 valve	Sequential MPI. Chrysler "Neon engine" - A855 Turbo H.O. variant (EDV).hrysler PT Cruiser sedan GT ('03-'07), Dream Cruiser Series 2 ('03), Dream Cruiser Series 3 ('04).
+G	3.6L	V6	Gas	DOHC,4 valve	Sequential MPI. VVT. Chrysler Pentastar V6 engine (ERB). Dodge Grand Caravan ('11-'20),hrysler Town & Country ('11-'16), VW Routan ('11-'14), Dodge Journey ('11-'19), Dodge Durango,eep Grand Cherokee ('11-'15), Ram C/V ('12-'15), Jeep Wrangler ('12-'17), Wrangler JK ('18),am 1500 ('13-'18), Ram 1500 Classic ('19-'24), Ram ProMaster ('14-'21).
+G	3.6L	V6	Gas	DOHC,4 valve	Sequential MPI. VVT. Intake VVL. Chrysler Pentastar V6 engine (Pentastar Upgrade)ERC: w/ Engine Stop/Start, ERF: w/o Engine Stop/Start). Dodge Durango, Jeep Grand Cherokee ('16-),eep Wrangler [JL] ('18-), Chrysler Pacifica ('17-), Voyager ('20-), Jeep Gladiator ('20-),rand Cherokee L ('21-), Grand Cherokee WK ('22), Ram ProMaster ('22-).
+G	3.6L	V6	Gas	DOHC,4 valve	Sequential MPI. VVT. Intake VVL. eTorque 48v Mild Hybrid. Chrysler Pentastar V6 engine (Pentastar Upgrade) (ERG). Ram 1500 [DT] ('19-), Jeep Wrangler [JL] ('20-'23).
+H	3.7L	I6	Gas	OHV	1-bbl carb. Chrysler Slant-Six engine.odge Ram pickup, Dodge Ram Van/Wagon ('83-'87), Plymouth Voyager ('83).
+H	8.3L	V10	Gas	OHV	Sequential MPI. Aluminum Block & Heads. Chrysler LA Viper V10 engine (EWC).odge Ram SRT-10 ('04-'06).
+H	3.3L	V6	Gas/E85	OHV	Flex Fuel. Sequential MPI. Chrysler 60° OHV V6 engine (EGV).odge Grand Caravan, Chrysler Town & Country ('08).
+H	1.4L	I4 Turbo IC	Gas	SOHC,6 valve	Sequential MPI. MultiAir. Fiat FIRE engine. EAM: Jeep Renegade ('15, '17-'18).
+J	2.3L	I4 Turbo	Diesel	SOHC, valve	Indirect injection. Mitsubishi Astron engine 4D55. Dodge Ram 50 ('84-'85).
+J	2.5L	I4 Turbo	Gas	SOHC, valve	MPI. Chrysler "K-car engine" - Turbo I. Dodge Caravan, Plymouth Voyager ('89-'90).
+J	3.3L	V6	CNG	OHV	Sequential MPI. Chrysler 60° OHV V6 engine (EGP). Dodge Caravan, Plymouth Voyager ('94-'96).
+J	4.7L	V8	Gas	SOHC,6 valve	Sequential MPI. Chrysler PowerTech V8 engine H.O. (EVC).eep Grand Cherokee ('02-'04), Dodge Dakota ('05-'07).
+J	6.4L	V8	Gas	OHV	Sequential MPI. VVT. MDS. Chrysler SRT Hemi V8 engine - Apache (ESG).eep Grand Cherokee SRT ('12-'21), Dodge Durango SRT ('18-'24),eep Wrangler Unlimited Rubicon 392 ('21-'25), Grand Wagoneer ('22-'23).
+J	6.4L	V8	Gas	OHV	Sequential MPI. VVT. MDS. Chrysler Hemi V8 engine - BGE (ESA or ESB for detuned version).am 2500/3500/4500/5500 ('14-'24).
+J	6.4L	V8	Gas	OHV	Sequential MPI. VVT. MDS. Chrysler Hemi V8 engine - BGE (ESL).am 2500/3500/4500/5500 ('25-).
+K	2.5L	I4	Gas	SOHC, valve	TBI. Balance shaft. Chrysler "K-car engine" (Trans-4) (EDM). Dodge Caravan, Plymouth Voyager ('87-'95).
+K	3.7L	90° V6	Gas	SOHC,2 valve	Sequential MPI. Chrysler PowerTech V6 engine (EKG). Jeep Liberty, Dodge Ram 1500 ('02-'12),akota ('04-'11), Durango ('04-'09), Nitro ('07-'11), Jeep Grand Cherokee ('05-'10), Commander ('06-'10).
+L	4.0L	I6	Gas	OHV	Renix MPI. AMC Inline-6. Jeep Cherokee, Wagoneer, Comanche ('89-'90).
+L	3.8L	V6	Gas	OHV	Sequential MPI. Chrysler 60° OHV V6 engine (EGH). Plymouth Grand Voyager ('94-'99),odge Grand Caravan, Chrysler Town & Country ('94-'07), Pacifica ('05, '07-'08).
+L	6.7L	I6 Turbo IC	Diesel	OHV,4 valve	Common-rail Direct injection. Cummins ISB engine (ETJ). Dodge Ram HD ('09-'12).
+L	6.7L	I6 Turbo IC	Diesel	OHV,4 valve	Common-rail Direct injection. Cummins ISB engine (ETK). Ram HD ('13-'18).
+L	6.7L	I6 Turbo IC	Diesel	OHV,4 valve	Common-rail Direct injection. Cummins ISB engine — Standard Output w/Chrysler 68RFE 6-speed auto. trans. (ETL).am 2500/3500 pickup ('19-'24).
+L	6.7L	I6 Turbo IC	Diesel	OHV,4 valve	Common-rail Direct injection. Cummins ISB engine — High Output w/Aisin AS69RC 6-speed auto. trans. (ETM).am 3500 pickup ('19-'24).
+L	6.7L	I6 Turbo IC	Diesel	OHV,4 valve	Common-rail Direct injection. Cummins ISB engine — High Output w/ZF Powerline 8-speed auto. trans. (ETM).am 2500/3500 pickup ('25-).
+L	6.7L	I6 Turbo IC	Diesel	OHV,4 valve	Common-rail Direct injection. Cummins ISB engine — Heavy Duty w/Aisin AS69RC 6-speed auto. trans. (ETN).am 3500/4500/5500 Chassis Cab ('19-'24).
+L	6.7L	I6 Turbo IC	Diesel	OHV,4 valve	Common-rail Direct injection. Cummins ISB engine — High Output w/ZF Powerline 8-speed auto. trans. (ETN).am 3500/4500/5500 Chassis Cab ('25-).
+M	3.7L	I6	Gas	OHV	2-bbl carb. Chrysler Slant-Six engine. Dodge Ram pickup ('83).
+M	3.9L	90° V6	Gas	OHV	2-bbl carb. Chrysler LA V6 engine. Dodge Dakota ('87).
+M	4.2L	I6	Gas	OHV	2-bbl carb. AMC Inline-6. Jeep Wrangler ('89 - Produced before 10/3/88).
+M	3.0L	72° V6 Turbo IC	Diesel	DOHC,4 valve	Common-rail Direct injection. Mercedes-Benz OM642 (EXL). Jeep Grand Cherokee CRD ('07-'08).
+M	3.0L	60° V6 Turbo IC	Diesel	DOHC,4 valve	Common-rail Direct injection. VM Motori L630 DOHC (EXF or EXN w/Engine Start-Stop). (EcoDiesel 2nd generation - 240 hp). Jeep Grand Cherokee EcoDiesel ('14-'19), Ram 1500 EcoDiesel ('14-'18),am 1500 Classic EcoDiesel ('19).
+M	3.0L	60° V6 Turbo IC	Diesel	DOHC,4 valve	Common-rail Direct injection. VM Motori L630 DOHC (EXH). (EcoDiesel 3rd generation - 260 hp).am 1500 EcoDiesel [DT] ('20-'23).
+M	3.0L	60° V6 Turbo IC	Diesel	DOHC,4 valve	Common-rail Direct injection. Engine Start-Stop. VM Motori L630 DOHC (EXJ). (EcoDiesel 3rd gen. - 260 hp). Jeep Wrangler EcoDiesel ('20-'23), Jeep Gladiator EcoDiesel ('21-'23).
+N	4.7L	V8	Gas	SOHC,6 valve	Sequential MPI. Chrysler PowerTech V8 engine (EVA). Jeep Grand Cherokee ('99-'07), Dodge Dakota,urango ('00-'07), Ram 1500 ('02-'07), Jeep Commander ('06-'07), Chrysler Aspen ('07). ('07: CA emissions)
+N	4.7L	V8	Gas	SOHC,6 valve	Sequential MPI. Chrysler PowerTech V8 engine (EVE).odge Dakota, Durango, Ram 1500, Chrysler Aspen, Jeep Grand Cherokee, Commander ('08).
+N	2.0L	I4 Turbo IC	Gas	DOHC,6 valve	Direct injection. FCA Global Medium Engine (GME-T4)/Hurricane4 (EC1). Made in Termoli, Italy &okomo, Indiana. Jeep Cherokee ('19-'23), Wrangler ('20-), Compass, Dodge Hornet GT ('23-).
+N	2.0L	I4 Turbo IC	Gas	DOHC,6 valve	Direct injection. eTorque 48v Mild Hybrid. FCA Global Medium Engine (GME-T4)/Hurricane4 (EC3).ngine made in Termoli, Italy & Kokomo, Indiana. Jeep Wrangler ('18-'20).
+P	5.2L	V8	Gas	OHV	2-bbl carb. Chrysler LA V8 engine.odge Ram pickup, Ramcharger, Ram Van/Wagon, Plymouth Voyager ('81-'82), Plymouth Trailduster ('81).
+P	1.5L	I4	Gas	SOHC, valve	MPI. Mitsubishi Orion engine 4G15. '88 Dodge/Plymouth Colt wagon.
+P	2.5L	I4	Gas	OHV	MPI. AMC 4-cylinder. (EPE).eep Cherokee ('91-'00), Comanche ('91-'92), Wrangler ('91-'02), Dodge Dakota ('96-'02).
+P	4.7L	V8	Gas/E85	SOHC,6 valve	Flex Fuel. Sequential MPI. Chrysler PowerTech V8 engine (EVD). Dodge Ram 1500 ('04-'07), Dakota ('07),urango ('06-'07), Chrysler Aspen, Jeep Grand Cherokee, Commander ('07). (Federal emissions)
+P	3.8L	V6	Gas	OHV	Sequential MPI. Chrysler 60° OHV V6 engine (EGL). Dodge Grand Caravan, Chrysler Town & Country ('08).
+P	4.7L	V8	Gas	SOHC,6 valve	Sequential MPI. Chrysler PowerTech V8 engine (EVE). Dodge Dakota ('09-'11), Durango, Chrysler Aspen,eep Grand Cherokee, Commander ('09), Ram 1500 ('09-'12).
+P	3.0L	I6 Twin Turbo IC	Gas	DOHC,4 valve	Direct injection. Dual VVT. Stellantis Hurricane I6 engine/GME-T6 (Standard Output: EFH/High Output: EFC).eep Grand Wagoneer ('22-), Jeep Wagoneer, Wagoneer L, Grand Wagoneer L ('23-), Ram 1500 ('25-).
+R	5.2L	V8	Gas	OHV	4-bbl carb. Chrysler LA V8 engine.odge Ram pickup, Ramcharger, Ram Van/Wagon, Plymouth Voyager ('81-'82), Plymouth Trailduster ('81).
+R	3.3L	V6	Gas	OHV	Sequential MPI. Chrysler 60° OHV V6 engine (EGA). Plymouth Voyager/Grand Voyager ('90-'00),odge Caravan/Grand Caravan ('90-'07), Chrysler Town & Country ('90-'93, '96-'00, '03-'07),hrysler Voyager ('00, '03), Grand Voyager ('00).
+S	5.9L	V8	Gas	OHV	2-bbl carb. Chrysler LA V8 engine. Dodge Ram Van/Wagon, Plymouth Voyager ('81-'82).
+S	3.0L	V6	Gas	SOHC,2 valve	MPI. Mitsubishi Cyclone engine 6G72. Dodge Raider ('89), Ram 50 ('90-'91).
+S	4.0L	I6	Gas	OHV	Chrysler MPI. AMC Inline-6. (ERH). Jeep Cherokee ('91-'01), Comanche ('91-'92), Wrangler ('91-'06),rand Cherokee ('93-'04).
+S	3.2L	V6	Gas	DOHC,4 valve	Sequential MPI. VVT. Chrysler Pentastar V6 engine ('14: EHB, '15-'17: EHK w/Engine Stop/Start).eep Cherokee ('14-'17).
+T	5.9L	V8	Gas	OHV	4-bbl carb. Chrysler LA V8 engine. Dodge Ram pickup, Ram Van/Wagon, Plymouth Voyager ('81-'82),odge Ramcharger, Plymouth Trailduster ('81).
+T	5.2L	V8	Gas	OHV	2-bbl carb. Chrysler LA V8 engine.odge Ram pickup, Ramcharger, Ram Van/Wagon ('83-'87), Plymouth Voyager ('83).
+T	1.8L	I4	Gas	SOHC, valve	MPI. Mitsubishi Saturn engine 4G37.89-'90 Dodge/Plymouth Colt wagon 4wd.
+T	4.2L	I6	Gas	OHV	2-bbl carb. AMC Inline-6. Jeep Wrangler ('89 - Produced after 10/3/88, '90).
+T	5.2L	V8	CNG	OHV	Sequential MPI. Chrysler LA V8 engine - Magnum (ELN).odge Ram Van ('92-'96, '99-'03), Ram Wagon ('92, '94-'96, '99-'02), Ram pickup ('95-'96).
+T	2.7L	V6	Gas	DOHC,4 valve	Sequential MPI. Chrysler "LH V6 engine" (EER). Dodge Magnum ('05-'08).
+T	5.7L	V8	Gas	OHV	Sequential MPI. VVT. MDS. Chrysler Hemi V8 engine - Eagle (EZD/EZH). Jeep Grand Cherokee ('09-'22),rand Cherokee L ('21-'24), Commander ('09-'10), Dodge Durango ('09, '11-), Ram 1500 ('09-'22),am 1500 Classic ('19-'24), Chrysler Aspen ('09).
+T	5.7L	V8	Gas	OHV	Sequential MPI. VVT. MDS. eTorque 48v Mild Hybrid. Chrysler Hemi V8 engine - Eagle (EZL).am 1500 [DT] ('19-'24), Jeep Wagoneer ('22-'23).
+T	5.7L	V8	Gas	OHV	Sequential MPI. VVT. Chrysler Hemi V8 engine - Eagle (EZC).odge Ram 2500/3500 ('09-'12), Ram 2500/3500 ('13-'18).
+T	5.7L	V8	Gas-Electric Hybrid	OHV	Sequential MPI. VVT. MDS. Chrysler Hemi V8 engine - Eagle (EZE) + 2 Front motors. Nickel-metal hydride Battery Pack. Dodge Durango Hybrid, Chrysler Aspen Hybrid ('09). (#1 in 6th position of VIN indicates Hybrid).
+T	2.4L	I4	Gas	SOHC,6 valve	Sequential MPI. MultiAir2. Chrysler Tigershark Engine (ED6).eep Renegade, Ram ProMaster City ('15-'16).
+U	5.9L	V8	Gas	OHV	4-bbl carb. Chrysler LA V8 engine - Heavy Duty (Single Exhaust).odge Ram pickup, Ram Van/Wagon, Plymouth Voyager ('82).
+U	5.2L	V8	Gas	OHV	4-bbl carb. Chrysler LA V8 engine.odge Ram pickup, Ramcharger, Ram Van/Wagon, Plymouth Voyager ('83).
+V	2.0L	I4	Gas	SOHC, valve	MPI. Mitsubishi Sirius engine 4G63. Dodge/Plymouth Colt Vista 4wd ('89-'91).
+V	3.5L	V6	Gas	SOHC,4 valve	Sequential MPI. Aluminum Block & Heads. Chrysler SOHC 24 valve V6 engine.GG: Dodge Magnum SXT ('05-'08), EGF: Dodge Journey SXT, R/T ('09-'10).
+W	3.7L	I6	Gas	OHV	2-bbl carb. Chrysler Slant-Six engine. Dodge Ram pickup ('82).
+W	5.9L	V8	Gas	OHV	4-bbl carb. Chrysler LA V8 engine - Federal emissions.odge Ram pickup, Ram Van/Wagon ('83-'88), Dodge Ramcharger ('84-'88), Plymouth Voyager ('83).
+W	2.4L	I4	Gas	SOHC, valve	MPI. Mitsubishi Sirius engine 4G64.odge Ram 50 ('90-'92).
+W	8.0L	V10	Gas	OHV	Sequential MPI. Iron Block & Heads. Chrysler LA V10 engine - Magnum (EWA).odge Ram 2500/3500 ('94-'03).
+W	6.1L	V8	Gas	OHV	Sequential MPI. Chrysler SRT Hemi V8 engine (ESF). Jeep Grand Cherokee SRT8 ('09-'10).
+W	2.4L	I4	Gas	DOHC,6 valve	Sequential MPI. Dual VVT. Chrysler World Gasoline Engine (ED3). Jeep Compass, Patriot ('07-'08).
+W	1.4L	I4 Turbo IC	Gas	SOHC,6 valve	Sequential MPI. MultiAir. Fiat FIRE engine (EAM). Jeep Renegade ('16).
+W	1.3L	I4 Turbo IC	Gasoline-Electric PHEV	SOHC,6 valve	Direct injection. MultiAir3. Fiat Firefly/GSE engine (EYG) + 1 Front motor + 1 Rear motor.5.5 kWh Lithium-ion Battery Pack.odge Hornet R/T PHEV ('24-). Engine made in Bielsko-Biala, Poland.
+X	3.9L	90° V6	Gas	OHV	TBI. Chrysler LA V6 engine. Dodge Dakota, Ram pickup, Ram Van/Wagon ('88-'91).
+X	3.9L	90° V6	Gas	OHV	Sequential MPI. Chrysler LA V6 engine - Magnum (EHC).odge Dakota, Ram Van ('92-'03), Ram Wagon ('92-'02), Ram pickup ('92-'01), Durango ('99).
+X	1.5L	I4	Gas	SOHC, valve	MPI. Mitsubishi Orion engine 4G15.89-'90 Dodge/Plymouth Colt wagon 2wd.
+X	4.0L	V6	Gas	SOHC,4 valve	Sequential MPI. Aluminum Block & Heads. Chrysler SOHC 24 valve V6 engine (EGQ).hrysler Pacifica ('07-'08), Dodge Grand Caravan, Chrysler Town & Country ('08-'10), VW Routan ('09-'10).
+X	4.0L	V6	Gas	SOHC,4 valve	Sequential MPI. Aluminum Block & Heads. Chrysler SOHC 24 valve V6 engine (EGS).odge Nitro R/T ('09), Detonator, Shock ('10-'11), Heat 4.0 ('11).
+X	3.2L	V6	Gas	DOHC,4 valve	Sequential MPI. VVT. Chrysler Pentastar V6 engine (EHK). Jeep Cherokee ('18-'22).
+Y	5.2L	V8	Gas	OHV	TBI. Chrysler LA V8 engine. Dodge Ram pickup, Ramcharger, Ram Van/Wagon ('88-'91),helby Dakota ('89), Dakota ('91).
+Y	5.2L	V8	Gas	OHV	Sequential MPI. Chrysler LA V8 engine - Magnum (ELF). Dodge Dakota ('92-'99), Durango ('98-'00),am pickup ('92-'01), Ram Van ('92-'03), Ram Wagon ('92-'02), Ramcharger ('92-'93),eep Grand Cherokee ('93-'98), Grand Wagoneer ('93).
+Z	5.9L	V8	Gas	OHV	TBI. Chrysler LA V8 engine. Dodge Ram pickup, Ramcharger, Ram Van/Wagon ('89-'92).
+Z	5.9L	V8	Gas	OHV	Sequential MPI. Chrysler LA V8 engine - Magnum (EML). Dodge Dakota R/T, Durango ('98-'03),am pickup, Ram Van ('93-'03), Ram Wagon ('93-'02), Ramcharger ('93),eep Grand Cherokee 5.9 Limited ('98).
+0	2.0L	I4	Gas	DOHC,6 valve	Sequential MPI. Dual VVT. Chrysler World Gasoline Engine (ECN). Jeep Compass, Patriot ('07-'08).
+1	5.9L	V8	Gas	OHV	4-bbl carb. Chrysler LA V8 engine - CA emissions.odge Ram pickup, Ram Van/Wagon ('83-'88), Plymouth Voyager ('83).
+1	2.4L	I4	Gas	DOHC,6 valve	Sequential MPI. Chrysler "Neon engine" - Longitudinally mounted (ED1).eep Liberty ('02-'05), Wrangler ('03-'06).
+1	3.8L	V6	Gas	OHV	Sequential MPI. Chrysler 60° OHV V6 engine (EGT). Jeep Wrangler ('07-'11).
+1	3.8L	V6	Gas	OHV	Sequential MPI. Chrysler 60° OHV V6 engine (EGL).odge Grand Caravan, Chrysler Town & Country, VW Routan ('09-'10).
+1	1.3L	I4 Turbo IC	Gas	SOHC,6 valve	Direct injection. MultiAir3. Fiat Firefly/GSE engine (EYF). Made in Bielsko-Biala, Poland.eep Renegade ('19-'23).
+2	5.7L	V8	Gas	OHV	Sequential MPI. MDS. Chrysler Hemi V8 engine (EZB). Dodge Magnum R/T, Jeep Grand Cherokee ('05-'08), Jeep Commander, Dodge Durango, Ram 1500 Regular/Quad Cab ('06-'08), Chrysler Aspen ('07-'08).
+2	5.7L	V8	Gas/CNG	OHV	Bi-fuel. Sequential MPI. VVT. Chrysler Hemi V8 engine - Eagle (EZF). Ram 2500HD pickup ('13-'18).
+3	3.0L	V6	Gas	SOHC,2 valve	MPI. Mitsubishi Cyclone engine 6G72. 2972cc. (EFA). Dodge Caravan, Plymouth Voyager ('87-'00),hrysler Town & Country ('90), Chrysler Voyager ('00).
+3	3.3L	V6	Gas/E85	OHV	Flex Fuel. Sequential MPI. Chrysler 60° OHV V6 engine (EGM).hrysler Voyager, Dodge Caravan, Chrysler Town & Country ('01-'03).
+3	6.1L	V8	Gas	OHV	Sequential MPI. Chrysler SRT Hemi V8 engine (ESF).odge Magnum SRT8, Jeep Grand Cherokee SRT8 ('06-'08).
+4	3.5L	V6	Gas	SOHC,4 valve	Sequential MPI. Aluminum Block & Heads. Chrysler SOHC 24 valve V6 engine (EGN).hrysler Pacifica ('04-'06).
+5	2.0L	I4	Gas	SOHC, valve	2-bbl carb. Mitsubishi Sirius engine 4G63. Dodge Ram 50 ('81-'83), Plymouth Arrow Truck ('81-'82).
+5	5.9L	V8	Gas	OHV	4-bbl carb. Chrysler LA V8 engine - Heavy Duty. Dodge Ram pickup ('87-'88).
+5	5.9L	V8	Gas	OHV	TBI. Chrysler LA V8 engine - Heavy Duty. Dodge Ram pickup ('89-'92).
+5	5.9L	V8	Gas	OHV	Sequential MPI. Chrysler LA V8 engine - Magnum (Heavy Duty) (EMM). Dodge Ram pickup ('93-'02).
+5	2.8L	I4 Turbo IC	Diesel	DOHC,6 valve	Common-rail Direct injection. VM Motori R428 DOHC (ENR). Jeep Liberty CRD ('05-'06).
+6	5.9L	I6 Turbo IC	Diesel	OHV,4 valve	Direct injection. Cummins ISB engine (ETC). Dodge Ram ('98-'04).
+6	4.0L	V6	Gas	SOHC,4 valve	Sequential MPI. Aluminum Block & Heads. Chrysler SOHC 24 valve V6 engine (EGS).odge Nitro R/T ('07-'08).
+6	2.0L	I4 Turbo IC	Gasoline-Electric PHEV	DOHC,6 valve	Direct injection. FCA Global Medium Engine (GME-T4)/Hurricane4 (ECX) + 2 Front motors.7.3 kWh Lithium-ion Battery Pack.eep Wrangler Unlimited 4xe ('21-), Grand Cherokee 4xe ('22-). Some engines made in Termoli, Italy.
+7	2.6L	I4	Gas	SOHC, valve	2-bbl carb. Mitsubishi Astron engine 4G54. Dodge Ram 50 ('81-'83), Plymouth Arrow Truck ('81-'82).
+7	5.9L	V8	Gas	OHV	2-bbl carb. AMC V8. Jeep Grand Wagoneer ('89-'91).
+7	5.9L	I6 Turbo IC	Diesel	OHV,4 valve	Direct injection. Cummins ISB engine - High Output (ETH). Dodge Ram ('01).
+7	3.6L	V6	Gasoline-Electric PHEV	DOHC,4 valve	Sequential MPI. Dual VVT. VVL. Chrysler Pentastar V6 engine (EH3) + 2 Front motors.6.0 kWh Lithium-ion Battery Pack.hrysler Pacifica PHEV ('17-).
+8	5.9L	I6 Turbo	Diesel	OHV,2 valve	Direct injection. Cummins 6BT engine (ETA). Dodge Ram ('89-'91).
+8	2.4L	I4 Turbo IC	Gas	DOHC,6 valve	Sequential MPI. Chrysler "Neon engine" - Light-pressure Turbo variant [180 hp] (EDT).hrysler PT Cruiser sedan ('04-'09).
+9	2.3L	I4 Turbo	Diesel	SOHC, valve	Indirect injection. Mitsubishi Astron engine 4D55. Dodge Ram 50 ('83).
+9	2.4L	I4	Gas	DOHC,6 valve	Sequential MPI. Chrysler "Neon engine" - Transversely mounted for FWD (EDZ).hrysler PT Cruiser sedan ('09-'10).
+9	6.2L	V8C IC	Gas	OHV	Sequential MPI. VVT. Chrysler Hemi V8 engine (ESD). Jeep Grand Cherokee SRT Trackhawk ('18-'21),odge Durango SRT Hellcat ('21, '23-'25), Ram 1500 TRX ('21-'24).
