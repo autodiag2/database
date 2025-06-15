@@ -1,5 +1,5 @@
 #!/bin/bash
-# Create a new car description (DTCs traduction, brand)
+# Create a new car description (DTCs traduction, manufacturer)
 #
 folder="./data/car"
 desc="${folder}/${RANDOM}/"
@@ -10,7 +10,7 @@ while [ -e "${desc}" ] ; do
 done
 mkdir -p "${desc}"
 >${descFile} cat <<EOF
-brand=Example
+manufacturer=Example
 ecu=Example ecu
 engine=Example engine
 EOF
