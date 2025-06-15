@@ -4,11 +4,16 @@ import argparse
 from datetime import datetime
 import re
 from vindecoder.decoder_data import *
+import csv
 
 class ISO3779_Decoder: 
 
     def __init__(self, vin: str, year: int = None):
-        self.vin = vin
+
+        self.mapping = [chr(i) for i in range(ord('A'), ord('Z') + 1)] + [str(i) for i in range(1, 10)] + ['0']
+        self.country_ranges = self._load_country_ranges(os.path.join(os.path.dirname(__file__), "../../../data/vehicle/countries.tsv"))
+
+        self.vin = vin.upper()
         self.year = year if year is not None else int(datetime.today().strftime('%Y'))
         self.wmi_raw = vin[:3]
         self.vds_raw = vin[3:9]
@@ -31,17 +36,24 @@ class ISO3779_Decoder:
     def ISO3780_wmi_region_str(self) -> str:
         return self.ISO3780_wmi_region().name
 
+    def _load_country_ranges(self, filepath: str):
+        ranges = []
+        with open(filepath, newline='') as f:
+            reader = csv.DictReader(f, delimiter='\t')
+            for row in reader:
+                ranges.append((row['start_code'], row['end_code'], row['country_name'], row['alpha3']))
+        return ranges
+
     def ISO3780_wmi_country(self) -> str:
-        mapping = [chr(i) for i in range(ord('A'), ord('Z') + 1)] + [str(i) for i in range(1, 10)] + ['0']
-        for (start, end), (country, code) in ISO3780_WMI_COUNTRIES.items():
-            wmi_first = mapping.index(self.vin[0])
-            wmi_first_start = mapping.index(start[0])
-            wmi_first_end = mapping.index(end[0])
-            if wmi_first_start <= wmi_first <= wmi_first_end:
-                wmi_second = mapping.index(self.vin[1])
-                wmi_second_start = mapping.index(start[1])
-                wmi_second_end = mapping.index(end[1])
-                if wmi_second_start <= wmi_second <= wmi_second_end:
+        for start, end, country, alpha3 in self.country_ranges:
+            wmi_first = self.mapping.index(self.vin[0])
+            start_first = self.mapping.index(start[0])
+            end_first = self.mapping.index(end[0])
+            if start_first <= wmi_first <= end_first:
+                wmi_second = self.mapping.index(self.vin[1])
+                start_second = self.mapping.index(start[1])
+                end_second = self.mapping.index(end[1])
+                if start_second <= wmi_second <= end_second:
                     return country
         return "unassigned"
 
@@ -49,17 +61,16 @@ class ISO3779_Decoder:
         return self.vin[2] == '9'
 
     def decode_manufacturer(self) -> str:
-        manufacturers_file = os.path.join(os.path.dirname(__file__), "../../../data/vehicle/manufacturers.tsv")
-        if not os.path.exists(manufacturers_file):
-            raise BaseException(f"Data file {manufacturers_file} not found")
-        manufacturer_code = self.vin[11:14] if self.wmi_manufacturer_is_less_500() else None
-        with open(manufacturers_file, "r") as file:
-            for line in file:
-                if line.startswith("#"): continue
-                parts = line.strip().split("\t")
-                if parts[0] == self.vin[:3]:
-                    if manufacturer_code is None or (len(parts) > 2 and parts[2] == manufacturer_code):
-                        return parts[1]
+        path = os.path.join(os.path.dirname(__file__), "../../../data/vehicle/manufacturers.tsv")
+        if not os.path.exists(path):
+            raise FileNotFoundError(path)
+        wmi = self.vin[:3]
+        code = self.vin[11:14] if self.wmi_manufacturer_is_less_500() else None
+        with open(path, newline='') as f:
+            reader = csv.DictReader(f, delimiter='\t')
+            for row in reader:
+                if row["wmi"] == wmi and (code is None or row.get("manufacturer specific code") == code):
+                    return row["manufacturer"]
         return "Unknown manufacturer"
     
     def vin_manufacturer_decoder(self):
