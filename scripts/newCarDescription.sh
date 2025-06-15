@@ -1,7 +1,7 @@
 #!/bin/bash
 # Create a new car description (DTCs traduction, manufacturer)
 #
-folder="./data/car"
+folder="./data/vehicle"
 desc="${folder}/${RANDOM}/"
 descFile="${desc}/desc.ini"
 codesFile="${desc}/codes.tsv"
