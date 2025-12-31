@@ -15,15 +15,15 @@ def ensure_schema(conn: sqlite3.Connection) -> None:
         PRAGMA synchronous=NORMAL;
 
         CREATE TABLE IF NOT EXISTS dtc (
-            code TEXT NOT NULL,
-            description TEXT NOT NULL,
+            id TEXT NOT NULL,
+            desc TEXT NOT NULL,
             manufacturer TEXT NOT NULL,
             engine_model TEXT,
             ecu_model TEXT,
-            PRIMARY KEY(code, manufacturer, engine_model, ecu_model)
+            PRIMARY KEY(id, manufacturer, engine_model, ecu_model)
         );
 
-        CREATE INDEX IF NOT EXISTS idx_dtc_code ON dtc(code);
+        CREATE INDEX IF NOT EXISTS idx_dtc_id ON dtc(id);
         CREATE INDEX IF NOT EXISTS idx_dtc_manufacturer ON dtc(manufacturer);
         CREATE INDEX IF NOT EXISTS idx_dtc_ecu ON dtc(ecu_model);
         CREATE INDEX IF NOT EXISTS idx_dtc_engine ON dtc(engine_model);
@@ -43,7 +43,7 @@ def norm_code(s: str) -> str | None:
 def insert(conn: sqlite3.Connection, rows: list[tuple[str, str, str, str | None, str | None]]) -> int:
     cur = conn.cursor()
     cur.executemany(
-        "INSERT OR IGNORE INTO dtc(code, description, manufacturer, engine_model, ecu_model) VALUES(?,?,?,?,?)",
+        "INSERT OR IGNORE INTO dtc(id, desc, manufacturer, engine_model, ecu_model) VALUES(?,?,?,?,?)",
         rows,
     )
     return cur.rowcount
