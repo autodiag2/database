@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk, messagebox, simpledialog
+from tkinter import ttk, messagebox, simpledialog, filedialog
 from pathlib import Path
 import configparser
 import os
@@ -47,7 +47,7 @@ class Vehicle:
             f.write("\n".join(lines) + "\n")
 
         with open(self.codes_path, "w", encoding="utf-8") as f:
-            for code, desc in self.dtcs:
+            for code, desc in sorted(self.dtcs, key=lambda x: x[0]):
                 f.write(f"{code}\t{desc}\n")
 
 class BrowserTab(tk.Frame):
@@ -130,6 +130,7 @@ class BrowserTab(tk.Frame):
         tk.Button(dtc_btn_frame, text="Add DTC", command=self.add_dtc).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="Edit DTC", command=self.edit_dtc).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="Remove DTC", command=self.remove_dtc).pack(fill="x", pady=2)
+        tk.Button(dtc_btn_frame, text="Import DTC", command=self.import_dtc).pack(fill="x", pady=2)
 
         self.load_vehicles()
 
@@ -222,6 +223,38 @@ class BrowserTab(tk.Frame):
         import shutil
         shutil.rmtree(self.selected_vehicle.path)
         self.load_vehicles()
+
+    def import_dtc(self):
+        if not self.selected_vehicle:
+            messagebox.showwarning("No Vehicle Selected", "Please select a vehicle first.")
+            return
+        file_path = filedialog.askopenfilename(
+            title="Select DTC File to Import",
+            filetypes=[("TSV Files", "*.tsv"), ("Text Files", "*.txt"), ("All Files", "*.*")]
+        )
+        if not file_path:
+            return
+        try:
+            new_dtcs = []
+            with open(file_path, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    parts = line.split("\t", 1)
+                    if len(parts) == 2:
+                        new_dtcs.append((parts[0], parts[1]))
+                    else:
+                        new_dtcs.append((parts[0], ""))
+            # Merge, avoiding duplicates (by code and description)
+            existing_set = set(tuple(dtc) for dtc in self.selected_vehicle.dtcs)
+            for dtc in new_dtcs:
+                if dtc not in existing_set:
+                    self.selected_vehicle.dtcs.append(dtc)
+            self.update_dtc_filter()
+            messagebox.showinfo("Import Complete", f"Imported {len(new_dtcs)} DTC(s) from file.")
+        except Exception as e:
+            messagebox.showerror("Import Error", f"Failed to import DTCs:\n{e}")
 
     def add_dtc(self):
         if not self.selected_vehicle:
