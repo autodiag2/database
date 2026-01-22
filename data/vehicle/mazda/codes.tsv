@@ -3362,8 +3362,7 @@ C2777	Sensor Cluster BUS Failure
 C2778	Sensor Power Supply Failure
 C2780	ECU in Manufacturer Sub-State
 C3000	ISO/SAE Reserved
-C3485	Speed Wheel Sensor LR Input Circuit Failure
-Module Circuits Short"
+C3485	Speed Wheel Sensor LR Input Circuit Failure Module Circuits Short
 P0000	ISO/SAE Reserved (no valid description)
 P0002	Fuel Volume Regulator Control Circuit Range/Performance
 P0006	Fuel Shutoff Valve A Control Circuit Low
@@ -5221,7 +5220,7 @@ P1900	Turbine Speed Sensor Circuit Intermittent
 P1901	Torque Converter Clutch Circuit Intermittent
 P1910	Reverse Lamp Control Circuit/Open
 P1921	Transmission Range Signal
-P1A03	Drive Motor ""A"" Shutdown Circuit
+P1A03	Drive Motor "A" Shutdown Circuit
 P1A04	Generator Shutdown Circuit
 P1A05	Desired Engine Speed Signal
 P1A06	Vehicle Mode Signal

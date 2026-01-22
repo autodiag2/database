@@ -1569,8 +1569,8 @@ B1217	Rear Door ECU LH Communication Stop
 B1247	Tire Pressure Monitor Receiver Communication Stop
 B1262	A/C ECU Communication Stop
 B1263	Luggage Room Junction Block ECU Communication Stop
-B1266	"Short to B+ in Instrument Panel System Communication Bus Malfunction"
-B1267	"Short to GND in Instrument Panel System Communication Bus Malfunction"
+B1266	Short to B+ in Instrument Panel System Communication Bus Malfunction
+B1267	Short to GND in Instrument Panel System Communication Bus Malfunction
 B1271	Combination Meter ECU Communication Stop
 B1272	Power Seat ECU Communication Stop
 B1273	Sliding Roof ECU Communication Stop
@@ -4791,11 +4791,11 @@ P1598	A/C Pressure Sensor Circuit High Input
 P1599	A/C Pressure Sensor Circuit Low Input
 P1600	ECM BATT Malfunction
 P1602	PCM Not Programmed
-P1603	"Powertrain Control Module Internal Dual-Port Ram Communication"
+P1603	Powertrain Control Module Internal Dual-Port Ram Communication
 P1604	PCM Internal Dual-Port Ram Read/Write Integrity Failure
 P1605	Knock Control CPU Malfunction
 P1607	Cruise Control Input Processor
-P1615	"Communication Error from Distance Control ECU to Engine Control Module (ECM)"
+P1615	Communication Error from Distance Control ECU to Engine Control Module (ECM)
 P1616	Communication Error from ECM to Distance Control ECU
 P1617	Distance Control ECU Malfunction
 P1630	Communication Error from VSC to ECM

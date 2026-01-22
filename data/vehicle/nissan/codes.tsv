@@ -2037,7 +2037,7 @@ B1201	LF Curtain Airbag Module Circuits Shorted
 B1209	SRS Components Deployed - Frontal Collision
 B1210	SRS Side and/or Curtain Airbag(s) Deployed
 B1211	Rollover Detection
-B2013	"DTC Detection Logic: ID Discord IMMU-STRG or I-KEY- STRG"
+B2013	DTC Detection Logic: ID Discord IMMU-STRG or I-KEY- STRG
 B2014	DTC Detection Logic (Steering): Chain of STRG-IMMU
 B2098	DTC Detection Logic (Ignition Relay On)
 B2099	DTC Detection Logic (Ignition Relay Off)
@@ -3628,14 +3628,14 @@ C1712	Checksum Data From LF Transmitter is Malfunctioning
 C1713	Checksum Data from RF Transmitter is Malfunctioning.
 C1714	Checksum Data from RR Transmitter is Malfunctioning.
 C1715	Checksum Data from LR Transmitter is Malfunctioning.
-C1716	"Air Pressure Data from LF Transmitter is Malfunctioning."
-C1717	"Air Pressure Data from RF Transmitter is Malfunctioning."
-C1718	"Air Pressure Data from RR Transmitter is Malfunctioning."
-C1719	"Air Pressure Data from LR Transmitter is Malfunctioning."
-C1720	"Function Code Data from LF Transmitter is Malfunctioning."
-C1721	"Function Code Data from RF Transmitter is Malfunctioning."
-C1722	"Function Code Data from RR Transmitter is Malfunctioning."
-C1723	"Function Code Data from LR Transmitter is Malfunctioning."
+C1716	Air Pressure Data from LF Transmitter is Malfunctioning.
+C1717	Air Pressure Data from RF Transmitter is Malfunctioning.
+C1718	Air Pressure Data from RR Transmitter is Malfunctioning.
+C1719	Air Pressure Data from LR Transmitter is Malfunctioning.
+C1720	Function Code Data from LF Transmitter is Malfunctioning.
+C1721	Function Code Data from RF Transmitter is Malfunctioning.
+C1722	Function Code Data from RR Transmitter is Malfunctioning.
+C1723	Function Code Data from LR Transmitter is Malfunctioning.
 C1724	Battery Voltage of LF Transmitter Drops.
 C1725	Battery Voltage of RF Transmitter Drops.
 C1726	Battery Voltage of RR Transmitter Drops.
@@ -3650,7 +3650,7 @@ C1804	Suspension Height Adjusting Malfunction
 C1805	Suspension Height Adjusting Malfunction
 C1806	Suspension Height Sensor Locking Malfunction
 C1807	Suspension Height Sensor 5V Malfunction
-C1808	"Suspension Compressor - Integral Time Malfunction Supplying Air"
+C1808	Suspension Compressor - Integral Time Malfunction Supplying Air
 C3000	ISO/SAE Reserved 
 B1017	SRS Occupant System Malfunction 
 B1018	SRS Left Occupant System Malfunction 
@@ -5127,10 +5127,10 @@ P0CFF	ISO/SAE Reserved
 P0D00	ISO/SAE Reserved
 P0E00	ISO/SAE Reserved
 P0F00	ISO/SAE Reserved
-P101D	"A/F Sensor Heater Circuit Performance Bank 1 Sensor 1 Stuck ON"
-P102D	"O2 Sensor Heater Circuit Performance Bank 1 Sensor 2 Stuck ON"
+P101D	A/F Sensor Heater Circuit Performance Bank 1 Sensor 1 Stuck ON
+P102D	O2 Sensor Heater Circuit Performance Bank 1 Sensor 2 Stuck ON
 P1065	PCM Backup Circuit Malfunction
-P106A	"Evaporative Emission System Pressure Sensor - Manifold Absolute Pressure Correlation"
+P106A	Evaporative Emission System Pressure Sensor - Manifold Absolute Pressure Correlation
 P1102	Mass Airflow Sensor Signal Range/Performance
 P1105	MAP/BARO Pressure Switch Solenoid Valve
 P1108	Manifold Absolute Pressure Sensor Circuit Malfunction
@@ -5140,26 +5140,26 @@ P1121	Electronic Throttle Control Actuator Malfunction
 P1122	Electronic Throttle Control Actuator Malfunction
 P1124	Electronic Throttle Control Actuator Relay High Input
 P1126	Thermostat Function
-P1128	"Electronic Throttle Control Actuator Motor Circuit Malfunction"
+P1128	Electronic Throttle Control Actuator Motor Circuit Malfunction
 P1130	Swirl Control Valve Control Solenoid Valve
 P1131	Swirl Control Solenoid Valve Circuit Malfunction
 P1132	Swirl Control Valve Circuit Malfunction
-P1135	"Intake Valve Timing Control System Malfunction (Bank 2)"
-P1136	"Intake Valve Timing Control Circuit Malfunction (Bank 2)"
-P1137	"Swirl Control Valve Control Position Sensor Circuit Malfunction"
+P1135	Intake Valve Timing Control System Malfunction (Bank 2)
+P1136	Intake Valve Timing Control Circuit Malfunction (Bank 2)
+P1137	Swirl Control Valve Control Position Sensor Circuit Malfunction
 P1138	Swirl Control Valve Control Performance
-P1140	"Intake Valve Timing Control Position Sensor Circuit (Bank 1)"
-P1143	"HO2S-11 (Bank 1 Sensor 1) Lean Shift Monitoring (Bank 1)"
-P1144	"HO2S-11 (Bank 1 Sensor 1) Rich Shift Monitoring (Bank 1)"
-P1145	"Intake Valve Timing Control Position Sensor Circuit (Bank 2)"
-P1146	"HO2S-12 (Bank 1 Sensor 2) Lean Shift Monitoring (Bank 1)"
-P1147	"HO2S-12 (Bank 1 Sensor 2) Rich Shift Monitoring (Bank 1)"
+P1140	Intake Valve Timing Control Position Sensor Circuit (Bank 1)
+P1143	HO2S-11 (Bank 1 Sensor 1) Lean Shift Monitoring (Bank 1)
+P1144	HO2S-11 (Bank 1 Sensor 1) Rich Shift Monitoring (Bank 1)
+P1145	Intake Valve Timing Control Position Sensor Circuit (Bank 2)
+P1146	HO2S-12 (Bank 1 Sensor 2) Lean Shift Monitoring (Bank 1)
+P1147	HO2S-12 (Bank 1 Sensor 2) Rich Shift Monitoring (Bank 1)
 P1148	Closed Loop Control (Bank 1)
-P1163	"HO2S-21 (Bank 2 Sensor 1) Lean Shift Monitoring (Bank 2)"
-P1164	"HO2S-21 (Bank 2 Sensor 1) Rich Shift Monitoring (Bank 2)"
+P1163	HO2S-21 (Bank 2 Sensor 1) Lean Shift Monitoring (Bank 2)
+P1164	HO2S-21 (Bank 2 Sensor 1) Rich Shift Monitoring (Bank 2)
 P1165	Swirl Control Valve Control Vacuum Switch
-P1166	"HO2S-22 (Bank 2 Sensor 2) Lean Shift Monitoring (Bank 2)"
-P1167	"HO2S-22 (Bank 2 Sensor 2) Rich Shift Monitoring (Bank 2)"
+P1166	HO2S-22 (Bank 2 Sensor 2) Lean Shift Monitoring (Bank 2)
+P1167	HO2S-22 (Bank 2 Sensor 2) Rich Shift Monitoring (Bank 2)
 P1168	Closed Loop Control (Bank 2)
 P1186	LF Seat Belt Pre-Tensioner Circuit Open
 P1187	LF Seat Belt Pre-Tensioner Circuit Short
@@ -5172,8 +5172,8 @@ P1211	ABS/TCS Control Unit
 P1212	ABS/TCS Communication Line
 P1217	Engine Over Temperature (Overheat)
 P1220	Fuel Pump Control Module (FPCM)
-P1225	"Closed Throttle Position Learning Performance (Includes Hybrid Models)"
-P1226	"Closed Throttle Position Learning Performance (Includes Hybrid Models)"
+P1225	Closed Throttle Position Learning Performance (Includes Hybrid Models)
+P1226	Closed Throttle Position Learning Performance (Includes Hybrid Models)
 P1227	Accelerator Pedal Position Sensor Circuit Low Input
 P1228	Accelerator Pedal Position Sensor Circuit High Input
 P1229	Accelerator Pedal Position Sensor 2 Power Circuit Short
@@ -5183,24 +5183,24 @@ P1273	Air Fuel Sensor (Bank 1 Sensor 1) Circuit Lean Shift
 P1274	Air Fuel Sensor (Bank 1 Sensor 1) Circuit Rich Shift
 P1275	Air Fuel Sensor (Bank 1 Sensor 1) Slow Response
 P1276	Air Fuel Sensor (B1 S1) Lack Of Activity Detected
-P1277	"Air Fuel Sensor (Bank 1 Sensor 1) Heater Circuit Malfunction"
+P1277	Air Fuel Sensor (Bank 1 Sensor 1) Heater Circuit Malfunction
 P1320	Ignition Signal
 P1335	Crankshaft Position Sensor (REF)
 P1336	Crankshaft Position Sensor (CKPS)
 P1400	EGRC Solenoid Valve
 P1401	EGR Temperature Sensor
 P1402	EGR System
-P1421	"Cold Start Emission Reduction Strategy Monitoriing (Includes Hybrid Models)"
+P1421	Cold Start Emission Reduction Strategy Monitoriing (Includes Hybrid Models)
 P1440	EVAP Control System Small Leak
 P1441	Vacuum Cut Valve Bypass Valve
-P1442	"EVAP System Small Leak (0.040"") Detected"
+P1442	EVAP System Small Leak (0.040") Detected
 P1443	Canister Control Vacuum Switch Circuit Malfunction
 P1444	Canister Purge Volume Control Solenoid Valve
 P1445	EVAP Canister Purge Volume Control Valve
 P1446	EVAP Canister Vent Control Valve (Closed)
 P1447	EVAP Control System Purge Flow Monitoring
 P1448	EVAP Canister Vent Control Valve (Open)
-P1456	"EVAP System Very Small Leak (0.020"") Detected"
+P1456	EVAP System Very Small Leak (0.020") Detected
 P1464	Fuel Level Sensor Circuit (Ground Signal)
 P1490	Vacuum Cut Valve Bypass Valve (Circuit)
 P1491	Vacuum Cut Valve Bypass Valve
@@ -5211,11 +5211,11 @@ P1551	Battery Current Sensor Circuit Low Input
 P1552	Battery Current Sensor Circuit High Input
 P1553	Battery Current Sensor Performance
 P1554	Battery Current Sensor Performance
-P1564	"ASCD Steering Switch Malfunction (Includes Hybrid Models)"
+P1564	ASCD Steering Switch Malfunction (Includes Hybrid Models)
 P1568	ASCD Command Valve Circuit Malfunction
 P1571	Radar Sensor Malfunction
 P1572	Improper Aiming of Radar Sensor Beam Axis
-P1574	"ASCD Vehicle Speed Sensor Malfunction (Includes Hybrid Models)"
+P1574	ASCD Vehicle Speed Sensor Malfunction (Includes Hybrid Models)
 P1575	Warning Buzzer Malfunction
 P1578	Brake System Malfunction
 P1605	A/T Diagnostic Communication Line
@@ -5225,7 +5225,7 @@ P1612	Chain of ECM-IMMU
 P1613	NATS ECM INT CIRC-IMMU:
 P1614	Chain of IMMU-ECM
 P1615	Difference of Key
-P1616	"Communication Error from ECM to Distance Control ECU"
+P1616	Communication Error from ECM to Distance Control ECU
 P1617	Distance Control ECU Malfunction
 P1630	Communication Error from VSC to ECM
 P1631	Communication Error from ECM to VSC
@@ -5233,7 +5233,7 @@ P1701	Transmission Control Module (Power Supply)
 P1705	Throttle Position Sensor Circuit A/T
 P1706	Park/Neutral Position (PNP) Switch
 P1710	A/T Fluid Temperature Sensor Circuit
-P1715	"Input Speed Sensor (Primary Speed Sensor/TCM Output)"
+P1715	Input Speed Sensor (Primary Speed Sensor/TCM Output)
 P1716	A/T Turbine Revolution Sensor Circuit Malfunction:
 P1720	A/T (TCM) Vehicle Speed Sensor Circuit Malfunction
 P1721	Vehicle Speed Signal
@@ -5256,11 +5256,11 @@ P1769	A/T HLR/C Solenoid Valve Circuit Malfunction:
 P1772	Low Coast Brake Solenoid Valve
 P1774	Low Coast Brake Solenoid Valve Function
 P1775	A/T Torque Converter Clutch Solenoid Circuit Low Input
-P1776	"A/T Torque Converter Clutch Solenoid Circuit High Input"
+P1776	A/T Torque Converter Clutch Solenoid Circuit High Input
 P1777	Step Motor Circuit
 P1778	Step Motor Circuit Malfunction
 P1800	VIAS Control Solenoid Valve Circuit Malfunction
-P1805	"Brake Switch Signal Malfunction (Includes Hybrid Models)"
+P1805	Brake Switch Signal Malfunction (Includes Hybrid Models)
 P1900	Cooling Fan Control Circuit Malfunction
 P2004	Intake Manifold Runner Control Stuck Open Bank 1
 P2014	Intake Manifold Runner Position Sensor / Switch Circuit Bank 1
@@ -8372,8 +8372,8 @@ U0600	ISO/SAE Reserved
 U1000	CAN Communication Line
 U1001	CAN Communication Line (Includes Hybrid models)
 U1010	Control Unit (CAN) - BCM
-U1020	"Lost Communication with Hybrid Vehicle (HV) Control System (Hybrid)"
-U1021	"Invalid Data Received from Hybrid Vehicle Control ECU (Hybrid)"
+U1020	Lost Communication with Hybrid Vehicle (HV) Control System (Hybrid)
+U1021	Invalid Data Received from Hybrid Vehicle Control ECU (Hybrid)
 U1022	Lost Communication with Brake ECU
 U1023	Invalid Data Received from Brake ECU
 U1200	AV Control Unit

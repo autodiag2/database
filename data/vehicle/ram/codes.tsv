@@ -6885,8 +6885,7 @@ P1456	Fuel Tank Pressure Sensor Circuit Low
 P1457	Fuel Tank Pressure Sensor Circuit High 
 P1473	Intake Air Diverter Valve Circuit Shorted To Ground 
 P1474	Intake Air Diverter Valve Circuit Shorted To Battery 
-P1475	Intake Air Diverter Valve Out Of Calibration/ Missing Calibration
-Received"
+P1475	Intake Air Diverter Valve Out Of Calibration/ Missing Calibration Received
 U0000	ISO/SAE Reserved
 U0001	High Speed CAN Communication Bus
 U0002	High Speed CAN Communication Bus Performance

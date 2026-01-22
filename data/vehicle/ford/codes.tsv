@@ -3063,7 +3063,6 @@ C09FE	ISO/SAE Reserved
 C09FF	ISO/SAE Reserved
 C0C88	ISO/SAE Reserved
 C3000	ISO/SAE Reserved
-Function"
 P0000	ISO/SAE Reserved (no valid description)
 P0001	Fuel Volume Regulator Control Circuit/Open
 P0002	Fuel Volume Regulator Control Circuit Range/Performance
@@ -5563,9 +5562,9 @@ P1633	Keep Alive Power Voltage Too Low
 P1635	Tire/Axle Ratio Out Of Acceptable Range
 P1636	Inductive Signature Chip Communication Error
 P1639	Vehicle ID Block Corrupted, Not Programmed
-P163A	Generator ""B"" Control Circuit
-P163C	Generator ""B"" Field Terminal Circuit Low
-P163D	Generator ""B"" Field Terminal Circuit High
+P163A	Generator "B" Control Circuit
+P163C	Generator "B" Field Terminal Circuit Low
+P163D	Generator "B" Field Terminal Circuit High
 P163E	Transmission Control Module Programming Error
 P163F	Transmission ID Block Corrupted, Not Programmed
 P1640	PCM Trouble Codes Available In Another Module
@@ -5626,7 +5625,7 @@ P1744	Torque Converter Clutch System Stuck in Off Position
 P1745	Transmission system problems
 P1746	Electronic Pressure Control Solenoid - Open circuit
 P1747	Electronic Pressure Control Solenoid - Short circuit
-P1748	Pressure Control Solenoid ""A"" Open Circuit
+P1748	Pressure Control Solenoid "A" Open Circuit
 P1749	Electronic Pressure Control Solenoid Failed Low
 P174E	Output Shaft Speed / ABS Wheel Speed Correlation
 P1751	Shift Solenoid No. 1 Performance

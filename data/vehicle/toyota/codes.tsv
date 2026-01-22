@@ -1607,7 +1607,7 @@ B1786	Occupant Classification Sensor Front RH Collision Detection
 B1787	Occupant Classification Sensor Rear LH Collision Detection
 B1788	Occupant Classification Sensor Rear RH Collision Detection
 B1790	Airbag Sensor Assy Center Communication Circuit Malfunction
-B1793	"Occupant Classification Sensor Power Supply Circuit Malfunction"
+B1793	Occupant Classification Sensor Power Supply Circuit Malfunction
 B1794	Occupant Classification ECU Battery Positive Line Open
 B1795	Occupant Classification ECU Malfunction
 B1796	Sleep Operation Failure Of Occupant Classification ECU
@@ -3033,7 +3033,7 @@ C1243	Acceleration Sensor Stuck Malfunction
 C1245	Acceleration Sensor Output Malfunction
 C1271	RF Speed Output
 C1272	LF Speed Output
-C1279	"Acceleration Sensor Output Voltage Malfunction (Test Mode DTC)"
+C1279	Acceleration Sensor Output Voltage Malfunction (Test Mode DTC)
 C1300	Skid Control ECU Malfunction
 C1336	Zero Point Calibration of Acceleration Sensor Undone
 C1361	Short in ABS Motor Fail Safe Relay Circuit
@@ -4807,15 +4807,15 @@ P0F00	ISO/SAE Reserved
 P1010	OCV for VVTL Circuit (Bank 1)
 P1011	OCV for VVTL Open Malfunction (Bank 1)
 P1012	OCV for VVTL Close Malfunction (Bank 1)
-P101D	"A/F Sensor Heater Circuit Performance Bank 1 Sensor 1 Stuck ON"
-P102D	"O2 Sensor Heater Circuit Performance Bank 1 Sensor 2 Stuck ON"
-P106A	"Evaporative Emission System Pressure Sensor - Manifold Absolute Pressure Correlation"
-P106B	"Evaporative Emission System Pressure Sensor - Secondary Air Injection Pressure Sensor Correlation"
+P101D	A/F Sensor Heater Circuit Performance Bank 1 Sensor 1 Stuck ON
+P102D	O2 Sensor Heater Circuit Performance Bank 1 Sensor 2 Stuck ON
+P106A	Evaporative Emission System Pressure Sensor - Manifold Absolute Pressure Correlation
+P106B	Evaporative Emission System Pressure Sensor - Secondary Air Injection Pressure Sensor Correlation
 P1100	BARO Sensor Circuit
-P1115	"Coolant Temperature Sensor Circuit For Coolant Heat Storage System"
-P1116	"Coolant Temperature Sensor Circuit Stack For Coolant Heat Storage System"
-P1117	"Coolant Temperature Sensor Circuit Low For Coolant Heat Storage System"
-P1118	"Coolant Temperature Sensor Circuit High For Coolant Heat Storage System"
+P1115	Coolant Temperature Sensor Circuit For Coolant Heat Storage System
+P1116	Coolant Temperature Sensor Circuit Stack For Coolant Heat Storage System
+P1117	Coolant Temperature Sensor Circuit Low For Coolant Heat Storage System
+P1118	Coolant Temperature Sensor Circuit High For Coolant Heat Storage System
 P1120	Accelerator Pedal Position Sensor Circuit
 P1121	Accelerator Pedal Position Sensor Range/Performance Problem
 P1122	Coolant Flow Control Valve Position Sensor Circuit Low
@@ -4841,15 +4841,15 @@ P1320	Igniter Circuit Malfunction (No.5)
 P1325	Igniter Circuit Malfunction (No.6)
 P1330	Igniter No. 7 Circuit Malfunction
 P1335	No Crankshaft Position Sensor Signal - Engine Running
-P1340	"Camshaft Position Sensor ""A"" (Bank 1 Sensor 2)"
+P1340	Camshaft Position Sensor "A" (Bank 1 Sensor 2)
 P1341	Camshaft Position Sensor ”A” (Bank 1 Sensor 2 )
-P1342	"Camshaft Position Sensor ""A"" Low Input (MRE)"
-P1343	"Camshaft Position Sensor ""A"" High Input (MRE)"
-P1345	"VVT Sensor/Camshaft Position Sensor Circuit Malfunction (Bank 1)"
-P1346	"VVT Sensor/Camshaft Position Sensor Circuit Range/Performance Problem (Bank 1)"
+P1342	Camshaft Position Sensor "A" Low Input (MRE)
+P1343	Camshaft Position Sensor "A" High Input (MRE)
+P1345	VVT Sensor/Camshaft Position Sensor Circuit Malfunction (Bank 1)
+P1346	VVT Sensor/Camshaft Position Sensor Circuit Range/Performance Problem (Bank 1)
 P1349	VVT System
-P1350	"VVT Sensor/Camshaft Position Sensor Circuit Malfunction (Bank 2)"
-P1351	"VVT Sensor/Camshaft Position Sensor Circuit Range/Performance Problem (Bank 2)"
+P1350	VVT Sensor/Camshaft Position Sensor Circuit Malfunction (Bank 2)
+P1351	VVT Sensor/Camshaft Position Sensor Circuit Range/Performance Problem (Bank 2)
 P1354	VVT System Malfunction (Bank 2)
 P1400	Sub-Throttle Position Sensor
 P1401	Sub-Throttle Position Sensor Range/Performance Problem
@@ -4861,16 +4861,16 @@ P1420	Evaporative Emission Canister Small Leak
 P1421	Evaporative Emission Canister Gross Leak
 P1422	Fuel Tank Small Leak
 P1423	Fuel Tank Gross Leak
-P1430	"Vacuum Sensor for Absorber & Catalyst System Circuit Malfunction"
+P1430	Vacuum Sensor for Absorber & Catalyst System Circuit Malfunction
 P1431	Vacuum Sensor for Absorber & Catalyst Performance
 P1436	Variable Valve Malfunction
 P1437	Vacuum Line Malfunction
 P1440	Secondary Air Injection System Control Valve Circuit Bank 1
-P1441	"Secondary Air Injection System Switching Valve No.2 Bank 1 Stuck Open"
-P1442	"Secondary Air Injection System Switching Valve No.2 Bank 1 Stuck Close"
+P1441	Secondary Air Injection System Switching Valve No.2 Bank 1 Stuck Open
+P1442	Secondary Air Injection System Switching Valve No.2 Bank 1 Stuck Close
 P1443	Secondary Air Injection System Control Valve Circuit Bank 2
-P1444	"Secondary Air Injection System Switching Valve No.2 Bank 2 Stuck Open"
-P1445	"Secondary Air Injection System Switching Valve No.2 Bank 2 Stuck Close"
+P1444	Secondary Air Injection System Switching Valve No.2 Bank 2 Stuck Open
+P1445	Secondary Air Injection System Switching Valve No.2 Bank 2 Stuck Close
 P1450	Fuel Tank Pressure Sensor
 P1451	Fuel Tank Pressure Sensor Range/Performance
 P1452	Fuel Tank Pressure Sensor Low Input
@@ -4921,14 +4921,14 @@ P1693	Oil Control Valve Circuit Malfunction (Closed)
 P1700	Vehicle Speed Sensor '2' Circuit Malfunction
 P1705	A/T Direct Clutch Speed Sensor Circuit Malfunction
 P1715	Rear Wheel Sensor Circuit Malfunction (Rear Speed Sensor)
-P1725	"NT Revolution Sensor Circuit Malfunction (Input Turbine Speed Sensor)"
-P1730	"NC Revolution Sensor Circuit Malfunction (Counter Gear Speed Sensor)"
+P1725	NT Revolution Sensor Circuit Malfunction (Input Turbine Speed Sensor)
+P1730	NC Revolution Sensor Circuit Malfunction (Counter Gear Speed Sensor)
 P1735	Front Right Speed Sensor Malfunction
 P1740	Front Left Speed Sensor Malfunction
 P1755	Liner Solenoid for Lock-up Control Circuit Malfunction
-P1760	"Linear Solenoid for Line Pressure Control Circuit Malfunction (Shift Solenoid Valve ST)"
+P1760	Linear Solenoid for Line Pressure Control Circuit Malfunction (Shift Solenoid Valve ST)
 P1765	A/T Linear Shift Solenoid Circuit Malfunction
-P1770	"Differential Lock Solenoid No. 1 Circuit Malfunction (Shift Solenoid Valve SLD)"
+P1770	Differential Lock Solenoid No. 1 Circuit Malfunction (Shift Solenoid Valve SLD)
 P1780	Park/Neutral Position Switch Malfunction (Only For A/T)
 P1781	Shift Lever Switch Malfunction
 P1782	Transfer L4 Switch Malfunction
@@ -8111,7 +8111,7 @@ U1100	Lost Communication with Seat Belt Control ECU
 U1102	Lost Communication with Cruise Control Module
 U1104	Lost Communication with Driving Support ECU
 U1105	Lost Communication with Parking Assist ECU
-U110B	"Lost Communication with Parking Assist Control Module ""B"""
+U110B	Lost Communication with Parking Assist Control Module "B"
 U1110	Lost Communication with Clearance Sonar Module
 U1111	Lost Communication with Body No. 5 Module
 U1115	Lost Communication with Tilt and Telescopic Module
