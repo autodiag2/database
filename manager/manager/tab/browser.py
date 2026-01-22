@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk, messagebox, simpledialog, filedialog
+from tkinter import ttk, messagebox, simpledialog
 from pathlib import Path
 import configparser
 import os
@@ -18,7 +18,6 @@ class Vehicle:
         self.dtcs.clear()
         if self.desc_path.exists():
             cfg = configparser.ConfigParser()
-            # Use empty section to parse ini without sections
             with open(self.desc_path, "r", encoding="utf-8") as f:
                 content = f.read()
             content = "[vehicle]\n" + content
@@ -39,7 +38,6 @@ class Vehicle:
                             self.dtcs.append((parts[0], ""))
 
     def save(self):
-        # Write desc.ini omitting empty properties
         lines = []
         for key in ("manufacturer", "engine", "ecu", "years"):
             v = self.data.get(key, "").strip()
@@ -48,7 +46,6 @@ class Vehicle:
         with open(self.desc_path, "w", encoding="utf-8") as f:
             f.write("\n".join(lines) + "\n")
 
-        # Write codes.tsv
         with open(self.codes_path, "w", encoding="utf-8") as f:
             for code, desc in self.dtcs:
                 f.write(f"{code}\t{desc}\n")
@@ -62,58 +59,70 @@ class BrowserTab(tk.Frame):
         super().__init__(parent)
 
         self.data_entry = data_entry
-        self.vehicles = []  # list of Vehicle
+        self.vehicles = []
         self.selected_vehicle = None
+        self.filtered_vehicles = []  # For vehicle search filter
+        self.filtered_dtcs = []      # For dtc search filter
 
         # Scrollable frame setup
         canvas = tk.Canvas(self)
         scrollbar = tk.Scrollbar(self, orient="vertical", command=canvas.yview)
         self.scroll_frame = tk.Frame(canvas)
-
         self.scroll_frame.bind(
             "<Configure>",
             lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
         )
-
         canvas.create_window((0, 0), window=self.scroll_frame, anchor="nw")
         canvas.configure(yscrollcommand=scrollbar.set)
-
         canvas.pack(side="left", fill="both", expand=True)
         scrollbar.pack(side="right", fill="y")
-
         canvas.bind_all("<MouseWheel>", lambda e: canvas.yview_scroll(int(-1*(e.delta/120)), "units"))
 
-        # Left: Vehicle list
-        self.vehicle_listbox = tk.Listbox(self.scroll_frame, height=20, width=30)
-        self.vehicle_listbox.grid(row=0, column=0, rowspan=10, sticky="nswe", padx=5, pady=5)
+        # Vehicle search
+        tk.Label(self.scroll_frame, text="Search Vehicles:").grid(row=0, column=0, sticky="w", padx=5, pady=2)
+        self.vehicle_search_var = tk.StringVar()
+        self.vehicle_search_var.trace_add("write", lambda *a: self.update_vehicle_filter())
+        self.vehicle_search_entry = tk.Entry(self.scroll_frame, textvariable=self.vehicle_search_var)
+        self.vehicle_search_entry.grid(row=1, column=0, sticky="we", padx=5)
+
+        # Left: Vehicle listbox
+        self.vehicle_listbox = tk.Listbox(self.scroll_frame, height=15, width=30)
+        self.vehicle_listbox.grid(row=2, column=0, rowspan=9, sticky="nswe", padx=5, pady=5)
         self.vehicle_listbox.bind("<<ListboxSelect>>", self.on_vehicle_select)
 
-        # Buttons for vehicle management
+        # Vehicle buttons
         btn_frame = tk.Frame(self.scroll_frame)
-        btn_frame.grid(row=10, column=0, sticky="we", padx=5, pady=5)
+        btn_frame.grid(row=11, column=0, sticky="we", padx=5, pady=5)
         tk.Button(btn_frame, text="Add Vehicle", command=self.add_vehicle).pack(side="left", padx=3)
         tk.Button(btn_frame, text="Delete Vehicle", command=self.delete_vehicle).pack(side="left", padx=3)
         tk.Button(btn_frame, text="Reload", command=self.load_vehicles).pack(side="left", padx=3)
         tk.Button(btn_frame, text="Save Changes", command=self.save_changes).pack(side="left", padx=3)
 
-        # Right: Vehicle details & DTC editor
+        # Right: Vehicle details frame
         details_frame = tk.LabelFrame(self.scroll_frame, text="Vehicle Details")
-        details_frame.grid(row=0, column=1, sticky="nwe", padx=5, pady=5)
+        details_frame.grid(row=0, column=1, sticky="nwe", rowspan=5, padx=5, pady=5)
 
-        # Vehicle properties entries
         self.entries = {}
         for i, key in enumerate(["manufacturer", "engine", "ecu", "years"]):
-            tk.Label(details_frame, text=key.capitalize()+":").grid(row=i, column=0, sticky="e", padx=2, pady=2)
+            tk.Label(details_frame, text=key.capitalize() + ":").grid(row=i, column=0, sticky="e", padx=2, pady=2)
             ent = tk.Entry(details_frame, width=40)
             ent.grid(row=i, column=1, sticky="we", padx=2, pady=2)
             self.entries[key] = ent
 
+        # DTC search
+        tk.Label(self.scroll_frame, text="Search DTCs:").grid(row=5, column=1, sticky="w", padx=5, pady=2)
+        self.dtc_search_var = tk.StringVar()
+        self.dtc_search_var.trace_add("write", lambda *a: self.update_dtc_filter())
+        self.dtc_search_entry = tk.Entry(self.scroll_frame, textvariable=self.dtc_search_var)
+        self.dtc_search_entry.grid(row=6, column=1, sticky="we", padx=5)
+
         # DTC listbox + buttons
         dtc_frame = tk.LabelFrame(self.scroll_frame, text="DTC List")
-        dtc_frame.grid(row=1, column=1, sticky="nswe", padx=5, pady=5)
+        dtc_frame.grid(row=7, column=1, sticky="nswe", rowspan=5, padx=5, pady=5)
 
         self.dtc_listbox = tk.Listbox(dtc_frame, height=15, width=50)
         self.dtc_listbox.pack(side="left", fill="both", expand=True, padx=5, pady=5)
+        self.dtc_listbox.bind("<Double-Button-1>", lambda e: self.edit_dtc())
 
         dtc_btn_frame = tk.Frame(dtc_frame)
         dtc_btn_frame.pack(side="right", fill="y", padx=5)
@@ -128,15 +137,24 @@ class BrowserTab(tk.Frame):
         self.vehicles.clear()
         self.vehicle_listbox.delete(0, tk.END)
 
-        # Search for desc.ini recursively inside root_path
         for desc_file in self.getRootPath().rglob("desc.ini"):
             vpath = desc_file.parent
             self.vehicles.append(Vehicle(vpath))
 
         self.vehicles.sort(key=lambda v: v.data.get("manufacturer", "").lower())
+        self.update_vehicle_filter()
+        self.selected_vehicle = None
+        self.clear_details()
+
+    def update_vehicle_filter(self):
+        query = self.vehicle_search_var.get().lower()
+        self.vehicle_listbox.delete(0, tk.END)
+        self.filtered_vehicles = []
         for v in self.vehicles:
             name = v.data.get("manufacturer", v.path.name)
-            self.vehicle_listbox.insert(tk.END, name)
+            if query in name.lower():
+                self.filtered_vehicles.append(v)
+                self.vehicle_listbox.insert(tk.END, name)
         self.selected_vehicle = None
         self.clear_details()
 
@@ -145,8 +163,9 @@ class BrowserTab(tk.Frame):
         if not sel:
             return
         index = sel[0]
-        self.selected_vehicle = self.vehicles[index]
+        self.selected_vehicle = self.filtered_vehicles[index]
         self.show_vehicle_details()
+        self.update_dtc_filter()
 
     def clear_details(self):
         for ent in self.entries.values():
@@ -161,17 +180,21 @@ class BrowserTab(tk.Frame):
         for key, ent in self.entries.items():
             ent.delete(0, tk.END)
             ent.insert(0, v.data.get(key, ""))
-        self.refresh_dtcs()
+        self.update_dtc_filter()
 
-    def refresh_dtcs(self):
+    def update_dtc_filter(self):
         self.dtc_listbox.delete(0, tk.END)
+        self.filtered_dtcs = []
         if not self.selected_vehicle:
             return
+        query = self.dtc_search_var.get().lower()
         for code, desc in self.selected_vehicle.dtcs:
-            self.dtc_listbox.insert(tk.END, f"{code}\t{desc}")
+            line = f"{code}\t{desc}"
+            if query in code.lower() or query in desc.lower():
+                self.filtered_dtcs.append((code, desc))
+                self.dtc_listbox.insert(tk.END, line)
 
     def add_vehicle(self):
-        # Ask for new folder name
         folder_name = simpledialog.askstring("Add Vehicle", "Enter new vehicle folder name (e.g. newvehicle):", parent=self)
         if not folder_name:
             return
@@ -180,11 +203,9 @@ class BrowserTab(tk.Frame):
             messagebox.showerror("Error", "Folder already exists.")
             return
         new_path.mkdir(parents=True)
-        # Create empty desc.ini and codes.tsv
         (new_path / "desc.ini").write_text("", encoding="utf-8")
         (new_path / "codes.tsv").write_text("", encoding="utf-8")
         self.load_vehicles()
-        # Select newly added vehicle
         for i, v in enumerate(self.vehicles):
             if v.path == new_path:
                 self.vehicle_listbox.selection_clear(0, tk.END)
@@ -208,9 +229,11 @@ class BrowserTab(tk.Frame):
         code = simpledialog.askstring("Add DTC", "Enter DTC code:", parent=self)
         if not code:
             return
-        desc = simpledialog.askstring("Add DTC", "Enter DTC description:", parent=self) or ""
+        desc = simpledialog.askstring("Add DTC", "Enter DTC description:", parent=self)
+        if desc is None:
+            return
         self.selected_vehicle.dtcs.append((code, desc))
-        self.refresh_dtcs()
+        self.update_dtc_filter()
 
     def edit_dtc(self):
         if not self.selected_vehicle:
@@ -219,13 +242,19 @@ class BrowserTab(tk.Frame):
         if not sel:
             return
         idx = sel[0]
-        old_code, old_desc = self.selected_vehicle.dtcs[idx]
+        old_code, old_desc = self.filtered_dtcs[idx]
         code = simpledialog.askstring("Edit DTC", "Edit DTC code:", initialvalue=old_code, parent=self)
         if not code:
             return
-        desc = simpledialog.askstring("Edit DTC", "Edit DTC description:", initialvalue=old_desc, parent=self) or ""
-        self.selected_vehicle.dtcs[idx] = (code, desc)
-        self.refresh_dtcs()
+        desc = simpledialog.askstring("Edit DTC", "Edit DTC description:", initialvalue=old_desc, parent=self)
+        if desc is None:
+            return
+        # Update in original dtcs list (not filtered)
+        for i, (c, d) in enumerate(self.selected_vehicle.dtcs):
+            if c == old_code and d == old_desc:
+                self.selected_vehicle.dtcs[i] = (code, desc)
+                break
+        self.update_dtc_filter()
 
     def remove_dtc(self):
         if not self.selected_vehicle:
@@ -234,8 +263,13 @@ class BrowserTab(tk.Frame):
         if not sel:
             return
         idx = sel[0]
-        del self.selected_vehicle.dtcs[idx]
-        self.refresh_dtcs()
+        old_code, old_desc = self.filtered_dtcs[idx]
+        # Remove from original dtcs list (not filtered)
+        for i, (c, d) in enumerate(self.selected_vehicle.dtcs):
+            if c == old_code and d == old_desc:
+                del self.selected_vehicle.dtcs[i]
+                break
+        self.update_dtc_filter()
 
     def save_changes(self):
         if not self.selected_vehicle:
