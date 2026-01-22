@@ -23,7 +23,7 @@ def main():
     content_frame.pack(fill="both", expand=True)
 
     configure_tab = ConfigureTab(content_frame)
-    browser_tab = BrowserTab(content_frame)
+    browser_tab = BrowserTab(content_frame, configure_tab.path_entry)
     tabs = (configure_tab,browser_tab)
     for tab in tabs:
         tab.place(relx=0, rely=0, relwidth=1, relheight=1)
