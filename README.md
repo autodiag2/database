@@ -13,7 +13,5 @@ It also includes a VIN decoder.
 # Decode VIN
 See scripts/VIN/README.md
 
-# Compile DTCs database
-```bash
-python scripts/compile_dtcs_database.py
-```
+# Change the data
+See [README.md](/manager/README.md)

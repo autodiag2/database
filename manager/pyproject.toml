@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "manager"
+version = "0.1.0"
+description = "Data manager aggregating different sources of information and create an up-to-date list of information"
+authors = ["autodiag2 <autodiag@netcourrier.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+toml = "^0.10.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+manager = 'manager.main:main'
+compile_dtcs = 'manager.compile_dtcs_database:main'
