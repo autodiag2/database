@@ -1,6 +1,7 @@
 import tkinter as tk
 from manager.tab.browser import BrowserTab
 from manager.tab.configure import ConfigureTab
+from manager.tab.generate import GenerateTab
 
 def window_ensure_show_and_focus(root):
     root.lift()             # bring window to front
@@ -24,7 +25,8 @@ def main():
 
     configure_tab = ConfigureTab(content_frame)
     browser_tab = BrowserTab(content_frame, configure_tab.path_entry)
-    tabs = (configure_tab,browser_tab)
+    generate_tab = GenerateTab(content_frame, configure_tab.path_entry)
+    tabs = (configure_tab,browser_tab,generate_tab)
     for tab in tabs:
         tab.place(relx=0, rely=0, relwidth=1, relheight=1)
 
@@ -35,6 +37,7 @@ def main():
 
     tk.Button(switch_frame, text="Configure", command=lambda: show_tab(configure_tab)).pack(side="left", padx=2)
     tk.Button(switch_frame, text="Browser", command=lambda: show_tab(browser_tab)).pack(side="left", padx=2)
+    tk.Button(switch_frame, text="Generate", command=lambda: show_tab(generate_tab)).pack(side="left", padx=2)
 
     show_tab(configure_tab)
 
