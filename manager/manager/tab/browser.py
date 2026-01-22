@@ -143,8 +143,6 @@ class BrowserTab(tk.Frame):
     def on_vehicle_select(self, _):
         sel = self.vehicle_listbox.curselection()
         if not sel:
-            self.selected_vehicle = None
-            self.clear_details()
             return
         index = sel[0]
         self.selected_vehicle = self.vehicles[index]
