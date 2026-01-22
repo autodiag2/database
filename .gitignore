@@ -1,5 +1,5 @@
 __pycache__
 .pytest_cache
 dist/
-dtc.sqlite*
 .DS_Store
+*.sqlite*
