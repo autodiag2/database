@@ -3,6 +3,7 @@ from tkinter import ttk, messagebox, simpledialog, filedialog
 from pathlib import Path
 import configparser
 import os
+import re
 
 class Vehicle:
     def __init__(self, path: Path):
@@ -132,8 +133,29 @@ class BrowserTab(tk.Frame):
         tk.Button(dtc_btn_frame, text="Remove DTC", command=self.remove_dtc).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="Import DTC", command=self.import_dtc).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="View Duplicates", command=self.view_duplicates).pack(fill="x", pady=2)
+        tk.Button(dtc_btn_frame, text="View Malformed", command=self.view_malformed).pack(fill="x", pady=2)
 
         self.load_vehicles()
+
+    def view_malformed(self):
+        if not self.selected_vehicle:
+            return
+
+        malformed = []
+
+        for code, desc in self.selected_vehicle.dtcs:
+            if not code.strip() or not desc.strip():
+                malformed.append((code, desc))
+
+        if not malformed:
+            messagebox.showinfo("Malformed DTCs", "No malformed DTC entries found.")
+            return
+
+        self.dtc_listbox.delete(0, tk.END)
+        self.filtered_dtcs = malformed
+
+        for code, desc in malformed:
+            self.dtc_listbox.insert(tk.END, f"{code}\t{desc}")
 
     def view_duplicates(self):
         if not self.selected_vehicle:
