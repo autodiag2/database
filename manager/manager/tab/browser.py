@@ -26,7 +26,9 @@ class Vehicle:
 
     def malformed_count(self) -> int:
         c = 0
-        # TODO
+        for code, desc in self.dtcs:
+            if not code or not desc:
+                c += 1
         return c
 
     def load(self):
@@ -166,6 +168,7 @@ class BrowserTab(tk.Frame):
         tk.Button(dtc_btn_frame, text="Import DTCs as TSV", command=self.import_dtc).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="View Duplicates", command=self.view_duplicates).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="View Malformed", command=self.view_malformed).pack(fill="x", pady=2)
+        tk.Button(dtc_btn_frame, text="Remove Exact Duplicates", command=self.remove_exact_duplicates).pack(fill="x", pady=2)
 
         self.load_vehicles()
 
@@ -396,6 +399,32 @@ class BrowserTab(tk.Frame):
                 self.selected_vehicle.dtcs[i] = (code, desc)
                 break
         self.update_dtc_filter()
+
+    # Add this method inside BrowserTab:
+    def remove_exact_duplicates(self):
+        if not self.selected_vehicle:
+            return
+
+        counts = {}
+        # Count occurrences of (code, desc)
+        for code, desc in self.selected_vehicle.dtcs:
+            counts[(code, desc)] = counts.get((code, desc), 0) + 1
+
+        # Filter out exact duplicates, keep only one of each exact duplicate
+        new_dtcs = []
+        seen = set()
+        for code, desc in self.selected_vehicle.dtcs:
+            if counts[(code, desc)] > 1:
+                if (code, desc) not in seen:
+                    new_dtcs.append((code, desc))
+                    seen.add((code, desc))
+                # else skip exact duplicate
+            else:
+                new_dtcs.append((code, desc))
+
+        self.selected_vehicle.dtcs = new_dtcs
+        self.update_dtc_filter()
+        messagebox.showinfo("Remove Exact Duplicates", "Exact duplicate DTC entries removed.")
 
     def remove_dtc(self):
         if not self.selected_vehicle:
