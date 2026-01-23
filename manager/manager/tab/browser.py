@@ -351,16 +351,17 @@ class BrowserTab(tk.Frame):
         self.update_dtc_filter()
 
     def save_changes(self):
-        if not self.selected_vehicle:
-            return
-        for key, ent in self.entries.items():
-            val = ent.get().strip()
-            if val:
-                self.selected_vehicle.data[key] = val
-            else:
-                self.selected_vehicle.data.pop(key, None)
-        self.selected_vehicle.save()
-        messagebox.showinfo("Saved", "Changes saved to disk.")
+        for v in self.vehicles:
+            if v is self.selected_vehicle:
+                for key, ent in self.entries.items():
+                    val = ent.get().strip()
+                    if val:
+                        v.data[key] = val
+                    else:
+                        v.data.pop(key, None)
+            v.save()
+        messagebox.showinfo("Saved", "All vehicles saved to disk.")
 
     def reload_from_fs(self):
-        self.load_vehicles()
+        if messagebox.askyesno("Reload", "Discard all unsaved changes and reload from disk?"):
+            self.load_vehicles()
