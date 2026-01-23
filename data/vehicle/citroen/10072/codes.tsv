@@ -162,7 +162,7 @@ P1435	Multiplexed additive pump : CAN network fault or pump fault
 P1442	Control of the additive pump by wire : Open circuit
 P1443	Control of the additive pump by wire : Short circuit to earth
 P1444	Control of the additive pump by wire : Short circuit to positive
-P1445	Additive adding : The quantity of additive injected into the FAP has exceeded the maximum
+P1445	Additive adding : The quantity of additive injected into the FAP has exceeded the maximum threshold. The FAP must be changed
 P1446	Additive adding : Calculated additive level below the critical threshold
 P1457	Particle filter : Detected absent
 P1490	Particle filter : Detected overloaded
@@ -310,4 +310,3 @@ U1401	Alternator LIN network : Registering of a fault on the slave node of the A
 U2000	Intersystems CAN : Request for main ECU triggering not plausible or absent
 U2003	Intersystems CAN : Request for ECU wake-up (wire signal) inconsistent with the CAN data
 U2118	Intersystems CAN : Request for partial ECU triggering not plausible or absent
-thres	hold. The FAP must be changed
