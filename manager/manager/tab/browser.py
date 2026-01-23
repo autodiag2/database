@@ -131,8 +131,32 @@ class BrowserTab(tk.Frame):
         tk.Button(dtc_btn_frame, text="Edit DTC", command=self.edit_dtc).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="Remove DTC", command=self.remove_dtc).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="Import DTC", command=self.import_dtc).pack(fill="x", pady=2)
+        tk.Button(dtc_btn_frame, text="View Duplicates", command=self.view_duplicates).pack(fill="x", pady=2)
 
         self.load_vehicles()
+
+    def view_duplicates(self):
+        if not self.selected_vehicle:
+            return
+
+        counts = {}
+        for code, _ in self.selected_vehicle.dtcs:
+            counts[code] = counts.get(code, 0) + 1
+
+        duplicates = []
+        for code, desc in self.selected_vehicle.dtcs:
+            if counts.get(code, 0) > 1:
+                duplicates.append((code, desc))
+
+        if not duplicates:
+            messagebox.showinfo("Duplicates", "No duplicated DTCs found.")
+            return
+
+        self.dtc_listbox.delete(0, tk.END)
+        self.filtered_dtcs = duplicates
+
+        for code, desc in duplicates:
+            self.dtc_listbox.insert(tk.END, f"{code}\t{desc}")
 
     def load_vehicles(self):
         self.vehicles.clear()
