@@ -73,9 +73,7 @@ P0339	Engine speed sensor signal : Loss of synchronisation
 P0341	Cylinder 1 reference sensor : Short circuit to earth or short circuit to positive or open circuit
 P0350	Ignition coils control : Malfunction
 P0351	Ignition coil 14/ control fault : Short circuit to earth or short circuit to positive oropen circuit
-P0351	1 ignition coil control : Short circuit to earth or short circuit to positive or open circuit
 P0352	Ignition coil 23/ control fault : Short circuit to earth or short circuit to positive oropen circuit
-P0352	2 ignition coil control : Short circuit to earth or short circuit to positive or open circuit
 P0353	3 ignition coil control : Short circuit to earth or short circuit to positive or open circuit
 P0354	4 ignition coil control : Short circuit to earth or short circuit to positive or open circuit
 P0400	Exhaust gas recycling (EGR) : Malfunction

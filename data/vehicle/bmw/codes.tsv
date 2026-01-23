@@ -1,4 +1,3 @@
-# https://www.forumbmw.net/topic-76-la-liste-complete-des-codes-defaut-bmw.html	
 B0000	ISO/SAE Reserved
 B0004	PCM Discrete Input Speed Signal Not Present
 B0005	In Park Switch Circuit Malfunction
@@ -8277,7 +8276,6 @@ P3B00	ISO/SAE Reserved
 P3C00	ISO/SAE Reserved
 P3D00	ISO/SAE Reserved
 P3E00	ISO/SAE Reserved
-Power rain codes continued:	
 U0000	ISO/SAE Reserved
 U0001	High Speed CAN Communication Bus
 U0002	High Speed CAN Communication Bus Performance
