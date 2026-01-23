@@ -14,6 +14,21 @@ class Vehicle:
         self.dtcs = []  # list of (code, description)
         self.load()
 
+    def duplicated_count(self) -> int:
+        seen = set()
+        dup = set()
+        for code, _ in self.dtcs:
+            if code in seen:
+                dup.add(code)
+            else:
+                seen.add(code)
+        return len(dup)
+
+    def malformed_count(self) -> int:
+        c = 0
+        # TODO
+        return c
+
     def load(self):
         self.data.clear()
         self.dtcs.clear()
@@ -87,9 +102,26 @@ class BrowserTab(tk.Frame):
         self.vehicle_search_entry.grid(row=1, column=0, sticky="we", padx=5)
 
         # Left: Vehicle listbox
-        self.vehicle_listbox = tk.Listbox(self.scroll_frame, height=15, width=30)
-        self.vehicle_listbox.grid(row=2, column=0, rowspan=9, sticky="nswe", padx=5, pady=5)
-        self.vehicle_listbox.bind("<<ListboxSelect>>", self.on_vehicle_select)
+        self.vehicles_view = ttk.Treeview(
+            self.scroll_frame,
+            columns=("manufacturer", "duplicates", "malformed"),
+            show="headings",
+            height=20
+        )
+
+        self.vehicles_view.heading("manufacturer", text="Vehicle")
+        self.vehicles_view.heading("duplicates", text="Duplicated DTCs")
+        self.vehicles_view.heading("malformed", text="Malformed entries")
+
+        self.vehicles_view.column("manufacturer", width=220)
+        self.vehicles_view.column("duplicates", width=140, anchor="center")
+        self.vehicles_view.column("malformed", width=160, anchor="center")
+
+        self.vehicles_view.tag_configure("duplicates", foreground="orange")
+        self.vehicles_view.tag_configure("malformed", foreground="red")
+
+        self.vehicles_view.grid(sticky="nsew")
+        self.vehicles_view.bind("<<TreeviewSelect>>", self.on_vehicle_select)
 
         # Vehicle buttons
         btn_frame = tk.Frame(self.scroll_frame)
@@ -182,11 +214,25 @@ class BrowserTab(tk.Frame):
 
     def load_vehicles(self):
         self.vehicles.clear()
-        self.vehicle_listbox.delete(0, tk.END)
+        self.vehicles_view.delete(*self.vehicles_view.get_children())
 
         for desc_file in self.getRootPath().rglob("desc.ini"):
             vpath = desc_file.parent
-            self.vehicles.append(Vehicle(vpath))
+            v = Vehicle(vpath)
+            self.vehicles.append(v)
+            dup = v.duplicated_count()
+            mal = v.malformed_count()
+            tags = []
+            if dup > 0:
+                tags.append("duplicates")
+            if mal > 0:
+                tags.append("malformed")
+            self.vehicles_view.insert(
+                "",
+                "end",
+                values=(v.data["manufacturer"], dup, mal),
+                tags=tuple(tags)
+            )
 
         self.vehicles.sort(key=lambda v: v.data.get("manufacturer", "").lower())
         self.update_vehicle_filter()
@@ -195,21 +241,36 @@ class BrowserTab(tk.Frame):
 
     def update_vehicle_filter(self):
         query = self.vehicle_search_var.get().lower()
-        self.vehicle_listbox.delete(0, tk.END)
+        for item in self.vehicles_view.get_children():
+            self.vehicles_view.delete(item)
         self.filtered_vehicles = []
         for v in self.vehicles:
             name = v.data.get("manufacturer", v.path.name)
             if query in name.lower():
                 self.filtered_vehicles.append(v)
-                self.vehicle_listbox.insert(tk.END, name)
+                dup = v.duplicated_count()
+                mal = v.malformed_count()
+                tags = ()
+                if dup > 0:
+                    tags += ("duplicates",)
+                if mal > 0:
+                    tags += ("malformed",)
+                self.vehicles_view.insert(
+                    "",
+                    "end",
+                    values=(name, dup, mal),
+                    tags=tags
+                )
         self.selected_vehicle = None
         self.clear_details()
 
-    def on_vehicle_select(self, _):
-        sel = self.vehicle_listbox.curselection()
+
+    def on_vehicle_select(self, event):
+        sel = self.vehicles_view.selection()
         if not sel:
             return
-        index = sel[0]
+        item_id = sel[0]
+        index = self.vehicles_view.index(item_id)
         self.selected_vehicle = self.filtered_vehicles[index]
         self.show_vehicle_details()
         self.update_dtc_filter()
@@ -253,13 +314,14 @@ class BrowserTab(tk.Frame):
         (new_path / "desc.ini").write_text("", encoding="utf-8")
         (new_path / "codes.tsv").write_text("", encoding="utf-8")
         self.load_vehicles()
-        for i, v in enumerate(self.vehicles):
+        for i, v in enumerate(self.filtered_vehicles):
             if v.path == new_path:
-                self.vehicle_listbox.selection_clear(0, tk.END)
-                self.vehicle_listbox.selection_set(i)
-                self.vehicle_listbox.see(i)
+                item_id = self.vehicles_view.get_children()[i]
+                self.vehicles_view.selection_set(item_id)
+                self.vehicles_view.see(item_id)
                 self.on_vehicle_select(None)
                 break
+
 
     def delete_vehicle(self):
         if not self.selected_vehicle:
