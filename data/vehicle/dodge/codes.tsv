@@ -1,4 +1,3 @@
-# https://dodgeforum.com/forum/dodge-ram-diesel-tech/90474-diagnostic-trouble-codes-full-list.html
 B0000	ISO/SAE Reserved
 B0001	Driver Frontal Stage 1 Deployment Control (Subfault)
 B0002	Driver Frontal Stage 2 Deployment Control (Subfault)
@@ -6098,13 +6097,13 @@ P1001	Ignition coil, 5 -primary circuit high	Wiring, connectors, ignition coil 5
 P1002	Ignition coil, 5 -primary circuit low	Wiring, connectors, ignition coil 5, ECM
 P1003	Ignition coil , 5 -primary circuit open	Wiring, connectors, ignition coil 5, ECM
 P1004	Intake manifold air control valve (short runner) - performance Ignition coil, 5 -primary circuit range/performance  Automatic shut-down (ASO) relay circuitopen/short, control circuit short circuit to ground,control circuit open, intake manifold air controlvalve, ECM Wiring, connectors, ignition coil 5, ECM
-P1005	Manifold Tunning Valve Control Performance	
-P1006	Battery Power Off Circuit High	
-P1007	Ignition Circuit Low	
-P1008	Ignition Circuit High	
-P1009	ECU Battery Feed & Power Grounds	
-P1011	Fuel Pump Delivery Pressure Too Low	
-P1012	Fuel Pump Delivery Pressure Too High	
+P1005	Manifold Tunning Valve Control Performance
+P1006	Battery Power Off Circuit High
+P1007	Ignition Circuit Low
+P1008	Ignition Circuit High
+P1009	ECU Battery Feed & Power Grounds
+P1011	Fuel Pump Delivery Pressure Too Low
+P1012	Fuel Pump Delivery Pressure Too High
 P1013	Ignition coil, 1 -secondary circuit high	Wiring, connectors, ignition coil 1, spark plug, ECM
 P1014	Ignition coil, 1 -secondary circuit low	Wiring, connectors, ignition coil 1, spark plug, ECM
 P1015	Ignition coil, 1 -secondary range/performance	Wiring, connectors, ignition coil 1, spark plug, ECM
@@ -6112,8 +6111,8 @@ P1016	Ignition coil, 1 -secondary circuit open	Wiring, connectors, ignition coil
 P1017	Ignition coil, 4 -secondary circuit high	Wiring, connectors, ignition coil 4, spark plug, ECM
 P1018	Ignition coil, 4 -secondary circuit low Wiring, connectors, ignition coil 4, spark plug, ECM
 P1019	Ignition coil, 4 -secondary range/performance	Wiring, connectors, ignition coil 4, spark plug, ECM
-P1021	Fuel Pump Circuit Hi	
-P1022	Charge Air Temp Circuit Low	
+P1021	Fuel Pump Circuit Hi
+P1022	Charge Air Temp Circuit Low
 P1023	Ignition coil, 3 -secondary range/performance	Wiring, connectors, ignition coil 3, spark plug, ECM
 P1024	Ignition coil, 3 -secondary circuit open	Wiring, connectors, ignition coil 3, spark plug, ECM
 P1025	Ignition coil, 6 -secondary circuit high	Wiring, connectors, ignition coil 6, spark plug, ECM
@@ -6128,14 +6127,14 @@ P1033	Ignition coil, 5 -secondary circuit high	Wiring, connectors, ignition coil
 P1034	Ignition coil, 5 -secondary circuit low	Wiring, connectors, ignition coil 5, spark plug, ECM
 P1035	Ignition coil, 5 -secondary range/performance	Wiring, connectors, ignition coil 5, spark plug, ECM
 P1036	Ignition coil, 5 -secondary circuit open	Wiring, connectors, ignition coil 5, spark plug, ECM
-P1037	ISA Closed Throttle Circuit Low	
-P1038	ISA Closed Throttle Circuit High	
-P1039	ECU Sees Closed Throttle	
-P1040	ECU Does Not See Closed Throttle	
-P1041	ISA Circuits	
-P1042	TP Sensor Circuit Reads Low	
-P1043	Park/Neutral Line High	
-P1044	Park/Neutral Line Low	
+P1037	ISA Closed Throttle Circuit Low
+P1038	ISA Closed Throttle Circuit High
+P1039	ECU Sees Closed Throttle
+P1040	ECU Does Not See Closed Throttle
+P1041	ISA Circuits
+P1042	TP Sensor Circuit Reads Low
+P1043	Park/Neutral Line High
+P1044	Park/Neutral Line Low
 P1045	Heated oxygen sensor (H02S) 1, bank 1 system too rich	Wiring, connectors, H02S, ECM
 P1046	Heated oxygen sensor (H02S) 1, bank 1 system too lean	Wiring, connectors, H02S, ECM
 P1047	Heated oxygen sensor (H02S) 1, bank 1 inactive	Wiring, connectors, H02S, ECM
@@ -6145,20 +6144,20 @@ P1050	Heated oxygen sensor (H02S) 2, bank 1 system too lean	Wiring, connectors, 
 P1051	Heated oxygen sensor (H02S) 2, bank 1 inactive	Wiring, connectors, H02S, ECM
 P1052	Heated oxygen sensor (H02S) 2, bank 1range/performance	Wiring, connectors, H02S, ECM
 P1053	Heated oxygen sensor (H02S) 1, bank 1 circuithigh	Wiring, connectors, H02S, ECM
-P1054	A/T Vehicle Configuration	
-P1055	Idle RPM Low	
-P1056	Idle RPM Hi	
+P1054	A/T Vehicle Configuration
+P1055	Idle RPM Low
+P1056	Idle RPM Hi
 P1057	Heated oxygen sensor (H02S) 2, bank 1 circuit high	Wiring, connectors, H02S, ECM
-P1059	MAP Sens Out Of Limits	
-P1060	Change In MAP Reading Out Of Limits	
-P1061	MAP Circuits Low	
-P1062	Coolant Sens Circuit High	
-P1063	Inactive Coolant Temperature Sensor	
-P1064	A/C Request Circuit Low	
+P1059	MAP Sens Out Of Limits
+P1060	Change In MAP Reading Out Of Limits
+P1061	MAP Circuits Low
+P1062	Coolant Sens Circuit High
+P1063	Inactive Coolant Temperature Sensor
+P1064	A/C Request Circuit Low
 P1065	AIR pump relay -circuit high	Wiring, connectors, AIR pump relay, ECM
 P1066	AIR pump relay -circuit low	Wiring, connectors, AIR pump relay, ECM
 P1067	AIR pump relay -circuit open	Wiring, connectors, AIR pump relay, ECM
-P1068	A/C Request Circuit High	
+P1068	A/C Request Circuit High
 P1069	AIR switching valve -circuit malfunction	Wiring, connectors, AIR switching valve, ECM
 P1070	AIR switching valve -circuit malfunction	Wiring, connectors, AIR switching valve, ECM
 P1071	AIR switching valve -circuit malfunction	Wiring, connectors, AIR switching valve, ECM
@@ -6224,7 +6223,7 @@ P1141	Fuel Restriction Indicator Circuit Malfunction
 P1142	Fuel Restriction Condition
 P1143	Air Assist Control Valve Range/Performance
 P1144	Air Assist Control Valve Circuit Malfunction
-P1148	Fuel Rail Pressure Malfunction Pressure Drop In Over-run	
+P1148	Fuel Rail Pressure Malfunction Pressure Drop In Over-run
 P1150	Lack Of HO2S21 Switch - Adaptive Fuel At Limit
 P1151	Lack Of HO2S21 Switch - Sensor Indicates Lean
 P1152	Lack Of HO2S21 Switch - Sensor Indicates Rich
@@ -6235,7 +6234,7 @@ P1156	Fuel Select Switch Malfunction
 P1157	Lack Of HO2S22 Switch - Sensor Indicates Lean
 P1158	Lack Of HO2S22 Switch - Sensor Indicates Rich
 P1159	Fuel Stepper Motor Malfunction
-P1160	Ignition Voltage	
+P1160	Ignition Voltage
 P1166	HO2S-11 Controller Adaptive Test (Bank 1)
 P1167	Invalid Test,throttle not depressed
 P1168	Fuel Rail Sensor In-Range Low Failure
@@ -6545,7 +6544,7 @@ P1495	Leak Detection Pump Solenoid Circuit
 P1496	5 Volt Supply Output Too Low
 P1497	PCM Failure (SRI Mileage Not Stored)
 P1498	High speed Rad Fan Ground CTRL Rly Circuit
-P1499	Hydraulic Cooling Fan Solenoid Circuit Condition	
+P1499	Hydraulic Cooling Fan Solenoid Circuit Condition
 P1500	Vehicle Speed Sensor Intermittent
 P1501	Vehicle Speed Sensor Out Of Self Test Range
 P1502	Vehicle Speed Sensor Intermittent Malfunction 34
@@ -6672,7 +6671,7 @@ P1642	Fuel Pump Monitor Circuit High Input
 P1643	Fuel Pump Monitor Circuit Low Input
 P1644	Fuel Pump Speed Control Circuit Malfunction
 P1645	Fuel Pump Resistor Switch Circuit Malfunction
-P1646	Vehicle Theft System Improper Password	
+P1646	Vehicle Theft System Improper Password
 P164A	MIL Output Circuit Low
 P164B	MIL Output Circuit High
 P1650	PSP Switch Out of Self Test Range
@@ -6681,7 +6680,7 @@ P1652	IAC Monitor Disabled by PSP Switch Failed On
 P1653	Power Steering Output Circuit Malfunction
 P1654	Recirculation Override Circuit Malfunction
 P1655	Starter Disable Circuit Malfunction
-P1656	5V Reference Circuit	
+P1656	5V Reference Circuit
 P1660	Output Circuit Check Signal High
 P1661	Output Circuit Check Signal Low 38
 P1662	IDM_EN Circuit Failure
@@ -6769,7 +6768,7 @@ P1748	EPC Malfunction
 P1749	Pressure Control Solenoid Failed Low
 P1750	Torque converter clutch (TCC) solenoid/ transmission shift control valve/transmission pressure control solenoid -circuit malfunction	Wiring, TCC solenoid/transmission shift control valve/transmission pressure control solenoid, TCM, ECM
 P1751	Shift Solenoid A Performance
-P1753	Transmission Throttle Valve Mechanical Performance	
+P1753	Transmission Throttle Valve Mechanical Performance
 P1754	Coast Clutch Solenoid Circuit Malfunction
 P1755	Intermediate Speed Sensor (ISS) Malfunction
 P1756	Governor Pressure Not Equal To Target At 15�20 PSI
@@ -6920,7 +6919,7 @@ P1915	Reverse Switch Circuit Malfunction
 P1916	High Clutch Drum Speed Sensor Malfunction
 P1917	High Clutch Drum Speed Sensor Intermittent
 P1918	Transmission Range Display Circuit Malfunction
-P1926	CAN Communication With Other Control Units Installed Not Possible	
+P1926	CAN Communication With Other Control Units Installed Not Possible
 P1B13	Parkbywire Unintended Out Of Park Position
 P1B14	Parkbywire Unintended Park Position
 P1C4E	Fault In ABS/ESP Module

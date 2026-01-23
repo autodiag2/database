@@ -1,4 +1,3 @@
-C0000	Vehicle Speed Information Circuit Malfunction
 B0000	ISO/SAE Reserved
 B0001	Driver Frontal Stage 1 Deployment Control (Subfault)
 B0002	Driver Frontal Stage 2 Deployment Control (Subfault)
@@ -1629,6 +1628,7 @@ B0985	ISO/SAE Reserved
 B0987	ISO/SAE Reserved
 B0988	ISO/SAE Reserved
 B3000	ISO/SAE Reserved
+C0000	Vehicle Speed Information Circuit Malfunction
 C0000	ISO/SAE Reserved
 C0001	Traction Control System (TCS) Control Channel A Valve 1 (Subfault)
 C0002	Traction Control System (TCS) Control Channel A Valve 2 (Subfault)

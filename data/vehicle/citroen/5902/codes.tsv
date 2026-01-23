@@ -234,7 +234,6 @@ P2601	Electric coolant pump control fault : Short circuit to earth
 P2603	Electric coolant pump control fault : Open circuit
 P2626	Upstream oxygen sensor pump current fault : Open circuit
 P2670	Sensors 5 volts supply fault : Motorised throttle position – Pedal position 2 – Manifoldpressure –
-Turbo	pressure : Short circuit to earth or to positive
 P3010	Difference between throttle reference value and actual value or throttle jammed fault :Coherence
 P3011	Throttle position regulation fault : Return spring ineffective
 P3012	Throttle position regulation fault : Opening spring ineffective
@@ -242,6 +241,7 @@ P3013	Throttle stops programming fault : Programming incoherent
 P3014	Motorised throttle stops programming fault : Initialisation conditions not met
 P3015	Butterfly position sensor signal fault : Amplified output signal
 P3019	Fault on the dynamics of the proportional oxygen sensor: ageing or incoherence
+Turbo	pressure : Short circuit to earth or to positive
 U0028	Fault: autodiagnostics (MIL) warning lamp error originating from the instrument panel :Not characterised
 U0055	“MIL error” fault coming from the CAN : Not characterised
 U0073	No communication on the CAN fault : Not characterised

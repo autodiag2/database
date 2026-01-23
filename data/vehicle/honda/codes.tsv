@@ -1719,7 +1719,7 @@ B2476	Front Suspension Stroke Sensor Circuit Malfunction
 B2477	Rear Suspension Stroke Sensor Circuit Malfunction
 B2479	Headlight Leveling Control Unit (EEPROM) Error
 B2482	Combination Light Switch Signal Error
-B2601 Parking Sensor CPU Error
+B2601 Parking Sensor CPU Error	
 B2602	Parking Sensor EEPROM Error
 B2625	Left Front Corner Sensor Failure
 B2628	Right Front Corner Sensor Failure

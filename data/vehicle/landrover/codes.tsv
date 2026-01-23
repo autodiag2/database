@@ -44,8 +44,6 @@ P0207	Injector 7 Circuit Fault
 P0208	Injector 8 Circuit Fault
 P0300	Misfire On Multiple Cylinder
 P0301	Misfire Cylinder 1
-P03O2	Misfire Cylinder 2
-P03O3	Misfire Cylinder 3
 P0304	Misfire Cylinder 4
 P0305	Misfire Cylinder 5
 P0306	Misfire Cylinder 6
@@ -60,6 +58,8 @@ P0333	Background Noise High Fault Bank B
 P0335	Crankshaft Position Sensor Signal Error Fault
 P0336	Crankshaft Position Sensor Out of Range Fault
 P0340	Camshaft Position Sensor Signal Error Fault
+P03O2	Misfire Cylinder 2
+P03O3	Misfire Cylinder 3
 P0420	Catalyst Efficiency Low Fault Bank A
 P0430	Catalyst Efficiency Low Fault Bank B
 P0441	Evap Purge Valve Incorrect Flow Fault
@@ -133,10 +133,10 @@ P1442	Evap System Purge Valve Blocked Fault
 P1447	Evap System Purge Valve Open or Short Circuit Fault
 P1448	Evap System Purge Valve Flow 2 Fault
 P1508	Idle Speed Control Open Circuit Fault
-P15O9	Idle Speed Control Short Circuit Fault
 P1514	Neutral Drive Load Fault
 P1516	Neutral Drive Gear Change Fault
 P1517	Neutral Drive Cranking Fault
+P15O9	Idle Speed Control Short Circuit Fault
 P1607	Malfunction Indicator Lamp Short Circuit Fault
 P1608	Malfunction Indicator Lamp Open Circuit Fault
 P1620	Reprogramming Code Learn Fault
