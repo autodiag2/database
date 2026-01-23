@@ -131,7 +131,7 @@ class BrowserTab(tk.Frame):
         tk.Button(dtc_btn_frame, text="Add DTC", command=self.add_dtc).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="Edit DTC", command=self.edit_dtc).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="Remove DTC", command=self.remove_dtc).pack(fill="x", pady=2)
-        tk.Button(dtc_btn_frame, text="Import DTC", command=self.import_dtc).pack(fill="x", pady=2)
+        tk.Button(dtc_btn_frame, text="Import DTCs as TSV", command=self.import_dtc).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="View Duplicates", command=self.view_duplicates).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="View Malformed", command=self.view_malformed).pack(fill="x", pady=2)
 
