@@ -23,6 +23,7 @@ class BrowserTab(tk.Frame):
         self.selected_folder = None
         self.filtered_vehicles = []
         self.filtered_dtcs = []
+        self.all_folders = set()
 
         self._node_map = {}
         self._folder_item_by_rel = {}
@@ -256,30 +257,43 @@ class BrowserTab(tk.Frame):
         root = self.getRootPath()
         nodes = {"": {"folders": set(), "vehicles": []}}
 
+        def ensure_folder(rel_folder: str):
+            rel_folder = rel_folder.replace("\\", "/").strip("/")
+            if rel_folder in ("", "."):
+                return
+            if rel_folder in self.vehicle_dirs:
+                return
+
+            nodes.setdefault(rel_folder, {"folders": set(), "vehicles": []})
+
+            parent = str(Path(rel_folder).parent).replace("\\", "/").strip("/")
+            if parent == ".":
+                parent = ""
+
+            if parent in self.vehicle_dirs:
+                parent = str(Path(parent).parent).replace("\\", "/").strip("/")
+                if parent == ".":
+                    parent = ""
+
+            nodes.setdefault(parent, {"folders": set(), "vehicles": []})
+            nodes[parent]["folders"].add(rel_folder)
+
+        for f in self.all_folders:
+            ensure_folder(f)
+
         for v in vehicles:
             try:
                 rel = v.path.relative_to(root)
             except Exception:
                 continue
 
-            rel_parent = self._norm_rel_folder(rel.parent)
-            rel_vehicle_dir = self._norm_rel_folder(rel)
+            rel_parent = str(rel.parent).replace("\\", "/").strip("/")
+            if rel_parent == ".":
+                rel_parent = ""
 
-            cur = Path(rel_parent)
-            while True:
-                rel_cur = self._norm_rel_folder(cur)
-                rel_par = self._norm_rel_folder(cur.parent)
-                if rel_cur != "":
-                    nodes.setdefault(rel_par, {"folders": set(), "vehicles": []})["folders"].add(rel_cur)
-                    nodes.setdefault(rel_cur, {"folders": set(), "vehicles": []})
-                if rel_cur == "":
-                    break
-                cur = cur.parent
+            ensure_folder(rel_parent)
 
             nodes.setdefault(rel_parent, {"folders": set(), "vehicles": []})["vehicles"].append(v)
-
-        for k in list(nodes.keys()):
-            nodes.setdefault(k, {"folders": set(), "vehicles": []})
 
         return nodes
 
@@ -387,14 +401,45 @@ class BrowserTab(tk.Frame):
 
     def load_vehicles(self):
         self.vehicles.clear()
+        self.all_folders.clear()
+        self.vehicle_dirs = set()
+
         root = self.getRootPath()
-        if not root.exists():
-            root.mkdir(parents=True, exist_ok=True)
+        root.mkdir(parents=True, exist_ok=True)
 
         for desc_file in root.rglob("desc.ini"):
             vpath = desc_file.parent
-            v = Vehicle(vpath)
-            self.vehicles.append(v)
+            self.vehicles.append(Vehicle(vpath))
+            try:
+                relv = str(vpath.relative_to(root)).replace("\\", "/").strip("/")
+            except Exception:
+                relv = ""
+            if relv and relv != ".":
+                self.vehicle_dirs.add(relv)
+
+        for d in root.rglob("*"):
+            if not d.is_dir():
+                continue
+            try:
+                rel = str(d.relative_to(root)).replace("\\", "/").strip("/")
+            except Exception:
+                rel = ""
+            if rel in ("", "."):
+                continue
+            if rel in self.vehicle_dirs:
+                continue
+            self.all_folders.add(rel)
+
+            p = Path(rel).parent
+            while True:
+                rp = str(p).replace("\\", "/").strip("/")
+                if rp in ("", "."):
+                    break
+                if rp not in self.vehicle_dirs:
+                    self.all_folders.add(rp)
+                if p.parent == p:
+                    break
+                p = p.parent
 
         self.selected_vehicle = None
         self.selected_folder = None
