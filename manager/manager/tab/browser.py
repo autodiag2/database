@@ -667,7 +667,7 @@ class BrowserTab(tk.Frame):
             return
         file_path = filedialog.askopenfilename(
             title="Select DTC File to Import",
-            filetypes=[("TSV Files", "*.tsv"), ("Text Files", "*.txt"), ("All Files", "*.*")]
+            filetypes=[("TSV Files", "*.tsv")]
         )
         if not file_path:
             return
@@ -698,7 +698,7 @@ class BrowserTab(tk.Frame):
             return
         file_path = filedialog.askopenfilename(
             title="Select DTC CSV File to Import",
-            filetypes=[("CSV Files", "*.csv"), ("Text Files", "*.txt"), ("All Files", "*.*")]
+            filetypes=[("CSV Files", "*.csv")]
         )
         if not file_path:
             return
@@ -726,7 +726,7 @@ class BrowserTab(tk.Frame):
             return
         file_path = filedialog.askopenfilename(
             title="Select DTC JSON File to Import",
-            filetypes=[("JSON Files", "*.json"), ("All Files", "*.*")]
+            filetypes=[("JSON Files", "*.json")]
         )
         if not file_path:
             return
