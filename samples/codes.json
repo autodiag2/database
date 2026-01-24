@@ -1,0 +1,21 @@
+[
+  {
+    "code": "P0300",
+    "description": "Random/Multiple Cylinder Misfire Detected",
+    "system": "Powertrain",
+    "severity": "High"
+  },
+  {
+    "code": "P0171",
+    "description": "System Too Lean (Bank 1)",
+    "system": "Powertrain",
+    "severity": "Medium"
+  },
+  {
+    "code": "U0100",
+    "description": "Lost Communication With ECM/PCM",
+    "system": "Network",
+    "severity": "High"
+  }
+]
+

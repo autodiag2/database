@@ -1,0 +1,5 @@
+code,description,system,severity
+P0300,Random/Multiple Cylinder Misfire Detected,Powertrain,High
+P0171,System Too Lean (Bank 1),Powertrain,Medium
+U0100,"Lost, Communication With ECM/PCM",Network,High
+
