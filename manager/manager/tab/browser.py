@@ -5,6 +5,7 @@ from manager.vehicle import Vehicle
 import os
 import re
 import csv
+import json
 
 class BrowserTab(tk.Frame):
 
@@ -105,6 +106,7 @@ class BrowserTab(tk.Frame):
         tk.Button(dtc_btn_frame, text="Remove DTC", command=self.remove_dtc).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="Import DTCs from TSV", command=self.import_dtc).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="Import DTCs from CSV", command=self.import_dtc_csv).pack(fill="x", pady=2)
+        tk.Button(dtc_btn_frame, text="Import DTCs from JSON", command=self.import_dtc_json).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="View Duplicates", command=self.view_duplicates).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="View Malformed", command=self.view_malformed).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="Remove Exact Duplicates", command=self.remove_exact_duplicates).pack(fill="x", pady=2)
@@ -334,6 +336,37 @@ class BrowserTab(tk.Frame):
             messagebox.showinfo("Import Complete", f"Imported {len(new_dtcs)} DTC(s) from file.")
         except Exception as e:
             messagebox.showerror("Import Error", f"Failed to import DTCs:\n{e}")
+
+    def import_dtc_json(self):
+        if not self.selected_vehicle:
+            messagebox.showwarning("No Vehicle Selected", "Please select a vehicle first.")
+            return
+        file_path = filedialog.askopenfilename(
+            title="Select DTC JSON File to Import",
+            filetypes=[("JSON Files", "*.json"), ("All Files", "*.*")]
+        )
+        if not file_path:
+            return
+        try:
+            new_dtcs = []
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                if isinstance(data, list):
+                    for item in data:
+                        if isinstance(item, dict) and "code" in item:
+                            code = str(item.get("code", "")).strip()
+                            desc = str(item.get("description", "")).strip()
+                            if code:
+                                new_dtcs.append((code, desc))
+            existing_set = set(tuple(dtc) for dtc in self.selected_vehicle.dtcs)
+            for dtc in new_dtcs:
+                if dtc not in existing_set:
+                    self.selected_vehicle.dtcs.append(dtc)
+            self.update_dtc_filter()
+            messagebox.showinfo("Import Complete", f"Imported {len(new_dtcs)} DTC(s) from file.")
+        except Exception as e:
+            messagebox.showerror("Import Error", f"Failed to import DTCs:\n{e}")
+
 
     def add_dtc(self):
         if not self.selected_vehicle:
