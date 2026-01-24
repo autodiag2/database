@@ -77,9 +77,9 @@ class BrowserTab(tk.Frame):
         self.vehicles_view.heading("duplicates", text="Duplicated DTCs")
         self.vehicles_view.heading("malformed", text="Malformed entries")
 
-        self.vehicles_view.column("#0", stretch=False)
-        self.vehicles_view.column("duplicates", width=140, anchor="center", stretch=False)
-        self.vehicles_view.column("malformed", width=160, anchor="center", stretch=False)
+        self.vehicles_view.column("#0")
+        self.vehicles_view.column("duplicates", width=140, anchor="center")
+        self.vehicles_view.column("malformed", width=160, anchor="center")
 
         self.vehicles_view.tag_configure("duplicates", foreground="orange")
         self.vehicles_view.tag_configure("malformed", foreground="red")
