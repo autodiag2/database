@@ -1,9 +1,10 @@
 import manager.tk.tk as tk
+from manager.tk.Tab import Tab
 from tkinter import ttk, messagebox
 from pathlib import Path
 from manager.vehicle import Vehicle
 
-class QueryTab(tk.Frame):
+class QueryTab(Tab):
     def __init__(self, parent, data_entry: tk.Entry):
         super().__init__(parent)
 
@@ -12,25 +13,8 @@ class QueryTab(tk.Frame):
         self.filtered_vehicles = []
         self.filtered_dtcs = []
 
-        canvas = tk.Canvas(self)
-        scrollbar = tk.Scrollbar(self, orient="vertical", command=canvas.yview)
-        hbar = tk.Scrollbar(self, orient="horizontal", command=canvas.xview)
-        hbar.pack(side="bottom", fill="x")
-        scroll_frame = tk.Frame(canvas)
-
-        scroll_frame.bind(
-            "<Configure>",
-            lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
-        )
-
-        canvas.create_window((0, 0), window=scroll_frame, anchor="nw")
-        canvas.configure(yscrollcommand=scrollbar.set, xscrollcommand=hbar.set)
-
-        canvas.pack(side="left", fill="both", expand=True)
-        scrollbar.pack(side="right", fill="y")
-
         # Filter frame
-        filter_frame = tk.LabelFrame(scroll_frame, text="Filter Options")
+        filter_frame = tk.LabelFrame(self.root, text="Filter Options")
         filter_frame.pack(fill="x", padx=5, pady=5)
 
         tk.Label(filter_frame, text="Manufacturer:").grid(row=0, column=0, sticky="e", padx=2, pady=2)
@@ -46,7 +30,7 @@ class QueryTab(tk.Frame):
         filter_frame.columnconfigure(1, weight=1)
 
         # Query input
-        query_frame = tk.Frame(scroll_frame)
+        query_frame = tk.Frame(self.root)
         query_frame.pack(fill="x", padx=5, pady=5)
         tk.Label(query_frame, text="Enter DTC code:").pack(side="left")
         self.dtc_code_var = tk.StringVar()
@@ -55,11 +39,11 @@ class QueryTab(tk.Frame):
         tk.Button(query_frame, text="Search", command=self.query_dtc).pack(side="left")
 
         # Explanation label
-        self.explanation_label = tk.Label(scroll_frame, text="", justify="left", fg="blue", wraplength=600)
+        self.explanation_label = tk.Label(self.root, text="", justify="left", fg="blue", wraplength=600)
         self.explanation_label.pack(fill="x", padx=5, pady=5)
 
         # Results listbox with scrollbar
-        results_frame = tk.LabelFrame(scroll_frame, text="Matching DTC Descriptions")
+        results_frame = tk.LabelFrame(self.root, text="Matching DTC Descriptions")
         results_frame.pack(fill="both", expand=True, padx=5, pady=5)
 
         self.results_listbox = tk.Listbox(results_frame, height=15)

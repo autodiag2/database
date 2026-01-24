@@ -1,43 +1,26 @@
 import manager.tk.tk as tk
+from manager.tk.Tab import Tab
 from tkinter import filedialog, messagebox
 import subprocess
 import sys
 from pathlib import Path
 
-class GenerateTab(tk.Frame):
+class GenerateTab(Tab):
     def __init__(self, parent, data_entry: tk.Entry):
         super().__init__(parent)
         self.data_entry = data_entry
 
-        canvas = tk.Canvas(self)
-        scrollbar = tk.Scrollbar(self, orient="vertical", command=canvas.yview)
-        hbar = tk.Scrollbar(self, orient="horizontal", command=canvas.xview)
-        hbar.pack(side="bottom", fill="x")
-        self.scroll_frame = tk.Frame(canvas)
-
-        self.scroll_frame.bind(
-            "<Configure>",
-            lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
-        )
-
-        canvas.create_window((0, 0), window=self.scroll_frame, anchor="nw")
-        canvas.configure(yscrollcommand=scrollbar.set, xscrollcommand=hbar.set)
-
-        canvas.pack(side="left", fill="both", expand=True)
-        scrollbar.pack(side="right", fill="y")
-
         row = 0
 
-        tk.Label(self.scroll_frame, text="Export DTC database", font=("TkDefaultFont", 10, "bold")).grid(row=row, column=0, sticky="w", pady=(10, 5))
+        tk.Label(self.root, text="Export DTC database", font=("TkDefaultFont", 10, "bold")).grid(row=row, column=0, sticky="w", pady=(10, 5))
         row += 1
 
-        export_btn = tk.Button(self.scroll_frame, text="Export as SQLite", command=self._export_sqlite)
+        export_btn = tk.Button(self.root, text="Export as SQLite", command=self._export_sqlite)
         export_btn.grid(row=row, column=0, pady=10, sticky="w")
 
         self.status_var = tk.StringVar(value="Idle")
         tk.Label(self, textvariable=self.status_var, anchor="w", justify="left").pack(fill="x", padx=5, pady=5)
 
-        canvas.bind_all("<MouseWheel>", lambda e: canvas.yview_scroll(int(-1 * (e.delta / 120)), "units"))
 
     def _export_sqlite(self):
         data_path = Path(self.data_entry.get()).resolve()
