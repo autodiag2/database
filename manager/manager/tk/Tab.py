@@ -1,4 +1,5 @@
 import manager.tk.tk as tk
+from tkinter import ttk
 
 class Tab(tk.Frame):
     def __init__(self, parent):
@@ -33,3 +34,34 @@ class Tab(tk.Frame):
         self.root.columnconfigure(0, weight=0)
         self.root.columnconfigure(1, weight=1)
         self.root.rowconfigure(0, weight=1)
+
+        def is_child_scrollable(w):
+            while w is not None:
+                if isinstance(w, (ttk.Treeview, tk.Listbox, tk.Text, ttk.Combobox)):
+                    return True
+                w = w.master
+            return False
+
+        def on_wheel(e):
+            w = e.widget.winfo_containing(e.x_root, e.y_root)
+            if is_child_scrollable(w):
+                return
+            d = e.delta
+            if d == 0:
+                return
+            step = -1 if 0 < d else 1
+            self.canvas.yview_scroll(step, "units")
+
+        def on_shift_wheel(e):
+            w = e.widget.winfo_containing(e.x_root, e.y_root)
+            if is_child_scrollable(w):
+                return
+            d = e.delta
+            if d == 0:
+                return
+            step = -1 if 0 < d else 1
+            self.canvas.xview_scroll(step, "units")
+
+        rootw = self.winfo_toplevel()
+        rootw.bind("<MouseWheel>", on_wheel)
+        rootw.bind("<Shift-MouseWheel>", on_shift_wheel)
