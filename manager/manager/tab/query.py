@@ -1,4 +1,4 @@
-import manager.tk as tk
+import manager.tk.tk as tk
 from tkinter import ttk, messagebox
 from pathlib import Path
 from manager.vehicle import Vehicle

@@ -1,4 +1,4 @@
-import manager.tk as tk
+import manager.tk.tk as tk
 from tkinter import filedialog, messagebox
 import subprocess
 import sys

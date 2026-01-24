@@ -1,4 +1,5 @@
-import manager.tk as tk
+import manager.tk.tk as tk
+from manager.tk.Tab import Tab
 from tkinter import ttk, messagebox, simpledialog, filedialog
 from pathlib import Path
 from manager.vehicle import Vehicle
@@ -9,7 +10,7 @@ import json
 import shutil
 import tkinter.font as tkfont
 
-class BrowserTab(tk.Frame):
+class BrowserTab(Tab):
 
     def getRootPath(self):
         return Path(self.data_entry.get()) / "vehicle"
@@ -29,37 +30,7 @@ class BrowserTab(tk.Frame):
         self._folder_item_by_rel = {}
         self._vehicle_item_by_path = {}
 
-        canvas = tk.Canvas(self)
-        
-        scrollbar = tk.Scrollbar(self, orient="vertical", command=canvas.yview)
-
-        hbar = tk.Scrollbar(self, orient="horizontal", command=canvas.xview)
-        hbar.pack(side="bottom", fill="x")
-        
-        self.scroll_frame = tk.Frame(canvas)
-
-        self.scroll_frame.bind(
-            "<Configure>",
-            lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
-        )
-
-        canvas.create_window((0, 0), window=self.scroll_frame, anchor="nw")
-        canvas.configure(yscrollcommand=scrollbar.set, xscrollcommand=hbar.set)
-
-        canvas.pack(side="left", fill="both", expand=True)
-        scrollbar.pack(side="right", fill="y")
-            
-        root = tk.Frame(self.scroll_frame)
-        root.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
-
-        self.scroll_frame.columnconfigure(0, weight=1)
-        self.scroll_frame.rowconfigure(0, weight=1)
-
-        root.columnconfigure(0, weight=0)
-        root.columnconfigure(1, weight=1)
-        root.rowconfigure(0, weight=1)
-
-        left = tk.Frame(root)
+        left = tk.Frame(self.root)
         left.grid(row=0, column=0, sticky="nsew", padx=(0, 8))
         left.columnconfigure(0, weight=1)
         left.rowconfigure(2, weight=1)
@@ -133,7 +104,7 @@ class BrowserTab(tk.Frame):
             ent.grid(row=i, column=1, sticky="we", padx=2, pady=2)
             self.entries[key] = ent
 
-        right = tk.Frame(root)
+        right = tk.Frame(self.root)
         right.grid(row=0, column=1, sticky="nsew")
         right.columnconfigure(0, weight=1)
         right.rowconfigure(2, weight=1)
