@@ -4,6 +4,7 @@ from pathlib import Path
 from manager.vehicle import Vehicle
 import os
 import re
+import csv
 
 class BrowserTab(tk.Frame):
 
@@ -102,7 +103,8 @@ class BrowserTab(tk.Frame):
         tk.Button(dtc_btn_frame, text="Add DTC", command=self.add_dtc).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="Edit DTC", command=self.edit_dtc).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="Remove DTC", command=self.remove_dtc).pack(fill="x", pady=2)
-        tk.Button(dtc_btn_frame, text="Import DTCs as TSV", command=self.import_dtc).pack(fill="x", pady=2)
+        tk.Button(dtc_btn_frame, text="Import DTCs from TSV", command=self.import_dtc).pack(fill="x", pady=2)
+        tk.Button(dtc_btn_frame, text="Import DTCs from CSV", command=self.import_dtc_csv).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="View Duplicates", command=self.view_duplicates).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="View Malformed", command=self.view_malformed).pack(fill="x", pady=2)
         tk.Button(dtc_btn_frame, text="Remove Exact Duplicates", command=self.remove_exact_duplicates).pack(fill="x", pady=2)
@@ -167,10 +169,11 @@ class BrowserTab(tk.Frame):
                 tags.append("duplicates")
             if mal > 0:
                 tags.append("malformed")
+            manufacturer = v.data.get("manufacturer", "")
             self.vehicles_view.insert(
                 "",
                 "end",
-                values=(v.data["manufacturer"], dup, mal),
+                values=(manufacturer, dup, mal),
                 tags=tuple(tags)
             )
 
@@ -295,6 +298,34 @@ class BrowserTab(tk.Frame):
                     else:
                         new_dtcs.append((parts[0], ""))
             # Merge, avoiding duplicates (by code and description)
+            existing_set = set(tuple(dtc) for dtc in self.selected_vehicle.dtcs)
+            for dtc in new_dtcs:
+                if dtc not in existing_set:
+                    self.selected_vehicle.dtcs.append(dtc)
+            self.update_dtc_filter()
+            messagebox.showinfo("Import Complete", f"Imported {len(new_dtcs)} DTC(s) from file.")
+        except Exception as e:
+            messagebox.showerror("Import Error", f"Failed to import DTCs:\n{e}")
+
+    def import_dtc_csv(self):
+        if not self.selected_vehicle:
+            messagebox.showwarning("No Vehicle Selected", "Please select a vehicle first.")
+            return
+        file_path = filedialog.askopenfilename(
+            title="Select DTC CSV File to Import",
+            filetypes=[("CSV Files", "*.csv"), ("Text Files", "*.txt"), ("All Files", "*.*")]
+        )
+        if not file_path:
+            return
+        try:
+            new_dtcs = []
+            with open(file_path, newline="", encoding="utf-8") as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    code = (row.get("code") or "").strip()
+                    desc = (row.get("description") or "").strip()
+                    if code:
+                        new_dtcs.append((code, desc))
             existing_set = set(tuple(dtc) for dtc in self.selected_vehicle.dtcs)
             for dtc in new_dtcs:
                 if dtc not in existing_set:
