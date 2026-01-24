@@ -45,19 +45,29 @@ class BrowserTab(tk.Frame):
         scrollbar.pack(side="right", fill="y")
         canvas.bind_all("<MouseWheel>", lambda e: canvas.yview_scroll(int(-1 * (e.delta / 120)), "units"))
 
-        self.scroll_frame.columnconfigure(0, weight=1)
-        self.scroll_frame.columnconfigure(1, weight=1)
-        self.scroll_frame.rowconfigure(2, weight=1)
-        self.scroll_frame.rowconfigure(7, weight=1)
+        root = tk.Frame(self.scroll_frame)
+        root.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
 
-        tk.Label(self.scroll_frame, text="Search Vehicles:").grid(row=0, column=0, sticky="w", padx=5, pady=2)
+        self.scroll_frame.columnconfigure(0, weight=1)
+        self.scroll_frame.rowconfigure(0, weight=1)
+
+        root.columnconfigure(0, weight=0)
+        root.columnconfigure(1, weight=1)
+        root.rowconfigure(0, weight=1)
+
+        left = tk.Frame(root)
+        left.grid(row=0, column=0, sticky="nsew", padx=(0, 8))
+        left.columnconfigure(0, weight=1)
+        left.rowconfigure(2, weight=1)
+
+        tk.Label(left, text="Search Vehicles:").grid(row=0, column=0, sticky="w", pady=(0, 2))
         self.vehicle_search_var = tk.StringVar()
         self.vehicle_search_var.trace_add("write", lambda *a: self.update_vehicle_filter())
-        self.vehicle_search_entry = tk.Entry(self.scroll_frame, textvariable=self.vehicle_search_var)
-        self.vehicle_search_entry.grid(row=1, column=0, sticky="we", padx=5)
+        self.vehicle_search_entry = tk.Entry(left, textvariable=self.vehicle_search_var)
+        self.vehicle_search_entry.grid(row=1, column=0, sticky="we")
 
         self.vehicles_view = ttk.Treeview(
-            self.scroll_frame,
+            left,
             columns=("duplicates", "malformed"),
             show="tree headings",
             height=20
@@ -68,25 +78,24 @@ class BrowserTab(tk.Frame):
         self.vehicles_view.heading("malformed", text="Malformed entries")
 
         self.vehicles_view.column("#0", stretch=False)
-        self.vehicles_view.column("#0", width=200)
-        self.vehicles_view.column("duplicates", width=140, anchor="center")
-        self.vehicles_view.column("malformed", width=160, anchor="center")
-        for c in self.vehicles_view["columns"]:
-            self.vehicles_view.column(c, stretch=False)
+        self.vehicles_view.column("duplicates", width=140, anchor="center", stretch=False)
+        self.vehicles_view.column("malformed", width=160, anchor="center", stretch=False)
 
         self.vehicles_view.tag_configure("duplicates", foreground="orange")
         self.vehicles_view.tag_configure("malformed", foreground="red")
         self.vehicles_view.tag_configure("folder", foreground="gray30")
 
-        self.vehicles_view.grid(row=2, column=0, sticky="nsw", padx=5, pady=5)
+        self.vehicles_view.grid(row=2, column=0, sticky="nsew", pady=(6, 0))
         self.vehicles_view.bind("<<TreeviewSelect>>", self.on_vehicle_select)
         self.vehicles_view.bind("<Configure>", lambda e: self.autosize_treeview(self.vehicles_view))
 
-        btn_frame = tk.Frame(self.scroll_frame)
-        btn_frame.grid(row=3, column=0, sticky="we", padx=5, pady=5)
+        left_bottom = tk.Frame(left)
+        left_bottom.grid(row=3, column=0, sticky="we", pady=(8, 0))
+        left_bottom.columnconfigure(0, weight=0)
+        left_bottom.columnconfigure(1, weight=1)
 
-        btn_frame = tk.Frame(self.scroll_frame)
-        btn_frame.grid(row=3, column=0, sticky="we", padx=5, pady=5)
+        btn_frame = tk.Frame(left_bottom)
+        btn_frame.grid(row=0, column=0, sticky="nw", padx=(0, 8))
 
         buttons = [
             ("Add Vehicle", self.add_vehicle),
@@ -109,8 +118,8 @@ class BrowserTab(tk.Frame):
         for c in range(cols):
             btn_frame.columnconfigure(c, weight=1)
 
-        details_frame = tk.LabelFrame(self.scroll_frame, text="Vehicle Details")
-        details_frame.grid(row=0, column=1, sticky="nwe", rowspan=4, padx=5, pady=5)
+        details_frame = tk.LabelFrame(left_bottom, text="Vehicle Details")
+        details_frame.grid(row=1, column=0, sticky="we")
         details_frame.columnconfigure(1, weight=1)
 
         self.entries = {}
@@ -120,18 +129,23 @@ class BrowserTab(tk.Frame):
             ent.grid(row=i, column=1, sticky="we", padx=2, pady=2)
             self.entries[key] = ent
 
-        tk.Label(self.scroll_frame, text="Search DTCs:").grid(row=4, column=1, sticky="w", padx=5, pady=2)
+        right = tk.Frame(root)
+        right.grid(row=0, column=1, sticky="nsew")
+        right.columnconfigure(0, weight=1)
+        right.rowconfigure(2, weight=1)
+
+        tk.Label(right, text="Search DTCs:").grid(row=0, column=0, sticky="w", pady=(0, 2))
         self.dtc_search_var = tk.StringVar()
         self.dtc_search_var.trace_add("write", lambda *a: self.update_dtc_filter())
-        self.dtc_search_entry = tk.Entry(self.scroll_frame, textvariable=self.dtc_search_var)
-        self.dtc_search_entry.grid(row=5, column=1, sticky="we", padx=5)
+        self.dtc_search_entry = tk.Entry(right, textvariable=self.dtc_search_var)
+        self.dtc_search_entry.grid(row=1, column=0, sticky="we")
 
-        dtc_frame = tk.LabelFrame(self.scroll_frame, text="DTC List")
-        dtc_frame.grid(row=6, column=1, sticky="nsew", rowspan=3, padx=5, pady=5)
+        dtc_frame = tk.LabelFrame(right, text="DTC List")
+        dtc_frame.grid(row=2, column=0, sticky="nsew", pady=(6, 0))
         dtc_frame.rowconfigure(0, weight=1)
         dtc_frame.columnconfigure(0, weight=1)
 
-        self.dtc_listbox = tk.Listbox(dtc_frame, height=15, width=50)
+        self.dtc_listbox = tk.Listbox(dtc_frame, height=20, width=60)
         self.dtc_listbox.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
         self.dtc_listbox.bind("<Double-Button-1>", lambda e: self.edit_dtc())
 
