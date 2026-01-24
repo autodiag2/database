@@ -6,6 +6,7 @@ import os
 import re
 import csv
 import json
+import shutil
 
 class BrowserTab(tk.Frame):
 
@@ -273,7 +274,6 @@ class BrowserTab(tk.Frame):
             return
         if not messagebox.askyesno("Confirm", f"Delete vehicle folder '{self.selected_vehicle.path.name}'? This cannot be undone."):
             return
-        import shutil
         shutil.rmtree(self.selected_vehicle.path)
         self.load_vehicles()
 
