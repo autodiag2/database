@@ -1,4 +1,4 @@
-import tkinter as tk
+import manager.tk as tk
 from tkinter import filedialog, messagebox
 import subprocess
 import sys
@@ -11,6 +11,8 @@ class GenerateTab(tk.Frame):
 
         canvas = tk.Canvas(self)
         scrollbar = tk.Scrollbar(self, orient="vertical", command=canvas.yview)
+        hbar = tk.Scrollbar(self, orient="horizontal", command=canvas.xview)
+        hbar.pack(side="bottom", fill="x")
         self.scroll_frame = tk.Frame(canvas)
 
         self.scroll_frame.bind(
@@ -19,7 +21,7 @@ class GenerateTab(tk.Frame):
         )
 
         canvas.create_window((0, 0), window=self.scroll_frame, anchor="nw")
-        canvas.configure(yscrollcommand=scrollbar.set)
+        canvas.configure(yscrollcommand=scrollbar.set, xscrollcommand=hbar.set)
 
         canvas.pack(side="left", fill="both", expand=True)
         scrollbar.pack(side="right", fill="y")

@@ -1,4 +1,4 @@
-import tkinter as tk
+import manager.tk as tk
 from tkinter import ttk, messagebox, simpledialog, filedialog
 from pathlib import Path
 from manager.vehicle import Vehicle
@@ -30,7 +30,12 @@ class BrowserTab(tk.Frame):
         self._vehicle_item_by_path = {}
 
         canvas = tk.Canvas(self)
+        
         scrollbar = tk.Scrollbar(self, orient="vertical", command=canvas.yview)
+
+        hbar = tk.Scrollbar(self, orient="horizontal", command=canvas.xview)
+        hbar.pack(side="bottom", fill="x")
+        
         self.scroll_frame = tk.Frame(canvas)
 
         self.scroll_frame.bind(
@@ -39,12 +44,11 @@ class BrowserTab(tk.Frame):
         )
 
         canvas.create_window((0, 0), window=self.scroll_frame, anchor="nw")
-        canvas.configure(yscrollcommand=scrollbar.set)
+        canvas.configure(yscrollcommand=scrollbar.set, xscrollcommand=hbar.set)
 
         canvas.pack(side="left", fill="both", expand=True)
         scrollbar.pack(side="right", fill="y")
-        canvas.bind_all("<MouseWheel>", lambda e: canvas.yview_scroll(int(-1 * (e.delta / 120)), "units"))
-
+            
         root = tk.Frame(self.scroll_frame)
         root.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
 

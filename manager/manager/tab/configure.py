@@ -1,4 +1,4 @@
-import tkinter as tk
+import manager.tk as tk
 from tkinter import filedialog
 from pathlib import Path
 
@@ -8,6 +8,9 @@ class ConfigureTab(tk.Frame):
 
         canvas = tk.Canvas(self)
         scrollbar = tk.Scrollbar(self, orient="vertical", command=canvas.yview)
+
+        hbar = tk.Scrollbar(self, orient="horizontal", command=canvas.xview)
+        hbar.pack(side="bottom", fill="x")
         scroll_frame = tk.Frame(canvas)
 
         scroll_frame.bind(
@@ -16,7 +19,7 @@ class ConfigureTab(tk.Frame):
         )
 
         canvas.create_window((0, 0), window=scroll_frame, anchor="nw")
-        canvas.configure(yscrollcommand=scrollbar.set)
+        canvas.configure(yscrollcommand=scrollbar.set, xscrollcommand=hbar.set)
 
         canvas.pack(side="left", fill="both", expand=True)
         scrollbar.pack(side="right", fill="y")
