@@ -15,12 +15,16 @@ class GenerateTab(Tab):
         tk.Label(self.root, text="Export DTC database", font=("TkDefaultFont", 10, "bold")).grid(row=row, column=0, sticky="w", pady=(10, 5))
         row += 1
 
-        export_btn = tk.Button(self.root, text="Export as SQLite", command=self._export_sqlite)
-        export_btn.grid(row=row, column=0, pady=10, sticky="w")
+        export_sqlite_btn = tk.Button(self.root, text="Export as SQLite", command=self._export_sqlite)
+        export_sqlite_btn.grid(row=row, column=0, pady=(0, 8), sticky="w")
+        row += 1
+
+        export_json_btn = tk.Button(self.root, text="Export as JSON (dir layout)", command=self._export_json)
+        export_json_btn.grid(row=row, column=0, pady=(0, 10), sticky="w")
+        row += 1
 
         self.status_var = tk.StringVar(value="Idle")
         tk.Label(self, textvariable=self.status_var, anchor="w", justify="left").pack(fill="x", padx=5, pady=5)
-
 
     def _export_sqlite(self):
         data_path = Path(self.data_entry.get()).resolve()
@@ -36,7 +40,7 @@ class GenerateTab(Tab):
         )
         if not out_path:
             return
-        
+
         self.status_var.set("Running...\n")
 
         cmd = [
@@ -48,15 +52,56 @@ class GenerateTab(Tab):
             "--out", out_path,
         ]
 
+        res = None
         try:
             res = subprocess.run(cmd, capture_output=True, check=True, text=True)
         except Exception as e:
             messagebox.showerror("Error", str(e))
 
         text = self.status_var.get()
-        if res.stdout:
+        if res and res.stdout:
             text += res.stdout
-        if res.stderr:
+        if res and res.stderr:
+            text += "\nERROR:\n" + res.stderr
+
+        self.status_var.set(text)
+
+    def _export_json(self):
+        data_path = Path(self.data_entry.get()).resolve()
+        if not data_path.exists():
+            self.status_var.set("Data folder does not exist.")
+            return
+
+        out_path = filedialog.asksaveasfilename(
+            defaultextension=".json",
+            title="Export as JSON",
+            filetypes=[("JSON file", "*.json")],
+            initialfile="dtc.json"
+        )
+        if not out_path:
+            return
+
+        self.status_var.set("Running...\n")
+
+        cmd = [
+            sys.executable,
+            "-m",
+            "manager.compile_dtcs_json",
+            "--repo", str(data_path.parent),
+            "--data", str(data_path),
+            "--out", out_path,
+        ]
+
+        res = None
+        try:
+            res = subprocess.run(cmd, capture_output=True, check=True, text=True)
+        except Exception as e:
+            messagebox.showerror("Error", str(e))
+
+        text = self.status_var.get()
+        if res and res.stdout:
+            text += res.stdout
+        if res and res.stderr:
             text += "\nERROR:\n" + res.stderr
 
         self.status_var.set(text)
