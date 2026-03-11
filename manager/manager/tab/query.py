@@ -4,6 +4,7 @@ from tkinter import ttk, messagebox
 from pathlib import Path
 import sqlite3
 import json
+from manager.tab.widget.mod_dtc_panel import ModifyDTCPanel
 
 class QueryTab(Tab):
     def __init__(self, parent, sqlite_path_var: tk.StringVar):
@@ -18,11 +19,13 @@ class QueryTab(Tab):
         self.manufacturer_var = tk.StringVar()
         self.manufacturer_entry = tk.Entry(filter_frame, textvariable=self.manufacturer_var)
         self.manufacturer_entry.grid(row=0, column=1, sticky="we", padx=2, pady=2)
+        self.manufacturer_entry.bind("<Return>", lambda e: self.query_dtc())
 
         tk.Label(filter_frame, text="Engine:").grid(row=1, column=0, sticky="e", padx=2, pady=2)
         self.engine_var = tk.StringVar()
         self.engine_entry = tk.Entry(filter_frame, textvariable=self.engine_var)
         self.engine_entry.grid(row=1, column=1, sticky="we", padx=2, pady=2)
+        self.engine_entry.bind("<Return>", lambda e: self.query_dtc())
 
         filter_frame.columnconfigure(1, weight=1)
 
@@ -34,6 +37,7 @@ class QueryTab(Tab):
         self.dtc_code_entry = tk.Entry(query_frame, textvariable=self.dtc_code_var, width=15)
         self.dtc_code_entry.pack(side="left", padx=5)
         tk.Button(query_frame, text="Search", command=self.query_dtc).pack(side="left")
+        self.dtc_code_entry.bind("<Return>", lambda e: self.query_dtc())
 
         # Explanation label
         self.explanation_label = tk.Label(self.root, text="", justify="left", fg="blue", wraplength=600)
@@ -46,9 +50,23 @@ class QueryTab(Tab):
         self.results_listbox = tk.Listbox(results_frame, height=15)
         self.results_listbox.pack(side="left", fill="both", expand=True, padx=(0,5), pady=5)
 
+        self.modify_panel = ModifyDTCPanel(self.root, sqlite_path_var)
+        self.modify_panel.pack(side="right", fill="both", expand=True)
+
+        self.results_listbox.bind("<Double-Button-1>", lambda e: self.dtc_on_select())
+
         results_scrollbar = tk.Scrollbar(results_frame, orient="vertical", command=self.results_listbox.yview)
         results_scrollbar.pack(side="right", fill="y")
         self.results_listbox.config(yscrollcommand=results_scrollbar.set)
+
+    # Then in query_dtc, bind selection to load panel:
+    def dtc_on_select(self):
+        selection = self.results_listbox.curselection()
+        if not selection:
+            return
+        index = selection[0]
+        dtc_id = self.rows[index]["dtc_id"]  # store self.rows = rows after query
+        self.modify_panel.load_dtc(dtc_id)
 
     def query_dtc(self):
         code_query = self.dtc_code_var.get().strip().upper()
@@ -84,6 +102,8 @@ class QueryTab(Tab):
 
         rows = cur.fetchall()
         conn.close()
+
+        self.rows = rows
 
         self.results_listbox.delete(0, tk.END)
         if not rows:
