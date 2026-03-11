@@ -20,76 +20,76 @@ class Converter():
     def _create_schema(self, conn):
 
         conn.executescript("""
-        create table if not exists manufacturer(
-            id integer primary key autoincrement,
-            name text unique
-        );
+            create table if not exists ad_manufacturer(
+                id integer primary key autoincrement,
+                name text unique
+            );
 
-        create table if not exists ecu(
-            id integer primary key autoincrement,
-            manufacturer_id integer,
-            model text,
-            type text default 'PCM',
-            foreign key(manufacturer_id) references manufacturer(id)
-        );
+            create table if not exists ad_ecu(
+                id integer primary key autoincrement,
+                manufacturer_id integer,
+                model text,
+                type text default 'PCM',
+                foreign key(manufacturer_id) references ad_manufacturer(id)
+            );
 
-        create table if not exists engine(
-            id integer primary key autoincrement,
-            manufacturer_id integer,
-            model text,
-            foreign key(manufacturer_id) references manufacturer(id)
-        );
+            create table if not exists ad_engine(
+                id integer primary key autoincrement,
+                manufacturer_id integer,
+                model text,
+                foreign key(manufacturer_id) references ad_manufacturer(id)
+            );
 
-        create table if not exists vehicle(
-            id integer primary key autoincrement,
-            manufacturer_id integer,
-            model text,
-            years text,
-            foreign key(manufacturer_id) references manufacturer(id)
-        );
+            create table if not exists ad_vehicle(
+                id integer primary key autoincrement,
+                manufacturer_id integer,
+                model text,
+                years text,
+                foreign key(manufacturer_id) references ad_manufacturer(id)
+            );
 
-        create table if not exists dtc_standard(
-            id integer primary key autoincrement,
-            name text unique
-        );
+            create table if not exists ad_dtc_standard(
+                id integer primary key autoincrement,
+                name text unique
+            );
 
-        create table if not exists diag_protocol(
-            id integer primary key autoincrement,
-            name text unique
-        );
+            create table if not exists ad_diag_protocol(
+                id integer primary key autoincrement,
+                name text unique
+            );
 
-        create table if not exists dtc(
-            id integer primary key autoincrement,
-            code text,
-            system text,
-            subsystem text,
-            category text,
-            definition text,
-            description text,
-            severity text,
-            mil text,
-            created text,
-            updated text,
-            related_code text,
-            detection_condition text,
-            causes text,
-            repairs text,
-            evidence text
-        );
+            create table if not exists ad_dtc(
+                id integer primary key autoincrement,
+                code text,
+                system text,
+                subsystem text,
+                category text,
+                definition text,
+                description text,
+                severity text,
+                mil text,
+                created text,
+                updated text,
+                related_code text,
+                detection_condition text,
+                causes text,
+                repairs text,
+                evidence text
+            );
 
-        create table if not exists dtc_standard_link(
-            dtc_id integer,
-            standard_id integer,
-            foreign key(dtc_id) references dtc(id),
-            foreign key(standard_id) references dtc_standard(id)
-        );
+            create table if not exists ad_dtc_standard_link(
+                dtc_id integer,
+                standard_id integer,
+                foreign key(dtc_id) references ad_dtc(id),
+                foreign key(standard_id) references ad_dtc_standard(id)
+            );
 
-        create table if not exists dtc_protocol_link(
-            dtc_id integer,
-            protocol_id integer,
-            foreign key(dtc_id) references dtc(id),
-            foreign key(protocol_id) references diag_protocol(id)
-        );
+            create table if not exists ad_dtc_protocol_link(
+                dtc_id integer,
+                protocol_id integer,
+                foreign key(dtc_id) references ad_dtc(id),
+                foreign key(protocol_id) references ad_diag_protocol(id)
+            );
         """)
 
     def _clear_tables(self, conn):
@@ -141,10 +141,10 @@ class Converter():
                 if not manufacturer:
                     continue
 
-                mid = self._get_or_insert(conn, "manufacturer", "name", manufacturer)
+                mid = self._get_or_insert(conn, "ad_manufacturer", "name", manufacturer)
 
                 conn.execute(
-                    "insert into ecu(manufacturer_id,model) values(?,?)",
+                    "insert into ad_ecu(manufacturer_id,model) values(?,?)",
                     (mid, model),
                 )
 
@@ -175,7 +175,7 @@ class Converter():
                 standards = [standards]
 
             for m in manufacturers:
-                self._get_or_insert(conn, "manufacturer", "name", m)
+                self._get_or_insert(conn, "ad_manufacturer", "name", m)
 
             cur = conn.cursor()
 
@@ -184,7 +184,7 @@ class Converter():
 
             cur.execute(
                 """
-                insert into dtc(
+                insert into ad_dtc(
                     code,
                     system,
                     subsystem,
@@ -225,16 +225,16 @@ class Converter():
             dtc_id = cur.lastrowid
 
             for s in standards:
-                sid = self._get_or_insert(conn, "dtc_standard", "name", s)
+                sid = self._get_or_insert(conn, "ad_dtc_standard", "name", s)
                 conn.execute(
-                    "insert into dtc_standard_link values(?,?)",
+                    "insert into ad_dtc_standard_link values(?,?)",
                     (dtc_id, sid),
                 )
 
             for p in protocols:
-                pid = self._get_or_insert(conn, "diag_protocol", "name", p)
+                pid = self._get_or_insert(conn, "ad_diag_protocol", "name", p)
                 conn.execute(
-                    "insert into dtc_protocol_link values(?,?)",
+                    "insert into ad_dtc_protocol_link values(?,?)",
                     (dtc_id, pid),
                 )
 
