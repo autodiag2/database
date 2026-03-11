@@ -1,0 +1,30 @@
+scope:
+  years: ''
+  ecu:
+  - SIEMENS_SID_807.ini
+  manufacturer:
+  - Citroen
+  model: []
+  engine:
+  - DV6C branch 1
+  protocols:
+  - obd2
+code: P1412
+system: ''
+subsystem: ''
+category: ''
+definition: 'Particle filter : Engine reconfiguration activated following an electrical
+  fault of themeasurement of the differential pressure sensor or of the measurement
+  of the particle emission filter temperature'
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

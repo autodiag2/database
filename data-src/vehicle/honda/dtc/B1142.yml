@@ -1,0 +1,27 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - Honda
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: B1142
+system: ''
+subsystem: ''
+category: ''
+definition: Door Multiplex Control Unit Lost Communication With Front Passenger's
+  Power Window Switch (UART Line Open)
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

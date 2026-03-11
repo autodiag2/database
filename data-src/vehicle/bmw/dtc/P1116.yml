@@ -1,0 +1,26 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - BMW
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: P1116
+system: ''
+subsystem: ''
+category: ''
+definition: Mass Or Volume Air Flow Circuit Range/Performance Problem (Bank 2)
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

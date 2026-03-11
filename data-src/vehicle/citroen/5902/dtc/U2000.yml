@@ -1,0 +1,29 @@
+scope:
+  years: ''
+  ecu:
+  - BOSCH_MED_17.4.ini
+  manufacturer:
+  - Citroen
+  model: []
+  engine:
+  - EP6DT
+  protocols:
+  - obd2
+code: U2000
+system: ''
+subsystem: ''
+category: ''
+definition: 'Fault in reception of the partial wake-up request status on the CAN :
+  Coherence'
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

@@ -1,0 +1,29 @@
+scope:
+  years: ''
+  ecu:
+  - SIEMENS_SID_807.ini
+  manufacturer:
+  - Citroen
+  model: []
+  engine:
+  - DV6C branch 2
+  protocols:
+  - obd2
+code: P1505
+system: ''
+subsystem: ''
+category: ''
+definition: 'Intersystems CAN : The air bag ECU has requested stopping of the engine
+  (following the detection of an impact)'
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

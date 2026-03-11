@@ -1,0 +1,26 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - Cadillac
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: U1166
+system: ''
+subsystem: ''
+category: ''
+definition: Loss of Communications with SCM
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

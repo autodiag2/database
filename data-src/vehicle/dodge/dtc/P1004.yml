@@ -1,0 +1,29 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - Dodge
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: P1004
+system: ''
+subsystem: ''
+category: ''
+definition: Intake manifold air control valve (short runner) - performance Ignition
+  coil, 5 -primary circuit range/performance  Automatic shut-down (ASO) relay circuitopen/short,
+  control circuit short circuit to ground,control circuit open, intake manifold air
+  controlvalve, ECM Wiring, connectors, ignition coil 5, ECM
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

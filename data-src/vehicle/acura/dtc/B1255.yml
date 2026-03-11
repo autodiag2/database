@@ -1,0 +1,26 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - Acura
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: B1255
+system: ''
+subsystem: ''
+category: ''
+definition: Combination Switch Control Unit Lost Communication with MICU (MICU Message)
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

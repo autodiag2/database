@@ -1,0 +1,27 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - Chevrolet
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: P1EE0
+system: ''
+subsystem: ''
+category: ''
+definition: Battery Charger Input Voltage Conditioner Temperature Sensor Circuit High
+  Voltage
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

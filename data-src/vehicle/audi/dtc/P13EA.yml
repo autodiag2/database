@@ -1,0 +1,26 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - Audi
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: P13EA
+system: ''
+subsystem: ''
+category: ''
+definition: ignition timing monitor
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

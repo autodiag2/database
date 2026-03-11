@@ -1,0 +1,28 @@
+scope:
+  years: ''
+  ecu:
+  - BOSCH_MED_17.4.2.ini
+  manufacturer:
+  - Citroen
+  model: []
+  engine:
+  - EP6CDT
+  protocols:
+  - obd2
+code: P1385
+system: ''
+subsystem: ''
+category: ''
+definition: 'Super-knock information : Detection on injection cut-off'
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

@@ -1,0 +1,26 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - Subaru
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: P1101
+system: ''
+subsystem: ''
+category: ''
+definition: Neutral Position Switch Circuit High Input (A/T)
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

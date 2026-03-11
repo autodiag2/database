@@ -1,0 +1,28 @@
+scope:
+  years: ''
+  ecu:
+  - BOSCH_MED_17.4.ini
+  manufacturer:
+  - Citroen
+  model: []
+  engine:
+  - EP6CDT
+  protocols:
+  - obd2
+code: U1209
+system: ''
+subsystem: ''
+category: ''
+definition: 'Engine coolant temperature signal : Voltage below the minimum threshold'
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

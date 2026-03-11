@@ -1,0 +1,26 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - Dodge
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: B1E4A
+system: ''
+subsystem: ''
+category: ''
+definition: 3rd Row Seat Right Backrest Position Sensor Circuit High
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

@@ -1565,7 +1565,7 @@ B1032	SDARS Satellite Antenna Short
 B1046	Driver–Side Curtain Air Bag Module And Other Air Bag Module Circuits Short
 B1047	Driver-Side Side Air Bag Module And Other Air Bag Module Circuits Short
 B1048	Passenger-Side Air Bag Module (Inflator No.1) And Other Air Bag Module Circuits Short
-B1049	"Passenger-Side Pre-Tensioner Seat Belt And Other Air Bag
+B1049	Passenger-Side Pre-Tensioner Seat Belt And Other Air Bag
 B104B	Driver–Side Side Air Bag Sensor No.1 And Other Sensor Circuits Short To Power Supply
 B104C	Passenger–Side Side Air Bag Sensor No.1 And Other Sensor Circuits Short To Power Supply
 B104D	Crash Zone Sensor And Other Sensor Circuits Short To Power Supply
@@ -1575,9 +1575,9 @@ B1050	Passenger–Side Side Air Bag Sensor No.1 Circuit Open Or Short
 B1051	Driver–Side Side Air Bag Sensor No.1 (Internal Circuit Abnormal)
 B1054	Driver-Side Pre-Tensioner Seat Belt And Other Air Bag Module Circuits Short
 B1055	Passenger–Side Side Air Bag Module And Other Air Bag Module Circuits Short
-B1056	"Passenger–Side Curtain Air Bag Module And Other Air Bag
-B1057	"Driver-Side Air Bag Module (Inflator No.1) And Other Air Bag
-B1058	"Driver–Side Air Bag Module (Inflator No.2) And Other Air Bag
+B1056	Passenger–Side Curtain Air Bag Module And Other Air Bag
+B1057	Driver-Side Air Bag Module (Inflator No.1) And Other Air Bag
+B1058	Driver–Side Air Bag Module (Inflator No.2) And Other Air Bag
 B1059	Passenger–Side Air Bag Module (Inflator No.2) And Other Air Bag Module Circuits Short
 B105A	SAS Control Module Activation (Deployment) Control Frequency Error
 B105B	Short To The Driver-Side Side Air Bag Sensor No.2 Circuit And Other Sensor Circuits

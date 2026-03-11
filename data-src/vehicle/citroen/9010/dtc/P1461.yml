@@ -1,0 +1,29 @@
+scope:
+  years: ''
+  ecu:
+  - DELPHI_DCM_3.5.ini
+  manufacturer:
+  - Citroen
+  model: []
+  engine:
+  - Dw10c
+  protocols:
+  - obd2
+code: P1461
+system: ''
+subsystem: ''
+category: ''
+definition: 'EGR valve : Programming of the electric EGR valve; Discrepancy in the
+  programming of thebottom stop (Valve closed)'
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

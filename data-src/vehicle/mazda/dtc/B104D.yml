@@ -1,0 +1,26 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - Mazda
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: B104D
+system: ''
+subsystem: ''
+category: ''
+definition: Crash Zone Sensor And Other Sensor Circuits Short To Power Supply
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

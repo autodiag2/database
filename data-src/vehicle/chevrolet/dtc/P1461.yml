@@ -1,0 +1,27 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - Chevrolet
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: P1461
+system: ''
+subsystem: ''
+category: ''
+definition: Evaporative Emission (EVAP) System Pressure Incorrect During Fuel Fill
+  Door Open Request
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

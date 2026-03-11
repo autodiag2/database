@@ -1,0 +1,29 @@
+scope:
+  years: ''
+  ecu:
+  - BOSCH_MEV_17.4.ini
+  manufacturer:
+  - Citroen
+  model: []
+  engine:
+  - EP6
+  protocols:
+  - obd2
+code: P1078
+system: ''
+subsystem: ''
+category: ''
+definition: 'Fault in the control of the variable valve lift motor : Modelled temperature
+  of the variable valve lift motor too high (Valvetronic)'
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

@@ -1,0 +1,26 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - GMC
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: P1875
+system: ''
+subsystem: ''
+category: ''
+definition: 4WD Low Switch Circuit Fault (4L60-E, 4L65-E, 4L80-E)
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

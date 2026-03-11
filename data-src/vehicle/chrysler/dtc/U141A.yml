@@ -1,0 +1,26 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - Chrysler
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: U141A
+system: ''
+subsystem: ''
+category: ''
+definition: Implausible Data Received From OCS Sensor 2 - Right Front
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

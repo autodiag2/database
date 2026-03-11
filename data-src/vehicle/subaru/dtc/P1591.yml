@@ -1,0 +1,26 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - Subaru
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: P1591
+system: ''
+subsystem: ''
+category: ''
+definition: Neutral position switch circuit low input
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

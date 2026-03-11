@@ -1,0 +1,26 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - Dodge
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: P1820
+system: ''
+subsystem: ''
+category: ''
+definition: Transmission Transfer Case Clockwise Shift Relay Coil Circuit Failure
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

@@ -1,0 +1,30 @@
+scope:
+  years: ''
+  ecu:
+  - SIEMENS_SID_807.ini
+  manufacturer:
+  - Citroen
+  model: []
+  engine:
+  - DV6C branch 2
+  protocols:
+  - obd2
+code: P1A88
+system: ''
+subsystem: ''
+category: ''
+definition: 'Reversible alternator : Prohibited value of the limitation of the energising
+  current orof the voltage or of the temperature or of the operating status of the
+  alternator'
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

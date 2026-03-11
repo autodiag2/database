@@ -1,0 +1,26 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - Hyundai
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: C1313
+system: ''
+subsystem: ''
+category: ''
+definition: Sensor 2 RF channel Failure
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

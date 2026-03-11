@@ -5665,7 +5665,7 @@ P1853	Transfer Case Contact Plate 'B' Short Circuit to Ground
 P1857	Transfer Case Contact Plate C Short Circuit to Ground
 P1861	Transfer Case Contact Plate 'D' Short Circuit to Ground
 P1867	Transfer Case Contact Plate General Circuit Failure
-P187B	"Tire Size Out of Acceptable Range - AWD Disabled / Limited
+P187B	Tire Size Out of Acceptable Range - AWD Disabled / Limited
 P188B	All Wheel Drive Clutch Control Circuit
 P188C	All Wheel Drive Relay Module Communication Circuit
 P188D	All Wheel Drive Relay Module Feedback Circuit

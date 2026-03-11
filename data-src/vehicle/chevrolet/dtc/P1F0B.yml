@@ -1,0 +1,26 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - Chevrolet
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: P1F0B
+system: ''
+subsystem: ''
+category: ''
+definition: A/C Compressor Motor Start-Up Current Performance
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

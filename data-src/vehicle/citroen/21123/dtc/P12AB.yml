@@ -1,0 +1,29 @@
+scope:
+  years: ''
+  ecu:
+  - SIEMENS_SID_803.ini
+  manufacturer:
+  - Citroen
+  model: []
+  engine:
+  - DW10BTED4
+  protocols:
+  - obd2
+code: P12AB
+system: ''
+subsystem: ''
+category: ''
+definition: 'Correction of injector flow rate cylinder 4 : Injector jammed closed
+  or cylinder problem'
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

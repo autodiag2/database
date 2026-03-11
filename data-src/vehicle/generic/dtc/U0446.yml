@@ -1,0 +1,26 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - Generic
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: U0446
+system: ''
+subsystem: ''
+category: ''
+definition: Invalid Data Received From Body Control Module (BCM) E
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex

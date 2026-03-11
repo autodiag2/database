@@ -1,0 +1,26 @@
+scope:
+  years: ''
+  ecu: []
+  manufacturer:
+  - Jeep
+  model: []
+  engine: []
+  protocols:
+  - obd2
+code: U1954
+system: ''
+subsystem: ''
+category: ''
+definition: Brake2 (From Brake System Module) - CRC/MC In Fault Or Missing Message
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 12:58:09'
+updated: '2026-03-11 12:58:09'
+related_codes: []
+detection_conditions: []
+causes: []
+repairs: []
+evidence:
+  sources:
+  - obdcodex
