@@ -1,0 +1,55 @@
+scope:
+  years: 2002-2010
+  ecu:
+    - PCM
+  manufacturer:
+    - Honda
+    - Acura
+  model:
+    - TL
+    - TSX
+  engine:
+    - K24
+    - K20
+  protocols:
+    - obd2
+
+code: P1102
+system: powertrain
+subsystem: intake_air_system
+category: engine
+definition: Mass Air Flow (MAF) sensor circuit low input or performance issue
+description: The PCM detects the MAF sensor voltage below the expected threshold for more than 2 seconds, indicating a possible sensor or circuit fault.
+severity: medium
+mil: true
+created: 2026-03-11 17:15:00
+updated: 2026-03-11 17:15:00
+
+related_codes:
+  - P0100
+  - P0107
+  - P0108
+
+detection_conditions:
+  - PCM monitors MAF sensor voltage
+  - Sensor voltage below expected range
+  - Condition persists for ≥ 2 seconds
+
+causes:
+  - dirty or contaminated MAF sensor
+  - faulty MAF sensor
+  - intake air leaks upstream of MAF
+  - damaged wiring or connectors in MAF circuit
+  - PCM circuit or driver fault
+
+repairs:
+  - clean MAF sensor
+  - inspect intake tubing for leaks or cracks
+  - check wiring harness and connectors
+  - replace MAF sensor if defective
+  - inspect PCM if circuit fault suspected
+
+evidence:
+  sources:
+    - obdcodex
+    - https://www.dtcdecode.com/Acura/P1102
