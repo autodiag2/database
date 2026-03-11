@@ -70,9 +70,9 @@ def main():
     content_frame.pack(fill="both", expand=True)
 
     configure_tab = ConfigureTab(content_frame)
-    browser_tab = BrowserTab(content_frame, configure_tab.path_entry)
-    generate_tab = GenerateTab(content_frame, configure_tab.path_entry)
-    query_tab = QueryTab(content_frame, configure_tab.path_entry)
+    browser_tab = BrowserTab(content_frame, configure_tab.plain_path_entry)
+    generate_tab = GenerateTab(content_frame, configure_tab.plain_path_entry)
+    query_tab = QueryTab(content_frame, configure_tab.plain_path_entry)
 
     tabs = (configure_tab, browser_tab, query_tab, generate_tab)
     for tab in tabs:
