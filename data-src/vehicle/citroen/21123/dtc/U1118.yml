@@ -1,12 +1,10 @@
 scope:
-  years: any
-  ecu:
-  - SIEMENS_SID_803.ini
-  manufacturer:
-  - Citroen
-  model: []
-  engine:
-  - DW10BTED4
+  vehicle:
+  - manufacturer: Citroen
+    model: ''
+    engine: DW10BTED4
+    ecu: SIEMENS_SID_803.ini
+    years: any
   protocol:
   - obd2
   standard:
@@ -19,8 +17,8 @@ definition: 'CAN communication : Absence of communication with the BSI ECU'
 description: ''
 severity: ''
 mil: ''
-created: '2026-03-11 13:46:12'
-updated: '2026-03-11 13:46:12'
+created: '2026-03-11 21:33:35'
+updated: '2026-03-11 21:33:35'
 related_code: []
 detection_condition: []
 causes: []

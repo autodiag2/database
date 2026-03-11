@@ -1,12 +1,10 @@
 scope:
-  years: any
-  ecu:
-  - DELPHI_DCM_3.5.ini
-  manufacturer:
-  - Citroen
-  model: []
-  engine:
-  - Dw10c
+  vehicle:
+  - manufacturer: Citroen
+    model: ''
+    engine: Dw10c
+    ecu: DELPHI_DCM_3.5.ini
+    years: any
   protocol:
   - obd2
   standard:
@@ -19,8 +17,8 @@ definition: 'EGR valve : Position incorrect (Closed too far) (APV)'
 description: ''
 severity: ''
 mil: ''
-created: '2026-03-11 13:46:12'
-updated: '2026-03-11 13:46:12'
+created: '2026-03-11 21:33:35'
+updated: '2026-03-11 21:33:35'
 related_code: []
 detection_condition: []
 causes: []

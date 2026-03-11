@@ -88,11 +88,15 @@ for desc_file in tqdm(desc_files, desc="Processing desc.ini files"):
             
             entry = {
                 'scope': {
-                    'years': 'any',
-                    'ecu': [ecu] if ecu else [],
-                    'manufacturer': ( [manufacturer] if manufacturer else [] ) if is_manufacturer_specific(code) else '',
-                    'model': [],
-                    'engine': [engine] if engine else [],
+                    'vehicle': [
+                        {
+                            'manufacturer': manufacturer if is_manufacturer_specific(code) else 'saej2012.2002',
+                            'model': '',
+                            'engine': engine,
+                            'ecu': ecu,
+                            'years': 'any'
+                        }
+                    ],
                     'protocol': ['obd2'],
                     'standard': ["saej2012.2002"]
                 },

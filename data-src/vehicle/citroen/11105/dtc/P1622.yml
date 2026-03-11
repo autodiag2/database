@@ -1,12 +1,10 @@
 scope:
-  years: any
-  ecu:
-  - MAGNETI_MARELLI_MM6KP.ini
-  manufacturer:
-  - Citroen
-  model: []
-  engine:
-  - EW7A
+  vehicle:
+  - manufacturer: Citroen
+    model: ''
+    engine: EW7A
+    ecu: MAGNETI_MARELLI_MM6KP.ini
+    years: any
   protocol:
   - obd2
   standard:
@@ -20,8 +18,8 @@ definition: 'Incoherence between the various butterfly angle and intake pressure
 description: ''
 severity: ''
 mil: ''
-created: '2026-03-11 13:46:12'
-updated: '2026-03-11 13:46:12'
+created: '2026-03-11 21:33:35'
+updated: '2026-03-11 21:33:35'
 related_code: []
 detection_condition: []
 causes: []

@@ -1,12 +1,10 @@
 scope:
-  years: any
-  ecu:
-  - BOSCH_MEV_17.4.ini
-  manufacturer:
-  - Citroen
-  model: []
-  engine:
-  - EP6
+  vehicle:
+  - manufacturer: Citroen
+    model: ''
+    engine: EP6
+    ecu: BOSCH_MEV_17.4.ini
+    years: any
   protocol:
   - obd2
   standard:
@@ -20,8 +18,8 @@ definition: 'Fault in the programming of the variable valve lift system : Error 
 description: ''
 severity: ''
 mil: ''
-created: '2026-03-11 13:46:12'
-updated: '2026-03-11 13:46:12'
+created: '2026-03-11 21:33:35'
+updated: '2026-03-11 21:33:35'
 related_code: []
 detection_condition: []
 causes: []

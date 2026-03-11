@@ -1,12 +1,10 @@
 scope:
-  years: any
-  ecu:
-  - BOSCH_EDC16C34.ini
-  manufacturer:
-  - Citroen
-  model: []
-  engine:
-  - DV6TED4
+  vehicle:
+  - manufacturer: Citroen
+    model: ''
+    engine: DV6TED4
+    ecu: BOSCH_EDC16C34.ini
+    years: any
   protocol:
   - obd2
   standard:
@@ -20,8 +18,8 @@ definition: 'Pre-heating relay circuit : Control short-circuited to earth or ope
 description: ''
 severity: ''
 mil: ''
-created: '2026-03-11 13:46:12'
-updated: '2026-03-11 13:46:12'
+created: '2026-03-11 21:33:35'
+updated: '2026-03-11 21:33:35'
 related_code: []
 detection_condition: []
 causes: []

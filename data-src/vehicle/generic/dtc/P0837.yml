@@ -1,9 +1,10 @@
 scope:
-  years: any
-  ecu: []
-  manufacturer: ''
-  model: []
-  engine: []
+  vehicle:
+  - manufacturer: saej2012.2002
+    model: ''
+    engine: ''
+    ecu: ''
+    years: any
   protocol:
   - obd2
   standard:
@@ -16,8 +17,8 @@ definition: Four Wheel Drive (4WD) Switch Circuit Range/Performance
 description: ''
 severity: ''
 mil: ''
-created: '2026-03-11 13:46:12'
-updated: '2026-03-11 13:46:12'
+created: '2026-03-11 21:33:35'
+updated: '2026-03-11 21:33:35'
 related_code: []
 detection_condition: []
 causes: []

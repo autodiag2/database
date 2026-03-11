@@ -1,10 +1,10 @@
 scope:
-  years: any
-  ecu: []
-  manufacturer:
-  - Fiat
-  model: []
-  engine: []
+  vehicle:
+  - manufacturer: Fiat
+    model: ''
+    engine: ''
+    ecu: ''
+    years: any
   protocol:
   - obd2
   standard:
@@ -17,8 +17,8 @@ definition: Torque Request Signal From TCM Denied
 description: ''
 severity: ''
 mil: ''
-created: '2026-03-11 13:46:12'
-updated: '2026-03-11 13:46:12'
+created: '2026-03-11 21:33:35'
+updated: '2026-03-11 21:33:35'
 related_code: []
 detection_condition: []
 causes: []

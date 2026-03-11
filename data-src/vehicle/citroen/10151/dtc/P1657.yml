@@ -1,12 +1,10 @@
 scope:
-  years: any
-  ecu:
-  - BOSCH_MED_17.4.ini
-  manufacturer:
-  - Citroen
-  model: []
-  engine:
-  - EP6CDT
+  vehicle:
+  - manufacturer: Citroen
+    model: ''
+    engine: EP6CDT
+    ecu: BOSCH_MED_17.4.ini
+    years: any
   protocol:
   - obd2
   standard:
@@ -19,8 +17,8 @@ definition: 'Engine status signal fault : No signal'
 description: ''
 severity: ''
 mil: ''
-created: '2026-03-11 13:46:12'
-updated: '2026-03-11 13:46:12'
+created: '2026-03-11 21:33:35'
+updated: '2026-03-11 21:33:35'
 related_code: []
 detection_condition: []
 causes: []
