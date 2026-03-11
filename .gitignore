@@ -5,3 +5,4 @@ dist/
 *.sqlite*
 TODO
 dtc.json
+private-doc
