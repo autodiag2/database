@@ -11,8 +11,17 @@ class QueryTab(Tab):
         super().__init__(parent)
         self.sqlite_path_var = sqlite_path_var
 
+        top_container = tk.Frame(self.root)
+        top_container.pack(fill="both")
+
+        top_container_left = tk.Frame(top_container)
+        top_container_left.pack(fill="both", side="left")
+
+        top_container_right = tk.Frame(top_container)
+        top_container_right.pack(fill="both", side="right")
+
         # Filter frame
-        filter_frame = tk.LabelFrame(self.root, text="Filter Options")
+        filter_frame = tk.LabelFrame(top_container_left, text="Filter Options")
         filter_frame.pack(fill="x", padx=5, pady=5)
 
         tk.Label(filter_frame, text="Manufacturer:").grid(row=0, column=0, sticky="e", padx=2, pady=2)
@@ -30,7 +39,7 @@ class QueryTab(Tab):
         filter_frame.columnconfigure(1, weight=1)
 
         # Query input
-        query_frame = tk.Frame(self.root)
+        query_frame = tk.Frame(top_container_left)
         query_frame.pack(fill="x", padx=5, pady=5)
         tk.Label(query_frame, text="Enter DTC code:").pack(side="left")
         self.dtc_code_var = tk.StringVar()
@@ -40,24 +49,22 @@ class QueryTab(Tab):
         self.dtc_code_entry.bind("<Return>", lambda e: self.query_dtc())
 
         # Explanation label
-        self.explanation_label = tk.Label(self.root, text="", justify="left", fg="blue", wraplength=600)
+        self.explanation_label = tk.Label(top_container_left, text="", justify="left", fg="blue", wraplength=600)
         self.explanation_label.pack(fill="x", padx=5, pady=5)
 
         # Results listbox with scrollbar
-        results_frame = tk.LabelFrame(self.root, text="Matching DTC Descriptions")
+        results_frame = tk.LabelFrame(top_container_left, text="Matching DTC Descriptions")
         results_frame.pack(fill="both", expand=True, padx=5, pady=5)
 
         self.results_listbox = tk.Listbox(results_frame, height=15)
         self.results_listbox.pack(side="left", fill="both", expand=True, padx=(0,5), pady=5)
-
-        self.modify_panel = ModifyDTCPanel(self.root, sqlite_path_var)
-        self.modify_panel.pack(side="right", fill="both", expand=True)
-
         self.results_listbox.bind("<Double-Button-1>", lambda e: self.dtc_on_select())
-
         results_scrollbar = tk.Scrollbar(results_frame, orient="vertical", command=self.results_listbox.yview)
         results_scrollbar.pack(side="right", fill="y")
         self.results_listbox.config(yscrollcommand=results_scrollbar.set)
+
+        self.modify_panel = ModifyDTCPanel(top_container_right, sqlite_path_var)
+        self.modify_panel.pack(side="left", fill="both", expand=True, pady=5, padx=5)
 
     # Then in query_dtc, bind selection to load panel:
     def dtc_on_select(self):

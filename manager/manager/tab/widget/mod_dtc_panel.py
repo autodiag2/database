@@ -1,32 +1,15 @@
 import manager.tk.tk as tk
-from manager.tk.Tab import Tab
 from tkinter import ttk, messagebox
 from pathlib import Path
 import sqlite3
 import json
 import datetime
 
-
 class ModifyDTCPanel(tk.Frame):
     def __init__(self, parent, sqlite_path_var: tk.StringVar):
         super().__init__(parent)
         self.sqlite_path_var = sqlite_path_var
         self.current_dtc_id = None
-
-        # Scrollable canvas
-        canvas = tk.Canvas(self)
-        scrollbar = ttk.Scrollbar(self, orient="vertical", command=canvas.yview)
-        self.inner_frame = tk.Frame(canvas)
-
-        self.inner_frame.bind(
-            "<Configure>",
-            lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
-        )
-        canvas.create_window((0, 0), window=self.inner_frame, anchor="nw")
-        canvas.configure(yscrollcommand=scrollbar.set)
-
-        canvas.pack(side="left", fill="both", expand=True)
-        scrollbar.pack(side="right", fill="y")
 
         # Fields
         self.entries = {}
@@ -37,14 +20,15 @@ class ModifyDTCPanel(tk.Frame):
             "manufacturer", "standards", "protocols"
         ]
         for i, f in enumerate(fields):
-            tk.Label(self.inner_frame, text=f).grid(row=i, column=0, sticky="e", padx=2, pady=2)
-            entry = tk.Entry(self.inner_frame, width=60)
+            tk.Label(self, text=f).grid(row=i, column=0, sticky="e", padx=2, pady=2)
+            entry = tk.Entry(self, width=60)
             entry.grid(row=i, column=1, sticky="we", padx=2, pady=2)
             self.entries[f] = entry
-        self.inner_frame.columnconfigure(1, weight=1)
 
-        # Save button
-        tk.Button(self.inner_frame, text="Save Changes", command=self.save_changes).grid(
+        self.columnconfigure(1, weight=1)
+
+        # Save button (always visible, outside any scroll area)
+        tk.Button(self, text="Save Changes", command=self.save_changes).grid(
             row=len(fields), column=0, columnspan=2, pady=10
         )
 
@@ -67,15 +51,7 @@ class ModifyDTCPanel(tk.Frame):
             conn.close()
             return
 
-        # Get manufacturer
-        cur.execute("""
-            select m.name
-            from ad_manufacturer m
-            join ad_dtc d on d.id=?
-            left join ad_manufacturer m2 on m2.id=m.id
-        """, (dtc_id,))
-        m = cur.fetchone()
-        manufacturer = m["name"] if m else ""
+        manufacturer = ""
 
         # Get standards
         cur.execute("""
@@ -103,10 +79,8 @@ class ModifyDTCPanel(tk.Frame):
             "description", "severity", "mil", "related_code",
             "detection_condition", "causes", "repairs", "evidence"
         ]:
-            val = dtc[f]
-            if val in (None, ""):
-                val = ""
-            elif f in ("related_code","detection_condition","causes","repairs","evidence"):
+            val = dtc[f] or ""
+            if f in ("related_code","detection_condition","causes","repairs","evidence"):
                 try:
                     val = json.dumps(json.loads(val), indent=2)
                 except:
@@ -146,12 +120,10 @@ class ModifyDTCPanel(tk.Frame):
             manufacturer_id = cur.lastrowid
 
         # Update DTC
-        values = {}
-        for f in [
+        values = {f: self.entries[f].get().strip() for f in [
             "code", "system", "subsystem", "category", "definition",
             "description", "severity", "mil"
-        ]:
-            values[f] = self.entries[f].get().strip()
+        ]}
 
         # Update JSON fields
         for f in ["related_code","detection_condition","causes","repairs","evidence"]:
@@ -165,7 +137,7 @@ class ModifyDTCPanel(tk.Frame):
                 val_json = json.dumps([])
             values[f] = val_json
 
-        # Update timestamps
+        # Update timestamp
         values["updated"] = datetime.datetime.now().isoformat()
 
         # Apply update
