@@ -1,12 +1,13 @@
 scope:
-  years: ''
+  years: any
   ecu: []
-  manufacturer:
-  - Generic
+  manufacturer: ''
   model: []
   engine: []
-  protocols:
+  protocol:
   - obd2
+  standard:
+  - saej2012.2002
 code: P0113
 system: ''
 subsystem: ''
@@ -15,12 +16,12 @@ definition: Intake Air Temperature Sensor 1 Circuit High
 description: ''
 severity: ''
 mil: ''
-created: '2026-03-11 12:58:09'
-updated: '2026-03-11 12:58:09'
-related_codes: []
-detection_conditions: []
+created: '2026-03-11 13:46:12'
+updated: '2026-03-11 13:46:12'
+related_code: []
+detection_condition: []
 causes: []
 repairs: []
 evidence:
-  sources:
+  source:
   - obdcodex

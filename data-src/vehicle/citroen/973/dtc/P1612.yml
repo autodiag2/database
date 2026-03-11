@@ -1,5 +1,5 @@
 scope:
-  years: ''
+  years: any
   ecu:
   - MAGNETI_MARELLI_MM6KP.ini
   manufacturer:
@@ -7,8 +7,10 @@ scope:
   model: []
   engine:
   - EW10A
-  protocols:
+  protocol:
   - obd2
+  standard:
+  - saej2012.2002
 code: P1612
 system: ''
 subsystem: ''
@@ -17,12 +19,12 @@ definition: 'Coded engine immobiliser generation 2 : Anti-start code entry failu
 description: ''
 severity: ''
 mil: ''
-created: '2026-03-11 12:58:09'
-updated: '2026-03-11 12:58:09'
-related_codes: []
-detection_conditions: []
+created: '2026-03-11 13:46:12'
+updated: '2026-03-11 13:46:12'
+related_code: []
+detection_condition: []
 causes: []
 repairs: []
 evidence:
-  sources:
+  source:
   - obdcodex

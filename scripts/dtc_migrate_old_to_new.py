@@ -1,3 +1,4 @@
+# migrate the old database to new system, yml definition for codes
 import csv
 import configparser
 import yaml
@@ -84,14 +85,16 @@ for desc_file in tqdm(desc_files, desc="Processing desc.ini files"):
             if (not is_manufacturer_specific(code) or definition.startswith("ISO/SAE Reserved")) and not is_generic_folder:
                 continue
 
+            
             entry = {
                 'scope': {
-                    'years': '',
+                    'years': 'any',
                     'ecu': [ecu] if ecu else [],
-                    'manufacturer': [manufacturer] if manufacturer else [],
+                    'manufacturer': ( [manufacturer] if manufacturer else [] ) if is_manufacturer_specific(code) else '',
                     'model': [],
                     'engine': [engine] if engine else [],
-                    'protocols': ['obd2']
+                    'protocol': ['obd2'],
+                    'standard': ["saej2012.2002"]
                 },
                 'code': code,
                 'system': '',
@@ -103,12 +106,12 @@ for desc_file in tqdm(desc_files, desc="Processing desc.ini files"):
                 'mil': '',
                 'created': now,
                 'updated': now,
-                'related_codes': [],
-                'detection_conditions': [],
+                'related_code': [],
+                'detection_condition': [],
                 'causes': [],
                 'repairs': [],
                 'evidence': {
-                    'sources': ['obdcodex']
+                    'source': ['obdcodex']
                 }
             }
 

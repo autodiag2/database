@@ -1,58 +1,28 @@
 scope:
-  years: 2002-2010
-  ecu:
-    - PCM
+  years: any
+  ecu: []
   manufacturer:
-    - Honda
-    - Acura
-  model:
-    - TL
-    - TSX
-  engine:
-    - K24
-    - K20
-  protocols:
-    - obd2
-
+  - Acura
+  model: []
+  engine: []
+  protocol:
+  - obd2
+  standard:
+  - saej2012.2002
 code: P1077
-system: powertrain
-subsystem: intake_manifold_runner
-category: engine
-definition: Intake Manifold Tuning (IMT) valve stuck in high RPM position
-description: When the PCM sends a close (long runner) command, no long runner return signal is received for at least 7 seconds.
-severity: medium 
-mil: true
-created: 2026-03-11 11:27:14
-updated: 2026-03-11 11:27:14
-
-related_codes:
-  - P1076
-  - P2004
-  - P2005
-
-detection_conditions:
-  - PCM commands IMT valve to long runner position
-  - IMT position switch does not change state
-  - condition persists for ≥ 7 seconds
-
-causes:
-  - intake manifold tuning valve actuator failure
-  - IMT control solenoid malfunction
-  - intake manifold runner mechanism jammed or carbon buildup
-  - vacuum line leak or disconnected vacuum hose
-  - faulty IMT position sensor
-  - damaged wiring or connector in IMT control circuit
-  - PCM driver fault
-
-repairs:
-  - inspect intake manifold runner linkage for binding or carbon deposits
-  - test IMT actuator or vacuum diaphragm operation
-  - check vacuum hoses for leaks or disconnections
-  - verify IMT solenoid electrical operation
-  - inspect wiring harness and connectors
-  - replace faulty IMT actuator or solenoid if defective
-
+system: ''
+subsystem: ''
+category: ''
+definition: Intake Manifold Tuning (IMT) Valve Stuck in High RPM Position
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-11 13:46:12'
+updated: '2026-03-11 13:46:12'
+related_code: []
+detection_condition: []
+causes: []
+repairs: []
 evidence:
-  sources:
-    - obdcodex
-    - https://www.dtcdecode.com/Acura/P1077
+  source:
+  - obdcodex
