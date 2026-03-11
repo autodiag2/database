@@ -2,16 +2,13 @@ import manager.tk.tk as tk
 from manager.tk.Tab import Tab
 from tkinter import ttk, messagebox
 from pathlib import Path
-from manager.vehicle import Vehicle
+import sqlite3
+import json
 
 class QueryTab(Tab):
-    def __init__(self, parent, data_entry: tk.Entry):
+    def __init__(self, parent, sqlite_path_var: tk.StringVar):
         super().__init__(parent)
-
-        self.data_entry = data_entry
-        self.vehicles = []
-        self.filtered_vehicles = []
-        self.filtered_dtcs = []
+        self.sqlite_path_var = sqlite_path_var
 
         # Filter frame
         filter_frame = tk.LabelFrame(self.root, text="Filter Options")
@@ -53,22 +50,6 @@ class QueryTab(Tab):
         results_scrollbar.pack(side="right", fill="y")
         self.results_listbox.config(yscrollcommand=results_scrollbar.set)
 
-        self.load_vehicles()
-
-    def getRootPath(self):
-        return Path(self.data_entry.get()) / "vehicle"
-
-    def load_vehicles(self):
-        self.vehicles.clear()
-        root = self.getRootPath()
-        if not root.exists():
-            return
-        for desc_file in root.rglob("desc.ini"):
-            vpath = desc_file.parent
-            v = Vehicle(vpath)
-            self.vehicles.append(v)
-        self.filtered_vehicles = self.vehicles
-
     def query_dtc(self):
         code_query = self.dtc_code_var.get().strip().upper()
         if not code_query:
@@ -78,51 +59,57 @@ class QueryTab(Tab):
         manufacturer_filter = self.manufacturer_var.get().strip().lower()
         engine_filter = self.engine_var.get().strip().lower()
 
-        matches = []
-        for vehicle in self.vehicles:
-            man = vehicle.data.get("manufacturer", "").lower()
-            eng = vehicle.data.get("engine", "").lower()
+        sqlite_file = Path(self.sqlite_path_var.get())
+        if not sqlite_file.exists():
+            messagebox.showerror("Database Error", "SQLite database not found.")
+            return
 
-            if manufacturer_filter and manufacturer_filter not in man:
-                continue
-            if engine_filter and engine_filter not in eng:
-                continue
+        conn = sqlite3.connect(sqlite_file)
+        conn.row_factory = sqlite3.Row
+        cur = conn.cursor()
 
-            for code, desc in vehicle.dtcs:
-                if code.upper() == code_query:
-                    matches.append((vehicle.data.get("manufacturer", vehicle.path.name), code, desc))
+        # Build query with joins
+        query = """
+        select d.id as dtc_id, d.code, d.definition, m.name as manufacturer
+        from ad_dtc d
+        join ad_dtc_standard_link s_link on s_link.dtc_id = d.id
+        join ad_dtc_standard s on s.id = s_link.standard_id
+        join ad_dtc_protocol_link p_link on p_link.dtc_id = d.id
+        join ad_diag_protocol p on p.id = p_link.protocol_id
+        left join ad_manufacturer m on lower(m.name) like ?
+        where upper(d.code)=?
+        """
+        manufacturer_param = f"%{manufacturer_filter}%" if manufacturer_filter else "%"
+        cur.execute(query, (manufacturer_param, code_query))
+
+        rows = cur.fetchall()
+        conn.close()
 
         self.results_listbox.delete(0, tk.END)
-        if not matches:
+        if not rows:
             self.explanation_label.config(text=self._explain_code(code_query) + "\n\nNo matching DTC found for the selected filters.")
             return
 
-        for man, code, desc in matches:
-            display_desc = desc if desc else "(No description)"
-            self.results_listbox.insert(tk.END, f"{man}: {code} - {display_desc}")
+        for r in rows:
+            display_desc = r["definition"] if r["definition"] else "(No description)"
+            self.results_listbox.insert(tk.END, f"{r['manufacturer'] or 'Unknown'}: {r['code']} - {display_desc}")
 
         self.explanation_label.config(text=self._explain_code(code_query))
 
     def _explain_code(self, code: str) -> str:
         if not code:
             return ""
-
-        # Basic explanation of DTC code structure (generic example)
         first_char = code[0] if len(code) > 0 else ""
         if first_char not in "PBCU":
             return "DTC codes typically start with one of P, B, C, or U."
-
         explanation = (
             f"Explanation of DTC code structure:\n"
             f"{code} :\n"
             f"- {first_char} = System: P=Powertrain, B=Body, C=Chassis, U=Network\n"
         )
-
         if len(code) >= 5:
             second_char = code[1]
             explanation += f"- {second_char} = 0 for generic, 1 for manufacturer-specific\n"
             explanation += "- Next three digits = specific fault code\n"
-
-        explanation += "\nPowertrain fault example:\nP0012 : Camshaft Position Timing Over-Advanced or System Performance (generic fault)\n"
-
+        explanation += "\nExample: P0012 : Camshaft Position Timing Over-Advanced or System Performance (generic fault)\n"
         return explanation
