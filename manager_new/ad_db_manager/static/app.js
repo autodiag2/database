@@ -3,7 +3,7 @@ let current=null
 async function load(){
     const q=document.getElementById("search").value
     const r=await fetch("/api/dtc/"+q)
-    const data=await r.json()
+    const data=[await r.json()]
 
     const table=document.getElementById("table")
     table.innerHTML=""

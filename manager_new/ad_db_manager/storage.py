@@ -2,7 +2,7 @@ import yaml
 from pathlib import Path
 from ad_db_manager.log import logger
 
-DATA_ROOT = Path("data-src")
+DATA_ROOT = Path(__file__).resolve().parent.parent.parent / "data-src"
 
 def dtc_files():
     return list(DATA_ROOT.rglob("*.yml"))
