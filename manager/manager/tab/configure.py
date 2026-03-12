@@ -58,14 +58,13 @@ class ConfigureTab(Tab):
         # Button to write formated data
         write_to_sqlite_button = tk.Button(self.root, text="Write to sqlite", command=self.on_write_sqlite)
         write_to_sqlite_button.pack(anchor="w", pady=5, padx=10)
-        self.write_to_sqlite_label = tk.Label(self.root, text="")
-        self.write_to_sqlite_label.pack(anchor="w", padx=10)
 
         # Button to write formated data
         write_to_yaml_button = tk.Button(self.root, text="Write to Yaml", command=self.on_write_yaml)
         write_to_yaml_button.pack(anchor="w", pady=5, padx=10)
-        self.write_to_yaml_label = tk.Label(self.root, text="")
-        self.write_to_yaml_label.pack(anchor="w", padx=10)
+
+        self.progress_label = tk.Label(self.root, text="")
+        self.progress_label.pack(anchor="w", padx=10)
 
         # Progress bar
         self.progress = ttk.Progressbar(self.root, length=400, mode="determinate")
@@ -83,9 +82,9 @@ class ConfigureTab(Tab):
             self.root.after(0, lambda: self.progress.configure(value=percent))
 
         if conv.to_sqlite(progress_callback=progress_hook):
-            self.write_to_sqlite_label.config(text="Success", fg="green")
+            self.progress_label.config(text="Success", fg="green")
         else:
-            self.write_to_sqlite_label.config(text="Export failed", fg="red")
+            self.progress_label.config(text="Export failed", fg="red")
 
     def _write_yaml_background(self):
         conv = ConverterToYaml(
@@ -99,16 +98,16 @@ class ConfigureTab(Tab):
             self.root.after(0, lambda: self.progress.configure(value=percent))
 
         if conv.to_yaml(progress_callback=progress_hook):
-            self.write_to_yaml_label.config(text="Success", fg="green")
+            self.progress_label.config(text="Success", fg="green")
         else:
-            self.write_to_yaml_label.config(text="Export failed", fg="red")
+            self.progress_label.config(text="Export failed", fg="red")
 
     def on_write_yaml(self):
         if not self._sqlite_check_exists():
-            self.write_to_yaml_label.config(text="SQLite not found, configure it", fg="red")
+            self.progress_label.config(text="SQLite not found, configure it", fg="red")
             return
         
-        self.write_to_yaml_label.config(text="Processing...", fg="black")
+        self.progress_label.config(text="Processing...", fg="black")
         self.progress["value"] = 0
         self.progress["maximum"] = 100
 
@@ -117,10 +116,10 @@ class ConfigureTab(Tab):
 
     def on_write_sqlite(self):
         if not self._plain_check_folder_exists():
-            self.write_to_sqlite_label.config(text="Plain text not found, configure it", fg="red")
+            self.progress_label.config(text="Plain text not found, configure it", fg="red")
             return
         
-        self.write_to_sqlite_label.config(text="Processing...", fg="black")
+        self.progress_label.config(text="Processing...", fg="black")
         self.progress["value"] = 0
         self.progress["maximum"] = 100
 
