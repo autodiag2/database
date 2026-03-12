@@ -7,7 +7,8 @@ import yaml
 import pathlib
 import threading
 from tkinter import ttk
-from manager.converter import Converter
+from manager.converter_to_sqlite import ConverterToSqlite
+from manager.converter_to_yaml import ConverterToYaml
 
 class ConfigureTab(Tab):
     def __init__(self, parent):
@@ -60,12 +61,18 @@ class ConfigureTab(Tab):
         self.write_to_sqlite_label = tk.Label(self.root, text="")
         self.write_to_sqlite_label.pack(anchor="w", padx=10)
 
+        # Button to write formated data
+        write_to_yaml_button = tk.Button(self.root, text="Write to Yaml", command=self.on_write_yaml)
+        write_to_yaml_button.pack(anchor="w", pady=5, padx=10)
+        self.write_to_yaml_label = tk.Label(self.root, text="")
+        self.write_to_yaml_label.pack(anchor="w", padx=10)
+
         # Progress bar
         self.progress = ttk.Progressbar(self.root, length=400, mode="determinate")
         self.progress.pack(anchor="w", padx=10, pady=5)
 
     def _write_sqlite_background(self):
-        conv = Converter(
+        conv = ConverterToSqlite(
             plain_text_db=Path(self.plain_path_var.get()),
             sqlite_db=Path(self.sqlite_path_var.get())
         )
@@ -79,6 +86,34 @@ class ConfigureTab(Tab):
             self.write_to_sqlite_label.config(text="Success", fg="green")
         else:
             self.write_to_sqlite_label.config(text="Export failed", fg="red")
+
+    def _write_yaml_background(self):
+        conv = ConverterToYaml(
+            plain_text_db=Path(self.plain_path_var.get()),
+            sqlite_db=Path(self.sqlite_path_var.get())
+        )
+
+        # Hook to update progress dynamically
+        def progress_hook(current, total):
+            percent = int((current / total) * 100)
+            self.root.after(0, lambda: self.progress.configure(value=percent))
+
+        if conv.to_yaml(progress_callback=progress_hook):
+            self.write_to_sqlite_label.config(text="Success", fg="green")
+        else:
+            self.write_to_sqlite_label.config(text="Export failed", fg="red")
+
+    def on_write_yaml(self):
+        if not self._sqlite_check_exists():
+            self.write_to_yaml_label.config(text="Plain text not found, configure it", fg="red")
+            return
+        
+        self.write_to_yaml_label.config(text="Processing...", fg="black")
+        self.progress["value"] = 0
+        self.progress["maximum"] = 100
+
+        # Run converter in background
+        threading.Thread(target=self._write_yaml_background, daemon=True).start()
 
     def on_write_sqlite(self):
         if not self._plain_check_folder_exists():

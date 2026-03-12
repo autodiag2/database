@@ -5,8 +5,7 @@ from pathlib import Path
 import json
 import datetime
 
-
-class Converter():
+class ConverterToSqlite():
 
     def __init__(self, plain_text_db: Path = None, sqlite_db: Path = None):
         self.plain_text_db = Path(plain_text_db) if plain_text_db else None
