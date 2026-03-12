@@ -92,8 +92,13 @@ for desc_file in tqdm(desc_files, desc="Processing desc.ini files"):
                         {
                             'manufacturer': manufacturer if is_manufacturer_specific(code) else 'saej2012.2002',
                             'model': '',
-                            'engine': engine,
-                            'ecu': ecu,
+                            'engine': {
+                                "manufacturer": '',
+                                "model": engine,
+                            }, 'ecu': {
+                                "manufacturer": '',
+                                "model": ecu,
+                            },
                             'years': 'any'
                         }
                     ],

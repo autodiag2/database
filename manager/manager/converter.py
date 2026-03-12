@@ -255,31 +255,106 @@ class Converter():
                 manufacturer = v.get("manufacturer")
                 model = v.get("model")
                 years = v.get("years")
+                years = v.get("years")
+                if years == "any" or years == "":
+                    years = None
+                ecu = v.get("ecu")
+                engine = v.get("engine")
 
                 mid = self._get_or_insert(conn, "ad_manufacturer", "name", manufacturer)
 
-                cur.execute(
-                    "insert into ad_vehicle(manufacturer_id, model, years) values(?,?,?)",
-                    (mid, model, years)
-                )
-                vehicle_id = cur.lastrowid
-                vehicles_id.append(vehicle_id)
+                ecu = v.get("ecu", {})
+                engine = v.get("engine", {})
 
-                ecu = v.get("ecu")
-                if ecu:
-                    eid = self._get_or_insert(conn, "ad_ecu", "model", ecu)
-                    conn.execute(
-                        "insert into ad_vehicle_ecu_link values(?,?)",
-                        (vehicle_id, eid)
-                    )
+                ecu_manufacturer = ecu.get("manufacturer")
+                ecu_model = ecu.get("model")
 
-                engine = v.get("engine")
-                if engine:
-                    enid = self._get_or_insert(conn, "ad_engine", "model", engine)
+                engine_manufacturer = engine.get("manufacturer")
+                engine_model = engine.get("model")
+
+                eid = None
+                if ecu_model:
+                    if not ecu_manufacturer:
+                        ecu_manufacturer = manufacturer
+                    ecu_mid = self._get_or_insert(conn, "ad_manufacturer", "name", ecu_manufacturer)
+
                     cur.execute(
-                        "insert into ad_vehicle_engine_link values(?,?)",
-                        (vehicle_id, enid)
+                        "select id from ad_ecu where manufacturer_id=? and model=?",
+                        (ecu_mid, ecu_model)
                     )
+                    r = cur.fetchone()
+                    if r:
+                        eid = r[0]
+                    else:
+                        cur.execute(
+                            "insert into ad_ecu(manufacturer_id, model) values(?,?)",
+                            (ecu_mid, ecu_model)
+                        )
+                        eid = cur.lastrowid
+
+                enid = None
+                if engine_model:
+                    if not engine_manufacturer:
+                        engine_manufacturer = manufacturer
+                    eng_mid = self._get_or_insert(conn, "ad_manufacturer", "name", engine_manufacturer)
+
+                    cur.execute(
+                        "select id from ad_engine where manufacturer_id=? and model=?",
+                        (eng_mid, engine_model)
+                    )
+                    r = cur.fetchone()
+                    if r:
+                        enid = r[0]
+                    else:
+                        cur.execute(
+                            "insert into ad_engine(manufacturer_id, model) values(?,?)",
+                            (eng_mid, engine_model)
+                        )
+                        enid = cur.lastrowid
+
+                cur.execute("""
+                    select v.id
+                    from ad_vehicle v
+                    left join ad_vehicle_ecu_link vel on vel.vehicle_id = v.id
+                    left join ad_vehicle_engine_link ven on ven.vehicle_id = v.id
+                    where v.manufacturer_id=?
+                    and (v.model=? or (? is null and v.model is null))
+                    and (v.years=? or (? is null and v.years is null))
+                    and (
+                        (? is null and vel.ecu_id is null)
+                        or vel.ecu_id=?
+                    )
+                    and (
+                        (? is null and ven.engine_id is null)
+                        or ven.engine_id=?
+                    )
+                    limit 1
+                """, (mid, model, model, years, years, eid, eid, enid, enid))
+
+                r = cur.fetchone()
+
+                if r:
+                    vehicle_id = r[0]
+                else:
+                    cur.execute(
+                        "insert into ad_vehicle(manufacturer_id, model, years) values(?,?,?)",
+                        (mid, model, years)
+                    )
+                    vehicle_id = cur.lastrowid
+
+                    if eid:
+                        conn.execute(
+                            "insert into ad_vehicle_ecu_link values(?,?)",
+                            (vehicle_id, eid)
+                        )
+
+                    if enid:
+                        conn.execute(
+                            "insert into ad_vehicle_engine_link values(?,?)",
+                            (vehicle_id, enid)
+                        )
+
+                vehicles_id.append(vehicle_id)
 
             created = d.get("created") or datetime.datetime.now().isoformat()
             updated = d.get("updated") or created
@@ -326,6 +401,21 @@ class Converter():
 
             for vehicle_id in vehicles_id:
                 conn.execute("insert into ad_dtc_vehicle_link values(?,?)", (dtc_id, vehicle_id))
+            scope = d.get("scope", {})
+
+            for proto_name in self._ensure_list(scope.get("protocol")):
+                pid = self._get_or_insert(conn, "ad_diag_protocol", "name", proto_name)
+                conn.execute(
+                    "insert into ad_dtc_protocol_link values(?,?)",
+                    (dtc_id, pid)
+                )
+
+            for std_name in self._ensure_list(scope.get("standard")):
+                sid = self._get_or_insert(conn, "ad_dtc_standard", "name", std_name)
+                conn.execute(
+                    "insert into ad_dtc_standard_link values(?,?)",
+                    (dtc_id, sid)
+                )
 
         conn.commit()
         conn.close()

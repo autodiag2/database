@@ -2,8 +2,12 @@ scope:
   vehicle:
   - manufacturer: Citroen
     model: ''
-    engine: EP6CDT
-    ecu: BOSCH_MED_17.4.ini
+    engine:
+      manufacturer: ''
+      model: EP6CDT
+    ecu:
+      manufacturer: ''
+      model: BOSCH_MED_17.4.ini
     years: any
   protocol:
   - obd2
@@ -18,8 +22,8 @@ definition: 'Clutch pedal switch signal fault : Inconsistent with the position o
 description: ''
 severity: ''
 mil: ''
-created: '2026-03-11 21:33:35'
-updated: '2026-03-11 21:33:35'
+created: '2026-03-12 09:07:00'
+updated: '2026-03-12 09:07:00'
 related_code: []
 detection_condition: []
 causes: []

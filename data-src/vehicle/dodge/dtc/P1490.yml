@@ -2,8 +2,12 @@ scope:
   vehicle:
   - manufacturer: Dodge
     model: ''
-    engine: ''
-    ecu: ''
+    engine:
+      manufacturer: ''
+      model: ''
+    ecu:
+      manufacturer: ''
+      model: ''
     years: any
   protocol:
   - obd2
@@ -17,8 +21,8 @@ definition: Low Speed Fan CTRL Relay Circuit
 description: ''
 severity: ''
 mil: ''
-created: '2026-03-11 21:33:35'
-updated: '2026-03-11 21:33:35'
+created: '2026-03-12 09:07:00'
+updated: '2026-03-12 09:07:00'
 related_code: []
 detection_condition: []
 causes: []

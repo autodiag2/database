@@ -2,8 +2,12 @@ scope:
   vehicle:
   - manufacturer: Citroen
     model: ''
-    engine: DV6C branch 1
-    ecu: SIEMENS_SID_807.ini
+    engine:
+      manufacturer: ''
+      model: DV6C branch 1
+    ecu:
+      manufacturer: ''
+      model: SIEMENS_SID_807.ini
     years: any
   protocol:
   - obd2
@@ -18,8 +22,8 @@ definition: 'Intersystems CAN : Request for ECU wake-up (wire signal) inconsiste
 description: ''
 severity: ''
 mil: ''
-created: '2026-03-11 21:33:35'
-updated: '2026-03-11 21:33:35'
+created: '2026-03-12 09:07:00'
+updated: '2026-03-12 09:07:00'
 related_code: []
 detection_condition: []
 causes: []
