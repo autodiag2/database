@@ -146,7 +146,11 @@ class ConfigureTab(Tab):
             id integer primary key,
             name text
         );
-
+        create table if not exists vpic_country(
+            id integer primary key,
+            name text,
+            displayorder integer
+        );
         create table if not exists vpic_wmi(
             id integer primary key,
             wmi text,
@@ -165,6 +169,7 @@ class ConfigureTab(Tab):
 
         create index if not exists idx_vpic_wmi_wmi on vpic_wmi(wmi);
         create index if not exists idx_vpic_wmi_manufacturerid on vpic_wmi(manufacturerid);
+        create index if not exists idx_vpic_wmi_countryid on vpic_wmi(countryid);
         """)
 
     def _load_vpic_background(self):
@@ -183,12 +188,16 @@ class ConfigureTab(Tab):
             pg_cur.execute(f"select count(*) from {schema}.manufacturer")
             manufacturer_total = pg_cur.fetchone()[0]
 
+            pg_cur.execute(f"select count(*) from {schema}.country")
+            country_total = pg_cur.fetchone()[0]
+
             pg_cur.execute(f"select count(*) from {schema}.wmi")
             wmi_total = pg_cur.fetchone()[0]
 
-            total = manufacturer_total + wmi_total
+            total = manufacturer_total + country_total + wmi_total
             self.root.after(0, lambda: self.progress.configure(value=0, maximum=100))
 
+            sqlite_cur.execute("delete from vpic_country")
             sqlite_cur.execute("delete from vpic_wmi")
             sqlite_cur.execute("delete from vpic_manufacturer")
             sqlite_conn.commit()
@@ -204,6 +213,21 @@ class ConfigureTab(Tab):
             for row in pg_cur.fetchall():
                 sqlite_cur.execute(
                     "insert into vpic_manufacturer(id, name) values(?, ?)",
+                    row
+                )
+                done += 1
+                percent = int((done / total) * 100) if total > 0 else 100
+                self.root.after(0, lambda p=percent: self.progress.configure(value=p))
+
+            pg_cur.execute(f"""
+                select id, name, displayorder
+                from {schema}.country
+                order by id
+            """)
+
+            for row in pg_cur.fetchall():
+                sqlite_cur.execute(
+                    "insert into vpic_country(id, name, displayorder) values(?, ?, ?)",
                     row
                 )
                 done += 1
