@@ -1,9 +1,8 @@
 import sqlite3
 import yaml
-import pathlib
 from pathlib import Path
 import json
-import datetime
+
 
 class ConverterToYaml():
 
@@ -40,6 +39,100 @@ class ConverterToYaml():
         value = value.strip("-")
         return value or "unknown"
 
+    def _vehicle_scope_rows(self, cur, dtc_id):
+        cur.execute("""
+            select
+                v.id as vehicle_id,
+                vm.name as vehicle_manufacturer,
+                v.model as vehicle_model,
+                v.years as vehicle_years
+            from ad_dtc_vehicle_link dvl
+            join ad_vehicle v on v.id = dvl.vehicle_id
+            left join ad_manufacturer vm on vm.id = v.manufacturer_id
+            where dvl.dtc_id = ?
+            order by vm.name, v.model, v.id
+        """, (dtc_id,))
+        vehicle_rows = cur.fetchall()
+
+        scope_vehicles = []
+
+        for vr in vehicle_rows:
+            vehicle_id = vr["vehicle_id"]
+
+            cur.execute("""
+                select
+                    m.name as manufacturer,
+                    e.model as model,
+                    e.type as type
+                from ad_vehicle_ecu_link l
+                join ad_ecu e on e.id = l.ecu_id
+                left join ad_manufacturer m on m.id = e.manufacturer_id
+                where l.vehicle_id = ?
+                order by m.name, e.model, e.type
+            """, (vehicle_id,))
+            ecu_rows = cur.fetchall()
+
+            cur.execute("""
+                select
+                    m.name as manufacturer,
+                    e.model as model
+                from ad_vehicle_engine_link l
+                join ad_engine e on e.id = l.engine_id
+                left join ad_manufacturer m on m.id = e.manufacturer_id
+                where l.vehicle_id = ?
+                order by m.name, e.model
+            """, (vehicle_id,))
+            engine_rows = cur.fetchall()
+
+            if len(ecu_rows) == 0:
+                ecu_rows = [{"manufacturer": "", "model": "", "type": ""}]
+
+            if len(engine_rows) == 0:
+                engine_rows = [{"manufacturer": "", "model": ""}]
+
+            for er in engine_rows:
+                for qr in ecu_rows:
+                    scope_vehicles.append({
+                        "manufacturer": vr["vehicle_manufacturer"] or "",
+                        "model": vr["vehicle_model"] or "",
+                        "engine": {
+                            "manufacturer": er["manufacturer"] or "",
+                            "model": er["model"] or ""
+                        },
+                        "ecu": {
+                            "manufacturer": qr["manufacturer"] or "",
+                            "model": qr["model"] or ""
+                        },
+                        "years": vr["vehicle_years"] if vr["vehicle_years"] not in (None, "") else "any"
+                    })
+
+        return scope_vehicles
+
+    def _group_key_from_scope_vehicles(self, scope_vehicles):
+        if len(scope_vehicles) == 0:
+            return ("unknown", tuple(), tuple())
+
+        manufacturers = sorted(set((v.get("manufacturer") or "").strip() for v in scope_vehicles))
+        manufacturer_key = manufacturers[0] if len(manufacturers) > 0 and manufacturers[0] else "unknown"
+
+        engine_keys = sorted(set(
+            (
+                ((v.get("engine") or {}).get("manufacturer") or "").strip(),
+                ((v.get("engine") or {}).get("model") or "").strip()
+            )
+            for v in scope_vehicles
+        ))
+
+        ecu_keys = sorted(set(
+            (
+                ((v.get("ecu") or {}).get("manufacturer") or "").strip(),
+                ((v.get("ecu") or {}).get("model") or "").strip()
+            )
+            for v in scope_vehicles
+        ))
+
+        return (manufacturer_key, tuple(engine_keys), tuple(ecu_keys))
+
     def to_yaml(self, progress_callback) -> bool:
 
         if self.plain_text_db is None or self.sqlite_db is None:
@@ -74,8 +167,7 @@ class ConverterToYaml():
         count = 0
         progress_callback(count, total)
 
-        manufacturer_counts = {}
-        dtc_payloads = []
+        grouped_payloads = {}
 
         for row in rows:
             dtc_id = row["id"]
@@ -143,74 +235,7 @@ class ConverterToYaml():
             """, (dtc_id,))
             related_codes = [r[0] for r in cur.fetchall()]
 
-            cur.execute("""
-                select
-                    v.id as vehicle_id,
-                    vm.name as vehicle_manufacturer,
-                    v.model as vehicle_model,
-                    v.years as vehicle_years
-                from ad_dtc_vehicle_link dvl
-                join ad_vehicle v on v.id = dvl.vehicle_id
-                left join ad_manufacturer vm on vm.id = v.manufacturer_id
-                where dvl.dtc_id = ?
-                order by vm.name, v.model, v.id
-            """, (dtc_id,))
-            vehicle_rows = cur.fetchall()
-
-            scope_vehicles = []
-            primary_manufacturer = "unknown"
-
-            if vehicle_rows:
-                primary_manufacturer = vehicle_rows[0]["vehicle_manufacturer"] or "unknown"
-
-            for vr in vehicle_rows:
-                vehicle_id = vr["vehicle_id"]
-
-                cur.execute("""
-                    select
-                        m.name as manufacturer,
-                        e.model as model
-                    from ad_vehicle_ecu_link l
-                    join ad_ecu e on e.id = l.ecu_id
-                    left join ad_manufacturer m on m.id = e.manufacturer_id
-                    where l.vehicle_id = ?
-                    order by m.name, e.model
-                """, (vehicle_id,))
-                ecu_rows = cur.fetchall()
-
-                cur.execute("""
-                    select
-                        m.name as manufacturer,
-                        e.model as model
-                    from ad_vehicle_engine_link l
-                    join ad_engine e on e.id = l.engine_id
-                    left join ad_manufacturer m on m.id = e.manufacturer_id
-                    where l.vehicle_id = ?
-                    order by m.name, e.model
-                """, (vehicle_id,))
-                engine_rows = cur.fetchall()
-
-                if len(ecu_rows) == 0:
-                    ecu_rows = [{"manufacturer": "", "model": ""}]
-
-                if len(engine_rows) == 0:
-                    engine_rows = [{"manufacturer": "", "model": ""}]
-
-                for er in engine_rows:
-                    for qr in ecu_rows:
-                        scope_vehicles.append({
-                            "manufacturer": vr["vehicle_manufacturer"] or "",
-                            "model": vr["vehicle_model"] or "",
-                            "engine": {
-                                "manufacturer": er["manufacturer"] or "",
-                                "model": er["model"] or ""
-                            },
-                            "ecu": {
-                                "manufacturer": qr["manufacturer"] or "",
-                                "model": qr["model"] or ""
-                            },
-                            "years": vr["vehicle_years"] if vr["vehicle_years"] not in (None, "") else "any"
-                        })
+            scope_vehicles = self._vehicle_scope_rows(cur, dtc_id)
 
             payload = {
                 "scope": {
@@ -238,35 +263,48 @@ class ConverterToYaml():
             if not isinstance(payload["evidence"], dict):
                 payload["evidence"] = {}
 
-            key = self._slug(primary_manufacturer)
-            manufacturer_counts[key] = manufacturer_counts.get(key, 0) + 1
-
-            dtc_payloads.append((key, manufacturer_counts[key], payload))
+            group_key = self._group_key_from_scope_vehicles(scope_vehicles)
+            grouped_payloads.setdefault(group_key, []).append(payload)
 
             count += 1
             progress_callback(count, total)
 
         conn.close()
 
-        for manufacturer_key, index, payload in dtc_payloads:
-            base_dir = root / manufacturer_key
-            if manufacturer_counts[manufacturer_key] > 1:
-                out_dir = base_dir / str(index) / "dtc"
-            else:
-                out_dir = base_dir / "dtc"
+        manufacturer_group_indices = {}
 
+        sorted_group_items = sorted(
+            grouped_payloads.items(),
+            key=lambda item: (
+                self._slug(item[0][0]),
+                json.dumps(item[0][1], ensure_ascii=False),
+                json.dumps(item[0][2], ensure_ascii=False),
+            )
+        )
+
+        for group_key, payloads in sorted_group_items:
+            manufacturer_name = group_key[0]
+            manufacturer_slug = self._slug(manufacturer_name)
+
+            manufacturer_group_indices[manufacturer_slug] = manufacturer_group_indices.get(manufacturer_slug, 0) + 1
+            group_index = manufacturer_group_indices[manufacturer_slug]
+
+            out_dir = root / manufacturer_slug / str(group_index) / "dtc"
             out_dir.mkdir(parents=True, exist_ok=True)
 
-            code = payload.get("code", "") or f"dtc-{index}"
-            out_file = out_dir / f"{code}.yml"
+            payloads_sorted = sorted(payloads, key=lambda p: p.get("code", ""))
 
-            with open(out_file, "w", encoding="utf-8") as f:
-                yaml.safe_dump(
-                    payload,
-                    f,
-                    allow_unicode=True,
-                    sort_keys=False,
-                    default_flow_style=False
-                )
+            for payload in payloads_sorted:
+                code = payload.get("code", "") or "unknown"
+                out_file = out_dir / f"{code}.yml"
+
+                with open(out_file, "w", encoding="utf-8") as f:
+                    yaml.safe_dump(
+                        payload,
+                        f,
+                        allow_unicode=True,
+                        sort_keys=False,
+                        default_flow_style=False
+                    )
 
         return True

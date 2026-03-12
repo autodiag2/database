@@ -99,13 +99,13 @@ class ConfigureTab(Tab):
             self.root.after(0, lambda: self.progress.configure(value=percent))
 
         if conv.to_yaml(progress_callback=progress_hook):
-            self.write_to_sqlite_label.config(text="Success", fg="green")
+            self.write_to_yaml_label.config(text="Success", fg="green")
         else:
-            self.write_to_sqlite_label.config(text="Export failed", fg="red")
+            self.write_to_yaml_label.config(text="Export failed", fg="red")
 
     def on_write_yaml(self):
         if not self._sqlite_check_exists():
-            self.write_to_yaml_label.config(text="Plain text not found, configure it", fg="red")
+            self.write_to_yaml_label.config(text="SQLite not found, configure it", fg="red")
             return
         
         self.write_to_yaml_label.config(text="Processing...", fg="black")
