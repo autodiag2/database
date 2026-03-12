@@ -1,8 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, font
-from manager.tab.browser import BrowserTab
 from manager.tab.configure import ConfigureTab
-from manager.tab.generate import GenerateTab
 from manager.tab.query import QueryTab
 
 def window_ensure_show_and_focus(root):
@@ -70,11 +68,9 @@ def main():
     content_frame.pack(fill="both", expand=True)
 
     configure_tab = ConfigureTab(content_frame)
-    browser_tab = BrowserTab(content_frame, configure_tab.sqlite_path_entry)
-    generate_tab = GenerateTab(content_frame, configure_tab.plain_path_entry)
     query_tab = QueryTab(content_frame, configure_tab.sqlite_path_entry)
 
-    tabs = (configure_tab, browser_tab, query_tab, generate_tab)
+    tabs = (configure_tab, query_tab)
     for tab in tabs:
         tab.place(relx=0, rely=0, relwidth=1, relheight=1)
 
@@ -90,17 +86,11 @@ def main():
     tab_buttons[configure_tab] = ttk.Button(
         switch_frame, text="Configure", style="Tab.TButton", command=lambda: show_tab(configure_tab)
     )
-    tab_buttons[browser_tab] = ttk.Button(
-        switch_frame, text="Browser", style="Tab.TButton", command=lambda: show_tab(browser_tab)
-    )
     tab_buttons[query_tab] = ttk.Button(
-        switch_frame, text="Query", style="Tab.TButton", command=lambda: show_tab(query_tab)
-    )
-    tab_buttons[generate_tab] = ttk.Button(
-        switch_frame, text="Generate", style="Tab.TButton", command=lambda: show_tab(generate_tab)
+        switch_frame, text="Modify", style="Tab.TButton", command=lambda: show_tab(query_tab)
     )
 
-    for b in (tab_buttons[configure_tab], tab_buttons[browser_tab], tab_buttons[query_tab], tab_buttons[generate_tab]):
+    for b in (tab_buttons[configure_tab], tab_buttons[query_tab]):
         b.pack(side="left", padx=0, pady=0, ipady=0, ipadx=0)
 
     show_tab(configure_tab)
