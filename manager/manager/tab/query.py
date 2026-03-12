@@ -96,46 +96,60 @@ class QueryTab(Tab):
         # Build query with joins
         query = """
             select 
-    d.id as dtc_id,
-    d.code,
-    d.definition,
-    m.name as manufacturer,
-    group_concat(distinct s.name) as standards,
-    group_concat(distinct p.name) as protocols,
-    group_concat(distinct sys.name) as systems,
-    group_concat(distinct sub.name) as subsystems,
-    group_concat(distinct cat.name) as categories,
-    group_concat(distinct sev.name) as severities,
-    group_concat(distinct e.model) as ecus,
-    group_concat(distinct en.model) as engines,
-    group_concat(distinct rd.code) as related_codes
-from ad_dtc d
-left join ad_dtc_standard_link s_link on s_link.dtc_id = d.id
-left join ad_dtc_standard s on s.id = s_link.standard_id
-left join ad_dtc_protocol_link p_link on p_link.dtc_id = d.id
-left join ad_diag_protocol p on p.id = p_link.protocol_id
-left join ad_dtc_system_link sys_link on sys_link.dtc_id = d.id
-left join ad_dtc_system sys on sys.id = sys_link.system_id
-left join ad_dtc_subsystem_link sub_link on sub_link.dtc_id = d.id
-left join ad_dtc_subsystem sub on sub.id = sub_link.subsystem_id
-left join ad_dtc_category_link cat_link on cat_link.dtc_id = d.id
-left join ad_dtc_category cat on cat.id = cat_link.category_id
-left join ad_dtc_severity_link sev_link on sev_link.dtc_id = d.id
-left join ad_dtc_severity sev on sev.id = sev_link.severity_id
-left join ad_dtc_ecu_link ecu_link on ecu_link.dtc_id = d.id
-left join ad_ecu e on e.id = ecu_link.ecu_id
-left join ad_manufacturer m 
-    on m.id = e.manufacturer_id
-    and lower(m.name) like ?
-left join ad_dtc_engine_link eng_link on eng_link.dtc_id = d.id
-left join ad_engine en on en.id = eng_link.engine_id
-left join ad_dtc_related rd_link on rd_link.dtc_id = d.id
-left join ad_dtc rd on rd.id = rd_link.related_dtc_id
-where upper(d.code) = ?
-group by d.id
+                d.id as dtc_id,
+                d.code,
+                d.definition,
+                m.name as manufacturer,
+                group_concat(distinct s.name) as standards,
+                group_concat(distinct p.name) as protocols,
+                group_concat(distinct sys.name) as systems,
+                group_concat(distinct sub.name) as subsystems,
+                group_concat(distinct cat.name) as categories,
+                group_concat(distinct sev.name) as severities,
+                group_concat(distinct e.model) as ecus,
+                group_concat(distinct en.model) as engines,
+                group_concat(distinct rd.code) as related_codes
+            from ad_dtc d
+
+            left join ad_dtc_standard_link s_link on s_link.dtc_id = d.id
+            left join ad_dtc_standard s on s.id = s_link.standard_id
+
+            left join ad_dtc_protocol_link p_link on p_link.dtc_id = d.id
+            left join ad_diag_protocol p on p.id = p_link.protocol_id
+
+            left join ad_dtc_system_link sys_link on sys_link.dtc_id = d.id
+            left join ad_dtc_system sys on sys.id = sys_link.system_id
+
+            left join ad_dtc_subsystem_link sub_link on sub_link.dtc_id = d.id
+            left join ad_dtc_subsystem sub on sub.id = sub_link.subsystem_id
+
+            left join ad_dtc_category_link cat_link on cat_link.dtc_id = d.id
+            left join ad_dtc_category cat on cat.id = cat_link.category_id
+
+            left join ad_dtc_severity_link sev_link on sev_link.dtc_id = d.id
+            left join ad_dtc_severity sev on sev.id = sev_link.severity_id
+
+            left join ad_dtc_vehicle_link dv on dv.dtc_id = d.id
+            left join ad_vehicle v on v.id = dv.vehicle_id
+
+            left join ad_vehicle_ecu_link vel on vel.vehicle_id = v.id
+            left join ad_ecu e on e.id = vel.ecu_id
+
+            left join ad_vehicle_engine_link ven on ven.vehicle_id = v.id
+            left join ad_engine en on en.id = ven.engine_id
+
+            left join ad_manufacturer m on m.id = v.manufacturer_id
+
+            left join ad_dtc_related rd_link on rd_link.dtc_id = d.id
+            left join ad_dtc rd on rd.id = rd_link.related_dtc_id
+
+            where upper(d.code) = ?
+            and lower(m.name) like ?
+
+            group by d.id
         """
         manufacturer_param = f"%{manufacturer_filter}%" if manufacturer_filter else "%"
-        cur.execute(query, (manufacturer_param, code_query))
+        cur.execute(query, (code_query, manufacturer_param))
 
         rows = cur.fetchall()
         conn.close()
