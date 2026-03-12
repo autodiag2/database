@@ -1,5 +1,6 @@
 
-The collaborative database of information relative to automotive what you can find in this db:
+The collaborative database of information relative to automotive.
+What you can find in this db:
  - OBD DTCs (manufacturer specific, generic)
  - UDS DTCs
  - ECU information
