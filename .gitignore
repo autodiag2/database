@@ -6,3 +6,4 @@ dist/
 TODO
 dtc.json
 private-doc
+!ad_database.sqlite
