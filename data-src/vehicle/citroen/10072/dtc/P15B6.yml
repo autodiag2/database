@@ -3,11 +3,11 @@ scope:
   - manufacturer: Citroen
     model: ''
     engine:
-      manufacturer: ''
+      manufacturer: Citroen
       model: DV6C branch 2
     ecu:
-      manufacturer: ''
-      model: SIEMENS_SID_807.ini
+      manufacturer: Siemens
+      model: SID 807
     years: any
   protocol:
   - obd2

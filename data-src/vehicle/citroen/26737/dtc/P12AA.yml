@@ -3,11 +3,11 @@ scope:
   - manufacturer: Citroen
     model: ''
     engine:
-      manufacturer: ''
+      manufacturer: Citroen
       model: EP6CDT
     ecu:
-      manufacturer: ''
-      model: BOSCH_MED_17.4.2.ini
+      manufacturer: Bosch
+      model: MED 17.4.2
     years: any
   protocol:
   - obd2

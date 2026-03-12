@@ -3,11 +3,11 @@ scope:
   - manufacturer: Citroen
     model: ''
     engine:
-      manufacturer: ''
+      manufacturer: Citroen
       model: DV6TED4
     ecu:
-      manufacturer: ''
-      model: BOSCH_EDC16C34.ini
+      manufacturer: Bosch
+      model: EDC16C34
     years: any
   protocol:
   - obd2

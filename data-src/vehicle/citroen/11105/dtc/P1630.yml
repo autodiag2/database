@@ -3,11 +3,11 @@ scope:
   - manufacturer: Citroen
     model: ''
     engine:
-      manufacturer: ''
+      manufacturer: Citroen
       model: EW7A
     ecu:
-      manufacturer: ''
-      model: MAGNETI_MARELLI_MM6KP.ini
+      manufacturer: Magneti Marelli
+      model: MM6KP
     years: any
   protocol:
   - obd2

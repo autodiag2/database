@@ -3,11 +3,11 @@ scope:
   - manufacturer: Citroen
     model: ''
     engine:
-      manufacturer: ''
+      manufacturer: Citroen
       model: Dw10c
     ecu:
-      manufacturer: ''
-      model: DELPHI_DCM_3.5.ini
+      manufacturer: Delphi
+      model: DCM 3.5
     years: any
   protocol:
   - obd2
