@@ -2,7 +2,7 @@ import sqlite3
 import yaml
 from pathlib import Path
 import json
-
+import shutil
 
 class ConverterToYaml():
 
@@ -139,6 +139,11 @@ class ConverterToYaml():
             return False
 
         root = self.plain_text_db / "vehicle"
+
+        if root.exists():
+            for p in root.iterdir():
+                if p.is_dir():
+                    shutil.rmtree(p)
         root.mkdir(parents=True, exist_ok=True)
 
         conn = self._connect()
