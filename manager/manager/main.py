@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk, font
 from manager.tab.configure import ConfigureTab
 from manager.tab.query import QueryTab
+import sys
 
 def window_ensure_show_and_focus(root):
     root.lift()

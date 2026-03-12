@@ -17,7 +17,3 @@ Manage the data from a gui
 ```bash
 manager
 ```
-Compile dtcs as a single file
-```bash
-compile_dtcs
-```

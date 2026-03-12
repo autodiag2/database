@@ -19,4 +19,3 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 manager = 'manager.main:main'
-compile_dtcs = 'manager.compile_dtcs_database:main'
