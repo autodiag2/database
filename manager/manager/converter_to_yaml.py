@@ -46,7 +46,7 @@ class ConverterToYaml():
                 vm.name as vehicle_manufacturer,
                 v.model as vehicle_model,
                 v.years as vehicle_years
-            from ad_dtc_vehicle_link dvl
+            from ad_dtc_scope_link dvl
             join ad_vehicle v on v.id = dvl.vehicle_id
             left join ad_manufacturer vm on vm.id = v.manufacturer_id
             where dvl.dtc_id = ?

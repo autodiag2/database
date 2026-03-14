@@ -57,7 +57,7 @@ class ModifyDTCPanel(tk.Frame):
         manufacturer = ""
         cur.execute("""
         select distinct m.name
-        from ad_dtc_vehicle_link dv
+        from ad_dtc_scope_link dv
         join ad_vehicle v on v.id=dv.vehicle_id
         join ad_manufacturer m on m.id=v.manufacturer_id
         where dv.dtc_id=?
@@ -224,7 +224,7 @@ class ModifyDTCPanel(tk.Frame):
 
             cur.execute("""
                 select v.id
-                from ad_dtc_vehicle_link dv
+                from ad_dtc_scope_link dv
                 join ad_vehicle v on v.id=dv.vehicle_id
                 where dv.dtc_id=?
                 limit 1
@@ -245,7 +245,7 @@ class ModifyDTCPanel(tk.Frame):
                 vehicle_id = cur.lastrowid
 
                 cur.execute(
-                    "insert into ad_dtc_vehicle_link(dtc_id,vehicle_id) values(?,?)",
+                    "insert into ad_dtc_scope_link(dtc_id,vehicle_id) values(?,?)",
                     (self.current_dtc_id, vehicle_id)
                 )
 

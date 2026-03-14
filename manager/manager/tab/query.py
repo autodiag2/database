@@ -129,7 +129,7 @@ class QueryTab(Tab):
             left join ad_dtc_severity_link sev_link on sev_link.dtc_id = d.id
             left join ad_dtc_severity sev on sev.id = sev_link.severity_id
 
-            left join ad_dtc_vehicle_link dv on dv.dtc_id = d.id
+            left join ad_dtc_scope_link dv on dv.dtc_id = d.id
             left join ad_vehicle v on v.id = dv.vehicle_id
 
             left join ad_vehicle_ecu_link vel on vel.vehicle_id = v.id
