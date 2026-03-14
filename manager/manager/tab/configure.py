@@ -25,7 +25,7 @@ class ConfigureTab(Tab):
     def __init__(self, parent):
         super().__init__(parent)
 
-        self.plain_path_var = tk.StringVar(value="./data-src/")
+        self.plain_path_var = tk.StringVar(value="./data/")
         self.plain_path_var.trace_add("write", lambda *args: self._plain_check_folder_exists())
 
         # Folder path label + entry
@@ -46,7 +46,7 @@ class ConfigureTab(Tab):
         self._plain_check_folder_exists()
         self._plain_update_status_label()
 
-        self.sqlite_path_var = tk.StringVar(value="./ad_database.sqlite")
+        self.sqlite_path_var = tk.StringVar(value="./data/ad_database.sqlite")
         self.sqlite_path_var.trace_add("write", lambda *args: self._sqlite_check_exists())
 
         sqlite_path_label = tk.Label(self.root, text="SQlite database location:")
