@@ -13,8 +13,4 @@ don't forget to add your sources in the evidence section.
 Then with the manager the data will be compiled to sqlite.
 
 # Data manager
-[See](/manager/README.md) for installation  
-Browse and manage the data:
-![Browser](/doc/browser.png)
-Query DTC:  
-![Query](/doc/query.png)
+[See](/manager/README.md) for installation
