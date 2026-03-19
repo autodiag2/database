@@ -25,7 +25,7 @@ class ConfigureTab(Tab):
     def __init__(self, parent):
         super().__init__(parent)
 
-        self.plain_path_var = tk.StringVar(value="./data/")
+        self.plain_path_var = tk.StringVar(value="./data-src/")
         self.plain_path_var.trace_add("write", lambda *args: self._plain_check_folder_exists())
 
         # Folder path label + entry
