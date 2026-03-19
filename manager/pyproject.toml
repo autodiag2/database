@@ -19,3 +19,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 manager = 'manager.main:main'
+convert_to_sqlite = 'manager.converter_to_sqlite:main'

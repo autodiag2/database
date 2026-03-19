@@ -1,8 +1,11 @@
+#!python3
+import sys
 import sqlite3
 import yaml
 from pathlib import Path
 import json
 import datetime
+from tqdm import tqdm
 
 class ConverterToSqlite():
 
@@ -477,3 +480,38 @@ class ConverterToSqlite():
         conn.commit()
         conn.close()
         return True
+    
+def main():
+    base = Path(__file__).resolve().parent.parent.parent
+
+    src = base / "data-src"
+    dst = base / "data" / "ad_database.sqlite"
+
+    if 1 < len(sys.argv):
+        src = Path(sys.argv[1])
+    if 2 < len(sys.argv):
+        dst = Path(sys.argv[2])
+    converter = ConverterToSqlite(sqlite_db=dst, plain_text_db=src)
+    bar = {"pbar": None, "total": 0}
+
+    def progress_hook(current, total):
+        if bar["pbar"] is None:
+            bar["total"] = total
+            bar["pbar"] = tqdm(total=total, unit="item")
+        delta = current - bar["pbar"].n
+        if 0 < delta:
+            bar["pbar"].update(delta)
+
+    ok = converter.to_sqlite(progress_callback=progress_hook)
+
+    if bar["pbar"] is not None:
+        bar["pbar"].close()
+
+    if ok:
+        print("Success")
+    else:
+        print("Export failed")
+
+
+if __name__ == "__main__":
+    main()
