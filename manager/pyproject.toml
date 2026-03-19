@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 toml = "^0.10.2"
+tqdm = "^4.67.3"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -19,4 +20,5 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 manager = 'manager.main:main'
-convert_to_sqlite = 'manager.converter_to_sqlite:main'
+manager_convert_to_sqlite = 'manager.converter_to_sqlite:main'
+manager_convert_to_yaml = 'manager.converter_to_yaml:main'

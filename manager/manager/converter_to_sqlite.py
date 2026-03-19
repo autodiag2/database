@@ -6,6 +6,7 @@ from pathlib import Path
 import json
 import datetime
 from tqdm import tqdm
+from manager.vpic_sqlite_loader import VpicToSqliteLoader
 
 class ConverterToSqlite():
 
@@ -512,6 +513,27 @@ def main():
     else:
         print("Export failed")
 
+    loader = VpicToSqliteLoader(
+        sqlite_path=str(dst),
+        pg_host="localhost",
+        pg_port="5432",
+        pg_user="jean",
+        pg_password="",
+        pg_dbname="vpic_lite",
+        pg_schema="vpic",
+    )
+
+    bar = {"pbar": None, "total": 0}
+
+    ok = loader.load(progress_callback=progress_hook)
+
+    if bar["pbar"] is not None:
+        bar["pbar"].close()
+    
+    if ok:
+        print("vpic loaded")
+    else:
+        print("error while loading vpic")
 
 if __name__ == "__main__":
     main()
