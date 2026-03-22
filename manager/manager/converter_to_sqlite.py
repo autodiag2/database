@@ -13,7 +13,7 @@ class ConverterToSqlite():
 
     def __init__(self, plain_text_db: Path = None, sqlite_db: Path = None):
         self.plain_text_db = Path(plain_text_db) if plain_text_db else None
-        self.sqlite_db = Path(sqlite_db) if plain_text_db else None
+        self.sqlite_db = Path(sqlite_db) if sqlite_db else None
 
     def _connect(self):
         conn = sqlite3.connect(self.sqlite_db)
@@ -33,37 +33,6 @@ class ConverterToSqlite():
             model text,
             type text default 'ECM',
             foreign key(manufacturer_id) references ad_manufacturer(id)
-        );
-
-        create table if not exists ad_engine(
-            id integer primary key autoincrement,
-            manufacturer_id integer,
-            model text,
-            foreign key(manufacturer_id) references ad_manufacturer(id)
-        );
-
-        create table if not exists ad_vehicle(
-            id integer primary key autoincrement,
-            manufacturer_id integer,
-            model text,
-            years text,
-            foreign key(manufacturer_id) references ad_manufacturer(id)
-        );
-
-        create table if not exists ad_vehicle_ecu_link(
-            vehicle_id integer,
-            ecu_id integer,
-            foreign key(vehicle_id) references ad_vehicle(id),
-            foreign key(ecu_id) references ad_ecu(id),
-            primary key(vehicle_id, ecu_id)
-        );
-
-        create table if not exists ad_vehicle_engine_link(
-            vehicle_id integer,
-            engine_id integer,
-            foreign key(vehicle_id) references ad_vehicle(id),
-            foreign key(engine_id) references ad_engine(id),
-            primary key(vehicle_id, engine_id)
         );
 
         create table if not exists ad_dtc_standard(
@@ -167,8 +136,6 @@ class ConverterToSqlite():
 
     def _clear_tables(self, conn):
         conn.executescript("""
-        delete from ad_vehicle_ecu_link;
-        delete from ad_vehicle_engine_link;
         delete from ad_dtc_protocol_link;
         delete from ad_dtc_standard_link;
         delete from ad_dtc_related;
@@ -177,9 +144,7 @@ class ConverterToSqlite():
         delete from ad_dtc_category_link;
         delete from ad_dtc_severity_link;
         delete from ad_dtc;
-        delete from ad_vehicle;
         delete from ad_ecu;
-        delete from ad_engine;
         delete from ad_manufacturer;
         delete from ad_dtc_standard;
         delete from ad_diag_protocol;
@@ -211,15 +176,6 @@ class ConverterToSqlite():
             return [x for x in v if x is not None and x != ""]
         return [v]
 
-    def _normalize_dict_or_list(self, v):
-        if v is None or v == "":
-            return []
-        if isinstance(v, list):
-            return [x for x in v if isinstance(x, dict)]
-        if isinstance(v, dict):
-            return [v]
-        return []
-
     def _get_or_insert_ecu(self, conn, manufacturer, model, ecu_type="ECM"):
         if manufacturer is None or manufacturer == "" or model is None or model == "":
             return None
@@ -238,167 +194,79 @@ class ConverterToSqlite():
         )
         return cur.lastrowid
 
-    def _get_or_insert_engine(self, conn, manufacturer, model):
-        if manufacturer is None or manufacturer == "" or model is None or model == "":
-            return None
-        mid = self._get_or_insert(conn, "ad_manufacturer", "name", manufacturer)
-        cur = conn.cursor()
-        cur.execute(
-            "select id from ad_engine where manufacturer_id=? and model=?",
-            (mid, model)
-        )
-        r = cur.fetchone()
-        if r:
-            return r[0]
-        cur.execute(
-            "insert into ad_engine(manufacturer_id, model) values(?,?)",
-            (mid, model)
-        )
-        return cur.lastrowid
-
-    def _find_vehicle(self, conn, manufacturer_id, model, years):
-        cur = conn.cursor()
-        cur.execute("""
-            select id
-            from ad_vehicle
-            where manufacturer_id=?
-              and (model=? or (? is null and model is null))
-              and (years=? or (? is null and years is null))
-            limit 1
-        """, (manufacturer_id, model, model, years, years))
-        r = cur.fetchone()
-        if r:
-            return r[0]
-        return None
-
-    def _link_vehicle_engine(self, conn, vehicle_id, engine_id):
-        if vehicle_id is None or engine_id is None:
-            return
-        conn.execute(
-            "insert or ignore into ad_vehicle_engine_link(vehicle_id, engine_id) values(?,?)",
-            (vehicle_id, engine_id)
-        )
-
-    def _link_vehicle_ecu(self, conn, vehicle_id, ecu_id):
-        if vehicle_id is None or ecu_id is None:
-            return
-        conn.execute(
-            "insert or ignore into ad_vehicle_ecu_link(vehicle_id, ecu_id) values(?,?)",
-            (vehicle_id, ecu_id)
-        )
-
-    def _get_or_insert_vehicle(self, conn, manufacturer, model, years, engine_id=None, ecu_id=None):
-        if manufacturer is None or manufacturer == "":
-            return None
-        mid = self._get_or_insert(conn, "ad_manufacturer", "name", manufacturer)
-        vehicle_id = self._find_vehicle(conn, mid, model, years)
-
-        if vehicle_id is None:
-            cur = conn.cursor()
-            cur.execute(
-                "insert into ad_vehicle(manufacturer_id, model, years) values(?,?,?)",
-                (mid, model, years)
-            )
-            vehicle_id = cur.lastrowid
-
-        self._link_vehicle_engine(conn, vehicle_id, engine_id)
-        self._link_vehicle_ecu(conn, vehicle_id, ecu_id)
-        return vehicle_id
-
     def _json_dump(self, value, default):
         if value is None:
             value = default
         return json.dumps(value, ensure_ascii=False)
 
-    def _iter_ecu_catalog_entries(self):
+    def _iter_ecu_entries(self):
         ecu_root = self.plain_text_db / "ecu"
         if not ecu_root.exists():
             return
 
         for manufacturer_dir in sorted(p for p in ecu_root.iterdir() if p.is_dir()):
-            manufacturer_def = manufacturer_dir / "def.yml"
-            manufacturer_data = self._read_yaml(manufacturer_def) if manufacturer_def.exists() else {}
-            manufacturer = manufacturer_data.get("manufacturer") or manufacturer_dir.name
+            manufacturer_def = self._read_yaml(manufacturer_dir / "def.yml")
+            manufacturer = manufacturer_def.get("manufacturer") or manufacturer_dir.name
 
-            for entry_dir in sorted(p for p in manufacturer_dir.iterdir() if p.is_dir()):
-                entry_def = entry_dir / "def.yml"
-                if not entry_def.exists():
-                    continue
-
-                entry_data = self._read_yaml(entry_def)
-                model = entry_data.get("model")
-                ecu_type = entry_data.get("type", "ECM")
-
-                if model:
+            manufacturer_codes_dir = manufacturer_dir / "codes"
+            if manufacturer_codes_dir.exists() and manufacturer_codes_dir.is_dir():
+                for y in sorted(manufacturer_codes_dir.glob("*.yml")):
                     yield {
+                        "path": y,
                         "manufacturer": manufacturer,
-                        "model": model,
-                        "type": ecu_type,
-                        "path": entry_dir,
+                        "ecu_model": None,
+                        "ecu_type": "ECM",
                     }
 
-    def _iter_engine_catalog_entries(self):
-        engine_root = self.plain_text_db / "engine"
-        if not engine_root.exists():
-            return
-
-        for manufacturer_dir in sorted(p for p in engine_root.iterdir() if p.is_dir()):
-            manufacturer_def = manufacturer_dir / "def.yml"
-            manufacturer_data = self._read_yaml(manufacturer_def) if manufacturer_def.exists() else {}
-            manufacturer = manufacturer_data.get("manufacturer") or manufacturer_dir.name
-
             for entry_dir in sorted(p for p in manufacturer_dir.iterdir() if p.is_dir()):
-                entry_def = entry_dir / "def.yml"
-                if not entry_def.exists():
+                if entry_dir.name == "codes":
                     continue
 
-                entry_data = self._read_yaml(entry_def)
-                model = entry_data.get("model") or entry_dir.name
+                entry_def_path = entry_dir / "def.yml"
+                if not entry_def_path.exists():
+                    continue
 
-                if model:
+                entry_def = self._read_yaml(entry_def_path)
+                ecu_model = entry_def.get("model")
+                ecu_type = entry_def.get("type", "ECM")
+
+                if ecu_model:
                     yield {
+                        "path": entry_def_path,
                         "manufacturer": manufacturer,
-                        "model": model,
-                        "path": entry_dir,
+                        "ecu_model": ecu_model,
+                        "ecu_type": ecu_type,
+                        "is_def": True,
                     }
 
-    def _iter_dtc_files(self):
-        ecu_root = self.plain_text_db / "ecu"
-        if not ecu_root.exists():
-            return
-
-        for manufacturer_dir in sorted(p for p in ecu_root.iterdir() if p.is_dir()):
-            manufacturer_def = manufacturer_dir / "def.yml"
-            manufacturer_data = self._read_yaml(manufacturer_def) if manufacturer_def.exists() else {}
-            manufacturer = manufacturer_data.get("manufacturer") or manufacturer_dir.name
-
-            for entry_dir in sorted(p for p in manufacturer_dir.iterdir() if p.is_dir()):
-                entry_def = entry_dir / "def.yml"
                 codes_dir = entry_dir / "codes"
-
                 if codes_dir.exists() and codes_dir.is_dir():
-                    entry_data = self._read_yaml(entry_def) if entry_def.exists() else {}
-                    model = entry_data.get("model")
-                    ecu_type = entry_data.get("type", "ECM")
-
                     for y in sorted(codes_dir.glob("*.yml")):
                         yield {
                             "path": y,
                             "manufacturer": manufacturer,
-                            "ecu_model": model,
+                            "ecu_model": ecu_model,
                             "ecu_type": ecu_type,
+                            "is_def": False,
                         }
-                    continue
 
-                codes_dir = manufacturer_dir / "codes"
-                if entry_dir.name == "codes" and codes_dir.exists():
-                    for y in sorted(codes_dir.glob("*.yml")):
-                        yield {
-                            "path": y,
-                            "manufacturer": manufacturer,
-                            "ecu_model": None,
-                            "ecu_type": "ECM",
-                        }
+    def _load_ecus(self, conn):
+        seen = set()
+
+        for entry in self._iter_ecu_entries():
+            manufacturer = entry["manufacturer"]
+            ecu_model = entry["ecu_model"]
+            ecu_type = entry["ecu_type"]
+
+            if ecu_model is None or ecu_model == "":
+                continue
+
+            key = (manufacturer, ecu_model, ecu_type)
+            if key in seen:
+                continue
+            seen.add(key)
+
+            self._get_or_insert_ecu(conn, manufacturer, ecu_model, ecu_type)
 
     def _insert_taxonomy_links(self, conn, dtc_id, d):
         for sys_name in self._ensure_list(d.get("system")):
@@ -449,73 +317,15 @@ class ConverterToSqlite():
                     (dtc_id, sid)
                 )
 
-    def _insert_related_codes(self, conn, dtc_id, related_codes):
+    def _insert_related_codes(self, conn, dtc_id, related_codes, ecu_id):
         for code in self._ensure_list(related_codes):
             conn.execute("""
                 insert into ad_dtc_related(dtc_id, related_dtc_id)
                 select ?, id
                 from ad_dtc
                 where code=?
-            """, (dtc_id, code))
-
-    def _resolve_dtc_ecu(self, conn, fallback_manufacturer, fallback_ecu_model, fallback_ecu_type, scope):
-        ecu_scopes = self._normalize_dict_or_list(scope.get("ecu"))
-        if ecu_scopes:
-            ecu = ecu_scopes[0]
-            manufacturer = ecu.get("manufacturer") or fallback_manufacturer
-            model = ecu.get("model") or fallback_ecu_model
-            ecu_type = ecu.get("type") or fallback_ecu_type or "ECM"
-            return self._get_or_insert_ecu(conn, manufacturer, model, ecu_type)
-
-        if fallback_manufacturer and fallback_ecu_model:
-            return self._get_or_insert_ecu(conn, fallback_manufacturer, fallback_ecu_model, fallback_ecu_type or "ECM")
-
-        return None
-
-    def _load_vehicle_compatibility_from_dtc(self, conn, fallback_manufacturer, fallback_ecu_model, fallback_ecu_type, scope):
-        vehicle_scopes = self._normalize_dict_or_list(scope.get("vehicle"))
-        engine_scopes = self._normalize_dict_or_list(scope.get("engine"))
-
-        for v in vehicle_scopes:
-            manufacturer = v.get("manufacturer") or fallback_manufacturer
-            model = v.get("model")
-            years = v.get("years")
-            if years == "" or years == "any":
-                years = None
-
-            engine = v.get("engine", {}) or {}
-            ecu = v.get("ecu", {}) or {}
-
-            engine_manufacturer = engine.get("manufacturer") or manufacturer
-            engine_model = engine.get("model")
-
-            ecu_manufacturer = ecu.get("manufacturer") or fallback_manufacturer or manufacturer
-            ecu_model = ecu.get("model") or fallback_ecu_model
-            ecu_type = ecu.get("type") or fallback_ecu_type or "ECM"
-
-            engine_id = self._get_or_insert_engine(conn, engine_manufacturer, engine_model)
-            ecu_id = self._get_or_insert_ecu(conn, ecu_manufacturer, ecu_model, ecu_type)
-
-            self._get_or_insert_vehicle(
-                conn,
-                manufacturer,
-                model,
-                years,
-                engine_id,
-                ecu_id
-            )
-
-        for e in engine_scopes:
-            manufacturer = e.get("manufacturer")
-            model = e.get("model")
-            self._get_or_insert_engine(conn, manufacturer, model)
-
-    def _load_catalogs(self, conn):
-        for entry in self._iter_ecu_catalog_entries():
-            self._get_or_insert_ecu(conn, entry["manufacturer"], entry["model"], entry["type"])
-
-        for entry in self._iter_engine_catalog_entries():
-            self._get_or_insert_engine(conn, entry["manufacturer"], entry["model"])
+                  and ecu_id=?
+            """, (dtc_id, code, ecu_id))
 
     def to_sqlite(self, progress_callback) -> bool:
         if self.plain_text_db is None or self.sqlite_db is None:
@@ -524,34 +334,33 @@ class ConverterToSqlite():
         conn = self._connect()
         self._create_schema(conn)
         self._clear_tables(conn)
-        self._load_catalogs(conn)
+        self._load_ecus(conn)
 
-        dtcs = list(self._iter_dtc_files())
-        dtcs_len = len(dtcs)
-        dtcs_count = 0
-        progress_callback(dtcs_count, dtcs_len)
+        dtc_entries = [
+            entry for entry in self._iter_ecu_entries()
+            if entry.get("is_def") is False
+        ]
+
+        total = len(dtc_entries)
+        count = 0
+        progress_callback(count, total)
 
         cur = conn.cursor()
 
-        for entry in dtcs:
-            dtcs_count += 1
-            progress_callback(dtcs_count, dtcs_len)
+        for entry in dtc_entries:
+            count += 1
+            progress_callback(count, total)
 
             y = entry["path"]
-            fallback_manufacturer = entry["manufacturer"]
-            fallback_ecu_model = entry["ecu_model"]
-            fallback_ecu_type = entry["ecu_type"]
+            manufacturer = entry["manufacturer"]
+            ecu_model = entry["ecu_model"]
+            ecu_type = entry["ecu_type"]
 
             d = self._read_yaml(y)
-            scope = d.get("scope", {}) or {}
 
-            ecu_id = self._resolve_dtc_ecu(
-                conn,
-                fallback_manufacturer,
-                fallback_ecu_model,
-                fallback_ecu_type,
-                scope
-            )
+            ecu_id = None
+            if ecu_model:
+                ecu_id = self._get_or_insert_ecu(conn, manufacturer, ecu_model, ecu_type)
             if ecu_id is None:
                 continue
 
@@ -588,15 +397,8 @@ class ConverterToSqlite():
 
             dtc_id = cur.lastrowid
 
-            self._insert_related_codes(conn, dtc_id, d.get("related_code"))
+            self._insert_related_codes(conn, dtc_id, d.get("related_code"), ecu_id)
             self._insert_taxonomy_links(conn, dtc_id, d)
-            self._load_vehicle_compatibility_from_dtc(
-                conn,
-                fallback_manufacturer,
-                fallback_ecu_model,
-                fallback_ecu_type,
-                scope
-            )
 
         conn.commit()
         conn.close()
