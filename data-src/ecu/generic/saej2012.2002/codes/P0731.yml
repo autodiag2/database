@@ -1,0 +1,21 @@
+code: P0731
+system: ''
+subsystem: ''
+category: ''
+definition: Gear 1 Incorrect Ratio
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-12 09:07:00'
+updated: '2026-03-12 09:07:00'
+related_code: []
+detection_condition: []
+causes: []
+repairs: []
+evidence:
+  source:
+  - obdcodex
+protocol:
+- obd2
+standard:
+- saej2012.2002

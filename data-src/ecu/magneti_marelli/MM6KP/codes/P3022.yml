@@ -1,0 +1,22 @@
+code: P3022
+system: ''
+subsystem: ''
+category: ''
+definition: 'Relay control of the electropump of the cold start system : Short circuit
+  to positive'
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-12 09:07:00'
+updated: '2026-03-12 09:07:00'
+related_code: []
+detection_condition: []
+causes: []
+repairs: []
+evidence:
+  source:
+  - obdcodex
+protocol:
+- obd2
+standard:
+- saej2012.2002

@@ -1,0 +1,22 @@
+code: P12A7
+system: ''
+subsystem: ''
+category: ''
+definition: 'No. 3 cylinder : Injector injects too much or remains jammed in the open
+  position'
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-12 09:07:00'
+updated: '2026-03-12 09:07:00'
+related_code: []
+detection_condition: []
+causes: []
+repairs: []
+evidence:
+  source:
+  - obdcodex
+protocol:
+- obd2
+standard:
+- saej2012.2002

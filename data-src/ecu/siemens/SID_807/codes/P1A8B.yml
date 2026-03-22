@@ -1,0 +1,23 @@
+code: P1A8B
+system: ''
+subsystem: ''
+category: ''
+definition: 'Power storage battery or voltage retaining device : Health status of
+  the power storage battery or operating status of the voltage retaining device :
+  Prohibited value'
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-12 09:07:00'
+updated: '2026-03-12 09:07:00'
+related_code: []
+detection_condition: []
+causes: []
+repairs: []
+evidence:
+  source:
+  - obdcodex
+protocol:
+- obd2
+standard:
+- saej2012.2002

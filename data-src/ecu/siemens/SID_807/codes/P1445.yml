@@ -1,0 +1,22 @@
+code: P1445
+system: ''
+subsystem: ''
+category: ''
+definition: 'Additive adding : The quantity of additive injected into the FAP has
+  exceeded the maximum threshold. The FAP must be changed'
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-12 09:07:00'
+updated: '2026-03-12 09:07:00'
+related_code: []
+detection_condition: []
+causes: []
+repairs: []
+evidence:
+  source:
+  - obdcodex
+protocol:
+- obd2
+standard:
+- saej2012.2002

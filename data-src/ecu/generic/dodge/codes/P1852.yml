@@ -1,0 +1,21 @@
+code: P1852
+system: ''
+subsystem: ''
+category: ''
+definition: Transmission Transfer Case Contact Plate â€˜Bâ€™ Short Circuit To Battery
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-12 09:07:00'
+updated: '2026-03-12 09:07:00'
+related_code: []
+detection_condition: []
+causes: []
+repairs: []
+evidence:
+  source:
+  - obdcodex
+protocol:
+- obd2
+standard:
+- saej2012.2002

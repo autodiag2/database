@@ -1,0 +1,22 @@
+code: P1600
+system: ''
+subsystem: ''
+category: ''
+definition: 'Downloading/Configuration : Downloading of the resetting of the injectors
+  not carried out'
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-12 09:07:00'
+updated: '2026-03-12 09:07:00'
+related_code: []
+detection_condition: []
+causes: []
+repairs: []
+evidence:
+  source:
+  - obdcodex
+protocol:
+- obd2
+standard:
+- saej2012.2002

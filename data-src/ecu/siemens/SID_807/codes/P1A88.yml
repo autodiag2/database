@@ -1,0 +1,23 @@
+code: P1A88
+system: ''
+subsystem: ''
+category: ''
+definition: 'Reversible alternator : Prohibited value of the limitation of the energising
+  current orof the voltage or of the temperature or of the operating status of the
+  alternator'
+description: ''
+severity: ''
+mil: ''
+created: '2026-03-12 09:07:00'
+updated: '2026-03-12 09:07:00'
+related_code: []
+detection_condition: []
+causes: []
+repairs: []
+evidence:
+  source:
+  - obdcodex
+protocol:
+- obd2
+standard:
+- saej2012.2002
