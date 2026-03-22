@@ -5,7 +5,6 @@ from pathlib import Path
 import threading
 from tkinter import ttk
 from manager.converter_to_sqlite import ConverterToSqlite
-from manager.converter_to_yaml import ConverterToYaml
 from manager.vpic_sqlite_loader import VpicToSqliteLoader
 
 
@@ -51,9 +50,6 @@ class ConfigureTab(Tab):
 
         write_to_sqlite_button = tk.Button(self.root, text="Write to sqlite", command=self.on_write_sqlite)
         write_to_sqlite_button.pack(anchor="w", pady=5, padx=10)
-
-        write_to_yaml_button = tk.Button(self.root, text="Write to Yaml", command=self.on_write_yaml)
-        write_to_yaml_button.pack(anchor="w", pady=5, padx=10)
 
         self._build_vpic_section()
 
@@ -114,21 +110,6 @@ class ConfigureTab(Tab):
         else:
             self.progress_label.config(text="Export failed", fg="red")
 
-    def _write_yaml_background(self):
-        conv = ConverterToYaml(
-            plain_text_db=Path(self.plain_path_var.get()),
-            sqlite_db=Path(self.sqlite_path_var.get())
-        )
-
-        def progress_hook(current, total):
-            percent = int((current / total) * 100) if 0 < total else 100
-            self.root.after(0, lambda: self.progress.configure(value=percent))
-
-        if conv.to_yaml(progress_callback=progress_hook):
-            self.progress_label.config(text="Success", fg="green")
-        else:
-            self.progress_label.config(text="Export failed", fg="red")
-
     def _load_vpic_background(self):
         try:
             self.root.after(0, lambda: self.pg_status_label.config(text="Connecting...", fg="black"))
@@ -171,17 +152,6 @@ class ConfigureTab(Tab):
         self.pg_status_label.config(text="Processing...", fg="black")
 
         threading.Thread(target=self._load_vpic_background, daemon=True).start()
-
-    def on_write_yaml(self):
-        if not self._sqlite_check_exists():
-            self.progress_label.config(text="SQLite not found, configure it", fg="red")
-            return
-
-        self.progress_label.config(text="Processing...", fg="black")
-        self.progress["value"] = 0
-        self.progress["maximum"] = 100
-
-        threading.Thread(target=self._write_yaml_background, daemon=True).start()
 
     def on_write_sqlite(self):
         if not self._plain_check_folder_exists():

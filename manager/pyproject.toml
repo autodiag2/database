@@ -21,4 +21,3 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 manager = 'manager.main:main'
 manager_convert_to_sqlite = 'manager.converter_to_sqlite:main'
-manager_convert_to_yaml = 'manager.converter_to_yaml:main'
