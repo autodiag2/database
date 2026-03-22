@@ -400,7 +400,7 @@ class ConverterToSqlite():
                             "ecu_type": "ECM",
                         }
 
-    def _insert_taxonomy_links(self, conn, dtc_id, d, scope):
+    def _insert_taxonomy_links(self, conn, dtc_id, d):
         for sys_name in self._ensure_list(d.get("system")):
             sid = self._get_or_insert(conn, "ad_dtc_system", "name", sys_name)
             if sid is not None:
@@ -433,7 +433,7 @@ class ConverterToSqlite():
                     (dtc_id, sid)
                 )
 
-        for proto_name in self._ensure_list(scope.get("protocol")):
+        for proto_name in self._ensure_list(d.get("protocol")):
             pid = self._get_or_insert(conn, "ad_diag_protocol", "name", proto_name)
             if pid is not None:
                 conn.execute(
@@ -441,7 +441,7 @@ class ConverterToSqlite():
                     (dtc_id, pid)
                 )
 
-        for std_name in self._ensure_list(scope.get("standard")):
+        for std_name in self._ensure_list(d.get("standard")):
             sid = self._get_or_insert(conn, "ad_dtc_standard", "name", std_name)
             if sid is not None:
                 conn.execute(
@@ -589,7 +589,7 @@ class ConverterToSqlite():
             dtc_id = cur.lastrowid
 
             self._insert_related_codes(conn, dtc_id, d.get("related_code"))
-            self._insert_taxonomy_links(conn, dtc_id, d, scope)
+            self._insert_taxonomy_links(conn, dtc_id, d)
             self._load_vehicle_compatibility_from_dtc(
                 conn,
                 fallback_manufacturer,
