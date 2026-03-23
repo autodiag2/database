@@ -1,0 +1,42 @@
+name: C3 II
+description: 
+years: 2009-2016
+internal:
+  name: A51
+config:
+  ECM:
+    - manufacturer: bosch
+      model: EDC16C3
+    - manufacturer: bosch
+      model: EDC16C3DV4
+    - manufacturer: bosch
+      model: EDC17C10
+    - manufacturer: bosch
+      model: EDC17C10 BR2
+    - manufacturer: bosch
+      model: EDC17C60
+    - manufacturer: Siemens
+      model: SID 807
+    - manufacturer: Siemens
+      model: SID 807 BR2
+    - manufacturer: valeo
+      model: J34P
+    - manufacturer: bosch
+      model: MEV 17.4.2
+    - manufacturer: bosch
+      model: MEV 17.4.EURO5
+  ABS:
+    - manufacturer: ATE
+      model: ABS MK100
+    - manufacturer: ATE
+      model: ABS MK70.1
+    - manufacturer: ATE
+      model: ESP MK100
+    - manufacturer: ATE
+      model: ESP MK60 O
+  
+evidence: 
+  - https://c-forum.forumpro.fr/t219-information-nom-de-code-des-vehicules-en-interne
+  - https://reparlab.com/en/all-kind-of-repairs/emf-dgt7cff-2/
+  - https://ecu.fr/peugeot/calculateur-moteur/edc16c3-4357
+  - https://www.fiches-auto.fr/fiche-technique-citroen/specs-263-technique-citroen-c3-ii.php

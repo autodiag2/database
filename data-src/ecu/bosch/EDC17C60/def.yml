@@ -1,0 +1,5 @@
+model: EDC17C60
+type: ECM
+microcontroller: TC1793
+evidence:
+  - https://www.autotuner.com/fr/pages/ecu/bosch-edc17c60-tc1793
