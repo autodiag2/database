@@ -6,7 +6,7 @@ import threading
 from tkinter import ttk
 from manager.converter_to_sqlite import ConverterToSqlite
 from manager.vpic_sqlite_loader import VpicToSqliteLoader
-
+import os
 
 class ConfigureTab(Tab):
     def __init__(self, parent):
@@ -30,7 +30,8 @@ class ConfigureTab(Tab):
         self._plain_check_folder_exists()
         self._plain_update_status_label()
 
-        self.sqlite_path_var = tk.StringVar(value="./data/ad_database.sqlite")
+        os.makedirs("output", exist_ok=True)
+        self.sqlite_path_var = tk.StringVar(value="./output/ad_database.sqlite")
         self.sqlite_path_var.trace_add("write", lambda *args: self._sqlite_check_exists())
 
         sqlite_path_label = tk.Label(self.root, text="SQlite database location:")
