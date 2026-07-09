@@ -1,0 +1,23 @@
+code: P1703
+system: ''
+subsystem: ''
+category: ''
+definition: 'Fault in the accelerator pedal position information transmitted by the
+  engine managementECU : Value received incorrect906 P1727 Fault in the actual engine
+  torque information transmitted by the engine management ECU :Value received incorrect'
+description: ''
+severity: ''
+mil: ''
+created: 2026-07-09 17:40:25 CEST
+updated: 2026-07-09 17:40:25 CEST
+related_code: []
+detection_condition: []
+causes: []
+repairs: []
+evidence:
+  source:
+  - https://fr.scribd.com/doc/210737517/Citroen-Err-Table
+protocol:
+- obd2
+standard:
+- saej2012.2002

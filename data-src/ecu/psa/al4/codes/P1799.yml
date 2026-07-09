@@ -1,0 +1,21 @@
+code: P1799
+system: ''
+subsystem: ''
+category: ''
+definition: 'Multifunction switch signal fault - Park/Neutral switch : Not characterised'
+description: ''
+severity: ''
+mil: ''
+created: 2026-07-09 17:34:01 CEST
+updated: 2026-07-09 17:34:01 CEST
+related_code: []
+detection_condition: []
+causes: []
+repairs: []
+evidence:
+  source:
+  - https://fr.scribd.com/doc/210737517/Citroen-Err-Table
+protocol:
+- obd2
+standard:
+- saej2012.2002

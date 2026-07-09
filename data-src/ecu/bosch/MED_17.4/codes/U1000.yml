@@ -3,7 +3,7 @@ system: ''
 subsystem: ''
 category: ''
 definition: 'Communication missing fault between the engine ECU and the others ECU’s
-  intersystems CANçnetwork. : Engine ECU dead'
+  intersystems CAN network. : Engine ECU dead'
 description: ''
 severity: ''
 mil: ''
@@ -15,7 +15,7 @@ causes: []
 repairs: []
 evidence:
   source:
-  - obdcodex
+  - https://fr.scribd.com/doc/210737517/Citroen-Err-Table
 protocol:
 - obd2
 standard:

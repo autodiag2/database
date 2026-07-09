@@ -1,0 +1,22 @@
+code: U2000
+system: ''
+subsystem: ''
+category: ''
+definition: Fault in synchronisation of the main controlled triggering request received
+  by the CAN (BSI ECU) and the wire command for controlled trigge
+description: ''
+severity: ''
+mil: ''
+created: 2026-07-09 17:38:11 CEST
+updated: 2026-07-09 17:38:11 CEST
+related_code: []
+detection_condition: []
+causes: []
+repairs: []
+evidence:
+  source:
+  - https://fr.scribd.com/doc/210737517/Citroen-Err-Table
+protocol:
+- obd2
+standard:
+- saej2012.2002

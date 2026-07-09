@@ -1,0 +1,22 @@
+code: U1218
+system: ''
+subsystem: ''
+category: ''
+definition: 'Fault in the engine oil or intake air temperature information received
+  by the CAN (Engine ECU) : Value received incorrect'
+description: ''
+severity: ''
+mil: ''
+created: 2026-07-09 17:38:11 CEST
+updated: 2026-07-09 17:38:11 CEST
+related_code: []
+detection_condition: []
+causes: []
+repairs: []
+evidence:
+  source:
+  - https://fr.scribd.com/doc/210737517/Citroen-Err-Table
+protocol:
+- obd2
+standard:
+- saej2012.2002
