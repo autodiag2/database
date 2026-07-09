@@ -8,7 +8,7 @@ description: ''
 severity: ''
 mil: ''
 created: '2026-03-12 09:07:00'
-updated: '2026-03-12 09:07:00'
+updated: 2026-07-09 19:48:23 CEST
 related_code: []
 detection_condition: []
 causes: []
@@ -16,6 +16,10 @@ repairs: []
 evidence:
   source:
   - obdcodex
+  - 'https://fr.scribd.com/doc/210737517/Citroen-Err-Table
+
+    '
+  - https://fr.scribd.com/doc/210737517/Citroen-Err-Table
 protocol:
 - obd2
 standard:
