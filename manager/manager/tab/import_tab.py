@@ -29,18 +29,77 @@ def parse_lines(text):
 
 
 class ImportCodesTab(Tab):
+
+    def add_conflict(self, filename, code, existing_definition, imported_definition, obj):
+        frame = tk.LabelFrame(self.conflict_container, text=code)
+        frame.pack(fill="x", padx=5, pady=5)
+
+        tk.Label(frame, text="Current").grid(row=0, column=0, sticky="nw", padx=5, pady=2)
+
+        current = tk.Text(frame, height=4, width=45)
+        current.grid(row=1, column=0, sticky="nsew", padx=5, pady=2)
+        current.insert("1.0", existing_definition)
+        current.configure(state="disabled")
+
+        tk.Label(frame, text="Imported").grid(row=0, column=1, sticky="nw", padx=5, pady=2)
+
+        incoming = tk.Text(frame, height=4, width=45)
+        incoming.grid(row=1, column=1, sticky="nsew", padx=5, pady=2)
+        incoming.insert("1.0", imported_definition)
+        incoming.configure(state="disabled")
+
+        conflict = {
+            "filename": filename,
+            "code": code,
+            "obj": obj
+        }
+
+        tk.Button(
+            frame,
+            text="Still right",
+            command=lambda c=conflict, f=frame: self.accept_conflict(c, f)
+        ).grid(row=2, column=0, sticky="w", padx=5, pady=5)
+
+        tk.Button(
+            frame,
+            text="Discard",
+            command=frame.destroy
+        ).grid(row=2, column=1, sticky="e", padx=5, pady=5)
+
+        frame.columnconfigure(0, weight=1)
+        frame.columnconfigure(1, weight=1)
+
     def __init__(self, parent):
         super().__init__(parent)
 
         self.data_src = Path("./data-src")
 
+        self.left_pane = tk.Frame(self.root)
+        self.left_pane.pack(
+            side="left",
+            fill="both",
+            expand=True,
+            padx=(10, 5),
+            pady=10
+        )
+
+        self.right_pane = tk.Frame(self.root, width=500)
+        self.right_pane.pack(
+            side="right",
+            fill="y",
+            padx=(5, 10),
+            pady=10
+        )
+        self.right_pane.pack_propagate(False)
+
+        self.conflict_container = self.right_pane
         self._build_configuration()
         self._build_input()
         self._build_buttons()
         self._build_output()
 
     def _build_configuration(self):
-        frame = tk.LabelFrame(self.root, text="Destination")
+        frame = tk.LabelFrame(self.left_pane, text="Destination")
         frame.pack(fill="x", padx=10, pady=10)
 
         tk.Label(frame, text="Manufacturer:").grid(row=0, column=0, sticky="e", padx=5, pady=3)
@@ -64,7 +123,7 @@ class ImportCodesTab(Tab):
         frame.columnconfigure(1, weight=1)
 
     def _build_input(self):
-        frame = tk.LabelFrame(self.root, text="Codes to import")
+        frame = tk.LabelFrame(self.left_pane , text="Codes to import")
         frame.pack(fill="both", expand=True, padx=10, pady=(0, 10))
 
         self.input_text = tk.Text(
@@ -89,7 +148,7 @@ class ImportCodesTab(Tab):
         frame.columnconfigure(0, weight=1)
 
     def _build_buttons(self):
-        frame = tk.Frame(self.root)
+        frame = tk.Frame(self.left_pane )
         frame.pack(fill="x", padx=10, pady=(0, 10))
 
         tk.Button(
@@ -122,6 +181,31 @@ class ImportCodesTab(Tab):
             command=self.on_import
         ).pack(side="left")
 
+    def accept_conflict(self, conflict, frame):
+
+        obj = conflict["obj"]
+
+        evidence = obj.setdefault("evidence", {})
+        sources = evidence.setdefault("source", [])
+
+        if self.get_evidence_input() not in sources:
+            sources.append(self.get_evidence_input())
+
+        obj["updated"] = current_timestamp()
+
+        with open(conflict["filename"], "w", encoding="utf-8") as fp:
+            yaml.safe_dump(
+                obj,
+                fp,
+                allow_unicode=True,
+                sort_keys=False,
+                default_flow_style=False
+            )
+
+        self.log(f"[OK] {conflict['code']}: evidence added after manual confirmation.")
+
+        frame.destroy()
+        
     def search_log(self):
 
         pattern = self.search_var.get()
@@ -205,7 +289,7 @@ class ImportCodesTab(Tab):
         return "break"
 
     def _build_output(self):
-        frame = tk.LabelFrame(self.root, text="Operations")
+        frame = tk.LabelFrame(self.left_pane , text="Operations")
         frame.pack(fill="both", expand=True, padx=10, pady=(0, 10))
 
         search_frame = tk.Frame(frame)
@@ -299,7 +383,7 @@ class ImportCodesTab(Tab):
 
     def on_import(self):
         self.clear_log()
-
+        self.conflicts = []
         if not self.data_src.exists():
             messagebox.showerror(
                 "Error",
@@ -401,12 +485,15 @@ class ImportCodesTab(Tab):
             "repairs": [],
             "evidence": {
                 "source": [
-                    self.evidence_var.get()
+                    self.get_evidence_input()
                 ]
             },
             "protocol": protocol,
             "standard": standard
         }
+
+    def get_evidence_input(self):
+        return self.evidence_var.get().strip()
 
     def write_yaml(self, filename: Path, code: str, definition: str):
 
@@ -435,18 +522,25 @@ class ImportCodesTab(Tab):
                 )
                 self.log(f"          Existing: {existing_definition}")
                 self.log(f"          Imported: {imported_definition}")
+                self.add_conflict(
+                    filename,
+                    code,
+                    existing_definition,
+                    imported_definition,
+                    obj
+                )
                 return False
 
             evidence = obj.setdefault("evidence", {})
             sources = evidence.setdefault("source", [])
 
-            if self.evidence_var.get() == "":
+            if self.get_evidence_input() == "":
                 self.log("[WARNING] no evidence provided")
             else:
-                if self.evidence_var.get() not in sources:
-                    sources.append(self.evidence_var.get())
+                if self.get_evidence_input() not in sources:
+                    sources.append(self.get_evidence_input())
                     self.log(
-                        f"[OK] {code}: added evidence source '{self.evidence_var.get()}'."
+                        f"[OK] {code}: added evidence source '{self.get_evidence_input()}'."
                     )
                 else:
                     self.log(
