@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk, font
 from manager.tab.configure import ConfigureTab
 from manager.tab.query import QueryTab
+from manager.tab.import_tab import ImportCodesTab 
 import sys
 
 def window_ensure_show_and_focus(root):
@@ -70,8 +71,9 @@ def main():
 
     configure_tab = ConfigureTab(content_frame)
     query_tab = QueryTab(content_frame, configure_tab.sqlite_path_entry)
+    import_tab = ImportCodesTab(content_frame)
 
-    tabs = (configure_tab, query_tab)
+    tabs = (configure_tab, query_tab, import_tab)
     for tab in tabs:
         tab.place(relx=0, rely=0, relwidth=1, relheight=1)
 
@@ -88,10 +90,13 @@ def main():
         switch_frame, text="Configure", style="Tab.TButton", command=lambda: show_tab(configure_tab)
     )
     tab_buttons[query_tab] = ttk.Button(
-        switch_frame, text="Modify", style="Tab.TButton", command=lambda: show_tab(query_tab)
+        switch_frame, text="Query SQLite", style="Tab.TButton", command=lambda: show_tab(query_tab)
+    )
+    tab_buttons[import_tab] = ttk.Button(
+        switch_frame, text="Import codes as .yml", style="Tab.TButton", command=lambda: show_tab(import_tab)
     )
 
-    for b in (tab_buttons[configure_tab], tab_buttons[query_tab]):
+    for b in (tab_buttons[configure_tab], tab_buttons[query_tab], tab_buttons[import_tab]):
         b.pack(side="left", padx=0, pady=0, ipady=0, ipadx=0)
 
     show_tab(configure_tab)
