@@ -13,8 +13,6 @@ detection_condition: []
 causes: []
 repairs: []
 evidence:
-  source:
-  - obdcodex
 protocol:
 - obd2
 standard:
