@@ -1,2 +1,7 @@
 model: MEV 17.4
 type: ECM
+mcu:
+  brand: infineon
+  model: TC1766
+  evidence:
+    - https://www.autotuner.com/fr/pages/ecu/bosch-mev174-tc1766

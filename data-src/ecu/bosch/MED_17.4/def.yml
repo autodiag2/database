@@ -1,2 +1,8 @@
 model: MED 17.4
 type: ECM
+mcu:
+  brand: Infineon
+  model: TC1796
+  evidence:
+    - https://www.autotuner.com/fr/pages/ecu/bosch-med174-tc1796
+  site: https://www.infineon.com/search/document-finder#q=TC1796

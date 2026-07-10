@@ -1,2 +1,8 @@
 model: DCM 3.5
 type: ECM
+mcu:
+  brand: NXP
+  model: MPC5566
+  evidence:
+    - https://www.autotuner.com/fr/pages/ecu/delphi-dcm35-mpc5566
+  site: https://www.nxp.com/products/MPC5566
