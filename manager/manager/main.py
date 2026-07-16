@@ -3,6 +3,7 @@ from tkinter import ttk, font
 from manager.tab.configure import ConfigureTab
 from manager.tab.query import QueryTab
 from manager.tab.import_tab import ImportCodesTab 
+from manager.tab.import_vehicle import ImportVehicleTab
 import sys
 
 def window_ensure_show_and_focus(root):
@@ -71,9 +72,10 @@ def main():
 
     configure_tab = ConfigureTab(content_frame)
     query_tab = QueryTab(content_frame, configure_tab.sqlite_path_entry)
-    import_tab = ImportCodesTab(content_frame)
+    import_tab = ImportCodesTab(content_frame, configure_tab.plain_path_var)
+    import_vehicle_tab = ImportVehicleTab(content_frame, configure_tab.plain_path_var)
 
-    tabs = (configure_tab, query_tab, import_tab)
+    tabs = (configure_tab, query_tab, import_tab, import_vehicle_tab)
     for tab in tabs:
         tab.place(relx=0, rely=0, relwidth=1, relheight=1)
 
@@ -95,8 +97,11 @@ def main():
     tab_buttons[import_tab] = ttk.Button(
         switch_frame, text="Import codes as .yml", style="Tab.TButton", command=lambda: show_tab(import_tab)
     )
+    tab_buttons[import_vehicle_tab] = ttk.Button(
+        switch_frame, text="Import vehicle infos as .yml", style="Tab.TButton", command=lambda: show_tab(import_vehicle_tab)
+    )
 
-    for b in (tab_buttons[configure_tab], tab_buttons[query_tab], tab_buttons[import_tab]):
+    for b in (tab_buttons[configure_tab], tab_buttons[query_tab], tab_buttons[import_tab], tab_buttons[import_vehicle_tab]):
         b.pack(side="left", padx=0, pady=0, ipady=0, ipadx=0)
 
     show_tab(configure_tab)

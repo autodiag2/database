@@ -69,10 +69,10 @@ class ImportCodesTab(Tab):
         frame.columnconfigure(0, weight=1)
         frame.columnconfigure(1, weight=1)
 
-    def __init__(self, parent):
+    def __init__(self, parent, plain_path_var):
         super().__init__(parent)
 
-        self.data_src = Path("./data-src")
+        self.plain_path_var = plain_path_var
 
         self.left_pane = tk.Frame(self.root)
         self.left_pane.pack(
@@ -369,6 +369,9 @@ class ImportCodesTab(Tab):
     def on_clear(self):
         self.input_text.delete("1.0", "end")
 
+    def get_data_src(self) -> Path:
+        return Path(self.plain_path_var)
+
     def get_destination_folder(self):
         manufacturer = self.manufacturer_var.get().strip().lower()
         ecu = self.ecu_var.get().strip().lower()
@@ -377,14 +380,14 @@ class ImportCodesTab(Tab):
             raise ValueError("Manufacturer must be specified.")
 
         if ecu:
-            return self.data_src / "ecu" / manufacturer / ecu
+            return self.get_data_src() / "ecu" / manufacturer / ecu
 
-        return self.data_src / "ecu" / "generic" / manufacturer
+        return self.get_data_src() / "ecu" / "generic" / manufacturer
 
     def on_import(self):
         self.clear_log()
         self.conflicts = []
-        if not self.data_src.exists():
+        if not self.get_data_src().exists():
             messagebox.showerror(
                 "Error",
                 "data-src directory does not exist."
