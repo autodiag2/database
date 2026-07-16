@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk, font
 from manager.tab.configure import ConfigureTab
 from manager.tab.query import QueryTab
-from manager.tab.import_tab import ImportCodesTab 
+from manager.tab.import_dtc import ImportCodesTab 
 from manager.tab.import_vehicle import ImportVehicleTab
 import sys
 
