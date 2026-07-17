@@ -382,19 +382,41 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
     def insert_or_conflict(self, yaml_path, data, field, value, evidence):
         changed = False
         conflict = False
-        if value == None or value == "":
+
+        if value is None or value == "":
             return changed, conflict
+
         current = data.get(field)
-        if current:
-            if current.lower() != value.lower():
-                conflict = True
-                self.add_conflict(yaml_path, data, field, value, evidence)
-            elif current != value:
-                data[field] = value
-                changed = True
+
+        if current is not None and current != "":
+            if isinstance(current, str) and isinstance(value, str):
+                if current.lower() != value.lower():
+                    conflict = True
+                    self.add_conflict(
+                        yaml_path,
+                        data,
+                        field,
+                        value,
+                        evidence,
+                    )
+                elif current != value:
+                    # Only case differs: normalize stored value.
+                    data[field] = value
+                    changed = True
+            else:
+                if current != value:
+                    conflict = True
+                    self.add_conflict(
+                        yaml_path,
+                        data,
+                        field,
+                        value,
+                        evidence,
+                    )
         else:
             data[field] = value
             changed = True
+
         return changed, conflict
     
     def import_ecu(self, Ecu_maker, Ecu_model, evidence, ECU_type="ECM", MCU=""):
@@ -489,6 +511,162 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
         if conflict not in field_conflicts:
             field_conflicts.append(conflict)
+
+    def import_vehicle(
+        self,
+        Type,
+        Brand,
+        Model,
+        Year,
+        Version,
+        Power_KW,
+        ecu_relative_path,
+        engine_relative_path,
+        evidence
+    ):
+        Type = (Type or "").strip()
+        Brand = (Brand or "").strip()
+        Model = (Model or "").strip()
+        Year = (Year or "").strip()
+        Version = (Version or "").strip()
+
+        if not Brand or not Model:
+            return None
+
+        manufacturer_dir = (
+            self.get_data_src() /
+            "vehicle" /
+            slug(Brand)
+        )
+
+        manufacturer_dir.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
+        manufacturer_def = manufacturer_dir / "def.yml"
+
+        if not manufacturer_def.exists():
+            self.write_yaml(
+                manufacturer_def,
+                {
+                    "manufacturer": Brand,
+                },
+            )
+
+        vehicle_ref = f"{slug(Brand)}/{slug(Model)}"
+
+        vehicle_dir = manufacturer_dir / slug(Model)
+        vehicle_dir.mkdir(exist_ok=True)
+
+        vehicle_def = vehicle_dir / "def.yml"
+
+        if vehicle_def.exists():
+            data = self.read_yaml(vehicle_def)
+            new_file = False
+        else:
+            data = {
+                "created": current_timestamp(),
+                "model": Model,
+                "type": Type.lower() if Type else "car",
+                "evidence": [],
+            }
+            new_file = True
+
+        changed = new_file
+        conflict = False
+
+        changed_rv, conflict_rv = self.insert_or_conflict(
+            vehicle_def,
+            data,
+            "model",
+            Model,
+            evidence,
+        )
+        changed |= changed_rv
+        conflict |= conflict_rv
+
+        changed_rv, conflict_rv = self.insert_or_conflict(
+            vehicle_def,
+            data,
+            "type",
+            Type.lower() if Type else "car",
+            evidence,
+        )
+        changed |= changed_rv
+        conflict |= conflict_rv
+
+        evidences = data.setdefault("evidence", [])
+
+        if conflict:
+            changed = True
+        else:
+            if evidence and evidence not in evidences:
+                evidences.append(evidence)
+                changed = True
+
+        if changed:
+            data["updated"] = current_timestamp()
+            self.write_yaml(vehicle_def, data)
+
+        versions_dir = vehicle_dir / "versions"
+        versions_dir.mkdir(exist_ok=True)
+
+        version_name = slug(Version) if Version else "generic"
+
+        version_file = versions_dir / f"{version_name}.yml"
+
+        if version_file.exists():
+            version = self.read_yaml(version_file)
+            new_version = False
+        else:
+            version = {
+                "created": current_timestamp(),
+            }
+            new_version = True
+
+        changed = new_version
+        conflict = False
+
+        for field, value in (
+            ("year", Year),
+            ("version", Version),
+            ("engine", engine_relative_path),
+            ("ecu", ecu_relative_path),
+            ("power_kw", float(Power_KW) if Power_KW else None),
+        ):
+            if value not in (None, ""):
+                changed_rv, conflict_rv = self.insert_or_conflict(
+                    version_file,
+                    version,
+                    field,
+                    value,
+                    evidence,
+                )
+                changed |= changed_rv
+                conflict |= conflict_rv
+
+        evidences = version.setdefault("evidence", [])
+
+        if conflict:
+            changed = True
+        else:
+            if evidence and evidence not in evidences:
+                evidences.append(evidence)
+                changed = True
+
+        if changed:
+            version["updated"] = current_timestamp()
+            self.write_yaml(version_file, version)
+
+        if new_file:
+            self.log(f"Created Vehicle: {vehicle_ref}")
+        elif changed:
+            self.log(f"Updated Vehicle: {vehicle_ref}")
+        else:
+            self.log(f"Vehicle unchanged: {vehicle_ref}")
+
+        return vehicle_ref
 
     def import_engine(
         self,
@@ -641,7 +819,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
             ecu_relative_path = self.import_ecu(Ecu_maker, Ecu_model, self.evidence_var.get(), ECU_type, MCU)
             engine_relative_path = self.import_engine(Brand, Engine, Engine_type, Fuel, self.evidence_var.get())
-            # import vehicle
+            self.import_vehicle(Type, Brand, Model, Year, Version, Power_KW, ecu_relative_path, engine_relative_path, self.evidence_var.get())
             self.heavy_op_step()
 
     def on_import(self):
@@ -670,11 +848,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             self.on_import_worker,
             count,
             rows
-        )        
-        
-        # TODO
-        self.log("[TODO] Create vehicles")
-        self.log("[TODO] Create versions")
+        )
 
         self.log("")
         self.log("Import finished.")
