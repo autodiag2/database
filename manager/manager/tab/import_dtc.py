@@ -83,18 +83,20 @@ class ImportCodesTab(ImportTab):
 
         tk.Label(frame, text="Manufacturer:").grid(row=0, column=0, sticky="e", padx=5, pady=3)
         self.manufacturer_var = tk.StringVar()
+        self.manufacturer_var.set("bosch")
         tk.Entry(frame, textvariable=self.manufacturer_var, width=40).grid(
             row=0, column=1, sticky="we", padx=5, pady=3
         )
 
         tk.Label(frame, text="ECU model:").grid(row=1, column=0, sticky="e", padx=5, pady=3)
         self.ecu_var = tk.StringVar()
+        self.ecu_var.set("EDC16C34")
         tk.Entry(frame, textvariable=self.ecu_var, width=40).grid(
             row=1, column=1, sticky="we", padx=5, pady=3
         )
 
         tk.Label(frame, text="Evidence source:").grid(row=2, column=0, sticky="e", padx=5, pady=3)
-        self.evidence_var = tk.StringVar(value="")
+        self.evidence_var = tk.StringVar(value="http://example.com")
         tk.Entry(frame, textvariable=self.evidence_var, width=40).grid(
             row=2, column=1, sticky="we", padx=5, pady=3
         )
@@ -109,6 +111,11 @@ class ImportCodesTab(ImportTab):
             frame,
             wrap="none",
             height=18
+        )
+        self.input_text.insert(
+            "1.0",
+            """P1111  some definition
+        """
         )
 
         scroll_y = ttk.Scrollbar(frame, orient="vertical", command=self.input_text.yview)
