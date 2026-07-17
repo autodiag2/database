@@ -495,6 +495,8 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         if not manufacturer or not Engine:
             return None
 
+        engine_code = Engine_type if Engine_type else Engine
+
         manufacturer_dir = (
             self.get_data_src() /
             "engine" /
@@ -516,9 +518,9 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                 }
             )
 
-        engine_ref = f"{slug(manufacturer)}/{slug(Engine)}"
+        engine_ref = f"{slug(manufacturer)}/{slug(engine_code)}"
 
-        engine_dir = manufacturer_dir / slug(Engine)
+        engine_dir = manufacturer_dir / slug(engine_code)
         engine_dir.mkdir(exist_ok=True)
 
         yaml_path = engine_dir / "def.yml"
@@ -529,24 +531,35 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         else:
             data = {
                 "created": current_timestamp(),
-                "model": Engine,
+                "name": [Engine],
+                "code": engine_code,
                 "evidence": [],
             }
             new_file = True
 
         changed = new_file
         conflict = False
-        if data.get("model") != Engine:
+
+        names = data.get("name", [])
+
+        if isinstance(names, str):
+            names = [names]
+            data["name"] = names
+
+        if Engine and Engine not in names:
+            names.append(Engine)
+            changed = True
+
+        if data.get("code") != engine_code:
             conflict = True
             self.add_conflict(
                 yaml_path,
                 data,
-                "model",
-                Engine,
+                "code",
+                engine_code,
                 evidence
             )
             return engine_ref
-
 
         if Fuel:
 
@@ -561,21 +574,6 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                 )
             elif data.get("fuel") != Fuel:
                 data["fuel"] = Fuel
-                changed = True
-
-        if Engine_type:
-
-            if data.get("type") not in (None, "", Engine_type):
-                conflict = True
-                self.add_conflict(
-                    yaml_path,
-                    data,
-                    "type",
-                    Engine_type,
-                    evidence
-                )
-            elif data.get("type") != Engine_type:
-                data["type"] = Engine_type
                 changed = True
 
         evidences = data.setdefault("evidence", [])
@@ -644,7 +642,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             MCU = (row.get("MCU") or "").strip()
 
             ecu_relative_path = self.import_ecu(Ecu_maker, Ecu_model, self.evidence_var.get(), ECU_type, MCU)
-            #engine_relative_path = self.import_engine(Brand, Engine, Engine_type, Fuel, self.evidence_var.get())
+            engine_relative_path = self.import_engine(Brand, Engine, Engine_type, Fuel, self.evidence_var.get())
             # import vehicle
         
         # TODO
