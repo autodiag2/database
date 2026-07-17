@@ -251,9 +251,9 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             if model.startswith(prefix):
                 return manufacturer
 
-        return "unsorted"
+        return "generic"
 
-    def import_mcu(self, MCU: str, MCU_Type: str = "ECM") -> str | None:
+    def import_mcu(self, MCU: str) -> str | None:
 
         MCU = MCU.strip()
 
@@ -297,10 +297,6 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
         yaml_path = mcu_path / "def.yml"
 
-        #
-        # Read existing file
-        #
-
         if yaml_path.exists():
 
             with yaml_path.open(
@@ -318,15 +314,10 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                 "created": current_timestamp(),
                 "updated": current_timestamp(),
                 "model": MCU,
-                "type": MCU_Type,
                 "evidence": []
             }
 
             new_file = True
-
-        #
-        # Conflicts
-        #
 
         if data.get("model") != MCU:
 
@@ -339,21 +330,6 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
             return mcu_ref
 
-        if data.get("type") != MCU_Type:
-
-            self.add_conflict(
-                yaml_path,
-                "type",
-                data.get("type"),
-                MCU_Type
-            )
-
-            return mcu_ref
-
-        #
-        # Merge
-        #
-
         changed = new_file
 
         evidence = data.setdefault("evidence", [])
@@ -363,10 +339,6 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         if source and source not in evidence:
             evidence.append(source)
             changed = True
-
-        #
-        # Only rewrite if something changed
-        #
 
         if changed:
 
@@ -390,8 +362,17 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
         return mcu_ref
 
-    def import_ecu(self, Ecu_maker, Ecu_model, evidence, MCU, MCU_Type = "ECM"):
-        mcu_ref = self.import_mcu(MCU, MCU_Type)
+    def import_ecu(self, Ecu_maker, Ecu_model, evidence, ECU_type, MCU = "ECM"):
+        mcu_ref = self.import_mcu(MCU)
+        # inspire from logic as mcu import but in ecu/Ecu_maker/def.yml
+        #                                                      /EDC16C34/def.yml
+        # with fields:
+        #        model: 8GMK
+        #        type: ECM
+        #        mcu: mcu/stmicroelectronics/SPC564A80
+        #        evidence: 
+        #            - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+        # if mcu
         pass
     
     def on_import(self):
@@ -427,10 +408,10 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             Power_KW = round(float(Power_PS) * 0.73549875)
             Ecu_maker = row.get("Ecu_maker", "").strip()
             Ecu_model = row.get("Ecu_model", "").strip()
-            MCU_Type = row.get("MCU_Type", "").strip()
+            ECU_type = row.get("ECU_Type", "").strip()
             MCU = row.get("MCU", "").strip()
 
-            ecu_relative_path = self.import_ecu(Ecu_maker, Ecu_model, self.evidence_var.get(), MCU, MCU_Type)
+            ecu_relative_path = self.import_ecu(Ecu_maker, Ecu_model, self.evidence_var.get(), ECU_type, MCU)
             # import engine
             # import vehicle
         
