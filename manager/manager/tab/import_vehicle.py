@@ -308,26 +308,32 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
             new_file = True
 
+        changed = new_file
+        conflict = False
         if data.get("model") != MCU:
-
+            conflict = True
             self.add_conflict(
                 yaml_path,
+                data,
                 "model",
-                data.get("model"),
-                MCU
+                MCU,
+                evidence
             )
 
             return mcu_ref
 
-        changed = new_file
+
 
         evidence = data.setdefault("evidence", [])
 
-        source = self.evidence_var.get().strip()
-
-        if source and source not in evidence:
-            evidence.append(source)
+        if conflict:
             changed = True
+        else:
+            source = self.evidence_var.get().strip()
+
+            if source and source not in evidence:
+                evidence.append(source)
+                changed = True
 
         if changed:
 
@@ -401,27 +407,24 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
         ecu_def = ecu_dir / "def.yml"
 
+        changed = False
         if ecu_def.exists():
             data = self.read_yaml(ecu_def)
         else:
+            changed = True
             data = {
                 "model": Ecu_model,
                 "created": current_timestamp(),
             }
-
-        changed = not ecu_def.exists()
-
+        
+        conflict = False
         if data.get("model") != Ecu_model:
-            self.log(
-                f"⚠ ECU model mismatch for {Ecu_model}: "
-                f"{data.get('model')} != {Ecu_model}"
-            )
+            conflict = True
+            self.add_conflict(ecu_def, data, "model", Ecu_model, evidence)
 
         if data.get("type") not in (None, "", ECU_type):
-            self.log(
-                f"⚠ ECU type mismatch for {Ecu_model}: "
-                f"{data.get('type')} != {ECU_type}"
-            )
+            conflict = True
+            self.add_conflict(ecu_def, data, "type", ECU_type, evidence)
         elif data.get("type") != ECU_type:
             data["type"] = ECU_type
             changed = True
@@ -432,20 +435,21 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
         if mcu_ref:
             if data.get("mcu") not in (None, "", mcu_ref):
-                self.log(
-                    f"⚠ MCU mismatch for {Ecu_model}: "
-                    f"{data.get('mcu')} != {mcu_ref}"
-                )
+                conflict = True
+                self.add_conflict(ecu_def, data, "mcu", mcu_ref, evidence)
             elif data.get("mcu") != mcu_ref:
                 data["mcu"] = mcu_ref
                 changed = True
 
         evidences = set(data.get("evidence", []))
 
-        if evidence and evidence not in evidences:
-            evidences.add(evidence)
-            data["evidence"] = sorted(evidences)
+        if conflict:
             changed = True
+        else:
+            if evidence and evidence not in evidences:
+                evidences.add(evidence)
+                data["evidence"] = sorted(evidences)
+                changed = True
 
         if changed:
             data["updated"] = current_timestamp()
@@ -456,9 +460,24 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
         return f"{slug(Ecu_maker)}/{slug(Ecu_model)}"
 
-    def add_conflict(self, yaml_path, field_name, value_stored, value_to_store):
-        self.log(f"Conflict on {yaml_path} on field {field_name}: stored={value_stored} incoming={value_to_store}")
-        pass
+    def add_conflict(self, yaml_path, yaml_data, field_name, value_to_store, evidence):
+        self.log(
+            f"Conflict on {yaml_path} "
+            f"field '{field_name}': "
+            f"stored={yaml_data.get(field_name)!r} "
+            f"incoming={value_to_store!r}"
+        )
+
+        conflicts = yaml_data.setdefault("conflicts", {})
+        field_conflicts = conflicts.setdefault(field_name, [])
+
+        conflict = {
+            "value": value_to_store,
+            "evidence": evidence,
+        }
+
+        if conflict not in field_conflicts:
+            field_conflicts.append(conflict)
 
     def import_engine(
         self,
@@ -515,25 +534,30 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             }
             new_file = True
 
+        changed = new_file
+        conflict = False
         if data.get("model") != Engine:
+            conflict = True
             self.add_conflict(
                 yaml_path,
+                data,
                 "model",
-                data.get("model"),
                 Engine,
+                evidence
             )
             return engine_ref
 
-        changed = new_file
 
         if Fuel:
 
             if data.get("fuel") not in (None, "", Fuel):
+                conflict = True
                 self.add_conflict(
                     yaml_path,
+                    data,
                     "fuel",
-                    data.get("fuel"),
                     Fuel,
+                    evidence
                 )
             elif data.get("fuel") != Fuel:
                 data["fuel"] = Fuel
@@ -542,11 +566,13 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         if Engine_type:
 
             if data.get("type") not in (None, "", Engine_type):
+                conflict = True
                 self.add_conflict(
                     yaml_path,
+                    data,
                     "type",
-                    data.get("type"),
                     Engine_type,
+                    evidence
                 )
             elif data.get("type") != Engine_type:
                 data["type"] = Engine_type
@@ -554,9 +580,12 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
         evidences = data.setdefault("evidence", [])
 
-        if evidence and evidence not in evidences:
-            evidences.append(evidence)
+        if conflict:
             changed = True
+        else:
+            if evidence and evidence not in evidences:
+                evidences.append(evidence)
+                changed = True
 
         if changed:
             data["updated"] = current_timestamp()
