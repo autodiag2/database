@@ -226,25 +226,29 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         model = (model or "").upper()
 
         prefixes = {
-            "TC": "infineon",      # Aurix / Tricore
+            "TC": "infineon",
             "SAK": "infineon",
             "C16": "infineon",
             "XC": "infineon",
 
             "MPC": "nxp",
-            "SPC": "st",
-            "ST10": "st",
-            "STM": "st",
+            "MC9": "nxp",
+            "MK": "nxp",
+            "S12": "nxp",
 
-            "SH": "renesas",
+            "SPC": "stmicroelectronics",
+            "ST10": "stmicroelectronics",
+            "STM": "stmicroelectronics",
+
+            "RH850": "renesas",
             "R7F": "renesas",
+            "V850": "renesas",
+            "76F": "nec",
+            "D76F": "nec",
+            "SH": "renesas",
 
             "TMS": "ti",
             "AM": "ti",
-
-            "MK": "nxp",
-            "S12": "nxp",
-            "MC9": "nxp",
         }
 
         for prefix, manufacturer in prefixes.items():
@@ -261,7 +265,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             return None
 
         manufacturer = self.guess_manufacturer_from_mcu_model(MCU)
-        mcu_ref = f"{manufacturer}/{MCU}"
+        mcu_ref = f"{manufacturer}/{slug(MCU)}"
 
         manufacturer_path = (
             self.get_data_src() /
@@ -292,7 +296,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                     allow_unicode=True
                 )
 
-        mcu_path = manufacturer_path / MCU
+        mcu_path = manufacturer_path / slug(MCU)
         mcu_path.mkdir(exist_ok=True)
 
         yaml_path = mcu_path / "def.yml"
@@ -396,20 +400,27 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         
         reader = csv.DictReader(io.StringIO(text))
         for row in reader:
-            Type = row.get("Type","").strip()
-            Brand = row.get("Brand", "").strip()
-            Model = row.get("Model", "").strip()
-            Year = row.get("Year", "").strip()
-            Version = row.get("Version", "").strip()
-            Engine = row.get("Engine", "").strip()
-            Engine_type = row.get("Engine_type", "").strip()
-            Fuel = row.get("Fuel", "").strip()
-            Power_PS = row.get("Power_PS", "").strip()
-            Power_KW = round(float(Power_PS) * 0.73549875)
-            Ecu_maker = row.get("Ecu_maker", "").strip()
-            Ecu_model = row.get("Ecu_model", "").strip()
-            ECU_type = row.get("ECU_Type", "").strip()
-            MCU = row.get("MCU", "").strip()
+
+            Type = (row.get("Type") or "").strip()
+            Brand = (row.get("Brand") or "").strip()
+            Model = (row.get("Model") or "").strip()
+            Year = (row.get("Year") or "").strip()
+            Version = (row.get("Version") or "").strip()
+            Engine = (row.get("Engine") or "").strip()
+            Engine_type = (row.get("Engine_type") or "").strip()
+            Fuel = (row.get("Fuel") or "").strip()
+            Power_PS = (row.get("Power_PS") or "").strip()
+
+            Power_KW = (
+                0
+                if Power_PS == ""
+                else round(float(Power_PS) * 0.73549875)
+            )
+
+            Ecu_maker = (row.get("Ecu_maker") or "").strip()
+            Ecu_model = (row.get("Ecu_model") or "").strip()
+            ECU_type = (row.get("ECU_Type") or "").strip()
+            MCU = (row.get("MCU") or "").strip()
 
             ecu_relative_path = self.import_ecu(Ecu_maker, Ecu_model, self.evidence_var.get(), ECU_type, MCU)
             # import engine
