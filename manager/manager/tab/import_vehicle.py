@@ -598,28 +598,8 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
         return engine_ref
 
-    def on_import(self):
-        self.clear_log()
-
-        if self.evidence_var.get().strip() == "":
-            messagebox.showerror(
-                "Error",
-                "Evidence source must be specified."
-            )
-            return
-
-        text = self.input_text.get("1.0", "end-1c").strip()
-        if text == "":
-            self.log("Nothing to import.")
-            return
-
-        self.log("----------------------------------------")
-        self.log("Starting vehicle import...")
-        self.log("")
-        
-        reader = csv.DictReader(io.StringIO(text))
+    def on_import_worker(self, reader):
         for row in reader:
-
             Type = (row.get("Type") or "").strip()
             Brand = (row.get("Brand") or "").strip()
             Model = (row.get("Model") or "").strip()
@@ -644,6 +624,35 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             ecu_relative_path = self.import_ecu(Ecu_maker, Ecu_model, self.evidence_var.get(), ECU_type, MCU)
             engine_relative_path = self.import_engine(Brand, Engine, Engine_type, Fuel, self.evidence_var.get())
             # import vehicle
+            self.heavy_op_step()
+
+    def on_import(self):
+        self.clear_log()
+
+        if self.evidence_var.get().strip() == "":
+            messagebox.showerror(
+                "Error",
+                "Evidence source must be specified."
+            )
+            return
+
+        text = self.input_text.get("1.0", "end-1c").strip()
+        if text == "":
+            self.log("Nothing to import.")
+            return
+
+        self.log("----------------------------------------")
+        self.log("Starting vehicle import...")
+        self.log("")
+
+        reader = csv.DictReader(io.StringIO(text))
+        rows = list(reader)
+        count = len(rows)
+        self.heavy_op_start(
+            self.on_import_worker,
+            count,
+            rows
+        )        
         
         # TODO
         self.log("[TODO] Create vehicles")

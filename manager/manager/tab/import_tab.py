@@ -2,6 +2,7 @@ import manager.tk.tk as tk
 from tkinter import ttk
 from manager.tk.Tab import Tab
 from pathlib import Path
+import threading
 
 class ImportTab(Tab):
 
@@ -123,6 +124,28 @@ class ImportTab(Tab):
         frame = tk.LabelFrame(self.left_pane , text="Operations")
         frame.pack(fill="both", expand=True, padx=10, pady=(0, 10))
 
+        progress_frame = tk.Frame(frame)
+        progress_frame.pack(fill="x", padx=5, pady=(0, 5))
+
+        self.progress = ttk.Progressbar(
+            progress_frame,
+            orient="horizontal",
+            mode="determinate"
+        )
+        self.progress.pack(side="left", fill="x", expand=True)
+
+        self.progress_label = tk.Label(
+            progress_frame,
+            width=16,
+            anchor="e",
+            font=("TkFixedFont", 9),
+            text="000000 / 000000"
+        )
+        self.progress_label.pack(side="left", padx=(10, 0))
+
+        self.progress["value"] = 0
+        self.progress["maximum"] = 1
+
         search_frame = tk.Frame(frame)
         search_frame.pack(fill="x", padx=5, pady=5)
 
@@ -178,6 +201,44 @@ class ImportTab(Tab):
             foreground="black"
         )
 
+    def heavy_op_start(self, func, steps, *args, **kwargs):
+        self._progress_steps = max(steps, 1)
+        self._progress_current = 0
+
+        self.progress.configure(maximum=self._progress_steps)
+        self.progress["value"] = 0
+        self.progress_label.config(text=f"0 / {self._progress_steps}")
+
+        def worker():
+            try:
+                func(*args, **kwargs)
+            finally:
+                self.root.after(
+                    0,
+                    lambda: self.progress_label.config(
+                        text=f"{self._progress_steps} / {self._progress_steps}"
+                    )
+                )
+
+        threading.Thread(
+            target=worker,
+            daemon=True
+        ).start()
+
+    def heavy_op_step(self):
+
+        def update():
+
+            if self._progress_current < self._progress_steps:
+                self._progress_current += 1
+
+            self.progress["value"] = self._progress_current
+            self.progress_label.config(
+                text=f"{self._progress_current} / {self._progress_steps}"
+            )
+
+        self.root.after(0, update)
+        
     def update_search_status(self):
         if not self.search_matches:
             self.search_status.config(text="no matches")
