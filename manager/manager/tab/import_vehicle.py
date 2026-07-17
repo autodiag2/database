@@ -382,6 +382,8 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
     def insert_or_conflict(self, yaml_path, data, field, value, evidence):
         changed = False
         conflict = False
+        if value == None or value == "":
+            return changed, conflict
         current = data.get(field)
         if current:
             if current.lower() != value.lower():
