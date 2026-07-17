@@ -455,7 +455,122 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             self.log(f"ECU unchanged {Ecu_maker}/{Ecu_model}")
 
         return f"{slug(Ecu_maker)}/{slug(Ecu_model)}"
-    
+
+    def add_conflict(self, yaml_path, field_name, value_stored, value_to_store):
+        self.log(f"Conflict on {yaml_path} on field {field_name}: stored={value_stored} incoming={value_to_store}")
+        pass
+
+    def import_engine(
+        self,
+        manufacturer,
+        Engine,
+        Engine_type="",
+        Fuel="",
+        evidence=""
+    ):
+        manufacturer = (manufacturer or "").strip()
+        Engine = (Engine or "").strip()
+        Engine_type = (Engine_type or "").strip()
+        Fuel = (Fuel or "").strip()
+
+        if not manufacturer or not Engine:
+            return None
+
+        manufacturer_dir = (
+            self.get_data_src() /
+            "engine" /
+            slug(manufacturer)
+        )
+
+        manufacturer_dir.mkdir(
+            parents=True,
+            exist_ok=True
+        )
+
+        manufacturer_def = manufacturer_dir / "def.yml"
+
+        if not manufacturer_def.exists():
+            self.write_yaml(
+                manufacturer_def,
+                {
+                    "manufacturer": manufacturer
+                }
+            )
+
+        engine_ref = f"{slug(manufacturer)}/{slug(Engine)}"
+
+        engine_dir = manufacturer_dir / slug(Engine)
+        engine_dir.mkdir(exist_ok=True)
+
+        yaml_path = engine_dir / "def.yml"
+
+        if yaml_path.exists():
+            data = self.read_yaml(yaml_path)
+            new_file = False
+        else:
+            data = {
+                "created": current_timestamp(),
+                "model": Engine,
+                "evidence": [],
+            }
+            new_file = True
+
+        if data.get("model") != Engine:
+            self.add_conflict(
+                yaml_path,
+                "model",
+                data.get("model"),
+                Engine,
+            )
+            return engine_ref
+
+        changed = new_file
+
+        if Fuel:
+
+            if data.get("fuel") not in (None, "", Fuel):
+                self.add_conflict(
+                    yaml_path,
+                    "fuel",
+                    data.get("fuel"),
+                    Fuel,
+                )
+            elif data.get("fuel") != Fuel:
+                data["fuel"] = Fuel
+                changed = True
+
+        if Engine_type:
+
+            if data.get("type") not in (None, "", Engine_type):
+                self.add_conflict(
+                    yaml_path,
+                    "type",
+                    data.get("type"),
+                    Engine_type,
+                )
+            elif data.get("type") != Engine_type:
+                data["type"] = Engine_type
+                changed = True
+
+        evidences = data.setdefault("evidence", [])
+
+        if evidence and evidence not in evidences:
+            evidences.append(evidence)
+            changed = True
+
+        if changed:
+            data["updated"] = current_timestamp()
+            self.write_yaml(yaml_path, data)
+
+            if new_file:
+                self.log(f"Created Engine: {engine_ref}")
+            else:
+                self.log(f"Updated Engine: {engine_ref}")
+        else:
+            self.log(f"Engine unchanged: {engine_ref}")
+
+        return engine_ref
+
     def on_import(self):
         self.clear_log()
 
@@ -500,17 +615,12 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             MCU = (row.get("MCU") or "").strip()
 
             ecu_relative_path = self.import_ecu(Ecu_maker, Ecu_model, self.evidence_var.get(), ECU_type, MCU)
-            # import engine
+            engine_relative_path = self.import_engine(Brand, Engine, Engine_type, Fuel, self.evidence_var.get())
             # import vehicle
         
         # TODO
-        self.log("[TODO] Create engines")
-        self.log("[TODO] Create ECUs")
         self.log("[TODO] Create vehicles")
         self.log("[TODO] Create versions")
-        self.log("[TODO] Merge YAML")
-        self.log("[TODO] Detect conflicts")
-        self.log("[TODO] Write files")
 
         self.log("")
         self.log("Import finished.")
