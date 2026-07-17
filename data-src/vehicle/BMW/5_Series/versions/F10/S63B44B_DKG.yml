@@ -1,0 +1,14 @@
+created: 2026-07-17 23:08:12 CEST
+year: 2006-2015
+version: F10
+engine: Bmw/S63B44B
+power_kw: 412.0
+ecu: GETRAG/DKG
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:18:59 CEST
+conflicts:
+  year:
+  - value: '2011'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

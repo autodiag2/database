@@ -1,0 +1,16 @@
+created: 2026-07-17 23:08:18 CEST
+year: 2000-2018
+version: B9
+engine: Citroen/1600_HDi
+power_kw: 65.0
+ecu: Bosch/EDC17C10
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:19:22 CEST
+conflicts:
+  year:
+  - value: '2012'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+altecus:
+- BOSCH/EDC17C10

@@ -1,0 +1,13 @@
+created: 2026-07-17 23:20:22 CEST
+year: '2015'
+version: DK
+engine: Mazda/S5
+power_kw: 77.0
+ecu: DENSO/S5xx
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:20:22 CEST
+conflicts:
+  year:
+  - value: '2016'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

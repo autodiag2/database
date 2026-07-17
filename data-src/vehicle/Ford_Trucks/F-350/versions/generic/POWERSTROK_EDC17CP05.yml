@@ -1,0 +1,15 @@
+created: 2026-07-17 23:15:55 CEST
+engine: Ford_Trucks/POWERSTROK
+power_kw: 287.0
+ecu: Bosch/EDC17CP05
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:15:56 CEST
+conflicts:
+  power_kw:
+  - value: 294.0
+    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+  - value: 324.0
+    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+  - value: 266.0
+    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

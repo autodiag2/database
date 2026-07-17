@@ -1,0 +1,18 @@
+created: 2026-07-17 23:15:26 CEST
+version: E71
+engine: Bmw/M57D30TU2
+power_kw: 173.0
+ecu: Bosch/EDC16CP35
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:19:13 CEST
+conflicts:
+  power_kw:
+  - value: 210.0
+    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+  - value: 210.0
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+year: '2008'
+altecus:
+- BOSCH/EDC16CP35

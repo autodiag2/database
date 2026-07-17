@@ -1,0 +1,12 @@
+created: 2026-07-17 23:15:19 CEST
+version: E38
+engine: Bmw/M67D39
+power_kw: 175.0
+ecu: Bosch/EDC16C31
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:19:05 CEST
+year: '2000'
+altecus:
+- BOSCH/EDC16C31

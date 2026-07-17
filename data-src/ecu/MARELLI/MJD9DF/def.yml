@@ -1,0 +1,7 @@
+model: MJD9DF
+created: 2026-07-17 23:24:54 CEST
+type: ECM
+mcu: nxp/MPC5644A
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:24:54 CEST

@@ -1,0 +1,11 @@
+created: 2026-07-17 23:08:26 CEST
+version: '110'
+engine: Fiat/199.B1.000
+power_kw: 70.0
+ecu: MARELLI/MJ8F3
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:19:37 CEST
+year: '2009'

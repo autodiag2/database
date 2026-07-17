@@ -1,0 +1,8 @@
+created: 2026-07-17 23:09:26 CEST
+version: LS
+engine: Tata/1.4
+power_kw: 56.0
+ecu: Magneti_Marelli/IAW5SF
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:09:26 CEST

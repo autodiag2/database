@@ -1,0 +1,10 @@
+created: 2026-07-17 23:09:45 CEST
+year: 2012-2017
+version: I
+engine: Volkswagen/1000
+power_kw: 60.0
+ecu: Bosch/ME17.5.24
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:17:38 CEST

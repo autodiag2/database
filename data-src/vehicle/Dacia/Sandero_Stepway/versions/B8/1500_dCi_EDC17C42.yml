@@ -1,0 +1,15 @@
+created: 2026-07-17 23:08:24 CEST
+year: 2008-2019
+version: B8
+engine: Dacia/1500_dCi
+power_kw: 66.0
+ecu: Bosch/EDC17C42
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:19:31 CEST
+conflicts:
+  year:
+  - value: '2013'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+altecus:
+- BOSCH/EDC17C42

@@ -1,0 +1,7 @@
+model: 8HP75H
+created: 2026-07-17 23:24:56 CEST
+type: ECM
+mcu: renesas/SH72569
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:24:56 CEST

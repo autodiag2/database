@@ -1,0 +1,11 @@
+created: 2026-07-17 23:19:54 CEST
+year: '2013'
+version: Switchback
+engine: Harley_Davidson/1584cc
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:19:54 CEST
+conflicts:
+  year:
+  - value: '2012'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

@@ -1,0 +1,16 @@
+created: 2026-07-17 23:08:48 CEST
+year: 2000-2009
+version: II
+engine: Lancia/2000_MJT
+power_kw: 88.0
+ecu: Siemens/SID803A
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:16:11 CEST
+conflicts:
+  power_kw:
+  - value: 100.0
+    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+  - value: 100.0
+    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

@@ -1,0 +1,13 @@
+created: 2026-07-17 23:08:48 CEST
+engine: Lancia/1300_Multijet
+power_kw: 51.0
+ecu: Magneti_Marelli/8DF_MPC5553
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:08:48 CEST
+conflicts:
+  power_kw:
+  - value: 66.0
+    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+  - value: 70.0
+    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

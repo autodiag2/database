@@ -1,0 +1,11 @@
+model: R2A
+created: 2026-07-17 23:25:12 CEST
+type: ECM
+mcu: renesas/SH7058
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:25:12 CEST
+conflicts:
+  mcu:
+  - value: renesas/SH7059
+    evidence: https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf

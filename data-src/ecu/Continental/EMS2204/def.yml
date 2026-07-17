@@ -1,0 +1,8 @@
+model: EMS2204
+created: 2026-07-17 23:19:44 CEST
+type: ECM
+mcu: infineon/TC1738
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:24:59 CEST

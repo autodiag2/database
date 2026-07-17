@@ -1,0 +1,7 @@
+model: US6.0
+created: 2026-07-17 23:24:56 CEST
+type: ECM
+mcu: stmicroelectronics/SPC563M64
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:24:56 CEST

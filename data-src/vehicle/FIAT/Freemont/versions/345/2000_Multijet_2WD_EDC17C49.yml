@@ -1,0 +1,15 @@
+created: 2026-07-17 23:08:26 CEST
+year: 2006-2019
+version: '345'
+engine: Fiat/2000_Multijet_2WD
+power_kw: 125.0
+ecu: Bosch/EDC17C49
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:19:36 CEST
+conflicts:
+  year:
+  - value: '2011'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+altecus:
+- BOSCH/EDC17C49

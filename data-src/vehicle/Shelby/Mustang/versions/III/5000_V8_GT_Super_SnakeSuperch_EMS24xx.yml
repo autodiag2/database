@@ -1,0 +1,9 @@
+created: 2026-07-17 23:09:22 CEST
+year: 2011-2015
+version: III
+engine: Shelby/5000_V8_GT_Super_SnakeSuperch
+power_kw: 552.0
+ecu: Continental/EMS24xx
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:09:22 CEST

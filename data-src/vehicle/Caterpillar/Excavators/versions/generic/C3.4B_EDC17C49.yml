@@ -1,0 +1,15 @@
+created: 2026-07-17 23:08:17 CEST
+year: 2006-2019
+engine: Caterpillar/C3.4B
+power_kw: 55.0
+ecu: Bosch/EDC17C49
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:19:18 CEST
+conflicts:
+  year:
+  - value: '2014'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+altecus:
+- BOSCH/EDC17C49

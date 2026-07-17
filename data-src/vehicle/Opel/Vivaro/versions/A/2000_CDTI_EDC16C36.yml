@@ -1,0 +1,12 @@
+created: 2026-07-17 23:16:41 CEST
+version: A
+engine: Opel/2000_CDTI
+power_kw: 49.0
+ecu: Bosch/EDC16C36
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:16:41 CEST
+conflicts:
+  power_kw:
+  - value: 62.0
+    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

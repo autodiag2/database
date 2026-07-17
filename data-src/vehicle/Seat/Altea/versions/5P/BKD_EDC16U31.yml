@@ -1,0 +1,11 @@
+created: 2026-07-17 23:17:01 CEST
+version: 5P
+engine: Seat/BKD
+power_kw: 103.0
+ecu: Bosch/EDC16U31
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:21:10 CEST
+altecus:
+- BOSCH/EDC16U31

@@ -1,0 +1,8 @@
+created: 2026-07-17 23:20:12 CEST
+version: LP 550-2
+engine: Lamborghini/5200_V10
+power_kw: 405.0
+ecu: BOSCH/MED9.1_MASTER
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:20:12 CEST

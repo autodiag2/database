@@ -1,0 +1,9 @@
+created: 2026-07-17 23:08:49 CEST
+version: J1
+engine: Lexus/3GRFSE
+power_kw: 188.0
+ecu: Denso/275036-8730_
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:16:13 CEST

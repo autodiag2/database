@@ -1,0 +1,11 @@
+created: 2026-07-17 23:15:28 CEST
+version: NEW
+engine: Buick/2000
+power_kw: 108.0
+ecu: Delco/E83
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:19:15 CEST
+altecus:
+- DELCO/E83

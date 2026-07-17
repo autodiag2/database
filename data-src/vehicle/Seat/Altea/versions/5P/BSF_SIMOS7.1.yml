@@ -1,0 +1,8 @@
+created: 2026-07-17 23:09:19 CEST
+version: 5P
+engine: Seat/BSF
+power_kw: 75.0
+ecu: Continental/SIMOS7.1
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:09:19 CEST

@@ -1,0 +1,13 @@
+created: 2026-07-17 23:19:56 CEST
+year: '2004'
+version: II
+engine: Hino/N04C
+power_kw: 110.0
+ecu: DENSO/896xx
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:19:56 CEST
+conflicts:
+  power_kw:
+  - value: 125.0
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

@@ -1,0 +1,7 @@
+model: DCM3.7AP
+created: 2026-07-17 23:24:57 CEST
+type: ECM
+mcu: renesas/SH72513
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:24:57 CEST

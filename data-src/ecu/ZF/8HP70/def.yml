@@ -1,0 +1,11 @@
+model: 8HP70
+created: 2026-07-17 23:24:57 CEST
+type: ECM
+mcu: renesas/SH72549
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:25:11 CEST
+conflicts:
+  mcu:
+  - value: renesas/SH7254x
+    evidence: https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf

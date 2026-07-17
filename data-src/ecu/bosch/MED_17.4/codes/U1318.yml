@@ -15,9 +15,6 @@ repairs: []
 evidence:
   source:
   - https://fr.scribd.com/doc/210737517/Citroen-Err-Table
-  - 'https://fr.scribd.com/doc/210737517/Citroen-Err-Table
-
-    '
 protocol:
 - obd2
 standard:

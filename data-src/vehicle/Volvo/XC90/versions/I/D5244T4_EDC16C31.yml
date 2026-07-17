@@ -1,0 +1,12 @@
+created: 2026-07-17 23:17:42 CEST
+version: I
+engine: Volvo/D5244T4
+power_kw: 136.0
+ecu: Bosch/EDC16C31
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:21:59 CEST
+year: '2006'
+altecus:
+- BOSCH/EDC16C31

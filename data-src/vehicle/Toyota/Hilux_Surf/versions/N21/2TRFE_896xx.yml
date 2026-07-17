@@ -1,0 +1,19 @@
+created: 2026-07-17 23:21:27 CEST
+year: '2004'
+version: N21
+engine: Toyota/2TRFE
+power_kw: 118.0
+ecu: DENSO/896xx
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:21:27 CEST
+conflicts:
+  year:
+  - value: '2008'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+  - value: '2009'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+  - value: '2012'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+  - value: '2005'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

@@ -1,0 +1,8 @@
+created: 2026-07-17 23:08:14 CEST
+version: F23
+engine: BMW/B48A20A
+power_kw: 141.0
+ecu: Bosch/MEVD17.2.K
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:08:14 CEST

@@ -1,0 +1,12 @@
+created: 2026-07-17 23:09:48 CEST
+version: II
+engine: Volvo/0
+power_kw: 140.0
+ecu: Denso/MB279700-96xx
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:09:48 CEST
+conflicts:
+  power_kw:
+  - value: 168.0
+    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

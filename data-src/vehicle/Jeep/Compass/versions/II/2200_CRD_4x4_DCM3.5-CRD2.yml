@@ -1,0 +1,13 @@
+created: 2026-07-17 23:20:07 CEST
+year: '2011'
+version: II
+engine: Jeep/2200_CRD_4x4
+power_kw: 100.0
+ecu: DELPHI/DCM3.5-CRD2
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:20:07 CEST
+conflicts:
+  power_kw:
+  - value: 120.0
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

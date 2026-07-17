@@ -1,0 +1,10 @@
+created: 2026-07-17 23:09:15 CEST
+year: 2012-2018
+version: IV
+engine: Renault/M5M400
+power_kw: 147.0
+ecu: Continental/EMS3150
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:16:52 CEST

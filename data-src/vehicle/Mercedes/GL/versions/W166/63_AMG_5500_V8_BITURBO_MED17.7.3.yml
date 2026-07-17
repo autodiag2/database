@@ -1,0 +1,15 @@
+created: 2026-07-17 23:08:57 CEST
+year: 2005-2017
+version: W166
+engine: Mercedes/63_AMG_5500_V8_BITURBO
+power_kw: 395.0
+ecu: Bosch/MED17.7.3
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:20:33 CEST
+conflicts:
+  year:
+  - value: '2013'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+altecus:
+- BOSCH/MED17.7.3

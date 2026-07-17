@@ -1,0 +1,12 @@
+created: 2026-07-17 23:08:17 CEST
+version: '220'
+engine: CASE_Tractors/6700
+power_kw: 165.0
+ecu: Bosch/EDC17CV41
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:19:16 CEST
+year: '2014'
+altecus:
+- BOSCH/EDC17CV41

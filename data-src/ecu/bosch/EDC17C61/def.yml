@@ -1,0 +1,7 @@
+model: EDC17C61
+created: 2026-07-17 23:25:10 CEST
+type: ECM
+mcu: infineon/TC1724
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:25:10 CEST

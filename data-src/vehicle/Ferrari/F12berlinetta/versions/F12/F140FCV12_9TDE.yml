@@ -1,0 +1,8 @@
+created: 2026-07-17 23:08:25 CEST
+version: F12
+engine: Ferrari/F140FCV12
+power_kw: 544.0
+ecu: MARELLI/9TDE
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:08:25 CEST

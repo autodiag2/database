@@ -1,0 +1,10 @@
+created: 2026-07-17 23:16:01 CEST
+version: RL
+engine: Honda/J35Z8
+power_kw: 206.0
+ecu: ZF/9HP
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:19:59 CEST
+year: '2017'

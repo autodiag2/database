@@ -1,0 +1,12 @@
+created: 2026-07-17 23:17:11 CEST
+version: E150
+engine: Toyota/1NDTV
+power_kw: 66.0
+ecu: Bosch/EDC16C10
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:21:22 CEST
+year: '2006'
+altecus:
+- BOSCH/EDC16C10

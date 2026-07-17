@@ -1,0 +1,8 @@
+created: 2026-07-17 23:08:03 CEST
+version: C7
+engine: Audi/4000_TFSI_performance_quattro_tip_t
+power_kw: 445.0
+ecu: Bosch/MED17.1_ver2
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:08:03 CEST

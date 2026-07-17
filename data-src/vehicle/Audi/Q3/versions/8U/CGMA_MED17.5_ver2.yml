@@ -1,0 +1,9 @@
+created: 2026-07-17 23:08:01 CEST
+version: 8U
+engine: Audi/CGMA
+power_kw: 147.0
+ecu: Bosch/MED17.5_ver2
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:14:50 CEST

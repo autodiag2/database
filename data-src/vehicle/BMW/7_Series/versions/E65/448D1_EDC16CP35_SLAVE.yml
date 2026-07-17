@@ -1,0 +1,13 @@
+created: 2026-07-17 23:19:05 CEST
+year: '2005'
+version: E65
+engine: Bmw/448D1
+power_kw: 220.0
+ecu: BOSCH/EDC16CP35_SLAVE
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:19:05 CEST
+conflicts:
+  power_kw:
+  - value: 242.0
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

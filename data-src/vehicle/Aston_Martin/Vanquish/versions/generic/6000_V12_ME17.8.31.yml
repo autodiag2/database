@@ -1,0 +1,15 @@
+created: 2026-07-17 23:07:53 CEST
+year: 2012-2020
+engine: Aston_Martin/6000_V12
+power_kw: 422.0
+ecu: Bosch/ME17.8.31
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:18:10 CEST
+conflicts:
+  year:
+  - value: '2013'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+altecus:
+- BOSCH/ME17.8.31

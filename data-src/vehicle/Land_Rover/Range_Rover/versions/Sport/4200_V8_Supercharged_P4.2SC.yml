@@ -1,0 +1,8 @@
+created: 2026-07-17 23:08:49 CEST
+version: Sport
+engine: Land_Rover/4200_V8_Supercharged
+power_kw: 287.0
+ecu: Denso/P4.2SC
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:08:49 CEST

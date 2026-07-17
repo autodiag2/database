@@ -1,0 +1,14 @@
+created: 2026-07-17 23:15:45 CEST
+version: '312'
+engine: Fiat/330.A1.000
+power_kw: 70.0
+ecu: MARELLI/9DF
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:19:38 CEST
+year: '2015'
+conflicts:
+  power_kw:
+  - value: 59.0
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

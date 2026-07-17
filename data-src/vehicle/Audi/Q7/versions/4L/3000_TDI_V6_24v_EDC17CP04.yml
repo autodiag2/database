@@ -1,0 +1,15 @@
+created: 2026-07-17 23:08:02 CEST
+year: 2004-2012
+version: 4L
+engine: Audi/3000_TDI_V6_24v
+power_kw: 177.0
+ecu: Bosch/EDC17CP04
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:18:26 CEST
+conflicts:
+  year:
+  - value: '2007'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+altecus:
+- BOSCH/EDC17CP04

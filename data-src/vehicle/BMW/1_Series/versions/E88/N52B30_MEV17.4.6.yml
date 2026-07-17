@@ -1,0 +1,13 @@
+created: 2026-07-17 23:18:33 CEST
+year: '2008'
+version: E88
+engine: Bmw/N52B30
+power_kw: 160.0
+ecu: BOSCH/MEV17.4.6
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:18:33 CEST
+conflicts:
+  power_kw:
+  - value: 169.0
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

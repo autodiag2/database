@@ -1,0 +1,7 @@
+model: Simos8.10
+created: 2026-07-17 23:24:55 CEST
+type: ECM
+mcu: infineon/TC1796
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:24:55 CEST

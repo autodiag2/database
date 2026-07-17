@@ -1,0 +1,9 @@
+created: 2026-07-17 23:09:07 CEST
+year: 2008-2018
+version: X
+engine: Opel/B16DTL
+power_kw: 81.0
+ecu: Delco/E98
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:09:07 CEST

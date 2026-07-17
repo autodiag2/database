@@ -1,0 +1,7 @@
+model: CRD.11
+created: 2026-07-17 23:25:15 CEST
+type: ECM
+mcu: nxp/MPC563
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:25:15 CEST

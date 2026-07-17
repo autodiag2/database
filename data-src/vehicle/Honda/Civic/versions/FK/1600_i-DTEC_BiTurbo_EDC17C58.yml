@@ -1,0 +1,15 @@
+created: 2026-07-17 23:08:38 CEST
+year: 2011-2017
+version: FK
+engine: Honda/1600_i-DTEC_BiTurbo
+power_kw: 118.0
+ecu: Bosch/EDC17C58
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:19:58 CEST
+conflicts:
+  year:
+  - value: '2015'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+altecus:
+- BOSCH/EDC17C58

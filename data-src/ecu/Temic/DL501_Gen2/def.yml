@@ -1,0 +1,7 @@
+model: DL501 Gen2
+created: 2026-07-17 23:18:18 CEST
+type: ECM
+mcu: infineon/TC1784
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:18:18 CEST

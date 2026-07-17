@@ -1,0 +1,18 @@
+created: 2026-07-17 23:15:21 CEST
+version: G12
+engine: Bmw/B48B20B
+power_kw: 185.0
+ecu: Bosch/MG1CS003
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:19:08 CEST
+conflicts:
+  power_kw:
+  - value: 240.0
+    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+  - value: 240.0
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+year: '2016'
+altecus:
+- BOSCH/MG1CS003

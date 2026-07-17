@@ -1,0 +1,11 @@
+model: 10JA
+created: 2026-07-17 23:24:54 CEST
+type: ECM
+mcu: nxp/MPC5777
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:24:54 CEST
+conflicts:
+  mcu:
+  - value: infineon/TC1793
+    evidence: https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf

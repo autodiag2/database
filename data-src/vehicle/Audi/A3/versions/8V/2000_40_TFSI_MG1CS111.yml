@@ -1,0 +1,8 @@
+created: 2026-07-17 23:14:39 CEST
+version: 8V
+engine: Audi/2000_40_TFSI
+power_kw: 140.0
+ecu: Bosch/MG1CS111
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:14:39 CEST

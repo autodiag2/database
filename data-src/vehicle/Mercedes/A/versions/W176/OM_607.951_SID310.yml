@@ -1,0 +1,18 @@
+created: 2026-07-17 23:20:24 CEST
+year: '2013'
+version: W176
+engine: Mercedes/OM_607.951
+power_kw: 66.0
+ecu: CONTINENTAL/SID310
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:20:24 CEST
+conflicts:
+  year:
+  - value: '2015'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+  - value: '2012'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+  power_kw:
+  - value: 81.0
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

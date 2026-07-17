@@ -1,0 +1,15 @@
+created: 2026-07-17 23:08:43 CEST
+year: 2008-2016
+version: X761
+engine: Jaguar/3000_V6P_S_AWD
+power_kw: 280.0
+ecu: Bosch/MED17.8.31
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:20:05 CEST
+conflicts:
+  year:
+  - value: '2016'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+altecus:
+- BOSCH/MED17.8.31

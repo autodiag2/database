@@ -1,0 +1,16 @@
+created: 2026-07-17 23:15:07 CEST
+version: F30
+engine: Bmw/N51B30A
+power_kw: 172.0
+ecu: CONTINENTAL_SIEME/MSV80
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:18:47 CEST
+year: '2011'
+altecus:
+- CONTINENTAL_SIEMENS/MSV80
+conflicts:
+  year:
+  - value: '2012'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

@@ -1,0 +1,9 @@
+created: 2026-07-17 23:07:52 CEST
+version: '312'
+engine: Abarth/312.A1.000
+power_kw: 118.0
+ecu: Magneti_Marelli/MTA
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:14:35 CEST

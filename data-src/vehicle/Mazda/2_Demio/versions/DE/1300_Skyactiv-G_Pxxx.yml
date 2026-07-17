@@ -1,0 +1,14 @@
+created: 2026-07-17 23:08:51 CEST
+version: DE
+engine: Mazda/1300_Skyactiv-G
+power_kw: 62.0
+ecu: Denso/Pxxx
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:20:21 CEST
+year: '2011'
+altecus:
+- DENSO/Pxxx
+- MITSUBISHI/Pxxx

@@ -1,0 +1,12 @@
+created: 2026-07-17 23:14:57 CEST
+version: E82
+engine: Bmw/N43B20A
+power_kw: 125.0
+ecu: CONTINENTAL_SIEME/MSD80
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:18:32 CEST
+year: '2009'
+altecus:
+- CONTINENTAL_SIEMENS/MSD80

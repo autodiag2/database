@@ -1,0 +1,7 @@
+model: BED50D
+created: 2026-07-17 23:25:17 CEST
+type: ECM
+mcu: renesas/R7F701202
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:25:18 CEST

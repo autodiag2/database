@@ -1,0 +1,10 @@
+created: 2026-07-17 23:09:42 CEST
+year: 2010-2020
+version: B9
+engine: Volkswagen/CJXA
+power_kw: 206.0
+ecu: Temic/DQ380
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:17:33 CEST

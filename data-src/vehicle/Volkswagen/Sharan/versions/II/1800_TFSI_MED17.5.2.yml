@@ -1,0 +1,10 @@
+created: 2026-07-17 23:09:43 CEST
+year: 2007-2017
+version: II
+engine: Volkswagen/1800_TFSI
+power_kw: 116.0
+ecu: Bosch/MED17.5.2
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:17:35 CEST

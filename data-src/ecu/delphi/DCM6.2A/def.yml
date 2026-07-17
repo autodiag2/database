@@ -1,0 +1,13 @@
+model: DCM6.2A
+created: 2026-07-17 23:08:20 CEST
+type: ECM
+mcu: nxp/MPC5674F
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:24:57 CEST
+conflicts:
+  mcu:
+  - value: stmicroelectronics/SPC5674F
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

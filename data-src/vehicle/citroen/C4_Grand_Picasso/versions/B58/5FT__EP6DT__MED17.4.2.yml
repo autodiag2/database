@@ -1,0 +1,15 @@
+created: 2026-07-17 23:08:20 CEST
+year: 2005-2013
+version: B58
+engine: Citroen/5FT__EP6DT_
+power_kw: 103.0
+ecu: Bosch/MED17.4.2
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:19:25 CEST
+conflicts:
+  year:
+  - value: '2008'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+altecus:
+- BOSCH/MED17.4.2

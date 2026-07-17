@@ -1,0 +1,9 @@
+created: 2026-07-17 23:08:44 CEST
+version: XF
+engine: Jaguar/AJ25
+power_kw: 143.0
+ecu: Denso/P4.2NA
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:16:06 CEST

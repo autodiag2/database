@@ -1,0 +1,13 @@
+created: 2026-07-17 23:20:08 CEST
+year: '2015'
+version: JD
+engine: Kia/7_Speed_DCT_Ecoshift
+power_kw: 100.0
+ecu: CONTINENTAL/SIM2K-305
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:20:08 CEST
+conflicts:
+  power_kw:
+  - value: 99.0
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

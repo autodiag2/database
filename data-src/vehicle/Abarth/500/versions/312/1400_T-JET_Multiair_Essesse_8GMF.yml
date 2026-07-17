@@ -1,0 +1,13 @@
+created: 2026-07-17 23:07:52 CEST
+year: 2011-2018
+version: '312'
+engine: Abarth/1400_T-JET_Multiair_Essesse
+power_kw: 116.0
+ecu: MARELLI/8GMF
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:18:07 CEST
+conflicts:
+  year:
+  - value: '2008'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

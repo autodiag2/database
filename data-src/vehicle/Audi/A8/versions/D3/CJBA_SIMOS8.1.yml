@@ -1,0 +1,9 @@
+created: 2026-07-17 23:08:00 CEST
+version: D3
+engine: Audi/CJBA
+power_kw: 170.0
+ecu: Continental/SIMOS8.1
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:14:48 CEST

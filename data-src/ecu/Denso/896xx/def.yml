@@ -1,0 +1,15 @@
+model: 896xx
+created: 2026-07-17 23:09:04 CEST
+type: ECM
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:21:31 CEST
+mcu: nec/76F004_12_15_21_23_38_39_40_70_85GD_AGD
+conflicts:
+  mcu:
+  - value: nec/76F0219F1_76F0196F1_76F0199GD
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+  - value: nec/76F0219F1
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

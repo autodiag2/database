@@ -1,0 +1,8 @@
+created: 2026-07-17 23:08:30 CEST
+version: SE
+engine: Ford/HXJE
+power_kw: 88.0
+ecu: Continental/EMS2214
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:08:30 CEST

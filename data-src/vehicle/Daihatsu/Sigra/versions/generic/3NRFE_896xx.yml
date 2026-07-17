@@ -1,0 +1,12 @@
+created: 2026-07-17 23:19:31 CEST
+year: '2016'
+engine: Daihatsu/3NRFE
+power_kw: 59.0
+ecu: DENSO/896xx
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:19:31 CEST
+conflicts:
+  power_kw:
+  - value: 63.0
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

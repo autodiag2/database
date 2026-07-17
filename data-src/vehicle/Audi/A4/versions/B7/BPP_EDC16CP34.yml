@@ -1,0 +1,12 @@
+created: 2026-07-17 23:14:40 CEST
+version: B7
+engine: Audi/BPP
+power_kw: 132.0
+ecu: Bosch/EDC16CP34
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:18:15 CEST
+year: '2005'
+altecus:
+- BOSCH/EDC16CP34

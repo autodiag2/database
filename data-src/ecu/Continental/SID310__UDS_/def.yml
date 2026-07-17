@@ -1,0 +1,7 @@
+model: SID310 (UDS)
+created: 2026-07-17 23:24:58 CEST
+type: ECM
+mcu: infineon/TC1791
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:24:58 CEST

@@ -1,0 +1,12 @@
+created: 2026-07-17 23:21:10 CEST
+year: '2007'
+version: 5P
+engine: Seat/6_Speed_Wet_Clutch
+ecu: TEMIC/DQ250Cxx
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:21:10 CEST
+conflicts:
+  year:
+  - value: '2004'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

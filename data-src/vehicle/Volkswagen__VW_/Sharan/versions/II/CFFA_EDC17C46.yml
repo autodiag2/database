@@ -1,0 +1,16 @@
+created: 2026-07-17 23:21:50 CEST
+year: '2010'
+version: II
+engine: Volkswagen__VW_/CFFA
+power_kw: 101.0
+ecu: BOSCH/EDC17C46
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:21:50 CEST
+conflicts:
+  year:
+  - value: '2014'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+  power_kw:
+  - value: 128.0
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

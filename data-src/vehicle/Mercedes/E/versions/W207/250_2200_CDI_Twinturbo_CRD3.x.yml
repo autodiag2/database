@@ -1,0 +1,21 @@
+created: 2026-07-17 23:08:56 CEST
+version: W207
+engine: Mercedes/250_2200_CDI_Twinturbo
+power_kw: 148.0
+ecu: Delphi/CRD3.x
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:20:30 CEST
+conflicts:
+  power_kw:
+  - value: 150.0
+    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+  - value: 150.0
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+  year:
+  - value: '2012'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+year: '2009'
+altecus:
+- DELPHI/CRD3.x

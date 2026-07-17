@@ -1,0 +1,15 @@
+created: 2026-07-17 23:16:40 CEST
+version: I
+engine: Opel/2000_16v_Turbo
+power_kw: 162.0
+ecu: Bosch/ME9.6
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:20:50 CEST
+year: '2008'
+conflicts:
+  power_kw:
+  - value: 160.0
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+altecus:
+- BOSCH/ME9.6

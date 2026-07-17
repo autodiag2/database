@@ -1,0 +1,9 @@
+created: 2026-07-17 23:08:54 CEST
+year: 2000-2014
+version: S65 Final E
+engine: Mercedes/M279
+power_kw: 470.0
+ecu: Bosch/ME17.7.8
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:08:54 CEST

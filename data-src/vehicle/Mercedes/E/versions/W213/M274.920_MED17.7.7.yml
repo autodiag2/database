@@ -1,0 +1,9 @@
+created: 2026-07-17 23:08:57 CEST
+year: 2015-2020
+version: W213
+engine: Mercedes/M274.920
+power_kw: 220.0
+ecu: Bosch/MED17.7.7
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:08:57 CEST

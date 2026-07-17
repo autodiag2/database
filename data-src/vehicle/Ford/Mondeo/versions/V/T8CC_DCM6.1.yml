@@ -1,0 +1,16 @@
+created: 2026-07-17 23:08:33 CEST
+year: 2015-2017
+version: V
+engine: Ford/T8CC
+power_kw: 132.0
+ecu: Delphi/DCM6.1
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:19:48 CEST
+conflicts:
+  year:
+  - value: '2015'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+altecus:
+- DELPHI/DCM6.1

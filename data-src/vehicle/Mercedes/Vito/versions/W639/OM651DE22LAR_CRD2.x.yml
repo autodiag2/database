@@ -1,0 +1,12 @@
+created: 2026-07-17 23:09:01 CEST
+version: W639
+engine: Mercedes/OM651DE22LAR
+power_kw: 70.0
+ecu: Delphi/CRD2.x
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:20:40 CEST
+year: '2010'
+altecus:
+- DELPHI/CRD2.x

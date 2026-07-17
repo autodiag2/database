@@ -1,0 +1,14 @@
+created: 2026-07-17 23:15:22 CEST
+version: F45
+engine: BMW/B38A15A
+power_kw: 75.0
+ecu: Bosch/MEVD17.2.K
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:15:23 CEST
+conflicts:
+  power_kw:
+  - value: 100.0
+    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+  - value: 165.0
+    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

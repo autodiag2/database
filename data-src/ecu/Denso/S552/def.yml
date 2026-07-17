@@ -1,0 +1,7 @@
+model: S552
+created: 2026-07-17 23:25:13 CEST
+type: ECM
+mcu: renesas/SH72546
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:25:13 CEST

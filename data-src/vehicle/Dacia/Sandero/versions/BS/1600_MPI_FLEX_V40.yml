@@ -1,0 +1,9 @@
+created: 2026-07-17 23:19:31 CEST
+year: '2011'
+version: BS
+engine: Dacia/1600_MPI_FLEX
+power_kw: 82.0
+ecu: VALEO/V40
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:19:31 CEST

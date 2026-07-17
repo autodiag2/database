@@ -1,0 +1,15 @@
+created: 2026-07-17 23:09:02 CEST
+year: 2004-2016
+version: R60
+engine: Mini/N47C16U1
+power_kw: 82.0
+ecu: Bosch/EDC17C41
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:20:43 CEST
+conflicts:
+  year:
+  - value: '2009'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+altecus:
+- BOSCH/EDC17C41

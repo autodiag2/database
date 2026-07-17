@@ -1,0 +1,15 @@
+created: 2026-07-17 23:09:25 CEST
+version: SJ
+engine: Subaru/2000_XT
+power_kw: 186.0
+ecu: Hitachi/DEF00x
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:17:09 CEST
+conflicts:
+  power_kw:
+  - value: 206.0
+    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+  - value: 206.0
+    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

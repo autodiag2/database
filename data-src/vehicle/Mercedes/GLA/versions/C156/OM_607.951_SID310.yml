@@ -1,0 +1,13 @@
+created: 2026-07-17 23:20:33 CEST
+year: '2014'
+version: C156
+engine: Mercedes/OM_607.951
+power_kw: 81.0
+ecu: CONTINENTAL/SID310
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:20:33 CEST
+conflicts:
+  year:
+  - value: '2015'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

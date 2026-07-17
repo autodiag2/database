@@ -1,0 +1,13 @@
+model: TTI
+created: 2026-07-17 23:25:00 CEST
+type: ECM
+mcu: renesas/SH7058
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:25:16 CEST
+conflicts:
+  mcu:
+  - value: renesas/SH7059
+    evidence: https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+  - value: renesas/SH72533
+    evidence: https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf

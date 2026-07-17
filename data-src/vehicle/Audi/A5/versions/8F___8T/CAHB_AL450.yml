@@ -1,0 +1,10 @@
+created: 2026-07-17 23:14:43 CEST
+version: 8F / 8T
+engine: Audi/CAHB
+power_kw: 120.0
+ecu: ZF/AL450
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:18:17 CEST
+year: '2008'

@@ -1,0 +1,7 @@
+model: Simos10.x
+created: 2026-07-17 23:24:55 CEST
+type: ECM
+mcu: infineon/TC176x
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:24:55 CEST

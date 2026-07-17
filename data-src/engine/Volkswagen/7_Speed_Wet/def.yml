@@ -1,0 +1,13 @@
+created: 2026-07-17 23:17:23 CEST
+name:
+- DSG 7 Speed
+- 2000 TDI
+code: 7 Speed Wet
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+fuel: Other_Fu
+updated: 2026-07-17 23:17:36 CEST
+conflicts:
+  fuel:
+  - value: Diesel
+    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

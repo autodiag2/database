@@ -1,0 +1,8 @@
+created: 2026-07-17 23:07:57 CEST
+version: 8F / 8T
+engine: Audi/CAMA
+power_kw: 140.0
+ecu: Temic/VL381
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:07:57 CEST

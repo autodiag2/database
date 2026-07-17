@@ -1,0 +1,10 @@
+created: 2026-07-17 23:07:57 CEST
+year: 2006-2012
+version: 8F / 8T
+engine: Audi/CHMB
+power_kw: 200.0
+ecu: Continental/SIMOS8.5
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:14:43 CEST

@@ -1,0 +1,8 @@
+created: 2026-07-17 23:08:44 CEST
+version: JS220
+engine: JCB/5200d
+power_kw: 1.0
+ecu: Bosch/JCB_BOSCH_DCUBOOT
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:08:44 CEST

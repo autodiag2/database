@@ -1,0 +1,14 @@
+created: 2026-07-17 23:20:45 CEST
+year: '2012'
+engine: New_Holland/3400
+power_kw: 48.0
+ecu: BOSCH/EDC17C49
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:20:46 CEST
+conflicts:
+  power_kw:
+  - value: 63.0
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+  - value: 77.0
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

@@ -1,0 +1,9 @@
+created: 2026-07-17 23:09:27 CEST
+version: I
+engine: Toyota/2GRFE
+power_kw: 206.0
+ecu: Denso/275036-4520
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:17:12 CEST

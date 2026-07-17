@@ -1,0 +1,18 @@
+created: 2026-07-17 23:19:57 CEST
+year: '2005'
+version: I
+engine: Hino/E13C
+power_kw: 279.0
+ecu: DENSO/896xx
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:19:57 CEST
+conflicts:
+  year:
+  - value: '2010'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+  power_kw:
+  - value: 331.0
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+  - value: 338.0
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

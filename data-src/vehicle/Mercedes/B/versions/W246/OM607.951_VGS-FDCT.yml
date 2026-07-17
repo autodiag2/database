@@ -1,0 +1,14 @@
+created: 2026-07-17 23:16:20 CEST
+version: W246
+engine: Mercedes/OM607.951
+power_kw: 80.0
+ecu: GETRAG/VGS-FDCT
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:20:25 CEST
+year: '2013'
+conflicts:
+  year:
+  - value: '2015'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

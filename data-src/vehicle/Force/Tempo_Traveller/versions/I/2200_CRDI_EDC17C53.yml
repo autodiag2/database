@@ -1,0 +1,15 @@
+created: 2026-07-17 23:08:28 CEST
+year: 2009-2014
+version: I
+engine: Force/2200_CRDI
+power_kw: 95.0
+ecu: Bosch/EDC17C53
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:19:40 CEST
+conflicts:
+  year:
+  - value: '2011'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+altecus:
+- BOSCH/EDC17C53

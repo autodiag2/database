@@ -1,0 +1,8 @@
+created: 2026-07-17 23:08:23 CEST
+year: '2013'
+engine: Dacia/K7M812
+power_kw: 62.0
+ecu: Valeo/V42
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:08:23 CEST

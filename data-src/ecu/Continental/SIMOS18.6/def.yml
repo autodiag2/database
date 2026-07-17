@@ -1,0 +1,8 @@
+model: Simos18.6
+created: 2026-07-17 23:14:39 CEST
+type: ECM
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:24:55 CEST
+mcu: infineon/TC1791

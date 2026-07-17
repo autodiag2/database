@@ -1,0 +1,8 @@
+created: 2026-07-17 23:09:28 CEST
+version: X
+engine: Toyota/1ADFTV
+power_kw: 93.0
+ecu: Denso/175822-773
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:09:28 CEST

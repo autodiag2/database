@@ -1,0 +1,7 @@
+model: MG1US008
+created: 2026-07-17 23:24:57 CEST
+type: ECM
+mcu: infineon/TC277
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:24:57 CEST

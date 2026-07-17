@@ -1,0 +1,12 @@
+created: 2026-07-17 23:08:46 CEST
+version: III
+engine: Kia/G4FD
+power_kw: 91.0
+ecu: Kefico/CPGDSH2.2x.1
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:08:46 CEST
+conflicts:
+  power_kw:
+  - value: 103.0
+    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -1,0 +1,12 @@
+created: 2026-07-17 23:08:40 CEST
+year: 2009-2017
+version: HG
+engine: Hyundai/2200_E-VGT_EU6
+power_kw: 149.0
+ecu: Bosch/EDC17C57
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:20:00 CEST
+altecus:
+- BOSCH/EDC17C57

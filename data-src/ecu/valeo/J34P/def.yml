@@ -1,3 +1,6 @@
 model: J34P
 type: ECM
 mcu: stmicroelectronics/ST10F273
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:24:58 CEST

@@ -1,0 +1,10 @@
+created: 2026-07-17 23:14:49 CEST
+version: D4
+engine: Audi/CEUA
+power_kw: 309.0
+ecu: ZF/AL450
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-17 23:18:24 CEST
+year: '2012'

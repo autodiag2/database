@@ -1,0 +1,18 @@
+created: 2026-07-17 23:07:55 CEST
+year: 2006-2016
+version: B8
+engine: Audi/CDHB
+power_kw: 118.0
+ecu: Bosch/MED17.5
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:18:15 CEST
+conflicts:
+  year:
+  - value: '2007'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+  - value: '2008'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+altecus:
+- BOSCH/MED17.5

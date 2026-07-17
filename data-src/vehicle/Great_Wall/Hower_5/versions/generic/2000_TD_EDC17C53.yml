@@ -1,0 +1,15 @@
+created: 2026-07-17 23:08:36 CEST
+year: 2009-2014
+engine: Great_Wall/2000_TD
+power_kw: 110.0
+ecu: Bosch/EDC17C53
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:19:54 CEST
+conflicts:
+  year:
+  - value: '2013'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+altecus:
+- BOSCH/EDC17C53

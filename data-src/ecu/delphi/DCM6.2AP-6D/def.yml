@@ -1,0 +1,7 @@
+model: DCM6.2AP-6D
+created: 2026-07-17 23:25:01 CEST
+type: ECM
+mcu: nxp/MPC5674F
+evidence:
+- https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+updated: 2026-07-17 23:25:01 CEST

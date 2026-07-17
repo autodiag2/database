@@ -1,0 +1,12 @@
+created: 2026-07-17 23:16:25 CEST
+version: W212
+engine: Mercedes/OM642.850
+power_kw: 155.0
+ecu: Continental/VGS3NAG2
+evidence:
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:16:25 CEST
+conflicts:
+  power_kw:
+  - value: 170.0
+    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

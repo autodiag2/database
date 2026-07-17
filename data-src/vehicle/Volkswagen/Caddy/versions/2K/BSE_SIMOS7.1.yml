@@ -1,0 +1,8 @@
+created: 2026-07-17 23:09:37 CEST
+version: 2K
+engine: Volkswagen/BSE
+power_kw: 75.0
+ecu: Continental/SIMOS7.1
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-17 23:09:37 CEST

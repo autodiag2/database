@@ -1,0 +1,16 @@
+created: 2026-07-17 23:08:14 CEST
+year: 2003-2009
+version: E84
+engine: Bmw/N47D20
+power_kw: 130.0
+ecu: Bosch/EDC17CP02
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-07-17 23:19:08 CEST
+conflicts:
+  year:
+  - value: '2009'
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+altecus:
+- BOSCH/EDC17CP02
