@@ -379,6 +379,22 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                 default_flow_style=False,
             )
 
+    def insert_or_conflict(self, yaml_path, data, field, value, evidence):
+        changed = False
+        conflict = False
+        current = data.get(field)
+        if current:
+            if current.lower() != value.lower():
+                conflict = True
+                self.add_conflict(yaml_path, data, field, value, evidence)
+            elif current != value:
+                data[field] = value
+                changed = True
+        else:
+            data[field] = value
+            changed = True
+        return changed, conflict
+    
     def import_ecu(self, Ecu_maker, Ecu_model, evidence, ECU_type="ECM", MCU=""):
         Ecu_maker = (Ecu_maker or "").strip()
         Ecu_model = (Ecu_model or "").strip()
@@ -418,30 +434,23 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             }
         
         conflict = False
-        if data.get("model") != Ecu_model:
-            conflict = True
-            self.add_conflict(ecu_def, data, "model", Ecu_model, evidence)
-
-        if data.get("type") not in (None, "", ECU_type):
-            conflict = True
-            self.add_conflict(ecu_def, data, "type", ECU_type, evidence)
-        elif data.get("type") != ECU_type:
-            data["type"] = ECU_type
-            changed = True
+        changed_rv, conflict_rv = self.insert_or_conflict(ecu_def, data, "model", Ecu_model, evidence)
+        changed |= changed_rv
+        conflict |= conflict_rv
+        changed_rv, conflict_rv = self.insert_or_conflict(ecu_def, data, "type", ECU_type, evidence)
+        changed |= changed_rv
+        conflict |= conflict_rv
 
         mcu_ref = self.import_mcu(MCU)
 
-        mcu_ref = self.import_mcu(MCU)
-
-        if mcu_ref:
-            if data.get("mcu") not in (None, "", mcu_ref):
-                conflict = True
-                self.add_conflict(ecu_def, data, "mcu", mcu_ref, evidence)
-            elif data.get("mcu") != mcu_ref:
-                data["mcu"] = mcu_ref
-                changed = True
+        changed_rv, conflict_rv = self.insert_or_conflict(ecu_def, data, "mcu", mcu_ref, evidence)
+        changed |= changed_rv
+        conflict |= conflict_rv
 
         evidences = set(data.get("evidence", []))
+
+        if data.get("type"):
+            data["type"] = data["type"].upper()
 
         if conflict:
             changed = True
@@ -546,24 +555,34 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             names = [names]
             data["name"] = names
 
-        if Engine and Engine not in names:
+        if Engine and Engine.lower() not in [name.lower() for name in names]:
             names.append(Engine)
             changed = True
 
-        if data.get("code") != engine_code:
-            conflict = True
-            self.add_conflict(
-                yaml_path,
-                data,
-                "code",
-                engine_code,
-                evidence
-            )
-            return engine_ref
+        changed_rv, conflict_rv = self.insert_or_conflict(yaml_path, data, "code", engine_code, evidence)
+        changed |= changed_rv
+        conflict |= conflict_rv
 
         if Fuel:
 
-            if data.get("fuel") not in (None, "", Fuel):
+            aliases = {
+                "petrol": "petrol",
+                "gasoline": "petrol",
+                "essence": "petrol",
+
+                "diesel": "diesel",
+                "gazole": "diesel",
+            }
+
+            current = aliases.get(data.get("fuel", "").strip().lower(),
+                                data.get("fuel", "").strip().lower())
+            incoming = aliases.get(Fuel.strip().lower(),
+                                Fuel.strip().lower())
+
+            if not current:
+                data["fuel"] = Fuel
+                changed = True
+            elif current != incoming:
                 conflict = True
                 self.add_conflict(
                     yaml_path,
@@ -572,9 +591,6 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                     Fuel,
                     evidence
                 )
-            elif data.get("fuel") != Fuel:
-                data["fuel"] = Fuel
-                changed = True
 
         evidences = data.setdefault("evidence", [])
 
