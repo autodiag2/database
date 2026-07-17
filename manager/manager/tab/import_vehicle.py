@@ -527,6 +527,53 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         if conflict not in field_conflicts:
             field_conflicts.append(conflict)
 
+    def insert_ecu_or_alternative(
+        self,
+        yaml_path,
+        data,
+        value,
+        evidence,
+    ):
+        changed = False
+        conflict = False
+
+        if not value:
+            return changed, conflict
+
+        current = data.get("ecu")
+
+        if not current:
+            data["ecu"] = value
+            return True, False
+
+        if current == value:
+            return False, False
+
+        cur_mfr, cur_model = current.split("/", 1)
+        new_mfr, new_model = value.split("/", 1)
+
+        if cur_model.lower() == new_model.lower():
+            altecus = data.setdefault("altecus", [])
+
+            if (
+                value != current and
+                value not in altecus
+            ):
+                altecus.append(value)
+                changed = True
+
+            return changed, False
+
+        self.add_conflict(
+            yaml_path,
+            data,
+            "ecu",
+            value,
+            evidence,
+        )
+
+        return False, True
+
     def import_vehicle(
         self,
         Type,
@@ -662,7 +709,6 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             ("year", Year),
             ("version", Version),
             ("engine", engine_relative_path),
-            ("ecu", ecu_relative_path),
             ("power_kw", float(Power_KW) if Power_KW else None),
         ):
             if value not in (None, ""):
@@ -675,6 +721,15 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                 )
                 changed |= changed_rv
                 conflict |= conflict_rv
+
+        changed_rv, conflict_rv = self.insert_ecu_or_alternative(
+            variant_file,
+            variant,
+            ecu_relative_path,
+            evidence,
+        )
+        changed |= changed_rv
+        conflict |= conflict_rv
 
         evidences = variant.setdefault("evidence", [])
 
