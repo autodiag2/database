@@ -9,6 +9,7 @@ import csv
 import re
 import io
 import yaml
+import unicodedata
 
 def slug(text: str) -> str:
     text = text.strip()
@@ -21,6 +22,21 @@ def current_timestamp():
         ZoneInfo("Europe/Paris")
     ).strftime("%Y-%m-%d %H:%M:%S %Z")
 
+def normalize_text(value):
+    if not isinstance(value, str):
+        return value
+
+    value = unicodedata.normalize("NFKC", value)
+
+    return (
+        value
+        .replace("\u2019", "'")  # right single quotation mark
+        .replace("\u2018", "'")  # left single quotation mark
+        .replace("\u02BC", "'")  # modifier letter apostrophe
+        .replace("\u0060", "'")  # grave accent
+        .replace("\u00B4", "'")  # acute accent
+        .lower()
+    )
 
 # Type,Brand,Model,Year,Version,Engine,Engine_type,Fuel,Power_PS,Power,Ecu_maker,MCU_Type,MCU,Ecu_model,Connection_mode
 # Car,Abarth,124 Spider,2008-2017,348,1400 MultiAir,55253268,Petrol,170,0,MARELLI,ECM,SPC564A80,8GMK,"BOOT, OBD"
@@ -390,7 +406,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
         if current is not None and current != "":
             if isinstance(current, str) and isinstance(value, str):
-                if current.lower() != value.lower():
+                if normalize_text(current) != normalize_text(value):
                     conflict = True
                     self.add_conflict(
                         yaml_path,
@@ -400,7 +416,6 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                         evidence,
                     )
                 elif current != value:
-                    # Only case differs: normalize stored value.
                     data[field] = value
                     changed = True
             else:
