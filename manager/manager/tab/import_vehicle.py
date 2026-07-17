@@ -345,7 +345,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         if conflict:
             changed = True
         else:
-            source = self.evidence_var.get().strip()
+            source = self.get_evidence_input()
 
             if source and source not in evidence:
                 evidence.append(source)
@@ -507,6 +507,9 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             self.log(f"ECU unchanged {Ecu_maker}/{Ecu_model}")
 
         return f"{slug(Ecu_maker)}/{slug(Ecu_model)}"
+
+    def get_evidence_input(self):
+        return self.evidence_var.get().strip()
 
     def add_conflict(self, yaml_path, yaml_data, field_name, value_to_store, evidence):
         self.log(
@@ -902,15 +905,15 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             ECU_type = (row.get("ECU_Type") or "").strip()
             MCU = (row.get("MCU") or "").strip()
 
-            ecu_relative_path = self.import_ecu(Ecu_maker, Ecu_model, self.evidence_var.get(), ECU_type, MCU)
-            engine_relative_path = self.import_engine(Brand, Engine, Engine_type, Fuel, self.evidence_var.get())
+            ecu_relative_path = self.import_ecu(Ecu_maker, Ecu_model, self.get_evidence_input(), ECU_type, MCU)
+            engine_relative_path = self.import_engine(Brand, Engine, Engine_type, Fuel, self.get_evidence_input())
             self.import_vehicle(Type, Brand, Model, Year, Version, Power_KW, ecu_relative_path, engine_relative_path, self.evidence_var.get())
             self.heavy_op_step()
 
     def on_import(self):
         self.clear_log()
 
-        if self.evidence_var.get().strip() == "":
+        if self.get_evidence_input() == "":
             messagebox.showerror(
                 "Error",
                 "Evidence source must be specified."
