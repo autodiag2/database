@@ -259,7 +259,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
     def import_mcu(self, MCU: str) -> str | None:
 
-        MCU = MCU.strip()
+        MCU = (MCU or "").strip()
 
         if MCU == "":
             return None
@@ -282,19 +282,9 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
         if not manufacturer_def.exists():
 
-            with manufacturer_def.open(
-                "w",
-                encoding="utf-8"
-            ) as fp:
-
-                yaml.safe_dump(
-                    {
-                        "manufacturer": manufacturer
-                    },
-                    fp,
-                    sort_keys=False,
-                    allow_unicode=True
-                )
+            self.write_yaml(manufacturer_def, {
+                "manufacturer": manufacturer
+            })
 
         mcu_path = manufacturer_path / slug(MCU)
         mcu_path.mkdir(exist_ok=True)
@@ -303,12 +293,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
         if yaml_path.exists():
 
-            with yaml_path.open(
-                "r",
-                encoding="utf-8"
-            ) as fp:
-
-                data = yaml.safe_load(fp) or {}
+            data = self.read_yaml(yaml_path)
 
             new_file = False
 
@@ -347,37 +332,129 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         if changed:
 
             data["updated"] = current_timestamp()
-
-            with yaml_path.open(
-                "w",
-                encoding="utf-8"
-            ) as fp:
-
-                yaml.safe_dump(
-                    data,
-                    fp,
-                    sort_keys=False,
-                    allow_unicode=True
-                )
-
-            self.log(f"Updated MCU: {manufacturer}/{MCU}")
+            self.write_yaml(yaml_path, data)
+            if new_file:
+                self.log(f"Created MCU: {mcu_ref}")
+            else:
+                self.log(f"Updated MCU: {mcu_ref}")
         else:
             self.log(f"MCU unchanged: {manufacturer}/{MCU}")
 
         return mcu_ref
+    
+    def read_yaml(self, path):
+        """
+        Read a YAML file. Returns {} if the file does not exist or is empty.
+        """
+        path = Path(path)
 
-    def import_ecu(self, Ecu_maker, Ecu_model, evidence, ECU_type, MCU = "ECM"):
+        if not path.exists():
+            return {}
+
+        with path.open("r", encoding="utf-8") as f:
+            data = yaml.safe_load(f)
+
+        return data or {}
+
+
+    def write_yaml(self, path, data):
+        """
+        Write a YAML file, creating parent directories if needed.
+        """
+        path = Path(path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+
+        with path.open("w", encoding="utf-8") as f:
+            yaml.safe_dump(
+                data,
+                f,
+                allow_unicode=True,
+                sort_keys=False,
+                default_flow_style=False,
+            )
+
+    def import_ecu(self, Ecu_maker, Ecu_model, evidence, ECU_type="ECM", MCU=""):
+        Ecu_maker = (Ecu_maker or "").strip()
+        Ecu_model = (Ecu_model or "").strip()
+        ECU_type = (ECU_type or "ECM").strip()
+        MCU = (MCU or "").strip()
+
+        if not Ecu_maker or not Ecu_model:
+            return None
+
+        maker_dir = self.get_data_src() / "ecu" / slug(Ecu_maker)
+        maker_dir.mkdir(parents=True, exist_ok=True)
+
+        maker_def = maker_dir / "def.yml"
+        if not maker_def.exists():
+            self.write_yaml(
+                maker_def,
+                {
+                    "name": Ecu_maker,
+                    "created": current_timestamp(),
+                    "updated": current_timestamp(),
+                },
+            )
+
+        ecu_dir = maker_dir / slug(Ecu_model)
+        ecu_dir.mkdir(parents=True, exist_ok=True)
+
+        ecu_def = ecu_dir / "def.yml"
+
+        if ecu_def.exists():
+            data = self.read_yaml(ecu_def)
+        else:
+            data = {
+                "model": Ecu_model,
+                "created": current_timestamp(),
+            }
+
+        changed = not ecu_def.exists()
+
+        if data.get("model") != Ecu_model:
+            self.log(
+                f"⚠ ECU model mismatch for {Ecu_model}: "
+                f"{data.get('model')} != {Ecu_model}"
+            )
+
+        if data.get("type") not in (None, "", ECU_type):
+            self.log(
+                f"⚠ ECU type mismatch for {Ecu_model}: "
+                f"{data.get('type')} != {ECU_type}"
+            )
+        elif data.get("type") != ECU_type:
+            data["type"] = ECU_type
+            changed = True
+
         mcu_ref = self.import_mcu(MCU)
-        # inspire from logic as mcu import but in ecu/Ecu_maker/def.yml
-        #                                                      /EDC16C34/def.yml
-        # with fields:
-        #        model: 8GMK
-        #        type: ECM
-        #        mcu: mcu/stmicroelectronics/SPC564A80
-        #        evidence: 
-        #            - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-        # if mcu
-        pass
+
+        mcu_ref = self.import_mcu(MCU)
+
+        if mcu_ref:
+            if data.get("mcu") not in (None, "", mcu_ref):
+                self.log(
+                    f"⚠ MCU mismatch for {Ecu_model}: "
+                    f"{data.get('mcu')} != {mcu_ref}"
+                )
+            elif data.get("mcu") != mcu_ref:
+                data["mcu"] = mcu_ref
+                changed = True
+
+        evidences = set(data.get("evidence", []))
+
+        if evidence and evidence not in evidences:
+            evidences.add(evidence)
+            data["evidence"] = sorted(evidences)
+            changed = True
+
+        if changed:
+            data["updated"] = current_timestamp()
+            self.write_yaml(ecu_def, data)
+            self.log(f"Imported ECU {Ecu_maker}/{Ecu_model}")
+        else:
+            self.log(f"ECU unchanged {Ecu_maker}/{Ecu_model}")
+
+        return f"{slug(Ecu_maker)}/{slug(Ecu_model)}"
     
     def on_import(self):
         self.clear_log()
