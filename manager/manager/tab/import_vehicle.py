@@ -614,18 +614,33 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
         version_name = slug(Version) if Version else "generic"
 
-        version_file = versions_dir / f"{version_name}.yml"
+        version_dir = versions_dir / version_name
+        version_dir.mkdir(exist_ok=True)
 
-        if version_file.exists():
-            version = self.read_yaml(version_file)
-            new_version = False
+        engine_slug = (
+            slug(engine_relative_path.split("/")[-1])
+            if engine_relative_path else
+            "generic"
+        )
+
+        ecu_slug = (
+            slug(ecu_relative_path.split("/")[-1])
+            if ecu_relative_path else
+            "generic"
+        )
+
+        variant_file = version_dir / f"{engine_slug}_{ecu_slug}.yml"
+
+        if variant_file.exists():
+            variant = self.read_yaml(variant_file)
+            new_variant = False
         else:
-            version = {
+            variant = {
                 "created": current_timestamp(),
             }
-            new_version = True
+            new_variant = True
 
-        changed = new_version
+        changed = new_variant
         conflict = False
 
         for field, value in (
@@ -637,8 +652,8 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         ):
             if value not in (None, ""):
                 changed_rv, conflict_rv = self.insert_or_conflict(
-                    version_file,
-                    version,
+                    variant_file,
+                    variant,
                     field,
                     value,
                     evidence,
@@ -646,7 +661,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                 changed |= changed_rv
                 conflict |= conflict_rv
 
-        evidences = version.setdefault("evidence", [])
+        evidences = variant.setdefault("evidence", [])
 
         if conflict:
             changed = True
@@ -656,8 +671,8 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                 changed = True
 
         if changed:
-            version["updated"] = current_timestamp()
-            self.write_yaml(version_file, version)
+            variant["updated"] = current_timestamp()
+            self.write_yaml(variant_file, variant)
 
         if new_file:
             self.log(f"Created Vehicle: {vehicle_ref}")
