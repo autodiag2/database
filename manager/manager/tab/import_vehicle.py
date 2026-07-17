@@ -6,7 +6,15 @@ from pathlib import Path
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import csv
+import re
+import io
+import yaml
 
+def slug(text: str) -> str:
+    text = text.strip()
+    text = re.sub(r"\s+", "_", text)
+    text = re.sub(r"[^A-Za-z0-9_.-]", "_", text)
+    return text
 
 def current_timestamp():
     return datetime.now(
@@ -214,6 +222,178 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             "end"
         )
 
+    def guess_manufacturer_from_mcu_model(self, model: str) -> str:
+        model = (model or "").upper()
+
+        prefixes = {
+            "TC": "infineon",      # Aurix / Tricore
+            "SAK": "infineon",
+            "C16": "infineon",
+            "XC": "infineon",
+
+            "MPC": "nxp",
+            "SPC": "st",
+            "ST10": "st",
+            "STM": "st",
+
+            "SH": "renesas",
+            "R7F": "renesas",
+
+            "TMS": "ti",
+            "AM": "ti",
+
+            "MK": "nxp",
+            "S12": "nxp",
+            "MC9": "nxp",
+        }
+
+        for prefix, manufacturer in prefixes.items():
+            if model.startswith(prefix):
+                return manufacturer
+
+        return "unsorted"
+
+    def import_mcu(self, MCU: str, MCU_Type: str = "ECM") -> str | None:
+
+        MCU = MCU.strip()
+
+        if MCU == "":
+            return None
+
+        manufacturer = self.guess_manufacturer_from_mcu_model(MCU)
+        mcu_ref = f"{manufacturer}/{MCU}"
+
+        manufacturer_path = (
+            self.get_data_src() /
+            "mcu" /
+            manufacturer
+        )
+
+        manufacturer_path.mkdir(
+            parents=True,
+            exist_ok=True
+        )
+
+        manufacturer_def = manufacturer_path / "def.yml"
+
+        if not manufacturer_def.exists():
+
+            with manufacturer_def.open(
+                "w",
+                encoding="utf-8"
+            ) as fp:
+
+                yaml.safe_dump(
+                    {
+                        "manufacturer": manufacturer
+                    },
+                    fp,
+                    sort_keys=False,
+                    allow_unicode=True
+                )
+
+        mcu_path = manufacturer_path / MCU
+        mcu_path.mkdir(exist_ok=True)
+
+        yaml_path = mcu_path / "def.yml"
+
+        #
+        # Read existing file
+        #
+
+        if yaml_path.exists():
+
+            with yaml_path.open(
+                "r",
+                encoding="utf-8"
+            ) as fp:
+
+                data = yaml.safe_load(fp) or {}
+
+            new_file = False
+
+        else:
+
+            data = {
+                "created": current_timestamp(),
+                "updated": current_timestamp(),
+                "model": MCU,
+                "type": MCU_Type,
+                "evidence": []
+            }
+
+            new_file = True
+
+        #
+        # Conflicts
+        #
+
+        if data.get("model") != MCU:
+
+            self.add_conflict(
+                yaml_path,
+                "model",
+                data.get("model"),
+                MCU
+            )
+
+            return mcu_ref
+
+        if data.get("type") != MCU_Type:
+
+            self.add_conflict(
+                yaml_path,
+                "type",
+                data.get("type"),
+                MCU_Type
+            )
+
+            return mcu_ref
+
+        #
+        # Merge
+        #
+
+        changed = new_file
+
+        evidence = data.setdefault("evidence", [])
+
+        source = self.evidence_var.get().strip()
+
+        if source and source not in evidence:
+            evidence.append(source)
+            changed = True
+
+        #
+        # Only rewrite if something changed
+        #
+
+        if changed:
+
+            data["updated"] = current_timestamp()
+
+            with yaml_path.open(
+                "w",
+                encoding="utf-8"
+            ) as fp:
+
+                yaml.safe_dump(
+                    data,
+                    fp,
+                    sort_keys=False,
+                    allow_unicode=True
+                )
+
+            self.log(f"Updated MCU: {manufacturer}/{MCU}")
+        else:
+            self.log(f"MCU unchanged: {manufacturer}/{MCU}")
+
+        return mcu_ref
+
+    def import_ecu(self, Ecu_maker, Ecu_model, evidence, MCU, MCU_Type = "ECM"):
+        mcu_ref = self.import_mcu(MCU, MCU_Type)
+        pass
+    
     def on_import(self):
         self.clear_log()
 
@@ -224,17 +404,37 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             )
             return
 
-        if self.input_text.get("1.0", "end-1c").strip() == "":
+        text = self.input_text.get("1.0", "end-1c").strip()
+        if text == "":
             self.log("Nothing to import.")
             return
 
         self.log("----------------------------------------")
         self.log("Starting vehicle import...")
         self.log("")
+        
+        reader = csv.DictReader(io.StringIO(text))
+        for row in reader:
+            Type = row.get("Type","").strip()
+            Brand = row.get("Brand", "").strip()
+            Model = row.get("Model", "").strip()
+            Year = row.get("Year", "").strip()
+            Version = row.get("Version", "").strip()
+            Engine = row.get("Engine", "").strip()
+            Engine_type = row.get("Engine_type", "").strip()
+            Fuel = row.get("Fuel", "").strip()
+            Power_PS = row.get("Power_PS", "").strip()
+            Power_KW = round(float(Power_PS) * 0.73549875)
+            Ecu_maker = row.get("Ecu_maker", "").strip()
+            Ecu_model = row.get("Ecu_model", "").strip()
+            MCU_Type = row.get("MCU_Type", "").strip()
+            MCU = row.get("MCU", "").strip()
 
+            ecu_relative_path = self.import_ecu(Ecu_maker, Ecu_model, self.evidence_var.get(), MCU, MCU_Type)
+            # import engine
+            # import vehicle
+        
         # TODO
-        self.log("[TODO] Parse CSV")
-        self.log("[TODO] Create manufacturers")
         self.log("[TODO] Create engines")
         self.log("[TODO] Create ECUs")
         self.log("[TODO] Create vehicles")
