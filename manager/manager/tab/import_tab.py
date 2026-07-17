@@ -40,6 +40,7 @@ class ImportTab(Tab):
 
         self.search_matches = []
         self.search_index = 0
+        self.update_search_status()
 
         if pattern == "":
             self.log_text.configure(state="disabled")
@@ -87,11 +88,14 @@ class ImportTab(Tab):
 
             self.log_text.see(start)
 
+        self.update_search_status()
+
         self.log_text.configure(state="disabled")
 
     def search_next(self, event=None):
 
         if not self.search_matches:
+            self.update_search_status()
             return "break"
 
         self.search_index += 1
@@ -108,6 +112,7 @@ class ImportTab(Tab):
         self.log_text.mark_set("insert", end)
         self.log_text.tag_remove("current_search", "1.0", "end")
         self.log_text.tag_add("current_search", start, end)
+        self.update_search_status()
 
         return "break"
 
@@ -143,6 +148,12 @@ class ImportTab(Tab):
             command=lambda: self.search_var.set("")
         ).pack(side="left")
 
+        self.search_status = tk.Label(
+            search_frame,
+            text=""
+        )
+        self.search_status.pack(side="left", padx=(10, 0))
+
         self.log_text = tk.Text(
             frame,
             wrap="word",
@@ -166,6 +177,14 @@ class ImportTab(Tab):
             background="orange",
             foreground="black"
         )
+
+    def update_search_status(self):
+        if not self.search_matches:
+            self.search_status.config(text="no matches")
+        else:
+            self.search_status.config(
+                text=f"{self.search_index + 1} of {len(self.search_matches)}"
+            )
 
     def log(self, message):
         self.log_text.configure(state="normal")
