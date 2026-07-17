@@ -1,8 +1,3 @@
 model: EDC17C60
 type: ECM
-mcu:
-  brand: Infineon
-  model: TC1793
-  evidence:
-    - https://www.autotuner.com/fr/pages/ecu/bosch-edc17c60-tc1793
-  site: https://www.infineon.com/assets/row/public/documents/10/49/infineon-tc1793-ds-en.pdf
+mcu: infineon/TC1793

@@ -1,7 +1,3 @@
 model: J34P
 type: ECM
-mcu:
-  model: ST10F273
-  brand: STMicroelectronics
-  evidence:
-    - https://www.autotuner.com/fr/pages/ecu/valeo-j34p-st10f273
+mcu: stmicroelectronics/ST10F273
