@@ -114,7 +114,7 @@ class ConverterToSqlite():
 
             create table if not exists ad_evidence(
                 id integer primary key autoincrement,
-                url text unique not null
+                text text unique not null
             );
 
             create table if not exists ad_manufacturer_evidence(
@@ -371,23 +371,158 @@ class ConverterToSqlite():
             return [x for x in v if x is not None and x != ""]
         return [v]
 
-    def _get_or_insert_ecu(self, conn, manufacturer, model, ecu_type="ECM"):
-        if manufacturer is None or manufacturer == "" or model is None or model == "":
+    def _get_or_insert_evidence(self, conn, url):
+        if not url:
             return None
-        mid = self._get_or_insert(conn, "ad_manufacturer", "name", manufacturer)
+
         cur = conn.cursor()
+
         cur.execute(
-            "select id from ad_ecu where manufacturer_id=? and model=? and type=?",
-            (mid, model, ecu_type)
+            "select id from ad_evidence where text=?",
+            (url,)
         )
-        r = cur.fetchone()
-        if r:
-            return r[0]
+
+        row = cur.fetchone()
+        if row:
+            return row[0]
+
         cur.execute(
-            "insert into ad_ecu(manufacturer_id, model, type) values(?,?,?)",
-            (mid, model, ecu_type)
+            "insert into ad_evidence(text) values(?)",
+            (url,)
         )
+
         return cur.lastrowid
+    
+    def _link_evidence(self, conn, table, entity_field, entity_id, evidence):
+        if entity_id is None:
+            return
+
+        for url in self._ensure_list(evidence):
+            evidence_id = self._get_or_insert_evidence(conn, url)
+
+            conn.execute(
+                f"""
+                insert or ignore into {table}
+                ({entity_field}, evidence_id)
+                values(?, ?)
+                """,
+                (entity_id, evidence_id),
+            )
+
+    def _get_or_insert_ecu(
+        self,
+        conn,
+        manufacturer,
+        model,
+        created=None,
+        updated=None,
+        ecu_type="ECM",
+        mcu_ref=None,
+        evidence=None,
+    ):
+        if not manufacturer or not model:
+            return None
+
+        manufacturer_id = self._get_or_insert(
+            conn,
+            "ad_manufacturer",
+            "name",
+            manufacturer,
+        )
+
+        mcu_id = None
+        if mcu_ref:
+            mcu_manufacturer, mcu_model = mcu_ref.split("/", 1)
+
+            mcu_manufacturer_id = self._get_or_insert(
+                conn,
+                "ad_manufacturer",
+                "name",
+                mcu_manufacturer,
+            )
+
+            cur = conn.cursor()
+            cur.execute("""
+                select id
+                from ad_mcu
+                where manufacturer_id=?
+                and model=?
+            """, (
+                mcu_manufacturer_id,
+                mcu_model,
+            ))
+
+            row = cur.fetchone()
+            if row:
+                mcu_id = row[0]
+
+        cur = conn.cursor()
+
+        cur.execute("""
+            select id
+            from ad_ecu
+            where manufacturer_id=?
+            and model=?
+        """, (
+            manufacturer_id,
+            model,
+        ))
+
+        row = cur.fetchone()
+
+        if row:
+            ecu_id = row[0]
+
+            cur.execute("""
+                update ad_ecu
+                set type=?,
+                    mcu_id=coalesce(mcu_id, ?),
+                    created=coalesce(created, ?),
+                    updated=?
+                where id=?
+            """, (
+                ecu_type,
+                mcu_id,
+                created,
+                updated,
+                ecu_id,
+            ))
+        else:
+            cur.execute("""
+                insert into ad_ecu(
+                    manufacturer_id,
+                    mcu_id,
+                    model,
+                    type,
+                    created,
+                    updated
+                )
+                values(?,?,?,?,?,?)
+            """, (
+                manufacturer_id,
+                mcu_id,
+                model,
+                ecu_type,
+                created,
+                updated,
+            ))
+
+            ecu_id = cur.lastrowid
+
+        if evidence:
+            if isinstance(evidence, str):
+                evidence = [evidence]
+            assert type(evidence) == type([])
+            for ev in evidence:
+                self._link_evidence(
+                    conn,
+                    "ad_ecu_evidence",
+                    "ecu_id",
+                    ecu_id,
+                    ev,
+                )
+
+        return ecu_id
 
     def _json_dump(self, value, default):
         if value is None:
