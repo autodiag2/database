@@ -283,14 +283,6 @@ class ConverterToSqlite():
                 foreign key(evidence_id) references ad_evidence(id)
             );
 
-            create table if not exists ad_dtc_evidence(
-                dtc_id integer not null,
-                evidence_id integer not null,
-                primary key(dtc_id, evidence_id),
-                foreign key(dtc_id) references ad_dtc(id),
-                foreign key(evidence_id) references ad_evidence(id)
-            );
-
             create table if not exists ad_dtc_standard_link(
                 dtc_id integer,
                 standard_id integer,
