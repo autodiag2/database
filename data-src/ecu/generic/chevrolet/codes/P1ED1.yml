@@ -14,8 +14,7 @@ detection_condition: []
 causes: []
 repairs: []
 evidence:
-  source:
-  - obdcodex
+- obdcodex
 protocol:
 - obd2
 standard:
