@@ -7,8 +7,6 @@ import json
 import datetime
 from tqdm import tqdm
 from manager.vpic_sqlite_loader import VpicToSqliteLoader
-
-
 class ConverterToSqlite():
 
     def __init__(self, plain_text_db: Path = None, sqlite_db: Path = None):
@@ -22,136 +20,333 @@ class ConverterToSqlite():
 
     def _create_schema(self, conn):
         conn.executescript("""
-        create table if not exists ad_manufacturer(
-            id integer primary key autoincrement,
-            name text unique
-        );
+            create table if not exists ad_manufacturer(
+                id integer primary key autoincrement,
+                name text unique not null
+            );
 
-        create table if not exists ad_ecu(
-            id integer primary key autoincrement,
-            manufacturer_id integer,
-            model text,
-            type text default 'ECM',
-            foreign key(manufacturer_id) references ad_manufacturer(id)
-        );
+            create table if not exists ad_mcu(
+                id integer primary key autoincrement,
+                manufacturer_id integer not null,
+                model text not null,
+                created text,
+                updated text,
+                foreign key(manufacturer_id) references ad_manufacturer(id)
+            );
 
-        create table if not exists ad_dtc_standard(
-            id integer primary key autoincrement,
-            name text unique
-        );
+            create unique index if not exists ad_mcu_uq
+            on ad_mcu(manufacturer_id, model);
 
-        create table if not exists ad_diag_protocol(
-            id integer primary key autoincrement,
-            name text unique
-        );
+            create table if not exists ad_engine(
+                id integer primary key autoincrement,
+                manufacturer_id integer not null,
+                code text,
+                fuel text,
+                created text,
+                updated text,
+                foreign key(manufacturer_id) references ad_manufacturer(id)
+            );
 
-        create table if not exists ad_dtc_system(
-            id integer primary key autoincrement,
-            name text unique
-        );
+            create unique index if not exists ad_engine_uq
+            on ad_engine(manufacturer_id, code);
+                           
+            create table if not exists ad_engine_name(
+                engine_id integer not null,
+                name text not null,
+                primary key(engine_id, name),
+                foreign key(engine_id) references ad_engine(id)
+            );
 
-        create table if not exists ad_dtc_subsystem(
-            id integer primary key autoincrement,
-            name text unique
-        );
+            create table if not exists ad_ecu(
+                id integer primary key autoincrement,
+                manufacturer_id integer not null,
+                mcu_id integer,
+                model text not null,
+                type text default 'ECM',
+                created text,
+                updated text,
+                foreign key(manufacturer_id) references ad_manufacturer(id),
+                foreign key(mcu_id) references ad_mcu(id)
+            );
 
-        create table if not exists ad_dtc_category(
-            id integer primary key autoincrement,
-            name text unique
-        );
+            create unique index if not exists ad_ecu_uq
+            on ad_ecu(manufacturer_id, model);
 
-        create table if not exists ad_dtc_severity(
-            id integer primary key autoincrement,
-            name text unique
-        );
+            create table if not exists ad_vehicle(
+                id integer primary key autoincrement,
+                manufacturer_id integer not null,
+                model text not null,
+                type text,
+                created text,
+                updated text,
+                foreign key(manufacturer_id) references ad_manufacturer(id)
+            );
 
-        create table if not exists ad_dtc(
-            id integer primary key autoincrement,
-            ecu_id integer not null,
-            code text,
-            definition text,
-            description text,
-            mil boolean,
-            created text,
-            updated text,
-            detection_condition text,
-            causes text,
-            repairs text,
-            evidence text,
-            foreign key(ecu_id) references ad_ecu(id)
-        );
+            create unique index if not exists ad_vehicle_uq
+            on ad_vehicle(manufacturer_id, model);
 
-        create unique index if not exists ad_dtc_ecu_code_uq
-        on ad_dtc(ecu_id, code);
+            create table if not exists ad_vehicle_version(
+                id integer primary key autoincrement,
+                vehicle_id integer not null,
+                version text,
+                year text,
+                engine_id integer,
+                ecu_id integer,
+                power_ps integer,
+                power_kw real,
+                created text,
+                updated text,
+                foreign key(vehicle_id) references ad_vehicle(id),
+                foreign key(engine_id) references ad_engine(id),
+                foreign key(ecu_id) references ad_ecu(id)
+            );
 
-        create table if not exists ad_dtc_standard_link(
-            dtc_id integer,
-            standard_id integer,
-            foreign key(dtc_id) references ad_dtc(id),
-            foreign key(standard_id) references ad_dtc_standard(id)
-        );
+            create unique index if not exists ad_vehicle_version_uq
+            on ad_vehicle_version(vehicle_id, version);
 
-        create table if not exists ad_dtc_protocol_link(
-            dtc_id integer,
-            protocol_id integer,
-            foreign key(dtc_id) references ad_dtc(id),
-            foreign key(protocol_id) references ad_diag_protocol(id)
-        );
+            create table if not exists ad_vehicle_version_alt_ecu(
+                vehicle_version_id integer not null,
+                ecu_id integer not null,
+                primary key(vehicle_version_id, ecu_id),
+                foreign key(vehicle_version_id) references ad_vehicle_version(id),
+                foreign key(ecu_id) references ad_ecu(id)
+            );
 
-        create table if not exists ad_dtc_related(
-            dtc_id integer,
-            related_dtc_id integer,
-            foreign key(dtc_id) references ad_dtc(id),
-            foreign key(related_dtc_id) references ad_dtc(id)
-        );
+            create table if not exists ad_evidence(
+                id integer primary key autoincrement,
+                url text unique not null
+            );
 
-        create table if not exists ad_dtc_system_link(
-            dtc_id integer,
-            system_id integer,
-            foreign key(dtc_id) references ad_dtc(id),
-            foreign key(system_id) references ad_dtc_system(id)
-        );
+            create table if not exists ad_manufacturer_evidence(
+                manufacturer_id integer not null,
+                evidence_id integer not null,
+                primary key(manufacturer_id, evidence_id),
+                foreign key(manufacturer_id) references ad_manufacturer(id),
+                foreign key(evidence_id) references ad_evidence(id)
+            );
 
-        create table if not exists ad_dtc_subsystem_link(
-            dtc_id integer,
-            subsystem_id integer,
-            foreign key(dtc_id) references ad_dtc(id),
-            foreign key(subsystem_id) references ad_dtc_subsystem(id)
-        );
+            create table if not exists ad_vehicle_evidence(
+                vehicle_id integer not null,
+                evidence_id integer not null,
+                primary key(vehicle_id, evidence_id),
+                foreign key(vehicle_id) references ad_vehicle(id),
+                foreign key(evidence_id) references ad_evidence(id)
+            );
 
-        create table if not exists ad_dtc_category_link(
-            dtc_id integer,
-            category_id integer,
-            foreign key(dtc_id) references ad_dtc(id),
-            foreign key(category_id) references ad_dtc_category(id)
-        );
+            create table if not exists ad_vehicle_version_evidence(
+                vehicle_version_id integer not null,
+                evidence_id integer not null,
+                primary key(vehicle_version_id, evidence_id),
+                foreign key(vehicle_version_id) references ad_vehicle_version(id),
+                foreign key(evidence_id) references ad_evidence(id)
+            );
 
-        create table if not exists ad_dtc_severity_link(
-            dtc_id integer,
-            severity_id integer,
-            foreign key(dtc_id) references ad_dtc(id),
-            foreign key(severity_id) references ad_dtc_severity(id)
-        );
+            create table if not exists ad_engine_evidence(
+                engine_id integer not null,
+                evidence_id integer not null,
+                primary key(engine_id, evidence_id),
+                foreign key(engine_id) references ad_engine(id),
+                foreign key(evidence_id) references ad_evidence(id)
+            );
+
+            create table if not exists ad_ecu_evidence(
+                ecu_id integer not null,
+                evidence_id integer not null,
+                primary key(ecu_id, evidence_id),
+                foreign key(ecu_id) references ad_ecu(id),
+                foreign key(evidence_id) references ad_evidence(id)
+            );
+
+            create table if not exists ad_mcu_evidence(
+                mcu_id integer not null,
+                evidence_id integer not null,
+                primary key(mcu_id, evidence_id),
+                foreign key(mcu_id) references ad_mcu(id),
+                foreign key(evidence_id) references ad_evidence(id)
+            );
+
+            create table if not exists ad_conflict(
+                id integer primary key autoincrement,
+                entity_type text not null,
+                entity_id integer not null,
+                field text not null,
+                created text
+            );
+
+            create table if not exists ad_conflict_value(
+                id integer primary key autoincrement,
+                conflict_id integer not null,
+
+                value_text text,
+
+                ref_entity_type text,
+                ref_entity_id integer,
+
+                foreign key(conflict_id) references ad_conflict(id),
+
+                check(
+                    (value_text is not null and ref_entity_type is null and ref_entity_id is null)
+                    or
+                    (value_text is null and ref_entity_type is not null and ref_entity_id is not null)
+                )
+            );
+
+            create table if not exists ad_conflict_value_evidence(
+                conflict_value_id integer not null,
+                evidence_id integer not null,
+                primary key(conflict_value_id, evidence_id),
+                foreign key(conflict_value_id) references ad_conflict_value(id),
+                foreign key(evidence_id) references ad_evidence(id)
+            );
+
+            create table if not exists ad_dtc_standard(
+                id integer primary key autoincrement,
+                name text unique
+            );
+
+            create table if not exists ad_diag_protocol(
+                id integer primary key autoincrement,
+                name text unique
+            );
+
+            create table if not exists ad_dtc_system(
+                id integer primary key autoincrement,
+                name text unique
+            );
+
+            create table if not exists ad_dtc_subsystem(
+                id integer primary key autoincrement,
+                name text unique
+            );
+
+            create table if not exists ad_dtc_category(
+                id integer primary key autoincrement,
+                name text unique
+            );
+
+            create table if not exists ad_dtc_severity(
+                id integer primary key autoincrement,
+                name text unique
+            );
+
+            create table if not exists ad_dtc(
+                id integer primary key autoincrement,
+                ecu_id integer not null,
+                code text,
+                definition text,
+                description text,
+                mil boolean,
+                created text,
+                updated text,
+                detection_condition text,
+                causes text,
+                repairs text,
+                foreign key(ecu_id) references ad_ecu(id)
+            );
+
+            create unique index if not exists ad_dtc_ecu_code_uq
+            on ad_dtc(ecu_id, code);
+
+            create table if not exists ad_dtc_evidence(
+                dtc_id integer not null,
+                evidence_id integer not null,
+                primary key(dtc_id, evidence_id),
+                foreign key(dtc_id) references ad_dtc(id),
+                foreign key(evidence_id) references ad_evidence(id)
+            );
+
+            create table if not exists ad_dtc_standard_link(
+                dtc_id integer,
+                standard_id integer,
+                foreign key(dtc_id) references ad_dtc(id),
+                foreign key(standard_id) references ad_dtc_standard(id)
+            );
+
+            create table if not exists ad_dtc_protocol_link(
+                dtc_id integer,
+                protocol_id integer,
+                foreign key(dtc_id) references ad_dtc(id),
+                foreign key(protocol_id) references ad_diag_protocol(id)
+            );
+
+            create table if not exists ad_dtc_related(
+                dtc_id integer,
+                related_dtc_id integer,
+                foreign key(dtc_id) references ad_dtc(id),
+                foreign key(related_dtc_id) references ad_dtc(id)
+            );
+
+            create table if not exists ad_dtc_system_link(
+                dtc_id integer,
+                system_id integer,
+                foreign key(dtc_id) references ad_dtc(id),
+                foreign key(system_id) references ad_dtc_system(id)
+            );
+
+            create table if not exists ad_dtc_subsystem_link(
+                dtc_id integer,
+                subsystem_id integer,
+                foreign key(dtc_id) references ad_dtc(id),
+                foreign key(subsystem_id) references ad_dtc_subsystem(id)
+            );
+
+            create table if not exists ad_dtc_category_link(
+                dtc_id integer,
+                category_id integer,
+                foreign key(dtc_id) references ad_dtc(id),
+                foreign key(category_id) references ad_dtc_category(id)
+            );
+
+            create table if not exists ad_dtc_severity_link(
+                dtc_id integer,
+                severity_id integer,
+                foreign key(dtc_id) references ad_dtc(id),
+                foreign key(severity_id) references ad_dtc_severity(id)
+            );
+
         """)
 
     def _clear_tables(self, conn):
         conn.executescript("""
-        delete from ad_dtc_protocol_link;
+        delete from ad_conflict_value_evidence;
+        delete from ad_conflict_value;
+        delete from ad_conflict;
+
         delete from ad_dtc_standard_link;
+        delete from ad_dtc_protocol_link;
         delete from ad_dtc_related;
         delete from ad_dtc_system_link;
         delete from ad_dtc_subsystem_link;
         delete from ad_dtc_category_link;
         delete from ad_dtc_severity_link;
+
+        delete from ad_dtc_evidence;
+        delete from ad_vehicle_version_alt_ecu;
+
+        delete from ad_manufacturer_evidence;
+        delete from ad_vehicle_evidence;
+        delete from ad_vehicle_version_evidence;
+        delete from ad_engine_evidence;
+        delete from ad_engine_name;
+        delete from ad_ecu_evidence;
+        delete from ad_mcu_evidence;
+
         delete from ad_dtc;
+        delete from ad_vehicle_version;
+        delete from ad_vehicle;
         delete from ad_ecu;
-        delete from ad_manufacturer;
+        delete from ad_engine;
+        delete from ad_mcu;
+
         delete from ad_dtc_standard;
         delete from ad_diag_protocol;
         delete from ad_dtc_system;
         delete from ad_dtc_subsystem;
         delete from ad_dtc_category;
         delete from ad_dtc_severity;
+
+        delete from ad_manufacturer;
+        delete from ad_evidence;
         """)
 
     def _read_yaml(self, path: Path):
