@@ -332,23 +332,22 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                 yaml_path,
                 data,
                 "model",
-                MCU,
-                evidence
+                MCU
             )
 
             return mcu_ref
 
 
 
-        evidence = data.setdefault("evidence", [])
+        evidences = data.setdefault("evidence", [])
 
         if conflict:
             changed = True
         else:
-            source = self.get_evidence_input()
+            evidence = self.get_evidence_input()
 
-            if source and source not in evidence:
-                evidence.append(source)
+            if evidence and evidence not in evidences:
+                evidences.append(evidence)
                 changed = True
 
         if changed:
@@ -385,7 +384,6 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         """
         path = Path(path)
         path.parent.mkdir(parents=True, exist_ok=True)
-
         with path.open("w", encoding="utf-8") as f:
             yaml.safe_dump(
                 data,
@@ -395,7 +393,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                 default_flow_style=False,
             )
 
-    def insert_or_conflict(self, yaml_path, data, field, value, evidence):
+    def insert_or_conflict(self, yaml_path, data, field, value):
         changed = False
         conflict = False
 
@@ -412,8 +410,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                         yaml_path,
                         data,
                         field,
-                        value,
-                        evidence,
+                        value
                     )
                 elif current != value:
                     data[field] = value
@@ -425,8 +422,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                         yaml_path,
                         data,
                         field,
-                        value,
-                        evidence,
+                        value
                     )
         else:
             data[field] = value
@@ -434,7 +430,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
         return changed, conflict
     
-    def import_ecu(self, Ecu_maker, Ecu_model, evidence, ECU_type="ECM", MCU=""):
+    def import_ecu(self, Ecu_maker, Ecu_model, ECU_type="ECM", MCU=""):
         Ecu_maker = (Ecu_maker or "").strip()
         Ecu_model = (Ecu_model or "").strip()
         ECU_type = (ECU_type or "ECM").strip()
@@ -473,16 +469,16 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             }
         
         conflict = False
-        changed_rv, conflict_rv = self.insert_or_conflict(ecu_def, data, "model", Ecu_model, evidence)
+        changed_rv, conflict_rv = self.insert_or_conflict(ecu_def, data, "model", Ecu_model)
         changed |= changed_rv
         conflict |= conflict_rv
-        changed_rv, conflict_rv = self.insert_or_conflict(ecu_def, data, "type", ECU_type, evidence)
+        changed_rv, conflict_rv = self.insert_or_conflict(ecu_def, data, "type", ECU_type)
         changed |= changed_rv
         conflict |= conflict_rv
 
         mcu_ref = self.import_mcu(MCU)
 
-        changed_rv, conflict_rv = self.insert_or_conflict(ecu_def, data, "mcu", mcu_ref, evidence)
+        changed_rv, conflict_rv = self.insert_or_conflict(ecu_def, data, "mcu", mcu_ref)
         changed |= changed_rv
         conflict |= conflict_rv
 
@@ -494,6 +490,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         if conflict:
             changed = True
         else:
+            evidence = self.get_evidence_input()
             if evidence and evidence not in evidences:
                 evidences.add(evidence)
                 data["evidence"] = sorted(evidences)
@@ -511,7 +508,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
     def get_evidence_input(self):
         return self.evidence_var.get().strip()
 
-    def add_conflict(self, yaml_path, yaml_data, field_name, value_to_store, evidence):
+    def add_conflict(self, yaml_path, yaml_data, field_name, value_to_store):
         self.log(
             f"Conflict on {yaml_path} "
             f"field '{field_name}': "
@@ -524,7 +521,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
         conflict = {
             "value": value_to_store,
-            "evidence": evidence,
+            "evidence": self.get_evidence_input(),
         }
 
         if conflict not in field_conflicts:
@@ -534,8 +531,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         self,
         yaml_path,
         data,
-        value,
-        evidence,
+        value
     ):
         changed = False
         conflict = False
@@ -571,8 +567,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             yaml_path,
             data,
             "ecu",
-            value,
-            evidence,
+            value
         )
 
         return False, True
@@ -586,8 +581,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         Version,
         Power_KW,
         ecu_relative_path,
-        engine_relative_path,
-        evidence
+        engine_relative_path
     ):
         Type = (Type or "").strip()
         Brand = (Brand or "").strip()
@@ -645,8 +639,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             vehicle_def,
             data,
             "model",
-            Model,
-            evidence,
+            Model
         )
         changed |= changed_rv
         conflict |= conflict_rv
@@ -655,8 +648,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             vehicle_def,
             data,
             "type",
-            Type.lower() if Type else "car",
-            evidence,
+            Type.lower() if Type else "car"
         )
         changed |= changed_rv
         conflict |= conflict_rv
@@ -666,6 +658,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         if conflict:
             changed = True
         else:
+            evidence = self.get_evidence_input()
             if evidence and evidence not in evidences:
                 evidences.append(evidence)
                 changed = True
@@ -719,8 +712,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                     variant_file,
                     variant,
                     field,
-                    value,
-                    evidence,
+                    value
                 )
                 changed |= changed_rv
                 conflict |= conflict_rv
@@ -728,8 +720,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         changed_rv, conflict_rv = self.insert_ecu_or_alternative(
             variant_file,
             variant,
-            ecu_relative_path,
-            evidence,
+            ecu_relative_path
         )
         changed |= changed_rv
         conflict |= conflict_rv
@@ -739,6 +730,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         if conflict:
             changed = True
         else:
+            evidence = self.get_evidence_input()
             if evidence and evidence not in evidences:
                 evidences.append(evidence)
                 changed = True
@@ -761,8 +753,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         manufacturer,
         Engine,
         Engine_type="",
-        Fuel="",
-        evidence=""
+        Fuel=""
     ):
         manufacturer = (manufacturer or "").strip()
         Engine = (Engine or "").strip()
@@ -827,7 +818,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             names.append(Engine)
             changed = True
 
-        changed_rv, conflict_rv = self.insert_or_conflict(yaml_path, data, "code", engine_code, evidence)
+        changed_rv, conflict_rv = self.insert_or_conflict(yaml_path, data, "code", engine_code)
         changed |= changed_rv
         conflict |= conflict_rv
 
@@ -856,15 +847,14 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                     yaml_path,
                     data,
                     "fuel",
-                    Fuel,
-                    evidence
+                    Fuel
                 )
 
         evidences = data.setdefault("evidence", [])
-
         if conflict:
             changed = True
         else:
+            evidence = self.get_evidence_input()
             if evidence and evidence not in evidences:
                 evidences.append(evidence)
                 changed = True
@@ -905,9 +895,9 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             ECU_type = (row.get("ECU_Type") or "").strip()
             MCU = (row.get("MCU") or "").strip()
 
-            ecu_relative_path = self.import_ecu(Ecu_maker, Ecu_model, self.get_evidence_input(), ECU_type, MCU)
-            engine_relative_path = self.import_engine(Brand, Engine, Engine_type, Fuel, self.get_evidence_input())
-            self.import_vehicle(Type, Brand, Model, Year, Version, Power_KW, ecu_relative_path, engine_relative_path, self.evidence_var.get())
+            ecu_relative_path = self.import_ecu(Ecu_maker, Ecu_model, ECU_type, MCU)
+            engine_relative_path = self.import_engine(Brand, Engine, Engine_type, Fuel)
+            self.import_vehicle(Type, Brand, Model, Year, Version, Power_KW, ecu_relative_path, engine_relative_path)
             self.heavy_op_step()
 
     def on_import(self):
