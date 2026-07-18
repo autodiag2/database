@@ -409,6 +409,81 @@ class ConverterToSqlite():
                 (entity_id, evidence_id),
             )
 
+    def _get_or_insert_mcu(
+        self,
+        conn,
+        manufacturer,
+        model,
+        created=None,
+        updated=None,
+        evidence=None,
+    ):
+        if not manufacturer or not model:
+            return None
+
+        manufacturer_id = self._get_or_insert(
+            conn,
+            "ad_manufacturer",
+            "name",
+            manufacturer,
+        )
+
+        cur = conn.cursor()
+
+        cur.execute("""
+            select id
+            from ad_mcu
+            where manufacturer_id=?
+            and model=?
+        """, (
+            manufacturer_id,
+            model,
+        ))
+
+        row = cur.fetchone()
+
+        if row:
+            mcu_id = row[0]
+
+            cur.execute("""
+                update ad_mcu
+                set created=coalesce(created, ?),
+                    updated=?
+                where id=?
+            """, (
+                created,
+                updated,
+                mcu_id,
+            ))
+
+        else:
+            cur.execute("""
+                insert into ad_mcu(
+                    manufacturer_id,
+                    model,
+                    created,
+                    updated
+                )
+                values(?,?,?,?)
+            """, (
+                manufacturer_id,
+                model,
+                created,
+                updated,
+            ))
+
+            mcu_id = cur.lastrowid
+
+        self._link_evidence(
+            conn,
+            "ad_mcu_evidence",
+            "mcu_id",
+            mcu_id,
+            evidence,
+        )
+
+        return mcu_id
+
     def _get_or_insert_ecu(
         self,
         conn,
@@ -524,6 +599,85 @@ class ConverterToSqlite():
 
         return ecu_id
 
+    def _iter_mcu_entries(self):
+        mcu_root = self.plain_text_db / "mcu"
+        if not mcu_root.exists():
+            return
+
+        for manufacturer_dir in sorted(p for p in mcu_root.iterdir() if p.is_dir()):
+
+            manufacturer_def = self._read_yaml(manufacturer_dir / "def.yml")
+            manufacturer = (
+                manufacturer_def.get("manufacturer")
+                or manufacturer_dir.name
+            )
+
+            for mcu_dir in sorted(p for p in manufacturer_dir.iterdir() if p.is_dir()):
+
+                def_path = mcu_dir / "def.yml"
+                if not def_path.exists():
+                    continue
+
+                data = self._read_yaml(def_path)
+
+                yield {
+                    "manufacturer": manufacturer,
+                    "model": data.get("model"),
+                    "created": data.get("created"),
+                    "updated": data.get("updated"),
+                    "evidence": data.get("evidence", []),
+                    "conflicts": data.get("conflicts", {}),
+                }
+
+    def _load_mcus(self, conn):
+        seen = set()
+
+        for entry in self._iter_mcu_entries():
+
+            manufacturer = entry["manufacturer"]
+            model = entry["model"]
+
+            if not manufacturer or not model:
+                continue
+
+            key = (manufacturer, model)
+            if key in seen:
+                continue
+            seen.add(key)
+
+            mcu_id = self._get_or_insert_mcu(
+                conn,
+                manufacturer=manufacturer,
+                model=model,
+                created=entry["created"],
+                updated=entry["updated"],
+                evidence=entry["evidence"],
+            )
+
+            for field, values in entry["conflicts"].items():
+
+                conflict_id = self._insert_conflict(
+                    conn,
+                    entity_type="mcu",
+                    entity_id=mcu_id,
+                    field=field,
+                    created=entry["updated"] or entry["created"],
+                )
+
+                for value in self._ensure_list(values):
+
+                    conflict_value_id = self._insert_conflict_value(
+                        conn,
+                        conflict_id,
+                        value,
+                    )
+
+                    self._link_conflict_value_evidence(
+                        conn,
+                        conflict_value_id,
+                        value.get("evidence"),
+                    )
+                    
     def _json_dump(self, value, default):
         if value is None:
             value = default
@@ -661,10 +815,15 @@ class ConverterToSqlite():
         if self.plain_text_db is None or self.sqlite_db is None:
             return False
 
+        Path("output").mkdir(parents=True, exist_ok=True)
         conn = self._connect()
         self._create_schema(conn)
         self._clear_tables(conn)
-        self._load_ecus(conn)
+        self._load_mcus(conn)
+        #self._load_ecus(conn)
+        conn.commit()
+        conn.close()
+        return True
 
         dtc_entries = [
             entry for entry in self._iter_ecu_entries()
