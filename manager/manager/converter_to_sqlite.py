@@ -245,9 +245,17 @@ class ConverterToSqlite():
                 repairs text,
                 foreign key(ecu_id) references ad_ecu(id)
             );
-
+                           
             create unique index if not exists ad_dtc_ecu_code_uq
             on ad_dtc(ecu_id, code);
+                           
+            create table if not exists ad_dtc_evidence(
+                dtc_id integer not null,
+                evidence_id integer not null,
+                primary key(dtc_id, evidence_id),
+                foreign key(dtc_id) references ad_dtc(id),
+                foreign key(evidence_id) references ad_evidence(id)
+            );
 
             create table if not exists ad_dtc_evidence(
                 dtc_id integer not null,
@@ -519,6 +527,7 @@ class ConverterToSqlite():
         ecu_type="ECM",
         mcu_ref: int = None,
         evidence=None,
+        codes_path=None
     ):
         if not manufacturer or not model:
             return None
@@ -596,6 +605,47 @@ class ConverterToSqlite():
                     ecu_id,
                     ev,
                 )
+
+        if codes_path.exists():
+            for y in sorted(codes_path.glob("*.yml")):
+                file = self._read_yaml(y)
+
+                created = file.get("created") or datetime.datetime.now().isoformat()
+                updated = file.get("updated") or created
+
+                cur.execute("""
+                    insert into ad_dtc(
+                        ecu_id,
+                        code,
+                        definition,
+                        description,
+                        mil,
+                        created,
+                        updated,
+                        detection_condition,
+                        causes,
+                        repairs
+                    ) values(?,?,?,?,?,?,?,?,?,?)
+                """, (
+                    ecu_id,
+                    file.get("code"),
+                    file.get("definition"),
+                    file.get("description"),
+                    file.get("mil"),
+                    created,
+                    updated,
+                    self._json_dump(file.get("detection_condition"), []),
+                    self._json_dump(file.get("causes"), []),
+                    self._json_dump(file.get("repairs"), [])
+                ))
+
+                dtc_id = cur.lastrowid
+
+                for evidence in (file.get("evidence", []) or []):
+                    self._link_evidence(conn, "ad_dtc_evidence", "dtc_id", dtc_id, evidence)
+
+                self._insert_related_codes(conn, dtc_id, file.get("related_code"), ecu_id)
+                self._insert_taxonomy_links(conn, dtc_id, file)
 
         return ecu_id
 
@@ -705,6 +755,7 @@ class ConverterToSqlite():
                 def_path = ecu_dir / "def.yml"
                 if not def_path.exists():
                     continue
+                codes_path = ecu_dir / "codes"
 
                 data = self._read_yaml(def_path)
 
@@ -720,6 +771,7 @@ class ConverterToSqlite():
 
                 yield {
                     "path": def_path,
+                    "codes_path": codes_path,
                     "manufacturer": manufacturer,
                     "ecu_model": data.get("model"),
                     "created": data.get("created"),
@@ -862,6 +914,7 @@ class ConverterToSqlite():
                 ecu_type=entry["ecu_type"],
                 mcu_ref=entry["mcu_ref"],
                 evidence=entry["evidence"],
+                codes_path=entry["codes_path"]
             )
 
             for field, values in entry["conflicts"].items():
@@ -965,74 +1018,6 @@ class ConverterToSqlite():
         conn.commit()
         conn.close()
         self.log("Changes commited !")
-        return True
-
-        dtc_entries = [
-            entry for entry in self._iter_ecu_entries()
-            if entry.get("is_def") is False
-        ]
-
-        total = len(dtc_entries)
-        count = 0
-        progress_callback(count, total)
-
-        cur = conn.cursor()
-
-        for entry in dtc_entries:
-            count += 1
-            progress_callback(count, total)
-
-            y = entry["path"]
-            manufacturer = entry["manufacturer"]
-            ecu_model = entry["ecu_model"]
-            ecu_type = entry["ecu_type"]
-
-            d = self._read_yaml(y)
-
-            ecu_id = None
-            if ecu_model:
-                ecu_id = self._get_or_insert_ecu(conn, manufacturer, ecu_model, ecu_type)
-            if ecu_id is None:
-                continue
-
-            created = d.get("created") or datetime.datetime.now().isoformat()
-            updated = d.get("updated") or created
-
-            cur.execute("""
-                insert into ad_dtc(
-                    ecu_id,
-                    code,
-                    definition,
-                    description,
-                    mil,
-                    created,
-                    updated,
-                    detection_condition,
-                    causes,
-                    repairs,
-                    evidence
-                ) values(?,?,?,?,?,?,?,?,?,?,?)
-            """, (
-                ecu_id,
-                d.get("code") or y.stem,
-                d.get("definition"),
-                d.get("description"),
-                d.get("mil"),
-                created,
-                updated,
-                self._json_dump(d.get("detection_condition"), []),
-                self._json_dump(d.get("causes"), []),
-                self._json_dump(d.get("repairs"), []),
-                self._json_dump(d.get("evidence"), {}),
-            ))
-
-            dtc_id = cur.lastrowid
-
-            self._insert_related_codes(conn, dtc_id, d.get("related_code"), ecu_id)
-            self._insert_taxonomy_links(conn, dtc_id, d)
-
-        conn.commit()
-        conn.close()
         return True
 
 
