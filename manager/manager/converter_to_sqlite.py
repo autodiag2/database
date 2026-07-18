@@ -8,6 +8,32 @@ import datetime
 from tqdm import tqdm
 from manager.vpic_sqlite_loader import VpicToSqliteLoader
 from manager.tab.import_vehicle import slug
+import time
+
+import datetime
+import time
+
+def timestamp(ts=None):
+    if ts is None:
+        return time.time_ns() // 1_000_000
+
+    if isinstance(ts, int):
+        return ts
+
+    if isinstance(ts, str):
+        # Already a Unix timestamp
+        if ts.isdigit():
+            return int(ts)
+
+        # Legacy " CEST"/" CET"
+        if ts.endswith(" CEST"):
+            ts = ts[:-5] + "+02:00"
+        elif ts.endswith(" CET"):
+            ts = ts[:-4] + "+01:00"
+
+        return int(datetime.datetime.fromisoformat(ts).timestamp() * 1000)
+
+    raise TypeError(f"unsupported timestamp: {ts!r}")
 
 class ConverterToSqlite():
 
@@ -31,8 +57,8 @@ class ConverterToSqlite():
                 id integer primary key autoincrement,
                 manufacturer_id integer not null,
                 model text not null,
-                created text,
-                updated text,
+                created integer,
+                updated integer,
                 foreign key(manufacturer_id) references ad_manufacturer(id)
             );
 
@@ -44,8 +70,8 @@ class ConverterToSqlite():
                 manufacturer_id integer not null,
                 code text,
                 fuel text,
-                created text,
-                updated text,
+                created integer,
+                updated integer,
                 foreign key(manufacturer_id) references ad_manufacturer(id)
             );
 
@@ -65,8 +91,8 @@ class ConverterToSqlite():
                 mcu_id integer,
                 model text not null,
                 type text default 'ECM',
-                created text,
-                updated text,
+                created integer,
+                updated integer,
                 foreign key(manufacturer_id) references ad_manufacturer(id),
                 foreign key(mcu_id) references ad_mcu(id)
             );
@@ -79,8 +105,8 @@ class ConverterToSqlite():
                 manufacturer_id integer not null,
                 model text not null,
                 type text,
-                created text,
-                updated text,
+                created integer,
+                updated integer,
                 foreign key(manufacturer_id) references ad_manufacturer(id)
             );
 
@@ -96,8 +122,8 @@ class ConverterToSqlite():
                 ecu_id integer,
                 power_ps integer,
                 power_kw real,
-                created text,
-                updated text,
+                created integer,
+                updated integer,
                 foreign key(vehicle_id) references ad_vehicle(id),
                 foreign key(engine_id) references ad_engine(id),
                 foreign key(ecu_id) references ad_ecu(id)
@@ -172,7 +198,7 @@ class ConverterToSqlite():
                 entity_type text not null,
                 entity_id integer not null,
                 field text not null,
-                created text
+                created integer
             );
 
             create table if not exists ad_conflict_value(
@@ -238,8 +264,8 @@ class ConverterToSqlite():
                 definition text,
                 description text,
                 mil boolean,
-                created text,
-                updated text,
+                created integer,
+                updated integer,
                 detection_condition text,
                 causes text,
                 repairs text,
@@ -610,8 +636,8 @@ class ConverterToSqlite():
             for y in sorted(codes_path.glob("*.yml")):
                 file = self._read_yaml(y)
 
-                created = file.get("created") or datetime.datetime.now().isoformat()
-                updated = file.get("updated") or created
+                created = timestamp(file.get("created"))
+                updated = timestamp(file.get("created")) if file.get("updated") else timestamp(created)
 
                 cur.execute("""
                     insert into ad_dtc(
@@ -813,8 +839,8 @@ class ConverterToSqlite():
                 yield {
                     "manufacturer": manufacturer,
                     "model": data.get("model"),
-                    "created": data.get("created"),
-                    "updated": data.get("updated"),
+                    "created": timestamp(data.get("created")) if data.get("created") else None,
+                    "updated": timestamp(data.get("updated")) if data.get("updated") else None,
                     "evidence": data.get("evidence", []),
                     "conflicts": data.get("conflicts", {}),
                 }
@@ -839,8 +865,8 @@ class ConverterToSqlite():
                 conn,
                 manufacturer=manufacturer,
                 model=model,
-                created=entry["created"],
-                updated=entry["updated"],
+                created=timestamp(entry["created"]) if entry["created"] else None,
+                updated=timestamp(entry["updated"]) if entry["updated"] else None,
                 evidence=entry["evidence"],
             )
 
@@ -851,7 +877,7 @@ class ConverterToSqlite():
                     entity_type="mcu",
                     entity_id=mcu_id,
                     field=field,
-                    created=entry["updated"] or entry["created"],
+                    created=timestamp(entry["updated"] or entry["created"]),
                 )
 
                 for value in self._ensure_list(values):
@@ -889,8 +915,8 @@ class ConverterToSqlite():
                     manufacturer=manufacturer,
                     model=model,
                     vehicle_type=entry["vehicle_type"],
-                    created=entry["vehicle_created"],
-                    updated=entry["vehicle_updated"],
+                    created=timestamp(entry["vehicle_created"]),
+                    updated=timestamp(entry["vehicle_updated"]),
                     evidence=entry["vehicle_evidence"],
                 )
 
@@ -910,8 +936,8 @@ class ConverterToSqlite():
                 engine_ref=entry["engine_ref"],
                 power_kw=entry["power_kw"],
                 ecu_ref=entry["ecu_ref"],
-                created=entry["version_created"],
-                updated=entry["version_updated"],
+                created=timestamp(entry["version_created"]),
+                updated=timestamp(entry["version_updated"]),
                 evidence=entry["version_evidence"],
             )
 
@@ -922,7 +948,7 @@ class ConverterToSqlite():
                     entity_type="vehicle_version",
                     entity_id=version_id,
                     field=field,
-                    created=entry["version_updated"] or entry["version_created"],
+                    created=timestamp(entry["version_updated"] or entry["version_created"]),
                 )
 
                 for value in self._ensure_list(values):
@@ -1019,8 +1045,8 @@ class ConverterToSqlite():
                             "manufacturer": manufacturer,
                             "model": vehicle.get("model"),
                             "vehicle_type": vehicle.get("type", "car"),
-                            "vehicle_created": vehicle.get("created"),
-                            "vehicle_updated": vehicle.get("updated"),
+                            "vehicle_created": timestamp(vehicle.get("created")),
+                            "vehicle_updated": timestamp(vehicle.get("updated")),
                             "vehicle_evidence": vehicle.get("evidence", []),
 
                             # version
@@ -1031,8 +1057,8 @@ class ConverterToSqlite():
                             "power_kw": version.get("power_kw"),
                             "ecu_ref": ecu_ref,
                             "alternative_ecus": alternative_ecus,
-                            "version_created": version.get("created"),
-                            "version_updated": version.get("updated"),
+                            "version_created": timestamp(version.get("created")),
+                            "version_updated": timestamp(version.get("updated")),
                             "version_evidence": version.get("evidence", []),
                             "version_conflicts": version.get("conflicts", {}),
                         }
@@ -1274,8 +1300,8 @@ class ConverterToSqlite():
                     "codes_path": codes_path,
                     "manufacturer": manufacturer,
                     "ecu_model": data.get("model"),
-                    "created": data.get("created"),
-                    "updated": data.get("updated"),
+                    "created": timestamp(data.get("created")),
+                    "updated": timestamp(data.get("updated")),
                     "ecu_type": data.get("type", "ECM"),
                     "mcu_ref": mcu_ref,
                     "evidence": data.get("evidence", []),
@@ -1409,8 +1435,8 @@ class ConverterToSqlite():
                 conn,
                 manufacturer=manufacturer,
                 model=model,
-                created=entry["created"],
-                updated=entry["updated"],
+                created=timestamp(entry["created"]),
+                updated=timestamp(entry["updated"]),
                 ecu_type=entry["ecu_type"],
                 mcu_ref=entry["mcu_ref"],
                 evidence=entry["evidence"],
@@ -1424,7 +1450,7 @@ class ConverterToSqlite():
                     entity_type="ecu",
                     entity_id=ecu_id,
                     field=field,
-                    created=entry["updated"] or entry["created"],
+                    created=timestamp(entry["updated"] or entry["created"]),
                 )
 
                 for value in self._ensure_list(values):
@@ -1475,8 +1501,8 @@ class ConverterToSqlite():
                     "code": data.get("code"),
                     "names": self._ensure_list(data.get("name")),
                     "fuel": data.get("fuel"),
-                    "created": data.get("created"),
-                    "updated": data.get("updated"),
+                    "created": timestamp(data.get("created")),
+                    "updated": timestamp(data.get("updated")),
                     "evidence": data.get("evidence", []),
                     "conflicts": data.get("conflicts", {}),
                 }
@@ -1503,8 +1529,8 @@ class ConverterToSqlite():
                 code=code,
                 names=entry["names"],
                 fuel=entry["fuel"],
-                created=entry["created"],
-                updated=entry["updated"],
+                created=timestamp(entry["created"]),
+                updated=timestamp(entry["updated"]),
                 evidence=entry["evidence"],
             )
 
@@ -1515,7 +1541,7 @@ class ConverterToSqlite():
                     entity_type="engine",
                     entity_id=engine_id,
                     field=field,
-                    created=entry["updated"] or entry["created"],
+                    created=timestamp(entry["updated"] or entry["created"]),
                 )
 
                 for value in self._ensure_list(values):
