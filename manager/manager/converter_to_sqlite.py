@@ -648,6 +648,146 @@ class ConverterToSqlite():
                 self._insert_taxonomy_links(conn, dtc_id, file)
 
         return ecu_id
+    
+    def _get_or_insert_engine_name(
+        self,
+        conn,
+        engine_id,
+        name,
+    ):
+        if not name:
+            return None
+
+        cur = conn.cursor()
+
+        cur.execute("""
+            select engine_id
+            from ad_engine_name
+            where engine_id=?
+            and lower(name)=lower(?)
+        """, (
+            engine_id,
+            name,
+        ))
+
+        row = cur.fetchone()
+
+        if row:
+            return row[0]
+
+        cur.execute("""
+            insert into ad_engine_name(
+                engine_id,
+                name
+            )
+            values(?,?)
+        """, (
+            engine_id,
+            name,
+        ))
+
+        return cur.lastrowid
+
+    def _get_or_insert_engine(
+        self,
+        conn,
+        manufacturer,
+        code,
+        names=None,
+        fuel=None,
+        created=None,
+        updated=None,
+        evidence=None,
+    ):
+        if not manufacturer or not code:
+            return None
+
+        manufacturer_id = self._get_or_insert(
+            conn,
+            "ad_manufacturer",
+            "name",
+            manufacturer,
+            True,
+        )
+
+        cur = conn.cursor()
+
+        cur.execute("""
+            select id
+            from ad_engine
+            where manufacturer_id=?
+            and code=?
+        """, (
+            manufacturer_id,
+            code,
+        ))
+
+        row = cur.fetchone()
+
+        if row:
+            engine_id = row[0]
+
+            cur.execute("""
+                update ad_engine
+                set fuel=coalesce(fuel, ?),
+                    created=coalesce(created, ?),
+                    updated=?
+                where id=?
+            """, (
+                fuel,
+                created,
+                updated,
+                engine_id,
+            ))
+        else:
+            cur.execute("""
+                insert into ad_engine(
+                    manufacturer_id,
+                    code,
+                    fuel,
+                    created,
+                    updated
+                )
+                values(?,?,?,?,?)
+            """, (
+                manufacturer_id,
+                code,
+                fuel,
+                created,
+                updated,
+            ))
+
+            engine_id = cur.lastrowid
+
+        if names:
+            if isinstance(names, str):
+                names = [names]
+
+            assert isinstance(names, list)
+
+            for name in names:
+                self._get_or_insert_engine_name(
+                    conn,
+                    engine_id,
+                    name,
+                )
+
+        if evidence:
+            if isinstance(evidence, str):
+                evidence = [evidence]
+
+            assert isinstance(evidence, list)
+
+            for ev in evidence:
+                self._link_evidence(
+                    conn,
+                    "ad_engine_evidence",
+                    "engine_id",
+                    engine_id,
+                    ev,
+                )
+
+        return engine_id
 
     def _iter_mcu_entries(self):
         mcu_root = self.plain_text_db / "mcu"
@@ -829,7 +969,7 @@ class ConverterToSqlite():
             lookup = {
                 "mcu": self._get_or_insert_mcu,
                 "ecu": self._get_or_insert_ecu,
-                #"engine": self._get_or_insert_engine,
+                "engine": self._get_or_insert_engine,
             }
 
             if field in lookup:
@@ -942,6 +1082,97 @@ class ConverterToSqlite():
                         value.get("evidence"),
                     )
 
+    def _iter_engine_entries(self):
+        engine_root = self.plain_text_db / "engine"
+        if not engine_root.exists():
+            return
+
+        for manufacturer_dir in sorted(
+            p for p in engine_root.iterdir()
+            if p.is_dir()
+        ):
+
+            manufacturer_def = self._read_yaml(manufacturer_dir / "def.yml")
+            manufacturer = (
+                manufacturer_def.get("manufacturer")
+                or manufacturer_dir.name
+            )
+
+            for engine_dir in sorted(
+                p for p in manufacturer_dir.iterdir()
+                if p.is_dir()
+            ):
+
+                def_path = engine_dir / "def.yml"
+                if not def_path.exists():
+                    continue
+
+                data = self._read_yaml(def_path)
+
+                yield {
+                    "path": def_path,
+                    "manufacturer": manufacturer,
+                    "code": data.get("code"),
+                    "names": self._ensure_list(data.get("name")),
+                    "fuel": data.get("fuel"),
+                    "created": data.get("created"),
+                    "updated": data.get("updated"),
+                    "evidence": data.get("evidence", []),
+                    "conflicts": data.get("conflicts", {}),
+                }
+
+    def _load_engines(self, conn):
+        seen = set()
+
+        for entry in self._iter_engine_entries():
+
+            manufacturer = entry["manufacturer"]
+            code = entry["code"]
+
+            if not manufacturer or not code:
+                continue
+
+            key = (manufacturer, code)
+            if key in seen:
+                continue
+            seen.add(key)
+
+            engine_id = self._get_or_insert_engine(
+                conn,
+                manufacturer=manufacturer,
+                code=code,
+                names=entry["names"],
+                fuel=entry["fuel"],
+                created=entry["created"],
+                updated=entry["updated"],
+                evidence=entry["evidence"],
+            )
+
+            for field, values in entry["conflicts"].items():
+
+                conflict_id = self._insert_conflict(
+                    conn,
+                    entity_type="engine",
+                    entity_id=engine_id,
+                    field=field,
+                    created=entry["updated"] or entry["created"],
+                )
+
+                for value in self._ensure_list(values):
+
+                    conflict_value_id = self._insert_conflict_value(
+                        conn,
+                        conflict_id,
+                        field,
+                        value,
+                    )
+
+                    self._link_conflict_value_evidence(
+                        conn,
+                        conflict_value_id,
+                        value.get("evidence"),
+                    )
+
     def _insert_taxonomy_links(self, conn, dtc_id, d):
         for sys_name in self._ensure_list(d.get("system")):
             sid = self._get_or_insert(conn, "ad_dtc_system", "name", sys_name)
@@ -1012,8 +1243,9 @@ class ConverterToSqlite():
         conn = self._connect()
         self._create_schema(conn)
         self._clear_tables(conn)
-        self._load_mcus(conn)
-        self._load_ecus(conn)
+        #self._load_mcus(conn)
+        #self._load_ecus(conn)
+        self._load_engines(conn)
         self.log("Commiting changes ...")
         conn.commit()
         conn.close()
