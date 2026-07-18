@@ -328,7 +328,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         conflict = False
         if data.get("model") != MCU:
             conflict = True
-            self.add_conflict(
+            changed |= self.add_conflict(
                 yaml_path,
                 data,
                 "model",
@@ -341,9 +341,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
         evidences = data.setdefault("evidence", [])
 
-        if conflict:
-            changed = True
-        else:
+        if not conflict:
             evidence = self.get_evidence_input()
 
             if evidence and evidence not in evidences:
@@ -406,7 +404,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             if isinstance(current, str) and isinstance(value, str):
                 if normalize_text(current) != normalize_text(value):
                     conflict = True
-                    self.add_conflict(
+                    changed |= self.add_conflict(
                         yaml_path,
                         data,
                         field,
@@ -418,7 +416,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             else:
                 if current != value:
                     conflict = True
-                    self.add_conflict(
+                    changed |= self.add_conflict(
                         yaml_path,
                         data,
                         field,
@@ -487,9 +485,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         if data.get("type"):
             data["type"] = data["type"].upper()
 
-        if conflict:
-            changed = True
-        else:
+        if not conflict:
             evidence = self.get_evidence_input()
             if evidence and evidence not in evidences:
                 evidences.add(evidence)
@@ -524,8 +520,10 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             "evidence": self.get_evidence_input(),
         }
 
-        if conflict not in field_conflicts:
+        need_add = conflict not in field_conflicts
+        if need_add:
             field_conflicts.append(conflict)
+        return need_add
 
     def insert_ecu_or_alternative(
         self,
@@ -563,14 +561,14 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
             return changed, False
 
-        self.add_conflict(
+        changed |= self.add_conflict(
             yaml_path,
             data,
             "ecu",
             value
         )
 
-        return False, True
+        return changed, True
 
     def import_vehicle(
         self,
@@ -655,9 +653,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
         evidences = data.setdefault("evidence", [])
 
-        if conflict:
-            changed = True
-        else:
+        if not conflict:
             evidence = self.get_evidence_input()
             if evidence and evidence not in evidences:
                 evidences.append(evidence)
@@ -727,9 +723,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
         evidences = variant.setdefault("evidence", [])
 
-        if conflict:
-            changed = True
-        else:
+        if not conflict:
             evidence = self.get_evidence_input()
             if evidence and evidence not in evidences:
                 evidences.append(evidence)
@@ -843,7 +837,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                 changed = True
             elif current != incoming:
                 conflict = True
-                self.add_conflict(
+                changed |= self.add_conflict(
                     yaml_path,
                     data,
                     "fuel",
@@ -851,9 +845,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                 )
 
         evidences = data.setdefault("evidence", [])
-        if conflict:
-            changed = True
-        else:
+        if not conflict:
             evidence = self.get_evidence_input()
             if evidence and evidence not in evidences:
                 evidences.append(evidence)
