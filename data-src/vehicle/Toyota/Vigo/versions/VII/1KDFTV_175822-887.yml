@@ -6,7 +6,7 @@ ecu: Denso/175822-887
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-17 23:17:18 CEST
+updated: 2026-07-18 18:13:03 CEST
 conflicts:
   power_kw:
   - value: 127.0

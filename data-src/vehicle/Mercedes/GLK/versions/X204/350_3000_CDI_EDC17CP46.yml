@@ -7,7 +7,7 @@ ecu: Bosch/EDC17CP46
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-17 23:20:35 CEST
+updated: 2026-07-18 18:16:19 CEST
 conflicts:
   year:
   - value: '2010'

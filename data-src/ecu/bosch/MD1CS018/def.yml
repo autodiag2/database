@@ -4,7 +4,7 @@ type: ECM
 mcu: stmicroelectronics/SPC58N
 evidence:
 - https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
-updated: 2026-07-17 23:25:20 CEST
+updated: 2026-07-18 18:03:18 CEST
 conflicts:
   mcu:
   - value: infineon/TC375

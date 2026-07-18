@@ -4,7 +4,7 @@ type: ECM
 mcu: renesas/SH7058
 evidence:
 - https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
-updated: 2026-07-17 23:25:15 CEST
+updated: 2026-07-18 18:03:15 CEST
 conflicts:
   mcu:
   - value: renesas/SH7059

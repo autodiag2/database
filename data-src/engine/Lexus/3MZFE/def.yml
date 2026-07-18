@@ -1,0 +1,9 @@
+code: 3MZFE
+fuel: Petrol
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-18 18:16:00 CEST
+conflicts:
+  fuel:
+  - value: Petrol/Electric
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

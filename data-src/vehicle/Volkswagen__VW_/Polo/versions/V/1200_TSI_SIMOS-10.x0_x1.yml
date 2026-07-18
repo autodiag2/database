@@ -6,7 +6,7 @@ power_kw: 63.0
 ecu: CONTINENTAL/SIMOS-10.x0_x1
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:21:49 CEST
+updated: 2026-07-18 18:17:47 CEST
 conflicts:
   year:
   - value: '2011'

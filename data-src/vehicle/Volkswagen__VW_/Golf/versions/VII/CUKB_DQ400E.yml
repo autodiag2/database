@@ -6,7 +6,7 @@ power_kw: 110.0
 ecu: TEMIC/DQ400E
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:21:43 CEST
+updated: 2026-07-18 18:17:39 CEST
 conflicts:
   power_kw:
   - value: 150.0

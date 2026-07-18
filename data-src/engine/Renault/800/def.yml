@@ -5,7 +5,7 @@ code: '800'
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 fuel: Other_F
-updated: 2026-07-17 23:16:53 CEST
+updated: 2026-07-18 18:06:13 CEST
 conflicts:
   fuel:
   - value: Other_Fu

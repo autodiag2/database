@@ -3,7 +3,7 @@ model: Ram
 type: truc
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-17 23:19:32 CEST
+updated: 2026-07-18 18:15:11 CEST
 conflicts:
   type:
   - value: truck

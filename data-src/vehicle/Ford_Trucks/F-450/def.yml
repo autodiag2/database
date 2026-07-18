@@ -3,7 +3,7 @@ model: F-450
 type: truc
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-17 23:19:52 CEST
+updated: 2026-07-18 18:15:33 CEST
 conflicts:
   type:
   - value: truck

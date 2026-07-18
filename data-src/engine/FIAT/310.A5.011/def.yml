@@ -1,0 +1,9 @@
+code: 310.A5.011
+fuel: Petrol
+evidence:
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-18 18:15:19 CEST
+conflicts:
+  fuel:
+  - value: Petrol/Alcohol
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

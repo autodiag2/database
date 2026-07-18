@@ -5,7 +5,7 @@ power_kw: 110.0
 ecu: Bosch/MD1CP001-6.40
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-17 23:16:25 CEST
+updated: 2026-07-18 18:05:43 CEST
 conflicts:
   power_kw:
   - value: 143.0

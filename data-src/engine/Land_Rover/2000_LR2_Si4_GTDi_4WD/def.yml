@@ -1,0 +1,12 @@
+code: 2000 LR2 Si4 GTDi 4WD
+fuel: Petrol
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+- https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+updated: 2026-07-18 18:15:57 CEST
+conflicts:
+  fuel:
+  - value: Diesel
+    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+  - value: Diesel
+    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

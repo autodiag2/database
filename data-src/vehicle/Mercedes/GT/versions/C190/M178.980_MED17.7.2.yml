@@ -6,7 +6,7 @@ power_kw: 340.0
 ecu: BOSCH/MED17.7.2
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:20:35 CEST
+updated: 2026-07-18 18:16:20 CEST
 conflicts:
   power_kw:
   - value: 430.0

@@ -5,7 +5,7 @@ power_kw: 174.0
 ecu: Denso/275036-0360
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-17 23:17:14 CEST
+updated: 2026-07-18 18:06:33 CEST
 conflicts:
   power_kw:
   - value: 176.0

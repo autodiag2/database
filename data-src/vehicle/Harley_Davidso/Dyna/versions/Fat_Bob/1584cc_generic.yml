@@ -4,7 +4,7 @@ engine: Harley_Davidso/1584cc
 power_kw: 53.0
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-17 23:08:36 CEST
+updated: 2026-07-18 18:11:57 CEST
 conflicts:
   power_kw:
   - value: 57.0

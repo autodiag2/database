@@ -3,7 +3,7 @@ model: MF 8660
 type: trac
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-17 23:08:51 CEST
+updated: 2026-07-18 18:12:17 CEST
 conflicts:
   type:
   - value: tract

@@ -5,7 +5,7 @@ engine: Harley_Davidson/1584cc
 power_kw: 53.0
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:19:54 CEST
+updated: 2026-07-18 18:15:35 CEST
 conflicts:
   year:
   - value: '2011'

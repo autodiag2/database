@@ -6,7 +6,7 @@ ecu: Denso/896xx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:21:28 CEST
+updated: 2026-07-18 18:17:21 CEST
 conflicts:
   power_kw:
   - value: 195.0

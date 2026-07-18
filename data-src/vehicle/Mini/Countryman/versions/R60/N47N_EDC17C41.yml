@@ -6,7 +6,7 @@ power_kw: 82.0
 ecu: Bosch/EDC17C41
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-17 23:20:43 CEST
+updated: 2026-07-18 18:16:27 CEST
 conflicts:
   power_kw:
   - value: 105.0

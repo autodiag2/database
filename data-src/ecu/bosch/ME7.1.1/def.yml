@@ -4,7 +4,7 @@ type: ECM
 mcu: infineon/C167__29F800_
 evidence:
 - https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
-updated: 2026-07-17 23:25:21 CEST
+updated: 2026-07-18 18:03:19 CEST
 conflicts:
   mcu:
   - value: stmicroelectronics/ST10F275

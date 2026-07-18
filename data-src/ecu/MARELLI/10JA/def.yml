@@ -4,7 +4,7 @@ type: ECM
 mcu: nxp/MPC5777
 evidence:
 - https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
-updated: 2026-07-17 23:24:54 CEST
+updated: 2026-07-18 18:03:04 CEST
 conflicts:
   mcu:
   - value: infineon/TC1793

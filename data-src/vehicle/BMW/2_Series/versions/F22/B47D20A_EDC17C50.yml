@@ -6,7 +6,7 @@ power_kw: 110.0
 ecu: BOSCH/EDC17C50
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:18:36 CEST
+updated: 2026-07-18 18:14:12 CEST
 conflicts:
   year:
   - value: '2014'
