@@ -353,15 +353,32 @@ class ConverterToSqlite():
         with open(path, "r", encoding="utf-8") as f:
             return yaml.safe_load(f) or {}
 
-    def _get_or_insert(self, conn, table, field, value):
+    def _get_or_insert(self, conn, table, field, value, ignore_case=False):
         if value is None or value == "":
             return None
+
         cur = conn.cursor()
-        cur.execute(f"select id from {table} where {field}=?", (value,))
+
+        if ignore_case:
+            cur.execute(
+                f"select id from {table} where lower({field}) = lower(?)",
+                (value,),
+            )
+        else:
+            cur.execute(
+                f"select id from {table} where {field} = ?",
+                (value,),
+            )
+
         r = cur.fetchone()
         if r:
             return r[0]
-        cur.execute(f"insert into {table}({field}) values(?)", (value,))
+
+        cur.execute(
+            f"insert into {table}({field}) values(?)",
+            (value,),
+        )
+
         return cur.lastrowid
 
     def _ensure_list(self, v):
@@ -426,12 +443,13 @@ class ConverterToSqlite():
             "ad_manufacturer",
             "name",
             manufacturer,
+            True
         )
 
         cur = conn.cursor()
 
         cur.execute("""
-            select id
+            select id, created, updated
             from ad_mcu
             where manufacturer_id=?
             and model=?
@@ -444,6 +462,11 @@ class ConverterToSqlite():
 
         if row:
             mcu_id = row[0]
+
+            if not created:
+                created = row[1]
+            if not updated:
+                updated = row[2]
 
             cur.execute("""
                 update ad_mcu
@@ -503,6 +526,7 @@ class ConverterToSqlite():
             "ad_manufacturer",
             "name",
             manufacturer,
+            True
         )
 
         cur = conn.cursor()
