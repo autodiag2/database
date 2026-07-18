@@ -868,7 +868,367 @@ class ConverterToSqlite():
                         conflict_value_id,
                         value.get("evidence"),
                     )
-                    
+    
+    def _load_vehicles(self, conn):
+        seen = set()
+
+        for entry in self._iter_vehicle_entries(conn):
+
+            manufacturer = entry["manufacturer"]
+            model = entry["model"]
+
+            if not manufacturer or not model:
+                continue
+
+            key = (manufacturer, model)
+
+            if key not in seen:
+
+                vehicle_id = self._get_or_insert_vehicle(
+                    conn,
+                    manufacturer=manufacturer,
+                    model=model,
+                    vehicle_type=entry["vehicle_type"],
+                    created=entry["vehicle_created"],
+                    updated=entry["vehicle_updated"],
+                    evidence=entry["vehicle_evidence"],
+                )
+
+                seen.add(key)
+            else:
+                vehicle_id = self._get_vehicle(
+                    conn,
+                    manufacturer,
+                    model,
+                )
+
+            version_id = self._get_or_insert_vehicle_version(
+                conn,
+                vehicle_id=vehicle_id,
+                version=entry["version"],
+                year=entry["year"],
+                engine_ref=entry["engine_ref"],
+                power_kw=entry["power_kw"],
+                ecu_ref=entry["ecu_ref"],
+                created=entry["version_created"],
+                updated=entry["version_updated"],
+                evidence=entry["version_evidence"],
+            )
+
+            for field, values in entry["version_conflicts"].items():
+
+                conflict_id = self._insert_conflict(
+                    conn,
+                    entity_type="vehicle_version",
+                    entity_id=version_id,
+                    field=field,
+                    created=entry["version_updated"] or entry["version_created"],
+                )
+
+                for value in self._ensure_list(values):
+
+                    conflict_value_id = self._insert_conflict_value(
+                        conn,
+                        conflict_id,
+                        field,
+                        value,
+                    )
+
+                    self._link_conflict_value_evidence(
+                        conn,
+                        conflict_value_id,
+                        value.get("evidence"),
+                    )
+
+    def _iter_vehicle_entries(self, conn):
+        vehicle_root = self.plain_text_db / "vehicle"
+        if not vehicle_root.exists():
+            return
+
+        for manufacturer_dir in sorted(
+            p for p in vehicle_root.iterdir()
+            if p.is_dir()
+        ):
+
+            manufacturer_def = self._read_yaml(manufacturer_dir / "def.yml")
+            manufacturer = (
+                manufacturer_def.get("manufacturer")
+                or manufacturer_dir.name
+            )
+
+            for vehicle_dir in sorted(
+                p for p in manufacturer_dir.iterdir()
+                if p.is_dir()
+            ):
+
+                vehicle_def = vehicle_dir / "def.yml"
+                if not vehicle_def.exists():
+                    continue
+
+                vehicle = self._read_yaml(vehicle_def)
+
+                versions_dir = vehicle_dir / "versions"
+                if not versions_dir.exists():
+                    continue
+
+                for version_dir in sorted(
+                    p for p in versions_dir.iterdir()
+                    if p.is_dir()
+                ):
+
+                    for version_file in sorted(version_dir.glob("*.yml")):
+
+                        version = self._read_yaml(version_file)
+
+                        engine_ref = None
+                        engine = version.get("engine")
+                        if engine:
+                            engine_manufacturer, engine_code = engine.split("/", 1)
+                            engine_ref = self._get_engine(
+                                conn,
+                                engine_manufacturer,
+                                engine_code,
+                            )
+
+                        ecu_ref = None
+                        ecu = version.get("ecu")
+                        if ecu:
+                            ecu_manufacturer, ecu_model = ecu.split("/", 1)
+                            ecu_ref = self._get_ecu(
+                                conn,
+                                ecu_manufacturer,
+                                ecu_model,
+                            )
+
+                        alternative_ecus = []
+
+                        for alt in self._ensure_list(version.get("alternative_ecu")):
+                            alt_manufacturer, alt_model = alt.split("/", 1)
+
+                            alt_ref = self._get_ecu(
+                                conn,
+                                alt_manufacturer,
+                                alt_model,
+                            )
+
+                            if alt_ref:
+                                alternative_ecus.append(alt_ref)
+
+                        yield {
+                            # vehicle
+                            "manufacturer": manufacturer,
+                            "model": vehicle.get("model"),
+                            "vehicle_type": vehicle.get("type", "car"),
+                            "vehicle_created": vehicle.get("created"),
+                            "vehicle_updated": vehicle.get("updated"),
+                            "vehicle_evidence": vehicle.get("evidence", []),
+
+                            # version
+                            "path": version_file,
+                            "version": version.get("version"),
+                            "year": version.get("year"),
+                            "engine_ref": engine_ref,
+                            "power_kw": version.get("power_kw"),
+                            "ecu_ref": ecu_ref,
+                            "alternative_ecus": alternative_ecus,
+                            "version_created": version.get("created"),
+                            "version_updated": version.get("updated"),
+                            "version_evidence": version.get("evidence", []),
+                            "version_conflicts": version.get("conflicts", {}),
+                        }
+    
+    def _get_or_insert_vehicle(
+        self,
+        conn,
+        manufacturer,
+        model,
+        vehicle_type="car",
+        created=None,
+        updated=None,
+        evidence=None,
+    ):
+        if not manufacturer or not model:
+            return None
+
+        manufacturer_id = self._get_or_insert(
+            conn,
+            "ad_manufacturer",
+            "name",
+            manufacturer,
+            True,
+        )
+
+        cur = conn.cursor()
+
+        cur.execute("""
+            select id
+            from ad_vehicle
+            where manufacturer_id=?
+            and model=?
+        """, (
+            manufacturer_id,
+            model,
+        ))
+
+        row = cur.fetchone()
+
+        if row:
+            vehicle_id = row[0]
+
+            cur.execute("""
+                update ad_vehicle
+                set type=?,
+                    created=coalesce(created, ?),
+                    updated=?
+                where id=?
+            """, (
+                vehicle_type,
+                created,
+                updated,
+                vehicle_id,
+            ))
+        else:
+            cur.execute("""
+                insert into ad_vehicle(
+                    manufacturer_id,
+                    model,
+                    type,
+                    created,
+                    updated
+                )
+                values(?,?,?,?,?)
+            """, (
+                manufacturer_id,
+                model,
+                vehicle_type,
+                created,
+                updated,
+            ))
+
+            vehicle_id = cur.lastrowid
+
+        if evidence:
+            if isinstance(evidence, str):
+                evidence = [evidence]
+
+            assert isinstance(evidence, list)
+
+            for ev in evidence:
+                self._link_evidence(
+                    conn,
+                    "ad_vehicle_evidence",
+                    "vehicle_id",
+                    vehicle_id,
+                    ev,
+                )
+
+        return vehicle_id
+
+    def _get_or_insert_vehicle_version(
+        self,
+        conn,
+        vehicle_id,
+        version=None,
+        year=None,
+        engine_ref=None,
+        power_kw=None,
+        ecu_ref=None,
+        alternative_ecus=None,
+        created=None,
+        updated=None,
+        evidence=None,
+    ):
+        cur = conn.cursor()
+
+        cur.execute("""
+            select id
+            from ad_vehicle_version
+            where vehicle_id=?
+            and ifnull(version,'')=ifnull(?, '')
+            and ifnull(engine_id,0)=ifnull(?,0)
+        """, (
+            vehicle_id,
+            version,
+            engine_ref,
+        ))
+
+        row = cur.fetchone()
+
+        if row:
+            version_id = row[0]
+
+            cur.execute("""
+                update ad_vehicle_version
+                set year=?,
+                    power_kw=?,
+                    ecu_id=coalesce(ecu_id, ?),
+                    created=coalesce(created, ?),
+                    updated=?
+                where id=?
+            """, (
+                year,
+                power_kw,
+                ecu_ref,
+                created,
+                updated,
+                version_id,
+            ))
+        else:
+            cur.execute("""
+                insert into ad_vehicle_version(
+                    vehicle_id,
+                    version,
+                    year,
+                    engine_id,
+                    power_kw,
+                    ecu_id,
+                    created,
+                    updated
+                )
+                values(?,?,?,?,?,?,?,?)
+            """, (
+                vehicle_id,
+                version,
+                year,
+                engine_ref,
+                power_kw,
+                ecu_ref,
+                created,
+                updated,
+            ))
+
+            version_id = cur.lastrowid
+
+        if evidence:
+            if isinstance(evidence, str):
+                evidence = [evidence]
+
+            assert isinstance(evidence, list)
+
+            for ev in evidence:
+                self._link_evidence(
+                    conn,
+                    "ad_vehicle_version_evidence",
+                    "vehicle_version_id",
+                    version_id,
+                    ev,
+                )
+
+        if alternative_ecus:
+            for ecu_id in alternative_ecus:
+                cur.execute("""
+                    insert or ignore into ad_vehicle_version_alt_ecu(
+                        vehicle_version_id,
+                        ecu_id
+                    )
+                    values(?,?)
+                """, (
+                    version_id,
+                    ecu_id,
+                ))
+
+        return version_id
+
     def _json_dump(self, value, default):
         if value is None:
             value = default
@@ -1243,9 +1603,10 @@ class ConverterToSqlite():
         conn = self._connect()
         self._create_schema(conn)
         self._clear_tables(conn)
-        #self._load_mcus(conn)
-        #self._load_ecus(conn)
+        self._load_mcus(conn)
+        self._load_ecus(conn)
         self._load_engines(conn)
+        self._load_vehicles(conn)
         self.log("Commiting changes ...")
         conn.commit()
         conn.close()
