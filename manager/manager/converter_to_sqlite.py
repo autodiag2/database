@@ -7,6 +7,8 @@ import json
 import datetime
 from tqdm import tqdm
 from manager.vpic_sqlite_loader import VpicToSqliteLoader
+from manager.tab.import_vehicle import slug
+
 class ConverterToSqlite():
 
     def __init__(self, plain_text_db: Path = None, sqlite_db: Path = None):
@@ -455,7 +457,7 @@ class ConverterToSqlite():
             and model=?
         """, (
             manufacturer_id,
-            model,
+            slug(model),
         ))
 
         row = cur.fetchone()
@@ -490,7 +492,7 @@ class ConverterToSqlite():
                 values(?,?,?,?)
             """, (
                 manufacturer_id,
-                model,
+                slug(model),
                 created,
                 updated,
             ))
