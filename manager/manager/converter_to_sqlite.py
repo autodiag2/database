@@ -104,7 +104,7 @@ class ConverterToSqlite():
             );
 
             create unique index if not exists ad_vehicle_version_uq
-            on ad_vehicle_version(vehicle_id, version);
+            on ad_vehicle_version(vehicle_id, version, engine_id);
 
             create table if not exists ad_vehicle_version_alt_ecu(
                 vehicle_version_id integer not null,
@@ -606,7 +606,7 @@ class ConverterToSqlite():
                     ev,
                 )
 
-        if codes_path.exists():
+        if codes_path and codes_path.exists():
             for y in sorted(codes_path.glob("*.yml")):
                 file = self._read_yaml(y)
 
@@ -896,7 +896,7 @@ class ConverterToSqlite():
 
                 seen.add(key)
             else:
-                vehicle_id = self._get_vehicle(
+                vehicle_id = self._get_or_insert_vehicle(
                     conn,
                     manufacturer,
                     model,
@@ -984,20 +984,20 @@ class ConverterToSqlite():
                         engine = version.get("engine")
                         if engine:
                             engine_manufacturer, engine_code = engine.split("/", 1)
-                            engine_ref = self._get_engine(
+                            engine_ref = self._get_or_insert_engine(
                                 conn,
                                 engine_manufacturer,
-                                engine_code,
+                                engine_code
                             )
 
                         ecu_ref = None
                         ecu = version.get("ecu")
                         if ecu:
                             ecu_manufacturer, ecu_model = ecu.split("/", 1)
-                            ecu_ref = self._get_ecu(
+                            ecu_ref = self._get_or_insert_ecu(
                                 conn,
                                 ecu_manufacturer,
-                                ecu_model,
+                                ecu_model
                             )
 
                         alternative_ecus = []
@@ -1005,10 +1005,10 @@ class ConverterToSqlite():
                         for alt in self._ensure_list(version.get("alternative_ecu")):
                             alt_manufacturer, alt_model = alt.split("/", 1)
 
-                            alt_ref = self._get_ecu(
+                            alt_ref = self._get_or_insert_ecu(
                                 conn,
                                 alt_manufacturer,
-                                alt_model,
+                                alt_model
                             )
 
                             if alt_ref:
