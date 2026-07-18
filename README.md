@@ -1,10 +1,12 @@
 The collaborative database of information relative to automotive.  
 The goal is to provide an easily updatable database for scantools and  
-fill the gap that make open source solution weak.  
+fill the gap that makes open source solution weak.  
 What you can find specifically in this db:
  - OBD DTCs; manufacturer specific, ecu specific, generic (eg P1000)
  - UDS DTCs (eg. 0x0F4231)
- - ECU information (manufacturer, model, version)
+ - ECU information (manufacturer, model, version, mcu)
+ - Vehicle brand, version, engines
+ - and more !
 
 You can browse the database [online](https://autodiag2.github.io/tools/dtc_query/index.html)
 
