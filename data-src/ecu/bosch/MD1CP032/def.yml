@@ -4,4 +4,5 @@ type: ECM
 mcu: infineon/TC299
 evidence:
 - https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:24:55 CEST
