@@ -58,12 +58,162 @@ class QueryTab(Tab):
         results_scrollbar.pack(side="right", fill="y")
         self.results_listbox.config(yscrollcommand=results_scrollbar.set)
 
+        details_frame = tk.LabelFrame(self.right_pane, text="DTC Details")
+        details_frame.pack(fill="both", expand=True, padx=5, pady=5)
+
+        self.details_text = tk.Text(
+            details_frame,
+            wrap="word",
+            state="disabled",
+        )
+
+        scroll = tk.Scrollbar(
+            details_frame,
+            command=self.details_text.yview,
+        )
+
+        self.details_text.configure(
+            yscrollcommand=scroll.set,
+        )
+
+        self.details_text.pack(side="left", fill="both", expand=True)
+        scroll.pack(side="right", fill="y")
+
+    def _display_dtc(self, row):
+        self.details_text.config(state="normal")
+        self.details_text.delete("1.0", tk.END)
+
+        def add(title, value):
+            if value is None or value == "":
+                return
+            self.details_text.insert(tk.END, f"{title}\n", "heading")
+            self.details_text.insert(tk.END, f"{value}\n\n")
+
+        self.details_text.tag_configure(
+            "heading",
+            font=("TkDefaultFont", 10, "bold"),
+        )
+
+        add("Code", row["code"])
+        add("Definition", row["definition"])
+        add("Description", row["description"])
+
+        add("Manufacturer", row["manufacturer"])
+        add("ECU", row["ecu_model"])
+        add("ECU Type", row["ecu_type"])
+
+        add("MIL", "Yes" if row["mil"] else "No")
+
+        add("Standards", row["standards"])
+        add("Protocols", row["protocols"])
+        add("Systems", row["systems"])
+        add("Subsystems", row["subsystems"])
+        add("Categories", row["categories"])
+        add("Severities", row["severities"])
+
+        add("Detection Condition", row["detection_condition"])
+        add("Possible Causes", row["causes"])
+        add("Repairs", row["repairs"])
+
+        add("Related DTCs", row["related_codes"])
+
+        add("Evidence", row["evidence"])
+
+        self.details_text.config(state="disabled")
+        
     def dtc_on_select(self):
         selection = self.results_listbox.curselection()
         if not selection:
             return
-        index = selection[0]
-        dtc_id = self.rows[index]["dtc_id"]
+
+        dtc_id = self.rows[selection[0]]["dtc_id"]
+
+        sqlite_file = Path(self.sqlite_path_var.get())
+        conn = sqlite3.connect(sqlite_file)
+        conn.row_factory = sqlite3.Row
+        cur = conn.cursor()
+
+        cur.execute("""
+            select
+                d.code,
+                d.definition,
+                d.description,
+                d.detection_condition,
+                d.causes,
+                d.repairs,
+                d.mil,
+
+                e.model as ecu_model,
+                e.type as ecu_type,
+
+                m.name as manufacturer,
+
+                group_concat(distinct s.name) as standards,
+                group_concat(distinct p.name) as protocols,
+                group_concat(distinct sys.name) as systems,
+                group_concat(distinct sub.name) as subsystems,
+                group_concat(distinct cat.name) as categories,
+                group_concat(distinct sev.name) as severities,
+                group_concat(distinct rd.code) as related_codes,
+                group_concat(ev.text, char(10)) as evidence
+
+            from ad_dtc d
+
+            left join ad_ecu e
+                on e.id=d.ecu_id
+
+            left join ad_manufacturer m
+                on m.id=e.manufacturer_id
+
+            left join ad_dtc_standard_link sl
+                on sl.dtc_id=d.id
+            left join ad_dtc_standard s
+                on s.id=sl.standard_id
+
+            left join ad_dtc_protocol_link pl
+                on pl.dtc_id=d.id
+            left join ad_diag_protocol p
+                on p.id=pl.protocol_id
+
+            left join ad_dtc_system_link syl
+                on syl.dtc_id=d.id
+            left join ad_dtc_system sys
+                on sys.id=syl.system_id
+
+            left join ad_dtc_subsystem_link ssl
+                on ssl.dtc_id=d.id
+            left join ad_dtc_subsystem sub
+                on sub.id=ssl.subsystem_id
+
+            left join ad_dtc_category_link cl
+                on cl.dtc_id=d.id
+            left join ad_dtc_category cat
+                on cat.id=cl.category_id
+
+            left join ad_dtc_severity_link sel
+                on sel.dtc_id=d.id
+            left join ad_dtc_severity sev
+                on sev.id=sel.severity_id
+
+            left join ad_dtc_related rl
+                on rl.dtc_id=d.id
+            left join ad_dtc rd
+                on rd.id=rl.related_dtc_id
+
+            left join ad_dtc_evidence de
+                on de.dtc_id=d.id
+            left join ad_evidence ev
+                on ev.id=de.evidence_id
+
+            where d.id=?
+
+            group by d.id
+        """, (dtc_id,))
+
+        row = cur.fetchone()
+        conn.close()
+
+        self._display_dtc(row)
 
     def query_dtc(self):
         code_query = self.dtc_code_var.get().strip().upper()
