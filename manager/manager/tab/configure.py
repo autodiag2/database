@@ -15,17 +15,17 @@ class ConfigureTab(Tab):
         self.plain_path_var = tk.StringVar(value="./data-src/")
         self.plain_path_var.trace_add("write", lambda *args: self._plain_check_folder_exists())
 
-        plain_path_label = tk.Label(self.root, text="plain text database location:")
+        plain_path_label = tk.Label(self.left_pane, text="plain text database location:")
         plain_path_label.pack(anchor="w", pady=(10, 0), padx=10)
 
-        self.plain_path_entry = tk.Entry(self.root, textvariable=self.plain_path_var, width=60)
+        self.plain_path_entry = tk.Entry(self.left_pane, textvariable=self.plain_path_var, width=60)
         self.plain_path_entry.pack(anchor="w", padx=10)
         self.plain_path_entry.bind("<FocusOut>", lambda e: self._plain_check_folder_exists())
 
-        plain_select_button = tk.Button(self.root, text="Select Folder", command=self._plain_on_select_folder)
+        plain_select_button = tk.Button(self.left_pane, text="Select Folder", command=self._plain_on_select_folder)
         plain_select_button.pack(anchor="w", pady=5, padx=10)
 
-        self.plain_status_label = tk.Label(self.root, text="")
+        self.plain_status_label = tk.Label(self.left_pane, text="")
         self.plain_status_label.pack(anchor="w", padx=10)
         self._plain_check_folder_exists()
         self._plain_update_status_label()
@@ -34,34 +34,30 @@ class ConfigureTab(Tab):
         self.sqlite_path_var = tk.StringVar(value="./output/ad_database.sqlite")
         self.sqlite_path_var.trace_add("write", lambda *args: self._sqlite_check_exists())
 
-        sqlite_path_label = tk.Label(self.root, text="SQlite database location:")
+        sqlite_path_label = tk.Label(self.left_pane, text="SQlite database location:")
         sqlite_path_label.pack(anchor="w", pady=(10, 0), padx=10)
 
-        self.sqlite_path_entry = tk.Entry(self.root, textvariable=self.sqlite_path_var, width=60)
+        self.sqlite_path_entry = tk.Entry(self.left_pane, textvariable=self.sqlite_path_var, width=60)
         self.sqlite_path_entry.pack(anchor="w", padx=10)
         self.sqlite_path_entry.bind("<FocusOut>", lambda e: self._sqlite_check_exists())
 
-        sqlite_select_button = tk.Button(self.root, text="Select Folder", command=self._sqlite_on_select_file)
+        sqlite_select_button = tk.Button(self.left_pane, text="Select Folder", command=self._sqlite_on_select_file)
         sqlite_select_button.pack(anchor="w", pady=5, padx=10)
 
-        self.sqlite_status_label = tk.Label(self.root, text="")
+        self.sqlite_status_label = tk.Label(self.left_pane, text="")
         self.sqlite_status_label.pack(anchor="w", padx=10)
         self._sqlite_check_exists()
         self._sqlite_update_status_label()
 
-        write_to_sqlite_button = tk.Button(self.root, text="Write to sqlite", command=self.on_write_sqlite)
+        write_to_sqlite_button = tk.Button(self.left_pane, text="Write to sqlite", command=self.on_write_sqlite)
         write_to_sqlite_button.pack(anchor="w", pady=5, padx=10)
 
         self._build_vpic_section()
 
-        self.progress_label = tk.Label(self.root, text="")
-        self.progress_label.pack(anchor="w", padx=10)
-
-        self.progress = ttk.Progressbar(self.root, length=400, mode="determinate")
-        self.progress.pack(anchor="w", padx=10, pady=5)
+        self._add_log_widget(self.left_pane)
 
     def _build_vpic_section(self):
-        section = tk.LabelFrame(self.root, text="build from vpic postgresql data base")
+        section = tk.LabelFrame(self.left_pane, text="build from vpic postgresql data base")
         section.pack(anchor="w", fill="x", pady=(15, 5), padx=10)
 
         self.pg_host_var = tk.StringVar(value="localhost")
@@ -103,8 +99,8 @@ class ConfigureTab(Tab):
         )
 
         def progress_hook(current, total):
-            percent = int((current / total) * 100) if 0 < total else 100
-            self.root.after(0, lambda: self.progress.configure(value=percent))
+            self.heavy_op_set_steps(total)
+            self.heavy_op_step()
 
         if conv.to_sqlite(progress_callback=progress_hook):
             self.progress_label.config(text="Success", fg="green")
@@ -113,7 +109,7 @@ class ConfigureTab(Tab):
 
     def _load_vpic_background(self):
         try:
-            self.root.after(0, lambda: self.pg_status_label.config(text="Connecting...", fg="black"))
+            self.left_pane.after(0, lambda: self.pg_status_label.config(text="Connecting...", fg="black"))
 
             loader = VpicToSqliteLoader(
                 sqlite_path=self.sqlite_path_var.get(),
@@ -126,21 +122,21 @@ class ConfigureTab(Tab):
             )
 
             def progress_hook(current, total):
-                percent = int((current / total) * 100) if 0 < total else 100
-                self.root.after(0, lambda: self.progress.configure(value=percent))
+                self.heavy_op_set_steps(total)
+                self.heavy_op_step()
 
             ok = loader.load(progress_callback=progress_hook)
 
             if ok:
-                self.root.after(0, lambda: self.pg_status_label.config(text="VPIC data loaded into sqlite.", fg="green"))
-                self.root.after(0, lambda: self.progress_label.config(text="Success", fg="green"))
+                self.left_pane.after(0, lambda: self.pg_status_label.config(text="VPIC data loaded into sqlite.", fg="green"))
+                self.left_pane.after(0, lambda: self.progress_label.config(text="Success", fg="green"))
             else:
-                self.root.after(0, lambda: self.pg_status_label.config(text="Failed to load VPIC data.", fg="red"))
-                self.root.after(0, lambda: self.progress_label.config(text="Import failed", fg="red"))
+                self.left_pane.after(0, lambda: self.pg_status_label.config(text="Failed to load VPIC data.", fg="red"))
+                self.left_pane.after(0, lambda: self.progress_label.config(text="Import failed", fg="red"))
 
         except Exception as e:
-            self.root.after(0, lambda: self.pg_status_label.config(text=str(e), fg="red"))
-            self.root.after(0, lambda: self.progress_label.config(text="Import failed", fg="red"))
+            self.left_pane.after(0, lambda: self.pg_status_label.config(text=str(e), fg="red"))
+            self.left_pane.after(0, lambda: self.progress_label.config(text="Import failed", fg="red"))
 
     def on_load_vpic_into_sqlite(self):
         if not self._sqlite_check_exists():
@@ -148,8 +144,7 @@ class ConfigureTab(Tab):
             return
 
         self.progress_label.config(text="Processing...", fg="black")
-        self.progress["value"] = 0
-        self.progress["maximum"] = 100
+        self.heavy_op_init()
         self.pg_status_label.config(text="Processing...", fg="black")
 
         threading.Thread(target=self._load_vpic_background, daemon=True).start()
@@ -160,8 +155,7 @@ class ConfigureTab(Tab):
             return
 
         self.progress_label.config(text="Processing...", fg="black")
-        self.progress["value"] = 0
-        self.progress["maximum"] = 100
+        self.heavy_op_init()
 
         threading.Thread(target=self._write_sqlite_background, daemon=True).start()
 

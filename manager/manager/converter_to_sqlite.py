@@ -1619,16 +1619,23 @@ class ConverterToSqlite():
 
         Path("output").mkdir(parents=True, exist_ok=True)
         conn = self._connect()
+        progress_callback(0, 6)
         self._create_schema(conn)
         self._clear_tables(conn)
+        progress_callback(1, 6)
         self._load_mcus(conn)
+        progress_callback(2, 6)
         self._load_ecus(conn)
+        progress_callback(3, 6)
         self._load_engines(conn)
+        progress_callback(4, 6)
         self._load_vehicles(conn)
+        progress_callback(5, 6)
         self.log("Commiting changes ...")
         conn.commit()
         conn.close()
         self.log("Changes commited !")
+        progress_callback(6, 6)
         return True
 
 

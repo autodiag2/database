@@ -48,7 +48,7 @@ class ImportVehicleTab(ImportTab):
         self._build_configuration()
         self._build_input()
         self._build_buttons()
-        self._build_output()
+        self._add_log_widget()
 
     def _build_configuration(self):
         frame = tk.LabelFrame(

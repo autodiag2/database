@@ -11,16 +11,7 @@ class QueryTab(Tab):
         self.sqlite_path_var = sqlite_path_var
         self.rows = []
 
-        top_container = tk.Frame(self.root)
-        top_container.pack(fill="both")
-
-        top_container_left = tk.Frame(top_container)
-        top_container_left.pack(fill="both", side="left")
-
-        top_container_right = tk.Frame(top_container)
-        top_container_right.pack(fill="both", side="right")
-
-        filter_frame = tk.LabelFrame(top_container_left, text="Filter Options")
+        filter_frame = tk.LabelFrame(self.left_pane, text="Filter Options")
         filter_frame.pack(fill="x", padx=5, pady=5)
 
         tk.Label(filter_frame, text="Manufacturer:").grid(row=0, column=0, sticky="e", padx=2, pady=2)
@@ -37,7 +28,7 @@ class QueryTab(Tab):
 
         filter_frame.columnconfigure(1, weight=1)
 
-        query_frame = tk.Frame(top_container_left)
+        query_frame = tk.Frame(self.left_pane)
         query_frame.pack(fill="x", padx=5, pady=5)
 
         tk.Label(query_frame, text="Enter DTC code:").pack(side="left")
@@ -48,7 +39,7 @@ class QueryTab(Tab):
         self.dtc_code_entry.bind("<Return>", lambda e: self.query_dtc())
 
         self.explanation_label = tk.Label(
-            top_container_left,
+            self.left_pane,
             text="",
             justify="left",
             fg="blue",
@@ -56,7 +47,7 @@ class QueryTab(Tab):
         )
         self.explanation_label.pack(fill="x", padx=5, pady=5)
 
-        results_frame = tk.LabelFrame(top_container_left, text="Matching DTC Descriptions")
+        results_frame = tk.LabelFrame(self.left_pane, text="Matching DTC Descriptions")
         results_frame.pack(fill="both", expand=True, padx=5, pady=5)
 
         self.results_listbox = tk.Listbox(results_frame, height=15)
