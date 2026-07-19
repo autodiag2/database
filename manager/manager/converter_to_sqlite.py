@@ -383,20 +383,58 @@ class ConverterToSqlite():
         with open(path, "r", encoding="utf-8") as f:
             return yaml.safe_load(f) or {}
 
-    def _get_or_insert(self, conn, table, field, value, ignore_case=False):
+    def _get_or_insert(
+        self,
+        conn,
+        table,
+        field,
+        value,
+        ignore_case=False,
+        slug_search=False,
+    ):
         if value is None or value == "":
             return None
 
         cur = conn.cursor()
 
-        if ignore_case:
+        if slug_search:
+            pattern = slug(value)
+
+            if ignore_case:
+                cur.execute(
+                    f"""
+                    select id
+                    from {table}
+                    where lower({field}) LIKE lower(?)
+                    """,
+                    (pattern,),
+                )
+            else:
+                cur.execute(
+                    f"""
+                    select id
+                    from {table}
+                    where {field} LIKE ?
+                    """,
+                    (pattern,),
+                )
+
+        elif ignore_case:
             cur.execute(
-                f"select id from {table} where lower({field}) = lower(?)",
+                f"""
+                select id
+                from {table}
+                where lower({field}) = lower(?)
+                """,
                 (value,),
             )
         else:
             cur.execute(
-                f"select id from {table} where {field} = ?",
+                f"""
+                select id
+                from {table}
+                where {field} = ?
+                """,
                 (value,),
             )
 
@@ -473,7 +511,7 @@ class ConverterToSqlite():
             "ad_manufacturer",
             "name",
             manufacturer,
-            True
+            True, True
         )
 
         cur = conn.cursor()
@@ -482,7 +520,7 @@ class ConverterToSqlite():
             select id, created, updated
             from ad_mcu
             where manufacturer_id=?
-            and model=?
+            and model LIKE ?
         """, (
             manufacturer_id,
             slug(model),
@@ -520,7 +558,7 @@ class ConverterToSqlite():
                 values(?,?,?,?)
             """, (
                 manufacturer_id,
-                slug(model),
+                model,
                 created,
                 updated,
             ))
@@ -557,7 +595,7 @@ class ConverterToSqlite():
             "ad_manufacturer",
             "name",
             manufacturer,
-            True
+            True, True
         )
 
         cur = conn.cursor()
@@ -566,10 +604,10 @@ class ConverterToSqlite():
             select id
             from ad_ecu
             where manufacturer_id=?
-            and model=?
+            and model LIKE ?
         """, (
             manufacturer_id,
-            model,
+            slug(model),
         ))
 
         row = cur.fetchone()
@@ -684,10 +722,10 @@ class ConverterToSqlite():
             select engine_id
             from ad_engine_name
             where engine_id=?
-            and lower(name)=lower(?)
+            and lower(name) LIKE lower(?)
         """, (
             engine_id,
-            name,
+            slug(name),
         ))
 
         row = cur.fetchone()
@@ -727,7 +765,7 @@ class ConverterToSqlite():
             "ad_manufacturer",
             "name",
             manufacturer,
-            True,
+            True, True
         )
 
         cur = conn.cursor()
@@ -736,10 +774,10 @@ class ConverterToSqlite():
             select id
             from ad_engine
             where manufacturer_id=?
-            and code=?
+            and code LIKE ?
         """, (
             manufacturer_id,
-            code,
+            slug(code),
         ))
 
         row = cur.fetchone()
@@ -1075,7 +1113,7 @@ class ConverterToSqlite():
             "ad_manufacturer",
             "name",
             manufacturer,
-            True,
+            True, True
         )
 
         cur = conn.cursor()
@@ -1084,10 +1122,10 @@ class ConverterToSqlite():
             select id
             from ad_vehicle
             where manufacturer_id=?
-            and model=?
+            and lower(model) LIKE lower(?)
         """, (
             manufacturer_id,
-            model,
+            slug(model),
         ))
 
         row = cur.fetchone()
