@@ -95,7 +95,8 @@ class ConfigureTab(Tab):
     def _write_sqlite_background(self):
         conv = ConverterToSqlite(
             plain_text_db=Path(self.plain_path_var.get()),
-            sqlite_db=Path(self.sqlite_path_var.get())
+            sqlite_db=Path(self.sqlite_path_var.get()),
+            logger=self
         )
 
         def progress_hook(current, total):

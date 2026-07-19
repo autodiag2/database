@@ -37,9 +37,11 @@ def timestamp(ts=None):
 
 class ConverterToSqlite():
 
-    def __init__(self, plain_text_db: Path = None, sqlite_db: Path = None):
+    def __init__(self, plain_text_db: Path = None, sqlite_db: Path = None, logger = None):
         self.plain_text_db = Path(plain_text_db) if plain_text_db else None
         self.sqlite_db = Path(sqlite_db) if sqlite_db else None
+        if logger:
+            self.logger = logger
 
     def _connect(self):
         conn = sqlite3.connect(self.sqlite_db)
@@ -1611,7 +1613,10 @@ class ConverterToSqlite():
             """, (dtc_id, code, ecu_id))
 
     def log(self, text):
-        print(text)
+        if self.logger:
+            self.logger.log(text)
+        else:
+            print(text)
 
     def to_sqlite(self, progress_callback) -> bool:
         if self.plain_text_db is None or self.sqlite_db is None:
@@ -1623,12 +1628,16 @@ class ConverterToSqlite():
         self._create_schema(conn)
         self._clear_tables(conn)
         progress_callback(1, 6)
+        self.log("Loading MCUs ...")
         self._load_mcus(conn)
         progress_callback(2, 6)
+        self.log("Loading ECUs ...")
         self._load_ecus(conn)
         progress_callback(3, 6)
+        self.log("Loading Engines ...")
         self._load_engines(conn)
         progress_callback(4, 6)
+        self.log("Loading Vehicles ...")
         self._load_vehicles(conn)
         progress_callback(5, 6)
         self.log("Commiting changes ...")
