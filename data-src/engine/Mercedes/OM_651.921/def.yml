@@ -4,7 +4,7 @@ evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 18:50:19 CEST
+updated: 2026-07-20 22:28:28 CEST
 conflicts:
   fuel:
   - value: Hybrid
@@ -13,3 +13,18 @@ conflicts:
     evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
   - value: Diesel/Electric
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+name:
+- 200 d
+- 220 BlueEFFICI
+- 220 BlueTEC
+- 220 BlueTEC Bl
+- 220 d
+- 220 d 4MATIC
+- 250 BlueTEC
+- 250 d
+- 300 BlueTEC
+- 300 h
+- 220 BlueEFFICIENCY
+- 220 BlueTEC BlueEFFICIENCY
+- 250 BlueTEC 4MATIC
+- 300 BlueTEC HYBRID

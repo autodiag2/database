@@ -2,8 +2,11 @@ code: 7 Speed DCT Ecoshift
 fuel: Diesel
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 18:49:48 CEST
+updated: 2026-07-20 22:35:50 CEST
 conflicts:
   fuel:
   - value: Petrol
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+name:
+- 1600 CRDi
+- 1600 GDI

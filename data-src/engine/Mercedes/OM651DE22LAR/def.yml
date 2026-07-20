@@ -3,4 +3,10 @@ fuel: Diesel
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 18:50:24 CEST
+updated: 2026-07-20 22:28:35 CEST
+name:
+- 180 2200 CDI Blue
+- 220 2200 CDI
+- 200 2200 CDI
+- 200 CDI BlueEFFICIENCY
+- 110 2200 CDI

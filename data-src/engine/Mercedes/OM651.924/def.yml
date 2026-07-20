@@ -2,8 +2,13 @@ code: OM651.924
 fuel: Diesel
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 18:50:12 CEST
+updated: 2026-07-20 22:36:14 CEST
 conflicts:
   fuel:
   - value: Diesel/Electric
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+name:
+- 250 CDI
+- 220 CDI
+- 250 CDI 4MATIC
+- 300 BlueTec Hybrid

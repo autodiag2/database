@@ -2,8 +2,12 @@ code: NFU (TU5JP4)
 fuel: Petrol
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 18:49:09 CEST
+updated: 2026-07-20 22:35:03 CEST
 conflicts:
   fuel:
   - value: Petrol/Alcohol
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+name:
+- '1600'
+- 1600 Automatic Flex
+- 1600 Flex

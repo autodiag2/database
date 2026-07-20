@@ -2,8 +2,11 @@ code: CHYB
 fuel: Petrol
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 18:51:54 CEST
+updated: 2026-07-20 22:37:40 CEST
 conflicts:
   fuel:
   - value: Petrol/Alcohol
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+name:
+- 1000 MPI
+- 1000 MPI Flex

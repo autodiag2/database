@@ -4,7 +4,7 @@ evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 18:48:52 CEST
+updated: 2026-07-20 22:27:36 CEST
 conflicts:
   fuel:
   - value: Hybrid
@@ -13,3 +13,29 @@ conflicts:
     evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
   - value: Petrol/Electric
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+name:
+- M 135i
+- M 135i xDrive
+- 335i
+- 335i xDrive
+- ActiveHybrid 3
+- 435i
+- 435i xDrive
+- 535i
+- 535i xDrive
+- 535Li
+- 640i
+- 640i xDrive
+- 740i
+- 740i xDrive
+- ActiveHybrid 7
+- 740Li
+- 740Li xDrive
+- M 235i
+- M 235i xDrive
+- M2
+- 35i xDrive
+- X4M 40i xDrive
+- 30i 3000 Turbo
+- 35i sDrive
+- 30i 3000 Turbo xDrive

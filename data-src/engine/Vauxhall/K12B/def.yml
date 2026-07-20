@@ -4,10 +4,15 @@ evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 18:51:29 CEST
+updated: 2026-07-20 22:29:20 CEST
 conflicts:
   fuel:
   - value: Lpg
     evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
   - value: Lpg
     evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+name:
+- '1200'
+- 1200 ecoFLEX
+- 1200 LPG
+- 1200 LPG ecoFLEX

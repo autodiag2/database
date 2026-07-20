@@ -4,7 +4,7 @@ evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 18:51:27 CEST
+updated: 2026-07-20 22:37:11 CEST
 conflicts:
   fuel:
   - value: Petrol
@@ -13,3 +13,15 @@ conflicts:
     evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
   - value: Petrol
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+name:
+- 3000 D4D
+- 3000 Diesel
+- 3000 TDi 4x4
+- 3000 VVT-i
+- 3000 D4D 4x4
+- 3000 TD
+- 3000 TD 4WD
+- 3000 Diesel Turbo
+- 3000 Diesel Turbo 4WD
+- 3000 Diesel Turbo 4x4
+- 3000TD 4WD
