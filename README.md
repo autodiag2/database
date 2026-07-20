@@ -26,3 +26,9 @@ Compiled database are in [releases](https://github.com/autodiag2/database/releas
   [`ad_database.sqlite`](https://github.com/autodiag2/database/releases/latest/download/ad_database.sqlite)
 
 See [this](/doc/using_data.md) for more information
+
+## License
+
+- **Database** (`*.sqlite`, `*.yml`, `*.yaml`, `*.json`, `*.csv`, DTC definitions, vehicle metadata): **ODbL-1.0**
+- **Database contents**: **DbCL-1.0**
+- **Source code** (`*.py`, `*.sh`, SQL scripts, tooling): **GPL-3.0-or-later**
