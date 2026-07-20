@@ -121,19 +121,17 @@ class ConverterToSqlite():
                 version text,
                 year text,
                 engine_id integer,
-                ecu_id integer,
                 power_kw real,
                 created integer,
                 updated integer,
                 foreign key(vehicle_id) references ad_vehicle(id),
-                foreign key(engine_id) references ad_engine(id),
-                foreign key(ecu_id) references ad_ecu(id)
+                foreign key(engine_id) references ad_engine(id)
             );
 
             create unique index if not exists ad_vehicle_version_uq
             on ad_vehicle_version(vehicle_id, version, engine_id);
-
-            create table if not exists ad_vehicle_version_alt_ecu(
+                           
+            create table if not exists ad_vehicle_version_ecu(
                 vehicle_version_id integer not null,
                 ecu_id integer not null,
                 primary key(vehicle_version_id, ecu_id),
@@ -332,50 +330,49 @@ class ConverterToSqlite():
                 foreign key(dtc_id) references ad_dtc(id),
                 foreign key(severity_id) references ad_dtc_severity(id)
             );
-
         """)
 
     def _clear_tables(self, conn):
         conn.executescript("""
-        delete from ad_conflict_value_evidence;
-        delete from ad_conflict_value;
-        delete from ad_conflict;
+            delete from ad_conflict_value_evidence;
+            delete from ad_conflict_value;
+            delete from ad_conflict;
 
-        delete from ad_dtc_standard_link;
-        delete from ad_dtc_protocol_link;
-        delete from ad_dtc_related;
-        delete from ad_dtc_system_link;
-        delete from ad_dtc_subsystem_link;
-        delete from ad_dtc_category_link;
-        delete from ad_dtc_severity_link;
+            delete from ad_dtc_standard_link;
+            delete from ad_dtc_protocol_link;
+            delete from ad_dtc_related;
+            delete from ad_dtc_system_link;
+            delete from ad_dtc_subsystem_link;
+            delete from ad_dtc_category_link;
+            delete from ad_dtc_severity_link;
 
-        delete from ad_dtc_evidence;
-        delete from ad_vehicle_version_alt_ecu;
+            delete from ad_dtc_evidence;
+            delete from ad_vehicle_version_ecu;
 
-        delete from ad_manufacturer_evidence;
-        delete from ad_vehicle_evidence;
-        delete from ad_vehicle_version_evidence;
-        delete from ad_engine_evidence;
-        delete from ad_engine_name;
-        delete from ad_ecu_evidence;
-        delete from ad_mcu_evidence;
+            delete from ad_manufacturer_evidence;
+            delete from ad_vehicle_evidence;
+            delete from ad_vehicle_version_evidence;
+            delete from ad_engine_evidence;
+            delete from ad_engine_name;
+            delete from ad_ecu_evidence;
+            delete from ad_mcu_evidence;
 
-        delete from ad_dtc;
-        delete from ad_vehicle_version;
-        delete from ad_vehicle;
-        delete from ad_ecu;
-        delete from ad_engine;
-        delete from ad_mcu;
+            delete from ad_dtc;
+            delete from ad_vehicle_version;
+            delete from ad_vehicle;
+            delete from ad_ecu;
+            delete from ad_engine;
+            delete from ad_mcu;
 
-        delete from ad_dtc_standard;
-        delete from ad_diag_protocol;
-        delete from ad_dtc_system;
-        delete from ad_dtc_subsystem;
-        delete from ad_dtc_category;
-        delete from ad_dtc_severity;
+            delete from ad_dtc_standard;
+            delete from ad_diag_protocol;
+            delete from ad_dtc_system;
+            delete from ad_dtc_subsystem;
+            delete from ad_dtc_category;
+            delete from ad_dtc_severity;
 
-        delete from ad_manufacturer;
-        delete from ad_evidence;
+            delete from ad_manufacturer;
+            delete from ad_evidence;
         """)
 
     def _read_yaml(self, path: Path):
@@ -966,7 +963,7 @@ class ConverterToSqlite():
                 year=entry["year"],
                 engine_ref=entry["engine_ref"],
                 power_kw=entry["power_kw"],
-                ecu_ref=entry["ecu_ref"],
+                ecus_id=entry["ecus_id"],
                 created=timestamp(entry["version_created"]),
                 updated=timestamp(entry["version_updated"]),
                 evidence=entry["version_evidence"],
@@ -1047,29 +1044,17 @@ class ConverterToSqlite():
                                 engine_code
                             )
 
-                        ecu_ref = None
-                        ecu = version.get("ecu")
-                        if ecu:
-                            ecu_manufacturer, ecu_model = ecu.split("/", 1)
-                            ecu_ref = self._get_or_insert_ecu(
-                                conn,
-                                ecu_manufacturer,
-                                ecu_model
-                            )
-
-                        alternative_ecus = []
-
-                        for alt in self._ensure_list(version.get("alternative_ecu")):
-                            alt_manufacturer, alt_model = alt.split("/", 1)
-
-                            alt_ref = self._get_or_insert_ecu(
-                                conn,
-                                alt_manufacturer,
-                                alt_model
-                            )
-
-                            if alt_ref:
-                                alternative_ecus.append(alt_ref)
+                        ecus_id = []
+                        ecus = version.get("ecu")
+                        if ecus:
+                            for ecu in ecus:
+                                ecu_manufacturer, ecu_model = ecu.split("/", 1)
+                                ecu_id = self._get_or_insert_ecu(
+                                    conn,
+                                    ecu_manufacturer,
+                                    ecu_model
+                                )
+                                ecus_id.append(ecu_id)
 
                         yield {
                             # vehicle
@@ -1086,8 +1071,7 @@ class ConverterToSqlite():
                             "year": version.get("year"),
                             "engine_ref": engine_ref,
                             "power_kw": version.get("power_kw"),
-                            "ecu_ref": ecu_ref,
-                            "alternative_ecus": alternative_ecus,
+                            "ecus_id": ecus_id,
                             "version_created": timestamp(version.get("created")),
                             "version_updated": timestamp(version.get("updated")),
                             "version_evidence": version.get("evidence", []),
@@ -1189,8 +1173,7 @@ class ConverterToSqlite():
         year=None,
         engine_ref=None,
         power_kw=None,
-        ecu_ref=None,
-        alternative_ecus=None,
+        ecus_id=[],
         created=None,
         updated=None,
         evidence=None,
@@ -1218,14 +1201,12 @@ class ConverterToSqlite():
                 update ad_vehicle_version
                 set year=?,
                     power_kw=?,
-                    ecu_id=coalesce(ecu_id, ?),
                     created=coalesce(created, ?),
                     updated=?
                 where id=?
             """, (
                 year,
                 power_kw,
-                ecu_ref,
                 created,
                 updated,
                 version_id,
@@ -1238,23 +1219,44 @@ class ConverterToSqlite():
                     year,
                     engine_id,
                     power_kw,
-                    ecu_id,
                     created,
                     updated
                 )
-                values(?,?,?,?,?,?,?,?)
+                values(?,?,?,?,?,?,?)
             """, (
                 vehicle_id,
                 version,
                 year,
                 engine_ref,
                 power_kw,
-                ecu_ref,
                 created,
                 updated,
             ))
 
             version_id = cur.lastrowid
+
+        for ecu_id in ecus_id:
+            cur.execute("""
+                select 1
+                from ad_vehicle_version_ecu
+                where vehicle_version_id=?
+                and ecu_id=?
+            """, (
+                version_id,
+                ecu_id,
+            ))
+
+            if cur.fetchone() is None:
+                cur.execute("""
+                    insert into ad_vehicle_version_ecu(
+                        vehicle_version_id,
+                        ecu_id
+                    )
+                    values(?,?)
+                """, (
+                    version_id,
+                    ecu_id,
+                ))
 
         if evidence:
             if isinstance(evidence, str):
@@ -1270,19 +1272,6 @@ class ConverterToSqlite():
                     version_id,
                     ev,
                 )
-
-        if alternative_ecus:
-            for ecu_id in alternative_ecus:
-                cur.execute("""
-                    insert or ignore into ad_vehicle_version_alt_ecu(
-                        vehicle_version_id,
-                        ecu_id
-                    )
-                    values(?,?)
-                """, (
-                    version_id,
-                    ecu_id,
-                ))
 
         return version_id
 

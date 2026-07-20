@@ -142,7 +142,7 @@ class StatsTab(Tab):
 
         self.conflict_tree.pack(fill="both", expand=True)
 
-        self.refresh()
+        #self.refresh()
 
     def _connect(self):
         sqlite_file = Path(self.sqlite_path_var.get())
