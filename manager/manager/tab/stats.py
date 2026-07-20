@@ -142,8 +142,6 @@ class StatsTab(Tab):
 
         self.conflict_tree.pack(fill="both", expand=True)
 
-        #self.refresh()
-
     def _connect(self):
         sqlite_file = Path(self.sqlite_path_var.get())
 
@@ -339,6 +337,16 @@ class StatsTab(Tab):
 
             union all
 
+            select 'Vehicle Version ECUs', count(*)
+            from ad_vehicle_version_ecu vve
+            where not exists (
+                select 1
+                from ad_vehicle_version_ecu_evidence vvee
+                where vvee.vehicle_version_ecu_id = vve.id
+            )
+
+            union all
+
             select 'Engines', count(*)
             from ad_engine e
             where not exists (
@@ -396,107 +404,132 @@ class StatsTab(Tab):
         cur.execute("""
             with all_sources as (
 
-                select
-                    'Manufacturer' as entity,
-                    m.name as name,
-                    count(me.evidence_id) as sources
-                from ad_manufacturer m
-                join ad_manufacturer_evidence me
-                    on me.manufacturer_id = m.id
-                group by m.id
+            select
+                'Manufacturer' as entity,
+                m.name as name,
+                count(me.evidence_id) as sources
+            from ad_manufacturer m
+            join ad_manufacturer_evidence me
+                on me.manufacturer_id = m.id
+            group by m.id
 
-                union all
-
-                select
-                    'Vehicle',
-                    man.name || ' ' || v.model,
-                    count(ve.evidence_id)
-                from ad_vehicle v
-                join ad_manufacturer man
-                    on man.id = v.manufacturer_id
-                join ad_vehicle_evidence ve
-                    on ve.vehicle_id = v.id
-                group by v.id
-
-                union all
-
-                select
-                    'Vehicle Version',
-                    man.name || ' ' || veh.model || ' ' || coalesce(v.version, '<generic>'),
-                    count(vve.evidence_id)
-                from ad_vehicle_version v
-                join ad_vehicle veh
-                    on veh.id = v.vehicle_id
-                join ad_manufacturer man
-                    on man.id = veh.manufacturer_id
-                join ad_vehicle_version_evidence vve
-                    on vve.vehicle_version_id = v.id
-                group by v.id
-
-                union all
-
-                select
-                    'Engine',
-                    man.name || ' ' || e.code,
-                    count(ee.evidence_id)
-                from ad_engine e
-                join ad_manufacturer man
-                    on man.id = e.manufacturer_id
-                join ad_engine_evidence ee
-                    on ee.engine_id = e.id
-                group by e.id
-
-                union all
-
-                select
-                    'MCU',
-                    man.name || ' ' || m.model,
-                    count(me.evidence_id)
-                from ad_mcu m
-                join ad_manufacturer man
-                    on man.id = m.manufacturer_id
-                join ad_mcu_evidence me
-                    on me.mcu_id = m.id
-                group by m.id
-
-                union all
-
-                select
-                    'ECU',
-                    man.name || ' ' || e.model,
-                    count(ee.evidence_id)
-                from ad_ecu e
-                join ad_manufacturer man
-                    on man.id = e.manufacturer_id
-                join ad_ecu_evidence ee
-                    on ee.ecu_id = e.id
-                group by e.id
-
-                union all
-
-                select
-                    'DTC',
-                    d.code || ' (' || man.name || '/' || ecu.model || ')',
-                    count(de.evidence_id)
-                from ad_dtc d
-                join ad_ecu ecu
-                    on ecu.id = d.ecu_id
-                join ad_manufacturer man
-                    on man.id = ecu.manufacturer_id
-                join ad_dtc_evidence de
-                    on de.dtc_id = d.id
-                group by d.id
-            )
+            union all
 
             select
-                entity,
-                name,
-                sources
-            from all_sources
-            order by
-                sources desc,
-                entity,
-                name
+                'Vehicle',
+                man.name || ' ' || v.model,
+                count(ve.evidence_id)
+            from ad_vehicle v
+            join ad_manufacturer man
+                on man.id = v.manufacturer_id
+            join ad_vehicle_evidence ve
+                on ve.vehicle_id = v.id
+            group by v.id
+
+            union all
+
+            select
+                'Vehicle Version',
+                man.name || ' ' || veh.model || ' ' || coalesce(v.version, '<generic>'),
+                count(vve.evidence_id)
+            from ad_vehicle_version v
+            join ad_vehicle veh
+                on veh.id = v.vehicle_id
+            join ad_manufacturer man
+                on man.id = veh.manufacturer_id
+            join ad_vehicle_version_evidence vve
+                on vve.vehicle_version_id = v.id
+            group by v.id
+
+            union all
+
+            select
+                'Vehicle Version ECU',
+                man.name || ' ' ||
+                veh.model || ' ' ||
+                coalesce(v.version, '<generic>') ||
+                ' -> ' ||
+                em.name || '/' || ecu.model,
+                count(vvee.evidence_id)
+            from ad_vehicle_version_ecu vvecu
+            join ad_vehicle_version v
+                on v.id = vvecu.vehicle_version_id
+            join ad_vehicle veh
+                on veh.id = v.vehicle_id
+            join ad_manufacturer man
+                on man.id = veh.manufacturer_id
+            join ad_ecu ecu
+                on ecu.id = vvecu.ecu_id
+            join ad_manufacturer em
+                on em.id = ecu.manufacturer_id
+            join ad_vehicle_version_ecu_evidence vvee
+                on vvee.vehicle_version_ecu_id = vvecu.id
+            group by vvecu.id
+
+            union all
+
+            select
+                'Engine',
+                man.name || ' ' || e.code,
+                count(ee.evidence_id)
+            from ad_engine e
+            join ad_manufacturer man
+                on man.id = e.manufacturer_id
+            join ad_engine_evidence ee
+                on ee.engine_id = e.id
+            group by e.id
+
+            union all
+
+            select
+                'MCU',
+                man.name || ' ' || m.model,
+                count(me.evidence_id)
+            from ad_mcu m
+            join ad_manufacturer man
+                on man.id = m.manufacturer_id
+            join ad_mcu_evidence me
+                on me.mcu_id = m.id
+            group by m.id
+
+            union all
+
+            select
+                'ECU',
+                man.name || ' ' || e.model,
+                count(ee.evidence_id)
+            from ad_ecu e
+            join ad_manufacturer man
+                on man.id = e.manufacturer_id
+            join ad_ecu_evidence ee
+                on ee.ecu_id = e.id
+            group by e.id
+
+            union all
+
+            select
+                'DTC',
+                d.code || ' (' || man.name || '/' || ecu.model || ')',
+                count(de.evidence_id)
+            from ad_dtc d
+            join ad_ecu ecu
+                on ecu.id = d.ecu_id
+            join ad_manufacturer man
+                on man.id = ecu.manufacturer_id
+            join ad_dtc_evidence de
+                on de.dtc_id = d.id
+            group by d.id
+        )
+
+        select
+            entity,
+            name,
+            sources
+        from all_sources
+        order by
+            sources desc,
+            entity,
+            name;
         """)
 
         for row in cur.fetchall():

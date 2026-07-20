@@ -132,12 +132,15 @@ class ConverterToSqlite():
             on ad_vehicle_version(vehicle_id, version, engine_id);
                            
             create table if not exists ad_vehicle_version_ecu(
+                id integer primary key autoincrement,
                 vehicle_version_id integer not null,
                 ecu_id integer not null,
-                primary key(vehicle_version_id, ecu_id),
                 foreign key(vehicle_version_id) references ad_vehicle_version(id),
                 foreign key(ecu_id) references ad_ecu(id)
             );
+
+            create unique index if not exists ad_vehicle_version_ecu_uq
+            on ad_vehicle_version_ecu(vehicle_version_id, ecu_id);
 
             create table if not exists ad_evidence(
                 id integer primary key autoincrement,
@@ -189,6 +192,14 @@ class ConverterToSqlite():
                 evidence_id integer not null,
                 primary key(mcu_id, evidence_id),
                 foreign key(mcu_id) references ad_mcu(id),
+                foreign key(evidence_id) references ad_evidence(id)
+            );
+                           
+            create table if not exists ad_vehicle_version_ecu_evidence(
+                vehicle_version_ecu_id integer not null,
+                evidence_id integer not null,
+                primary key(vehicle_version_ecu_id, evidence_id),
+                foreign key(vehicle_version_ecu_id) references ad_vehicle_version_ecu(id),
                 foreign key(evidence_id) references ad_evidence(id)
             );
 
@@ -347,6 +358,7 @@ class ConverterToSqlite():
             delete from ad_dtc_severity_link;
 
             delete from ad_dtc_evidence;
+            delete from ad_vehicle_version_ecu_evidence;
             delete from ad_vehicle_version_ecu;
 
             delete from ad_manufacturer_evidence;
@@ -1176,8 +1188,14 @@ class ConverterToSqlite():
         ecus_id=[],
         created=None,
         updated=None,
-        evidence=None,
+        evidence=[],
     ):
+        if evidence:
+            if isinstance(evidence, str):
+                evidence = [evidence]
+
+            assert isinstance(evidence, list)
+
         cur = conn.cursor()
 
         cur.execute("""
@@ -1257,13 +1275,16 @@ class ConverterToSqlite():
                     version_id,
                     ecu_id,
                 ))
+            for ev in evidence:
+                self._link_evidence(
+                    conn,
+                    "ad_vehicle_version_ecu_evidence",
+                    "vehicle_version_ecu_id",
+                    version_id,
+                    ev,
+                )
 
         if evidence:
-            if isinstance(evidence, str):
-                evidence = [evidence]
-
-            assert isinstance(evidence, list)
-
             for ev in evidence:
                 self._link_evidence(
                     conn,
