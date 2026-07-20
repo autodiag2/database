@@ -13,7 +13,7 @@ import unicodedata
 
 def slug(text: str) -> str:
     text = text.strip()
-    text = re.sub(r"\s+", "_", text)
+    text = re.sub(r"\s", "_", text)
     text = re.sub(r"[^A-Za-z0-9_.-]", "_", text)
     return text
 

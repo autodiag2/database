@@ -784,14 +784,13 @@ class ConverterToSqlite():
             select id
             from ad_engine
             where manufacturer_id=?
-            and code LIKE ?
+            and lower(code) LIKE lower(?)
         """, (
             manufacturer_id,
             slug(code),
         ))
 
         row = cur.fetchone()
-
         if row:
             engine_id = row[0]
 
