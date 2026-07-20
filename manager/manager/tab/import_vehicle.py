@@ -786,8 +786,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         changed = new_file
         conflict = False
 
-        names = data.get("name", [])
-
+        names = data.setdefault("name", [])
         if isinstance(names, str):
             names = [names]
             data["name"] = names
