@@ -281,7 +281,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             return None
 
         manufacturer = self.guess_manufacturer_from_mcu_model(MCU)
-        mcu_ref = f"{manufacturer}/{MCU}"
+        mcu_ref = f"{slug(manufacturer)}/{slug(MCU)}"
 
         manufacturer_path = (
             self.get_data_src() /
@@ -499,7 +499,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         else:
             self.log(f"ECU unchanged {Ecu_maker}/{Ecu_model}")
 
-        return f"{Ecu_maker}/{Ecu_model}"
+        return f"{slug(Ecu_maker)}/{slug(Ecu_model)}"
 
     def get_evidence_input(self):
         return self.evidence_var.get().strip()
@@ -767,7 +767,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                 }
             )
 
-        engine_ref = f"{manufacturer}/{engine_code}"
+        engine_ref = f"{slug(manufacturer)}/{slug(engine_code)}"
 
         engine_dir = manufacturer_dir / slug(engine_code)
         engine_dir.mkdir(exist_ok=True)

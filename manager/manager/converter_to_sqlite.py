@@ -1006,6 +1006,27 @@ class ConverterToSqlite():
                         value.get("evidence"),
                     )
 
+    def _engine_get_m_code(self, engine_relative_path):
+        assert engine_relative_path
+        manufacturer_path, _ = engine_relative_path.split("/", 1)
+        manufacturer_data = self._read_yaml(self.plain_text_db / "engine" / manufacturer_path / "def.yml")
+        engine_data = self._read_yaml(self.plain_text_db / "engine" / engine_relative_path / "def.yml")
+        return manufacturer_data.get("manufacturer"), engine_data.get("code")
+    
+    def _ecu_get_m_model(self, ecu_relative_path):
+        assert ecu_relative_path
+        manufacturer_path, _ = ecu_relative_path.split("/", 1)
+        manufacturer_data = self._read_yaml(self.plain_text_db / "ecu" / manufacturer_path / "def.yml")
+        ecu_data = self._read_yaml(self.plain_text_db / "ecu" / ecu_relative_path / "def.yml")
+        return manufacturer_data.get("manufacturer"), ecu_data.get("model")
+    
+    def _mcu_get_m_model(self, mcu_relative_path):
+        assert mcu_relative_path
+        manufacturer_path, _ = mcu_relative_path.split("/", 1)
+        manufacturer_data = self._read_yaml(self.plain_text_db / "mcu" / manufacturer_path / "def.yml")
+        mcu_data = self._read_yaml(self.plain_text_db / "mcu" / mcu_relative_path / "def.yml")
+        return manufacturer_data.get("manufacturer"), mcu_data.get("model")
+
     def _iter_vehicle_entries(self, conn):
         vehicle_root = self.plain_text_db / "vehicle"
         if not vehicle_root.exists():
@@ -1049,7 +1070,7 @@ class ConverterToSqlite():
                         engine_ref = None
                         engine = version.get("engine")
                         if engine:
-                            engine_manufacturer, engine_code = engine.split("/", 1)
+                            engine_manufacturer, engine_code = self._engine_get_m_code(engine)
                             engine_ref = self._get_or_insert_engine(
                                 conn,
                                 engine_manufacturer,
@@ -1060,7 +1081,7 @@ class ConverterToSqlite():
                         ecus = version.get("ecu")
                         if ecus:
                             for ecu in ecus:
-                                ecu_manufacturer, ecu_model = ecu.split("/", 1)
+                                ecu_manufacturer, ecu_model = self._ecu_get_m_model(ecu)
                                 ecu_id = self._get_or_insert_ecu(
                                     conn,
                                     ecu_manufacturer,
@@ -1329,7 +1350,7 @@ class ConverterToSqlite():
                 mcu_ref = None
                 mcu = data.get("mcu")
                 if mcu:
-                    mcu_manufacturer, mcu_model = mcu.split("/", 1)
+                    mcu_manufacturer, mcu_model = self._mcu_get_m_model(mcu)
                     mcu_ref = self._get_or_insert_mcu(
                         conn,
                         mcu_manufacturer,
