@@ -4,7 +4,6 @@ version: I
 engine: Renault/1400
 power_kw: 72.0
 ecu:
-- Sagem/S3000
 - SAGEM/S3000
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

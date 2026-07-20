@@ -3,7 +3,6 @@ version: W245
 engine: Mercedes/M266E17
 power_kw: 85.0
 ecu:
-- Siemens/SIM266
 - SIEMENS/SIM266
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

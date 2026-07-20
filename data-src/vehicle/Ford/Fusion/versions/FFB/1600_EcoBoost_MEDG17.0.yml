@@ -4,7 +4,6 @@ version: FFB
 engine: Ford/1600_EcoBoost
 power_kw: 110.0
 ecu:
-- Bosch/MEDG17.0
 - BOSCH/MEDG17.0
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

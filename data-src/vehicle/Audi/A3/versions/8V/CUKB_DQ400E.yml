@@ -4,7 +4,6 @@ version: 8V
 engine: Audi/CUKB
 power_kw: 110.0
 ecu:
-- Temic/DQ400E
 - TEMIC/DQ400E
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

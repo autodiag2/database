@@ -4,7 +4,6 @@ version: J
 engine: Opel/B16DTU
 power_kw: 81.0
 ecu:
-- Delco/E98
 - DELCO/E98
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

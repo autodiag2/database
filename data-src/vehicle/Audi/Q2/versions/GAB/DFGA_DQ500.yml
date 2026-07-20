@@ -4,7 +4,6 @@ version: GAB
 engine: Audi/DFGA
 power_kw: 110.0
 ecu:
-- Bosch/DQ500
 - BOSCH/DQ500
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

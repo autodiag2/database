@@ -3,7 +3,6 @@ year: 2009-2013
 engine: Polaris/800ccm
 power_kw: 40.0
 ecu:
-- Bosch/M17.8.7
 - BOSCH/M17.8.7
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

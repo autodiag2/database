@@ -3,7 +3,6 @@ version: XIII
 engine: Ford/3000_V6_Powerstroke
 power_kw: 190.0
 ecu:
-- Bosch/EDC17CP65
 - BOSCH/EDC17CP65
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

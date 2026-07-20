@@ -4,7 +4,6 @@ version: 6P
 engine: Seat/CUTA
 power_kw: 77.0
 ecu:
-- Delphi/DCM6.2V
 - DELPHI/DCM6.2V
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

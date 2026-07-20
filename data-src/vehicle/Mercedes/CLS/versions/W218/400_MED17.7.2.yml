@@ -4,7 +4,6 @@ version: W218
 engine: Mercedes/400
 power_kw: 242.0
 ecu:
-- Bosch/MED17.7.2
 - BOSCH/MED17.7.2
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -4,7 +4,6 @@ version: III
 engine: Renault/M9T_706
 power_kw: 107.0
 ecu:
-- Continental/SID310
 - CONTINENTAL/SID310
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

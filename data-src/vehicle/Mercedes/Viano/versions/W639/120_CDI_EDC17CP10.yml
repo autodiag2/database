@@ -3,7 +3,6 @@ year: 2005-2018
 version: W639
 engine: Mercedes/120_CDI
 ecu:
-- Bosch/EDC17CP10
 - BOSCH/EDC17CP10
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

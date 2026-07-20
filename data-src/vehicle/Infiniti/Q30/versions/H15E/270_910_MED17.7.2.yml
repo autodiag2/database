@@ -4,7 +4,6 @@ version: H15E
 engine: Infiniti/270_910
 power_kw: 115.0
 ecu:
-- Bosch/MED17.7.2
 - BOSCH/MED17.7.2
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

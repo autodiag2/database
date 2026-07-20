@@ -2,7 +2,6 @@ created: 2026-07-17 23:08:44 CEST
 engine: Jaguar/AJ133
 power_kw: 279.0
 ecu:
-- Denso/P5.0SC
 - DENSO/P5.0SC
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

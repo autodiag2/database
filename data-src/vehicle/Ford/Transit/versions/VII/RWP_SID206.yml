@@ -4,7 +4,6 @@ version: VII
 engine: Ford/RWP
 power_kw: 81.0
 ecu:
-- Siemens/SID206
 - SIEMENS/SID206
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

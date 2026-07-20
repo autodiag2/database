@@ -3,7 +3,6 @@ year: 2010-2018
 engine: Ford/2000_AWD
 power_kw: 179.0
 ecu:
-- Bosch/MED17.0
 - BOSCH/MED17.0
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

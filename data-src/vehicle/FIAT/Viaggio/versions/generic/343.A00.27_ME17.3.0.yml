@@ -3,7 +3,6 @@ year: 2008-2018
 engine: Fiat/343.A00.27
 power_kw: 110.0
 ecu:
-- Bosch/ME17.3.0
 - BOSCH/ME17.3.0
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -4,7 +4,6 @@ version: E93
 engine: Bmw/N57D30OL
 power_kw: 180.0
 ecu:
-- Bosch/EDC17CP09
 - BOSCH/EDC17CP09
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

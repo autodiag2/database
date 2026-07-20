@@ -3,7 +3,6 @@ year: 2008-2016
 engine: Jaguar/5000_V8_RS
 power_kw: 405.0
 ecu:
-- Bosch/MED17.8.3
 - BOSCH/MED17.8.3
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

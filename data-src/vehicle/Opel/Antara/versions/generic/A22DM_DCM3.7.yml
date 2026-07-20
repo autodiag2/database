@@ -3,7 +3,6 @@ year: 2006-2009
 engine: Opel/A22DM
 power_kw: 120.0
 ecu:
-- Delphi/DCM3.7
 - DELPHI/DCM3.7
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

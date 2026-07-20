@@ -4,7 +4,6 @@ version: II
 engine: Ford/M1JA
 power_kw: 92.0
 ecu:
-- Bosch/MED17.0
 - BOSCH/MED17.0
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -4,7 +4,6 @@ version: I
 engine: Kia/D6EB
 power_kw: 191.0
 ecu:
-- Bosch/EDC17CP62
 - BOSCH/EDC17CP62
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

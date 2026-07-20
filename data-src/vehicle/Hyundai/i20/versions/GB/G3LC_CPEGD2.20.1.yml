@@ -4,7 +4,6 @@ version: GB
 engine: Hyundai/G3LC
 power_kw: 74.0
 ecu:
-- Kefico/CPEGD2.20.1
 - KEFICO/CPEGD2.20.1
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -4,7 +4,6 @@ version: J300
 engine: Chevrolet/A17DTS
 power_kw: 96.0
 ecu:
-- Delco/E87
 - DELCO/E87
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

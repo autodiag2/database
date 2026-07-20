@@ -4,7 +4,6 @@ version: A4
 engine: Toyota/1WW_2WW
 power_kw: 104.0
 ecu:
-- Bosch/EDC17C73
 - BOSCH/EDC17C73
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

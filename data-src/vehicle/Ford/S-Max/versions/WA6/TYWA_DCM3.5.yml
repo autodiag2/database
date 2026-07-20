@@ -4,7 +4,6 @@ version: WA6
 engine: Ford/TYWA
 power_kw: 85.0
 ecu:
-- Delphi/DCM3.5
 - DELPHI/DCM3.5
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -3,7 +3,6 @@ year: 2006-2016
 engine: Ford/1600_TDCi
 power_kw: 70.0
 ecu:
-- Continental/SID807EVO
 - CONTINENTAL/SID807EVO
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

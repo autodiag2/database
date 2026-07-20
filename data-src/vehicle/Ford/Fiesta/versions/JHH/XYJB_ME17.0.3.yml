@@ -4,7 +4,6 @@ version: JHH
 engine: Ford/XYJB
 power_kw: 63.0
 ecu:
-- Bosch/ME17.0.3
 - BOSCH/ME17.0.3
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

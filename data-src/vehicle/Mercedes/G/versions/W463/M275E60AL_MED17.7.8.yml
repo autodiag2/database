@@ -3,7 +3,6 @@ version: W463
 engine: Mercedes/M275E60AL
 power_kw: 444.0
 ecu:
-- Bosch/MED17.7.8
 - BOSCH/MED17.7.8
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

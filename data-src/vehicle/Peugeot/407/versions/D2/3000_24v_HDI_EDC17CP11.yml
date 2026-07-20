@@ -4,7 +4,6 @@ version: D2
 engine: Peugeot/3000_24v_HDI
 power_kw: 180.0
 ecu:
-- Bosch/EDC17CP11
 - BOSCH/EDC17CP11
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

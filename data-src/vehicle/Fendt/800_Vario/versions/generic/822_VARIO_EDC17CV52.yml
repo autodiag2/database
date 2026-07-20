@@ -3,7 +3,6 @@ year: 2003-2013
 engine: Fendt/822_VARIO
 power_kw: 160.0
 ecu:
-- Bosch/EDC17CV52
 - BOSCH/EDC17CV52
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

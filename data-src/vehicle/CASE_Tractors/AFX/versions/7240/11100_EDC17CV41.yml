@@ -3,7 +3,6 @@ version: '7240'
 engine: CASE_Tractors/11100
 power_kw: 365.0
 ecu:
-- Bosch/EDC17CV41
 - BOSCH/EDC17CV41
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

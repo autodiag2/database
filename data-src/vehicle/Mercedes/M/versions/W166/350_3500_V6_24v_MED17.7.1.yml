@@ -4,7 +4,6 @@ version: W166
 engine: Mercedes/350_3500_V6_24v
 power_kw: 222.0
 ecu:
-- Bosch/MED17.7.1
 - BOSCH/MED17.7.1
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

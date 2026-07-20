@@ -3,7 +3,6 @@ version: VB
 engine: Dodge/2500_2200_CDI
 power_kw: 95.0
 ecu:
-- Delphi/CRD3.x
 - DELPHI/CRD3.x
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -4,7 +4,6 @@ version: I
 engine: Ferrari/F154CB
 power_kw: 412.0
 ecu:
-- Bosch/MED17.3.5
 - BOSCH/MED17.3.5
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

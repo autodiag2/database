@@ -4,7 +4,6 @@ version: FT 310
 engine: Ford/YMR6
 power_kw: 96.0
 ecu:
-- Continental/SID211
 - CONTINENTAL/SID211
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

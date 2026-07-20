@@ -2,7 +2,6 @@ created: 2026-07-17 23:09:13 CEST
 engine: Porsche/MA1.21
 power_kw: 235.0
 ecu:
-- Continental/VDOSDI3
 - CONTINENTAL/VDOSDI3
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

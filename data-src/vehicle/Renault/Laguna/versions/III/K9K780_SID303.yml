@@ -3,7 +3,6 @@ version: III
 engine: Renault/K9K780
 power_kw: 81.0
 ecu:
-- Siemens/SID303
 - SIEMENS/SID303
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

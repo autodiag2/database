@@ -4,7 +4,6 @@ version: Jx8
 engine: Ford/JTJA
 power_kw: 132.0
 ecu:
-- Bosch/MED17.0.1
 - BOSCH/MED17.0.1
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

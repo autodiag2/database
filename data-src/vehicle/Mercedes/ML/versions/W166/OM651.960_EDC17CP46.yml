@@ -4,7 +4,6 @@ version: W166
 engine: Mercedes/OM651.960
 power_kw: 150.0
 ecu:
-- Bosch/EDC17CP46
 - BOSCH/EDC17CP46
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

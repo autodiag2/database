@@ -4,7 +4,6 @@ version: B81
 engine: Citroen/5GZ__EP6FDT_
 power_kw: 121.0
 ecu:
-- Bosch/MED17.4.4
 - BOSCH/MED17.4.4
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

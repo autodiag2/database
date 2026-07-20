@@ -4,7 +4,6 @@ version: III
 engine: Volvo/B4164T2
 power_kw: 132.0
 ecu:
-- Bosch/MED17.0
 - BOSCH/MED17.0
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

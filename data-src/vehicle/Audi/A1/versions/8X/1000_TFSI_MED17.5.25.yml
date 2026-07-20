@@ -4,7 +4,6 @@ version: 8X
 engine: Audi/1000_TFSI
 power_kw: 70.0
 ecu:
-- Bosch/MED17.5.25
 - BOSCH/MED17.5.25
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

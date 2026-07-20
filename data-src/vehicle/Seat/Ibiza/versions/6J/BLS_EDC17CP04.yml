@@ -4,7 +4,6 @@ version: 6J
 engine: Seat/BLS
 power_kw: 77.0
 ecu:
-- Bosch/EDC17CP04
 - BOSCH/EDC17CP04
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

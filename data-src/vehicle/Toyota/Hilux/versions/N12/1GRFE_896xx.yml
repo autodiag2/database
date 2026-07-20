@@ -3,7 +3,6 @@ version: N12
 engine: Toyota/1GRFE
 power_kw: 199.0
 ecu:
-- Denso/896xx
 - DENSO/896xx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

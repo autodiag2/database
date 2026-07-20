@@ -3,7 +3,6 @@ version: J10
 engine: Nissan/K9K
 power_kw: 76.0
 ecu:
-- Siemens/SID304
 - SIEMENS/SID304
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

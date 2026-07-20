@@ -4,7 +4,6 @@ version: VB
 engine: Dodge/2500_3000_CDI
 power_kw: 140.0
 ecu:
-- Bosch/EDC17CP10
 - BOSCH/EDC17CP10
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

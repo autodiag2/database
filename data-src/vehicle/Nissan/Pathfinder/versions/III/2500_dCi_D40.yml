@@ -3,7 +3,6 @@ version: III
 engine: Nissan/2500_dCi
 power_kw: 124.0
 ecu:
-- Denso/D40
 - DENSO/D40
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

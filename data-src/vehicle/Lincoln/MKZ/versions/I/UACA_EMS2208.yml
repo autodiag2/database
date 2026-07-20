@@ -3,7 +3,6 @@ version: I
 engine: Lincoln/UACA
 power_kw: 137.0
 ecu:
-- Continental/EMS2208
 - CONTINENTAL/EMS2208
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

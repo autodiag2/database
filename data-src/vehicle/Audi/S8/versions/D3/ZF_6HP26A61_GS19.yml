@@ -2,7 +2,6 @@ created: 2026-07-17 23:14:54 CEST
 version: D3
 engine: Audi/ZF_6HP26A61
 ecu:
-- Bosch/GS19
 - BOSCH/GS19
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

@@ -4,7 +4,6 @@ version: W246
 engine: Mercedes/OM651DE18LAR
 power_kw: 80.0
 ecu:
-- Bosch/EDC17C43
 - BOSCH/EDC17C43
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

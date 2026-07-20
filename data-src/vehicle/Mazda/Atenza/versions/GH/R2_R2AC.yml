@@ -3,7 +3,6 @@ version: GH
 engine: Mazda/R2
 power_kw: 136.0
 ecu:
-- Denso/R2AC
 - DENSO/R2AC
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

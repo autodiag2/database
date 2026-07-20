@@ -3,7 +3,6 @@ version: 4G
 engine: Audi/CNYA
 power_kw: 150.0
 ecu:
-- Temic/VL381
 - TEMIC/VL381
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

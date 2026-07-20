@@ -4,7 +4,6 @@ version: FT 330
 engine: Ford/YLFS
 power_kw: 77.0
 ecu:
-- Continental/SID211
 - CONTINENTAL/SID211
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

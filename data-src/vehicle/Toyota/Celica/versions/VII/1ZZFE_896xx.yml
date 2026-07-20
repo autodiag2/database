@@ -3,7 +3,6 @@ version: VII
 engine: Toyota/1ZZFE
 power_kw: 105.0
 ecu:
-- Denso/896xx
 - DENSO/896xx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

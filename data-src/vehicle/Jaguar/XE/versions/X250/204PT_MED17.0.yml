@@ -4,7 +4,6 @@ version: X250
 engine: Jaguar/204PT
 power_kw: 177.0
 ecu:
-- Bosch/MED17.0
 - BOSCH/MED17.0
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

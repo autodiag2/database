@@ -4,7 +4,6 @@ version: B58
 engine: Citroen/9HR__DV6C_
 power_kw: 81.0
 ecu:
-- Continental/SID807
 - CONTINENTAL/SID807
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

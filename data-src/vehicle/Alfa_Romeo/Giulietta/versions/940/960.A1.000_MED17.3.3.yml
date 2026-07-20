@@ -4,7 +4,6 @@ version: '940'
 engine: Alfa_Romeo/960.A1.000
 power_kw: 177.0
 ecu:
-- Bosch/MED17.3.3
 - BOSCH/MED17.3.3
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -3,7 +3,6 @@ year: 2008-2018
 version: I
 engine: Hyundai/1400
 ecu:
-- Bosch/MEG17.9.12
 - BOSCH/MEG17.9.12
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

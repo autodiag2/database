@@ -4,7 +4,6 @@ version: J
 engine: Vauxhall/A17DTE
 power_kw: 81.0
 ecu:
-- Delco/E87
 - DELCO/E87
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

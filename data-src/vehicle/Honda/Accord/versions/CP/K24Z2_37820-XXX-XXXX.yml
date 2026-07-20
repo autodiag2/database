@@ -3,7 +3,6 @@ version: CP
 engine: Honda/K24Z2
 power_kw: 132.0
 ecu:
-- Keihin/37820-XXX-XXXX
 - KEIHIN/37820-XXX-XXXX
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

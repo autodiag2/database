@@ -4,7 +4,6 @@ version: X165
 engine: Mercedes/450_Biturbo
 power_kw: 263.0
 ecu:
-- Bosch/MED17.7.1
 - BOSCH/MED17.7.1
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

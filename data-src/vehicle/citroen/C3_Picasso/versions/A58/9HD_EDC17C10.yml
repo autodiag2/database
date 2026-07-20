@@ -4,7 +4,6 @@ version: A58
 engine: Citroen/9HD
 power_kw: 84.0
 ecu:
-- Bosch/EDC17C10
 - BOSCH/EDC17C10
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

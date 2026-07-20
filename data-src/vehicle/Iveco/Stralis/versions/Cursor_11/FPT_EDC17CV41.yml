@@ -3,7 +3,6 @@ version: Cursor 11
 engine: Iveco/FPT
 power_kw: 309.0
 ecu:
-- Bosch/EDC17CV41
 - BOSCH/EDC17CV41
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

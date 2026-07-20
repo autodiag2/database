@@ -3,7 +3,6 @@ version: F54
 engine: Mini/B48A20A
 power_kw: 141.0
 ecu:
-- Bosch/MEVD17.2.K
 - BOSCH/MEVD17.2.K
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

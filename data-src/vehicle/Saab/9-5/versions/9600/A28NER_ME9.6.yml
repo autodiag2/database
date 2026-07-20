@@ -3,7 +3,6 @@ version: '9600'
 engine: Saab/A28NER
 power_kw: 221.0
 ecu:
-- Bosch/ME9.6
 - BOSCH/ME9.6
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

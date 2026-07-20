@@ -4,7 +4,6 @@ version: Bx7
 engine: Ford/2000_TDCi
 power_kw: 85.0
 ecu:
-- Delphi/DCM3.5
 - DELPHI/DCM3.5
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

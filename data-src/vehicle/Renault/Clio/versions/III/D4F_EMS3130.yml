@@ -3,7 +3,6 @@ version: III
 engine: Renault/D4F
 power_kw: 55.0
 ecu:
-- Continental/EMS3130
 - CONTINENTAL/EMS3130
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -3,7 +3,6 @@ version: D40
 engine: Nissan/Y25DDTI
 power_kw: 140.0
 ecu:
-- Denso/D40
 - DENSO/D40
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

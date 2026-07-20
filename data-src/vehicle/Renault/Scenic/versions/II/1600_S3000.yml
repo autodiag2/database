@@ -4,7 +4,6 @@ version: II
 engine: Renault/1600
 power_kw: 82.0
 ecu:
-- Sagem/S3000
 - SAGEM/S3000
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

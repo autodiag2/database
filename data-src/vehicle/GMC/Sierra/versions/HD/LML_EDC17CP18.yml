@@ -3,7 +3,6 @@ version: HD
 engine: GMC/LML
 power_kw: 296.0
 ecu:
-- Bosch/EDC17CP18
 - BOSCH/EDC17CP18
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

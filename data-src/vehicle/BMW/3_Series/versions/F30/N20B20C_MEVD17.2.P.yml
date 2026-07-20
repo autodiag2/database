@@ -3,7 +3,6 @@ version: F30
 engine: Bmw/N20B20C
 power_kw: 200.0
 ecu:
-- Bosch/MEVD17.2.P
 - BOSCH/MEVD17.2.P
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

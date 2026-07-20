@@ -3,7 +3,6 @@ version: '991'
 engine: Porsche/3800_S
 power_kw: 294.0
 ecu:
-- Siemens/PDK3000
 - SIEMENS/PDK3000
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

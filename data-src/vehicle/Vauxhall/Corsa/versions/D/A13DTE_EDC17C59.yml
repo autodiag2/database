@@ -4,7 +4,6 @@ version: D
 engine: Vauxhall/A13DTE
 power_kw: 70.0
 ecu:
-- Bosch/EDC17C59
 - BOSCH/EDC17C59
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -4,7 +4,6 @@ version: 8RB
 engine: Audi/2000_16v_TFSI
 power_kw: 153.0
 ecu:
-- Bosch/MED17.1
 - BOSCH/MED17.1
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

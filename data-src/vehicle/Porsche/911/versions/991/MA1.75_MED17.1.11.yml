@@ -4,7 +4,6 @@ version: '991'
 engine: Porsche/MA1.75
 power_kw: 350.0
 ecu:
-- Bosch/MED17.1.11
 - BOSCH/MED17.1.11
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

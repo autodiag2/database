@@ -4,7 +4,6 @@ version: CU
 engine: Honda/N22A2
 power_kw: 110.0
 ecu:
-- Bosch/EDC17CP16
 - BOSCH/EDC17CP16
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

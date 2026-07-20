@@ -4,7 +4,6 @@ version: R61
 engine: Mini/N18B16C
 power_kw: 160.0
 ecu:
-- Bosch/MEVD17.2.7
 - BOSCH/MEVD17.2.7
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

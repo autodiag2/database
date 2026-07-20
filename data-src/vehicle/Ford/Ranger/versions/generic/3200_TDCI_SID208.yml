@@ -2,7 +2,6 @@ created: 2026-07-17 23:08:34 CEST
 year: 2006-2014
 engine: Ford/3200_TDCI
 ecu:
-- Continental/SID208
 - CONTINENTAL/SID208
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

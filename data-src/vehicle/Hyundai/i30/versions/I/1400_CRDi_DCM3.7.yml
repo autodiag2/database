@@ -4,7 +4,6 @@ version: I
 engine: Hyundai/1400_CRDi
 power_kw: 66.0
 ecu:
-- Delphi/DCM3.7
 - DELPHI/DCM3.7
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

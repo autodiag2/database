@@ -2,7 +2,6 @@ created: 2026-07-17 23:09:32 CEST
 version: III
 engine: Toyota/7GRFSE
 ecu:
-- Denso/896xx
 - DENSO/896xx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

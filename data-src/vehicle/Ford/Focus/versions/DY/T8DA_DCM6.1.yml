@@ -4,7 +4,6 @@ version: DY
 engine: Ford/T8DA
 power_kw: 136.0
 ecu:
-- Delphi/DCM6.1
 - DELPHI/DCM6.1
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

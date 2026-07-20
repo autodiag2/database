@@ -4,7 +4,6 @@ version: III
 engine: Volvo/D5244T14
 power_kw: 129.0
 ecu:
-- Bosch/EDC17CP22
 - BOSCH/EDC17CP22
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

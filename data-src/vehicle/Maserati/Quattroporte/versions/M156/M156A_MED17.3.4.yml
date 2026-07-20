@@ -4,7 +4,6 @@ version: M156
 engine: Maserati/M156A
 power_kw: 390.0
 ecu:
-- Bosch/MED17.3.4
 - BOSCH/MED17.3.4
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

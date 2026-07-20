@@ -4,7 +4,6 @@ version: Sport
 engine: Land_Rover/AJ200
 power_kw: 110.0
 ecu:
-- Bosch/MEDC17.9
 - BOSCH/MEDC17.9
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

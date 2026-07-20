@@ -3,7 +3,6 @@ version: 92A
 engine: Porsche/MCV.VA
 power_kw: 193.0
 ecu:
-- Aisin/AL1000
 - AISIN/AL1000
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

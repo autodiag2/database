@@ -4,7 +4,6 @@ version: 8RB
 engine: Audi/CPMB
 power_kw: 162.0
 ecu:
-- Bosch/MED17.1.10
 - BOSCH/MED17.1.10
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

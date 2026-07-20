@@ -3,7 +3,6 @@ version: BL
 engine: Mazda/2200_MZR-CD
 power_kw: 110.0
 ecu:
-- Denso/R2AB
 - DENSO/R2AB
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

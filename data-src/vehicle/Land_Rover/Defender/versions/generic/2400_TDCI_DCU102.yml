@@ -3,7 +3,6 @@ year: 2006-2007
 engine: Land_Rover/2400_TDCI
 power_kw: 90.0
 ecu:
-- Visteon/DCU102
 - VISTEON/DCU102
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

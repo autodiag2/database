@@ -4,7 +4,6 @@ version: U9
 engine: Peugeot/4HM
 power_kw: 96.0
 ecu:
-- Continental/SID208
 - CONTINENTAL/SID208
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

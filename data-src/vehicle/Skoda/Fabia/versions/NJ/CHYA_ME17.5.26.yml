@@ -4,7 +4,6 @@ version: NJ
 engine: Skoda/CHYA
 power_kw: 44.0
 ecu:
-- Bosch/ME17.5.26
 - BOSCH/ME17.5.26
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

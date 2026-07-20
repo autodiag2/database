@@ -4,7 +4,6 @@ version: J309
 engine: Chevrolet/Z20D1
 power_kw: 96.0
 ecu:
-- Delphi/DCM3.7
 - DELPHI/DCM3.7
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

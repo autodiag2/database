@@ -2,7 +2,6 @@ created: 2026-07-17 23:08:34 CEST
 engine: Ford/3200_TDCi
 power_kw: 147.0
 ecu:
-- Continental/SID209-RANGER
 - CONTINENTAL/SID209-RANGER
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

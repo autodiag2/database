@@ -4,7 +4,6 @@ version: C140
 engine: Chevrolet/Z20D1
 power_kw: 120.0
 ecu:
-- Delphi/DCM3.7
 - DELPHI/DCM3.7
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

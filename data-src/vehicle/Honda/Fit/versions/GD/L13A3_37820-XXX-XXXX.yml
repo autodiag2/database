@@ -3,7 +3,6 @@ version: GD
 engine: Honda/L13A3
 power_kw: 60.0
 ecu:
-- Keihin/37820-XXX-XXXX
 - KEIHIN/37820-XXX-XXXX
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

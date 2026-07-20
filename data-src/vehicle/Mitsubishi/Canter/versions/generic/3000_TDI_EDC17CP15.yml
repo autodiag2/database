@@ -3,7 +3,6 @@ year: 2006-2007
 engine: Mitsubishi/3000_TDI
 power_kw: 106.0
 ecu:
-- Bosch/EDC17CP15
 - BOSCH/EDC17CP15
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -3,7 +3,6 @@ version: GSV50
 engine: Toyota/2GRFE
 power_kw: 200.0
 ecu:
-- Denso/896xx
 - DENSO/896xx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

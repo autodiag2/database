@@ -4,7 +4,6 @@ version: J
 engine: Opel/A13DTE
 power_kw: 51.0
 ecu:
-- Bosch/EDC17C19
 - BOSCH/EDC17C19
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -2,7 +2,6 @@ created: 2026-07-17 23:17:06 CEST
 version: 1Z
 engine: Skoda/1900_TDI
 ecu:
-- Bosch/EDC16U34
 - BOSCH/EDC16U34
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

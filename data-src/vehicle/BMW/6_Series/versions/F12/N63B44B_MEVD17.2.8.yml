@@ -4,7 +4,6 @@ version: F12
 engine: Bmw/N63B44B
 power_kw: 330.0
 ecu:
-- Bosch/MEVD17.2.8
 - BOSCH/MEVD17.2.8
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

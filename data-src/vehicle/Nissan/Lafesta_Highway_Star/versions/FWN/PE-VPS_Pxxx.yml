@@ -3,9 +3,8 @@ version: FWN
 engine: Nissan/PE-VPS
 power_kw: 114.0
 ecu:
-- Denso/Pxxx
-- MITSUBISHI/Pxxx
 - DENSO/Pxxx
+- MITSUBISHI/Pxxx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

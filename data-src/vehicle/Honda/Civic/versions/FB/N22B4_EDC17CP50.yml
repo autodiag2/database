@@ -4,7 +4,6 @@ version: FB
 engine: Honda/N22B4
 power_kw: 110.0
 ecu:
-- Bosch/EDC17CP50
 - BOSCH/EDC17CP50
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

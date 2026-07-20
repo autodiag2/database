@@ -4,7 +4,6 @@ version: '650'
 engine: Saab/A20DTH
 power_kw: 118.0
 ecu:
-- Bosch/EDC17C19
 - BOSCH/EDC17C19
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -3,7 +3,6 @@ version: B3
 engine: Peugeot/1KRFE
 power_kw: 50.0
 ecu:
-- Bosch/ME17.9.52
 - BOSCH/ME17.9.52
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

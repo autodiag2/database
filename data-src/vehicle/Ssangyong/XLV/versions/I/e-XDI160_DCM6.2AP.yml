@@ -4,7 +4,6 @@ version: I
 engine: Ssangyong/e-XDI160
 power_kw: 85.0
 ecu:
-- Delphi/DCM6.2AP
 - DELPHI/DCM6.2AP
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -4,7 +4,6 @@ version: F10
 engine: Bmw/N57D30B
 power_kw: 230.0
 ecu:
-- Bosch/EDC17CP45
 - BOSCH/EDC17CP45
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

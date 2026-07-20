@@ -3,7 +3,6 @@ year: 2006-2019
 version: U9
 engine: Peugeot/2000_HDI
 ecu:
-- Bosch/EDC17C49
 - BOSCH/EDC17C49
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

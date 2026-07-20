@@ -4,7 +4,6 @@ version: T9
 engine: Peugeot/5GY__EP6FDTM_
 power_kw: 120.0
 ecu:
-- Bosch/MED17.4.4
 - BOSCH/MED17.4.4
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -4,7 +4,6 @@ version: A7
 engine: Peugeot/8FS
 power_kw: 70.0
 ecu:
-- Bosch/MEV17.4
 - BOSCH/MEV17.4
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

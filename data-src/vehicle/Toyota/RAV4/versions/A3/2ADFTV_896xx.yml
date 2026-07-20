@@ -3,7 +3,6 @@ version: A3
 engine: Toyota/2ADFTV
 power_kw: 110.0
 ecu:
-- Denso/896xx
 - DENSO/896xx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

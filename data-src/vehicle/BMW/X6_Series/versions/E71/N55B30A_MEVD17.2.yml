@@ -4,7 +4,6 @@ version: E71
 engine: Bmw/N55B30A
 power_kw: 225.0
 ecu:
-- Bosch/MEVD17.2
 - BOSCH/MEVD17.2
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

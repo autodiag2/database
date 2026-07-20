@@ -4,7 +4,6 @@ version: T9
 engine: Peugeot/5GT__EP6FDTX_
 power_kw: 151.0
 ecu:
-- Bosch/MEVD17.4.4
 - BOSCH/MEVD17.4.4
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -4,7 +4,6 @@ version: JK
 engine: Jeep/ENS
 power_kw: 130.0
 ecu:
-- Bosch/EDC17CP27
 - BOSCH/EDC17CP27
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

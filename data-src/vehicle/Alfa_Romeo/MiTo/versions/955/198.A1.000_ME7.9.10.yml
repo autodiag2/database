@@ -3,7 +3,6 @@ version: '955'
 engine: Alfa_Romeo/198.A1.000
 power_kw: 110.0
 ecu:
-- Bosch/ME7.9.10
 - BOSCH/ME7.9.10
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

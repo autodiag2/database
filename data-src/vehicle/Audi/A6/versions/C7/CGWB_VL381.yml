@@ -3,7 +3,6 @@ version: C7
 engine: Audi/CGWB
 power_kw: 220.0
 ecu:
-- Temic/VL381
 - TEMIC/VL381
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

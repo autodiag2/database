@@ -4,7 +4,6 @@ version: '952'
 engine: Alfa_Romeo/55266388
 power_kw: 110.0
 ecu:
-- Bosch/EDC17C69
 - BOSCH/EDC17C69
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

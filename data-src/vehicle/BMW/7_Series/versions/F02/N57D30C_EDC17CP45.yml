@@ -4,7 +4,6 @@ version: F02
 engine: Bmw/N57D30C
 power_kw: 280.0
 ecu:
-- Bosch/EDC17CP45
 - BOSCH/EDC17CP45
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

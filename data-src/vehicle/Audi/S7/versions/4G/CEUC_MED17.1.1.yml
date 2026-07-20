@@ -4,7 +4,6 @@ version: 4G
 engine: Audi/CEUC
 power_kw: 309.0
 ecu:
-- Bosch/MED17.1.1
 - BOSCH/MED17.1.1
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

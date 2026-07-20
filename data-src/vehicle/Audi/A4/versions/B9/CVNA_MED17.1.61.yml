@@ -4,7 +4,6 @@ version: B9
 engine: Audi/CVNA
 power_kw: 110.0
 ecu:
-- Bosch/MED17.1.61
 - BOSCH/MED17.1.61
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

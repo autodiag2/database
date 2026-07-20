@@ -3,7 +3,6 @@ version: B9
 engine: Audi/CSWB
 power_kw: 160.0
 ecu:
-- Temic/DL382-7F
 - TEMIC/DL382-7F
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

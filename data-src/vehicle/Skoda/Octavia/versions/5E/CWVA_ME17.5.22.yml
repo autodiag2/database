@@ -3,7 +3,6 @@ version: 5E
 engine: Skoda/CWVA
 power_kw: 81.0
 ecu:
-- Bosch/ME17.5.22
 - BOSCH/ME17.5.22
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

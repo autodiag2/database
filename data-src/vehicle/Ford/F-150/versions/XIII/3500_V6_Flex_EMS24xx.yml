@@ -4,7 +4,6 @@ version: XIII
 engine: Ford/3500_V6_Flex
 power_kw: 210.0
 ecu:
-- Continental/EMS24xx
 - CONTINENTAL/EMS24xx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

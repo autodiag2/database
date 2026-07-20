@@ -4,7 +4,6 @@ version: Sport
 engine: Land_Rover/5000_S_C_V8
 power_kw: 375.0
 ecu:
-- Bosch/MED17.8.32
 - BOSCH/MED17.8.32
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

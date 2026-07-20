@@ -4,7 +4,6 @@ version: C7
 engine: Audi/CDUC
 power_kw: 180.0
 ecu:
-- Bosch/EDC17CP20
 - BOSCH/EDC17CP20
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -4,7 +4,6 @@ version: II
 engine: Renault/K9K770
 power_kw: 66.0
 ecu:
-- Delphi/DCM3.4
 - DELPHI/DCM3.4
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

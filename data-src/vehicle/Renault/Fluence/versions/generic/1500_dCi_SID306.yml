@@ -2,7 +2,6 @@ created: 2026-07-17 23:09:15 CEST
 engine: Renault/1500_dCi
 power_kw: 81.0
 ecu:
-- Continental/SID306
 - CONTINENTAL/SID306
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

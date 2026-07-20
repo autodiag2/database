@@ -3,7 +3,6 @@ version: GL
 engine: Mazda/SH-VPTS
 power_kw: 110.0
 ecu:
-- Denso/SHxx
 - DENSO/SHxx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

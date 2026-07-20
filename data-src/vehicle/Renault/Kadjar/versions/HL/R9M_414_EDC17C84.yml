@@ -4,7 +4,6 @@ version: HL
 engine: Renault/R9M_414
 power_kw: 96.0
 ecu:
-- Bosch/EDC17C84
 - BOSCH/EDC17C84
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

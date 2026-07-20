@@ -4,7 +4,6 @@ version: Jx8
 engine: Ford/XVJB
 power_kw: 70.0
 ecu:
-- Bosch/EDC17C70
 - BOSCH/EDC17C70
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

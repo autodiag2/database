@@ -3,7 +3,6 @@ version: I
 engine: Lancia/1900_JTD
 power_kw: 81.0
 ecu:
-- Bosch/EDC15C7
 - BOSCH/EDC15C7
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

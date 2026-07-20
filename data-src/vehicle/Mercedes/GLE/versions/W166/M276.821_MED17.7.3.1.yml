@@ -4,7 +4,6 @@ version: W166
 engine: Mercedes/M276.821
 power_kw: 200.0
 ecu:
-- Bosch/MED17.7.3.1
 - BOSCH/MED17.7.3.1
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

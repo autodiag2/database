@@ -3,7 +3,6 @@ version: C5
 engine: Audi/AWT
 power_kw: 110.0
 ecu:
-- Temic/VL300
 - TEMIC/VL300
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

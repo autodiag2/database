@@ -4,7 +4,6 @@ version: II
 engine: Volvo/AS
 power_kw: 120.0
 ecu:
-- Bosch/EDC17CP48
 - BOSCH/EDC17CP48
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

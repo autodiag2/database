@@ -4,7 +4,6 @@ version: 12C
 engine: McLaren/3800_T
 power_kw: 441.0
 ecu:
-- Bosch/ME17.8.32
 - BOSCH/ME17.8.32
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

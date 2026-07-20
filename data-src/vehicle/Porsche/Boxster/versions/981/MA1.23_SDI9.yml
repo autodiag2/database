@@ -4,7 +4,6 @@ version: '981'
 engine: Porsche/MA1.23
 power_kw: 243.0
 ecu:
-- Continental/SDI9
 - CONTINENTAL/SDI9
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

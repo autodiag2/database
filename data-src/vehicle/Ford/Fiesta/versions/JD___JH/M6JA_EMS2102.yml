@@ -3,7 +3,6 @@ version: JD / JH
 engine: Ford/M6JA
 power_kw: 70.0
 ecu:
-- Continental/EMS2102
 - CONTINENTAL/EMS2102
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

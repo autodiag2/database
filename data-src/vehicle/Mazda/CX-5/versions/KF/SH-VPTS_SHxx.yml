@@ -3,8 +3,6 @@ version: KF
 engine: Mazda/SH-VPTS
 power_kw: 110.0
 ecu:
-- Denso/SHxx
-- Denso/Shxx
 - DENSO/SHxx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

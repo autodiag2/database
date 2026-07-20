@@ -4,7 +4,6 @@ version: B
 engine: Opel/K12B
 power_kw: 51.0
 ecu:
-- Bosch/ME17.9.5
 - BOSCH/ME17.9.5
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

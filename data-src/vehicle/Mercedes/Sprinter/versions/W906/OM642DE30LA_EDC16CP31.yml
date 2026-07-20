@@ -3,7 +3,6 @@ version: W906
 engine: Mercedes/OM642DE30LA
 power_kw: 135.0
 ecu:
-- Bosch/EDC16CP31
 - BOSCH/EDC16CP31
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

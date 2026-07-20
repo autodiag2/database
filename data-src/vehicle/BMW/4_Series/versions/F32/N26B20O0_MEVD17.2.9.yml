@@ -4,7 +4,6 @@ version: F32
 engine: Bmw/N26B20O0
 power_kw: 180.0
 ecu:
-- Bosch/MEVD17.2.9
 - BOSCH/MEVD17.2.9
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

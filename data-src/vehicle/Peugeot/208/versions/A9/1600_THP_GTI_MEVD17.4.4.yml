@@ -4,7 +4,6 @@ version: A9
 engine: Peugeot/1600_THP_GTI
 power_kw: 154.0
 ecu:
-- Bosch/MEVD17.4.4
 - BOSCH/MEVD17.4.4
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

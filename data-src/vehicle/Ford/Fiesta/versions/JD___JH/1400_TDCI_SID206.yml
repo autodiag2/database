@@ -4,7 +4,6 @@ version: JD / JH
 engine: Ford/1400_TDCI
 power_kw: 50.0
 ecu:
-- Siemens/SID206
 - SIEMENS/SID206
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

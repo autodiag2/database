@@ -4,7 +4,6 @@ version: '970'
 engine: Porsche/MCW.JA
 power_kw: 221.0
 ecu:
-- Bosch/EDC17CP44
 - BOSCH/EDC17CP44
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

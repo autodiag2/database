@@ -4,7 +4,6 @@ version: FV
 engine: Audi/CUNA
 power_kw: 135.0
 ecu:
-- Bosch/EDC17C64
 - BOSCH/EDC17C64
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

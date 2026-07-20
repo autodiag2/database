@@ -4,7 +4,6 @@ version: II
 engine: Volvo/1600
 power_kw: 85.0
 ecu:
-- Continental/SID807EVO
 - CONTINENTAL/SID807EVO
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

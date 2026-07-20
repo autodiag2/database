@@ -4,7 +4,6 @@ version: I
 engine: Polaris/900_EPS
 power_kw: 55.0
 ecu:
-- Bosch/ME17.9.74
 - BOSCH/ME17.9.74
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

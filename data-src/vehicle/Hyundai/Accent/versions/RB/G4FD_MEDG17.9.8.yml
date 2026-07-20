@@ -3,7 +3,6 @@ version: RB
 engine: Hyundai/G4FD
 power_kw: 91.0
 ecu:
-- Bosch/MEDG17.9.8
 - BOSCH/MEDG17.9.8
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

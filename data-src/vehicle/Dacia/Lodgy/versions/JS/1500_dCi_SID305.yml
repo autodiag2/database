@@ -4,7 +4,6 @@ version: JS
 engine: Dacia/1500_dCi
 power_kw: 81.0
 ecu:
-- Continental/SID305
 - CONTINENTAL/SID305
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

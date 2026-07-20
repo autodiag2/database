@@ -3,7 +3,6 @@ version: VG
 engine: Kia/G6DC
 power_kw: 213.0
 ecu:
-- Delphi/MT86
 - DELPHI/MT86
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

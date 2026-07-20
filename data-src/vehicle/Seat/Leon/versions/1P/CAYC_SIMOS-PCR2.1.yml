@@ -3,7 +3,6 @@ version: 1P
 engine: Seat/CAYC
 power_kw: 77.0
 ecu:
-- Continental/SIMOS-PCR2.1
 - CONTINENTAL/SIMOS-PCR2.1
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -4,7 +4,6 @@ version: DM
 engine: Hyundai/D4HB
 power_kw: 145.0
 ecu:
-- Bosch/EDC17CP14
 - BOSCH/EDC17CP14
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

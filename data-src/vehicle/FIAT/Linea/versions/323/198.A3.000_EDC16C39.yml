@@ -3,7 +3,6 @@ version: '323'
 engine: Fiat/198.A3.000
 power_kw: 77.0
 ecu:
-- Bosch/EDC16C39
 - BOSCH/EDC16C39
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

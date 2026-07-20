@@ -3,7 +3,6 @@ year: 2005-2010
 engine: Renault/1500_dCi
 power_kw: 50.0
 ecu:
-- Delphi/DCM1.2
 - DELPHI/DCM1.2
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

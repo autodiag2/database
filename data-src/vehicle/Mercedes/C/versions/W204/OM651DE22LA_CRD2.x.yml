@@ -3,7 +3,6 @@ version: W204
 engine: Mercedes/OM651DE22LA
 power_kw: 125.0
 ecu:
-- Delphi/CRD2.x
 - DELPHI/CRD2.x
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

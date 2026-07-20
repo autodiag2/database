@@ -2,7 +2,6 @@ created: 2026-07-17 23:08:50 CEST
 engine: Mahindra/m-Hawk
 power_kw: 103.0
 ecu:
-- Bosch/EDC17C55
 - BOSCH/EDC17C55
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

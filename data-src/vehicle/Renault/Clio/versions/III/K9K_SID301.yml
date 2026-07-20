@@ -3,7 +3,6 @@ version: III
 engine: Renault/K9K
 power_kw: 78.0
 ecu:
-- Siemens/SID301
 - SIEMENS/SID301
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

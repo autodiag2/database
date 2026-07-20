@@ -3,7 +3,6 @@ version: W207
 engine: Mercedes/250_2200_CDI_Twinturbo
 power_kw: 148.0
 ecu:
-- Delphi/CRD3.x
 - DELPHI/CRD3.x
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

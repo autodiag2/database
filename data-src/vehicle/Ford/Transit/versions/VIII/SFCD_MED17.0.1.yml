@@ -4,7 +4,6 @@ version: VIII
 engine: Ford/SFCD
 power_kw: 74.0
 ecu:
-- Bosch/MED17.0.1
 - BOSCH/MED17.0.1
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

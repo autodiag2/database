@@ -4,7 +4,6 @@ version: B9
 engine: Peugeot/5FS__EP6C_
 power_kw: 88.0
 ecu:
-- Bosch/MEV17.4.2
 - BOSCH/MEV17.4.2
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -2,7 +2,6 @@ created: 2026-07-17 23:08:39 CEST
 version: FK
 engine: Honda/2000_NA
 ecu:
-- Keihin/37820-XXX-XXXX
 - KEIHIN/37820-XXX-XXXX
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

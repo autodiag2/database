@@ -2,7 +2,6 @@ created: 2026-07-17 23:15:56 CEST
 engine: GMC/LFX
 power_kw: 224.0
 ecu:
-- Delco/E78
 - DELCO/E78
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

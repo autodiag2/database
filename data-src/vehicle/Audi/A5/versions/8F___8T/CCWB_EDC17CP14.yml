@@ -4,7 +4,6 @@ version: 8F / 8T
 engine: Audi/CCWB
 power_kw: 155.0
 ecu:
-- Bosch/EDC17CP14
 - BOSCH/EDC17CP14
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

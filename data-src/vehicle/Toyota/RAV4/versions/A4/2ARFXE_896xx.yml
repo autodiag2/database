@@ -3,7 +3,6 @@ version: A4
 engine: Toyota/2ARFXE
 power_kw: 112.0
 ecu:
-- Denso/896xx
 - DENSO/896xx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

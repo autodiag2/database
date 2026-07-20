@@ -4,7 +4,6 @@ version: F30
 engine: Bmw/320d_xDrive
 power_kw: 135.0
 ecu:
-- Bosch/EDC17C76
 - BOSCH/EDC17C76
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

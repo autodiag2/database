@@ -4,7 +4,6 @@ version: 8F / 8T
 engine: Audi/CDNB
 power_kw: 132.0
 ecu:
-- Bosch/MED17.5
 - BOSCH/MED17.5
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

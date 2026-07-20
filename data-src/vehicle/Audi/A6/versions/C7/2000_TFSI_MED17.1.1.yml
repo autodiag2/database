@@ -4,7 +4,6 @@ version: C7
 engine: Audi/2000_TFSI
 power_kw: 130.0
 ecu:
-- Bosch/MED17.1.1
 - BOSCH/MED17.1.1
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

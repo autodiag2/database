@@ -4,7 +4,6 @@ version: JT
 engine: Suzuki/M16A
 power_kw: 88.0
 ecu:
-- Bosch/ME17.9.51
 - BOSCH/ME17.9.51
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

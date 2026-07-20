@@ -3,7 +3,6 @@ version: F21
 engine: Bmw/B38B15A
 power_kw: 80.0
 ecu:
-- Bosch/MEVD17.2.K
 - BOSCH/MEVD17.2.K
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

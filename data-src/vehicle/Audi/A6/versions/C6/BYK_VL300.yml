@@ -3,7 +3,6 @@ version: C6
 engine: Audi/BYK
 power_kw: 125.0
 ecu:
-- Temic/VL300
 - TEMIC/VL300
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

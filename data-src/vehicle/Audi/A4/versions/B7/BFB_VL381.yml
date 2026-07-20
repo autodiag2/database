@@ -3,7 +3,6 @@ version: B7
 engine: Audi/BFB
 power_kw: 120.0
 ecu:
-- Temic/VL381
 - TEMIC/VL381
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

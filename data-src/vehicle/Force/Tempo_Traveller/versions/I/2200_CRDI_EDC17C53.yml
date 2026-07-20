@@ -4,7 +4,6 @@ version: I
 engine: Force/2200_CRDI
 power_kw: 95.0
 ecu:
-- Bosch/EDC17C53
 - BOSCH/EDC17C53
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

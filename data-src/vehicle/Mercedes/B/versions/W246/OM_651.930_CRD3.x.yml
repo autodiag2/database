@@ -3,7 +3,6 @@ version: W246
 engine: Mercedes/OM_651.930
 power_kw: 130.0
 ecu:
-- Delphi/CRD3.x
 - DELPHI/CRD3.x
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

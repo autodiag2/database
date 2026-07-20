@@ -3,7 +3,6 @@ version: U9
 engine: Citroen/AHP
 power_kw: 120.0
 ecu:
-- Delphi/DCM6.2C
 - DELPHI/DCM6.2C
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

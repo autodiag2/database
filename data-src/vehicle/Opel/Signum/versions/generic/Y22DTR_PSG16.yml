@@ -2,7 +2,6 @@ created: 2026-07-17 23:09:07 CEST
 engine: Opel/Y22DTR
 power_kw: 86.0
 ecu:
-- Bosch/PSG16
 - BOSCH/PSG16
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -4,7 +4,6 @@ version: 4L
 engine: Audi/3000_V6_TDI__CR_
 power_kw: 177.0
 ecu:
-- Bosch/EDC17CP14
 - BOSCH/EDC17CP14
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -2,7 +2,6 @@ created: 2026-07-17 23:08:14 CEST
 engine: Bmw/1649cc_E3
 power_kw: 118.0
 ecu:
-- Bosch/ME17.2BMS-X
 - BOSCH/ME17.2BMS-X
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

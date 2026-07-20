@@ -3,7 +3,6 @@ version: 8V
 engine: Audi/CJSB
 power_kw: 132.0
 ecu:
-- Temic/DQ200-MQB
 - TEMIC/DQ200-MQB
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

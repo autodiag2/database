@@ -3,7 +3,6 @@ version: D
 engine: Vauxhall/A12XER
 power_kw: 63.0
 ecu:
-- Delco/E78
 - DELCO/E78
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

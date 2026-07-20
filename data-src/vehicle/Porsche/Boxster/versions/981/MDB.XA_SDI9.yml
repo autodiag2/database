@@ -4,7 +4,6 @@ version: '981'
 engine: Porsche/MDB.XA
 power_kw: 276.0
 ecu:
-- Continental/SDI9
 - CONTINENTAL/SDI9
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

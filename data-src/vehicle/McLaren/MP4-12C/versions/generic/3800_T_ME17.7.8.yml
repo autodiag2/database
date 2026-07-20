@@ -2,7 +2,6 @@ created: 2026-07-17 23:08:53 CEST
 year: 2000-2014
 engine: McLaren/3800_T
 ecu:
-- Bosch/ME17.7.8
 - BOSCH/ME17.7.8
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

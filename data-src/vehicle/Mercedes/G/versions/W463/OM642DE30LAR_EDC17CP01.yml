@@ -4,7 +4,6 @@ version: W463
 engine: Mercedes/OM642DE30LAR
 power_kw: 155.0
 ecu:
-- Bosch/EDC17CP01
 - BOSCH/EDC17CP01
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

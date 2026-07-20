@@ -4,7 +4,6 @@ version: II
 engine: Land_Rover/2000_LR2_Si4_GTDi_4WD
 power_kw: 174.0
 ecu:
-- Bosch/MED17.0
 - BOSCH/MED17.0
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

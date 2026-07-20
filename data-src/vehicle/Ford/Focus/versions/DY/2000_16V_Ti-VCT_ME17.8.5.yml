@@ -4,7 +4,6 @@ version: DY
 engine: Ford/2000_16V_Ti-VCT
 power_kw: 101.0
 ecu:
-- Bosch/ME17.8.5
 - BOSCH/ME17.8.5
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

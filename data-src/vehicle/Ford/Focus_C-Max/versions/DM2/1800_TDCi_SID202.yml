@@ -3,7 +3,6 @@ version: DM2
 engine: Ford/1800_TDCi
 power_kw: 85.0
 ecu:
-- Siemens/SID202
 - SIEMENS/SID202
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

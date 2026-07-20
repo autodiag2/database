@@ -4,7 +4,6 @@ version: C117
 engine: Mercedes/260_2000_4MATIC
 power_kw: 155.0
 ecu:
-- Bosch/MED17.7.2
 - BOSCH/MED17.7.2
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -4,7 +4,6 @@ version: III
 engine: Renault/F4R870
 power_kw: 132.0
 ecu:
-- Continental/EMS3110
 - CONTINENTAL/EMS3110
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

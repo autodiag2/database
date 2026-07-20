@@ -4,7 +4,6 @@ version: GAB
 engine: Audi/DDYA
 power_kw: 85.0
 ecu:
-- Delphi/DCM6.2V
 - DELPHI/DCM6.2V
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

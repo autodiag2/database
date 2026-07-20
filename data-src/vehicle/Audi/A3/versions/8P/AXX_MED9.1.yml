@@ -3,7 +3,6 @@ version: 8P
 engine: Audi/AXX
 power_kw: 147.0
 ecu:
-- Bosch/MED9.1
 - BOSCH/MED9.1
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

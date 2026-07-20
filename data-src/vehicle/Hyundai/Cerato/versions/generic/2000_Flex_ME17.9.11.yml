@@ -3,7 +3,6 @@ year: 2008-2019
 engine: Hyundai/2000_Flex
 power_kw: 113.0
 ecu:
-- Bosch/ME17.9.11
 - BOSCH/ME17.9.11
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

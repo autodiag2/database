@@ -3,7 +3,6 @@ version: GH
 engine: Mazda/2000_MZR-CD
 power_kw: 103.0
 ecu:
-- Denso/RF7X
 - DENSO/RF7X
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

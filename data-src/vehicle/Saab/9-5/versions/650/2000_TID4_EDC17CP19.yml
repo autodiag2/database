@@ -4,7 +4,6 @@ version: '650'
 engine: Saab/2000_TID4
 power_kw: 118.0
 ecu:
-- Bosch/EDC17CP19
 - BOSCH/EDC17CP19
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

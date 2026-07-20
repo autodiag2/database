@@ -4,7 +4,6 @@ version: T7
 engine: Peugeot/5FT__EP6DTS_
 power_kw: 128.0
 ecu:
-- Bosch/MED17.4.2
 - BOSCH/MED17.4.2
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

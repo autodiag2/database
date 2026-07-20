@@ -4,7 +4,6 @@ version: 6J
 engine: Seat/CPTA
 power_kw: 103.0
 ecu:
-- Bosch/MED17.5.21
 - BOSCH/MED17.5.21
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

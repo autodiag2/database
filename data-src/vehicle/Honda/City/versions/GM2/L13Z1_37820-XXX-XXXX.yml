@@ -3,7 +3,6 @@ version: GM2
 engine: Honda/L13Z1
 power_kw: 73.0
 ecu:
-- Keihin/37820-XXX-XXXX
 - KEIHIN/37820-XXX-XXXX
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

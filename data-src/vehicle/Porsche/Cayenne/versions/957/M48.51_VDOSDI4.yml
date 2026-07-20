@@ -3,7 +3,6 @@ version: '957'
 engine: Porsche/M48.51
 power_kw: 368.0
 ecu:
-- Continental/VDOSDI4
 - CONTINENTAL/VDOSDI4
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

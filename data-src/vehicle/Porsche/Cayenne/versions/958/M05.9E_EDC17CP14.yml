@@ -4,7 +4,6 @@ version: '958'
 engine: Porsche/M05.9E
 power_kw: 177.0
 ecu:
-- Bosch/EDC17CP14
 - BOSCH/EDC17CP14
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

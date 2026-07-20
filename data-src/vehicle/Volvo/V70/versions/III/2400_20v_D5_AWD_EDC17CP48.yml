@@ -4,7 +4,6 @@ version: III
 engine: Volvo/2400_20v_D5_AWD
 power_kw: 133.0
 ecu:
-- Bosch/EDC17CP48
 - BOSCH/EDC17CP48
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

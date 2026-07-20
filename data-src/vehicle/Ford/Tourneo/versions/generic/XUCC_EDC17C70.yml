@@ -3,7 +3,6 @@ year: 2013-2019
 engine: Ford/XUCC
 power_kw: 55.0
 ecu:
-- Bosch/EDC17C70
 - BOSCH/EDC17C70
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

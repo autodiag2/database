@@ -2,7 +2,6 @@ created: 2026-07-17 23:08:36 CEST
 engine: Geely/4G69S4N
 power_kw: 95.0
 ecu:
-- Delphi/MT80
 - DELPHI/MT80
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

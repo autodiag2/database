@@ -4,7 +4,6 @@ version: 5E
 engine: Skoda/CJZB
 power_kw: 63.0
 ecu:
-- Bosch/MED17.5.21
 - BOSCH/MED17.5.21
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

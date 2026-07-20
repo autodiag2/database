@@ -3,7 +3,6 @@ year: 2006-2010
 engine: Volvo/D5244T16
 power_kw: 120.0
 ecu:
-- Bosch/EDC17CP22
 - BOSCH/EDC17CP22
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

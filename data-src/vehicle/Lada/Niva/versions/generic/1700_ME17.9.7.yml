@@ -3,7 +3,6 @@ year: 2015-2020
 engine: Lada/1700
 power_kw: 58.0
 ecu:
-- Bosch/ME17.9.7
 - BOSCH/ME17.9.7
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -3,7 +3,6 @@ version: VIII
 engine: JMC/2800_TD
 power_kw: 77.0
 ecu:
-- Bosch/EDC17C55
 - BOSCH/EDC17C55
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

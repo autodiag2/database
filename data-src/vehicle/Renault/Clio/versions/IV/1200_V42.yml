@@ -4,7 +4,6 @@ version: IV
 engine: Renault/1200
 power_kw: 54.0
 ecu:
-- Valeo/V42
 - VALEO/V42
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

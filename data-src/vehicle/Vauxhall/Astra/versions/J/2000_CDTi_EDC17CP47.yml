@@ -4,7 +4,6 @@ version: J
 engine: Vauxhall/2000_CDTi
 power_kw: 118.0
 ecu:
-- Bosch/EDC17CP47
 - BOSCH/EDC17CP47
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -4,7 +4,6 @@ version: VII
 engine: Ford/2200_TDCI
 power_kw: 81.0
 ecu:
-- Visteon/DCU102
 - VISTEON/DCU102
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

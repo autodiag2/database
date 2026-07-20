@@ -3,7 +3,6 @@ version: E71
 engine: Bmw/M57D30TU2
 power_kw: 173.0
 ecu:
-- Bosch/EDC16CP35
 - BOSCH/EDC16CP35
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

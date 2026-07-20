@@ -3,7 +3,6 @@ version: '991.2'
 engine: Porsche/3000
 power_kw: 272.0
 ecu:
-- Siemens/PDK3000
 - SIEMENS/PDK3000
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

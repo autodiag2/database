@@ -4,7 +4,6 @@ version: F34
 engine: Bmw/N57D30A
 power_kw: 190.0
 ecu:
-- Bosch/EDC17C56
 - BOSCH/EDC17C56
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

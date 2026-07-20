@@ -3,7 +3,6 @@ version: FK
 engine: Honda/R18A2
 power_kw: 103.0
 ecu:
-- Keihin/37820-XXX-XXXX
 - KEIHIN/37820-XXX-XXXX
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

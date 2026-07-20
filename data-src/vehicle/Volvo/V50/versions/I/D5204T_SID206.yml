@@ -4,7 +4,6 @@ version: I
 engine: Volvo/D5204T
 power_kw: 130.0
 ecu:
-- Siemens/SID206
 - SIEMENS/SID206
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

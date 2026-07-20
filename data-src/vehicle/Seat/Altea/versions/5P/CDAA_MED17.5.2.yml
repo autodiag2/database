@@ -4,7 +4,6 @@ version: 5P
 engine: Seat/CDAA
 power_kw: 118.0
 ecu:
-- Bosch/MED17.5.2
 - BOSCH/MED17.5.2
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

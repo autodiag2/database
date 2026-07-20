@@ -4,7 +4,6 @@ version: NF1
 engine: Skoda/CPGA
 power_kw: 50.0
 ecu:
-- Bosch/ME17.5.20
 - BOSCH/ME17.5.20
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

@@ -3,7 +3,6 @@ year: 2011-2020
 engine: Ford/UNCK
 power_kw: 118.0
 ecu:
-- Bosch/MEDG17.0
 - BOSCH/MEDG17.0
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

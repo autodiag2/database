@@ -3,7 +3,6 @@ version: B6
 engine: Audi/AVK
 power_kw: 162.0
 ecu:
-- Temic/VL300
 - TEMIC/VL300
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

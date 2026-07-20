@@ -4,7 +4,6 @@ version: J5
 engine: Renault/H4B400
 power_kw: 66.0
 ecu:
-- Valeo/V50
 - VALEO/V50
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

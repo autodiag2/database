@@ -3,7 +3,6 @@ year: 2004-2010
 version: 4L
 engine: Audi/CCFA
 ecu:
-- Bosch/EDC17CP24
 - BOSCH/EDC17CP24
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

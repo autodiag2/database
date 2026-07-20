@@ -4,7 +4,6 @@ version: '199'
 engine: Abarth/199.A8.000
 power_kw: 132.0
 ecu:
-- Bosch/ME17.3.0
 - BOSCH/ME17.3.0
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

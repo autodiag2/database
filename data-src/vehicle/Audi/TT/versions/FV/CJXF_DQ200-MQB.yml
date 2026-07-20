@@ -3,7 +3,6 @@ version: FV
 engine: Audi/CJXF
 power_kw: 210.0
 ecu:
-- Temic/DQ200-MQB
 - TEMIC/DQ200-MQB
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

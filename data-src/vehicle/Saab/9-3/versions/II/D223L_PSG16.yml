@@ -3,7 +3,6 @@ version: II
 engine: Saab/D223L
 power_kw: 95.0
 ecu:
-- Bosch/PSG16
 - BOSCH/PSG16
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

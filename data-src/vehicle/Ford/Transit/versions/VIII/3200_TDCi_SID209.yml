@@ -4,7 +4,6 @@ version: VIII
 engine: Ford/3200_TDCi
 power_kw: 147.0
 ecu:
-- Continental/SID209
 - CONTINENTAL/SID209
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

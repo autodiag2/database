@@ -3,7 +3,6 @@ version: S12
 engine: Subaru/EE20Z
 power_kw: 110.0
 ecu:
-- Denso/KH
 - DENSO/KH
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

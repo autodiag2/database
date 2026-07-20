@@ -4,7 +4,6 @@ version: R57
 engine: Mini/1600_Turbo_JCW
 power_kw: 141.0
 ecu:
-- Bosch/MEV17.2
 - BOSCH/MEV17.2
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

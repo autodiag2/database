@@ -3,7 +3,6 @@ year: 2006-2019
 engine: Lancia/3000_24v_MJET_2
 power_kw: 140.0
 ecu:
-- Bosch/EDC17C49
 - BOSCH/EDC17C49
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

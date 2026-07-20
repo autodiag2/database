@@ -3,7 +3,6 @@ year: 2013-2020
 engine: Ssangyong/e-XDI220
 power_kw: 131.0
 ecu:
-- Delphi/DCM6.2AP
 - DELPHI/DCM6.2AP
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

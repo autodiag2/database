@@ -4,7 +4,6 @@ version: W219
 engine: Mercedes/350_CDI_EU6
 power_kw: 184.0
 ecu:
-- Bosch/EDC17CP57
 - BOSCH/EDC17CP57
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

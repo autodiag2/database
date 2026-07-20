@@ -4,7 +4,6 @@ version: B8
 engine: Audi/CAHB
 power_kw: 120.0
 ecu:
-- Bosch/EDC17CP20
 - BOSCH/EDC17CP20
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

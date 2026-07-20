@@ -3,7 +3,6 @@ version: W639
 engine: Mercedes/OM651DE22LAR
 power_kw: 70.0
 ecu:
-- Delphi/CRD2.x
 - DELPHI/CRD2.x
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

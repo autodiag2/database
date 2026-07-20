@@ -3,7 +3,6 @@ version: F12
 engine: Bmw/N55B30A
 power_kw: 235.0
 ecu:
-- Bosch/MEVD17.26
 - BOSCH/MEVD17.26
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

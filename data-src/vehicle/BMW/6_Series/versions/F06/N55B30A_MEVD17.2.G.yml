@@ -4,7 +4,6 @@ version: F06
 engine: Bmw/N55B30A
 power_kw: 235.0
 ecu:
-- Bosch/MEVD17.2.G
 - BOSCH/MEVD17.2.G
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

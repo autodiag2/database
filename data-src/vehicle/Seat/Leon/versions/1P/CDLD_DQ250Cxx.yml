@@ -3,7 +3,6 @@ version: 1P
 engine: Seat/CDLD
 power_kw: 177.0
 ecu:
-- Temic/DQ250Cxx
 - TEMIC/DQ250Cxx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

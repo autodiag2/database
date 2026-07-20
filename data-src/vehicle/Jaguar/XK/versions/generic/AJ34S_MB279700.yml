@@ -3,7 +3,6 @@ year: 2006-2010
 engine: Jaguar/AJ34S
 power_kw: 306.0
 ecu:
-- Denso/MB279700
 - DENSO/MB279700
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

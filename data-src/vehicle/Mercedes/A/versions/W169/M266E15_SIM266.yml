@@ -3,7 +3,6 @@ version: W169
 engine: Mercedes/M266E15
 power_kw: 70.0
 ecu:
-- Siemens/SIM266
 - SIEMENS/SIM266
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

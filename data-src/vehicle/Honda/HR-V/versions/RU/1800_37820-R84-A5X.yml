@@ -3,7 +3,6 @@ version: RU
 engine: Honda/1800
 power_kw: 103.0
 ecu:
-- Keihin/37820-R84-A5X
 - KEIHIN/37820-R84-A5X
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

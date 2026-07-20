@@ -3,7 +3,6 @@ year: 2013-2019
 version: W222
 engine: Mercedes/320_V6_BiTurbo
 ecu:
-- Bosch/MED17.7.3.1
 - BOSCH/MED17.7.3.1
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

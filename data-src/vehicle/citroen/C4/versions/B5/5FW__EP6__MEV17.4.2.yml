@@ -4,7 +4,6 @@ version: B5
 engine: Citroen/5FW__EP6_
 power_kw: 88.0
 ecu:
-- Bosch/MEV17.4.2
 - BOSCH/MEV17.4.2
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

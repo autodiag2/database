@@ -4,7 +4,6 @@ version: III
 engine: Renault/2000_dCi
 power_kw: 109.0
 ecu:
-- Bosch/EDC17CP19
 - BOSCH/EDC17CP19
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

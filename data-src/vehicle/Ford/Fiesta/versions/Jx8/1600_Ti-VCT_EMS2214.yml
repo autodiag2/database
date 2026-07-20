@@ -2,7 +2,6 @@ created: 2026-07-17 23:08:30 CEST
 version: Jx8
 engine: Ford/1600_Ti-VCT
 ecu:
-- Continental/EMS2214
 - CONTINENTAL/EMS2214
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

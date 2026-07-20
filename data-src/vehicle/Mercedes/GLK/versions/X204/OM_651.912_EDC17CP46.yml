@@ -4,7 +4,6 @@ version: X204
 engine: Mercedes/OM_651.912
 power_kw: 125.0
 ecu:
-- Bosch/EDC17CP46
 - BOSCH/EDC17CP46
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

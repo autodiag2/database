@@ -4,7 +4,6 @@ version: 6J
 engine: Seat/1400_TSI
 power_kw: 132.0
 ecu:
-- Bosch/MED17.5.5
 - BOSCH/MED17.5.5
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

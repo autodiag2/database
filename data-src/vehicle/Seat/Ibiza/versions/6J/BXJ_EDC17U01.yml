@@ -4,7 +4,6 @@ version: 6J
 engine: Seat/BXJ
 power_kw: 66.0
 ecu:
-- Bosch/EDC17U01
 - BOSCH/EDC17U01
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

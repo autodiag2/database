@@ -4,7 +4,6 @@ version: F85
 engine: Bmw/S63B44B
 power_kw: 423.0
 ecu:
-- Bosch/MEVD17.2.H
 - BOSCH/MEVD17.2.H
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

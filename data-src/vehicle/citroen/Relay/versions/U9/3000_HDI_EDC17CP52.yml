@@ -4,7 +4,6 @@ version: U9
 engine: Citroen/3000_HDI
 power_kw: 132.0
 ecu:
-- Bosch/EDC17CP52
 - BOSCH/EDC17CP52
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

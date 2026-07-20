@@ -4,7 +4,6 @@ version: D
 engine: Vauxhall/Z13DTE
 power_kw: 70.0
 ecu:
-- Bosch/EDC17C19
 - BOSCH/EDC17C19
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

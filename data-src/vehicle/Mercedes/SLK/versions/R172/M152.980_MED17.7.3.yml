@@ -4,7 +4,6 @@ version: R172
 engine: Mercedes/M152.980
 power_kw: 310.0
 ecu:
-- Bosch/MED17.7.3
 - BOSCH/MED17.7.3
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
