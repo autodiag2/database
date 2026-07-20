@@ -410,9 +410,6 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                         field,
                         value
                     )
-                elif current != value:
-                    data[field] = value
-                    changed = True
             else:
                 if current != value:
                     conflict = True
