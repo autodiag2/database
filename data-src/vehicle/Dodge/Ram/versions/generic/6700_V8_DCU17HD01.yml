@@ -2,9 +2,10 @@ created: 2026-07-17 23:08:24 CEST
 engine: Dodge/6700_V8
 ecu:
 - BOSCH/DCU17HD01
+- Bosch/DCU17HD01
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 16:20:05 CEST
+updated: 2026-07-20 18:41:53 CEST
 year: '2013'

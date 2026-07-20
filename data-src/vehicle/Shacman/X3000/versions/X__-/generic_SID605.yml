@@ -1,0 +1,8 @@
+created: 2026-07-20 18:46:25 CEST
+version: X  -
+power_kw: 338.0
+ecu:
+- Continental/SID605
+evidence:
+- https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+updated: 2026-07-20 18:46:25 CEST

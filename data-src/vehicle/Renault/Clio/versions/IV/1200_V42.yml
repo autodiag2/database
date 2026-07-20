@@ -5,10 +5,11 @@ engine: Renault/1200
 power_kw: 54.0
 ecu:
 - VALEO/V42
+- Valeo/V42
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-20 16:21:39 CEST
+updated: 2026-07-20 18:43:21 CEST
 conflicts:
   year:
   - value: '2012'

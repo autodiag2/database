@@ -5,10 +5,11 @@ engine: Peugeot/9HR__DV6C_
 power_kw: 82.0
 ecu:
 - CONTINENTAL/SID807
+- Continental/SID807
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-20 16:21:35 CEST
+updated: 2026-07-20 18:43:14 CEST
 conflicts:
   year:
   - value: '2010'

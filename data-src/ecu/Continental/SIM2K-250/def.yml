@@ -6,4 +6,12 @@ evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
-updated: 2026-07-20 16:15:28 CEST
+updated: 2026-07-20 18:45:34 CEST
+conflicts:
+  type:
+  - value: ECM
+    evidence: https://www.autotuner.com/cdn/shop/files/compatibility-list.pdf
+  - value: ECM
+    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+  - value: ECM
+    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

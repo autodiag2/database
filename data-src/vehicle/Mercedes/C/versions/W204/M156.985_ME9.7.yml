@@ -4,10 +4,11 @@ engine: Mercedes/M156.985
 power_kw: 336.0
 ecu:
 - BOSCH/ME9.7
+- Bosch/ME9.7
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 16:21:03 CEST
+updated: 2026-07-20 18:42:43 CEST
 conflicts:
   power_kw:
   - value: 358.0

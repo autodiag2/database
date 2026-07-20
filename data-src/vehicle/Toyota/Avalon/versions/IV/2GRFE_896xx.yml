@@ -4,9 +4,10 @@ engine: Toyota/2GRFE
 power_kw: 206.0
 ecu:
 - DENSO/896xx
+- Denso/896xx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 16:22:02 CEST
+updated: 2026-07-20 18:43:42 CEST
 year: '2012'

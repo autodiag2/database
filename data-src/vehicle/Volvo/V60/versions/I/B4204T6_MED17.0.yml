@@ -5,10 +5,11 @@ engine: Volvo/B4204T6
 power_kw: 149.0
 ecu:
 - BOSCH/MED17.0
+- Bosch/MED17.0
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-20 16:22:39 CEST
+updated: 2026-07-20 18:44:16 CEST
 conflicts:
   year:
   - value: '2010'

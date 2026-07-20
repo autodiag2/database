@@ -4,8 +4,9 @@ engine: Mercedes/OM651DE22LAR
 power_kw: 88.0
 ecu:
 - DELPHI/CRD3.x
+- Delphi/CRD3.x
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 16:21:02 CEST
+updated: 2026-07-20 18:45:52 CEST
 year: '2010'

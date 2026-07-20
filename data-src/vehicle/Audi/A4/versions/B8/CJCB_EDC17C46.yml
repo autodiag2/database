@@ -5,10 +5,11 @@ engine: Audi/CJCB
 power_kw: 100.0
 ecu:
 - BOSCH/EDC17C46
+- Bosch/EDC17C46
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-20 16:18:47 CEST
+updated: 2026-07-20 18:40:39 CEST
 conflicts:
   year:
   - value: '2008'

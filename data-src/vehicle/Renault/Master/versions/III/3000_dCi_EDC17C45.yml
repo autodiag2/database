@@ -5,9 +5,10 @@ engine: Renault/3000_dCi
 power_kw: 110.0
 ecu:
 - BOSCH/EDC17C45
+- Bosch/EDC17C45
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-20 16:21:43 CEST
+updated: 2026-07-20 18:46:19 CEST
 conflicts:
   year:
   - value: '2014'

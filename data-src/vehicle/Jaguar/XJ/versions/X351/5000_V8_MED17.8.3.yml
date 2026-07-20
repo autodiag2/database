@@ -5,8 +5,9 @@ engine: Jaguar/5000_V8
 power_kw: 375.0
 ecu:
 - BOSCH/MED17.8.3
+- Bosch/MED17.8.3
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 16:20:41 CEST
+updated: 2026-07-20 18:42:26 CEST

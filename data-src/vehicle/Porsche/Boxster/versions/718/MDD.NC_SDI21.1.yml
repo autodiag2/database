@@ -5,10 +5,11 @@ engine: Porsche/MDD.NC
 power_kw: 257.0
 ecu:
 - CONTINENTAL/SDI21.1
+- Continental/SDI21.1
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-20 16:21:36 CEST
+updated: 2026-07-20 18:43:17 CEST
 conflicts:
   year:
   - value: '2016'

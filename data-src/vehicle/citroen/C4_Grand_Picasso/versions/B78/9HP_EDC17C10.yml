@@ -5,9 +5,10 @@ engine: Citroen/9HP
 power_kw: 68.0
 ecu:
 - BOSCH/EDC17C10
+- Bosch/EDC17C10
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-20 16:19:59 CEST
+updated: 2026-07-20 18:45:08 CEST
 conflicts:
   year:
   - value: '2013'

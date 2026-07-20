@@ -5,10 +5,11 @@ engine: Smart/M281.910
 power_kw: 66.0
 ecu:
 - BOSCH/ME17.9.20
+- Bosch/ME17.9.20
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-20 16:21:58 CEST
+updated: 2026-07-20 18:43:38 CEST
 conflicts:
   year:
   - value: '2015'

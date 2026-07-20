@@ -4,9 +4,10 @@ engine: CASE/3400_D
 power_kw: 54.0
 ecu:
 - BOSCH/EDC17C49
+- Bosch/EDC17C49
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-20 16:19:49 CEST
+updated: 2026-07-20 18:45:02 CEST
 conflicts:
   year:
   - value: '2011'

@@ -2,8 +2,9 @@ created: 2026-07-17 23:15:33 CEST
 engine: Chevrolet/3600_V6
 ecu:
 - DELCO/E39
+- Delco/E39
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 16:19:54 CEST
+updated: 2026-07-20 18:41:44 CEST
 year: '2011'

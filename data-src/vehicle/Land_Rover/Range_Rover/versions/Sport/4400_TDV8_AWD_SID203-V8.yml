@@ -4,8 +4,9 @@ engine: Land_Rover/4400_TDV8_AWD
 power_kw: 230.0
 ecu:
 - SIEMENS/SID203-V8
+- Siemens/SID203-V8
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 16:20:50 CEST
+updated: 2026-07-20 18:45:46 CEST
 year: '2010'

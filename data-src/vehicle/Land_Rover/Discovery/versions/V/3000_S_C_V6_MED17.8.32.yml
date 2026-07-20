@@ -5,10 +5,11 @@ engine: Land_Rover/3000_S_C_V6
 power_kw: 250.0
 ecu:
 - BOSCH/MED17.8.32
+- Bosch/MED17.8.32
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-20 16:20:49 CEST
+updated: 2026-07-20 18:42:32 CEST
 conflicts:
   year:
   - value: '2017'

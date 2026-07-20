@@ -5,9 +5,10 @@ engine: Citroen/9HR__DV6C_
 power_kw: 81.0
 ecu:
 - CONTINENTAL/SID807
+- Continental/SID807
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-20 16:19:58 CEST
+updated: 2026-07-20 18:45:08 CEST
 conflicts:
   year:
   - value: '2010'

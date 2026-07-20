@@ -3,8 +3,9 @@ version: M300
 engine: Chevrolet/1200
 ecu:
 - DELCO/E83B
+- Delco/E83B
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 16:19:54 CEST
+updated: 2026-07-20 18:41:44 CEST
 year: '2013'

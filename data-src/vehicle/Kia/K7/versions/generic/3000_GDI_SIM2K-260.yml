@@ -3,10 +3,11 @@ year: 2015-2017
 engine: Kia/3000_GDI
 ecu:
 - CONTINENTAL/SIM2K-260
+- Continental/SIM2K-260
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-20 16:20:44 CEST
+updated: 2026-07-20 18:42:28 CEST
 conflicts:
   year:
   - value: '2016'

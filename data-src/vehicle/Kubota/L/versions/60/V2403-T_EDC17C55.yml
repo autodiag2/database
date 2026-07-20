@@ -4,11 +4,12 @@ engine: Kubota/V2403-T
 power_kw: 38.0
 ecu:
 - BOSCH/EDC17C55
+- Bosch/EDC17C55
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 16:20:46 CEST
+updated: 2026-07-20 18:42:30 CEST
 conflicts:
   power_kw:
   - value: 41.0

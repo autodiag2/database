@@ -5,9 +5,10 @@ engine: Mini/N47C16U1
 power_kw: 82.0
 ecu:
 - BOSCH/EDC17C41
+- Bosch/EDC17C41
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-20 16:21:19 CEST
+updated: 2026-07-20 18:46:01 CEST
 conflicts:
   year:
   - value: '2009'

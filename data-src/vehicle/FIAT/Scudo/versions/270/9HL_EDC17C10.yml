@@ -5,10 +5,11 @@ engine: Fiat/9HL
 power_kw: 84.0
 ecu:
 - BOSCH/EDC17C10
+- Bosch/EDC17C10
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-20 16:20:12 CEST
+updated: 2026-07-20 18:42:01 CEST
 conflicts:
   year:
   - value: '2012'

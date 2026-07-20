@@ -4,8 +4,9 @@ engine: Audi/ASB
 power_kw: 171.0
 ecu:
 - BOSCH/EDC16CP34
+- Bosch/EDC16CP34
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 16:18:45 CEST
+updated: 2026-07-20 18:40:37 CEST
 year: '2005'

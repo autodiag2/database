@@ -4,11 +4,12 @@ engine: Honda/J35A9
 power_kw: 179.0
 ecu:
 - KEIHIN/37820-XXX-XXXX
+- Keihin/37820-XXX-XXXX
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 16:20:34 CEST
+updated: 2026-07-20 18:42:19 CEST
 conflicts:
   power_kw:
   - value: 184.0

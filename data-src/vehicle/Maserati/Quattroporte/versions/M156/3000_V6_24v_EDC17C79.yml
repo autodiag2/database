@@ -5,9 +5,10 @@ engine: Maserati/3000_V6_24v
 power_kw: 184.0
 ecu:
 - BOSCH/EDC17C79
+- Bosch/EDC17C79
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-20 16:20:55 CEST
+updated: 2026-07-20 18:45:48 CEST
 conflicts:
   power_kw:
   - value: 202.0

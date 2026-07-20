@@ -5,9 +5,10 @@ engine: Ssangyong/D20DT
 power_kw: 104.0
 ecu:
 - DELPHI/DCM3.7
+- Delphi/DCM3.7
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-20 16:21:59 CEST
+updated: 2026-07-20 18:46:29 CEST
 conflicts:
   power_kw:
   - value: 102.0

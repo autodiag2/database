@@ -5,9 +5,10 @@ engine: Renault/1600_Turbo_RS_Trophy
 power_kw: 162.0
 ecu:
 - CONTINENTAL/EMS3155
+- Continental/EMS3155
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-20 16:21:40 CEST
+updated: 2026-07-20 18:46:17 CEST
 conflicts:
   year:
   - value: '2012'

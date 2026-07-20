@@ -2,10 +2,11 @@ created: 2026-07-17 23:08:45 CEST
 year: 2009-2017
 ecu:
 - BOSCH/ME17.9.21
+- Bosch/ME17.9.21
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-20 16:20:43 CEST
+updated: 2026-07-20 18:42:27 CEST
 conflicts:
   year:
   - value: '2014'

@@ -5,10 +5,11 @@ engine: Bmw/N47D20
 power_kw: 130.0
 ecu:
 - BOSCH/EDC17CP02
+- Bosch/EDC17CP02
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-20 16:19:42 CEST
+updated: 2026-07-20 18:41:32 CEST
 conflicts:
   year:
   - value: '2007'

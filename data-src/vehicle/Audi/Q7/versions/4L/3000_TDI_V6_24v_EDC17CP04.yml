@@ -5,9 +5,10 @@ engine: Audi/3000_TDI_V6_24v
 power_kw: 177.0
 ecu:
 - BOSCH/EDC17CP04
+- Bosch/EDC17CP04
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-20 16:19:01 CEST
+updated: 2026-07-20 18:44:44 CEST
 conflicts:
   year:
   - value: '2007'
