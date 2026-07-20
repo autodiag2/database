@@ -388,6 +388,8 @@ class ConverterToSqlite():
         """)
 
     def _read_yaml(self, path: Path):
+        if not path.exists():
+            raise FileNotFoundError(f"path not found {path}")
         with open(path, "r", encoding="utf-8") as f:
             return yaml.safe_load(f) or {}
 
@@ -499,7 +501,7 @@ class ConverterToSqlite():
                 ({entity_field}, evidence_id)
                 values(?, ?)
                 """,
-                (entity_id, evidence_id),
+                (entity_id, evidence_id,)
             )
 
     def _get_or_insert_mcu(
@@ -1018,7 +1020,7 @@ class ConverterToSqlite():
         manufacturer_path, _ = ecu_relative_path.split("/", 1)
         manufacturer_data = self._read_yaml(self.plain_text_db / "ecu" / manufacturer_path / "def.yml")
         ecu_data = self._read_yaml(self.plain_text_db / "ecu" / ecu_relative_path / "def.yml")
-        return manufacturer_data.get("manufacturer"), ecu_data.get("model")
+        return manufacturer_data.get("name"), ecu_data.get("model")
     
     def _mcu_get_m_model(self, mcu_relative_path):
         assert mcu_relative_path
@@ -1087,6 +1089,7 @@ class ConverterToSqlite():
                                     ecu_manufacturer,
                                     ecu_model
                                 )
+                                assert ecu_id
                                 ecus_id.append(ecu_id)
 
                         yield {
@@ -1276,7 +1279,7 @@ class ConverterToSqlite():
 
         for ecu_id in ecus_id:
             cur.execute("""
-                select 1
+                select id
                 from ad_vehicle_version_ecu
                 where vehicle_version_id=?
                 and ecu_id=?
@@ -1285,7 +1288,8 @@ class ConverterToSqlite():
                 ecu_id,
             ))
 
-            if cur.fetchone() is None:
+            version_ecu_row = cur.fetchone()
+            if version_ecu_row is None:
                 cur.execute("""
                     insert into ad_vehicle_version_ecu(
                         vehicle_version_id,
@@ -1296,12 +1300,16 @@ class ConverterToSqlite():
                     version_id,
                     ecu_id,
                 ))
+                version_ecu_id = cur.lastrowid
+            else:
+                version_ecu_id = version_ecu_row[0]
+
             for ev in evidence:
                 self._link_evidence(
                     conn,
                     "ad_vehicle_version_ecu_evidence",
                     "vehicle_version_ecu_id",
-                    version_id,
+                    version_ecu_id,
                     ev,
                 )
 
