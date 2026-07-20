@@ -1,10 +1,6 @@
 model: CONTINENTAL_S
 created: 2026-07-17 23:08:41 CEST
-type: ECM
+type: TCM
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-20 16:07:14 CEST
-conflicts:
-  type:
-  - value: TCM
-    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
