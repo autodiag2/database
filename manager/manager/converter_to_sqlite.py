@@ -549,7 +549,7 @@ class ConverterToSqlite():
             cur.execute("""
                 update ad_mcu
                 set created=coalesce(created, ?),
-                    updated=?
+                    updated=coalesce(updated, ?)
                 where id=?
             """, (
                 created,
@@ -592,7 +592,7 @@ class ConverterToSqlite():
         model,
         created=None,
         updated=None,
-        ecu_type="ECM",
+        ecu_type=None,
         mcu_ref: int = None,
         evidence=None,
         codes_path=None
@@ -627,10 +627,10 @@ class ConverterToSqlite():
 
             cur.execute("""
                 update ad_ecu
-                set type=?,
-                    mcu_id=coalesce(mcu_id, ?),
-                    created=coalesce(created, ?),
-                    updated=?
+                set type=coalesce(?, type),
+                    mcu_id=coalesce(?, mcu_id),
+                    created=coalesce(?, created),
+                    updated=coalesce(?, updated)
                 where id=?
             """, (
                 ecu_type,
@@ -798,7 +798,7 @@ class ConverterToSqlite():
                 update ad_engine
                 set fuel=coalesce(fuel, ?),
                     created=coalesce(created, ?),
-                    updated=?
+                    updated=coalesce(updated, ?)
                 where id=?
             """, (
                 fuel,
@@ -1155,7 +1155,7 @@ class ConverterToSqlite():
                 update ad_vehicle
                 set type=?,
                     created=coalesce(created, ?),
-                    updated=?
+                    updated=coalesce(updated, ?)
                 where id=?
             """, (
                 vehicle_type,
@@ -1240,10 +1240,10 @@ class ConverterToSqlite():
 
             cur.execute("""
                 update ad_vehicle_version
-                set year=?,
-                    power_kw=?,
+                set year=coalesce(year, ?),
+                    power_kw=coalesce(power_kw, ?),
                     created=coalesce(created, ?),
-                    updated=?
+                    updated=coalesce(updated, ?)
                 where id=?
             """, (
                 year,
@@ -1499,7 +1499,7 @@ class ConverterToSqlite():
             if key in seen:
                 continue
             seen.add(key)
-
+                
             ecu_id = self._get_or_insert_ecu(
                 conn,
                 manufacturer=manufacturer,
