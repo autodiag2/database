@@ -122,7 +122,6 @@ class ConverterToSqlite():
                 year text,
                 engine_id integer,
                 ecu_id integer,
-                power_ps integer,
                 power_kw real,
                 created integer,
                 updated integer,
