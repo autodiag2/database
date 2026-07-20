@@ -442,7 +442,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             self.write_yaml(
                 maker_def,
                 {
-                    "name": Ecu_maker,
+                    "manufacturer": Ecu_maker,
                     "created": current_timestamp(),
                     "updated": current_timestamp(),
                 },

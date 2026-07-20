@@ -1020,7 +1020,7 @@ class ConverterToSqlite():
         manufacturer_path, _ = ecu_relative_path.split("/", 1)
         manufacturer_data = self._read_yaml(self.plain_text_db / "ecu" / manufacturer_path / "def.yml")
         ecu_data = self._read_yaml(self.plain_text_db / "ecu" / ecu_relative_path / "def.yml")
-        return manufacturer_data.get("name"), ecu_data.get("model")
+        return manufacturer_data.get("manufacturer"), ecu_data.get("model")
     
     def _mcu_get_m_model(self, mcu_relative_path):
         assert mcu_relative_path
