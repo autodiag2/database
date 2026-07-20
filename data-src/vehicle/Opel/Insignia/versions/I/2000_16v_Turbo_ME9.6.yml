@@ -4,9 +4,10 @@ engine: Opel/2000_16v_Turbo
 power_kw: 162.0
 ecu:
 - Bosch/ME9.6
+- BOSCH/ME9.6
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:16:34 CEST
+updated: 2026-07-20 16:21:27 CEST
 year: '2008'
 conflicts:
   power_kw:

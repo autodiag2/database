@@ -5,10 +5,11 @@ engine: Volvo/D5244T21
 power_kw: 140.0
 ecu:
 - Bosch/EDC17CP68
+- BOSCH/EDC17CP68
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:17:55 CEST
+updated: 2026-07-20 16:22:39 CEST
 conflicts:
   year:
   - value: '2015'

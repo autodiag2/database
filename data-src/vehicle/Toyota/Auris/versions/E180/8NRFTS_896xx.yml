@@ -4,9 +4,10 @@ engine: Toyota/8NRFTS
 power_kw: 85.0
 ecu:
 - Denso/896xx
+- DENSO/896xx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:21:22 CEST
+updated: 2026-07-20 16:22:02 CEST
 year: '2015'

@@ -3,4 +3,8 @@ created: 2026-07-17 23:08:11 CEST
 type: ECM
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-17 23:08:11 CEST
+updated: 2026-07-20 16:06:36 CEST
+conflicts:
+  type:
+  - value: TCM
+    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf

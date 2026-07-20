@@ -4,8 +4,9 @@ engine: Mercedes/200_2200_CDI
 power_kw: 120.0
 ecu:
 - Delphi/CRD3.x
+- DELPHI/CRD3.x
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:20:30 CEST
+updated: 2026-07-20 16:21:06 CEST

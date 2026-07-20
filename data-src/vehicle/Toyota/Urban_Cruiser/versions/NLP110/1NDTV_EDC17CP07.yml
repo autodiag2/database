@@ -5,9 +5,10 @@ engine: Toyota/1NDTV
 power_kw: 66.0
 ecu:
 - Bosch/EDC17CP07
+- BOSCH/EDC17CP07
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-18 18:17:25 CEST
+updated: 2026-07-20 16:22:12 CEST
 conflicts:
   year:
   - value: '2009'

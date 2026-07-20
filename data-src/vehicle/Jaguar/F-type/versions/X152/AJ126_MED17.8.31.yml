@@ -5,10 +5,11 @@ engine: Jaguar/AJ126
 power_kw: 250.0
 ecu:
 - Bosch/MED17.8.31
+- BOSCH/MED17.8.31
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:15:46 CEST
+updated: 2026-07-20 16:20:40 CEST
 conflicts:
   power_kw:
   - value: 254.0

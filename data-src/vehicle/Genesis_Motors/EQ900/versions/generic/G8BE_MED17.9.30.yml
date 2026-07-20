@@ -3,10 +3,11 @@ engine: Genesis_Motors/G8BE
 power_kw: 304.0
 ecu:
 - Bosch/MED17.9.30
+- BOSCH/MED17.9.30
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:15:34 CEST
+updated: 2026-07-20 16:20:27 CEST
 year: '2015'
 conflicts:
   year:

@@ -4,8 +4,9 @@ engine: Mercedes/250_2200_CDI_Blue
 power_kw: 150.0
 ecu:
 - Delphi/CRD3.x
+- DELPHI/CRD3.x
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:20:30 CEST
+updated: 2026-07-20 16:21:06 CEST
 year: '2011'

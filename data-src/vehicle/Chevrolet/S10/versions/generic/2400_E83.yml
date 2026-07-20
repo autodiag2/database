@@ -3,7 +3,8 @@ engine: Chevrolet/2400
 power_kw: 108.0
 ecu:
 - Delco/E83
+- DELCO/E83
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:19:20 CEST
+updated: 2026-07-20 16:19:53 CEST

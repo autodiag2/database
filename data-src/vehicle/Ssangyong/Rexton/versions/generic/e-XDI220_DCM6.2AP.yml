@@ -4,10 +4,11 @@ engine: Ssangyong/e-XDI220
 power_kw: 131.0
 ecu:
 - Delphi/DCM6.2AP
+- DELPHI/DCM6.2AP
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:17:11 CEST
+updated: 2026-07-20 16:21:59 CEST
 conflicts:
   year:
   - value: '2015'

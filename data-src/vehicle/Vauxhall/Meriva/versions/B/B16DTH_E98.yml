@@ -5,10 +5,11 @@ engine: Vauxhall/B16DTH
 power_kw: 100.0
 ecu:
 - Delco/E98
+- DELCO/E98
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:17:31 CEST
+updated: 2026-07-20 16:22:17 CEST
 conflicts:
   year:
   - value: '2014'

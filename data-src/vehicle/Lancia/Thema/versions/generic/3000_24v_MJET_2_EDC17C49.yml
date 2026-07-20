@@ -4,9 +4,10 @@ engine: Lancia/3000_24v_MJET_2
 power_kw: 140.0
 ecu:
 - Bosch/EDC17C49
+- BOSCH/EDC17C49
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-18 18:15:55 CEST
+updated: 2026-07-20 16:20:48 CEST
 conflicts:
   power_kw:
   - value: 176.0

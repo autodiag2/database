@@ -5,10 +5,11 @@ engine: Mini/N47C20A
 power_kw: 105.0
 ecu:
 - Bosch/EDC17C50
+- BOSCH/EDC17C50
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:16:29 CEST
+updated: 2026-07-20 16:21:22 CEST
 conflicts:
   power_kw:
   - value: 82.0

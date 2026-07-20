@@ -5,10 +5,11 @@ engine: Peugeot/AHV
 power_kw: 100.0
 ecu:
 - Delphi/DCM6.2A
+- DELPHI/DCM6.2A
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:16:42 CEST
+updated: 2026-07-20 16:21:33 CEST
 conflicts:
   power_kw:
   - value: 110.0

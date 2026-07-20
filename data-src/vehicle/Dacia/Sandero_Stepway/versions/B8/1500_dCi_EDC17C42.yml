@@ -5,9 +5,10 @@ engine: Dacia/1500_dCi
 power_kw: 66.0
 ecu:
 - Bosch/EDC17C42
+- BOSCH/EDC17C42
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-18 18:15:10 CEST
+updated: 2026-07-20 16:20:04 CEST
 conflicts:
   year:
   - value: '2013'

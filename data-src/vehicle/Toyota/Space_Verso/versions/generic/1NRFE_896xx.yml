@@ -3,10 +3,11 @@ engine: Toyota/1NRFE
 power_kw: 71.0
 ecu:
 - Denso/896xx
+- DENSO/896xx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:17:24 CEST
+updated: 2026-07-20 16:22:11 CEST
 conflicts:
   power_kw:
   - value: 72.0

@@ -5,10 +5,11 @@ engine: Ford/2200_TDCI
 power_kw: 147.0
 ecu:
 - Bosch/EDC17CP42
+- BOSCH/EDC17CP42
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:15:29 CEST
+updated: 2026-07-20 16:20:23 CEST
 conflicts:
   power_kw:
   - value: 127.0

@@ -5,9 +5,10 @@ engine: Mercedes/OM640DE20LAR
 power_kw: 60.0
 ecu:
 - Bosch/EDC17C43
+- BOSCH/EDC17C43
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-18 18:16:08 CEST
+updated: 2026-07-20 16:20:59 CEST
 conflicts:
   year:
   - value: '2009'

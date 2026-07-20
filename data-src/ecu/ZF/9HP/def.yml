@@ -4,5 +4,9 @@ type: ECM
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:18:08 CEST
+updated: 2026-07-20 16:13:48 CEST
 mcu: infineon/TC1782
+conflicts:
+  type:
+  - value: TCM
+    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

@@ -4,10 +4,11 @@ engine: Land_Rover/2200_TDCI
 power_kw: 90.0
 ecu:
 - Continental/SID208
+- CONTINENTAL/SID208
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:15:56 CEST
+updated: 2026-07-20 16:20:48 CEST
 conflicts:
   year:
   - value: '2011'

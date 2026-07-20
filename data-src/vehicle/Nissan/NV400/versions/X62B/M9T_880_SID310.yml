@@ -5,10 +5,11 @@ engine: Nissan/M9T_880
 power_kw: 81.0
 ecu:
 - Continental/SID310
+- CONTINENTAL/SID310
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:16:32 CEST
+updated: 2026-07-20 16:21:24 CEST
 conflicts:
   power_kw:
   - value: 96.0

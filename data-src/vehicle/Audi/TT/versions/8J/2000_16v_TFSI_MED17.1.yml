@@ -5,10 +5,11 @@ engine: Audi/2000_16v_TFSI
 power_kw: 155.0
 ecu:
 - Bosch/MED17.1
+- BOSCH/MED17.1
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:14:05 CEST
+updated: 2026-07-20 16:19:04 CEST
 conflicts:
   power_kw:
   - value: 153.0

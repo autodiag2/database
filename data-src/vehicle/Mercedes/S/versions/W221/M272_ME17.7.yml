@@ -5,10 +5,11 @@ engine: Mercedes/M272
 power_kw: 200.0
 ecu:
 - Bosch/ME17.7
+- BOSCH/ME17.7
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:16:21 CEST
+updated: 2026-07-20 16:21:13 CEST
 conflicts:
   power_kw:
   - value: 220.0

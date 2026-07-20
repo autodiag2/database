@@ -4,9 +4,10 @@ engine: Suzuki/K14C
 power_kw: 103.0
 ecu:
 - Bosch/MED17.9.63
+- BOSCH/MED17.9.63
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-18 18:17:12 CEST
+updated: 2026-07-20 16:22:01 CEST
 conflicts:
   year:
   - value: '2016'

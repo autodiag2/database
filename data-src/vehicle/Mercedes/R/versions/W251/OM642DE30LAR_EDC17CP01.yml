@@ -5,9 +5,10 @@ engine: Mercedes/OM642DE30LAR
 power_kw: 140.0
 ecu:
 - Bosch/EDC17CP01
+- BOSCH/EDC17CP01
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-18 18:16:20 CEST
+updated: 2026-07-20 16:21:12 CEST
 conflicts:
   year:
   - value: '2009'
