@@ -525,7 +525,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
             field_conflicts.append(conflict)
         return need_add
 
-    def insert_ecu_or_alternative(
+    def insert_ecu(
         self,
         yaml_path,
         data,
@@ -537,38 +537,25 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         if not value:
             return changed, conflict
 
-        current = data.get("ecu")
+        ecus = data.get("ecu")
 
-        if not current:
-            data["ecu"] = value
-            return True, False
+        if not ecus:
+            data["ecu"] = [value]
+            changed = True
+            return changed, conflict
 
-        if current == value:
-            return False, False
+        if type([]) != type(ecus):
+            print("invalid type for ecu")
+            return changed, conflict
 
-        cur_mfr, cur_model = current.split("/", 1)
-        new_mfr, new_model = value.split("/", 1)
+        if value in ecus:
+            return changed, conflict
 
-        if cur_model.lower() == new_model.lower():
-            altecus = data.setdefault("altecus", [])
+        # We do not rise conflict since there is low changes to encounter one
+        ecus.append(value)
+        changed = True
 
-            if (
-                value != current and
-                value not in altecus
-            ):
-                altecus.append(value)
-                changed = True
-
-            return changed, False
-
-        changed |= self.add_conflict(
-            yaml_path,
-            data,
-            "ecu",
-            value
-        )
-
-        return changed, True
+        return changed, conflict
 
     def import_vehicle(
         self,
@@ -713,7 +700,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                 changed |= changed_rv
                 conflict |= conflict_rv
 
-        changed_rv, conflict_rv = self.insert_ecu_or_alternative(
+        changed_rv, conflict_rv = self.insert_ecu(
             variant_file,
             variant,
             ecu_relative_path
