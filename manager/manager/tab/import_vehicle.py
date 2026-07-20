@@ -884,7 +884,7 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
             Ecu_maker = (row.get("Ecu_maker") or "").strip()
             Ecu_model = (row.get("Ecu_model") or "").strip()
-            ECU_type = (row.get("ECU_Type") or "").strip()
+            ECU_type = (row.get("ECU_type") or "").strip()
             MCU = (row.get("MCU") or "").strip()
 
             ecu_relative_path = self.import_ecu(Ecu_maker, Ecu_model, ECU_type, MCU)
