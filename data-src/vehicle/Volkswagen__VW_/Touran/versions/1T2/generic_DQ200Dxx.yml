@@ -1,6 +1,7 @@
 created: 2026-07-17 23:21:52 CEST
 version: 1T2
-ecu: TEMIC/DQ200Dxx
+ecu:
+- TEMIC/DQ200Dxx
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:52 CEST

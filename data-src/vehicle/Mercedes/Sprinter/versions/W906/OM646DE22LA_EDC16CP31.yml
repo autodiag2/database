@@ -2,7 +2,8 @@ created: 2026-07-17 23:16:30 CEST
 version: W906
 engine: Mercedes/OM646DE22LA
 power_kw: 65.0
-ecu: Bosch/EDC16CP31
+ecu:
+- Bosch/EDC16CP31
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
@@ -22,5 +23,3 @@ conflicts:
   - value: 110.0
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 year: '2006'
-altecus:
-- BOSCH/EDC16CP31

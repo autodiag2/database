@@ -2,7 +2,8 @@ created: 2026-07-17 23:08:17 CEST
 year: 2006-2017
 engine: Caterpillar/3800
 power_kw: 78.0
-ecu: Denso/SH72543
+ecu:
+- Denso/SH72543
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

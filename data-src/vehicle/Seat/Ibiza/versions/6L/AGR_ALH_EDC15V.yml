@@ -2,7 +2,8 @@ created: 2026-07-17 23:17:02 CEST
 version: 6L
 engine: Seat/AGR_ALH
 power_kw: 66.0
-ecu: Bosch/EDC15V
+ecu:
+- Bosch/EDC15V
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:17:02 CEST

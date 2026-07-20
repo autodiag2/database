@@ -1,7 +1,8 @@
 created: 2026-07-17 23:19:19 CEST
 year: '2015'
 engine: Chevrolet/3600
-ecu: DELCO/E92
+ecu:
+- DELCO/E92
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:19:19 CEST

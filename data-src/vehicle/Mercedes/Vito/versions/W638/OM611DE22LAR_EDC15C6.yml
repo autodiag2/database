@@ -3,7 +3,8 @@ year: '1999'
 version: W638
 engine: Mercedes/OM611DE22LAR
 power_kw: 60.0
-ecu: BOSCH/EDC15C6
+ecu:
+- BOSCH/EDC15C6
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:16:25 CEST

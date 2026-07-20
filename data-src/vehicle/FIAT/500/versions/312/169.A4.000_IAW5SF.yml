@@ -2,7 +2,8 @@ created: 2026-07-17 23:08:25 CEST
 version: '312'
 engine: FIAT/169.A4.000
 power_kw: 51.0
-ecu: MARELLI/IAW5SF
+ecu:
+- MARELLI/IAW5SF
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

@@ -2,7 +2,8 @@ created: 2026-07-17 23:09:44 CEST
 year: 2008-2019
 version: 5N2
 engine: Volkswagen/7_Speed_Wet_Clut
-ecu: Continental/DQ500
+ecu:
+- Continental/DQ500
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:09:44 CEST

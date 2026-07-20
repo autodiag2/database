@@ -2,7 +2,8 @@ created: 2026-07-17 23:19:20 CEST
 year: '2013'
 version: V300
 engine: Chevrolet/2500
-ecu: DELCO/E39
+ecu:
+- DELCO/E39
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:19:20 CEST

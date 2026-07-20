@@ -3,7 +3,8 @@ year: 2007-2018
 version: III
 engine: Renault/B16SHT
 power_kw: 85.0
-ecu: Continental/EMS3125
+ecu:
+- Continental/EMS3125
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:09:17 CEST

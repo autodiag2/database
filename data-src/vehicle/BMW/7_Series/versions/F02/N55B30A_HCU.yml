@@ -3,7 +3,8 @@ year: '2012'
 version: F02
 engine: Bmw/N55B30A
 power_kw: 235.0
-ecu: BOSCH/HCU
+ecu:
+- BOSCH/HCU
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:19:07 CEST

@@ -2,7 +2,8 @@ created: 2026-07-17 23:09:30 CEST
 version: II
 engine: Toyota/1NZFE
 power_kw: 80.0
-ecu: Denso/275036-1152_KLIN
+ecu:
+- Denso/275036-1152_KLIN
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:13:00 CEST

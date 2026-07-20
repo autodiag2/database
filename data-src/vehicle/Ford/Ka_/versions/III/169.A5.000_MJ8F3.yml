@@ -2,7 +2,8 @@ created: 2026-07-17 23:08:32 CEST
 version: III
 engine: Ford/169.A5.000
 power_kw: 55.0
-ecu: MARELLI/MJ8F3
+ecu:
+- MARELLI/MJ8F3
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

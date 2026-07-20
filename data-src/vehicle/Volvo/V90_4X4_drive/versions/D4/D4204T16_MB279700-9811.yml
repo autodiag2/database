@@ -2,7 +2,8 @@ created: 2026-07-17 23:09:47 CEST
 version: D4
 engine: Volvo/D4204T16
 power_kw: 140.0
-ecu: Denso/MB279700-9811
+ecu:
+- Denso/MB279700-9811
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:09:47 CEST

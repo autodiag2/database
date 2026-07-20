@@ -3,7 +3,8 @@ year: 2010-2018
 version: KK
 engine: Jeep/ENS
 power_kw: 130.0
-ecu: Bosch/EDC17CP27
+ecu:
+- Bosch/EDC17CP27
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
@@ -19,5 +20,3 @@ conflicts:
   year:
   - value: '2011'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-altecus:
-- BOSCH/EDC17CP27

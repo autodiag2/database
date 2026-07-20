@@ -3,7 +3,8 @@ year: 2005-2017
 version: '199'
 engine: Fiat/350.A1.000
 power_kw: 57.0
-ecu: MARELLI/9GF
+ecu:
+- MARELLI/9GF
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:15:16 CEST

@@ -3,7 +3,8 @@ year: '2010'
 version: '178'
 engine: Fiat/310.A5.011
 power_kw: 85.0
-ecu: MARELLI/7GF
+ecu:
+- MARELLI/7GF
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:19:37 CEST

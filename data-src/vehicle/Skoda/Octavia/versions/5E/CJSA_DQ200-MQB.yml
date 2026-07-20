@@ -2,7 +2,8 @@ created: 2026-07-17 23:09:23 CEST
 version: 5E
 engine: Skoda/CJSA
 power_kw: 118.0
-ecu: Temic/DQ200-MQB
+ecu:
+- Temic/DQ200-MQB
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
@@ -17,5 +18,3 @@ conflicts:
   - value: 132.0
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 year: '2012'
-altecus:
-- TEMIC/DQ200-MQB

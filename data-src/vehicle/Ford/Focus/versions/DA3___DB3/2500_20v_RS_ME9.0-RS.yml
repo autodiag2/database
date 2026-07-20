@@ -3,7 +3,8 @@ year: '2008'
 version: DA3 / DB3
 engine: Ford/2500_20v_RS
 power_kw: 224.0
-ecu: BOSCH/ME9.0-RS
+ecu:
+- BOSCH/ME9.0-RS
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:19:44 CEST

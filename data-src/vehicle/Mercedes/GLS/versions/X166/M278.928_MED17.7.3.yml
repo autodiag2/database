@@ -3,7 +3,8 @@ year: 2005-2017
 version: X166
 engine: Mercedes/M278.928
 power_kw: 335.0
-ecu: Bosch/MED17.7.3
+ecu:
+- Bosch/MED17.7.3
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:08:58 CEST

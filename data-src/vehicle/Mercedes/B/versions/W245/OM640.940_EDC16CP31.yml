@@ -2,7 +2,8 @@ created: 2026-07-17 23:16:20 CEST
 version: W245
 engine: Mercedes/OM640.940
 power_kw: 80.0
-ecu: Bosch/EDC16CP31
+ecu:
+- Bosch/EDC16CP31
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:16:20 CEST

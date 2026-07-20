@@ -3,7 +3,8 @@ year: 2006-2018
 version: T32
 engine: Nissan/R9MD4
 power_kw: 120.0
-ecu: Continental/SID310
+ecu:
+- Continental/SID310
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

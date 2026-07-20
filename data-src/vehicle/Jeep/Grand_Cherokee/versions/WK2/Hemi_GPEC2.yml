@@ -3,7 +3,8 @@ year: '2011'
 version: WK2
 engine: Jeep/Hemi
 power_kw: 268.0
-ecu: CONTINENTAL/GPEC2
+ecu:
+- CONTINENTAL/GPEC2
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:15:49 CEST

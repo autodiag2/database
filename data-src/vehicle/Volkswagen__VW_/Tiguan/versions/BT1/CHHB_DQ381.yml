@@ -3,7 +3,8 @@ year: '2017'
 version: BT1
 engine: Volkswagen__VW_/CHHB
 power_kw: 162.0
-ecu: BOSCH/DQ381
+ecu:
+- BOSCH/DQ381
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:51 CEST

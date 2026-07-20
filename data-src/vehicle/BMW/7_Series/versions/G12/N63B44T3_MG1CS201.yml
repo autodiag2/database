@@ -2,7 +2,8 @@ created: 2026-07-17 23:15:21 CEST
 version: G12
 engine: BMW/N63B44T3
 power_kw: 340.0
-ecu: Bosch/MG1CS201
+ecu:
+- Bosch/MG1CS201
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:15:21 CEST

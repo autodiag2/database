@@ -3,7 +3,8 @@ year: '2002'
 version: U5
 engine: Peugeot/RHV__DW10UTD_
 power_kw: 62.0
-ecu: BOSCH/EDC15C2
+ecu:
+- BOSCH/EDC15C2
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:16:43 CEST

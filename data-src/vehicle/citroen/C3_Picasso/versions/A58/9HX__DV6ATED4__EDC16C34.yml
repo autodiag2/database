@@ -3,7 +3,8 @@ year: '2009'
 version: A58
 engine: Citroen/9HX__DV6ATED4_
 power_kw: 66.0
-ecu: BOSCH/EDC16C34
+ecu:
+- BOSCH/EDC16C34
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:19:23 CEST

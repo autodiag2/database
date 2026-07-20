@@ -2,7 +2,8 @@ created: 2026-07-17 23:16:01 CEST
 version: GD
 engine: Hyundai/7_Speed_DCT
 power_kw: 99.0
-ecu: Continental/SIM2K-305
+ecu:
+- Continental/SIM2K-305
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:16:01 CEST

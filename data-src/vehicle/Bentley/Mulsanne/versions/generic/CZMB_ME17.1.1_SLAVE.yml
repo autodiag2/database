@@ -2,7 +2,8 @@ created: 2026-07-17 23:18:31 CEST
 year: '2015'
 engine: Bentley/CZMB
 power_kw: 377.0
-ecu: BOSCH/ME17.1.1_SLAVE
+ecu:
+- BOSCH/ME17.1.1_SLAVE
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:18:31 CEST

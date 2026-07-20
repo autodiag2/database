@@ -2,7 +2,9 @@ created: 2026-07-17 23:15:06 CEST
 version: E93
 engine: Bmw/N54B30A
 power_kw: 236.0
-ecu: CONTINENTAL_SIEME/MSD81
+ecu:
+- CONTINENTAL_SIEME/MSD81
+- CONTINENTAL_SIEMENS/MSD81
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-18 18:14:22 CEST
@@ -16,5 +18,3 @@ conflicts:
   - value: '2010'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 year: '2007'
-altecus:
-- CONTINENTAL_SIEMENS/MSD81

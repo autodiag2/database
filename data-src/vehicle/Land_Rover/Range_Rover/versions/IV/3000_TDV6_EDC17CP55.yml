@@ -3,7 +3,8 @@ year: 2014-2020
 version: IV
 engine: Land_Rover/3000_TDV6
 power_kw: 188.0
-ecu: Bosch/EDC17CP55
+ecu:
+- Bosch/EDC17CP55
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:15:57 CEST
@@ -16,5 +17,3 @@ conflicts:
   year:
   - value: '2015'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-altecus:
-- BOSCH/EDC17CP55

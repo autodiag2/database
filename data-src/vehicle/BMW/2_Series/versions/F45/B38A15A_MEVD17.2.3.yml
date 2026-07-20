@@ -3,7 +3,8 @@ year: '2015'
 version: F45
 engine: Bmw/B38A15A
 power_kw: 75.0
-ecu: BOSCH/MEVD17.2.3
+ecu:
+- BOSCH/MEVD17.2.3
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:14:13 CEST

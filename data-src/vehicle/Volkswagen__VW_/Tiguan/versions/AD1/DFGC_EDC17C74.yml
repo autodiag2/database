@@ -3,7 +3,8 @@ year: '2016'
 version: AD1
 engine: Volkswagen__VW_/DFGC
 power_kw: 85.0
-ecu: BOSCH/EDC17C74
+ecu:
+- BOSCH/EDC17C74
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:51 CEST

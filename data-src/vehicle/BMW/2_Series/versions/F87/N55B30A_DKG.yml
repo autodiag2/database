@@ -3,7 +3,8 @@ year: '2016'
 version: F87
 engine: Bmw/N55B30A
 power_kw: 272.0
-ecu: GETRAG/DKG
+ecu:
+- GETRAG/DKG
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:18:38 CEST

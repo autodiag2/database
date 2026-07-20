@@ -3,7 +3,8 @@ year: '2012'
 version: GH
 engine: Mazda/R2
 power_kw: 95.0
-ecu: DENSO/R2BF
+ecu:
+- DENSO/R2BF
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:20:22 CEST

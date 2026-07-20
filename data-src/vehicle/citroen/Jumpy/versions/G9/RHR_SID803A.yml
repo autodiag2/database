@@ -2,7 +2,8 @@ created: 2026-07-17 23:15:38 CEST
 version: G9
 engine: Citroen/RHR
 power_kw: 103.0
-ecu: Siemens/SID803A
+ecu:
+- Siemens/SID803A
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:15:38 CEST

@@ -1,7 +1,8 @@
 created: 2026-07-17 23:09:37 CEST
 engine: Volkswagen/CEBB
 power_kw: 80.0
-ecu: Bosch/EDC17CP20-CRA
+ecu:
+- Bosch/EDC17CP20-CRA
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:09:37 CEST

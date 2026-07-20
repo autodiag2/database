@@ -3,7 +3,8 @@ year: '2010'
 version: B7
 engine: Volkswagen__VW_/CCZB
 power_kw: 155.0
-ecu: TEMIC/DQ250Fxx
+ecu:
+- TEMIC/DQ250Fxx
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:47 CEST

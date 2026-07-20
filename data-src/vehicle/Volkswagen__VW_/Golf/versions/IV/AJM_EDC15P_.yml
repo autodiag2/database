@@ -3,7 +3,8 @@ year: '1999'
 version: IV
 engine: Volkswagen__VW_/AJM
 power_kw: 85.0
-ecu: BOSCH/EDC15P_
+ecu:
+- BOSCH/EDC15P_
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:41 CEST

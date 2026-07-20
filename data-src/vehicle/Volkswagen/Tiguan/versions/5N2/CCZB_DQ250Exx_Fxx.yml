@@ -2,7 +2,8 @@ created: 2026-07-17 23:09:44 CEST
 version: 5N2
 engine: Volkswagen/CCZB
 power_kw: 155.0
-ecu: Temic/DQ250Exx_Fxx
+ecu:
+- Temic/DQ250Exx_Fxx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

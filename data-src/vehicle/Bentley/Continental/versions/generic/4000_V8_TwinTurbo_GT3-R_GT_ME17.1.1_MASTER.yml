@@ -2,7 +2,8 @@ created: 2026-07-17 23:18:31 CEST
 year: '2014'
 engine: Bentley/4000_V8_TwinTurbo_GT3-R_GT
 power_kw: 427.0
-ecu: BOSCH/ME17.1.1_MASTER
+ecu:
+- BOSCH/ME17.1.1_MASTER
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:18:31 CEST

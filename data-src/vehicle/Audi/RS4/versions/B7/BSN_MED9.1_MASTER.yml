@@ -3,7 +3,8 @@ year: '2005'
 version: B7
 engine: Audi/BSN
 power_kw: 309.0
-ecu: BOSCH/MED9.1_MASTER
+ecu:
+- BOSCH/MED9.1_MASTER
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:18:28 CEST

@@ -3,7 +3,8 @@ year: '2018'
 version: U553
 engine: Ford/3500_V6_Ecoboost_Platinum_Series
 power_kw: 300.0
-ecu: BOSCH/MG1CS015
+ecu:
+- BOSCH/MG1CS015
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:19:42 CEST

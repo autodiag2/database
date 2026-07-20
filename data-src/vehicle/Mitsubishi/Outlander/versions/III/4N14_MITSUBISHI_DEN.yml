@@ -2,7 +2,8 @@ created: 2026-07-17 23:09:04 CEST
 version: III
 engine: Mitsubishi/4N14
 power_kw: 107.0
-ecu: Denso/MITSUBISHI_DEN
+ecu:
+- Denso/MITSUBISHI_DEN
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:09:04 CEST

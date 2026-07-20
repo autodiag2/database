@@ -3,7 +3,8 @@ year: 2004-2011
 version: W169
 engine: Mercedes/OM640DE20LAR
 power_kw: 60.0
-ecu: Bosch/EDC17C43
+ecu:
+- Bosch/EDC17C43
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:16:08 CEST
@@ -11,5 +12,3 @@ conflicts:
   year:
   - value: '2009'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-altecus:
-- BOSCH/EDC17C43

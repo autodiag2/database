@@ -3,7 +3,8 @@ year: '2004'
 version: A6
 engine: Citroen/NFS__TU5JP4S_
 power_kw: 90.0
-ecu: BOSCH/ME7.4.5
+ecu:
+- BOSCH/ME7.4.5
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:19:23 CEST

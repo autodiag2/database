@@ -3,7 +3,8 @@ year: 2008-2017
 version: VI
 engine: Volkswagen/CFF
 power_kw: 104.0
-ecu: Bosch/EDC17C46
+ecu:
+- Bosch/EDC17C46
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:09:39 CEST

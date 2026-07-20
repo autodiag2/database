@@ -3,7 +3,8 @@ year: 2013-2019
 version: III
 engine: Ford/XWMC
 power_kw: 90.0
-ecu: Bosch/EDC17C70
+ecu:
+- Bosch/EDC17C70
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:08:33 CEST

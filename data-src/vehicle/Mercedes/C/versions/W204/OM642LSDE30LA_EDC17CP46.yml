@@ -3,7 +3,8 @@ year: '2012'
 version: W204
 engine: Mercedes/OM642LSDE30LA
 power_kw: 193.0
-ecu: BOSCH/EDC17CP46
+ecu:
+- BOSCH/EDC17CP46
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:20:27 CEST

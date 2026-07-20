@@ -3,7 +3,8 @@ year: '2016'
 version: F22
 engine: Bmw/B48B20A
 power_kw: 135.0
-ecu: ZF/8HP
+ecu:
+- ZF/8HP
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:18:36 CEST

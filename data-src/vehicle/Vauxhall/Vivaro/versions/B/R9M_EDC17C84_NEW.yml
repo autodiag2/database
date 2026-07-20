@@ -3,7 +3,8 @@ year: '2015'
 version: B
 engine: Vauxhall/R9M
 power_kw: 70.0
-ecu: BOSCH/EDC17C84_NEW
+ecu:
+- BOSCH/EDC17C84_NEW
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:17:32 CEST

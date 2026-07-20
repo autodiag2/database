@@ -3,7 +3,8 @@ year: '2013'
 version: W246
 engine: Mercedes/OM607.951
 power_kw: 80.0
-ecu: GETRAG/VGS2-FDCT
+ecu:
+- GETRAG/VGS2-FDCT
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:16:10 CEST

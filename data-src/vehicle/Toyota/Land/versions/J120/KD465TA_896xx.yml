@@ -2,7 +2,8 @@ created: 2026-07-17 23:17:15 CEST
 version: J120
 engine: Toyota/KD465TA
 power_kw: 62.0
-ecu: Denso/896xx
+ecu:
+- Denso/896xx
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:17:15 CEST

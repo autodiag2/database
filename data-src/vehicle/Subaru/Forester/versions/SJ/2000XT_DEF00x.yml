@@ -3,7 +3,8 @@ year: '2014'
 version: SJ
 engine: Subaru/2000XT
 power_kw: 206.0
-ecu: HITACHI/DEF00x
+ecu:
+- HITACHI/DEF00x
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:17:11 CEST

@@ -3,7 +3,8 @@ year: '2013'
 version: J11E
 engine: Nissan/K9K
 power_kw: 81.0
-ecu: CONTINENTAL/SID307
+ecu:
+- CONTINENTAL/SID307
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:20:48 CEST

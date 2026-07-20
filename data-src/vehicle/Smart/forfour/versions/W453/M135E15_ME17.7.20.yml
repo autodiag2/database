@@ -3,7 +3,8 @@ year: '2014'
 version: W453
 engine: Smart/M135E15
 power_kw: 80.0
-ecu: Bosch/ME17.7.20
+ecu:
+- Bosch/ME17.7.20
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

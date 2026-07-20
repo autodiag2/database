@@ -3,7 +3,8 @@ year: '2015'
 version: F23
 engine: Bmw/B47D20A
 power_kw: 110.0
-ecu: ZF/8HP
+ecu:
+- ZF/8HP
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:14:12 CEST

@@ -3,7 +3,8 @@ year: '2011'
 version: I
 engine: Volkswagen__VW_/CHYB
 power_kw: 55.0
-ecu: BOSCH/ME17.5.20
+ecu:
+- BOSCH/ME17.5.20
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:52 CEST

@@ -2,7 +2,8 @@ created: 2026-07-17 23:07:54 CEST
 version: 8V
 engine: Audi/CJXB
 power_kw: 206.0
-ecu: Temic/DQ250-MQB
+ecu:
+- Temic/DQ250-MQB
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

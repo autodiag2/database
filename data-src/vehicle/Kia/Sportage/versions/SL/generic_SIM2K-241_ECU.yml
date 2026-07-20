@@ -1,7 +1,8 @@
 created: 2026-07-17 23:20:10 CEST
 year: '2011'
 version: SL
-ecu: CONTINENTAL/SIM2K-241_ECU
+ecu:
+- CONTINENTAL/SIM2K-241_ECU
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:20:10 CEST

@@ -2,7 +2,8 @@ created: 2026-07-17 23:09:27 CEST
 version: III
 engine: Toyota/2ADFHV
 power_kw: 110.0
-ecu: Denso/275922-022_
+ecu:
+- Denso/275922-022_
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

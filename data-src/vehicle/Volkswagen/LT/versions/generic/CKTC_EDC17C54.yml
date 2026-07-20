@@ -2,7 +2,8 @@ created: 2026-07-17 23:09:40 CEST
 year: 2008-2016
 engine: Volkswagen/CKTC
 power_kw: 100.0
-ecu: Bosch/EDC17C54
+ecu:
+- Bosch/EDC17C54
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

@@ -2,7 +2,8 @@ created: 2026-07-17 23:17:31 CEST
 version: B6
 engine: Volkswagen/AZV
 power_kw: 100.0
-ecu: Bosch/EDC16U1
+ecu:
+- Bosch/EDC16U1
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:17:31 CEST

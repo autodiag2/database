@@ -2,12 +2,11 @@ created: 2026-07-17 23:08:59 CEST
 version: W906
 engine: Mercedes/213_2200_CDI
 power_kw: 95.0
-ecu: Delphi/CRD3.x
+ecu:
+- Delphi/CRD3.x
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:20:37 CEST
 year: '2013'
-altecus:
-- DELPHI/CRD3.x

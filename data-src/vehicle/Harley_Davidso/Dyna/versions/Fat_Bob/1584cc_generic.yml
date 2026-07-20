@@ -9,3 +9,4 @@ conflicts:
   power_kw:
   - value: 57.0
     evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+ecu: []

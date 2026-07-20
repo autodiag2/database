@@ -3,7 +3,8 @@ year: '2011'
 version: BH / BK
 engine: Hyundai/G4KF
 power_kw: 203.0
-ecu: CONTINENTAL/SIM2K-240
+ecu:
+- CONTINENTAL/SIM2K-240
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:20:00 CEST

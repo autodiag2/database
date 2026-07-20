@@ -3,7 +3,8 @@ year: '2010'
 version: S1
 engine: Volkswagen__VW_/CDCA
 power_kw: 132.0
-ecu: BOSCH/EDC17CP20
+ecu:
+- BOSCH/EDC17CP20
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:17:33 CEST

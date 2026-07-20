@@ -2,7 +2,8 @@ created: 2026-07-17 23:20:12 CEST
 version: LP 560-4
 engine: Lamborghini/5200_V10
 power_kw: 412.0
-ecu: BOSCH/MED9.1_SLAVE
+ecu:
+- BOSCH/MED9.1_SLAVE
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:20:12 CEST

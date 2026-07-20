@@ -3,7 +3,8 @@ year: 2013-2017
 version: FT 350
 engine: Ford/YNR6
 power_kw: 125.0
-ecu: Continental/SID211
+ecu:
+- Continental/SID211
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
@@ -12,5 +13,3 @@ conflicts:
   year:
   - value: '2016'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-altecus:
-- CONTINENTAL/SID211

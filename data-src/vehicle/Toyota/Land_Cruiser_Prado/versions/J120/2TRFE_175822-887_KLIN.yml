@@ -2,7 +2,8 @@ created: 2026-07-17 23:09:30 CEST
 version: J120
 engine: Toyota/2TRFE
 power_kw: 120.0
-ecu: Denso/175822-887_KLIN
+ecu:
+- Denso/175822-887_KLIN
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:13:00 CEST

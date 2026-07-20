@@ -3,7 +3,8 @@ year: 2015-2020
 version: GB
 engine: Hyundai/G3LC
 power_kw: 74.0
-ecu: Kefico/CPEGD2.20.1
+ecu:
+- Kefico/CPEGD2.20.1
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:15:42 CEST
@@ -16,5 +17,3 @@ conflicts:
   year:
   - value: '2015'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-altecus:
-- KEFICO/CPEGD2.20.1

@@ -3,7 +3,8 @@ year: 2011-2018
 version: '199'
 engine: Abarth/1400_Multiair_Turbo_EsseEsse
 power_kw: 132.0
-ecu: MARELLI/8GMF
+ecu:
+- MARELLI/8GMF
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:13:44 CEST

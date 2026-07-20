@@ -2,7 +2,8 @@ created: 2026-07-17 23:08:54 CEST
 version: W204
 engine: Mercedes/OM651DE22LAR
 power_kw: 100.0
-ecu: Delphi/CRD11
+ecu:
+- Delphi/CRD11
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:12:21 CEST

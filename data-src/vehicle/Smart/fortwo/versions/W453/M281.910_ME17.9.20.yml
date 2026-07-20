@@ -3,7 +3,8 @@ year: 2014-2020
 version: W453
 engine: Smart/M281.910
 power_kw: 52.0
-ecu: Bosch/ME17.9.20
+ecu:
+- Bosch/ME17.9.20
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
@@ -19,5 +20,3 @@ conflicts:
   year:
   - value: '2015'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-altecus:
-- BOSCH/ME17.9.20

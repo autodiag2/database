@@ -3,7 +3,8 @@ year: '2015'
 version: III
 engine: Shelby/5000_V8_GT_Super_Snake_Supercharged
 power_kw: 552.0
-ecu: CONTINENTAL/EMS24xx
+ecu:
+- CONTINENTAL/EMS24xx
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:14 CEST

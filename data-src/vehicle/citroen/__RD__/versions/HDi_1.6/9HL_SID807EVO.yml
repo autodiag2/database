@@ -3,7 +3,8 @@ year: 2006-2016
 version: HDi 1.6
 engine: Citroen/9HL
 power_kw: 86.0
-ecu: Continental/SID807EVO
+ecu:
+- Continental/SID807EVO
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:08:23 CEST

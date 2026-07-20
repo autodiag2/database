@@ -3,7 +3,8 @@ year: '1999'
 version: S2
 engine: Peugeot/NFT__TU5_
 power_kw: 72.0
-ecu: BOSCH/M7.4.4
+ecu:
+- BOSCH/M7.4.4
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:20:53 CEST

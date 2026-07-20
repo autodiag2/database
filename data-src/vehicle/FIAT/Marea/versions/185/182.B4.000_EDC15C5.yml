@@ -2,7 +2,8 @@ created: 2026-07-17 23:15:44 CEST
 version: '185'
 engine: FIAT/182.B4.000
 power_kw: 77.0
-ecu: Bosch/EDC15C5
+ecu:
+- Bosch/EDC15C5
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-18 18:04:57 CEST

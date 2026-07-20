@@ -3,7 +3,8 @@ year: 2009-2014
 version: WK
 engine: Jeep/VM44D
 power_kw: 184.0
-ecu: Bosch/EDC17C79
+ecu:
+- Bosch/EDC17C79
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:08:45 CEST

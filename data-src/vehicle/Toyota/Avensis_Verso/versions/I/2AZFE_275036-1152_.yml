@@ -2,7 +2,8 @@ created: 2026-07-17 23:09:27 CEST
 version: I
 engine: Toyota/2AZFE
 power_kw: 115.0
-ecu: Denso/275036-1152_
+ecu:
+- Denso/275036-1152_
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:09:27 CEST

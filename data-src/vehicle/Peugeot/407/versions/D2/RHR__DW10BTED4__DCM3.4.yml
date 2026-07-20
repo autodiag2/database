@@ -3,7 +3,8 @@ year: '2004'
 version: D2
 engine: Peugeot/RHR__DW10BTED4_
 power_kw: 100.0
-ecu: DELPHI/DCM3.4
+ecu:
+- DELPHI/DCM3.4
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:20:55 CEST

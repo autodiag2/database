@@ -3,7 +3,8 @@ year: '2003'
 version: E53
 engine: Bmw/N62B44
 power_kw: 235.0
-ecu: BOSCH/ME9.2_MASTER
+ecu:
+- BOSCH/ME9.2_MASTER
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:19:11 CEST

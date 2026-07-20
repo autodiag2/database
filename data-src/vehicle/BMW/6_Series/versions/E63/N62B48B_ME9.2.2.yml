@@ -2,7 +2,8 @@ created: 2026-07-17 23:15:18 CEST
 version: E63
 engine: BMW/N62B48B
 power_kw: 270.0
-ecu: Bosch/ME9.2.2
+ecu:
+- Bosch/ME9.2.2
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:15:18 CEST

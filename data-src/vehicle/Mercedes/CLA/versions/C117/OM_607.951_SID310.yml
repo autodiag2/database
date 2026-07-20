@@ -3,7 +3,8 @@ year: '2013'
 version: C117
 engine: Mercedes/OM_607.951
 power_kw: 81.0
-ecu: CONTINENTAL/SID310
+ecu:
+- CONTINENTAL/SID310
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:16:13 CEST

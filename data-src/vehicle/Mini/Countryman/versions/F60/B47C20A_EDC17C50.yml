@@ -3,7 +3,8 @@ year: 2002-2016
 version: F60
 engine: Mini/B47C20A
 power_kw: 120.0
-ecu: Bosch/EDC17C50
+ecu:
+- Bosch/EDC17C50
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:16:27 CEST
@@ -14,5 +15,3 @@ conflicts:
   power_kw:
   - value: 140.0
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-altecus:
-- BOSCH/EDC17C50

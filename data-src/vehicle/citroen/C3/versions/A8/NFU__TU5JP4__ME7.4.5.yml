@@ -3,7 +3,8 @@ year: '2005'
 version: A8
 engine: Citroen/NFU__TU5JP4_
 power_kw: 80.0
-ecu: BOSCH/ME7.4.5
+ecu:
+- BOSCH/ME7.4.5
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:15:03 CEST

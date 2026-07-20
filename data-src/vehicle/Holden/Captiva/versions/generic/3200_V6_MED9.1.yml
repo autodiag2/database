@@ -1,7 +1,8 @@
 created: 2026-07-17 23:15:59 CEST
 engine: Holden/3200_V6
 power_kw: 167.0
-ecu: Bosch/MED9.1
+ecu:
+- Bosch/MED9.1
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:15:59 CEST

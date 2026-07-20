@@ -3,7 +3,8 @@ year: '2010'
 version: 2C
 engine: Volkswagen__VW_/CFHC
 power_kw: 81.0
-ecu: BOSCH/EDC17C46
+ecu:
+- BOSCH/EDC17C46
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:39 CEST

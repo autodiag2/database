@@ -3,7 +3,8 @@ year: '2012'
 version: Dyna-6
 engine: Massey_Ferguson/74CWA
 power_kw: 158.0
-ecu: BOSCH/EDC17CV54
+ecu:
+- BOSCH/EDC17CV54
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:20:19 CEST

@@ -2,11 +2,11 @@ created: 2026-07-17 23:15:26 CEST
 version: E71
 engine: Bmw/N63B44A
 power_kw: 300.0
-ecu: CONTINENTAL_SIEME/MSD85
+ecu:
+- CONTINENTAL_SIEME/MSD85
+- CONTINENTAL_SIEMENS/MSD85
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:14:52 CEST
 year: '2008'
-altecus:
-- CONTINENTAL_SIEMENS/MSD85

@@ -3,7 +3,8 @@ year: '2013'
 version: VI
 engine: Volkswagen__VW_/2000_8v
 power_kw: 85.0
-ecu: BOSCH/ME17.5.6
+ecu:
+- BOSCH/ME17.5.6
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:45 CEST

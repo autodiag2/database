@@ -1,7 +1,8 @@
 created: 2026-07-17 23:08:51 CEST
 engine: Massey_Fergus/66CWA
 power_kw: 136.0
-ecu: Bosch/EDC17CV54
+ecu:
+- Bosch/EDC17CV54
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:08:51 CEST

@@ -3,7 +3,8 @@ year: '2006'
 version: D3
 engine: Audi/AUK
 power_kw: 235.0
-ecu: CONTINENTAL/SIMOS-6.2_6.3
+ecu:
+- CONTINENTAL/SIMOS-6.2_6.3
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:18:23 CEST

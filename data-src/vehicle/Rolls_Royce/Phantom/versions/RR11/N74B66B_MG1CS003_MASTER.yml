@@ -3,7 +3,8 @@ year: '2017'
 version: RR11
 engine: Rolls_Royce/N74B66B
 power_kw: 448.0
-ecu: BOSCH/MG1CS003_MASTER
+ecu:
+- BOSCH/MG1CS003_MASTER
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:08 CEST

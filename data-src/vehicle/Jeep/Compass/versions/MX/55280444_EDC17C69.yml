@@ -3,7 +3,8 @@ year: 2010-2020
 version: MX
 engine: Jeep/55280444
 power_kw: 88.0
-ecu: Bosch/EDC17C69
+ecu:
+- Bosch/EDC17C69
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:08:45 CEST

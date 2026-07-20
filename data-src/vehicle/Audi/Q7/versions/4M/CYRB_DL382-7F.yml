@@ -2,15 +2,14 @@ created: 2026-07-17 23:08:02 CEST
 version: 4M
 engine: Audi/CYRB
 power_kw: 185.0
-ecu: Temic/DL382-7F
+ecu:
+- Temic/DL382-7F
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:14:03 CEST
 year: '2015'
-altecus:
-- TEMIC/DL382-7F
 conflicts:
   year:
   - value: '2017'

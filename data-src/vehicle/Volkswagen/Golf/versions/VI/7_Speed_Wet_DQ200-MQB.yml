@@ -1,7 +1,8 @@
 created: 2026-07-17 23:17:27 CEST
 version: VI
 engine: Volkswagen/7_Speed_Wet
-ecu: Temic/DQ200-MQB
+ecu:
+- Temic/DQ200-MQB
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:17:27 CEST

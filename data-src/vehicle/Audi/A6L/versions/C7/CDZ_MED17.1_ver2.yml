@@ -2,7 +2,8 @@ created: 2026-07-17 23:07:59 CEST
 version: C7
 engine: Audi/CDZ
 power_kw: 132.0
-ecu: Bosch/MED17.1_ver2
+ecu:
+- Bosch/MED17.1_ver2
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

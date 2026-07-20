@@ -3,7 +3,8 @@ year: '2007'
 version: E90
 engine: Bmw/N46B20
 power_kw: 105.0
-ecu: BOSCH/MEV17.4.6
+ecu:
+- BOSCH/MEV17.4.6
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:14:15 CEST

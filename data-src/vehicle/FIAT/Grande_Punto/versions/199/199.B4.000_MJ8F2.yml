@@ -2,7 +2,8 @@ created: 2026-07-17 23:08:26 CEST
 version: '199'
 engine: Fiat/199.B4.000
 power_kw: 62.0
-ecu: MARELLI/MJ8F2
+ecu:
+- MARELLI/MJ8F2
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

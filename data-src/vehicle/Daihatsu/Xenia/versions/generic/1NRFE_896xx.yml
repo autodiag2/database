@@ -2,7 +2,8 @@ created: 2026-07-17 23:19:31 CEST
 year: '2008'
 engine: Daihatsu/1NRFE
 power_kw: 71.0
-ecu: DENSO/896xx
+ecu:
+- DENSO/896xx
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:15:10 CEST

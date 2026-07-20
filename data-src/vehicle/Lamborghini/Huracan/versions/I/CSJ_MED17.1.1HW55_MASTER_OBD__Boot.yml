@@ -3,7 +3,8 @@ year: '2014'
 version: I
 engine: Lamborghini/CSJ
 power_kw: 449.0
-ecu: BOSCH/MED17.1.1HW55_MASTER_OBD__Boot
+ecu:
+- BOSCH/MED17.1.1HW55_MASTER_OBD__Boot
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:20:12 CEST

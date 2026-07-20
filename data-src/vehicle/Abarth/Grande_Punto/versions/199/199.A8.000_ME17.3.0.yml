@@ -3,7 +3,8 @@ year: 2008-2018
 version: '199'
 engine: Abarth/199.A8.000
 power_kw: 132.0
-ecu: Bosch/ME17.3.0
+ecu:
+- Bosch/ME17.3.0
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:13:44 CEST
@@ -11,5 +12,3 @@ conflicts:
   year:
   - value: '2009'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-altecus:
-- BOSCH/ME17.3.0

@@ -3,7 +3,8 @@ year: '2011'
 version: W204
 engine: Mercedes/3500_V6_CGI
 power_kw: 225.0
-ecu: BOSCH/MED17.7.1
+ecu:
+- BOSCH/MED17.7.1
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:20:27 CEST

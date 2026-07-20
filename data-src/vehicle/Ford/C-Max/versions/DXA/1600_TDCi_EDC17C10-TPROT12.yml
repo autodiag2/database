@@ -3,7 +3,8 @@ year: '2014'
 version: DXA
 engine: Ford/1600_TDCi
 power_kw: 85.0
-ecu: BOSCH/EDC17C10-TPROT12
+ecu:
+- BOSCH/EDC17C10-TPROT12
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:15:20 CEST

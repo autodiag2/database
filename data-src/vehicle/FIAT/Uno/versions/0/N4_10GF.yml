@@ -2,7 +2,8 @@ created: 2026-07-17 23:08:28 CEST
 version: '0'
 engine: FIAT/N4
 power_kw: 54.0
-ecu: MARELLI/10GF
+ecu:
+- MARELLI/10GF
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:08:28 CEST

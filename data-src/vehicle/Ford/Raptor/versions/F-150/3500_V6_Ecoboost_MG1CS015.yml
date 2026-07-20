@@ -3,7 +3,8 @@ year: '2017'
 version: F-150
 engine: Ford/3500_V6_Ecoboost
 power_kw: 280.0
-ecu: BOSCH/MG1CS015
+ecu:
+- BOSCH/MG1CS015
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:15:29 CEST

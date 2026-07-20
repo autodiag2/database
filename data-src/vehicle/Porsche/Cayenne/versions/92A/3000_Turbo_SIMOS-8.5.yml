@@ -3,7 +3,8 @@ year: '2011'
 version: 92A
 engine: Porsche/3000_Turbo
 power_kw: 200.0
-ecu: CONTINENTAL/SIMOS-8.5
+ecu:
+- CONTINENTAL/SIMOS-8.5
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:16:46 CEST

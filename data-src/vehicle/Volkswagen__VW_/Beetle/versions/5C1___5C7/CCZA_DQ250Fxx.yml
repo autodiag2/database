@@ -3,7 +3,8 @@ year: '2011'
 version: 5C1 / 5C7
 engine: Volkswagen__VW_/CCZA
 power_kw: 147.0
-ecu: TEMIC/DQ250Fxx
+ecu:
+- TEMIC/DQ250Fxx
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:39 CEST

@@ -2,7 +2,8 @@ created: 2026-07-17 23:09:12 CEST
 version: '981'
 engine: Porsche/MA1.23
 power_kw: 243.0
-ecu: Siemens/PDK4000
+ecu:
+- Siemens/PDK4000
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

@@ -2,7 +2,8 @@ created: 2026-07-17 23:08:40 CEST
 version: MD
 engine: Hyundai/G4NB
 power_kw: 110.0
-ecu: Continental/SIM2K-241-TCU
+ecu:
+- Continental/SIM2K-241-TCU
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:08:40 CEST

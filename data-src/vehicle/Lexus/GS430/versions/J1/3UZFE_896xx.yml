@@ -3,7 +3,8 @@ year: '2006'
 version: J1
 engine: Lexus/3UZFE
 power_kw: 206.0
-ecu: DENSO/896xx
+ecu:
+- DENSO/896xx
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:20:15 CEST

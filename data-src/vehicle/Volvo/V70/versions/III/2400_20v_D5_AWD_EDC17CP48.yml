@@ -3,7 +3,8 @@ year: 2006-2012
 version: III
 engine: Volvo/2400_20v_D5_AWD
 power_kw: 133.0
-ecu: Bosch/EDC17CP48
+ecu:
+- Bosch/EDC17CP48
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:17:56 CEST
@@ -30,5 +31,3 @@ conflicts:
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
   - value: '2007'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-altecus:
-- BOSCH/EDC17CP48

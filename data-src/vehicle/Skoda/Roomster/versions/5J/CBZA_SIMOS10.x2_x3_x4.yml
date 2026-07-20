@@ -2,7 +2,8 @@ created: 2026-07-17 23:17:07 CEST
 version: 5J
 engine: Skoda/CBZA
 power_kw: 63.0
-ecu: Continental/SIMOS10.x2_x3_x4
+ecu:
+- Continental/SIMOS10.x2_x3_x4
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:17:07 CEST

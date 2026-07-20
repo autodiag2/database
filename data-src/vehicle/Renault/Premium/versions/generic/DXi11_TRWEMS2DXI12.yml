@@ -1,7 +1,8 @@
 created: 2026-07-17 23:16:57 CEST
 engine: Renault/DXi11
 power_kw: 243.0
-ecu: TRW/TRWEMS2DXI12
+ecu:
+- TRW/TRWEMS2DXI12
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-18 18:06:17 CEST

@@ -1,7 +1,8 @@
 created: 2026-07-17 23:15:40 CEST
 engine: Dodge/Hemi
 power_kw: 286.0
-ecu: Continental/GPEC2
+ecu:
+- Continental/GPEC2
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
@@ -16,5 +17,3 @@ conflicts:
   - value: '2011'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 year: '2013'
-altecus:
-- CONTINENTAL/GPEC2

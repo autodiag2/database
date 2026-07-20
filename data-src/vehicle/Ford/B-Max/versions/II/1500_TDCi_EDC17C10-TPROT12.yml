@@ -3,7 +3,8 @@ year: '2014'
 version: II
 engine: Ford/1500_TDCi
 power_kw: 55.0
-ecu: BOSCH/EDC17C10-TPROT12
+ecu:
+- BOSCH/EDC17C10-TPROT12
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:19:41 CEST

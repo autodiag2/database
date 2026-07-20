@@ -3,7 +3,8 @@ year: 2009-2013
 version: R60
 engine: Mini/1600_Cooper_S
 power_kw: 140.0
-ecu: Bosch/MEVD17.2.7
+ecu:
+- Bosch/MEVD17.2.7
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:16:27 CEST
@@ -11,5 +12,3 @@ conflicts:
   year:
   - value: '2014'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-altecus:
-- BOSCH/MEVD17.2.7

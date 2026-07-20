@@ -2,7 +2,9 @@ created: 2026-07-17 23:15:15 CEST
 version: F10
 engine: Bmw/N52B30B
 power_kw: 190.0
-ecu: CONTINENTAL_SIEME/MSV90
+ecu:
+- CONTINENTAL_SIEME/MSV90
+- CONTINENTAL/MSV90
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
@@ -17,5 +19,3 @@ conflicts:
   - value: '2012'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 year: '2010'
-altecus:
-- CONTINENTAL/MSV90

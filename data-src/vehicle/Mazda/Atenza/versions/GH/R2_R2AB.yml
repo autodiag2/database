@@ -2,7 +2,8 @@ created: 2026-07-17 23:08:52 CEST
 version: GH
 engine: Mazda/R2
 power_kw: 120.0
-ecu: Denso/R2AB
+ecu:
+- Denso/R2AB
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
@@ -17,5 +18,3 @@ conflicts:
   - value: 136.0
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 year: '2009'
-altecus:
-- DENSO/R2AB

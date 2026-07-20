@@ -2,7 +2,9 @@ created: 2026-07-17 23:09:33 CEST
 version: XP150
 engine: Toyota/P5-VPS
 power_kw: 79.0
-ecu: Denso/Pxxx
+ecu:
+- Denso/Pxxx
+- MITSUBISHI/Pxxx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
@@ -29,6 +31,3 @@ conflicts:
   - value: 66.0
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 year: '2015'
-altecus:
-- DENSO/Pxxx
-- MITSUBISHI/Pxxx

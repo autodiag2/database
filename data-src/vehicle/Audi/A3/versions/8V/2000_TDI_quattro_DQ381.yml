@@ -2,7 +2,9 @@ created: 2026-07-17 23:07:54 CEST
 year: 2010-2019
 version: 8V
 engine: Audi/2000_TDI_quattro
-ecu: Temic/DQ381
+ecu:
+- Temic/DQ381
+- BOSCH/DQ381
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:13:50 CEST
@@ -10,5 +12,3 @@ conflicts:
   year:
   - value: '2017'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-altecus:
-- BOSCH/DQ381

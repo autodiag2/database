@@ -3,7 +3,8 @@ year: 2007-2014
 version: 8P
 engine: Audi/CBAB
 power_kw: 103.0
-ecu: Bosch/EDC17CP14
+ecu:
+- Bosch/EDC17CP14
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:13:49 CEST
@@ -11,5 +12,3 @@ conflicts:
   year:
   - value: '2008'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-altecus:
-- BOSCH/EDC17CP14

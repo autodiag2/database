@@ -3,7 +3,8 @@ year: '2011'
 version: V
 engine: Suzuki/M16A
 power_kw: 100.0
-ecu: BOSCH/VME17
+ecu:
+- BOSCH/VME17
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:20 CEST

@@ -3,7 +3,8 @@ year: '2011'
 version: 5N2
 engine: Volkswagen__VW_/CCZB
 power_kw: 155.0
-ecu: BOSCH/MED17.5
+ecu:
+- BOSCH/MED17.5
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:51 CEST

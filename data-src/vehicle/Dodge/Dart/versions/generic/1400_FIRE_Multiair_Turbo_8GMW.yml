@@ -2,7 +2,8 @@ created: 2026-07-17 23:08:24 CEST
 year: '2014'
 engine: Dodge/1400_FIRE_Multiair_Turbo
 power_kw: 119.0
-ecu: MARELLI/8GMW
+ecu:
+- MARELLI/8GMW
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:15:11 CEST

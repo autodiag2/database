@@ -3,7 +3,8 @@ year: '2013'
 version: T5
 engine: Volkswagen__VW_/2000_TSI
 power_kw: 148.0
-ecu: BOSCH/MED17.1.1
+ecu:
+- BOSCH/MED17.1.1
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:46 CEST

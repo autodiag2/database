@@ -3,7 +3,8 @@ year: 2009-2016
 version: S7
 engine: Volkswagen/DDXC
 power_kw: 165.0
-ecu: Bosch/EDC17CP54
+ecu:
+- Bosch/EDC17CP54
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

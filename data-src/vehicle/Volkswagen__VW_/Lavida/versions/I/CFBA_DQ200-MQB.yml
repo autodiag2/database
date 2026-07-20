@@ -3,7 +3,8 @@ year: '2012'
 version: I
 engine: Volkswagen__VW_/CFBA
 power_kw: 96.0
-ecu: TEMIC/DQ200-MQB
+ecu:
+- TEMIC/DQ200-MQB
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:45 CEST

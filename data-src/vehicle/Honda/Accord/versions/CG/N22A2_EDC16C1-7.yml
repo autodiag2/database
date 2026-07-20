@@ -3,7 +3,8 @@ year: '2002'
 version: CG
 engine: Honda/N22A2
 power_kw: 103.0
-ecu: BOSCH/EDC16C1-7
+ecu:
+- BOSCH/EDC16C1-7
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:19:57 CEST

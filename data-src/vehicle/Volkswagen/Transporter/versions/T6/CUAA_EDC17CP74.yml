@@ -3,7 +3,8 @@ year: 2015-2017
 version: T6
 engine: Volkswagen/CUAA
 power_kw: 177.0
-ecu: Bosch/EDC17CP74
+ecu:
+- Bosch/EDC17CP74
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

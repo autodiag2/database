@@ -2,7 +2,8 @@ created: 2026-07-17 23:21:41 CEST
 year: '2016'
 engine: Volkswagen__VW_/CXHA
 power_kw: 110.0
-ecu: DELPHI/DCM6.2V
+ecu:
+- DELPHI/DCM6.2V
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:41 CEST

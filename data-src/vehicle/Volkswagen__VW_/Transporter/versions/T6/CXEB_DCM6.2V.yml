@@ -3,7 +3,8 @@ year: '2015'
 version: T6
 engine: Volkswagen__VW_/CXEB
 power_kw: 150.0
-ecu: DELPHI/DCM6.2V
+ecu:
+- DELPHI/DCM6.2V
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:17:51 CEST

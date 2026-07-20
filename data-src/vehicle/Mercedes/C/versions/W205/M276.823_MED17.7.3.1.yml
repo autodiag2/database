@@ -3,7 +3,8 @@ year: 2013-2019
 version: W205
 engine: Mercedes/M276.823
 power_kw: 245.0
-ecu: Bosch/MED17.7.3.1
+ecu:
+- Bosch/MED17.7.3.1
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:16:12 CEST
@@ -20,5 +21,3 @@ conflicts:
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
   - value: '2015'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-altecus:
-- BOSCH/MED17.7.3.1

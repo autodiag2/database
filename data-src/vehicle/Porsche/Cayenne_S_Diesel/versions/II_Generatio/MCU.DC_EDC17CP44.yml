@@ -3,7 +3,8 @@ year: 2007-2015
 version: II Generatio
 engine: Porsche/MCU.DC
 power_kw: 283.0
-ecu: Bosch/EDC17CP44
+ecu:
+- Bosch/EDC17CP44
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:09:13 CEST

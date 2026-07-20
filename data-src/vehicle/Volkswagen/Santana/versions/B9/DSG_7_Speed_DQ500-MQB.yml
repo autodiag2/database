@@ -1,7 +1,8 @@
 created: 2026-07-17 23:09:43 CEST
 version: B9
 engine: Volkswagen/DSG_7_Speed
-ecu: Continental/DQ500-MQB
+ecu:
+- Continental/DQ500-MQB
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf

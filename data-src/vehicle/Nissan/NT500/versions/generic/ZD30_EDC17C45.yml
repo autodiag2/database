@@ -2,7 +2,8 @@ created: 2026-07-17 23:09:05 CEST
 year: 2004-2016
 engine: Nissan/ZD30
 power_kw: 110.0
-ecu: Bosch/EDC17C45
+ecu:
+- Bosch/EDC17C45
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:09:05 CEST

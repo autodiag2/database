@@ -3,7 +3,8 @@ year: '2016'
 version: S6
 engine: Volkswagen__VW_/DDXA
 power_kw: 120.0
-ecu: BOSCH/EDC17CP54
+ecu:
+- BOSCH/EDC17CP54
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:38 CEST

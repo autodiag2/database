@@ -3,7 +3,8 @@ year: '2003'
 version: R
 engine: Jaguar/AJ30
 power_kw: 177.0
-ecu: DENSO/MB079700
+ecu:
+- DENSO/MB079700
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:20:05 CEST

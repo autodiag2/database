@@ -3,7 +3,8 @@ year: '2010'
 version: T8
 engine: Peugeot/RHE__DW10CTED4_
 power_kw: 110.0
-ecu: DELPHI/DCM3.5
+ecu:
+- DELPHI/DCM3.5
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:20:54 CEST

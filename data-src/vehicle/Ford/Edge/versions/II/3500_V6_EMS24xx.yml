@@ -3,7 +3,8 @@ year: 2011-2015
 version: II
 engine: Ford/3500_V6
 power_kw: 209.0
-ecu: Continental/EMS24xx
+ecu:
+- Continental/EMS24xx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
@@ -15,5 +16,3 @@ conflicts:
   power_kw:
   - value: 210.0
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-altecus:
-- CONTINENTAL/EMS24xx

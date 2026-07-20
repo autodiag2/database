@@ -2,7 +2,8 @@ created: 2026-07-17 23:08:48 CEST
 year: 2006-2014
 engine: Land_Rover/2200_TDCI
 power_kw: 90.0
-ecu: Continental/SID208
+ecu:
+- Continental/SID208
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
@@ -11,5 +12,3 @@ conflicts:
   year:
   - value: '2011'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-altecus:
-- CONTINENTAL/SID208

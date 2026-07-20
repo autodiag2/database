@@ -3,7 +3,8 @@ year: '2005'
 version: D3
 engine: Audi/4200_V8_TDI
 power_kw: 240.0
-ecu: BOSCH/EDC16C4_MASTER
+ecu:
+- BOSCH/EDC16C4_MASTER
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:18:23 CEST

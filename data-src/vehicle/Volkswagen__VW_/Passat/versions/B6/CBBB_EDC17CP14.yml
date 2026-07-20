@@ -3,7 +3,8 @@ year: '2008'
 version: B6
 engine: Volkswagen__VW_/CBBB
 power_kw: 125.0
-ecu: BOSCH/EDC17CP14
+ecu:
+- BOSCH/EDC17CP14
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:47 CEST

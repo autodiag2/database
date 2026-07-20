@@ -2,7 +2,8 @@ created: 2026-07-17 23:19:31 CEST
 year: '2013'
 engine: Daewoo/1500
 power_kw: 77.0
-ecu: DELPHI/MT60
+ecu:
+- DELPHI/MT60
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:19:31 CEST

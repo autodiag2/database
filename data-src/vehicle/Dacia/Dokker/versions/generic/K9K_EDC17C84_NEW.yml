@@ -2,7 +2,8 @@ created: 2026-07-17 23:19:30 CEST
 year: '2017'
 engine: Dacia/K9K
 power_kw: 66.0
-ecu: BOSCH/EDC17C84_NEW
+ecu:
+- BOSCH/EDC17C84_NEW
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:19:30 CEST

@@ -3,7 +3,8 @@ year: 2008-2016
 version: Sport
 engine: Land_Rover/5000_SVR_V8
 power_kw: 405.0
-ecu: Bosch/MED17.8.32
+ecu:
+- Bosch/MED17.8.32
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:15:58 CEST
@@ -11,5 +12,3 @@ conflicts:
   year:
   - value: '2017'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-altecus:
-- BOSCH/MED17.8.32

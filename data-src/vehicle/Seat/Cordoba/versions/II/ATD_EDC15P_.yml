@@ -2,11 +2,10 @@ created: 2026-07-17 23:17:01 CEST
 version: II
 engine: Seat/ATD
 power_kw: 74.0
-ecu: Bosch/EDC15P_
+ecu:
+- Bosch/EDC15P_
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:11 CEST
 year: '2002'
-altecus:
-- BOSCH/EDC15P_

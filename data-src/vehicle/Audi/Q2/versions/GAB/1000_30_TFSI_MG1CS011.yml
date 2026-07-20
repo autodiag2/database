@@ -2,7 +2,8 @@ created: 2026-07-17 23:14:50 CEST
 version: GAB
 engine: Audi/1000_30_TFSI
 power_kw: 85.0
-ecu: Bosch/MG1CS011
+ecu:
+- Bosch/MG1CS011
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:14:50 CEST

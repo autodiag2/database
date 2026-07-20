@@ -3,7 +3,8 @@ year: '2012'
 version: I
 engine: Citroen/6HZ
 power_kw: 110.0
-ecu: DENSO/RA6
+ecu:
+- DENSO/RA6
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:19:25 CEST

@@ -3,7 +3,8 @@ year: 2012-2017
 version: M156
 engine: Maserati/3000_BiTurbo
 power_kw: 243.0
-ecu: Bosch/MED17.3.4
+ecu:
+- Bosch/MED17.3.4
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:16:02 CEST
@@ -20,5 +21,3 @@ conflicts:
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
   - value: '2015'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-altecus:
-- BOSCH/MED17.3.4

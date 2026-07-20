@@ -3,7 +3,8 @@ year: '2008'
 version: I3
 engine: Peugeot/4HN__DW12MTED4_
 power_kw: 115.0
-ecu: GETRAG/SPS6
+ecu:
+- GETRAG/SPS6
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:20:53 CEST

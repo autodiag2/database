@@ -2,7 +2,8 @@ created: 2026-07-17 23:09:04 CEST
 version: '35.14'
 engine: Nissan/YD2S
 power_kw: 90.0
-ecu: Denso/DENSO_D4B
+ecu:
+- Denso/DENSO_D4B
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:09:04 CEST

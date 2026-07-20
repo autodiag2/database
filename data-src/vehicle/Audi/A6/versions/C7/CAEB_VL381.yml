@@ -3,7 +3,8 @@ year: '2011'
 version: C7
 engine: Audi/CAEB
 power_kw: 155.0
-ecu: TEMIC/VL381
+ecu:
+- TEMIC/VL381
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:13:56 CEST

@@ -3,7 +3,8 @@ year: '2015'
 version: F33
 engine: Bmw/B58B30A
 power_kw: 240.0
-ecu: BOSCH/MG1CS002
+ecu:
+- BOSCH/MG1CS002
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:14:31 CEST
