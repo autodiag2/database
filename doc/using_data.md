@@ -1,6 +1,7 @@
 # Optimized SQLite database
 ![UML of the database](/doc/ad_database_sqlite_uml.png)  
 Sources, severity, and any information that a scantool needs.
+See schema [here](https://github.com/autodiag2/database/blob/main/manager/manager/converter_to_sqlite.py#L53-L343)
 
 ### Standard OBD DTCs (saej2012.2002)
 ```sql
