@@ -3,6 +3,13 @@ year: 2011-2012
 version: V36
 engine: Infiniti/VQ25HR
 power_kw: 163.0
+ecu:
+- Nissan/1VW3C
 evidence:
 - First-hand OBD-II scan of a 2011 Infiniti G25
-updated: 2026-08-14 13:10:00 CDT
+updated: 2026-08-14 13:30:00 CDT
+# The ECM identifies itself through Nissan's Consult block (21 83), not UDS
+# 22 F18A/F187 — this generation rejects those with 7F 22 80, and refuses the
+# extended session with 7F 10 12. 1VW3C is the 5-character spare-part number
+# read from the block; the full Nissan number carries a family prefix that the
+# module does not report, so it is not written here.
