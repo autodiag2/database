@@ -1,3 +1,7 @@
+[![Database: ODbL-1.0](https://img.shields.io/badge/database-ODbL--1.0-blue)](https://opendatacommons.org/licenses/odbl/1-0/)
+[![Database Contents: DbCL-1.0](https://img.shields.io/badge/database%20contents-DbCL--1.0-blue)](https://opendatacommons.org/licenses/dbcl/1-0/)
+[![Source Code: GPL-3.0-or-later](https://img.shields.io/badge/source%20code-GPL--3.0--or--later-blue)](https://www.gnu.org/licenses/gpl-3.0.html)
+
 The collaborative database of information relative to automotive.  
 The goal is to provide an easily updatable database for scantools and  
 fill the gap that makes open source solution weak.  
