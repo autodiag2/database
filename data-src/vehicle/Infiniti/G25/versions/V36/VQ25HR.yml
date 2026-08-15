@@ -1,10 +1,10 @@
 created: 2026-08-14 13:10:00 CDT
 year: 2011-2012
 version: V36
-engine: Infiniti/VQ25HR
-power_kw: 163.0
 config:
   - config1:
+      engine: Infiniti/VQ25HR
+      power_kw: 163.0
       ecu:
         ECM: 
           model: Nissan/1VW3C

@@ -8,10 +8,28 @@ import datetime
 from tqdm import tqdm
 from manager.vpic_sqlite_loader import VpicToSqliteLoader
 from manager.tab.import_vehicle import slug
-import time
-
 import datetime
+import re
 import time
+from zoneinfo import ZoneInfo
+
+TIMEZONE_ALIASES = {
+    "CET": "Europe/Paris",
+    "CEST": "Europe/Paris",
+    "GMT": "Etc/GMT",
+    "UTC": "UTC",
+    "EST": "America/New_York",
+    "EDT": "America/New_York",
+    "CST": "America/Chicago",
+    "CDT": "America/Chicago",
+    "MST": "America/Denver",
+    "MDT": "America/Denver",
+    "PST": "America/Los_Angeles",
+    "PDT": "America/Los_Angeles",
+    "AKST": "America/Anchorage",
+    "AKDT": "America/Anchorage",
+    "HST": "Pacific/Honolulu",
+}
 
 def timestamp(ts=None):
     if ts is None:
@@ -21,17 +39,28 @@ def timestamp(ts=None):
         return ts
 
     if isinstance(ts, str):
-        # Already a Unix timestamp
         if ts.isdigit():
             return int(ts)
 
-        # Legacy " CEST"/" CET"
-        if ts.endswith(" CEST"):
-            ts = ts[:-5] + "+02:00"
-        elif ts.endswith(" CET"):
-            ts = ts[:-4] + "+01:00"
+        match = re.fullmatch(
+            r"(.*)\s+([A-Za-z]{2,5})",
+            ts.strip(),
+        )
 
-        return int(datetime.datetime.fromisoformat(ts).timestamp() * 1000)
+        if match:
+            value, timezone = match.groups()
+            timezone = timezone.upper()
+
+            zone = TIMEZONE_ALIASES.get(timezone)
+
+            if zone:
+                dt = datetime.datetime.fromisoformat(value)
+                dt = dt.replace(tzinfo=ZoneInfo(zone))
+                return int(dt.timestamp() * 1000)
+
+        return int(
+            datetime.datetime.fromisoformat(ts).timestamp() * 1000
+        )
 
     raise TypeError(f"unsupported timestamp: {ts!r}")
 
@@ -120,27 +149,40 @@ class ConverterToSqlite():
                 vehicle_id integer not null,
                 version text,
                 year text,
-                engine_id integer,
-                power_kw real,
                 created integer,
                 updated integer,
-                foreign key(vehicle_id) references ad_vehicle(id),
-                foreign key(engine_id) references ad_engine(id)
+                foreign key(vehicle_id) references ad_vehicle(id)
             );
 
             create unique index if not exists ad_vehicle_version_uq
-            on ad_vehicle_version(vehicle_id, version, engine_id);
-                           
-            create table if not exists ad_vehicle_version_ecu(
+            on ad_vehicle_version(vehicle_id, version);
+
+            create table if not exists ad_vehicle_version_config(
                 id integer primary key autoincrement,
                 vehicle_version_id integer not null,
-                ecu_id integer not null,
+                engine_id integer,
+                power_kw real,
                 foreign key(vehicle_version_id) references ad_vehicle_version(id),
+                foreign key(engine_id) references ad_engine(id)
+            );
+
+            create unique index if not exists ad_vehicle_version_config_uq
+            on ad_vehicle_version_config(
+                vehicle_version_id,
+                engine_id,
+                power_kw
+            );
+
+            create table if not exists ad_vehicle_version_config_ecu(
+                id integer primary key autoincrement,
+                config_id integer not null,
+                ecu_id integer not null,
+                foreign key(config_id) references ad_vehicle_version_config(id),
                 foreign key(ecu_id) references ad_ecu(id)
             );
 
-            create unique index if not exists ad_vehicle_version_ecu_uq
-            on ad_vehicle_version_ecu(vehicle_version_id, ecu_id);
+            create unique index if not exists ad_vehicle_version_config_ecu_uq
+            on ad_vehicle_version_config_ecu(config_id, ecu_id);
 
             create table if not exists ad_evidence(
                 id integer primary key autoincrement,
@@ -152,6 +194,14 @@ class ConverterToSqlite():
                 evidence_id integer not null,
                 primary key(manufacturer_id, evidence_id),
                 foreign key(manufacturer_id) references ad_manufacturer(id),
+                foreign key(evidence_id) references ad_evidence(id)
+            );
+
+            create table if not exists ad_vehicle_version_config_evidence(
+                config_id integer not null,
+                evidence_id integer not null,
+                primary key(config_id, evidence_id),
+                foreign key(config_id) references ad_vehicle_version_config(id),
                 foreign key(evidence_id) references ad_evidence(id)
             );
 
@@ -358,8 +408,10 @@ class ConverterToSqlite():
             delete from ad_dtc_severity_link;
 
             delete from ad_dtc_evidence;
-            delete from ad_vehicle_version_ecu_evidence;
-            delete from ad_vehicle_version_ecu;
+
+            delete from ad_vehicle_version_config_evidence;
+            delete from ad_vehicle_version_config_ecu;
+            delete from ad_vehicle_version_config;
 
             delete from ad_manufacturer_evidence;
             delete from ad_vehicle_evidence;
@@ -974,13 +1026,19 @@ class ConverterToSqlite():
                 vehicle_id=vehicle_id,
                 version=entry["version"],
                 year=entry["year"],
-                engine_ref=entry["engine_ref"],
-                power_kw=entry["power_kw"],
-                ecus_id=entry["ecus_id"],
                 created=timestamp(entry["version_created"]),
                 updated=timestamp(entry["version_updated"]),
                 evidence=entry["version_evidence"],
             )
+
+            for config in entry["configs"]:
+                self._get_or_insert_vehicle_version_config(
+                    conn,
+                    vehicle_version_id=version_id,
+                    engine_ref=config["engine_ref"],
+                    power_kw=config["power_kw"],
+                    ecus_id=config["ecus_id"],
+                )
 
             for field, values in entry["version_conflicts"].items():
 
@@ -1037,7 +1095,6 @@ class ConverterToSqlite():
             p for p in vehicle_root.iterdir()
             if p.is_dir()
         ):
-
             manufacturer_def = self._read_yaml(manufacturer_dir / "def.yml")
             manufacturer = (
                 manufacturer_def.get("manufacturer")
@@ -1048,7 +1105,6 @@ class ConverterToSqlite():
                 p for p in manufacturer_dir.iterdir()
                 if p.is_dir()
             ):
-
                 vehicle_def = vehicle_dir / "def.yml"
                 if not vehicle_def.exists():
                     continue
@@ -1063,56 +1119,91 @@ class ConverterToSqlite():
                     p for p in versions_dir.iterdir()
                     if p.is_dir()
                 ):
-
                     for version_file in sorted(version_dir.glob("*.yml")):
-
                         version = self._read_yaml(version_file)
 
-                        engine_ref = None
-                        engine = version.get("engine")
-                        if engine:
-                            engine_manufacturer, engine_code = self._engine_get_m_code(engine)
-                            engine_ref = self._get_or_insert_engine(
-                                conn,
-                                engine_manufacturer,
-                                engine_code
-                            )
+                        configs = []
 
-                        ecus_id = []
-                        ecus = version.get("ecu")
-                        if ecus:
-                            for ecu in ecus:
-                                ecu_manufacturer, ecu_model = self._ecu_get_m_model(ecu)
-                                ecu_id = self._get_or_insert_ecu(
-                                    conn,
-                                    ecu_manufacturer,
-                                    ecu_model
-                                )
-                                assert ecu_id
-                                ecus_id.append(ecu_id)
+                        for config_entry in self._ensure_list(version.get("config")):
+                            if not isinstance(config_entry, dict):
+                                continue
+
+                            for config_name, config in config_entry.items():
+                                if not isinstance(config, dict):
+                                    continue
+
+                                engine_ref = None
+                                engine = config.get("engine")
+
+                                if engine:
+                                    engine_manufacturer, engine_code = \
+                                        self._engine_get_m_code(engine)
+
+                                    engine_ref = self._get_or_insert_engine(
+                                        conn,
+                                        engine_manufacturer,
+                                        engine_code,
+                                    )
+
+                                ecus_id = []
+
+                                ecu = config.get("ecu", {})
+
+                                if isinstance(ecu, dict):
+                                    for ecu_type, ecu_data in ecu.items():
+                                        if not isinstance(ecu_data, dict):
+                                            continue
+
+                                        ecu_ref = ecu_data.get("model")
+                                        if not ecu_ref:
+                                            continue
+
+                                        ecu_manufacturer, ecu_model = \
+                                            self._ecu_get_m_model(ecu_ref)
+
+                                        ecu_id = self._get_or_insert_ecu(
+                                            conn,
+                                            ecu_manufacturer,
+                                            ecu_model,
+                                        )
+
+                                        if ecu_id:
+                                            ecus_id.append(ecu_id)
+
+                                configs.append({
+                                    "name": config_name,
+                                    "engine_ref": engine_ref,
+                                    "power_kw": config.get("power_kw"),
+                                    "ecus_id": ecus_id,
+                                })
 
                         yield {
-                            # vehicle
                             "manufacturer": manufacturer,
                             "model": vehicle.get("model"),
                             "vehicle_type": vehicle.get("type", "car"),
-                            "vehicle_created": timestamp(vehicle.get("created")),
-                            "vehicle_updated": timestamp(vehicle.get("updated")),
+                            "vehicle_created": timestamp(
+                                vehicle.get("created")
+                            ),
+                            "vehicle_updated": timestamp(
+                                vehicle.get("updated")
+                            ),
                             "vehicle_evidence": vehicle.get("evidence", []),
-
-                            # version
                             "path": version_file,
                             "version": version.get("version"),
                             "year": version.get("year"),
-                            "engine_ref": engine_ref,
-                            "power_kw": version.get("power_kw"),
-                            "ecus_id": ecus_id,
-                            "version_created": timestamp(version.get("created")),
-                            "version_updated": timestamp(version.get("updated")),
+                            "configs": configs,
+                            "version_created": timestamp(
+                                version.get("created")
+                            ),
+                            "version_updated": timestamp(
+                                version.get("updated")
+                            ),
                             "version_evidence": version.get("evidence", []),
-                            "version_conflicts": version.get("conflicts", {}),
+                            "version_conflicts": version.get(
+                                "conflicts", {}
+                            ),
                         }
-    
+                        
     def _get_or_insert_vehicle(
         self,
         conn,
@@ -1206,31 +1297,20 @@ class ConverterToSqlite():
         vehicle_id,
         version=None,
         year=None,
-        engine_ref=None,
-        power_kw=None,
-        ecus_id=[],
         created=None,
         updated=None,
-        evidence=[],
+        evidence=None,
     ):
-        if evidence:
-            if isinstance(evidence, str):
-                evidence = [evidence]
-
-            assert isinstance(evidence, list)
-
         cur = conn.cursor()
 
         cur.execute("""
             select id
             from ad_vehicle_version
             where vehicle_id=?
-            and ifnull(version,'')=ifnull(?, '')
-            and ifnull(engine_id,0)=ifnull(?,0)
+            and ifnull(version, '')=ifnull(?, '')
         """, (
             vehicle_id,
             version,
-            engine_ref,
         ))
 
         row = cur.fetchone()
@@ -1241,13 +1321,11 @@ class ConverterToSqlite():
             cur.execute("""
                 update ad_vehicle_version
                 set year=coalesce(year, ?),
-                    power_kw=coalesce(power_kw, ?),
                     created=coalesce(created, ?),
                     updated=coalesce(updated, ?)
                 where id=?
             """, (
                 year,
-                power_kw,
                 created,
                 updated,
                 version_id,
@@ -1258,71 +1336,96 @@ class ConverterToSqlite():
                     vehicle_id,
                     version,
                     year,
-                    engine_id,
-                    power_kw,
                     created,
                     updated
                 )
-                values(?,?,?,?,?,?,?)
+                values(?,?,?,?,?)
             """, (
                 vehicle_id,
                 version,
                 year,
-                engine_ref,
-                power_kw,
                 created,
                 updated,
             ))
 
             version_id = cur.lastrowid
 
+        self._link_evidence(
+            conn,
+            "ad_vehicle_version_evidence",
+            "vehicle_version_id",
+            version_id,
+            evidence,
+        )
+
+        return version_id
+
+    def _get_or_insert_vehicle_version_config(
+        self,
+        conn,
+        vehicle_version_id,
+        engine_ref=None,
+        power_kw=None,
+        ecus_id=None,
+        evidence=None,
+    ):
+        ecus_id = ecus_id or []
+
+        cur = conn.cursor()
+
+        cur.execute("""
+            select id
+            from ad_vehicle_version_config
+            where vehicle_version_id=?
+            and ifnull(engine_id, 0)=ifnull(?, 0)
+            and ifnull(power_kw, 0)=ifnull(?, 0)
+        """, (
+            vehicle_version_id,
+            engine_ref,
+            power_kw,
+        ))
+
+        row = cur.fetchone()
+
+        if row:
+            config_id = row[0]
+        else:
+            cur.execute("""
+                insert into ad_vehicle_version_config(
+                    vehicle_version_id,
+                    engine_id,
+                    power_kw
+                )
+                values(?,?,?)
+            """, (
+                vehicle_version_id,
+                engine_ref,
+                power_kw,
+            ))
+
+            config_id = cur.lastrowid
+
         for ecu_id in ecus_id:
             cur.execute("""
-                select id
-                from ad_vehicle_version_ecu
-                where vehicle_version_id=?
-                and ecu_id=?
+                insert or ignore into ad_vehicle_version_config_ecu(
+                    config_id,
+                    ecu_id
+                )
+                values(?,?)
             """, (
-                version_id,
+                config_id,
                 ecu_id,
             ))
 
-            version_ecu_row = cur.fetchone()
-            if version_ecu_row is None:
-                cur.execute("""
-                    insert into ad_vehicle_version_ecu(
-                        vehicle_version_id,
-                        ecu_id
-                    )
-                    values(?,?)
-                """, (
-                    version_id,
-                    ecu_id,
-                ))
-                version_ecu_id = cur.lastrowid
-            else:
-                version_ecu_id = version_ecu_row[0]
+        self._link_evidence(
+            conn,
+            "ad_vehicle_version_config_evidence",
+            "config_id",
+            config_id,
+            evidence,
+        )
 
-            for ev in evidence:
-                self._link_evidence(
-                    conn,
-                    "ad_vehicle_version_ecu_evidence",
-                    "vehicle_version_ecu_id",
-                    version_ecu_id,
-                    ev,
-                )
-
-        if evidence:
-            for ev in evidence:
-                self._link_evidence(
-                    conn,
-                    "ad_vehicle_version_evidence",
-                    "vehicle_version_id",
-                    version_id,
-                    ev,
-                )
-
-        return version_id
+        return config_id
 
     def _json_dump(self, value, default):
         if value is None:
