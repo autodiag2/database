@@ -435,7 +435,11 @@ class ConverterToSqlite():
             delete from ad_dtc_evidence;
 
             delete from ad_vehicle_version_config_evidence;
+
+            delete from ad_vehicle_version_config_ecu_protocol_param;
+            delete from ad_vehicle_version_config_ecu_protocol;
             delete from ad_vehicle_version_config_ecu;
+
             delete from ad_vehicle_version_config;
 
             delete from ad_manufacturer_evidence;

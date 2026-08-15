@@ -38,6 +38,15 @@ def normalize_text(value):
         .lower()
     )
 
+def get_case_insensitive(data, key):
+    key = normalize_text(key)
+
+    for current_key, value in data.items():
+        if normalize_text(current_key) == key:
+            return value
+
+    return None
+
 # Type,Brand,Model,Year,Version,Engine,Engine_type,Fuel,Power_PS,Power,Ecu_maker,MCU_Type,MCU,Ecu_model,Connection_mode
 # Car,Abarth,124 Spider,2008-2017,348,1400 MultiAir,55253268,Petrol,170,0,MARELLI,ECM,SPC564A80,8GMK,"BOOT, OBD"
 class ImportVehicleTab(ImportTab):
@@ -563,13 +572,15 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         Version,
         Power_KW,
         ecu_relative_path,
-        engine_relative_path
+        engine_relative_path,
+        ecu_type="ECM",
     ):
         Type = (Type or "").strip()
         Brand = (Brand or "").strip()
         Model = (Model or "").strip()
         Year = (Year or "").strip()
         Version = (Version or "").strip()
+        ecu_type = (ecu_type or "ECM").strip().upper()
 
         if not Brand or not Model:
             return None
@@ -651,20 +662,19 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         versions_dir.mkdir(exist_ok=True)
 
         version_name = slug(Version) if Version else "generic"
-
         version_dir = versions_dir / version_name
         version_dir.mkdir(exist_ok=True)
 
         engine_slug = (
             slug(engine_relative_path.split("/")[-1])
-            if engine_relative_path else
-            "generic"
+            if engine_relative_path
+            else "generic"
         )
 
         ecu_slug = (
             slug(ecu_relative_path.split("/")[-1])
-            if ecu_relative_path else
-            "generic"
+            if ecu_relative_path
+            else "generic"
         )
 
         variant_file = version_dir / f"{engine_slug}_{ecu_slug}.yml"
@@ -684,8 +694,6 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
         for field, value in (
             ("year", Year),
             ("version", Version),
-            ("engine", engine_relative_path),
-            ("power_kw", float(Power_KW) if Power_KW else None),
         ):
             if value not in (None, ""):
                 changed_rv, conflict_rv = self.insert_or_conflict(
@@ -697,18 +705,129 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
                 changed |= changed_rv
                 conflict |= conflict_rv
 
-        changed_rv, conflict_rv = self.insert_ecu(
-            variant_file,
-            variant,
-            ecu_relative_path
+        configs = variant.setdefault("config", [])
+
+        if not isinstance(configs, list):
+            configs = []
+            variant["config"] = configs
+            changed = True
+
+        power_kw = (
+            float(Power_KW)
+            if Power_KW not in (None, "")
+            else None
         )
-        changed |= changed_rv
-        conflict |= conflict_rv
+
+        config = None
+
+        for config_entry in configs:
+            if not isinstance(config_entry, dict):
+                continue
+
+            for config_name, config_data in config_entry.items():
+                if not isinstance(config_data, dict):
+                    continue
+
+                current_engine = config_data.get("engine")
+                current_power = config_data.get("power_kw")
+                current_ecu = config_data.get("ecu", {})
+
+                if normalize_text(current_engine or "") != normalize_text(engine_relative_path or ""):
+                    continue
+
+                if current_power != power_kw:
+                    continue
+
+                if not isinstance(current_ecu, dict):
+                    continue
+
+                current_ecu_data = None
+
+                for current_ecu_type, value in current_ecu.items():
+                    if normalize_text(current_ecu_type) == normalize_text(ecu_type):
+                        current_ecu_data = value
+                        break
+
+                if not isinstance(current_ecu_data, dict):
+                    continue
+
+                if normalize_text(current_ecu_data.get("model") or "") != normalize_text(ecu_relative_path or ""):
+                    continue
+
+                config = config_data
+                break
+
+            if config is not None:
+                break
+
+        if config is None:
+            config_number = 1
+
+            while True:
+                config_name = f"config{config_number}"
+
+                if not any(
+                    isinstance(entry, dict) and config_name in entry
+                    for entry in configs
+                ):
+                    break
+
+                config_number += 1
+
+            config = {}
+
+            if engine_relative_path:
+                config["engine"] = engine_relative_path
+
+            if power_kw is not None:
+                config["power_kw"] = power_kw
+
+            config["ecu"] = {
+                ecu_type: {
+                    "model": ecu_relative_path
+                }
+            }
+
+            configs.append({
+                config_name: config
+            })
+
+            changed = True
+
+        else:
+            ecu = config.setdefault("ecu", {})
+
+            if not isinstance(ecu, dict):
+                ecu = {}
+                config["ecu"] = ecu
+                changed = True
+
+            current_ecu = get_case_insensitive(ecu, ecu_type)
+
+            if current_ecu is None:
+                ecu[ecu_type] = {
+                    "model": ecu_relative_path
+                }
+                changed = True
+
+            elif isinstance(current_ecu, dict):
+                current_model = current_ecu.get("model")
+
+                if normalize_text(current_model) != normalize_text(ecu_relative_path):
+                    conflict = True
+
+                    changed |= self.add_conflict(
+                        variant_file,
+                        variant,
+                        f"config.{ecu_type}.model",
+                        ecu_relative_path
+                    )
 
         evidences = variant.setdefault("evidence", [])
 
         if not conflict:
             evidence = self.get_evidence_input()
+
             if evidence and evidence not in evidences:
                 evidences.append(evidence)
                 changed = True
@@ -872,7 +991,17 @@ Car,Abarth,500,2008-2018,312,1400 Fire TJET 695 Biposto,312.A9.000,Petrol,190,13
 
             ecu_relative_path = self.import_ecu(Ecu_maker, Ecu_model, ECU_type, MCU)
             engine_relative_path = self.import_engine(Brand, Engine, Engine_type, Fuel)
-            self.import_vehicle(Type, Brand, Model, Year, Version, Power_KW, ecu_relative_path, engine_relative_path)
+            self.import_vehicle(
+                Type,
+                Brand,
+                Model,
+                Year,
+                Version,
+                Power_KW,
+                ecu_relative_path,
+                engine_relative_path,
+                ECU_type
+            )
             self.heavy_op_step()
 
     def on_import(self):
