@@ -269,14 +269,6 @@ class ConverterToSqlite():
                 foreign key(mcu_id) references ad_mcu(id),
                 foreign key(evidence_id) references ad_evidence(id)
             );
-                           
-            create table if not exists ad_vehicle_version_ecu_evidence(
-                vehicle_version_ecu_id integer not null,
-                evidence_id integer not null,
-                primary key(vehicle_version_ecu_id, evidence_id),
-                foreign key(vehicle_version_ecu_id) references ad_vehicle_version_ecu(id),
-                foreign key(evidence_id) references ad_evidence(id)
-            );
 
             create table if not exists ad_conflict(
                 id integer primary key autoincrement,

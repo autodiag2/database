@@ -337,12 +337,12 @@ class StatsTab(Tab):
 
             union all
 
-            select 'Vehicle Version ECUs', count(*)
-            from ad_vehicle_version_ecu vve
+            select 'Vehicle Version Configs', count(*)
+            from ad_vehicle_version_config c
             where not exists (
                 select 1
-                from ad_vehicle_version_ecu_evidence vvee
-                where vvee.vehicle_version_ecu_id = vve.id
+                from ad_vehicle_version_config_evidence ce
+                where ce.config_id = c.id
             )
 
             union all
@@ -430,7 +430,9 @@ class StatsTab(Tab):
 
             select
                 'Vehicle Version',
-                man.name || ' ' || veh.model || ' ' || coalesce(v.version, '<generic>'),
+                man.name || ' ' ||
+                veh.model || ' ' ||
+                coalesce(v.version, '<generic>'),
                 count(vve.evidence_id)
             from ad_vehicle_version v
             join ad_vehicle veh
@@ -444,27 +446,39 @@ class StatsTab(Tab):
             union all
 
             select
-                'Vehicle Version ECU',
+                'Vehicle Version Config',
                 man.name || ' ' ||
                 veh.model || ' ' ||
                 coalesce(v.version, '<generic>') ||
                 ' -> ' ||
-                em.name || '/' || ecu.model,
-                count(vvee.evidence_id)
-            from ad_vehicle_version_ecu vvecu
+                coalesce(em.name || '/' || e.code, '<no engine>') ||
+                ' [' ||
+                coalesce(
+                    group_concat(ecum.name || '/' || ecu.model, ', '),
+                    'no ECU'
+                ) ||
+                ']',
+                count(vce.evidence_id)
+            from ad_vehicle_version_config c
             join ad_vehicle_version v
-                on v.id = vvecu.vehicle_version_id
+                on v.id = c.vehicle_version_id
             join ad_vehicle veh
                 on veh.id = v.vehicle_id
             join ad_manufacturer man
                 on man.id = veh.manufacturer_id
-            join ad_ecu ecu
-                on ecu.id = vvecu.ecu_id
-            join ad_manufacturer em
-                on em.id = ecu.manufacturer_id
-            join ad_vehicle_version_ecu_evidence vvee
-                on vvee.vehicle_version_ecu_id = vvecu.id
-            group by vvecu.id
+            left join ad_engine e
+                on e.id = c.engine_id
+            left join ad_manufacturer em
+                on em.id = e.manufacturer_id
+            left join ad_vehicle_version_config_ecu cecu
+                on cecu.config_id = c.id
+            left join ad_ecu ecu
+                on ecu.id = cecu.ecu_id
+            left join ad_manufacturer ecum
+                on ecum.id = ecu.manufacturer_id
+            join ad_vehicle_version_config_evidence vce
+                on vce.config_id = c.id
+            group by c.id
 
             union all
 
