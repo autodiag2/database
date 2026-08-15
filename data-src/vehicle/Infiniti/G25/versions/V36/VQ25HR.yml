@@ -3,8 +3,16 @@ year: 2011-2012
 version: V36
 engine: Infiniti/VQ25HR
 power_kw: 163.0
-ecu:
-- Nissan/1VW3C
+config:
+  - config1:
+      ecu:
+        ECM: 
+          model: Nissan/1VW3C
+          protocol:
+            can11bit:
+              address: 7E0
+              response: 765
+
 evidence:
 - First-hand OBD-II scan of a 2011 Infiniti G25
 updated: 2026-08-14 13:30:00 CDT
