@@ -2,10 +2,16 @@ created: 2026-07-17 23:19:30 CEST
 version: HS
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:19:30 CEST
+updated: 2026-08-15 12:49:14 CEST
 config:
 - config1:
     engine: Dacia/1600
+    ecu:
+      ECM:
+        model: CONTINENTAL/EMS3130
+- config2:
+    engine: Dacia/1600
+    power_kw: 0.0
     ecu:
       ECM:
         model: CONTINENTAL/EMS3130

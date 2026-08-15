@@ -3,7 +3,7 @@ year: '2009'
 version: V
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:17:47 CEST
+updated: 2026-08-15 12:51:56 CEST
 conflicts:
   year:
   - value: '2011'
@@ -15,3 +15,15 @@ config:
       ECM:
         model: CONTINENTAL/SIMOS-10.x0_x1
     power_kw: 63.0
+- config2:
+    engine: Volkswagen__VW_/1200_TSI
+    power_kw: 66.0
+    ecu:
+      ECM:
+        model: CONTINENTAL/SIMOS-10.x0_x1
+- config3:
+    engine: Volkswagen__VW_/1200_TSI
+    power_kw: 77.0
+    ecu:
+      ECM:
+        model: CONTINENTAL/SIMOS-10.x0_x1

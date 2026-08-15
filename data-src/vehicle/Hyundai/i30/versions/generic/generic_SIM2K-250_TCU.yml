@@ -2,9 +2,14 @@ created: 2026-07-17 23:20:01 CEST
 year: '2014'
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:20:01 CEST
+updated: 2026-08-15 12:49:51 CEST
 config:
 - config1:
+    ecu:
+      ECM:
+        model: CONTINENTAL/SIM2K-250_TCU
+- config2:
+    power_kw: 0.0
     ecu:
       ECM:
         model: CONTINENTAL/SIM2K-250_TCU

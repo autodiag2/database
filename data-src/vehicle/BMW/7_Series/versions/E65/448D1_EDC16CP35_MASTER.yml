@@ -3,7 +3,7 @@ year: '2005'
 version: E65
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:14:45 CEST
+updated: 2026-08-15 12:48:46 CEST
 config:
 - config1:
     engine: Bmw/448D1
@@ -11,3 +11,9 @@ config:
       ECM:
         model: BOSCH/EDC16CP35_MASTER
     power_kw: 220.0
+- config2:
+    engine: Bmw/448D1
+    power_kw: 242.0
+    ecu:
+      ECM:
+        model: BOSCH/EDC16CP35_MASTER

@@ -3,7 +3,7 @@ year: 2011-2020
 version: V
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-20 18:45:24 CEST
+updated: 2026-08-15 12:49:35 CEST
 conflicts:
   year:
   - value: '2014'
@@ -15,3 +15,9 @@ config:
       OTHER:
         model: BOSCH/MEDG17.0
     power_kw: 231.0
+- config2:
+    engine: Ford/2300_16v_EcoBoost
+    power_kw: 231.0
+    ecu:
+      ECM:
+        model: BOSCH/MEDG17.0

@@ -3,7 +3,7 @@ year: '2010'
 version: 2C
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:21:39 CEST
+updated: 2026-08-15 12:51:43 CEST
 config:
 - config1:
     engine: Volkswagen__VW_/CBZA
@@ -11,3 +11,9 @@ config:
       TCM:
         model: TEMIC/DQ200Dxx
     power_kw: 63.0
+- config2:
+    engine: Volkswagen__VW_/CBZA
+    power_kw: 63.0
+    ecu:
+      ECM:
+        model: TEMIC/DQ200Dxx

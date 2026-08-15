@@ -3,7 +3,7 @@ year: '1999'
 version: W638
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:16:25 CEST
+updated: 2026-08-15 12:50:35 CEST
 config:
 - config1:
     engine: Mercedes/OM611DE22LAR
@@ -11,3 +11,9 @@ config:
       ECM:
         model: BOSCH/EDC15C6
     power_kw: 60.0
+- config2:
+    engine: Mercedes/OM611DE22LAR
+    power_kw: 75.0
+    ecu:
+      ECM:
+        model: BOSCH/EDC15C6

@@ -3,7 +3,7 @@ year: '2010'
 version: CW
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:16:30 CEST
+updated: 2026-08-15 12:50:40 CEST
 config:
 - config1:
     engine: Mitsubishi/4N14
@@ -11,3 +11,9 @@ config:
       ECM:
         model: DENSO/RA6
     power_kw: 103.0
+- config2:
+    engine: Mitsubishi/4N14
+    power_kw: 130.0
+    ecu:
+      ECM:
+        model: DENSO/RA6

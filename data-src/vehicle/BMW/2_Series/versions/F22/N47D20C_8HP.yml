@@ -3,7 +3,7 @@ year: '2014'
 version: F22
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:14:12 CEST
+updated: 2026-08-15 12:48:14 CEST
 config:
 - config1:
     engine: Bmw/N47D20C
@@ -11,3 +11,15 @@ config:
       TCM:
         model: ZF/8HP
     power_kw: 105.0
+- config2:
+    engine: Bmw/N47D20C
+    power_kw: 105.0
+    ecu:
+      ECM:
+        model: ZF/8HP
+- config3:
+    engine: Bmw/N47D20C
+    power_kw: 135.0
+    ecu:
+      ECM:
+        model: ZF/8HP

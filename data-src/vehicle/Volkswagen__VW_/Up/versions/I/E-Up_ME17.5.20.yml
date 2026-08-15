@@ -3,10 +3,16 @@ year: '2014'
 version: I
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:21:53 CEST
+updated: 2026-08-15 12:52:01 CEST
 config:
 - config1:
     engine: Volkswagen__VW_/E-Up
+    ecu:
+      ECM:
+        model: BOSCH/ME17.5.20
+- config2:
+    engine: Volkswagen__VW_/E-Up
+    power_kw: 0.0
     ecu:
       ECM:
         model: BOSCH/ME17.5.20

@@ -4,9 +4,16 @@ version: Pro Street Breakout
 engine: Harley_Davidson/1802cc
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:15:35 CEST
+updated: 2026-08-15 12:49:42 CEST
 conflicts:
   year:
   - value: '2017'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 ecu: []
+config:
+- config1:
+    engine: Harley_Davidson/1802cc
+    power_kw: 0.0
+    ecu:
+      ECM:
+        model: null

@@ -3,7 +3,7 @@ year: '2013'
 version: X156
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:20:33 CEST
+updated: 2026-08-15 12:50:27 CEST
 config:
 - config1:
     engine: Mercedes/M270.910
@@ -11,3 +11,9 @@ config:
       TCM:
         model: GETRAG/VGS2-FDCT
     power_kw: 115.0
+- config2:
+    engine: Mercedes/M270.910
+    power_kw: 115.0
+    ecu:
+      ECM:
+        model: GETRAG/VGS2-FDCT

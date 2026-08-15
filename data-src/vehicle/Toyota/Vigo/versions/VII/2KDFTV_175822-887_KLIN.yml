@@ -2,7 +2,7 @@ created: 2026-07-17 23:09:32 CEST
 version: VII
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-18 18:13:03 CEST
+updated: 2026-08-15 12:46:56 CEST
 config:
 - config1:
     engine: Toyota/2KDFTV
@@ -10,3 +10,9 @@ config:
       ECM:
         model: Denso/175822-887_KLIN
     power_kw: 75.0
+- config2:
+    engine: Toyota/2KDFTV
+    power_kw: 88.0
+    ecu:
+      ECM:
+        model: Denso/175822-887_KLIN

@@ -3,10 +3,16 @@ year: '2014'
 version: 95B
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:21:00 CEST
+updated: 2026-08-15 12:50:58 CEST
 config:
 - config1:
     engine: Porsche/DSG_S-Tronic
+    ecu:
+      ECM:
+        model: TEMIC/DL501_Gen1
+- config2:
+    engine: Porsche/DSG_S-Tronic
+    power_kw: 0.0
     ecu:
       ECM:
         model: TEMIC/DL501_Gen1

@@ -3,7 +3,7 @@ year: '2009'
 version: X
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:17:23 CEST
+updated: 2026-08-15 12:51:32 CEST
 config:
 - config1:
     engine: Toyota/2GRFSE
@@ -11,3 +11,9 @@ config:
       ECM:
         model: DENSO/896xx
     power_kw: 234.0
+- config2:
+    engine: Toyota/2GRFSE
+    power_kw: 224.0
+    ecu:
+      ECM:
+        model: DENSO/896xx

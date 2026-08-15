@@ -3,9 +3,14 @@ year: '2013'
 version: 8F / 8T
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:18:28 CEST
+updated: 2026-08-15 12:48:03 CEST
 config:
 - config1:
+    ecu:
+      ECM:
+        model: TEMIC/DL501_Gen2
+- config2:
+    power_kw: 0.0
     ecu:
       ECM:
         model: TEMIC/DL501_Gen2

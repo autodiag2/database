@@ -3,7 +3,7 @@ year: '2010'
 version: 7P
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:17:49 CEST
+updated: 2026-08-15 12:51:59 CEST
 config:
 - config1:
     engine: Volkswagen__VW_/CASA
@@ -11,3 +11,9 @@ config:
       ECM:
         model: BOSCH/EDC17CP44
     power_kw: 179.0
+- config2:
+    engine: Volkswagen__VW_/CASA
+    power_kw: 177.0
+    ecu:
+      ECM:
+        model: BOSCH/EDC17CP44

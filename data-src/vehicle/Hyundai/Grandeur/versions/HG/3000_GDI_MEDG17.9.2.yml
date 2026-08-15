@@ -2,10 +2,16 @@ created: 2026-07-17 23:20:00 CEST
 version: HG
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:20:00 CEST
+updated: 2026-08-15 12:49:50 CEST
 config:
 - config1:
     engine: Hyundai/3000_GDI
+    ecu:
+      ECM:
+        model: BOSCH/MEDG17.9.2
+- config2:
+    engine: Hyundai/3000_GDI
+    power_kw: 0.0
     ecu:
       ECM:
         model: BOSCH/MEDG17.9.2

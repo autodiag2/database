@@ -3,7 +3,7 @@ year: '2014'
 version: VII
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:17:39 CEST
+updated: 2026-08-15 12:51:48 CEST
 config:
 - config1:
     engine: Volkswagen__VW_/CUKB
@@ -11,3 +11,15 @@ config:
       TCM:
         model: TEMIC/DQ400E
     power_kw: 110.0
+- config2:
+    engine: Volkswagen__VW_/CUKB
+    power_kw: 110.0
+    ecu:
+      ECM:
+        model: TEMIC/DQ400E
+- config3:
+    engine: Volkswagen__VW_/CUKB
+    power_kw: 150.0
+    ecu:
+      ECM:
+        model: TEMIC/DQ400E

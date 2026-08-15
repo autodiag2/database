@@ -4,7 +4,7 @@ evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-08-15 12:17:21 CEST
+updated: 2026-08-15 12:49:49 CEST
 year: '2010'
 config:
 - config1:
@@ -19,3 +19,9 @@ config:
     ecu:
       OTHE:
         model: Bosch/MEDG17.9.8
+- config3:
+    engine: Hyundai/G4FD
+    power_kw: 91.0
+    ecu:
+      ECM:
+        model: BOSCH/MEDG17.9.8

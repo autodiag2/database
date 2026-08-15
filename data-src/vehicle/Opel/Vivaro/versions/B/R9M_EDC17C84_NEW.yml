@@ -3,7 +3,7 @@ year: '2015'
 version: B
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:16:37 CEST
+updated: 2026-08-15 12:50:48 CEST
 config:
 - config1:
     engine: Opel/R9M
@@ -11,3 +11,15 @@ config:
       ECM:
         model: BOSCH/EDC17C84_NEW
     power_kw: 70.0
+- config2:
+    engine: Opel/R9M
+    power_kw: 92.0
+    ecu:
+      ECM:
+        model: BOSCH/EDC17C84_NEW
+- config3:
+    engine: Opel/R9M
+    power_kw: 107.0
+    ecu:
+      ECM:
+        model: BOSCH/EDC17C84_NEW

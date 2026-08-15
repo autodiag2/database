@@ -3,7 +3,7 @@ year: '2012'
 version: I
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:21:45 CEST
+updated: 2026-08-15 12:51:51 CEST
 config:
 - config1:
     engine: Volkswagen__VW_/CFBA
@@ -11,3 +11,9 @@ config:
       TCM:
         model: TEMIC/DQ200-MQB
     power_kw: 96.0
+- config2:
+    engine: Volkswagen__VW_/CFBA
+    power_kw: 96.0
+    ecu:
+      ECM:
+        model: TEMIC/DQ200-MQB

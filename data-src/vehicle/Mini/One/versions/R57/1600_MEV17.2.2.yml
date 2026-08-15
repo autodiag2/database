@@ -2,7 +2,7 @@ created: 2026-07-17 23:20:44 CEST
 version: R57
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:16:29 CEST
+updated: 2026-08-15 12:50:39 CEST
 config:
 - config1:
     engine: Mini/1600
@@ -10,3 +10,15 @@ config:
       ECM:
         model: BOSCH/MEV17.2.2
     power_kw: 55.0
+- config2:
+    engine: Mini/1600
+    power_kw: 72.0
+    ecu:
+      ECM:
+        model: BOSCH/MEV17.2.2
+- config3:
+    engine: Mini/1600
+    power_kw: 90.0
+    ecu:
+      ECM:
+        model: BOSCH/MEV17.2.2

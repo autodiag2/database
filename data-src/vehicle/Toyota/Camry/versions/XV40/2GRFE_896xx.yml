@@ -3,7 +3,7 @@ year: '2006'
 version: XV40
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:17:16 CEST
+updated: 2026-08-15 12:51:25 CEST
 config:
 - config1:
     engine: Toyota/2GRFE
@@ -11,3 +11,9 @@ config:
       ECM:
         model: DENSO/896xx
     power_kw: 204.0
+- config2:
+    engine: Toyota/2GRFE
+    power_kw: 205.0
+    ecu:
+      ECM:
+        model: DENSO/896xx

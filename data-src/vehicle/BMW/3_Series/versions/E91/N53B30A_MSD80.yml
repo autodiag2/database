@@ -3,7 +3,7 @@ version: E91
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-08-15 12:16:13 CEST
+updated: 2026-08-15 12:48:20 CEST
 conflicts:
   year:
   - value: '2007'
@@ -28,3 +28,9 @@ config:
     ecu:
       ECM:
         model: CONTINENTAL_SIEME/MSD80
+- config4:
+    engine: Bmw/N53B30A
+    power_kw: 200.0
+    ecu:
+      ECM:
+        model: CONTINENTAL_SIEMENS/MSD80

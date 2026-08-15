@@ -3,7 +3,7 @@ year: 2010-2019
 version: 8V
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-18 18:13:50 CEST
+updated: 2026-08-15 12:47:43 CEST
 conflicts:
   year:
   - value: '2017'
@@ -16,6 +16,18 @@ config:
         model: Temic/DQ381
 - config2:
     engine: Audi/2000_TDI_quattro
+    ecu:
+      ECM:
+        model: BOSCH/DQ381
+- config3:
+    engine: Audi/2000_TDI_quattro
+    power_kw: 0.0
+    ecu:
+      TCM:
+        model: Temic/DQ381
+- config4:
+    engine: Audi/2000_TDI_quattro
+    power_kw: 0.0
     ecu:
       ECM:
         model: BOSCH/DQ381

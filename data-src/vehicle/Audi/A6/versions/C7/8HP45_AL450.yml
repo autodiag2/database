@@ -3,7 +3,7 @@ version: C7
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-08-15 12:15:54 CEST
+updated: 2026-08-15 12:47:53 CEST
 conflicts:
   year:
   - value: '2011'
@@ -39,4 +39,34 @@ config:
     power_kw: 240.0
     ecu:
       TCM:
+        model: ZF/AL450
+- config6:
+    engine: Audi/8HP45
+    power_kw: 160.0
+    ecu:
+      ECM:
+        model: ZF/AL450
+- config7:
+    engine: Audi/8HP45
+    power_kw: 200.0
+    ecu:
+      ECM:
+        model: ZF/AL450
+- config8:
+    engine: Audi/8HP45
+    power_kw: 230.0
+    ecu:
+      ECM:
+        model: ZF/AL450
+- config9:
+    engine: Audi/8HP45
+    power_kw: 235.0
+    ecu:
+      ECM:
+        model: ZF/AL450
+- config10:
+    engine: Audi/8HP45
+    power_kw: 240.0
+    ecu:
+      ECM:
         model: ZF/AL450

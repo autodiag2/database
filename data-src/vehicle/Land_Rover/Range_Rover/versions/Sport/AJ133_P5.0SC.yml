@@ -2,7 +2,7 @@ created: 2026-07-17 23:08:49 CEST
 version: Sport
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-18 18:12:15 CEST
+updated: 2026-08-15 12:46:04 CEST
 config:
 - config1:
     engine: Land_Rover/AJ133
@@ -10,3 +10,9 @@ config:
       ECM:
         model: Denso/P5.0SC
     power_kw: 276.0
+- config2:
+    engine: Land_Rover/AJ133
+    power_kw: 368.0
+    ecu:
+      ECM:
+        model: Denso/P5.0SC

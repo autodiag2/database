@@ -3,7 +3,7 @@ year: '2011'
 version: B81
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:15:08 CEST
+updated: 2026-08-15 12:49:13 CEST
 config:
 - config1:
     engine: Citroen/RHH__DW10CTED4_
@@ -11,3 +11,9 @@ config:
       ECM:
         model: DELPHI/DCM3.5
     power_kw: 118.0
+- config2:
+    engine: Citroen/RHH__DW10CTED4_
+    power_kw: 121.0
+    ecu:
+      ECM:
+        model: DELPHI/DCM3.5

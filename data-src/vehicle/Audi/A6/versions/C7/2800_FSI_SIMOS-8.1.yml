@@ -2,10 +2,16 @@ created: 2026-07-17 23:18:20 CEST
 version: C7
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:18:20 CEST
+updated: 2026-08-15 12:47:53 CEST
 config:
 - config1:
     engine: Audi/2800_FSI
+    ecu:
+      ECM:
+        model: CONTINENTAL/SIMOS-8.1
+- config2:
+    engine: Audi/2800_FSI
+    power_kw: 0.0
     ecu:
       ECM:
         model: CONTINENTAL/SIMOS-8.1

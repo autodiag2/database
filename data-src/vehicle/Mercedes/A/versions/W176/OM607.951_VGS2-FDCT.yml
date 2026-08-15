@@ -3,7 +3,7 @@ year: '2012'
 version: W176
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:20:24 CEST
+updated: 2026-08-15 12:50:17 CEST
 config:
 - config1:
     engine: Mercedes/OM607.951
@@ -11,3 +11,9 @@ config:
       TCM:
         model: GETRAG/VGS2-FDCT
     power_kw: 80.0
+- config2:
+    engine: Mercedes/OM607.951
+    power_kw: 80.0
+    ecu:
+      ECM:
+        model: GETRAG/VGS2-FDCT

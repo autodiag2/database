@@ -5,5 +5,12 @@ engine: Citroen/HMZ
 power_kw: 55.0
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:19:23 CEST
+updated: 2026-08-15 12:49:06 CEST
 ecu: []
+config:
+- config1:
+    engine: Citroen/HMZ
+    power_kw: 55.0
+    ecu:
+      ECM:
+        model: null

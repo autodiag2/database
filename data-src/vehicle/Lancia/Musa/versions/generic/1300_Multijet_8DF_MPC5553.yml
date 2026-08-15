@@ -1,7 +1,7 @@
 created: 2026-07-17 23:08:48 CEST
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-18 18:12:13 CEST
+updated: 2026-08-15 12:46:03 CEST
 config:
 - config1:
     engine: Lancia/1300_Multijet
@@ -9,3 +9,15 @@ config:
       ECM:
         model: Magneti_Marelli/8DF_MPC5553
     power_kw: 51.0
+- config2:
+    engine: Lancia/1300_Multijet
+    power_kw: 66.0
+    ecu:
+      ECM:
+        model: Magneti_Marelli/8DF_MPC5553
+- config3:
+    engine: Lancia/1300_Multijet
+    power_kw: 70.0
+    ecu:
+      ECM:
+        model: Magneti_Marelli/8DF_MPC5553

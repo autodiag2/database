@@ -3,7 +3,7 @@ year: '2016'
 version: F45
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:14:13 CEST
+updated: 2026-08-15 12:48:16 CEST
 config:
 - config1:
     engine: Bmw/B38A15A
@@ -11,3 +11,15 @@ config:
       ECM:
         model: BOSCH/MEVD17.2.K
     power_kw: 75.0
+- config2:
+    engine: Bmw/B38A15A
+    power_kw: 100.0
+    ecu:
+      ECM:
+        model: BOSCH/MEVD17.2.K
+- config3:
+    engine: Bmw/B38A15A
+    power_kw: 165.0
+    ecu:
+      ECM:
+        model: BOSCH/MEVD17.2.K

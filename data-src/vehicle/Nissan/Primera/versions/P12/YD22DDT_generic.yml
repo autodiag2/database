@@ -5,9 +5,22 @@ engine: Nissan/YD22DDT
 power_kw: 93.0
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:16:32 CEST
+updated: 2026-08-15 12:50:43 CEST
 conflicts:
   year:
   - value: '2003'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 ecu: []
+config:
+- config1:
+    engine: Nissan/YD22DDT
+    power_kw: 93.0
+    ecu:
+      ECM:
+        model: null
+- config2:
+    engine: Nissan/YD22DDT
+    power_kw: 100.0
+    ecu:
+      ECM:
+        model: null

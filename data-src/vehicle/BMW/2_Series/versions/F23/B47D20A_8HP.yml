@@ -3,7 +3,7 @@ year: '2015'
 version: F23
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:14:12 CEST
+updated: 2026-08-15 12:48:15 CEST
 conflicts:
   year:
   - value: '2014'
@@ -15,3 +15,15 @@ config:
       TCM:
         model: ZF/8HP
     power_kw: 110.0
+- config2:
+    engine: Bmw/B47D20A
+    power_kw: 110.0
+    ecu:
+      ECM:
+        model: ZF/8HP
+- config3:
+    engine: Bmw/B47D20A
+    power_kw: 140.0
+    ecu:
+      ECM:
+        model: ZF/8HP

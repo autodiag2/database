@@ -2,5 +2,12 @@ created: 2026-07-17 23:21:59 CEST
 engine: Yanmar/V3800-CR-TE4
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:21:59 CEST
+updated: 2026-08-15 12:52:09 CEST
 ecu: []
+config:
+- config1:
+    engine: Yanmar/V3800-CR-TE4
+    power_kw: 0.0
+    ecu:
+      ECM:
+        model: null

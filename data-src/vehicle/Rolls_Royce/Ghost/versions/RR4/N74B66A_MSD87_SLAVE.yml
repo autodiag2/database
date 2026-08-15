@@ -3,7 +3,7 @@ year: '2009'
 version: RR4
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:16:57 CEST
+updated: 2026-08-15 12:51:06 CEST
 conflicts:
   year:
   - value: '2016'
@@ -17,3 +17,15 @@ config:
       ECM:
         model: CONTINENTAL_SIEMENS/MSD87_SLAVE
     power_kw: 419.0
+- config2:
+    engine: Rolls_Royce/N74B66A
+    power_kw: 450.0
+    ecu:
+      ECM:
+        model: CONTINENTAL_SIEMENS/MSD87_SLAVE
+- config3:
+    engine: Rolls_Royce/N74B66A
+    power_kw: 442.0
+    ecu:
+      ECM:
+        model: CONTINENTAL_SIEMENS/MSD87_SLAVE

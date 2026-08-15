@@ -3,7 +3,7 @@ year: '2014'
 version: C1
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:16:00 CEST
+updated: 2026-08-15 12:50:09 CEST
 config:
 - config1:
     engine: Lexus/2URGSE
@@ -11,3 +11,9 @@ config:
       ECM:
         model: DENSO/896xx
     power_kw: 331.0
+- config2:
+    engine: Lexus/2URGSE
+    power_kw: 348.0
+    ecu:
+      ECM:
+        model: DENSO/896xx

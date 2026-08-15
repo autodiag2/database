@@ -3,7 +3,7 @@ year: 2007-2019
 version: 8V
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-20 18:44:34 CEST
+updated: 2026-08-15 12:45:00 CEST
 conflicts:
   year:
   - value: '2017'
@@ -15,3 +15,9 @@ config:
       ECM:
         model: BOSCH/EDC17C74
     power_kw: 110.0
+- config2:
+    engine: Audi/2000_TDI_quattro
+    power_kw: 135.0
+    ecu:
+      ECM:
+        model: Bosch/EDC17C74

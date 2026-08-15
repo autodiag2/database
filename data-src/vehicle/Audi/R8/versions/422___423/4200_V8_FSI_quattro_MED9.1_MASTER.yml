@@ -3,7 +3,7 @@ year: '2010'
 version: 422 / 423
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:14:03 CEST
+updated: 2026-08-15 12:48:03 CEST
 config:
 - config1:
     engine: Audi/4200_V8_FSI_quattro
@@ -11,3 +11,9 @@ config:
       ECM:
         model: BOSCH/MED9.1_MASTER
     power_kw: 309.0
+- config2:
+    engine: Audi/4200_V8_FSI_quattro
+    power_kw: 316.0
+    ecu:
+      ECM:
+        model: BOSCH/MED9.1_MASTER

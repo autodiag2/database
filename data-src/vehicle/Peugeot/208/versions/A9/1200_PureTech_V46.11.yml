@@ -3,7 +3,7 @@ year: 2007-2015
 version: A9
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-18 18:12:36 CEST
+updated: 2026-08-15 12:46:27 CEST
 config:
 - config1:
     engine: Peugeot/1200_PureTech
@@ -11,3 +11,9 @@ config:
       ECM:
         model: Valeo/V46.11
     power_kw: 81.0
+- config2:
+    engine: Peugeot/1200_PureTech
+    power_kw: 96.0
+    ecu:
+      ECM:
+        model: Valeo/V46.11

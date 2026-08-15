@@ -3,7 +3,7 @@ year: '2015'
 version: T6
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:21:46 CEST
+updated: 2026-08-15 12:51:53 CEST
 config:
 - config1:
     engine: Volkswagen__VW_/CFCA
@@ -11,3 +11,9 @@ config:
       TCM:
         model: CONTINENTAL/DQ500-MQB
     power_kw: 132.0
+- config2:
+    engine: Volkswagen__VW_/CFCA
+    power_kw: 132.0
+    ecu:
+      ECM:
+        model: CONTINENTAL/DQ500-MQB

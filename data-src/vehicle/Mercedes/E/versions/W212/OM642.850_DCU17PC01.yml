@@ -3,7 +3,7 @@ year: '2009'
 version: W212
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:16:16 CEST
+updated: 2026-08-15 12:50:26 CEST
 conflicts:
   year:
   - value: '2010'
@@ -17,3 +17,15 @@ config:
       ECM:
         model: BOSCH/DCU17PC01
     power_kw: 150.0
+- config2:
+    engine: Mercedes/OM642.850
+    power_kw: 170.0
+    ecu:
+      ECM:
+        model: BOSCH/DCU17PC01
+- config3:
+    engine: Mercedes/OM642.850
+    power_kw: 155.0
+    ecu:
+      ECM:
+        model: BOSCH/DCU17PC01

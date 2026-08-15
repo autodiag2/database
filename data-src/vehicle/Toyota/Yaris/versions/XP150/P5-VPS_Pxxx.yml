@@ -4,7 +4,7 @@ evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-08-15 12:18:40 CEST
+updated: 2026-08-15 12:51:35 CEST
 year: '2015'
 config:
 - config1:
@@ -37,3 +37,21 @@ config:
     ecu:
       ECM:
         model: Denso/Pxxx
+- config6:
+    engine: Toyota/P5-VPS
+    power_kw: 85.0
+    ecu:
+      ECM:
+        model: MITSUBISHI/Pxxx
+- config7:
+    engine: Toyota/P5-VPS
+    power_kw: 55.0
+    ecu:
+      ECM:
+        model: MITSUBISHI/Pxxx
+- config8:
+    engine: Toyota/P5-VPS
+    power_kw: 66.0
+    ecu:
+      ECM:
+        model: MITSUBISHI/Pxxx

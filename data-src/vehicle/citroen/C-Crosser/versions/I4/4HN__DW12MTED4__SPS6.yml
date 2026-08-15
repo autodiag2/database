@@ -3,7 +3,7 @@ year: '2008'
 version: I4
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:19:22 CEST
+updated: 2026-08-15 12:49:06 CEST
 config:
 - config1:
     engine: Citroen/4HN__DW12MTED4_
@@ -11,3 +11,9 @@ config:
       TCM:
         model: GETRAG/SPS6
     power_kw: 115.0
+- config2:
+    engine: Citroen/4HN__DW12MTED4_
+    power_kw: 115.0
+    ecu:
+      ECM:
+        model: GETRAG/SPS6

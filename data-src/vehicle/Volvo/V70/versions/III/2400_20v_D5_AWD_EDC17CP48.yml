@@ -3,7 +3,7 @@ year: 2006-2012
 version: III
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-20 18:46:56 CEST
+updated: 2026-08-15 12:47:14 CEST
 conflicts:
   year:
   - value: '2013'
@@ -21,3 +21,21 @@ config:
       ECM:
         model: BOSCH/EDC17CP48
     power_kw: 133.0
+- config2:
+    engine: Volvo/2400_20v_D5_AWD
+    power_kw: 151.0
+    ecu:
+      ECM:
+        model: Bosch/EDC17CP48
+- config3:
+    engine: Volvo/2400_20v_D5_AWD
+    power_kw: 158.0
+    ecu:
+      ECM:
+        model: Bosch/EDC17CP48
+- config4:
+    engine: Volvo/2400_20v_D5_AWD
+    power_kw: 136.0
+    ecu:
+      ECM:
+        model: Bosch/EDC17CP48

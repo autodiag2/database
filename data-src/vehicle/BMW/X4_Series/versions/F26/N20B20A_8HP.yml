@@ -3,7 +3,7 @@ version: F26
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-08-15 12:16:39 CEST
+updated: 2026-08-15 12:48:52 CEST
 year: '2014'
 config:
 - config1:
@@ -17,4 +17,16 @@ config:
     power_kw: 180.0
     ecu:
       TCM:
+        model: ZF/8HP
+- config3:
+    engine: Bmw/N20B20A
+    power_kw: 135.0
+    ecu:
+      ECM:
+        model: ZF/8HP
+- config4:
+    engine: Bmw/N20B20A
+    power_kw: 180.0
+    ecu:
+      ECM:
         model: ZF/8HP

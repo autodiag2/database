@@ -3,10 +3,16 @@ year: '2016'
 version: JD
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:20:08 CEST
+updated: 2026-08-15 12:49:59 CEST
 config:
 - config1:
     engine: Kia/GAJD
     ecu:
       OTHER:
+        model: BOSCH/MEG17.9.13
+- config2:
+    engine: Kia/GAJD
+    power_kw: 0.0
+    ecu:
+      ECM:
         model: BOSCH/MEG17.9.13

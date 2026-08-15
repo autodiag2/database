@@ -3,7 +3,7 @@ year: 2009-2014
 version: WK2
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-20 18:45:40 CEST
+updated: 2026-08-15 12:45:59 CEST
 conflicts:
   year:
   - value: '2014'
@@ -15,3 +15,9 @@ config:
       ECM:
         model: BOSCH/EDC17C79
     power_kw: 184.0
+- config2:
+    engine: Jeep/VM_A630_DOHC
+    power_kw: 140.0
+    ecu:
+      ECM:
+        model: Bosch/EDC17C79

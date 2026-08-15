@@ -3,7 +3,7 @@ year: '2013'
 version: W246
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:16:10 CEST
+updated: 2026-08-15 12:50:18 CEST
 conflicts:
   year:
   - value: '2015'
@@ -17,3 +17,9 @@ config:
       ECM:
         model: CONTINENTAL/SID310
     power_kw: 66.0
+- config2:
+    engine: Mercedes/OM_607.951
+    power_kw: 81.0
+    ecu:
+      ECM:
+        model: CONTINENTAL/SID310

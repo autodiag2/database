@@ -4,7 +4,7 @@ version: E93
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:14:22 CEST
+updated: 2026-08-15 12:48:24 CEST
 conflicts:
   year:
   - value: '2008'
@@ -16,3 +16,9 @@ config:
       TCM:
         model: GETRAG/DKG
     power_kw: 309.0
+- config2:
+    engine: Bmw/S65B40A
+    power_kw: 309.0
+    ecu:
+      ECM:
+        model: GETRAG/DKG

@@ -3,7 +3,7 @@ year: '2005'
 version: I
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:15:38 CEST
+updated: 2026-08-15 12:49:45 CEST
 conflicts:
   year:
   - value: '2010'
@@ -15,3 +15,15 @@ config:
       ECM:
         model: DENSO/896xx
     power_kw: 279.0
+- config2:
+    engine: Hino/E13C
+    power_kw: 331.0
+    ecu:
+      ECM:
+        model: DENSO/896xx
+- config3:
+    engine: Hino/E13C
+    power_kw: 338.0
+    ecu:
+      ECM:
+        model: DENSO/896xx

@@ -3,7 +3,7 @@ year: 2004-2016
 version: R60
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-20 18:46:01 CEST
+updated: 2026-08-15 12:46:20 CEST
 conflicts:
   year:
   - value: '2010'
@@ -17,3 +17,9 @@ config:
       ECM:
         model: BOSCH/EDC17C41
     power_kw: 82.0
+- config2:
+    engine: Mini/N47N
+    power_kw: 105.0
+    ecu:
+      ECM:
+        model: Bosch/EDC17C41

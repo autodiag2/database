@@ -2,10 +2,16 @@ created: 2026-07-17 23:19:19 CEST
 year: '2015'
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:19:19 CEST
+updated: 2026-08-15 12:49:01 CEST
 config:
 - config1:
     engine: Chevrolet/2500
+    ecu:
+      ECM:
+        model: DELCO/E80
+- config2:
+    engine: Chevrolet/2500
+    power_kw: 0.0
     ecu:
       ECM:
         model: DELCO/E80

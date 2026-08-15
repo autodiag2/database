@@ -2,7 +2,7 @@ created: 2026-07-17 23:19:31 CEST
 year: '2008'
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:15:10 CEST
+updated: 2026-08-15 12:49:15 CEST
 config:
 - config1:
     engine: Daihatsu/1NRFE
@@ -10,3 +10,21 @@ config:
       ECM:
         model: DENSO/896xx
     power_kw: 71.0
+- config2:
+    engine: Daihatsu/1NRFE
+    power_kw: 72.0
+    ecu:
+      ECM:
+        model: DENSO/896xx
+- config3:
+    engine: Daihatsu/1NRFE
+    power_kw: 73.0
+    ecu:
+      ECM:
+        model: DENSO/896xx
+- config4:
+    engine: Daihatsu/1NRFE
+    power_kw: 74.0
+    ecu:
+      ECM:
+        model: DENSO/896xx

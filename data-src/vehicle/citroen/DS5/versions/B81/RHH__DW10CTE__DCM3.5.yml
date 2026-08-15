@@ -3,7 +3,7 @@ year: 2002-2012
 version: B81
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-18 18:11:42 CEST
+updated: 2026-08-15 12:45:33 CEST
 config:
 - config1:
     engine: Citroen/RHH__DW10CTE_
@@ -11,3 +11,9 @@ config:
       ECM:
         model: Delphi/DCM3.5
     power_kw: 118.0
+- config2:
+    engine: Citroen/RHH__DW10CTE_
+    power_kw: 121.0
+    ecu:
+      ECM:
+        model: Delphi/DCM3.5

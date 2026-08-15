@@ -3,7 +3,7 @@ year: '2015'
 version: GD
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:15:42 CEST
+updated: 2026-08-15 12:49:50 CEST
 config:
 - config1:
     engine: Hyundai/7_Speed_DCT_Ecoshift
@@ -11,3 +11,15 @@ config:
       TCM:
         model: CONTINENTAL/SIM2K-305
     power_kw: 100.0
+- config2:
+    engine: Hyundai/7_Speed_DCT_Ecoshift
+    power_kw: 100.0
+    ecu:
+      ECM:
+        model: CONTINENTAL/SIM2K-305
+- config3:
+    engine: Hyundai/7_Speed_DCT_Ecoshift
+    power_kw: 99.0
+    ecu:
+      ECM:
+        model: CONTINENTAL/SIM2K-305

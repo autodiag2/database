@@ -3,7 +3,7 @@ version: Jx8
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 18:45:20 CEST
+updated: 2026-08-15 12:45:42 CEST
 year: '2014'
 config:
 - config1:
@@ -11,3 +11,9 @@ config:
     ecu:
       ECM:
         model: CONTINENTAL/EMS2214
+- config2:
+    engine: Ford/1600_Ti-VCT
+    power_kw: 0.0
+    ecu:
+      ECM:
+        model: Continental/EMS2214

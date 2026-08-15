@@ -3,7 +3,7 @@ year: '2010'
 version: E2
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:15:59 CEST
+updated: 2026-08-15 12:50:08 CEST
 conflicts:
   year:
   - value: '2005'
@@ -17,3 +17,9 @@ config:
       ECM:
         model: DENSO/896xx
     power_kw: 234.0
+- config2:
+    engine: Lexus/2GRFSE
+    power_kw: 180.0
+    ecu:
+      ECM:
+        model: DENSO/896xx

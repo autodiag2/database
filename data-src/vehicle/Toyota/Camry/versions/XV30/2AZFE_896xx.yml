@@ -3,7 +3,7 @@ year: '2003'
 version: XV30
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:17:16 CEST
+updated: 2026-08-15 12:51:25 CEST
 config:
 - config1:
     engine: Toyota/2AZFE
@@ -11,3 +11,9 @@ config:
       ECM:
         model: DENSO/896xx
     power_kw: 117.0
+- config2:
+    engine: Toyota/2AZFE
+    power_kw: 112.0
+    ecu:
+      ECM:
+        model: DENSO/896xx

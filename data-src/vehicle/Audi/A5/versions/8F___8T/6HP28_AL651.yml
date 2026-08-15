@@ -4,7 +4,7 @@ evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-08-15 12:15:51 CEST
+updated: 2026-08-15 12:47:50 CEST
 config:
 - config1:
     engine: Audi/6HP28
@@ -16,4 +16,10 @@ config:
     power_kw: 0.0
     ecu:
       TCM:
+        model: ZF/AL651
+- config3:
+    engine: Audi/6HP28
+    power_kw: 0.0
+    ecu:
+      ECM:
         model: ZF/AL651

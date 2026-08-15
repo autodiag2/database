@@ -2,7 +2,7 @@ created: 2026-07-17 23:09:43 CEST
 version: V
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-18 18:13:17 CEST
+updated: 2026-08-15 12:47:09 CEST
 config:
 - config1:
     engine: Volkswagen/1200_TSI
@@ -10,3 +10,9 @@ config:
       ECM:
         model: Continental/SIM.12
     power_kw: 66.0
+- config2:
+    engine: Volkswagen/1200_TSI
+    power_kw: 77.0
+    ecu:
+      ECM:
+        model: Continental/SIM.12

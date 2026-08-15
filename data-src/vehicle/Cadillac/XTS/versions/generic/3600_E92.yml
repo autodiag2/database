@@ -2,10 +2,16 @@ created: 2026-07-17 23:19:15 CEST
 year: '2015'
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:19:15 CEST
+updated: 2026-08-15 12:48:58 CEST
 config:
 - config1:
     engine: Cadillac/3600
+    ecu:
+      ECM:
+        model: DELCO/E92
+- config2:
+    engine: Cadillac/3600
+    power_kw: 0.0
     ecu:
       ECM:
         model: DELCO/E92

@@ -2,10 +2,16 @@ created: 2026-07-17 23:18:29 CEST
 version: 8F / 8T
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:18:29 CEST
+updated: 2026-08-15 12:48:05 CEST
 config:
 - config1:
     engine: Audi/CALA
+    ecu:
+      ECM:
+        model: CONTINENTAL/SIMOS-8.2
+- config2:
+    engine: Audi/CALA
+    power_kw: 0.0
     ecu:
       ECM:
         model: CONTINENTAL/SIMOS-8.2

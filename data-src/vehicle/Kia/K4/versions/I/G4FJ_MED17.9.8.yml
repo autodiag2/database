@@ -3,7 +3,7 @@ year: '2015'
 version: I
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:15:50 CEST
+updated: 2026-08-15 12:49:59 CEST
 config:
 - config1:
     engine: Kia/G4FJ
@@ -11,3 +11,9 @@ config:
       ECM:
         model: BOSCH/MED17.9.8
     power_kw: 129.0
+- config2:
+    engine: Kia/G4FJ
+    power_kw: 132.0
+    ecu:
+      ECM:
+        model: BOSCH/MED17.9.8

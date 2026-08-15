@@ -1,7 +1,7 @@
 created: 2026-07-17 23:09:19 CEST
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-18 18:12:47 CEST
+updated: 2026-08-15 12:46:40 CEST
 config:
 - config1:
     engine: Renault_Trucks/DXi11
@@ -9,3 +9,15 @@ config:
       ECM:
         model: TRW/TRWEMS2DXI12
     power_kw: 243.0
+- config2:
+    engine: Renault_Trucks/DXi11
+    power_kw: 279.0
+    ecu:
+      ECM:
+        model: TRW/TRWEMS2DXI12
+- config3:
+    engine: Renault_Trucks/DXi11
+    power_kw: 324.0
+    ecu:
+      ECM:
+        model: TRW/TRWEMS2DXI12

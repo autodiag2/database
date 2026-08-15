@@ -3,7 +3,7 @@ year: '2011'
 version: NUJ10
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:16:58 CEST
+updated: 2026-08-15 12:51:07 CEST
 config:
 - config1:
     engine: Scion/1NRFE
@@ -11,3 +11,21 @@ config:
       ECM:
         model: DENSO/896xx
     power_kw: 71.0
+- config2:
+    engine: Scion/1NRFE
+    power_kw: 72.0
+    ecu:
+      ECM:
+        model: DENSO/896xx
+- config3:
+    engine: Scion/1NRFE
+    power_kw: 73.0
+    ecu:
+      ECM:
+        model: DENSO/896xx
+- config4:
+    engine: Scion/1NRFE
+    power_kw: 74.0
+    ecu:
+      ECM:
+        model: DENSO/896xx

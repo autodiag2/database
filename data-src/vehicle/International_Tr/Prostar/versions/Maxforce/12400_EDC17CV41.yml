@@ -2,10 +2,16 @@ created: 2026-07-17 23:08:42 CEST
 version: Maxforce
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-17 23:08:42 CEST
+updated: 2026-08-15 12:45:56 CEST
 config:
 - config1:
     engine: International_Tr/12400
+    ecu:
+      ECM:
+        model: Bosch/EDC17CV41
+- config2:
+    engine: International_Tr/12400
+    power_kw: 0.0
     ecu:
       ECM:
         model: Bosch/EDC17CV41

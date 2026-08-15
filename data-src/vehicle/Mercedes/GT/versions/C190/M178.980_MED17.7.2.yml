@@ -3,7 +3,7 @@ year: '2014'
 version: C190
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:16:20 CEST
+updated: 2026-08-15 12:50:29 CEST
 config:
 - config1:
     engine: Mercedes/M178.980
@@ -11,3 +11,15 @@ config:
       ECM:
         model: BOSCH/MED17.7.2
     power_kw: 340.0
+- config2:
+    engine: Mercedes/M178.980
+    power_kw: 430.0
+    ecu:
+      ECM:
+        model: BOSCH/MED17.7.2
+- config3:
+    engine: Mercedes/M178.980
+    power_kw: 375.0
+    ecu:
+      ECM:
+        model: BOSCH/MED17.7.2

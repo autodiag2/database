@@ -3,7 +3,7 @@ year: '2009'
 version: F142
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:15:13 CEST
+updated: 2026-08-15 12:49:18 CEST
 conflicts:
   year:
   - value: '2013'
@@ -19,3 +19,15 @@ config:
       TCM:
         model: MARELLI/9TDE
     power_kw: 419.0
+- config2:
+    engine: Ferrari/F136FB
+    power_kw: 419.0
+    ecu:
+      ECM:
+        model: MARELLI/9TDE
+- config3:
+    engine: Ferrari/F136FB
+    power_kw: 445.0
+    ecu:
+      ECM:
+        model: MARELLI/9TDE

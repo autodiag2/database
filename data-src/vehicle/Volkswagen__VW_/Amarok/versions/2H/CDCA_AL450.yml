@@ -3,7 +3,7 @@ year: '2010'
 version: 2H
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:17:32 CEST
+updated: 2026-08-15 12:51:41 CEST
 config:
 - config1:
     engine: Volkswagen__VW_/CDCA
@@ -11,3 +11,15 @@ config:
       TCM:
         model: ZF/AL450
     power_kw: 120.0
+- config2:
+    engine: Volkswagen__VW_/CDCA
+    power_kw: 120.0
+    ecu:
+      ECM:
+        model: ZF/AL450
+- config3:
+    engine: Volkswagen__VW_/CDCA
+    power_kw: 132.0
+    ecu:
+      ECM:
+        model: ZF/AL450

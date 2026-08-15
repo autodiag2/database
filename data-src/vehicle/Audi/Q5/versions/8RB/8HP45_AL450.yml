@@ -3,7 +3,7 @@ version: 8RB
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-08-15 12:16:01 CEST
+updated: 2026-08-15 12:48:02 CEST
 conflicts:
   year:
   - value: '2012'
@@ -59,4 +59,46 @@ config:
     power_kw: 199.0
     ecu:
       TCM:
+        model: ZF/AL450
+- config9:
+    engine: Audi/8HP45
+    power_kw: 110.0
+    ecu:
+      ECM:
+        model: ZF/AL450
+- config10:
+    engine: Audi/8HP45
+    power_kw: 130.0
+    ecu:
+      ECM:
+        model: ZF/AL450
+- config11:
+    engine: Audi/8HP45
+    power_kw: 165.0
+    ecu:
+      ECM:
+        model: ZF/AL450
+- config12:
+    engine: Audi/8HP45
+    power_kw: 155.0
+    ecu:
+      ECM:
+        model: ZF/AL450
+- config13:
+    engine: Audi/8HP45
+    power_kw: 180.0
+    ecu:
+      ECM:
+        model: ZF/AL450
+- config14:
+    engine: Audi/8HP45
+    power_kw: 184.0
+    ecu:
+      ECM:
+        model: ZF/AL450
+- config15:
+    engine: Audi/8HP45
+    power_kw: 199.0
+    ecu:
+      ECM:
         model: ZF/AL450

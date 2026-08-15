@@ -3,10 +3,16 @@ year: '2006'
 version: J120
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-17 23:21:28 CEST
+updated: 2026-08-15 12:51:30 CEST
 config:
 - config1:
     engine: Toyota/4000_TD
+    ecu:
+      ECM:
+        model: DENSO/896xx
+- config2:
+    engine: Toyota/4000_TD
+    power_kw: 0.0
     ecu:
       ECM:
         model: DENSO/896xx

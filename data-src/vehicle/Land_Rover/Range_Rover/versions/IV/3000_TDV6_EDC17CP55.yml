@@ -3,7 +3,7 @@ year: 2014-2020
 version: IV
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-20 18:45:45 CEST
+updated: 2026-08-15 12:46:04 CEST
 conflicts:
   year:
   - value: '2015'
@@ -15,3 +15,9 @@ config:
       ECM:
         model: BOSCH/EDC17CP55
     power_kw: 188.0
+- config2:
+    engine: Land_Rover/3000_TDV6
+    power_kw: 180.0
+    ecu:
+      ECM:
+        model: Bosch/EDC17CP55
