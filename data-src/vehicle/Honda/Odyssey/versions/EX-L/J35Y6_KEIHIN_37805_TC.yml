@@ -1,9 +1,12 @@
 created: 2026-07-17 23:08:39 CEST
 version: EX-L
-engine: Honda/J35Y6
-power_kw: 209.0
-ecu:
-- Keihin/KEIHIN_37805_TC
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:08:39 CEST
+config:
+- config1:
+    engine: Honda/J35Y6
+    ecu:
+      ECM:
+        model: Keihin/KEIHIN_37805_TC
+    power_kw: 209.0

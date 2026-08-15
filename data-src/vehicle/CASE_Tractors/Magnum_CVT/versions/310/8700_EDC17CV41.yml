@@ -1,12 +1,14 @@
 created: 2026-07-17 23:08:17 CEST
 version: '310'
-engine: CASE_Tractors/8700
-power_kw: 232.0
-ecu:
-- BOSCH/EDC17CV41
-- Bosch/EDC17CV41
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-20 18:45:03 CEST
 year: '2014'
+config:
+- config1:
+    engine: CASE_Tractors/8700
+    ecu:
+      ECM:
+        model: BOSCH/EDC17CV41
+    power_kw: 232.0

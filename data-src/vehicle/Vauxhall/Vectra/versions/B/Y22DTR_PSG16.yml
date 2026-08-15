@@ -1,13 +1,15 @@
 created: 2026-07-17 23:09:35 CEST
 version: B
-engine: Vauxhall/Y22DTR
-power_kw: 92.0
-ecu:
-- BOSCH/PSG16
-- Bosch/PSG16
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-20 18:43:54 CEST
 year: '2000'
+config:
+- config1:
+    engine: Vauxhall/Y22DTR
+    ecu:
+      ECM:
+        model: BOSCH/PSG16
+    power_kw: 92.0

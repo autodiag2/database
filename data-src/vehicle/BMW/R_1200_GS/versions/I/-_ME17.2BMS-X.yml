@@ -1,9 +1,12 @@
 created: 2026-07-17 23:15:23 CEST
 version: I
-engine: BMW/-
-power_kw: 93.0
-ecu:
-- Bosch/ME17.2BMS-X
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:15:23 CEST
+config:
+- config1:
+    engine: BMW/-
+    ecu:
+      ECM:
+        model: Bosch/ME17.2BMS-X
+    power_kw: 93.0

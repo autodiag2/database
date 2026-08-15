@@ -1,11 +1,6 @@
 created: 2026-07-17 23:09:15 CEST
 year: 2011-2018
 version: IV
-engine: Renault/1600_Turbo_RS_Trophy
-power_kw: 162.0
-ecu:
-- CONTINENTAL/EMS3155
-- Continental/EMS3155
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-20 18:46:17 CEST
@@ -13,3 +8,10 @@ conflicts:
   year:
   - value: '2012'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+config:
+- config1:
+    engine: Renault/1600_Turbo_RS_Trophy
+    ecu:
+      ECM:
+        model: CONTINENTAL/EMS3155
+    power_kw: 162.0

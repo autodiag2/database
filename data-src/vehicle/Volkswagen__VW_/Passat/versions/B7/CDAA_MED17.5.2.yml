@@ -1,10 +1,6 @@
 created: 2026-07-17 23:21:47 CEST
 year: '2009'
 version: B7
-engine: Volkswagen__VW_/CDAA
-power_kw: 118.0
-ecu:
-- BOSCH/MED17.5.2
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:17:44 CEST
@@ -14,3 +10,10 @@ conflicts:
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
   - value: '2008'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+config:
+- config1:
+    engine: Volkswagen__VW_/CDAA
+    ecu:
+      ECM:
+        model: BOSCH/MED17.5.2
+    power_kw: 118.0

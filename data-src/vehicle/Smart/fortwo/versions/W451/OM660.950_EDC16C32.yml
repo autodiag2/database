@@ -1,10 +1,5 @@
 created: 2026-07-17 23:17:09 CEST
 version: W451
-engine: Smart/OM660.950
-power_kw: 33.0
-ecu:
-- BOSCH/EDC16C32
-- Bosch/EDC16C32
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
@@ -19,3 +14,10 @@ conflicts:
   - value: '2009'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 year: '2007'
+config:
+- config1:
+    engine: Smart/OM660.950
+    ecu:
+      ECM:
+        model: BOSCH/EDC16C32
+    power_kw: 33.0

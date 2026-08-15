@@ -1,12 +1,14 @@
 created: 2026-07-17 23:15:28 CEST
 version: II
-engine: Buick/LDK
-power_kw: 166.0
-ecu:
-- BOSCH/ME9.6
-- Bosch/ME9.6
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-20 18:41:37 CEST
 year: '2009'
+config:
+- config1:
+    engine: Buick/LDK
+    ecu:
+      ECM:
+        model: BOSCH/ME9.6
+    power_kw: 166.0

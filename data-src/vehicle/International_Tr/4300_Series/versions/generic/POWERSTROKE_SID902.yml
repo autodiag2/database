@@ -1,8 +1,4 @@
 created: 2026-07-17 23:08:42 CEST
-engine: International_Tr/POWERSTROKE
-power_kw: 162.0
-ecu:
-- Siemens/SID902
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:12:03 CEST
@@ -10,3 +6,10 @@ conflicts:
   power_kw:
   - value: 221.0
     evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+config:
+- config1:
+    engine: International_Tr/POWERSTROKE
+    ecu:
+      ECM:
+        model: Siemens/SID902
+    power_kw: 162.0

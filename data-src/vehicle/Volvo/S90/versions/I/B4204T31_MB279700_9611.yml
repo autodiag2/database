@@ -1,10 +1,13 @@
 created: 2026-07-17 23:21:54 CEST
 year: '2017'
 version: I
-engine: Volvo/B4204T31
-power_kw: 140.0
-ecu:
-- DENSO/MB279700_9611
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:54 CEST
+config:
+- config1:
+    engine: Volvo/B4204T31
+    ecu:
+      ECM:
+        model: DENSO/MB279700_9611
+    power_kw: 140.0

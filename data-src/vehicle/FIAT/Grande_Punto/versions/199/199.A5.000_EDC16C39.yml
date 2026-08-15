@@ -1,10 +1,13 @@
 created: 2026-07-17 23:19:37 CEST
 year: '2006'
 version: '199'
-engine: Fiat/199.A5.000
-power_kw: 96.0
-ecu:
-- BOSCH/EDC16C39
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:19:37 CEST
+config:
+- config1:
+    engine: Fiat/199.A5.000
+    ecu:
+      ECM:
+        model: BOSCH/EDC16C39
+    power_kw: 96.0

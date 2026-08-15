@@ -1,9 +1,12 @@
 created: 2026-07-17 23:08:55 CEST
 version: W205
-engine: Mercedes/OM651.921
-power_kw: 125.0
-ecu:
-- Delphi/CRD2.x
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:08:55 CEST
+config:
+- config1:
+    engine: Mercedes/OM651.921
+    ecu:
+      ECM:
+        model: Delphi/CRD2.x
+    power_kw: 125.0

@@ -1,9 +1,5 @@
 created: 2026-07-17 23:20:03 CEST
 year: '2011'
-engine: Hyundai/G4FC
-power_kw: 85.0
-ecu:
-- BOSCH/M17.9.11
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:15:44 CEST
@@ -11,3 +7,10 @@ conflicts:
   power_kw:
   - value: 96.0
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+config:
+- config1:
+    engine: Hyundai/G4FC
+    ecu:
+      ECM:
+        model: BOSCH/M17.9.11
+    power_kw: 85.0

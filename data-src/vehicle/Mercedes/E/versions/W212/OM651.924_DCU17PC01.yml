@@ -1,10 +1,6 @@
 created: 2026-07-17 23:20:31 CEST
 year: '2008'
 version: W212
-engine: Mercedes/OM651.924
-power_kw: 120.0
-ecu:
-- BOSCH/DCU17PC01
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:16:16 CEST
@@ -19,3 +15,10 @@ conflicts:
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
   - value: '2012'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+config:
+- config1:
+    engine: Mercedes/OM651.924
+    ecu:
+      ECM:
+        model: BOSCH/DCU17PC01
+    power_kw: 120.0

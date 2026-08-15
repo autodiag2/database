@@ -1,11 +1,6 @@
 created: 2026-07-17 23:08:45 CEST
 year: 2006-2019
 version: WK2
-engine: Jeep/3000_CRD
-power_kw: 140.0
-ecu:
-- BOSCH/EDC17C49
-- Bosch/EDC17C49
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-20 18:45:40 CEST
@@ -18,3 +13,10 @@ conflicts:
   year:
   - value: '2011'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+config:
+- config1:
+    engine: Jeep/3000_CRD
+    ecu:
+      ECM:
+        model: BOSCH/EDC17C49
+    power_kw: 140.0

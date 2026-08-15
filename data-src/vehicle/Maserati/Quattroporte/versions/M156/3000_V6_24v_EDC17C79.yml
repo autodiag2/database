@@ -1,11 +1,6 @@
 created: 2026-07-17 23:08:51 CEST
 year: 2009-2014
 version: M156
-engine: Maserati/3000_V6_24v
-power_kw: 184.0
-ecu:
-- BOSCH/EDC17C79
-- Bosch/EDC17C79
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-20 18:45:48 CEST
@@ -18,3 +13,10 @@ conflicts:
   year:
   - value: '2013'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+config:
+- config1:
+    engine: Maserati/3000_V6_24v
+    ecu:
+      ECM:
+        model: BOSCH/EDC17C79
+    power_kw: 184.0

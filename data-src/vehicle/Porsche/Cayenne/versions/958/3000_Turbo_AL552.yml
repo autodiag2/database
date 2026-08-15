@@ -1,9 +1,12 @@
 created: 2026-07-17 23:16:49 CEST
 version: '958'
-engine: Porsche/3000_Turbo
-power_kw: 250.0
-ecu:
-- ZF/AL552
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:16:49 CEST
+config:
+- config1:
+    engine: Porsche/3000_Turbo
+    ecu:
+      TCM:
+        model: ZF/AL552
+    power_kw: 250.0

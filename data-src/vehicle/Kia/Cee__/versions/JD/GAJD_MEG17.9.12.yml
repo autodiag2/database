@@ -1,9 +1,12 @@
 created: 2026-07-17 23:08:45 CEST
 year: 2008-2018
 version: JD
-engine: Kia/GAJD
-ecu:
-- Bosch/MEG17.9.12
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:08:45 CEST
+config:
+- config1:
+    engine: Kia/GAJD
+    ecu:
+      OTHER:
+        model: Bosch/MEG17.9.12

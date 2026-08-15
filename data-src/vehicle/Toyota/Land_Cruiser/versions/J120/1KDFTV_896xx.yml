@@ -1,10 +1,5 @@
 created: 2026-07-17 23:09:30 CEST
 version: J120
-engine: Toyota/1KDFTV
-power_kw: 120.0
-ecu:
-- DENSO/896xx
-- Denso/896xx
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
@@ -17,3 +12,10 @@ conflicts:
   power_kw:
   - value: 140.0
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+config:
+- config1:
+    engine: Toyota/1KDFTV
+    ecu:
+      ECM:
+        model: DENSO/896xx
+    power_kw: 120.0

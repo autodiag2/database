@@ -1,9 +1,12 @@
 created: 2026-07-17 23:08:29 CEST
 year: 2011-2020
-engine: Ford/Bi-Turbo_Ecoboo
-power_kw: 279.0
-ecu:
-- Bosch/MEDG17.0
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:08:29 CEST
+config:
+- config1:
+    engine: Ford/Bi-Turbo_Ecoboo
+    ecu:
+      OTHER:
+        model: Bosch/MEDG17.0
+    power_kw: 279.0

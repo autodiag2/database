@@ -1,9 +1,12 @@
 created: 2026-07-17 23:16:03 CEST
 version: 4x2 AT Blue
-engine: Isuzu/RZ4E
-power_kw: 110.0
-ecu:
-- Bosch/MD1CS089
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:16:03 CEST
+config:
+- config1:
+    engine: Isuzu/RZ4E
+    ecu:
+      ECM:
+        model: Bosch/MD1CS089
+    power_kw: 110.0

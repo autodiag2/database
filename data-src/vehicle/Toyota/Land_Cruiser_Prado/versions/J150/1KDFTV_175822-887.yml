@@ -1,9 +1,5 @@
 created: 2026-07-17 23:09:30 CEST
 version: J150
-engine: Toyota/1KDFTV
-power_kw: 120.0
-ecu:
-- Denso/175822-887
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:13:01 CEST
@@ -11,3 +7,10 @@ conflicts:
   power_kw:
   - value: 126.0
     evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
+config:
+- config1:
+    engine: Toyota/1KDFTV
+    ecu:
+      ECM:
+        model: Denso/175822-887
+    power_kw: 120.0

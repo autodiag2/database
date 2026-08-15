@@ -1,9 +1,12 @@
 created: 2026-07-17 23:17:28 CEST
 version: VII
-engine: Volkswagen/CJXE
-power_kw: 195.0
-ecu:
-- Continental/SIMOS18.1
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:17:28 CEST
+config:
+- config1:
+    engine: Volkswagen/CJXE
+    ecu:
+      ECM:
+        model: Continental/SIMOS18.1
+    power_kw: 195.0

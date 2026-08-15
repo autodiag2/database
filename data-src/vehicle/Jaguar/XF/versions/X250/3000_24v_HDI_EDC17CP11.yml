@@ -1,11 +1,6 @@
 created: 2026-07-17 23:08:43 CEST
 year: 2004-2018
 version: X250
-engine: Jaguar/3000_24v_HDI
-power_kw: 174.0
-ecu:
-- BOSCH/EDC17CP11
-- Bosch/EDC17CP11
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
@@ -21,3 +16,10 @@ conflicts:
   year:
   - value: '2011'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+config:
+- config1:
+    engine: Jaguar/3000_24v_HDI
+    ecu:
+      ECM:
+        model: BOSCH/EDC17CP11
+    power_kw: 174.0

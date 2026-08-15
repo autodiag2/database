@@ -1,9 +1,12 @@
 created: 2026-07-17 23:09:47 CEST
 version: II
-engine: Volvo/B5244S
-power_kw: 125.0
-ecu:
-- Denso/079700-9540
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-17 23:09:47 CEST
+config:
+- config1:
+    engine: Volvo/B5244S
+    ecu:
+      ECM:
+        model: Denso/079700-9540
+    power_kw: 125.0

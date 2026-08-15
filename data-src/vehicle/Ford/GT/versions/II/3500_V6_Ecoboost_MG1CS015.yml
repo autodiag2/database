@@ -1,10 +1,13 @@
 created: 2026-07-17 23:19:46 CEST
 year: '2017'
 version: II
-engine: Ford/3500_V6_Ecoboost
-power_kw: 482.0
-ecu:
-- BOSCH/MG1CS015
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:19:46 CEST
+config:
+- config1:
+    engine: Ford/3500_V6_Ecoboost
+    ecu:
+      ECM:
+        model: BOSCH/MG1CS015
+    power_kw: 482.0

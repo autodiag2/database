@@ -1,9 +1,12 @@
 created: 2026-07-17 23:15:27 CEST
 version: E89
-engine: BMW/N52B25A
-power_kw: 152.0
-ecu:
-- CONTINENTAL_SIEME/MSV80
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-17 23:15:27 CEST
+config:
+- config1:
+    engine: BMW/N52B25A
+    ecu:
+      ECM:
+        model: CONTINENTAL_SIEME/MSV80
+    power_kw: 152.0

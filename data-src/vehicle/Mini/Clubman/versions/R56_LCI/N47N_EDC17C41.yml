@@ -1,11 +1,6 @@
 created: 2026-07-17 23:09:01 CEST
 year: 2004-2016
 version: R56 LCI
-engine: Mini/N47N
-power_kw: 82.0
-ecu:
-- BOSCH/EDC17C41
-- Bosch/EDC17C41
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
@@ -23,3 +18,10 @@ conflicts:
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
   - value: '2009'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+config:
+- config1:
+    engine: Mini/N47N
+    ecu:
+      ECM:
+        model: BOSCH/EDC17C41
+    power_kw: 82.0

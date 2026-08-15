@@ -1,8 +1,4 @@
 created: 2026-07-17 23:14:57 CEST
-engine: Bentley/8HP
-power_kw: 434.0
-ecu:
-- ZF/AL951
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-07-18 18:03:57 CEST
@@ -10,3 +6,10 @@ conflicts:
   power_kw:
   - value: 522.0
     evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+config:
+- config1:
+    engine: Bentley/8HP
+    ecu:
+      TCM:
+        model: ZF/AL951
+    power_kw: 434.0

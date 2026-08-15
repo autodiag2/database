@@ -1,10 +1,13 @@
 created: 2026-07-17 23:21:20 CEST
 year: '2014'
 version: SJ
-engine: Subaru/2500i
-power_kw: 127.0
-ecu:
-- DENSO/25NA
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:20 CEST
+config:
+- config1:
+    engine: Subaru/2500i
+    ecu:
+      ECM:
+        model: DENSO/25NA
+    power_kw: 127.0

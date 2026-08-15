@@ -1,10 +1,13 @@
 created: 2026-07-17 23:20:56 CEST
 year: '2015'
 version: A9
-engine: Peugeot/FHY
-power_kw: 70.0
-ecu:
-- MARELLI/9DF
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:20:56 CEST
+config:
+- config1:
+    engine: Peugeot/FHY
+    ecu:
+      ECM:
+        model: MARELLI/9DF
+    power_kw: 70.0

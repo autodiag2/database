@@ -1,10 +1,13 @@
 created: 2026-07-17 23:21:42 CEST
 year: '2004'
 version: V
-engine: Volkswagen__VW_/1900_TDI
-power_kw: 66.0
-ecu:
-- BOSCH/EDC16U31
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-17 23:21:42 CEST
+config:
+- config1:
+    engine: Volkswagen__VW_/1900_TDI
+    ecu:
+      ECM:
+        model: BOSCH/EDC16U31
+    power_kw: 66.0

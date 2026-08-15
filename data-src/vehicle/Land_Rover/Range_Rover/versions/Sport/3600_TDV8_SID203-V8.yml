@@ -1,10 +1,5 @@
 created: 2026-07-17 23:08:49 CEST
 version: Sport
-engine: Land_Rover/3600_TDV8
-power_kw: 200.0
-ecu:
-- SIEMENS/SID203-V8
-- Siemens/SID203-V8
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
@@ -14,3 +9,10 @@ conflicts:
   year:
   - value: '2007'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+config:
+- config1:
+    engine: Land_Rover/3600_TDV8
+    ecu:
+      ECM:
+        model: SIEMENS/SID203-V8
+    power_kw: 200.0
