@@ -6,9 +6,6 @@ evidence:
 updated: 2026-07-20 18:46:36 CEST
 year: '2009'
 conflicts:
-  power_kw:
-  - value: 210.0
-    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
   year:
   - value: '2014'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf

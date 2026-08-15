@@ -2,14 +2,6 @@ created: 2026-07-17 23:14:56 CEST
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-08-15 12:16:05 CEST
-conflicts:
-  power_kw:
-  - value: 467.0
-    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-  - value: 472.0
-    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-  - value: 434.0
-    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 config:
 - config1:
     engine: Bentley/6000_V12

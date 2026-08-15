@@ -3,20 +3,6 @@ evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-20 18:46:38 CEST
-conflicts:
-  power_kw:
-  - value: 72.0
-    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-  - value: 73.0
-    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-  - value: 74.0
-    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-  - value: 72.0
-    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-  - value: 73.0
-    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-  - value: 74.0
-    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 year: '2010'
 config:
 - config1:

@@ -4,10 +4,6 @@ version: F46
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:14:13 CEST
-conflicts:
-  power_kw:
-  - value: 140.0
-    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 config:
 - config1:
     engine: Bmw/B47C20A

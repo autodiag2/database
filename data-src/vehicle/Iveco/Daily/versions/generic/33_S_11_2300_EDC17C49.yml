@@ -3,10 +3,6 @@ year: '2013'
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:15:45 CEST
-conflicts:
-  power_kw:
-  - value: 78.0
-    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 config:
 - config1:
     engine: Iveco/33_S_11_2300

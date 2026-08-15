@@ -8,9 +8,6 @@ conflicts:
   year:
   - value: '2006'
     evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-  power_kw:
-  - value: 236.0
-    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 config:
 - config1:
     engine: Toyota/3GRFSE

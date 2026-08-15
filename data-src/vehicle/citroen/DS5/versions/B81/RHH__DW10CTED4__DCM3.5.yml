@@ -4,10 +4,6 @@ version: B81
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:15:08 CEST
-conflicts:
-  power_kw:
-  - value: 121.0
-    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 config:
 - config1:
     engine: Citroen/RHH__DW10CTED4_

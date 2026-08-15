@@ -3,10 +3,6 @@ version: IV
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-08-15 12:17:33 CEST
-conflicts:
-  power_kw:
-  - value: 180.0
-    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 config:
 - config1:
     engine: Land_Rover/3000_TDV6

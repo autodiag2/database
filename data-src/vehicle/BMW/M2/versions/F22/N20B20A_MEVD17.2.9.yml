@@ -3,10 +3,6 @@ version: F22
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 updated: 2026-08-15 12:16:35 CEST
-conflicts:
-  power_kw:
-  - value: 180.0
-    evidence: https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 config:
 - config1:
     engine: BMW/N20B20A

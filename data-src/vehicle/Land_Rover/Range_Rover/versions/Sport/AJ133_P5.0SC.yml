@@ -3,10 +3,6 @@ version: Sport
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:12:15 CEST
-conflicts:
-  power_kw:
-  - value: 368.0
-    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 config:
 - config1:
     engine: Land_Rover/AJ133

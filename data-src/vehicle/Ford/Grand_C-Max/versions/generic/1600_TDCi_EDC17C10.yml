@@ -3,10 +3,6 @@ year: 2000-2018
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:11:52 CEST
-conflicts:
-  power_kw:
-  - value: 70.0
-    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 config:
 - config1:
     engine: Ford/1600_TDCi

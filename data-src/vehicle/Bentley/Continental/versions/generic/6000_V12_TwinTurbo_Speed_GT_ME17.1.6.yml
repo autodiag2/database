@@ -2,12 +2,6 @@ created: 2026-07-17 23:08:04 CEST
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:11:21 CEST
-conflicts:
-  power_kw:
-  - value: 467.0
-    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-  - value: 472.0
-    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 config:
 - config1:
     engine: Bentley/6000_V12_TwinTurbo_Speed_GT

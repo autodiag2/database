@@ -3,10 +3,6 @@ version: J150
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:13:01 CEST
-conflicts:
-  power_kw:
-  - value: 126.0
-    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 config:
 - config1:
     engine: Toyota/1KDFTV

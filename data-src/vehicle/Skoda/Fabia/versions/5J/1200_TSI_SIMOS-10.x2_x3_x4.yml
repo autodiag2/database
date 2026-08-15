@@ -3,10 +3,6 @@ version: 5J
 evidence:
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 updated: 2026-07-18 18:17:05 CEST
-conflicts:
-  power_kw:
-  - value: 63.0
-    evidence: https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
 config:
 - config1:
     engine: Skoda/1200_TSI

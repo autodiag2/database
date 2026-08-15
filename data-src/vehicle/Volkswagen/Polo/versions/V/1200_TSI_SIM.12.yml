@@ -3,10 +3,6 @@ version: V
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 updated: 2026-07-18 18:13:17 CEST
-conflicts:
-  power_kw:
-  - value: 77.0
-    evidence: https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 config:
 - config1:
     engine: Volkswagen/1200_TSI
