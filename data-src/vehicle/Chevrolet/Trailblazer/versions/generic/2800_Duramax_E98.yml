@@ -3,7 +3,7 @@ year: 2008-2018
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-20 18:41:44 CEST
+updated: 2026-08-15 12:16:49 CEST
 conflicts:
   year:
   - value: '2014'
@@ -14,3 +14,9 @@ config:
     ecu:
       ECM:
         model: DELCO/E98
+- config2:
+    engine: Chevrolet/2800_Duramax
+    power_kw: 0.0
+    ecu:
+      ECM:
+        model: Delco/E98

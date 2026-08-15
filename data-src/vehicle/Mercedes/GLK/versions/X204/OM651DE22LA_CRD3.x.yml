@@ -4,7 +4,7 @@ evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 18:42:52 CEST
+updated: 2026-08-15 12:17:47 CEST
 conflicts:
   power_kw:
   - value: 150.0
@@ -24,3 +24,9 @@ config:
       ECM:
         model: DELPHI/CRD3.x
     power_kw: 125.0
+- config2:
+    engine: Mercedes/OM651DE22LA
+    power_kw: 150.0
+    ecu:
+      ECM:
+        model: Delphi/CRD3.x

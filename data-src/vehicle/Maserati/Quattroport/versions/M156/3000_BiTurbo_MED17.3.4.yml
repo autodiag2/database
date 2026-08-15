@@ -2,7 +2,7 @@ created: 2026-07-17 23:16:15 CEST
 version: M156
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:05:31 CEST
+updated: 2026-08-15 12:17:36 CEST
 conflicts:
   power_kw:
   - value: 301.0
@@ -14,3 +14,15 @@ config:
       ECM:
         model: Bosch/MED17.3.4
     power_kw: 243.0
+- config2:
+    engine: Maserati/3000_BiTurbo
+    power_kw: 301.0
+    ecu:
+      ECM:
+        model: Bosch/MED17.3.4
+- config3:
+    engine: Maserati/3000_BiTurbo
+    power_kw: 0.0
+    ecu:
+      ECM:
+        model: Bosch/MED17.3.4

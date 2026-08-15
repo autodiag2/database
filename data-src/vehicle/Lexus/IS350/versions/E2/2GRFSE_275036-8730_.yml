@@ -3,7 +3,7 @@ version: E2
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:12:15 CEST
+updated: 2026-08-15 12:17:34 CEST
 conflicts:
   power_kw:
   - value: 180.0
@@ -17,3 +17,9 @@ config:
       ECM:
         model: Denso/275036-8730_
     power_kw: 234.0
+- config2:
+    engine: Lexus/2GRFSE
+    power_kw: 180.0
+    ecu:
+      ECM:
+        model: Denso/275036-8730_

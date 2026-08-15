@@ -4,7 +4,7 @@ version: II
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:12:13 CEST
+updated: 2026-08-15 12:17:32 CEST
 conflicts:
   power_kw:
   - value: 100.0
@@ -18,3 +18,9 @@ config:
       ECM:
         model: Siemens/SID803A
     power_kw: 88.0
+- config2:
+    engine: Lancia/2000_MJT
+    power_kw: 100.0
+    ecu:
+      ECM:
+        model: Siemens/SID803A

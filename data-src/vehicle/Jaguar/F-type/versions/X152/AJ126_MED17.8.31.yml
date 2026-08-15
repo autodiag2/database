@@ -4,7 +4,7 @@ version: X152
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-20 18:42:24 CEST
+updated: 2026-08-15 12:17:25 CEST
 conflicts:
   power_kw:
   - value: 254.0
@@ -37,3 +37,21 @@ config:
       ECM:
         model: BOSCH/MED17.8.31
     power_kw: 250.0
+- config2:
+    engine: Jaguar/AJ126
+    power_kw: 254.0
+    ecu:
+      ECM:
+        model: Bosch/MED17.8.31
+- config3:
+    engine: Jaguar/AJ126
+    power_kw: 279.0
+    ecu:
+      ECM:
+        model: Bosch/MED17.8.31
+- config4:
+    engine: Jaguar/AJ126
+    power_kw: 280.0
+    ecu:
+      ECM:
+        model: Bosch/MED17.8.31

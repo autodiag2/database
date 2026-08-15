@@ -4,7 +4,7 @@ version: '952'
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-20 18:40:33 CEST
+updated: 2026-08-15 12:15:42 CEST
 conflicts:
   power_kw:
   - value: 100.0
@@ -29,3 +29,15 @@ config:
       ECM:
         model: BOSCH/EDC17C69
     power_kw: 110.0
+- config2:
+    engine: Alfa_Romeo/55266388
+    power_kw: 100.0
+    ecu:
+      ECM:
+        model: Bosch/EDC17C69
+- config3:
+    engine: Alfa_Romeo/55266388
+    power_kw: 154.0
+    ecu:
+      ECM:
+        model: Bosch/EDC17C69

@@ -1,7 +1,7 @@
 created: 2026-07-17 23:15:48 CEST
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-17 23:15:48 CEST
+updated: 2026-08-15 12:17:07 CEST
 config:
 - config1:
     engine: Ford/Bi-Turbo
@@ -9,3 +9,9 @@ config:
       OTHER:
         model: Bosch/MEDG17.0
     power_kw: 279.0
+- config2:
+    engine: Ford/Bi-Turbo
+    power_kw: 279.0
+    ecu:
+      OTHE:
+        model: Bosch/MEDG17.0

@@ -1,10 +1,16 @@
 created: 2026-07-17 23:15:33 CEST
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-17 23:15:33 CEST
+updated: 2026-08-15 12:16:48 CEST
 config:
 - config1:
     engine: Chevrolet/5300_V8_FLEX
+    ecu:
+      ECM:
+        model: Delco/E38
+- config2:
+    engine: Chevrolet/5300_V8_FLEX
+    power_kw: 0.0
     ecu:
       ECM:
         model: Delco/E38

@@ -3,7 +3,7 @@ version: X156
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:16:19 CEST
+updated: 2026-08-15 12:17:47 CEST
 conflicts:
   power_kw:
   - value: 280.0
@@ -21,3 +21,9 @@ config:
       TCM:
         model: GETRAG/VGS2-FDCT
     power_kw: 155.0
+- config2:
+    engine: Mercedes/M270.920
+    power_kw: 280.0
+    ecu:
+      TCM:
+        model: GETRAG/VGS2-FDCT

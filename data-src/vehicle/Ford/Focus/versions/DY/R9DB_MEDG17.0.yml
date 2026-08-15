@@ -4,7 +4,7 @@ version: DY
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-20 18:42:07 CEST
+updated: 2026-08-15 12:17:09 CEST
 conflicts:
   year:
   - value: '2014'
@@ -16,3 +16,9 @@ config:
       OTHER:
         model: BOSCH/MEDG17.0
     power_kw: 188.0
+- config2:
+    engine: Ford/R9DB
+    power_kw: 188.0
+    ecu:
+      OTHE:
+        model: Bosch/MEDG17.0

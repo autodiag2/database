@@ -4,7 +4,7 @@ version: X450
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:12:03 CEST
+updated: 2026-08-15 12:17:25 CEST
 conflicts:
   power_kw:
   - value: 184.0
@@ -18,3 +18,9 @@ config:
       ECM:
         model: Bosch/MED17.9.9
     power_kw: 221.0
+- config2:
+    engine: Jaguar/Ingenium
+    power_kw: 184.0
+    ecu:
+      ECM:
+        model: Bosch/MED17.9.9

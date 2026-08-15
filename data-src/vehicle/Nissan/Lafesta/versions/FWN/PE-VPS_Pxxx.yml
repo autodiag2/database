@@ -2,7 +2,7 @@ created: 2026-07-17 23:16:36 CEST
 version: FWN
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:05:55 CEST
+updated: 2026-08-15 12:17:57 CEST
 conflicts:
   power_kw:
   - value: 120.0
@@ -14,3 +14,9 @@ config:
       ECM:
         model: Denso/Pxxx
     power_kw: 114.0
+- config2:
+    engine: Nissan/PE-VPS
+    power_kw: 120.0
+    ecu:
+      ECM:
+        model: Denso/Pxxx

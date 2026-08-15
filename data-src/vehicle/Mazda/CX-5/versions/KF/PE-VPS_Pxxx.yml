@@ -4,7 +4,7 @@ evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 18:42:39 CEST
+updated: 2026-08-15 12:17:38 CEST
 conflicts:
   power_kw:
   - value: 118.0
@@ -27,3 +27,9 @@ config:
       ECM:
         model: MITSUBISHI/Pxxx
     power_kw: 120.0
+- config3:
+    engine: Mazda/PE-VPS
+    power_kw: 118.0
+    ecu:
+      ECM:
+        model: Denso/Pxxx

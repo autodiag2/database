@@ -3,7 +3,7 @@ version: '970'
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:12:43 CEST
+updated: 2026-08-15 12:18:12 CEST
 conflicts:
   power_kw:
   - value: 405.0
@@ -17,3 +17,9 @@ config:
       TCM:
         model: Siemens/PDK4000
     power_kw: 368.0
+- config2:
+    engine: Porsche/M48.70
+    power_kw: 405.0
+    ecu:
+      TCM:
+        model: Siemens/PDK4000

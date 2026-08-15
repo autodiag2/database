@@ -2,7 +2,7 @@ created: 2026-07-17 23:16:05 CEST
 version: X450
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:05:20 CEST
+updated: 2026-08-15 12:17:25 CEST
 conflicts:
   power_kw:
   - value: 184.0
@@ -14,3 +14,9 @@ config:
       TCM:
         model: ZF/9HP
     power_kw: 221.0
+- config2:
+    engine: Jaguar/Ingenium
+    power_kw: 184.0
+    ecu:
+      TCM:
+        model: ZF/9HP

@@ -3,7 +3,7 @@ version: F21
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-18 18:14:11 CEST
+updated: 2026-08-15 12:16:09 CEST
 conflicts:
   power_kw:
   - value: 240.0
@@ -21,3 +21,9 @@ config:
       TCM:
         model: ZF/8HP
     power_kw: 235.0
+- config2:
+    engine: BMW/N55B30A
+    power_kw: 240.0
+    ecu:
+      TCM:
+        model: ZF/8HP

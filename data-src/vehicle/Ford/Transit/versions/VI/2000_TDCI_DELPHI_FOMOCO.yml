@@ -3,7 +3,7 @@ version: VI
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:11:55 CEST
+updated: 2026-08-15 12:17:14 CEST
 conflicts:
   power_kw:
   - value: 101.0
@@ -17,3 +17,9 @@ config:
       ECM:
         model: Delphi/DELPHI_FOMOCO
     power_kw: 92.0
+- config2:
+    engine: Ford/2000_TDCI
+    power_kw: 101.0
+    ecu:
+      ECM:
+        model: Delphi/DELPHI_FOMOCO

@@ -2,7 +2,7 @@ created: 2026-07-17 23:17:14 CEST
 version: (AN50 /
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:06:33 CEST
+updated: 2026-08-15 12:18:36 CEST
 conflicts:
   power_kw:
   - value: 176.0
@@ -14,3 +14,9 @@ config:
       ECM:
         model: Denso/275036-0360
     power_kw: 174.0
+- config2:
+    engine: Toyota/1GRFE
+    power_kw: 176.0
+    ecu:
+      ECM:
+        model: Denso/275036-0360

@@ -2,10 +2,16 @@ created: 2026-07-17 23:16:08 CEST
 version: JD
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-17 23:16:08 CEST
+updated: 2026-08-15 12:17:29 CEST
 config:
 - config1:
     engine: Kia/GAJD
     ecu:
       OTHER:
+        model: Bosch/MEG17.9.12
+- config2:
+    engine: Kia/GAJD
+    power_kw: 0.0
+    ecu:
+      OTHE:
         model: Bosch/MEG17.9.12

@@ -4,7 +4,7 @@ evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
-updated: 2026-07-20 18:43:50 CEST
+updated: 2026-08-15 12:18:39 CEST
 conflicts:
   power_kw:
   - value: 72.0
@@ -33,3 +33,21 @@ config:
       ECM:
         model: DENSO/896xx
     power_kw: 71.0
+- config2:
+    engine: Toyota/1NRFE
+    power_kw: 72.0
+    ecu:
+      ECM:
+        model: Denso/896xx
+- config3:
+    engine: Toyota/1NRFE
+    power_kw: 73.0
+    ecu:
+      ECM:
+        model: Denso/896xx
+- config4:
+    engine: Toyota/1NRFE
+    power_kw: 74.0
+    ecu:
+      ECM:
+        model: Denso/896xx

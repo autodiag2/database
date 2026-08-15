@@ -4,7 +4,7 @@ version: VII
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:13:12 CEST
+updated: 2026-08-15 12:18:50 CEST
 conflicts:
   power_kw:
   - value: 150.0
@@ -18,3 +18,9 @@ config:
       TCM:
         model: Temic/DQ400E
     power_kw: 110.0
+- config2:
+    engine: Volkswagen/CUKB
+    power_kw: 150.0
+    ecu:
+      TCM:
+        model: Temic/DQ400E

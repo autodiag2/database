@@ -3,5 +3,12 @@ version: Fat Boy S
 engine: Harley/1801cc
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-17 23:15:58 CEST
+updated: 2026-08-15 12:17:17 CEST
 ecu: []
+config:
+- config1:
+    engine: Harley/1801cc
+    power_kw: 0.0
+    ecu:
+      ECM:
+        model: null

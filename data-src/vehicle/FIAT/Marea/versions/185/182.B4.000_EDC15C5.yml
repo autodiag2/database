@@ -2,7 +2,7 @@ created: 2026-07-17 23:15:44 CEST
 version: '185'
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:04:57 CEST
+updated: 2026-08-15 12:17:02 CEST
 conflicts:
   power_kw:
   - value: 100.0
@@ -14,3 +14,9 @@ config:
       ECM:
         model: Bosch/EDC15C5
     power_kw: 77.0
+- config2:
+    engine: FIAT/182.B4.000
+    power_kw: 100.0
+    ecu:
+      ECM:
+        model: Bosch/EDC15C5

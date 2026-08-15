@@ -3,7 +3,8 @@ year: 2010-2018
 version: W205
 evidence:
 - https://dev-srv.tlkeys.com/storage/files/pcmtuner/pcmtuner-detail-car-ecu-list.pdf
-updated: 2026-07-20 18:42:43 CEST
+- https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
+updated: 2026-08-15 12:17:42 CEST
 conflicts:
   power_kw:
   - value: 135.0
@@ -32,3 +33,15 @@ config:
       ECM:
         model: BOSCH/MED17.7.2
     power_kw: 152.0
+- config2:
+    engine: Mercedes/M274.920
+    power_kw: 135.0
+    ecu:
+      ECM:
+        model: Bosch/MED17.7.2
+- config3:
+    engine: Mercedes/M274.920
+    power_kw: 180.0
+    ecu:
+      ECM:
+        model: Bosch/MED17.7.2

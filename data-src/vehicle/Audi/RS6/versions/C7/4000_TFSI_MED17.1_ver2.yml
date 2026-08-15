@@ -2,7 +2,7 @@ created: 2026-07-17 23:14:52 CEST
 version: C7
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:03:54 CEST
+updated: 2026-08-15 12:16:02 CEST
 conflicts:
   power_kw:
   - value: 412.0
@@ -14,3 +14,9 @@ config:
       ECM:
         model: Bosch/MED17.1_ver2
     power_kw: 445.0
+- config2:
+    engine: Audi/4000_TFSI
+    power_kw: 412.0
+    ecu:
+      ECM:
+        model: Bosch/MED17.1_ver2

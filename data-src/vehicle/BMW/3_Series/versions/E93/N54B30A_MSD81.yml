@@ -2,7 +2,7 @@ created: 2026-07-17 23:15:06 CEST
 version: E93
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
-updated: 2026-07-18 18:14:22 CEST
+updated: 2026-08-15 12:16:15 CEST
 conflicts:
   power_kw:
   - value: 225.0
@@ -26,3 +26,9 @@ config:
       ECM:
         model: CONTINENTAL_SIEMENS/MSD81
     power_kw: 236.0
+- config3:
+    engine: BMW/N54B30A
+    power_kw: 225.0
+    ecu:
+      ECM:
+        model: CONTINENTAL_SIEME/MSD81
