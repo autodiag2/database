@@ -184,6 +184,31 @@ class ConverterToSqlite():
             create unique index if not exists ad_vehicle_version_config_ecu_uq
             on ad_vehicle_version_config_ecu(config_id, ecu_id);
 
+            create table if not exists ad_vehicle_version_config_ecu_protocol(
+                id integer primary key autoincrement,
+                vehicle_version_config_ecu_id integer not null,
+                protocol text not null,
+                foreign key(vehicle_version_config_ecu_id)
+                    references ad_vehicle_version_config_ecu(id)
+            );
+
+            create unique index if not exists ad_vehicle_version_config_ecu_protocol_uq
+            on ad_vehicle_version_config_ecu_protocol(
+                vehicle_version_config_ecu_id,
+                protocol
+            );
+
+            create table if not exists ad_vehicle_version_config_ecu_protocol_param(
+                protocol_id integer not null,
+                name text not null,
+                value_text text,
+                value_integer integer,
+                value_real real,
+                primary key(protocol_id, name),
+                foreign key(protocol_id)
+                    references ad_vehicle_version_config_ecu_protocol(id)
+            );
+
             create table if not exists ad_evidence(
                 id integer primary key autoincrement,
                 text text unique not null
@@ -637,6 +662,69 @@ class ConverterToSqlite():
 
         return mcu_id
 
+    def _insert_config_ecu_protocol(
+        self,
+        conn,
+        config_ecu_id,
+        protocols,
+    ):
+        if not isinstance(protocols, dict):
+            return
+
+        for protocol_name, params in protocols.items():
+            if not isinstance(params, dict):
+                continue
+
+            cur = conn.execute(
+                """
+                insert into ad_vehicle_version_config_ecu_protocol(
+                    vehicle_version_config_ecu_id,
+                    protocol
+                )
+                values(?, ?)
+                """,
+                (
+                    config_ecu_id,
+                    protocol_name,
+                ),
+            )
+
+            protocol_id = cur.lastrowid
+
+            for name, value in params.items():
+                value_text = None
+                value_integer = None
+                value_real = None
+
+                if isinstance(value, bool):
+                    value_integer = int(value)
+                elif isinstance(value, int):
+                    value_integer = value
+                elif isinstance(value, float):
+                    value_real = value
+                else:
+                    value_text = str(value)
+
+                conn.execute(
+                    """
+                    insert into ad_vehicle_version_config_ecu_protocol_param(
+                        protocol_id,
+                        name,
+                        value_text,
+                        value_integer,
+                        value_real
+                    )
+                    values(?, ?, ?, ?, ?)
+                    """,
+                    (
+                        protocol_id,
+                        name,
+                        value_text,
+                        value_integer,
+                        value_real,
+                    ),
+                )
+                
     def _get_or_insert_ecu(
         self,
         conn,
@@ -1026,8 +1114,8 @@ class ConverterToSqlite():
                 vehicle_id=vehicle_id,
                 version=entry["version"],
                 year=entry["year"],
-                created=timestamp(entry["version_created"]),
-                updated=timestamp(entry["version_updated"]),
+                created=entry["version_created"],
+                updated=entry["version_updated"],
                 evidence=entry["version_evidence"],
             )
 
@@ -1037,7 +1125,7 @@ class ConverterToSqlite():
                     vehicle_version_id=version_id,
                     engine_ref=config["engine_ref"],
                     power_kw=config["power_kw"],
-                    ecus_id=config["ecus_id"],
+                    ecus=config["ecus"],
                 )
 
             for field, values in entry["version_conflicts"].items():
@@ -1124,7 +1212,9 @@ class ConverterToSqlite():
 
                         configs = []
 
-                        for config_entry in self._ensure_list(version.get("config")):
+                        for config_entry in self._ensure_list(
+                            version.get("config")
+                        ):
                             if not isinstance(config_entry, dict):
                                 continue
 
@@ -1145,36 +1235,41 @@ class ConverterToSqlite():
                                         engine_code,
                                     )
 
-                                ecus_id = []
+                                ecus = []
 
-                                ecu = config.get("ecu", {})
+                                for ecu_type, ecu in (
+                                    config.get("ecu", {}) or {}
+                                ).items():
+                                    if not isinstance(ecu, dict):
+                                        continue
 
-                                if isinstance(ecu, dict):
-                                    for ecu_type, ecu_data in ecu.items():
-                                        if not isinstance(ecu_data, dict):
-                                            continue
+                                    model = ecu.get("model")
+                                    if not model:
+                                        continue
 
-                                        ecu_ref = ecu_data.get("model")
-                                        if not ecu_ref:
-                                            continue
+                                    ecu_manufacturer, ecu_model = \
+                                        self._ecu_get_m_model(model)
 
-                                        ecu_manufacturer, ecu_model = \
-                                            self._ecu_get_m_model(ecu_ref)
+                                    ecu_id = self._get_or_insert_ecu(
+                                        conn,
+                                        ecu_manufacturer,
+                                        ecu_model,
+                                    )
 
-                                        ecu_id = self._get_or_insert_ecu(
-                                            conn,
-                                            ecu_manufacturer,
-                                            ecu_model,
-                                        )
+                                    if ecu_id is None:
+                                        continue
 
-                                        if ecu_id:
-                                            ecus_id.append(ecu_id)
+                                    ecus.append({
+                                        "ecu_id": ecu_id,
+                                        "type": ecu_type,
+                                        "protocol": ecu.get("protocol", {}),
+                                    })
 
                                 configs.append({
                                     "name": config_name,
                                     "engine_ref": engine_ref,
                                     "power_kw": config.get("power_kw"),
-                                    "ecus_id": ecus_id,
+                                    "ecus": ecus,
                                 })
 
                         yield {
@@ -1301,37 +1396,42 @@ class ConverterToSqlite():
         updated=None,
         evidence=None,
     ):
-        cur = conn.cursor()
-
-        cur.execute("""
+        cur = conn.execute(
+            """
             select id
             from ad_vehicle_version
             where vehicle_id=?
             and ifnull(version, '')=ifnull(?, '')
-        """, (
-            vehicle_id,
-            version,
-        ))
+            """,
+            (
+                vehicle_id,
+                version,
+            ),
+        )
 
         row = cur.fetchone()
 
         if row:
             version_id = row[0]
 
-            cur.execute("""
+            conn.execute(
+                """
                 update ad_vehicle_version
                 set year=coalesce(year, ?),
                     created=coalesce(created, ?),
                     updated=coalesce(updated, ?)
                 where id=?
-            """, (
-                year,
-                created,
-                updated,
-                version_id,
-            ))
+                """,
+                (
+                    year,
+                    created,
+                    updated,
+                    version_id,
+                ),
+            )
         else:
-            cur.execute("""
+            cur = conn.execute(
+                """
                 insert into ad_vehicle_version(
                     vehicle_id,
                     version,
@@ -1339,15 +1439,16 @@ class ConverterToSqlite():
                     created,
                     updated
                 )
-                values(?,?,?,?,?)
-            """, (
-                vehicle_id,
-                version,
-                year,
-                created,
-                updated,
-            ))
-
+                values(?, ?, ?, ?, ?)
+                """,
+                (
+                    vehicle_id,
+                    version,
+                    year,
+                    created,
+                    updated,
+                ),
+            )
             version_id = cur.lastrowid
 
         self._link_evidence(
@@ -1364,66 +1465,82 @@ class ConverterToSqlite():
         self,
         conn,
         vehicle_version_id,
-        engine_ref=None,
-        power_kw=None,
-        ecus_id=None,
-        evidence=None,
+        engine_ref,
+        power_kw,
+        ecus,
     ):
-        ecus_id = ecus_id or []
-
-        cur = conn.cursor()
-
-        cur.execute("""
+        cur = conn.execute(
+            """
             select id
             from ad_vehicle_version_config
             where vehicle_version_id=?
             and ifnull(engine_id, 0)=ifnull(?, 0)
             and ifnull(power_kw, 0)=ifnull(?, 0)
-        """, (
-            vehicle_version_id,
-            engine_ref,
-            power_kw,
-        ))
+            """,
+            (
+                vehicle_version_id,
+                engine_ref,
+                power_kw,
+            ),
+        )
 
         row = cur.fetchone()
 
         if row:
             config_id = row[0]
         else:
-            cur.execute("""
+            cur = conn.execute(
+                """
                 insert into ad_vehicle_version_config(
                     vehicle_version_id,
                     engine_id,
                     power_kw
                 )
-                values(?,?,?)
-            """, (
-                vehicle_version_id,
-                engine_ref,
-                power_kw,
-            ))
-
+                values(?, ?, ?)
+                """,
+                (
+                    vehicle_version_id,
+                    engine_ref,
+                    power_kw,
+                ),
+            )
             config_id = cur.lastrowid
 
-        for ecu_id in ecus_id:
-            cur.execute("""
+        for ecu in ecus:
+            cur = conn.execute(
+                """
                 insert or ignore into ad_vehicle_version_config_ecu(
                     config_id,
                     ecu_id
                 )
-                values(?,?)
-            """, (
-                config_id,
-                ecu_id,
-            ))
+                values(?, ?)
+                """,
+                (
+                    config_id,
+                    ecu["ecu_id"],
+                ),
+            )
 
-        self._link_evidence(
-            conn,
-            "ad_vehicle_version_config_evidence",
-            "config_id",
-            config_id,
-            evidence,
-        )
+            row = conn.execute(
+                """
+                select id
+                from ad_vehicle_version_config_ecu
+                where config_id=?
+                and ecu_id=?
+                """,
+                (
+                    config_id,
+                    ecu["ecu_id"],
+                ),
+            ).fetchone()
+
+            config_ecu_id = row[0]
+
+            self._insert_config_ecu_protocol(
+                conn,
+                config_ecu_id,
+                ecu["protocol"],
+            )
 
         return config_id
 
