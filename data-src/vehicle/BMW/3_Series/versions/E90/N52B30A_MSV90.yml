@@ -3,6 +3,7 @@ version: E90
 evidence:
 - https://laytonecuremaps.co.uk/wp-content/uploads/2016/10/FLEX-FULL-vehicle-list-2020-11-9.pdf
 - https://www.v-tuning.pl/plik/podglad/4534/vehicle-list-magpro2-x17-ver-12-09-10.pdf
+- https://github.com/UDSNexus/canbus-info/blob/main/dbc/bmw-e90.dbc
 updated: 2026-08-15 12:48:18 CEST
 conflicts:
   year:
@@ -17,12 +18,20 @@ config:
     ecu:
       ECM:
         model: CONTINENTAL_SIEME/MSV90
+        protocol:
+          can11bits:
+            request_can_id: '0x6F1'
+            response_can_id: '0x612'
     power_kw: 160.0
 - config2:
     engine: Bmw/N52B30A
     ecu:
       ECM:
         model: CONTINENTAL/MSV90
+        protocol:
+          can11bits:
+            request_can_id: '0x6F1'
+            response_can_id: '0x612'
     power_kw: 160.0
 - config3:
     engine: BMW/N52B30A
@@ -30,33 +39,57 @@ config:
     ecu:
       ECM:
         model: CONTINENTAL_SIEME/MSV90
+        protocol:
+          can11bits:
+            request_can_id: '0x6F1'
+            response_can_id: '0x612'
 - config4:
     engine: BMW/N52B30A
     power_kw: 190.0
     ecu:
       ECM:
         model: CONTINENTAL_SIEME/MSV90
+        protocol:
+          can11bits:
+            request_can_id: '0x6F1'
+            response_can_id: '0x612'
 - config5:
     engine: BMW/N52B30A
     power_kw: 200.0
     ecu:
       ECM:
         model: CONTINENTAL_SIEME/MSV90
+        protocol:
+          can11bits:
+            request_can_id: '0x6F1'
+            response_can_id: '0x612'
 - config6:
     engine: Bmw/N52B30A
     power_kw: 172.0
     ecu:
       ECM:
         model: CONTINENTAL/MSV90
+        protocol:
+          can11bits:
+            request_can_id: '0x6F1'
+            response_can_id: '0x612'
 - config7:
     engine: Bmw/N52B30A
     power_kw: 190.0
     ecu:
       ECM:
         model: CONTINENTAL/MSV90
+        protocol:
+          can11bits:
+            request_can_id: '0x6F1'
+            response_can_id: '0x612'
 - config8:
     engine: Bmw/N52B30A
     power_kw: 200.0
     ecu:
       ECM:
         model: CONTINENTAL/MSV90
+        protocol:
+          can11bits:
+            request_can_id: '0x6F1'
+            response_can_id: '0x612'
