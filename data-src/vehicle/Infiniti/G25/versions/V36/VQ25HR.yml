@@ -10,8 +10,8 @@ config:
           model: Nissan/1VW3C
           protocol:
             can11bit:
-              address: 7E0
-              response: 765
+              request_can_id: 0x745
+              response_can_id: 0x765
 
 evidence:
 - First-hand OBD-II scan of a 2011 Infiniti G25
